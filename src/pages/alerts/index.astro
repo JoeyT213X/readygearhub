@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
+import AlertFilters from '../../components/AlertFilters.astro';
 import '../../styles/interactive.css';
 import states from '../../data/us-states.json';
 import { DEFAULT_STATE } from '../../lib/app-config';
@@ -26,13 +27,7 @@ import { DEFAULT_STATE } from '../../lib/app-config';
           <option value="">All counties</option>
         </select>
       </label>
-      <fieldset class="filter-toggles" style="border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;justify-content:end">
-        <legend>Filter (leave both off to show all)</legend>
-        <div style="display:flex;flex-wrap:wrap;gap:8px">
-          <label class="filter-toggle"><input type="checkbox" id="filter-winter" /> Winter</label>
-          <label class="filter-toggle"><input type="checkbox" id="filter-severe" /> Severe</label>
-        </div>
-      </fieldset>
+      <AlertFilters />
       <div class="tool-actions">
         <button type="button" class="btn ghost" id="use-location">Use my location</button>
       </div>

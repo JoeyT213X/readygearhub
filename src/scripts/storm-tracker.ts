@@ -4,7 +4,10 @@ import { fetchActiveAlerts, fetchCounties, type NwsAlert } from './nws';
 import {
   escapeHtml,
   fillCountySelect,
+  filterLabel,
+  matchesAlertFilters,
   NWS_UNAVAILABLE_HTML,
+  readAlertFilters,
   renderAlertCard,
   sortAlerts,
 } from './alert-render';
@@ -85,22 +88,36 @@ export function initStormTracker() {
     return stateEl!.options[stateEl!.selectedIndex]?.text || stateEl!.value;
   }
 
+  let currentAlerts: NwsAlert[] = [];
+  let currentPlace = '';
+  let lastMeta: { offline: boolean; fetchedAt?: number } = { offline: false };
+
   function paint(alerts: NwsAlert[], place: string, meta: { offline: boolean; fetchedAt?: number }) {
+    currentAlerts = alerts;
+    currentPlace = place;
+    lastMeta = meta;
     if (offlineFlag) {
       offlineFlag.hidden = !meta.offline;
       if (meta.offline && meta.fetchedAt) {
         offlineFlag.textContent = `Showing the last saved alerts from ${new Date(meta.fetchedAt).toLocaleString()} (offline or the live request failed). Official updates may be newer at weather.gov.`;
       }
     }
+    const visible = sortAlerts(alerts.filter((a) => matchesAlertFilters(a, readAlertFilters())));
     if (!alerts.length) {
       status!.className = 'status-banner empty';
       status!.innerHTML = `No active alerts for ${escapeHtml(place)} right now.`;
       results!.innerHTML = '';
       return;
     }
+    if (!visible.length) {
+      status!.className = 'status-banner empty';
+      status!.innerHTML = `No ${filterLabel(readAlertFilters())}alerts for ${escapeHtml(place)} right now.`;
+      results!.innerHTML = '';
+      return;
+    }
     status!.className = 'status-line';
-    status!.textContent = `Showing ${alerts.length} alert${alerts.length === 1 ? '' : 's'} for ${place}. Sorted by severity. Times are in your local time.`;
-    results!.innerHTML = sortAlerts(alerts).map((a) => renderAlertCard(a)).join('');
+    status!.textContent = `Showing ${visible.length} alert${visible.length === 1 ? '' : 's'} for ${place}. Sorted by severity. Times are in your local time.`;
+    results!.innerHTML = visible.map((a) => renderAlertCard(a)).join('');
   }
 
   async function loadAlerts() {
@@ -133,6 +150,9 @@ export function initStormTracker() {
   });
   countyEl.addEventListener('change', loadAlerts);
   document.querySelector('#refresh')?.addEventListener('click', () => loadAlerts());
+  document.querySelectorAll<HTMLInputElement>('#panel-alerts input[type="checkbox"]').forEach((el) => {
+    el.addEventListener('change', () => paint(currentAlerts, currentPlace || placeLabel(), lastMeta));
+  });
 
   initTabs();
   initOutageTimer();

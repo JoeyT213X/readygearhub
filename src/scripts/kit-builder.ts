@@ -1,5 +1,5 @@
 import { STORAGE_KEYS } from '../lib/app-config';
-import { KIT_LINES, type KitLine } from '../data/kit-guidance';
+import { KIT_LINES, waterGallons, waterPlanText, type KitLine } from '../data/kit-guidance';
 
 export type Catalog = {
   items: Record<string, { name: string }>;
@@ -53,8 +53,7 @@ function included(line: KitLine, state: State) {
 }
 
 function waterDetail(state: State) {
-  const gallons = state.people * state.days * 1;
-  return `For ${state.people} person${state.people === 1 ? '' : 's'} over ${state.days} days, that is ${gallons} gallon${gallons === 1 ? '' : 's'} (1 gallon per person per day). Ready.gov recommends one gallon per person per day for several days. This tool uses a 3-day minimum as a common Ready.gov baseline.`;
+  return waterPlanText(state.people, state.days);
 }
 
 function foodDetail(state: State) {
@@ -143,7 +142,8 @@ export function initKitBuilder(catalog: Catalog) {
 
     const sections = ['basic', 'additional', 'pets', 'vehicle'] as const;
     const chunks: string[] = [];
-    chunks.push(`<p class="qty-callout">Household plan: ${state.people} people, ${state.days} days, ${state.people * state.days} gallons of water. ${state.infants ? state.infants + ' infant(s). ' : ''}${state.pets ? state.pets + ' pet(s). ' : ''}${state.meds ? 'Includes medication items. ' : ''}${state.vehicle ? 'Includes a car kit. ' : ''}</p>`);
+    const water = waterGallons(state.people, state.days);
+    chunks.push(`<p class="qty-callout">Household plan: ${water.people} people, ${water.days} days, ${water.gallons} gallons of water. ${state.infants ? state.infants + ' infant(s). ' : ''}${state.pets ? state.pets + ' pet(s). ' : ''}${state.meds ? 'Includes medication items. ' : ''}${state.vehicle ? 'Includes a car kit. ' : ''}</p>`);
     if (state.pets) chunks.push(`<p class="fine">${petIntro(state)}</p>`);
 
     for (const section of sections) {

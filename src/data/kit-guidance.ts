@@ -8,6 +8,40 @@ export const KIT_SOURCES = {
   pets: { name: 'Ready.gov, Prepare Your Pets for Disasters', url: 'https://www.ready.gov/pets' },
 } as const;
 
+export const WATER_SOURCES = {
+  kit: { name: 'Ready.gov, Build A Kit', url: 'https://www.ready.gov/kit' },
+  water: { name: 'Ready.gov, Water', url: 'https://www.ready.gov/water' },
+  areYouReady: {
+    name: 'Ready.gov, Are You Ready? An In-Depth Guide to Citizen Preparedness',
+    url: 'https://www.ready.gov/sites/default/files/2021-11/are-you-ready-guide.pdf',
+  },
+} as const;
+
+/** Ready.gov: one gallon per person per day for drinking and sanitation. */
+export const WATER_GALLONS_PER_PERSON_PER_DAY = 1;
+/**
+ * Ready.gov kit/water pages say "several days," not a fixed number.
+ * The Are You Ready guide says you may wish to keep 3, 7, or even 14 days
+ * of water on hand, depending on where you live. This default uses 3 days
+ * as that guide's shortest figure. Ready.gov does not state a required
+ * "two-week supply for home."
+ */
+export const WATER_MIN_DAYS = 3;
+
+export function waterGallons(people: number, days: number) {
+  const p = Math.max(1, Math.floor(Number(people) || 1));
+  const d = Math.max(WATER_MIN_DAYS, Math.floor(Number(days) || WATER_MIN_DAYS));
+  return { people: p, days: d, gallons: p * d * WATER_GALLONS_PER_PERSON_PER_DAY };
+}
+
+export function waterPlanText(people: number, days: number) {
+  const plan = waterGallons(people, days);
+  const nounP = plan.people === 1 ? 'person' : 'people';
+  const nounG = plan.gallons === 1 ? 'gallon' : 'gallons';
+  return `For ${plan.people} ${nounP} over ${plan.days} days, that is ${plan.gallons} ${nounG} (1 gallon per person per day). Ready.gov recommends one gallon per person per day for several days. This tool uses a ${WATER_MIN_DAYS}-day minimum, the shortest figure in Ready.gov's Are You Ready guide, which says you may wish to keep 3, 7, or even 14 days of water on hand depending on where you live.`;
+}
+
+
 export type KitLine = {
   id: string;
   /** Short official-based label shown on the printable list. */
@@ -29,7 +63,7 @@ export const KIT_LINES: KitLine[] = [
   {
     id: 'water',
     label: 'Water: one gallon per person per day for drinking and sanitation',
-    detail: 'Ready.gov recommends one gallon per person per day for several days. This list uses a 3-day baseline unless you choose a longer plan.',
+    detail: 'Ready.gov recommends one gallon per person per day for several days. The Are You Ready guide says you may wish to keep 3, 7, or even 14 days of water on hand, depending on where you live. This list uses a 3-day minimum unless you choose a longer plan.',
     always: true,
     section: 'basic',
     relatedLanes: ['winter-storm-prep', 'storm-hurricane-prep'],

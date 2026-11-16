@@ -27,10 +27,52 @@ export function sortAlerts(alerts: NwsAlert[]) {
   });
 }
 
-export function matchesAlertFilters(alert: NwsAlert, winter: boolean, severe: boolean) {
-  if (!winter && !severe) return true;
+export type AlertFilterFlags = {
+  winter?: boolean;
+  severe?: boolean;
+  hurricane?: boolean;
+  tornado?: boolean;
+  flood?: boolean;
+};
+
+export function readAlertFilters(): AlertFilterFlags {
+  const on = (id: string) => !!document.querySelector<HTMLInputElement>(id)?.checked;
+  return {
+    winter: on('#filter-winter'),
+    severe: on('#filter-severe'),
+    hurricane: on('#filter-hurricane'),
+    tornado: on('#filter-tornado'),
+    flood: on('#filter-flood'),
+  };
+}
+
+export function anyFilterOn(f: AlertFilterFlags) {
+  return !!(f.winter || f.severe || f.hurricane || f.tornado || f.flood);
+}
+
+export function matchesAlertFilters(alert: NwsAlert, f: AlertFilterFlags) {
+  if (!anyFilterOn(f)) return true;
   const c = classifyEvent(alert.event);
-  return (winter && c.winter) || (severe && c.severe);
+  return (
+    (!!f.winter && c.winter) ||
+    (!!f.severe && c.severe) ||
+    (!!f.hurricane && c.hurricane) ||
+    (!!f.tornado && c.tornado) ||
+    (!!f.flood && c.flood)
+  );
+}
+
+export function filterLabel(f: AlertFilterFlags) {
+  const names = [
+    f.winter && 'winter',
+    f.severe && 'severe',
+    f.hurricane && 'hurricane or tropical',
+    f.tornado && 'tornado',
+    f.flood && 'flood',
+  ].filter(Boolean) as string[];
+  if (!names.length) return '';
+  if (names.length === 1) return names[0] + ' ';
+  return `${names.slice(0, -1).join(', ')} or ${names[names.length - 1]} `;
 }
 
 function lanePills(lanes: LaneRef[]) {

@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
 ---
-<Base title="Preparedness Tools | ReadyGearHub" description="Free, browser-based tools: live weather alerts, a generator and power-station sizer, a fridge and freezer outage timer, and a Ready.gov kit builder.">
+<Base title="Preparedness Tools | ReadyGearHub" description="Free, browser-based tools: live weather alerts, generator and solar sizers, a water storage calculator, a fridge and freezer outage timer, and a Ready.gov kit builder.">
   <section class="page-hero">
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / Tools</p>
@@ -23,6 +23,18 @@ import '../../styles/interactive.css';
         <h3>Generator &amp; power-station sizer</h3>
         <p>Add typical appliance watts, see running and starting totals, and estimate battery hours.</p>
         <span class="count">Open sizer →</span>
+      </a>
+      <a class="card tool-card" href="/tools/solar-sizer/">
+        <span class="lane-icon" aria-hidden="true">☀️</span>
+        <h3>Solar &amp; power-station sizer</h3>
+        <p>Estimate panel watts and battery watt-hours from your daily load and peak sun hours you look up at NREL.</p>
+        <span class="count">Open solar sizer →</span>
+      </a>
+      <a class="card tool-card" href="/tools/water-calculator/">
+        <span class="lane-icon" aria-hidden="true">💧</span>
+        <h3>Water storage calculator</h3>
+        <p>Ready.gov’s one gallon per person per day, sized to your household and the number of days you plan for.</p>
+        <span class="count">Open water calculator →</span>
       </a>
       <a class="card tool-card" href="/tools/outage-timer/">
         <span class="lane-icon" aria-hidden="true">❄️</span>
