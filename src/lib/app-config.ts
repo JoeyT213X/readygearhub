@@ -29,3 +29,18 @@ export const STORAGE_KEYS = {
   collarCard: 'rgh-apps.collar-card',
   aidDates: 'rgh-apps.aid-dates',
 } as const;
+
+/** Approved prices from the ReadyGearHub price sheet (Nov 15, 2026). Display only; no payments. */
+export const PRICES = {
+  bundleMonthly: '$3.67/mo',
+  bundleYearly: '$27.47/yr',
+  bundleLifetime: '$46.73 lifetime',
+  runtimeReserve: '$11.83 once',
+  coldHold: '$8.94 once',
+  allAccounted: '$8.67 once',
+  collarCard: '$6.83 once',
+  aidDates: '$5.87 once',
+  stormTrackerMonthly: '$2.73/mo',
+  stormTrackerYearly: '$18.47/yr',
+} as const;
+
