@@ -1,0 +1,83 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { localStates, type LocalState, type LocalCounty } from '../../../lib/local';
+
+export function getStaticPaths() {
+  return localStates.flatMap((state) =>
+    state.counties.map((county) => ({
+      params: { state: state.slug, county: county.slug },
+      props: { state, county },
+    }))
+  );
+}
+
+const { state, county } = Astro.props as { state: LocalState; county: LocalCounty };
+const em = county.emergencyManagement;
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'GovernmentService', name: em.name, url: em.url, areaServed: county.name, ...(em.phone ? { telephone: em.phone } : {}) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Local resources', item: new URL('/local/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: state.name, item: new URL(`/local/${state.slug}/`, Astro.site).href },
+    { '@type': 'ListItem', position: 4, name: county.name, item: new URL(`/local/${state.slug}/${county.slug}/`, Astro.site).href },
+  ] },
+];
+---
+<Base title={`${county.name} Emergency Management, Shelters & Outage Maps | ReadyGearHub`} description={`Official ${county.name}, ${state.abbreviation} emergency management contact, sources for warming and cooling centers, and power-outage maps for utilities that serve the county.`} schema={schema}>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> › <a href="/local/">Local resources</a> › <a href={`/local/${state.slug}/`}>{state.name}</a> › {county.name}
+      </nav>
+      <h1>{county.name}</h1>
+      <p class="lead">Official emergency management, sources to check for warming and cooling centers, and outage maps for utilities that serve this county. In an emergency, call 911.</p>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <h2>County emergency management</h2>
+    <div class="card">
+      <h3>{em.name}</h3>
+      {em.phone && <p><strong>Phone:</strong> <a href={`tel:+1${em.phone.replace(/\D/g, '')}`}>{em.phone}</a></p>}
+      <p><a href={em.url} rel="noopener noreferrer">Official page</a></p>
+      {em.notes && <p class="fine">{em.notes}</p>}
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <h2>Warming and cooling centers — official sources</h2>
+    <p>We do not publish a static list of addresses, because centers are opened and closed by local officials as needed. Use these official sources during a heat wave, ice storm, or outage.</p>
+    <ul class="link-list">
+      {county.warmingCoolingSources.map((s) => (
+        <li>
+          <a href={s.url} rel="noopener noreferrer">{s.name}</a>
+          {s.notes && <span class="fine"> — {s.notes}</span>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap section">
+    <h2>Power outage maps</h2>
+    <p>More than one utility can serve a county. Use the map or site for the provider named on your bill. Territory notes below are taken from official utility, cooperative, or association pages.</p>
+    <div class="grid">
+      {county.utilities.map((u) => (
+        <div class="card">
+          <h3>{u.name}</h3>
+          <p><a href={u.outageMapUrl} rel="noopener noreferrer">Outage map or official outage page</a></p>
+          <p class="fine">{u.notes}</p>
+          <p class="fine">Territory source: <a href={u.territorySource.url} rel="noopener noreferrer">{u.territorySource.name}</a></p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="card featured-slot">
+      <h2>Featured local business</h2>
+      <p>Your business here. If you run a local outfitter, hardware store, or other preparedness-related business in {county.name}, you can request a listing or a featured placement.</p>
+      <a class="btn" href="/get-featured/">Get featured</a>
+    </div>
+    <p class="fine">Sources for this county were last checked {county.verified}. We do not list private businesses on these resource pages except in a clearly labeled featured slot.</p>
+  </section>
+</Base>

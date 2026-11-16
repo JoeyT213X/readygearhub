@@ -1,0 +1,789 @@
+{
+  "slug": "mississippi",
+  "name": "Mississippi",
+  "abbreviation": "MS",
+  "verified": "2026-11-15",
+  "intro": "Official local contacts for winter storms, outages, and extreme temperatures in central Mississippi. Every office, shelter source, and outage map below is from a county or city government, the Mississippi Emergency Management Agency, the Mississippi Public Service Commission, an electric utility or cooperative, or the American Red Cross. Shelter and warming or cooling center locations are opened as needed \u2014 always check the official sources, not a static list.",
+  "statewideSources": [
+    {
+      "name": "Mississippi Emergency Management Agency (MEMA)",
+      "url": "https://www.msema.org/",
+      "verified": "2026-11-15",
+      "notes": "State emergency management agency. 24-hour emergency line: 1-800-222-6362, as listed on MEMA's site.",
+      "type": "ema"
+    },
+    {
+      "name": "MEMA \u2014 County Emergency Management Contacts",
+      "url": "https://www.msema.org/get-assistance/county-emergency-management-contacts",
+      "verified": "2026-11-15",
+      "notes": "Official directory of county emergency management directors and phone numbers.",
+      "type": "ema"
+    },
+    {
+      "name": "MEMA \u2014 Shelters and Safe Rooms",
+      "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+      "verified": "2026-11-15",
+      "notes": "Official list of shelter and safe-room openings reported to MEMA.",
+      "type": "shelters"
+    },
+    {
+      "name": "MEMA \u2014 Extreme Heat Safety Tips",
+      "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+      "verified": "2026-11-15",
+      "notes": "Official heat-safety guidance from MEMA.",
+      "type": "shelters"
+    },
+    {
+      "name": "Mississippi Public Service Commission \u2014 Outage Trackers",
+      "url": "https://www.psc.ms.gov/psc/outagetracker",
+      "verified": "2026-11-15",
+      "notes": "Official PSC page with links to utility and cooperative outage maps.",
+      "type": "outage"
+    },
+    {
+      "name": "Entergy Mississippi \u2014 About (counties served)",
+      "url": "https://www.entergymississippi.com/about",
+      "verified": "2026-11-15",
+      "notes": "Official list of counties Entergy Mississippi serves.",
+      "type": "utility"
+    },
+    {
+      "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+      "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+      "verified": "2026-11-15",
+      "notes": "Official Mississippi Power service-territory map.",
+      "type": "utility"
+    },
+    {
+      "name": "Electric Cooperatives of Mississippi \u2014 Member Co-ops",
+      "url": "https://www.ecm.coop/member-co-ops/",
+      "verified": "2026-11-15",
+      "notes": "Official statewide association directory of Mississippi electric cooperatives.",
+      "type": "utility"
+    },
+    {
+      "name": "American Red Cross of Alabama and Mississippi",
+      "url": "https://www.redcross.org/local/al-ms.html",
+      "verified": "2026-11-15",
+      "type": "shelters"
+    },
+    {
+      "name": "American Red Cross \u2014 Find an Open Shelter",
+      "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+      "verified": "2026-11-15",
+      "type": "shelters"
+    }
+  ],
+  "counties": [
+    {
+      "slug": "hinds",
+      "name": "Hinds County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Hinds County Department of Emergency Management",
+        "url": "https://www.hindscountyms.com/departments/emergency-management",
+        "phone": "601-960-1476",
+        "notes": "Director Joey Perkins is named on the county's official Emergency Management page, which also lists 601-960-1476. MEMA's county contacts list matches that name and number."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Hinds County Department of Emergency Management",
+          "url": "https://www.hindscountyms.com/departments/emergency-management",
+          "verified": "2026-11-15",
+          "notes": "County official source for local emergency information, including a heat-safety publication linked from this page. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "City of Jackson \u2014 Police, Fire, Emergency",
+          "url": "https://jacksonms.gov/residents/police-fire-emergency/",
+          "verified": "2026-11-15",
+          "notes": "Official City of Jackson public-safety page, including how the city describes Emergency Management and official alert channels. Jackson is the county seat and the largest city in Hinds County."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "madison",
+      "name": "Madison County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Madison County Emergency Management",
+        "url": "https://www.madison-co.com/county-departments/emergency-management",
+        "phone": "601-859-4188",
+        "notes": "As of 2026-11-15, madison-co.com was displaying a temporary website outage notice, so the department page itself could not be read. The official URL above is the county's Emergency Management path. The office name and phone are from MEMA's official county emergency management contacts list (Albert Jones III, 601-859-4188)."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Madison County Emergency Management (county website)",
+          "url": "https://www.madison-co.com/county-departments/emergency-management",
+          "verified": "2026-11-15",
+          "notes": "Official county department URL. As of the verification date the county website was posting a temporary outage notice; use the MEMA contacts list and local official alerts if the page is unavailable."
+        },
+        {
+          "name": "MEMA \u2014 County Emergency Management Contacts",
+          "url": "https://www.msema.org/get-assistance/county-emergency-management-contacts",
+          "verified": "2026-11-15",
+          "notes": "Official state directory with the Madison County emergency management phone number."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "rankin",
+      "name": "Rankin County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Rankin County Emergency Management Operations",
+        "url": "https://www.rankincounty.org/department/index.php?structureid=26",
+        "phone": "601-825-1499",
+        "notes": "The official county Emergency Management Operations page lists the Emergency Operations Office at 601 Marquette Rd, Brandon, and the phone number 601-825-1499. MEMA's contacts list names Brian Grantham at the same number."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Rankin County Emergency Management Operations",
+          "url": "https://www.rankincounty.org/department/index.php?structureid=26",
+          "verified": "2026-11-15",
+          "notes": "Official county source. The office works with local media to inform the public during disasters; check this page and official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Central Electric Power Association",
+          "outageMapUrl": "https://www.outageentry.com/Outage/outage.php?Client=central_epa&serviceIndex=1",
+          "territorySource": {
+            "name": "Central EPA \u2014 The Cooperative Difference",
+            "url": "https://www.centralepa.com/TheCooperativeDifference.html",
+            "verified": "2026-11-15"
+          },
+          "notes": "Central Electric Power Association states that it serves members in Attala, Leake, Neshoba, Scott, Newton, Rankin, and Kemper counties.",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Southern Pine Electric",
+          "outageMapUrl": "https://outages.southernpine.coop/",
+          "territorySource": {
+            "name": "Southern Pine Electric \u2014 About Us",
+            "url": "https://southernpine.coop/about-us/",
+            "verified": "2026-11-15"
+          },
+          "notes": "Southern Pine Electric's official About page states that it serves members across 11 counties and lists Rankin County and Scott County among the counties represented on its board and member advisory committee, with a district office in Brandon.",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "leake",
+      "name": "Leake County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Leake County Emergency Management Agency",
+        "url": "https://leakecountyms.org/emergency-management-agency/",
+        "phone": "601-267-5757",
+        "notes": "The official county Emergency Management Agency page lists Tommy Malone and office phone (601) 267-5757, matching MEMA's contacts list."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Leake County Emergency Management Agency",
+          "url": "https://leakecountyms.org/emergency-management-agency/",
+          "verified": "2026-11-15",
+          "notes": "Official county source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Mississippi Power",
+          "outageMapUrl": "https://outagemap.mississippipower.com/external/default.html",
+          "territorySource": {
+            "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+            "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+            "verified": "2026-11-15"
+          },
+          "notes": "Mississippi Power's official 23-county service territory map includes this county. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Central Electric Power Association",
+          "outageMapUrl": "https://www.outageentry.com/Outage/outage.php?Client=central_epa&serviceIndex=1",
+          "territorySource": {
+            "name": "Central EPA \u2014 The Cooperative Difference",
+            "url": "https://www.centralepa.com/TheCooperativeDifference.html",
+            "verified": "2026-11-15"
+          },
+          "notes": "Central Electric Power Association states that it serves members in Attala, Leake, Neshoba, Scott, Newton, Rankin, and Kemper counties.",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "scott",
+      "name": "Scott County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Scott County Emergency Management",
+        "url": "https://scottcountyms.gov/government/emergency-management/",
+        "phone": "601-469-4100",
+        "notes": "The official county Emergency Management page lists Director Mike Marlow and phone 601-469-4100, matching MEMA's contacts list. The EMA office address on that page is 210 E. 2nd Street."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Scott County Emergency Management",
+          "url": "https://scottcountyms.gov/government/emergency-management/",
+          "verified": "2026-11-15",
+          "notes": "Official county source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Mississippi Power",
+          "outageMapUrl": "https://outagemap.mississippipower.com/external/default.html",
+          "territorySource": {
+            "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+            "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+            "verified": "2026-11-15"
+          },
+          "notes": "Mississippi Power's official 23-county service territory map includes this county. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Central Electric Power Association",
+          "outageMapUrl": "https://www.outageentry.com/Outage/outage.php?Client=central_epa&serviceIndex=1",
+          "territorySource": {
+            "name": "Central EPA \u2014 The Cooperative Difference",
+            "url": "https://www.centralepa.com/TheCooperativeDifference.html",
+            "verified": "2026-11-15"
+          },
+          "notes": "Central Electric Power Association states that it serves members in Attala, Leake, Neshoba, Scott, Newton, Rankin, and Kemper counties.",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Southern Pine Electric",
+          "outageMapUrl": "https://outages.southernpine.coop/",
+          "territorySource": {
+            "name": "Southern Pine Electric \u2014 About Us",
+            "url": "https://southernpine.coop/about-us/",
+            "verified": "2026-11-15"
+          },
+          "notes": "Southern Pine Electric's official About page states that it serves members across 11 counties and lists Rankin County and Scott County among the counties represented on its board and member advisory committee, with a district office in Brandon.",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "neshoba",
+      "name": "Neshoba County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Neshoba County Emergency Management Agency",
+        "url": "https://neshobacounty.net/departments/emergency-management/",
+        "phone": "601-656-3121",
+        "notes": "The official county Emergency Management and Communications page lists Josh Burt, Emergency Management Director, and phone 601-656-3121, matching MEMA's contacts list. The Emergency Operations Center address on that page is 911 Chestnut Street, Philadelphia, MS 39350."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Neshoba County Emergency Management Agency",
+          "url": "https://neshobacounty.net/departments/emergency-management/",
+          "verified": "2026-11-15",
+          "notes": "Official county source for local emergency information, including a damage self-reporting tool used during some events. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Mississippi Power",
+          "outageMapUrl": "https://outagemap.mississippipower.com/external/default.html",
+          "territorySource": {
+            "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+            "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+            "verified": "2026-11-15"
+          },
+          "notes": "Mississippi Power's official 23-county service territory map includes this county. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Central Electric Power Association",
+          "outageMapUrl": "https://www.outageentry.com/Outage/outage.php?Client=central_epa&serviceIndex=1",
+          "territorySource": {
+            "name": "Central EPA \u2014 The Cooperative Difference",
+            "url": "https://www.centralepa.com/TheCooperativeDifference.html",
+            "verified": "2026-11-15"
+          },
+          "notes": "Central Electric Power Association states that it serves members in Attala, Leake, Neshoba, Scott, Newton, Rankin, and Kemper counties.",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "attala",
+      "name": "Attala County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Attala County Emergency Management",
+        "url": "https://www.attalacounty.net/emergency-management",
+        "phone": "662-289-5322",
+        "notes": "The official county Emergency Management page lists Director Danny Townsend and contact 662-289-5322, matching MEMA's contacts list."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Attala County Emergency Management",
+          "url": "https://www.attalacounty.net/emergency-management",
+          "verified": "2026-11-15",
+          "notes": "Official county source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Central Electric Power Association",
+          "outageMapUrl": "https://www.outageentry.com/Outage/outage.php?Client=central_epa&serviceIndex=1",
+          "territorySource": {
+            "name": "Central EPA \u2014 The Cooperative Difference",
+            "url": "https://www.centralepa.com/TheCooperativeDifference.html",
+            "verified": "2026-11-15"
+          },
+          "notes": "Central Electric Power Association states that it serves members in Attala, Leake, Neshoba, Scott, Newton, Rankin, and Kemper counties.",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "yazoo",
+      "name": "Yazoo County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Yazoo County Emergency Management Office",
+        "url": "https://www.yazoocounty.net/emergency-management/",
+        "phone": "662-746-1569",
+        "notes": "The official county Emergency Management page lists Director Jack Willingham and phone 662-746-1569, matching MEMA's contacts list. The office address on that page is 2201 Gordon Ave, Yazoo City, MS 39194."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Yazoo County Emergency Management Office",
+          "url": "https://www.yazoocounty.net/emergency-management/",
+          "verified": "2026-11-15",
+          "notes": "Official county source, including a sign-up for emergency notifications. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Yazoo Valley Electric Power Association",
+          "outageMapUrl": "https://www.yazoovalley.com/",
+          "territorySource": {
+            "name": "Electric Cooperatives of Mississippi \u2014 Yazoo Valley EPA",
+            "url": "https://www.ecm.coop/resource-dir/yazoo-valley/",
+            "verified": "2026-11-15"
+          },
+          "notes": "Electric Cooperatives of Mississippi, the official statewide association, lists this county among the counties served by Yazoo Valley Electric Power Association. The official co-op website is linked here for outage reporting and service information; a dedicated public outage-map URL was not listed on the PSC outage-tracker page (it links the co-op's service-area page).",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "lauderdale",
+      "name": "Lauderdale County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Lauderdale Emergency Management Agency (LEMA)",
+        "url": "https://www.lauderdalecounty.org/county-departments/920-2/",
+        "phone": "601-482-9852",
+        "notes": "The official Lauderdale County LEMA page lists Odie Barrett, Director, the address 2525 14th Street, Meridian, MS 39301, and phone 601-482-9852, matching MEMA's contacts list. That page also points to www.lemaonline.com as the LEMA website."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Lauderdale Emergency Management Agency (LEMA)",
+          "url": "https://www.lauderdalecounty.org/county-departments/920-2/",
+          "verified": "2026-11-15",
+          "notes": "Official county source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "LEMA website",
+          "url": "https://lemaonline.com/",
+          "verified": "2026-11-15",
+          "notes": "Additional LEMA site linked from the official Lauderdale County department page."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Mississippi Power",
+          "outageMapUrl": "https://outagemap.mississippipower.com/external/default.html",
+          "territorySource": {
+            "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+            "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+            "verified": "2026-11-15"
+          },
+          "notes": "Mississippi Power's official 23-county service territory map includes this county. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "East Mississippi Electric Power Association",
+          "outageMapUrl": "https://www.emepa.com/outages-safety/storm-outage-center/",
+          "territorySource": {
+            "name": "EMEPA \u2014 Who We Are",
+            "url": "https://www.emepa.com/about-emepa/who-we-are/",
+            "verified": "2026-11-15"
+          },
+          "notes": "East Mississippi Electric Power Association states that it serves members in Winston, Kemper, Lauderdale, and Clarke counties, as well as portions of neighboring counties. This county is named on that official list.",
+          "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "warren",
+      "name": "Warren County",
+      "verified": "2026-11-15",
+      "emergencyManagement": {
+        "name": "Warren County Emergency Management Agency",
+        "url": "https://warrencountyms.gov/departments/emergency-management-agency/",
+        "phone": "601-636-1544",
+        "notes": "The official county Emergency Management Agency page lists John Elfer and office phone (601) 636-1544, matching MEMA's contacts list. The address on that page is 1009 Cherry Street, Vicksburg."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Warren County Emergency Management Agency",
+          "url": "https://warrencountyms.gov/departments/emergency-management-agency/",
+          "verified": "2026-11-15",
+          "notes": "Official county source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-15",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-15",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-15",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-15",
+          "notes": "Regional Red Cross page, including the Southwest Mississippi chapter in Flowood."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Entergy Mississippi",
+          "outageMapUrl": "https://www.etrviewoutage.com/map?state=MS",
+          "territorySource": {
+            "name": "Entergy Mississippi \u2014 About",
+            "url": "https://www.entergymississippi.com/about",
+            "verified": "2026-11-15"
+          },
+          "notes": "Entergy Mississippi lists this county among the 45 Mississippi counties it serves (as of Dec. 31, 2025, per the company's About page).",
+          "verified": "2026-11-15"
+        },
+        {
+          "name": "Yazoo Valley Electric Power Association",
+          "outageMapUrl": "https://www.yazoovalley.com/",
+          "territorySource": {
+            "name": "Electric Cooperatives of Mississippi \u2014 Yazoo Valley EPA",
+            "url": "https://www.ecm.coop/resource-dir/yazoo-valley/",
+            "verified": "2026-11-15"
+          },
+          "notes": "Electric Cooperatives of Mississippi, the official statewide association, lists this county among the counties served by Yazoo Valley Electric Power Association. The official co-op website is linked here for outage reporting and service information; a dedicated public outage-map URL was not listed on the PSC outage-tracker page (it links the co-op's service-area page).",
+          "verified": "2026-11-15"
+        }
+      ]
+    }
+  ]
+}

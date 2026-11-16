@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import { localStates } from '../../lib/local';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Local preparedness resources',
+  description: 'Official county emergency management, warming and cooling center sources, and power-outage maps, starting with Mississippi.',
+  url: new URL('/local/', Astro.site).href,
+};
+---
+<Base title="Local Preparedness Resources | ReadyGearHub" description="Official emergency management offices, warming and cooling center sources, and utility outage maps by state and county. No private businesses — government, utility, and Red Cross sources only." schema={schema}>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › Local resources</nav>
+      <h1>📍 Local resources</h1>
+      <p class="lead">When the ice hits, you need official local contacts, not a random list of businesses. These pages collect county emergency management offices, official sources for warming and cooling centers, and outage maps for the utilities that serve each county.</p>
+    </div>
+  </section>
+  <section class="wrap section prose">
+    <p>We only link to county or city government sites, state agencies such as MEMA, public utility commissions, electric utilities and cooperatives, and the American Red Cross. Shelter and warming or cooling locations are opened as needed — always check the official source during an event. In an emergency, call 911.</p>
+  </section>
+  <section class="wrap section">
+    <div class="grid">
+      {localStates.map((s) => (
+        <a class="card guide-card" href={`/local/${s.slug}/`}>
+          <h3>{s.name}</h3>
+          <p>{s.counties.length} count{s.counties.length === 1 ? 'y' : 'ies'} with official emergency management, shelter sources, and outage maps.</p>
+          <span class="count">View counties →</span>
+        </a>
+      ))}
+    </div>
+    {localStates.length === 0 && <p>State directories will appear here as they are added.</p>}
+  </section>
+</Base>

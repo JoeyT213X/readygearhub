@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import ItemCard from '../../components/ItemCard.astro';
+import Disclosure from '../../components/Disclosure.astro';
+import { kits, type Kit } from '../../lib/kits';
+import { getItems } from '../../lib/data';
+
+export function getStaticPaths() {
+  return kits.map((kit) => ({ params: { slug: kit.slug }, props: { kit } }));
+}
+
+const { kit } = Astro.props as { kit: Kit };
+const all = await getItems();
+const byId = new Map(all.map((i) => [i.id, i]));
+const rows = kit.items.map((ref) => {
+  const item = byId.get(ref.slug);
+  if (!item) throw new Error(`Kit ${kit.slug} references missing item "${ref.slug}". Use a slug from src/content/items/.`);
+  return { item, reason: ref.reason };
+});
+
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'ItemList', name: kit.name, description: kit.description, numberOfItems: rows.length,
+    itemListElement: rows.map((r, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/gear/${r.item.id}/`, Astro.site).href, name: r.item.data.name })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Storm kits', item: new URL('/kits/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: kit.name, item: new URL(`/kits/${kit.slug}/`, Astro.site).href },
+  ] },
+];
+---
+<Base title={`${kit.title} | ReadyGearHub`} description={kit.description} schema={schema}>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/kits/">Storm kits</a> › {kit.name}</nav>
+      <h1>{kit.name}</h1>
+      <p class="lead">{kit.intro}</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <Disclosure />
+    <ol class="kit-list">
+      {rows.map(({ item, reason }) => (
+        <li class="kit-item">
+          <ItemCard item={item} />
+          <p class="kit-reason"><strong>Why it's in this kit:</strong> {reason} <a href={`/gear/${item.id}/`}>View listing</a></p>
+        </li>
+      ))}
+    </ol>
+  </section>
+  <section class="wrap section">
+    <p class="fine">This kit is a starting point, not a complete household plan. Follow every manufacturer's safety instruction. For fuel-burning gear, use a working carbon monoxide alarm and never run a generator, grill, or camp stove indoors.</p>
+    <p><a href="/kits/">All storm kits</a> · <a href="/guides/">Guides</a></p>
+  </section>
+</Base>

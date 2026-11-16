@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import { kits } from '../../lib/kits';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Storm kits',
+  description: 'Curated winter storm and outage kits built from ReadyGearHub gear listings.',
+  url: new URL('/kits/', Astro.site).href,
+};
+---
+<Base title="Storm Kits: Car, Apartment, Elderly Parent & Homestead | ReadyGearHub" description="Four curated storm kits built only from ReadyGearHub listings: a winter car kit, an apartment outage kit, a kit for elderly parents, and a homestead ice-storm kit." schema={schema}>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › Storm kits</nav>
+      <h1>🧰 Storm kits</h1>
+      <p class="lead">Four starting lineups for a winter storm, assembled only from gear already listed in the directory. There are no prices here — use each product page to check the current price and the manufacturer's instructions.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <div class="grid">
+      {kits.map((k) => (
+        <a class="card guide-card" href={`/kits/${k.slug}/`}>
+          <h3>{k.name}</h3>
+          <p>{k.description}</p>
+          <span class="count">{k.items.length} items →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

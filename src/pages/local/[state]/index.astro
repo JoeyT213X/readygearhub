@@ -1,0 +1,55 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { localStates, type LocalState } from '../../../lib/local';
+
+export function getStaticPaths() {
+  return localStates.map((state) => ({ params: { state: state.slug }, props: { state } }));
+}
+
+const { state } = Astro.props as { state: LocalState };
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${state.name} local preparedness resources`, description: state.intro, url: new URL(`/local/${state.slug}/`, Astro.site).href },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Local resources', item: new URL('/local/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: state.name, item: new URL(`/local/${state.slug}/`, Astro.site).href },
+  ] },
+];
+---
+<Base title={`${state.name} Local Resources: EMA, Shelters, Outage Maps | ReadyGearHub`} description={`Official ${state.name} county emergency management offices, warming and cooling center sources, and utility outage maps. Government, utility, and Red Cross links only.`} schema={schema}>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/local/">Local resources</a> › {state.name}</nav>
+      <h1>{state.name}</h1>
+      <p class="lead">{state.intro}</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <h2>Counties</h2>
+    <div class="grid">
+      {state.counties.map((c) => (
+        <a class="card guide-card" href={`/local/${state.slug}/${c.slug}/`}>
+          <h3>{c.name}</h3>
+          <p>{c.emergencyManagement.name}</p>
+          <span class="count">County resources →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+  <section class="wrap section">
+    <h2>Statewide official sources</h2>
+    <ul class="link-list">
+      {state.statewideSources.map((s) => (
+        <li><a href={s.url} rel="noopener noreferrer">{s.name}</a>{s.notes ? ` — ${s.notes}` : ''}</li>
+      ))}
+    </ul>
+    <p class="fine">Sources last checked {state.verified}. Adding another state to this directory means adding one JSON file under <code>src/data/local/</code>.</p>
+  </section>
+  <section class="wrap section">
+    <div class="card featured-slot">
+      <h2>Featured local business</h2>
+      <p>Your business here. Local outfitters, hardware stores, and other preparedness businesses can request a listing or a featured placement.</p>
+      <a class="btn" href="/get-featured/">Get featured</a>
+    </div>
+  </section>
+</Base>

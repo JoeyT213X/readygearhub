@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "car-winter-kit",
+    "name": "Car Winter Kit",
+    "title": "Car Winter Kit: Gear to Keep in the Vehicle",
+    "description": "A curated winter car kit from ReadyGearHub listings: jump starting, ice traction, warmth, light, and a phone charge if you get stranded.",
+    "intro": "Cold weather is hard on batteries, and ice can leave you on the shoulder longer than you planned. This kit is built from listings already in our directory. Pack it in the trunk before the forecast turns, and keep the jump starter charged. If you are stranded, stay with the car unless help is clearly close by, keep the exhaust pipe clear of snow, and follow Ready.gov's winter-car guidance.",
+    "items": [
+      { "slug": "noco-boost-gb40", "reason": "A way to restart a dead 12-volt battery without waiting for another car, which is one of the most common winter roadside problems." },
+      { "slug": "snow-joe-telescoping-snow-broom", "reason": "Clears snow and ice from the whole vehicle, including the roof, so you can see and so a slab does not slide off onto the car behind you." },
+      { "slug": "kahtoola-microspikes", "reason": "Gives you traction on ice if you have to step out to put on chains, walk to a building, or check the exhaust pipe." },
+      { "slug": "sol-emergency-bivvy", "reason": "A compact backup layer of warmth if you are sitting in a cold cabin waiting for help." },
+      { "slug": "hothands-hand-warmers", "reason": "Single-use warmth for hands when the car is off and a rechargeable warmer cannot be charged. Follow the package instructions." },
+      { "slug": "black-diamond-spot-400", "reason": "Hands-free light for a tire change or for walking around the car after dark." },
+      { "slug": "anker-prime-power-bank-20k-220w", "reason": "Keeps a phone charged so you can call or text for help if the car is off for a long time." },
+      { "slug": "amk-mountain-series-hiker", "reason": "A compact first-aid kit for the kinds of cuts and scrapes that happen on the roadside." },
+      { "slug": "leatherman-wave-plus", "reason": "A multi-tool for small fixes without digging through a full toolbox." }
+    ]
+  },
+  {
+    "slug": "apartment-outage-kit",
+    "name": "Apartment Outage Kit",
+    "title": "Apartment Outage Kit: Stay Safe Without Fuel-Burning Heat",
+    "description": "A power-outage kit for apartments and small homes, built from ReadyGearHub listings: light, water, warmth, alerts, and battery power — with no generators, camp stoves, or indoor propane heat.",
+    "intro": "In an apartment, you usually cannot run a generator, and you should never use a camp stove, grill, charcoal, or an outdoor heater indoors. Carbon monoxide from a neighbor's generator or from unsafe indoor cooking is still a risk, so a working battery-powered CO alarm belongs in this kit. The goal is to keep one room livable with layers, stored water, battery light, and a modest power station for phones and medical devices — not to heat the whole building. See our guide on heating one room safely in an outage.",
+    "items": [
+      { "slug": "kidde-kn-cob-lp2", "reason": "A battery-powered carbon monoxide alarm that can keep working when household power is out. Never use a generator, grill, camp stove, or charcoal indoors or in a hallway or garage." },
+      { "slug": "midland-wr400", "reason": "A NOAA weather-alert radio with battery backup, so you can still hear official alerts if the power or cell network is down." },
+      { "slug": "jackery-explorer-300-v2", "reason": "A compact indoor-safe battery power station for phones, a router, lights, and similar loads. It is not for space heaters." },
+      { "slug": "biolite-alpenglow-500", "reason": "A rechargeable lantern for lighting a room, which is a safer option than candles during an outage." },
+      { "slug": "petzl-actik-core", "reason": "A headlamp that leaves both hands free, with a rechargeable pack and the option to run on AAA cells if you cannot recharge." },
+      { "slug": "teton-sports-celsius-regular-0", "reason": "A sleeping bag so you can stay warmer in an unheated apartment. Pair it with a pad so body heat is not lost to a cold floor." },
+      { "slug": "therm-a-rest-z-lite-sol", "reason": "A folding foam pad that insulates you from a cold floor, which is where a lot of heat is lost." },
+      { "slug": "3m-indoor-window-insulator-kit", "reason": "Window film that helps cut drafts on leaky panes so one closed-off room holds heat better. It does not replace a heat source." },
+      { "slug": "anker-prime-power-bank-20k-220w", "reason": "A compact charger for phones and many laptops when you want to reserve a larger power station for other loads." },
+      { "slug": "waterbob", "reason": "A bathtub bladder, if you have a tub, for storing drinking water before the storm while the tap still works." },
+      { "slug": "kidde-pro-210", "reason": "A fire extinguisher for the raised fire risk when people use candles or space heaters during outages. It is not a substitute for leaving those hazards unused." }
+    ]
+  },
+  {
+    "slug": "elderly-parent-kit",
+    "name": "Elderly Parent Kit",
+    "title": "Elderly Parent Kit: Winter Supplies for an Older Household",
+    "description": "A winter outage kit aimed at older parents and caregivers, built from ReadyGearHub listings: alerts, medications-adjacent power, warmth, traction, and carbon monoxide safety.",
+    "intro": "The CDC notes that people over 65 often make less body heat, and ice greatly raises the risk of a fall. This kit supports a stay-at-home plan when the power or heat is out, and it pairs with a written check-in routine, a medication list, and a backup plan for any medical device. Confirm device wattage with the clinician or supplier before you count on a power station. Do not add a generator, camp stove, or propane heater to an older adult's home unless someone who lives there can operate it exactly as the manufacturer instructs, outdoors or with proper ventilation, and with a working CO alarm. See our winter emergency kit guide for elderly parents.",
+    "items": [
+      { "slug": "midland-wr400", "reason": "A weather-alert radio that can sit by a chair or bed and still work on backup batteries if the TV and phone fail." },
+      { "slug": "kidde-kn-cob-lp2", "reason": "Battery-powered carbon monoxide protection on every level, especially near bedrooms, which matters if anyone nearby is using a generator or a fuel-burning heater." },
+      { "slug": "anker-prime-power-bank-20k-220w", "reason": "Keeps a phone charged and within reach so a parent can make a check-in call or call for help." },
+      { "slug": "jackery-explorer-300-v2", "reason": "A compact power station that can cover phones and some medical devices if the device's actual draw fits the unit. Confirm that with the device maker; do not guess." },
+      { "slug": "teton-sports-celsius-regular-0", "reason": "A sleeping bag and a warm layer if the house cannot be kept fully heated." },
+      { "slug": "therm-a-rest-z-lite-sol", "reason": "Insulation under a chair, cot, or sleeping bag so body heat is not lost to a cold floor." },
+      { "slug": "kahtoola-microspikes", "reason": "Traction if a parent must step onto an icy walk, with the default still being to stay inside until the walkway is treated." },
+      { "slug": "hothands-hand-warmers", "reason": "Backup hand warmth. Use only as the package directs; the manufacturer notes caution for people with reduced sensation to heat, including some older adults." },
+      { "slug": "petzl-actik-core", "reason": "Hands-free light for moving around a dark house, with AAA backup if the pack cannot be recharged." },
+      { "slug": "amk-mountain-series-hiker", "reason": "A compact first-aid kit to keep with the other supplies, in an easy-to-reach place." }
+    ]
+  },
+  {
+    "slug": "homestead-ice-storm-kit",
+    "name": "Homestead Ice Storm Kit",
+    "title": "Homestead Ice Storm Kit: Water, Power, and Outdoor Cooking",
+    "description": "A rural and homestead ice-storm kit from ReadyGearHub listings: stored water, backup power, food, and outdoor cooking, with carbon monoxide and ventilation warnings for fuel-burning gear.",
+    "intro": "A longer outage on a well or a long driveway is a different problem than a night in town. This kit emphasizes stored water (well pumps need electricity), a way to cook outdoors, food that does not need the fridge, and backup power. Fuel-burning items are included only with the same safety rules we use on the listings: generators and camp stoves stay outdoors; follow the manufacturer's ventilation instructions; keep generators at least 20 feet from the home as the CDC recommends; and use a working carbon monoxide alarm inside. Never heat the house with a stove or oven, and never bring an outdoor heater indoors.",
+    "items": [
+      { "slug": "kidde-kn-cob-lp2", "reason": "A battery-powered CO alarm is required safety gear if you will run a generator nearby or use any fuel-burning heater. Place it as the manufacturer instructs." },
+      { "slug": "honda-eu2200i", "reason": "A portable inverter generator for a fridge, lights, well-pump circuits (if correctly connected), or medical devices. Outdoor use only, at least 20 feet from windows, doors, and attached garages. Follow Honda's ventilation instructions and never backfeed a wall outlet." },
+      { "slug": "ecoflow-delta-3-plus", "reason": "An indoor-safe power station for essentials you do not want to run off a generator all night, such as lights, phones, and a router." },
+      { "slug": "waterbob", "reason": "A large drinking-water reserve you can fill in the tub before the ice takes the power and the well pump offline." },
+      { "slug": "reliance-aqua-tainer", "reason": "A food-safe, movable water container for drinking and cooking water, and for hauling water after the tap fails." },
+      { "slug": "grayl-geopress-24oz", "reason": "A press-style purifier if you have to treat stored or outdoor water, or if a boil-water notice is issued after pumps or treatment plants lose power." },
+      { "slug": "midland-wr400", "reason": "A weather-alert radio with battery backup for official winter-storm and outage information when cell service is unreliable." },
+      { "slug": "mountain-house-classic-bucket", "reason": "Shelf-stable meals you can prepare with boiled water, including on an outdoor camp stove." },
+      { "slug": "coleman-classic-propane-stove-2-burner", "reason": "A two-burner propane camp stove for cooking outdoors only. Never use it indoors, in a garage, in a barn with poor ventilation, or near open windows. Camp stoves produce carbon monoxide." },
+      { "slug": "mr-heater-portable-buddy", "reason": "An indoor-rated portable propane heater only if you follow every manufacturer ventilation, clearance, and fuel instruction and keep a working CO alarm in the room. It is not a reason to improvise with outdoor-rated heaters." },
+      { "slug": "3m-indoor-window-insulator-kit", "reason": "Helps a closed-off room hold heat by cutting window drafts when the furnace is off or you are heating only one space." },
+      { "slug": "snow-joe-shovelution-18", "reason": "A shovel for clearing a path to the generator, the woodpile, or the truck after an ice or snow event, without overexerting if you have heart concerns — follow your doctor's advice." },
+      { "slug": "kidde-pro-210", "reason": "A fire extinguisher for the added fire risk of generators, heaters, and outdoor cooking near the house." }
+    ]
+  }
+]
