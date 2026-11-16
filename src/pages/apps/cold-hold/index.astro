@@ -1,0 +1,103 @@
+---
+import Base from '../../../layouts/Base.astro';
+import '../../../styles/interactive.css';
+---
+<Base title="Cold Hold | ReadyGearHub" description="Log fridge and freezer temperatures during a power outage, with official FDA guidance. Works offline on this device.">
+  <link slot="head" rel="manifest" href="/apps/cold-hold/manifest.webmanifest" />
+  <link slot="head" rel="apple-touch-icon" href="/apps/cold-hold/icon-192.png" />
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/apps/">Apps</a> / Cold Hold</p>
+      <h1>Cold Hold</h1>
+      <p class="lead">Log fridge and freezer temperatures during a power outage. Official FDA figures stay on the same screen.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>This is a manual log, not a connected thermometer or alarm.</strong> It does not measure temperature, detect a power outage on its own, or decide whether food is safe to eat. Keep appliance thermometers in the fridge and freezer, and follow official guidance from the <a href="https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods">FDA</a> and <a href="https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage">FoodSafety.gov</a>.</p>
+      <p>This is not medical, legal, or emergency advice. If someone may have eaten unsafe food, contact a medical professional or poison control.</p>
+    </aside>
+    <div class="tool-actions no-print" style="margin-bottom:16px">
+      <button type="button" class="btn" id="install-app" hidden>Install Cold Hold</button>
+    </div>
+    <div class="tool-tabs" role="tablist" aria-label="Cold Hold sections">
+      <button type="button" role="tab" aria-selected="true" aria-controls="panel-status" id="tab-status">Status</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-log" id="tab-log">Log</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-guide" id="tab-guide">Guidance</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-setup" id="tab-setup">Setup</button>
+    </div>
+
+    <section id="panel-status" role="tabpanel" aria-labelledby="tab-status">
+      <div id="outage-bar" class="status-banner" hidden>
+        <p class="fine">Power-out log in progress</p>
+        <p class="app-stat" id="outage-clock">—</p>
+        <p class="fine" id="outage-started"></p>
+      </div>
+      <div class="tool-actions">
+        <button type="button" class="btn" id="start-outage">Power is out</button>
+        <button type="button" class="btn ghost" id="end-outage" hidden>Power is back</button>
+        <button type="button" class="btn ghost" id="log-temp">Log a temperature</button>
+      </div>
+      <div class="timer-grid" id="appliance-grid" style="margin-top:16px"></div>
+    </section>
+
+    <section id="panel-log" role="tabpanel" aria-labelledby="tab-log" hidden>
+      <h2>Temperature history</h2>
+      <ul class="log-list" id="reading-list"></ul>
+      <h2>Outage history</h2>
+      <ul class="log-list" id="outage-list"></ul>
+    </section>
+
+    <section id="panel-guide" role="tabpanel" aria-labelledby="tab-guide" hidden class="prose">
+      <h2>Official figures this app uses</h2>
+      <p>Quoted and summarized from U.S. FDA pages. Always read the original. These are general consumer tips, not a guarantee for your appliances or food.</p>
+      <blockquote>“The refrigerator will keep food cold for about 4 hours if it is unopened.”</blockquote>
+      <blockquote>“A full freezer will keep the temperature for approximately 48 hours (24 hours if it is half full) if the door remains closed.”</blockquote>
+      <blockquote>“If the freezer thermometer reads 40°F or below, the food is safe and may be refrozen.” If there was no thermometer, “If the food still contains ice crystals or is 40°F or below, it is safe to refreeze or cook.”</blockquote>
+      <blockquote>“Discard any refrigerated perishable food (such as meat, poultry, seafood, milk, eggs, or leftovers) that has been at refrigerator temperatures above 40°F for 4 hours or more.”</blockquote>
+      <p class="fine">
+        Source: <a href="https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods">FDA: Food and Water Safety During Power Outages and Floods</a>.
+        Related: <a href="https://www.fda.gov/food/food-safety-during-emergencies/power-outages-key-tips-consumers-about-food-safety">FDA key tips</a>
+        and <a href="https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage">FoodSafety.gov power-outage charts</a>.
+      </p>
+      <h2>Usual storage targets (when power is on)</h2>
+      <p>FDA: check that the freezer is at or below 0°F and the refrigerator is at or below 40°F, and use appliance thermometers so you can still judge safety if the power later goes out. (Same FDA outage page, “Before a Power Outage / Emergency…”)</p>
+      <h2>What this screen will not do</h2>
+      <p>It will not tell you to throw food away or to keep it. Appearance and odor are not reliable tests (FDA). A rising reading in this log only means you should look at official guidance and at the food and thermometers in front of you.</p>
+    </section>
+
+    <section id="panel-setup" role="tabpanel" aria-labelledby="tab-setup" hidden>
+      <form class="tool-toolbar cols-2" id="units-form">
+        <label>Units
+          <select name="units">
+            <option value="F">Fahrenheit</option>
+            <option value="C">Celsius</option>
+          </select>
+        </label>
+        <div class="tool-actions"><button type="submit" class="btn">Save units</button></div>
+      </form>
+      <p class="fine">Official FDA figures are in °F. Celsius values are conversions for display only (40°F = 4.4°C, 0°F = −17.8°C).</p>
+      <h2>Appliances</h2>
+      <ul class="log-list" id="appliance-list"></ul>
+      <div class="tool-actions">
+        <button type="button" class="btn ghost" id="add-appliance">Add appliance</button>
+      </div>
+      <article class="card" style="margin-top:16px">
+        <h2>Backup</h2>
+        <div class="tool-actions">
+          <button type="button" class="btn ghost" id="export-json">Download JSON</button>
+          <button type="button" class="btn ghost" id="import-json">Import JSON</button>
+        </div>
+        <input id="import-file" type="file" accept="application/json,.json" hidden />
+      </article>
+      <article class="card" id="pro-note">
+        <h2>Later: a possible Pro tier</h2>
+        <p>A later Pro tier could add more than two appliances, missed-log reminders during an outage, CSV export, and a printable report. No payments or Pro features are turned on now.</p>
+      </article>
+    </section>
+  </section>
+</Base>
+<script>
+  import { initColdHold } from '../../../scripts/cold-hold';
+  initColdHold();
+</script>

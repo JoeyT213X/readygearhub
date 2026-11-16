@@ -1,0 +1,130 @@
+---
+import Base from '../../../layouts/Base.astro';
+import '../../../styles/interactive.css';
+---
+<Base title="Runtime Reserve | ReadyGearHub" description="Log generator fuel and runtime, and see estimated hours remaining. Works offline on this device.">
+  <link slot="head" rel="manifest" href="/apps/runtime-reserve/manifest.webmanifest" />
+  <link slot="head" rel="apple-touch-icon" href="/apps/runtime-reserve/icon-192.png" />
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/apps/">Apps</a> / Runtime Reserve</p>
+      <h1>Runtime Reserve</h1>
+      <p class="lead">Log generator fuel and runtime, and see estimated hours remaining from the burn rate you enter.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>Estimates only.</strong> Actual fuel use changes with load, temperature, and condition. Never run a generator indoors, in a garage, or near open windows — carbon monoxide can kill. Follow your manual and official guidance:</p>
+      <p>
+        <a href="https://www.ready.gov/power-outages">Ready.gov: power outages and generators</a>,
+        <a href="https://www.cdc.gov/carbon-monoxide/factsheets/generator-safety-fact-sheet.html">CDC generator safety</a>,
+        <a href="https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center">CPSC carbon monoxide</a>.
+        This is not an emergency service and does not monitor your equipment.
+      </p>
+    </aside>
+    <div class="tool-actions no-print" style="margin-bottom:16px">
+      <button type="button" class="btn" id="install-app" hidden>Install Runtime Reserve</button>
+    </div>
+    <div class="tool-tabs" role="tablist" aria-label="Runtime Reserve sections">
+      <button type="button" role="tab" aria-selected="true" aria-controls="panel-status" id="tab-status">Status</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-runs" id="tab-runs">Runs</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-fuel" id="tab-fuel">Fuel</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-setup" id="tab-setup">Setup</button>
+    </div>
+
+    <section id="panel-status" role="tabpanel" aria-labelledby="tab-status">
+      <div class="results-panel">
+        <p class="fine">Estimated hours remaining</p>
+        <p class="app-stat" id="hours-left">—</p>
+        <p class="fine" id="fuel-meta"></p>
+        <div class="gauge" title="Tank level"><span id="tank-gauge" style="width:0%"></span></div>
+        <p class="fine" id="tank-meta"></p>
+      </div>
+      <div class="tool-actions" style="margin-top:16px">
+        <button type="button" class="btn" id="start-run">Start run</button>
+        <button type="button" class="btn ghost" id="stop-run" hidden>Stop run</button>
+        <button type="button" class="btn ghost" id="log-hours">Log hours</button>
+      </div>
+      <p class="status-line" id="run-live" hidden></p>
+      <article class="card" style="margin-top:16px">
+        <h2>Recent runs</h2>
+        <ul class="log-list" id="recent-runs"></ul>
+      </article>
+    </section>
+
+    <section id="panel-runs" role="tabpanel" aria-labelledby="tab-runs" hidden>
+      <ul class="log-list" id="all-runs"></ul>
+    </section>
+
+    <section id="panel-fuel" role="tabpanel" aria-labelledby="tab-fuel" hidden>
+      <form class="tool-toolbar cols-2" id="tank-form">
+        <label>Current tank level
+          <input type="number" name="level" min="0" step="0.01" required />
+        </label>
+        <div class="tool-actions"><button type="submit" class="btn">Save tank level</button></div>
+      </form>
+      <form class="tool-toolbar cols-2" id="fill-form">
+        <label>Fuel added
+          <input type="number" name="amount" min="0.01" step="0.01" required />
+        </label>
+        <label>Notes (optional)
+          <input type="text" name="notes" />
+        </label>
+        <div class="tool-actions"><button type="submit" class="btn">Save fill-up</button></div>
+      </form>
+      <article class="card">
+        <h2>Fill-up history</h2>
+        <ul class="log-list" id="fill-list"></ul>
+      </article>
+    </section>
+
+    <section id="panel-setup" role="tabpanel" aria-labelledby="tab-setup" hidden>
+      <form class="tool-toolbar cols-2" id="gen-form">
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Fuel type
+          <select name="fuelType">
+            <option value="gasoline">Gasoline</option>
+            <option value="propane">Propane</option>
+            <option value="diesel">Diesel</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>Tank capacity <input type="number" name="tank" min="0.1" step="0.01" required /></label>
+        <label>Load used for estimates
+          <select name="profile">
+            <option value="eco">Eco / light</option>
+            <option value="typical" selected>Typical</option>
+            <option value="heavy">Heavy load</option>
+          </select>
+        </label>
+        <label>Burn rate, eco <input type="number" name="burnEco" min="0.01" step="0.01" required /></label>
+        <label>Burn rate, typical <input type="number" name="burnTypical" min="0.01" step="0.01" required /></label>
+        <label>Burn rate, heavy <input type="number" name="burnHeavy" min="0.01" step="0.01" required /></label>
+        <label>Units
+          <select name="units">
+            <option value="gal">Gallons</option>
+            <option value="L">Liters</option>
+          </select>
+        </label>
+        <div class="tool-actions"><button type="submit" class="btn">Save generator</button></div>
+      </form>
+      <article class="card">
+        <h2>Backup</h2>
+        <p class="fine">JSON backup is stored as a file you download. Clearing site data on this browser deletes the log.</p>
+        <div class="tool-actions">
+          <button type="button" class="btn ghost" id="export-json">Download JSON</button>
+          <button type="button" class="btn ghost" id="import-json">Import JSON</button>
+        </div>
+        <input id="import-file" type="file" accept="application/json,.json" hidden />
+      </article>
+      <article class="card" id="pro-note">
+        <h2>Later: a possible Pro tier</h2>
+        <p>A later Pro tier could add extra generators, fuel-can inventory with stabilizer dates, maintenance reminders by hours, cost totals, and CSV export. No payments or Pro features are turned on now.</p>
+      </article>
+    </section>
+  </section>
+</Base>
+<script>
+  import { initRuntimeReserve } from '../../../scripts/runtime-reserve';
+  initRuntimeReserve();
+</script>

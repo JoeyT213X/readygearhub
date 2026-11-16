@@ -1,0 +1,102 @@
+---
+import Base from '../../../layouts/Base.astro';
+import '../../../styles/interactive.css';
+---
+<Base title="All Accounted | ReadyGearHub" description="A household check-in board for storms and outages. Works offline on this device. Share a text snapshot. This is not an emergency service.">
+  <link slot="head" rel="manifest" href="/apps/all-accounted/manifest.webmanifest" />
+  <link slot="head" rel="apple-touch-icon" href="/apps/all-accounted/icon-192.png" />
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/apps/">Apps</a> / All Accounted</p>
+      <h1>All Accounted</h1>
+      <p class="lead">A household check-in board for storms and outages. People at this device tap their name and set a status.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>This is not an emergency service.</strong> All Accounted does not call 911, send your location, or notify anyone on its own. If someone is in danger, call your local emergency number. This board lives on this device. A shared message is a snapshot, not a live feed. Real multi-device sync would need a backend later.</p>
+      <p>See also <a href="https://www.ready.gov/plan">Ready.gov: Make a Plan</a>.</p>
+    </aside>
+    <div class="tool-actions no-print" style="margin-bottom:16px">
+      <button type="button" class="btn" id="install-app" hidden>Install All Accounted</button>
+    </div>
+    <div class="tool-tabs" role="tablist" aria-label="All Accounted sections">
+      <button type="button" role="tab" aria-selected="true" aria-controls="panel-board" id="tab-board">Board</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-share" id="tab-share">Share</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-house" id="tab-house">Household</button>
+    </div>
+
+    <section id="panel-board" role="tabpanel" aria-labelledby="tab-board">
+      <div id="no-event">
+        <article class="card">
+          <h2>No check-in is open</h2>
+          <p>Open a check-in when a storm, outage, or other event starts. People (or whoever is at this device) tap their name and set a status.</p>
+          <button type="button" class="btn" id="open-event">Open a check-in</button>
+        </article>
+      </div>
+      <div id="event-board" hidden>
+        <div class="help-banner" id="help-banner" hidden role="alert">
+          <h2 id="help-title"></h2>
+          <p>This board does not call emergency services. If this is a real emergency, call your local emergency number now. Then update the board so others at this device can see what you know.</p>
+        </div>
+        <article class="card">
+          <p class="fine">Open check-in</p>
+          <h2 id="event-name"></h2>
+          <p id="event-meta"></p>
+          <p id="event-point"></p>
+          <div class="counts" id="counts"></div>
+          <div class="tool-actions">
+            <button type="button" class="btn ghost" id="goto-share">Share snapshot</button>
+            <button type="button" class="btn ghost" id="close-event">Close check-in</button>
+          </div>
+        </article>
+        <div class="person-grid" id="person-grid" style="margin-top:14px"></div>
+      </div>
+    </section>
+
+    <section id="panel-share" role="tabpanel" aria-labelledby="tab-share" hidden>
+      <article class="card">
+        <h2>Share a snapshot</h2>
+        <p class="fine">Copy this text into a message. It is a picture of the board at this moment. Other phones will not update automatically.</p>
+        <pre class="snapshot" id="snapshot"></pre>
+        <div class="tool-actions">
+          <button type="button" class="btn" id="copy-snapshot">Copy text</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="panel-house" role="tabpanel" aria-labelledby="tab-house" hidden>
+      <form class="tool-toolbar cols-2" id="house-form">
+        <label>Household name <input type="text" name="household" required /></label>
+        <div class="tool-actions"><button type="submit" class="btn">Save name</button></div>
+      </form>
+      <h2>People</h2>
+      <ul class="log-list" id="people-list"></ul>
+      <div class="tool-actions">
+        <button type="button" class="btn ghost" id="add-person">Add person or pet</button>
+      </div>
+      <h2>Meeting point</h2>
+      <form class="tool-toolbar cols-2" id="point-form">
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Address or place <input type="text" name="address" /></label>
+        <div class="tool-actions"><button type="submit" class="btn">Save meeting point</button></div>
+      </form>
+      <article class="card">
+        <h2>Backup</h2>
+        <div class="tool-actions">
+          <button type="button" class="btn ghost" id="export-json">Download JSON</button>
+          <button type="button" class="btn ghost" id="import-json">Import JSON</button>
+        </div>
+        <input id="import-file" type="file" accept="application/json,.json" hidden />
+      </article>
+      <article class="card" id="pro-note">
+        <h2>Later: a possible Pro tier</h2>
+        <p>A later Pro tier could add more than six people, backup meeting points, a contact list, check-in history, and a snapshot link. No payments or Pro features are turned on now. Live multi-device sync would still need a backend later.</p>
+      </article>
+    </section>
+  </section>
+</Base>
+<script>
+  import { initAllAccounted } from '../../../scripts/all-accounted';
+  initAllAccounted();
+</script>

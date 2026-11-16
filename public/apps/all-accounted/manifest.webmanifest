@@ -1,0 +1,14 @@
+{
+  "name": "ReadyGearHub All Accounted",
+  "short_name": "All Accounted",
+  "description": "A household check-in board for storms and outages. Works offline on this device. Share a text snapshot.",
+  "start_url": "/apps/all-accounted/",
+  "scope": "/apps/all-accounted/",
+  "display": "standalone",
+  "background_color": "#0f2a3d",
+  "theme_color": "#0f2a3d",
+  "icons": [
+    { "src": "/apps/all-accounted/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/apps/all-accounted/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

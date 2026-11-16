@@ -1,0 +1,14 @@
+{
+  "name": "ReadyGearHub Cold Hold",
+  "short_name": "Cold Hold",
+  "description": "Log fridge and freezer temperatures during a power outage, with official FDA guidance. Works offline.",
+  "start_url": "/apps/cold-hold/",
+  "scope": "/apps/cold-hold/",
+  "display": "standalone",
+  "background_color": "#0f2a3d",
+  "theme_color": "#0f2a3d",
+  "icons": [
+    { "src": "/apps/cold-hold/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/apps/cold-hold/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

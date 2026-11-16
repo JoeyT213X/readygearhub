@@ -18,7 +18,11 @@ export async function collectAssets(html, distDir) {
     if (clean.startsWith('/_astro/') && clean.endsWith('.js')) queue.push(clean);
   };
 
-  const htmlRe = /(?:src|href)="(\/(?:_astro|storm-tracker|favicon)[^"]+)"/g;
+  const scopes = apps.map((app) => app.scope.replace(/^\/|\/$/g, ''));
+  const htmlRe = new RegExp(
+    `(?:src|href)="(/((?:_astro|favicon|${scopes.join('|')})[^"]*))"`,
+    'g',
+  );
   let m;
   while ((m = htmlRe.exec(html))) add(m[1]);
 

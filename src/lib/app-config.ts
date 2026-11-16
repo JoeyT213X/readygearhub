@@ -1,15 +1,17 @@
 /**
- * Feature flags for ReadyGearHub interactive tools and Storm Tracker.
+ * Feature flags for ReadyGearHub interactive tools and PWAs.
  *
- * A Pro tier (multi-location alerts, alert history, custom thresholds)
- * can be added later by flipping these flags and implementing the
- * corresponding UI. No payments or entitlements are implemented.
+ * A Pro tier can be added later by flipping these flags and implementing
+ * the corresponding UI. No payments or entitlements are implemented.
  */
 export const APP_FEATURES = {
   proEnabled: false,
   multiLocation: false,
   alertHistory: false,
   customThresholds: false,
+  extraGenerators: false,
+  extraAppliances: false,
+  extraHousehold: false,
 } as const;
 
 export const ALERTS_REFRESH_MS = 5 * 60 * 1000;
@@ -19,4 +21,7 @@ export const STORAGE_KEYS = {
   outageTimer: 'rgh-tools.outage-timer',
   kitBuilder: 'rgh-tools.kit-builder',
   stormTracker: 'rgh-tools.storm-tracker',
+  runtimeReserve: 'rgh-apps.runtime-reserve',
+  coldHold: 'rgh-apps.cold-hold',
+  allAccounted: 'rgh-apps.all-accounted',
 } as const;

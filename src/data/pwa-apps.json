@@ -14,5 +14,53 @@
     ],
     "networkFirstHosts": ["api.weather.gov"],
     "cacheOnFetchPrefixes": ["/_astro/"]
+  },
+  {
+    "name": "runtime-reserve",
+    "cacheName": "rgh-runtime-reserve-v1",
+    "scope": "/apps/runtime-reserve/",
+    "swPath": "/apps/runtime-reserve/sw.js",
+    "htmlPath": "/apps/runtime-reserve/",
+    "precache": [
+      "/apps/runtime-reserve/",
+      "/apps/runtime-reserve/manifest.webmanifest",
+      "/apps/runtime-reserve/icon-192.png",
+      "/apps/runtime-reserve/icon-512.png",
+      "/favicon.svg"
+    ],
+    "networkFirstHosts": [],
+    "cacheOnFetchPrefixes": ["/_astro/"]
+  },
+  {
+    "name": "cold-hold",
+    "cacheName": "rgh-cold-hold-v1",
+    "scope": "/apps/cold-hold/",
+    "swPath": "/apps/cold-hold/sw.js",
+    "htmlPath": "/apps/cold-hold/",
+    "precache": [
+      "/apps/cold-hold/",
+      "/apps/cold-hold/manifest.webmanifest",
+      "/apps/cold-hold/icon-192.png",
+      "/apps/cold-hold/icon-512.png",
+      "/favicon.svg"
+    ],
+    "networkFirstHosts": [],
+    "cacheOnFetchPrefixes": ["/_astro/"]
+  },
+  {
+    "name": "all-accounted",
+    "cacheName": "rgh-all-accounted-v1",
+    "scope": "/apps/all-accounted/",
+    "swPath": "/apps/all-accounted/sw.js",
+    "htmlPath": "/apps/all-accounted/",
+    "precache": [
+      "/apps/all-accounted/",
+      "/apps/all-accounted/manifest.webmanifest",
+      "/apps/all-accounted/icon-192.png",
+      "/apps/all-accounted/icon-512.png",
+      "/favicon.svg"
+    ],
+    "networkFirstHosts": [],
+    "cacheOnFetchPrefixes": ["/_astro/"]
   }
 ]
