@@ -1,0 +1,65 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/interactive.css';
+---
+<Base title="Fridge & Freezer Outage Timer | ReadyGearHub" description="A live countdown based on FoodSafety.gov guidance: about 4 hours for an unopened refrigerator, about 48 hours for a full freezer, and about 24 hours if the freezer is half full.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Outage timer</p>
+      <h1>Fridge &amp; freezer outage timer</h1>
+      <p class="lead">A live countdown from when your power went out, using FoodSafety.gov guidance. This is not a replacement for a thermometer or official advice.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>When in doubt, throw it out.</strong> Per <a href="https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency">FoodSafety.gov</a>, never taste food to determine its safety. In an emergency, call 911.</p>
+    </aside>
+    <form class="tool-toolbar cols-3 no-print" onsubmit="return false;">
+      <label>When did the power go out?
+        <input type="datetime-local" id="outage-start" required />
+      </label>
+      <div class="tool-actions">
+        <button type="button" class="btn" id="outage-now">Power just went out</button>
+        <button type="button" class="btn ghost" id="outage-reset">Reset to now</button>
+      </div>
+    </form>
+    <p class="fine">The start time is saved in this browser only so you can come back to the countdown.</p>
+    <div class="timer-grid">
+      <article class="card timer-card" id="timer-fridge">
+        <h2>Refrigerator</h2>
+        <p>About 4 hours if it is unopened, per FoodSafety.gov.</p>
+        <p class="time">—</p>
+        <p class="timer-state fine"></p>
+      </article>
+      <article class="card timer-card" id="timer-freezer-full">
+        <h2>Full freezer</h2>
+        <p>About 48 hours if the door remains closed, per FoodSafety.gov.</p>
+        <p class="time">—</p>
+        <p class="timer-state fine"></p>
+      </article>
+      <article class="card timer-card" id="timer-freezer-half">
+        <h2>Half-full freezer</h2>
+        <p>About 24 hours if the door remains closed, per FoodSafety.gov.</p>
+        <p class="time">—</p>
+        <p class="timer-state fine"></p>
+      </article>
+    </div>
+    <div class="prose" style="margin-top:24px">
+      <h2>What FoodSafety.gov says</h2>
+      <ul>
+        <li>The refrigerator will keep food cold for about 4 hours if unopened.</li>
+        <li>A full freezer will keep the temperature for approximately 48 hours (24 hours if it is half full) if the door remains closed.</li>
+        <li>Keep refrigerator and freezer doors closed as much as possible.</li>
+        <li>If at any point food was above 40°F (4°C) for 2 hours or more (or 1 hour if temperatures are above 90°F / 32°C), discard it.</li>
+        <li>Discard perishable refrigerated food such as meat, poultry, fish, eggs, and leftovers after 4 hours without power.</li>
+        <li>Frozen food may be refrozen or cooked if it still contains ice crystals or is at 40°F (4°C) or below.</li>
+        <li>When in doubt, throw it out. Never taste food to determine its safety.</li>
+      </ul>
+      <p>Read the official pages: <a href="https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency">Food safety in a disaster or emergency</a> and the <a href="https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage">food safety during a power outage chart</a>. A related ReadyGearHub guide is <a href="/guides/winter-power-outage-checklist/">the winter power outage checklist</a>.</p>
+    </div>
+  </section>
+</Base>
+<script>
+  import { initOutageTimer } from '../../scripts/outage-timer';
+  initOutageTimer();
+</script>
