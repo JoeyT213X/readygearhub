@@ -1,0 +1,68 @@
+---
+import Base from '../../../layouts/Base.astro';
+import '../../../styles/interactive.css';
+---
+<Base title="Aid Dates | ReadyGearHub" description="Track first-aid and supply expiry dates. Works offline on this device. Not medical advice, and no dosing guidance.">
+  <link slot="head" rel="manifest" href="/apps/aid-dates/manifest.webmanifest" />
+  <link slot="head" rel="apple-touch-icon" href="/apps/aid-dates/icon-192.png" />
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/apps/">Apps</a> / Aid Dates</p>
+      <h1>Aid Dates</h1>
+      <p class="lead">Track expiry dates on first-aid and other supplies you already own. Soonest dates rise to the top.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>This is not medical advice.</strong> Aid Dates is only a date log for items you enter. It does not tell you what to stock, how to treat an injury, or what dose to take. Do not use it for dosing or treatment decisions. In an emergency, call 911 or follow instructions from a qualified clinician. This is not an emergency service or a first-aid guide.</p>
+    </aside>
+    <div class="tool-actions no-print" style="margin-bottom:16px">
+      <button type="button" class="btn" id="install-app" hidden>Install Aid Dates</button>
+    </div>
+    <div class="tool-tabs" role="tablist" aria-label="Aid Dates sections">
+      <button type="button" role="tab" aria-selected="true" aria-controls="panel-items" id="tab-items">Items</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-setup" id="tab-setup">Setup</button>
+    </div>
+
+    <section id="panel-items" role="tabpanel" aria-labelledby="tab-items">
+      <label class="fine" id="kit-switch-wrap" hidden>Kit or location
+        <select id="kit-switch"></select>
+      </label>
+      <form class="tool-toolbar cols-2" id="item-form">
+        <label>Item <input type="text" name="name" required /></label>
+        <label>Expiry date <input type="date" name="expires" required /></label>
+        <label>Notes (no doses) <input type="text" name="notes" /></label>
+        <div class="tool-actions"><button type="submit" class="btn">Add item</button></div>
+      </form>
+      <ul class="log-list" id="item-list"></ul>
+    </section>
+
+    <section id="panel-setup" role="tabpanel" aria-labelledby="tab-setup" hidden>
+      <h2>Kits or locations</h2>
+      <ul class="log-list" id="kit-list"></ul>
+      <div class="tool-actions">
+        <button type="button" class="btn ghost" id="add-kit" hidden>Add kit or location</button>
+      </div>
+      <div class="tool-actions" id="export-actions" hidden style="margin-top:16px">
+        <button type="button" class="btn" id="export-csv">Download CSV</button>
+        <button type="button" class="btn ghost" id="print-list">Print list</button>
+      </div>
+      <article class="card" style="margin-top:16px">
+        <h2>Backup</h2>
+        <div class="tool-actions">
+          <button type="button" class="btn ghost" id="export-json">Download JSON</button>
+          <button type="button" class="btn ghost" id="import-json">Import JSON</button>
+        </div>
+        <input id="import-file" type="file" accept="application/json,.json" hidden />
+      </article>
+      <article class="card" id="pro-note">
+        <h2>Later: a possible Pro tier</h2>
+        <p>A later Pro tier could add more than one kit or location, expiry reminders, CSV export, and a printable list. No payments or Pro features are turned on now. This app still would not give medical advice or dosing guidance.</p>
+      </article>
+    </section>
+  </section>
+</Base>
+<script>
+  import { initAidDates } from '../../../scripts/aid-dates';
+  initAidDates();
+</script>

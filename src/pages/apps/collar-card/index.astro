@@ -1,0 +1,87 @@
+---
+import Base from '../../../layouts/Base.astro';
+import '../../../styles/interactive.css';
+---
+<Base title="Collar Card | ReadyGearHub" description="A pet emergency profile and kit tracker with expiry dates. Works offline on this device. Not veterinary advice.">
+  <link slot="head" rel="manifest" href="/apps/collar-card/manifest.webmanifest" />
+  <link slot="head" rel="apple-touch-icon" href="/apps/collar-card/icon-192.png" />
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/apps/">Apps</a> / Collar Card</p>
+      <h1>Collar Card</h1>
+      <p class="lead">A pet emergency profile and kit tracker you keep on this device. You enter the details; this app does not give veterinary advice.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>This is not veterinary advice.</strong> Collar Card is a place to store information you already have from your veterinarian or product labels. It does not diagnose, treat, or recommend medications, doses, or vaccines. In an emergency, contact your veterinarian or a local emergency veterinary clinic. This is not an emergency service.</p>
+    </aside>
+    <div class="tool-actions no-print" style="margin-bottom:16px">
+      <button type="button" class="btn" id="install-app" hidden>Install Collar Card</button>
+    </div>
+    <div class="tool-tabs" role="tablist" aria-label="Collar Card sections">
+      <button type="button" role="tab" aria-selected="true" aria-controls="panel-profile" id="tab-profile">Profile</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-kit" id="tab-kit">Kit</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-card" id="tab-card">Card</button>
+    </div>
+
+    <section id="panel-profile" role="tabpanel" aria-labelledby="tab-profile">
+      <label class="fine" id="pet-switch-wrap" hidden>Pet
+        <select id="pet-switch"></select>
+      </label>
+      <form class="tool-toolbar cols-2" id="profile-form">
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Species <input type="text" name="species" placeholder="As you would describe them" /></label>
+        <label>Microchip number <input type="text" name="microchip" autocomplete="off" /></label>
+        <label>Veterinarian <input type="text" name="vetName" /></label>
+        <label>Vet phone <input type="tel" name="vetPhone" /></label>
+        <label>Medications (names only, no doses)
+          <input type="text" name="meds" placeholder="Names you were given, nothing more" />
+        </label>
+        <label>Feeding notes
+          <input type="text" name="feeding" placeholder="What you usually feed, in your own words" />
+        </label>
+        <label>Other notes <input type="text" name="notes" /></label>
+        <div class="tool-actions">
+          <button type="submit" class="btn">Save profile</button>
+          <button type="button" class="btn ghost" id="add-pet" hidden>Add another pet</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="panel-kit" role="tabpanel" aria-labelledby="tab-kit" hidden>
+      <p class="fine">Add kit items yourself and optionally an expiry date from the package. This list is not an official or recommended kit.</p>
+      <form class="tool-toolbar cols-2" id="kit-form">
+        <label>Item <input type="text" name="name" required /></label>
+        <label>Expiry date (optional) <input type="date" name="expires" /></label>
+        <div class="tool-actions"><button type="submit" class="btn">Add to kit</button></div>
+      </form>
+      <ul class="log-list" id="kit-list"></ul>
+    </section>
+
+    <section id="panel-card" role="tabpanel" aria-labelledby="tab-card" hidden>
+      <pre class="snapshot" id="card-text"></pre>
+      <div class="tool-actions" id="card-actions" hidden>
+        <button type="button" class="btn" id="copy-card">Copy card</button>
+        <button type="button" class="btn ghost" id="print-card">Print card</button>
+      </div>
+      <article class="card" id="pro-note">
+        <h2>Later: a possible Pro tier</h2>
+        <p>A later Pro tier could add more than one pet, a printable or shareable emergency card, and expiry reminders. No payments or Pro features are turned on now. Reminders would still depend on this page being open or reopened, and would not replace a calendar you already use.</p>
+      </article>
+    </section>
+
+    <article class="card" style="margin-top:16px">
+      <h2>Backup</h2>
+      <div class="tool-actions">
+        <button type="button" class="btn ghost" id="export-json">Download JSON</button>
+        <button type="button" class="btn ghost" id="import-json">Import JSON</button>
+      </div>
+      <input id="import-file" type="file" accept="application/json,.json" hidden />
+    </article>
+  </section>
+</Base>
+<script>
+  import { initCollarCard } from '../../../scripts/collar-card';
+  initCollarCard();
+</script>

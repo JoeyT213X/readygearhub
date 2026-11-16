@@ -12,8 +12,12 @@
       "/storm-tracker/icon-512.png",
       "/favicon.svg"
     ],
-    "networkFirstHosts": ["api.weather.gov"],
-    "cacheOnFetchPrefixes": ["/_astro/"]
+    "networkFirstHosts": [
+      "api.weather.gov"
+    ],
+    "cacheOnFetchPrefixes": [
+      "/_astro/"
+    ]
   },
   {
     "name": "runtime-reserve",
@@ -29,7 +33,9 @@
       "/favicon.svg"
     ],
     "networkFirstHosts": [],
-    "cacheOnFetchPrefixes": ["/_astro/"]
+    "cacheOnFetchPrefixes": [
+      "/_astro/"
+    ]
   },
   {
     "name": "cold-hold",
@@ -45,7 +51,9 @@
       "/favicon.svg"
     ],
     "networkFirstHosts": [],
-    "cacheOnFetchPrefixes": ["/_astro/"]
+    "cacheOnFetchPrefixes": [
+      "/_astro/"
+    ]
   },
   {
     "name": "all-accounted",
@@ -61,6 +69,44 @@
       "/favicon.svg"
     ],
     "networkFirstHosts": [],
-    "cacheOnFetchPrefixes": ["/_astro/"]
+    "cacheOnFetchPrefixes": [
+      "/_astro/"
+    ]
+  },
+  {
+    "name": "collar-card",
+    "cacheName": "rgh-collar-card-v1",
+    "scope": "/apps/collar-card/",
+    "swPath": "/apps/collar-card/sw.js",
+    "htmlPath": "/apps/collar-card/",
+    "precache": [
+      "/apps/collar-card/",
+      "/apps/collar-card/manifest.webmanifest",
+      "/apps/collar-card/icon-192.png",
+      "/apps/collar-card/icon-512.png",
+      "/favicon.svg"
+    ],
+    "networkFirstHosts": [],
+    "cacheOnFetchPrefixes": [
+      "/_astro/"
+    ]
+  },
+  {
+    "name": "aid-dates",
+    "cacheName": "rgh-aid-dates-v1",
+    "scope": "/apps/aid-dates/",
+    "swPath": "/apps/aid-dates/sw.js",
+    "htmlPath": "/apps/aid-dates/",
+    "precache": [
+      "/apps/aid-dates/",
+      "/apps/aid-dates/manifest.webmanifest",
+      "/apps/aid-dates/icon-192.png",
+      "/apps/aid-dates/icon-512.png",
+      "/favicon.svg"
+    ],
+    "networkFirstHosts": [],
+    "cacheOnFetchPrefixes": [
+      "/_astro/"
+    ]
   }
 ]
