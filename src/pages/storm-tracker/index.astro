@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
+import AlertFilters from '../../components/AlertFilters.astro';
 import '../../styles/interactive.css';
 import states from '../../data/us-states.json';
 import { DEFAULT_STATE } from '../../lib/app-config';
@@ -41,6 +42,7 @@ import { DEFAULT_STATE } from '../../lib/app-config';
         <div class="tool-actions">
           <button type="button" class="btn" id="refresh">Refresh alerts</button>
         </div>
+        <AlertFilters />
       </form>
       <p class="fine">Your county is saved on this device. Alerts refresh every 5 minutes while the app is open.</p>
       <div id="pro-locations" hidden class="card"><p>Pro multi-location tracking is not enabled yet.</p></div>

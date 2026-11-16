@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/interactive.css';
+import appliances from '../../data/appliances.json';
+---
+<Base title="Solar & Power Station Sizer | ReadyGearHub" description="Estimate panel watts and battery watt-hours from your daily appliance load and the peak sun hours you enter from NREL. Typical appliance watts from Honda Power Equipment.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Solar sizer</p>
+      <h1>Solar &amp; power-station sizer</h1>
+      <p class="lead">Turn a daily watt-hour load into a panel and battery size using peak sun hours you look up for your location. This is a planning estimate, not a site survey or a substitute for NREL PVWatts or a qualified installer.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>Disclaimer.</strong> This calculator does not invent sun-hour or loss numbers for your region. Enter peak sun hours from <a href="https://pvwatts.nrel.gov/">NREL PVWatts</a> or the <a href="https://www.nrel.gov/gis/solar-resource-maps">NREL solar resource maps</a>. Enter losses and usable battery fraction from your equipment manual or from a tool such as PVWatts — fields left at 0% losses or 100% usable do not apply a hidden default. Check your appliance label; wattages below are typical estimates from <a href={appliances.source.url}>Honda Power Equipment</a>. In an emergency, call 911.</p>
+    </aside>
+    <form class="tool-toolbar cols-2" onsubmit="return false;">
+      <label>Peak sun hours (from NREL for your location)
+        <input type="number" id="peak-sun-hours" min="0" step="0.1" placeholder="e.g. from PVWatts" />
+      </label>
+      <label>System losses, percent (your estimate)
+        <input type="number" id="system-losses" min="0" max="99" step="0.1" value="0" />
+      </label>
+      <label>Days of stored energy to plan for
+        <input type="number" id="backup-days" min="0" step="0.5" value="1" />
+      </label>
+      <label>Usable share of battery rating, percent (your estimate)
+        <input type="number" id="usable-pct" min="1" max="100" step="1" value="100" />
+      </label>
+      <label>Battery or power-station capacity you already have, watt-hours (optional)
+        <input type="number" id="capacity-wh" min="0" step="1" value="" placeholder="optional" />
+      </label>
+      <p class="fine" style="align-self:end;margin:0">Hours/day are how long you expect to run each load in a day. See <a href="/off-grid-power/">Off-Grid Power</a>, <a href="/power-outage-kits/">Power Outage Kits</a>, and <a href="/guides/how-to-pick-a-portable-power-station/">how to pick a portable power station</a>. The <a href="/tools/power-sizer/">generator &amp; power-station sizer</a> uses the same appliance list without solar inputs.</p>
+    </form>
+    <div id="sizer-results" class="results-panel" style="margin-bottom:20px"></div>
+    <div id="appliance-list"></div>
+  </section>
+</Base>
+<script>
+  import { initSolarSizer } from '../../scripts/solar-sizer';
+  import data from '../../data/appliances.json';
+  initSolarSizer(data);
+</script>

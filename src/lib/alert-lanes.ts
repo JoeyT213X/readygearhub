@@ -45,17 +45,26 @@ const SEVERE_FRAGMENTS = [
   'dust storm',
 ];
 
+const HURRICANE_FRAGMENTS = ['hurricane', 'typhoon', 'tropical storm', 'tropical depression', 'storm surge'];
+const TORNADO_FRAGMENTS = ['tornado'];
+const FLOOD_FRAGMENTS = ['flash flood', 'coastal flood', 'lakeshore flood', 'flood'];
+
 function includesAny(event: string, fragments: string[]) {
   const e = event.toLowerCase();
   return fragments.some((f) => e.includes(f));
 }
 
-export function classifyEvent(event: string): { winter: boolean; severe: boolean } {
+export type AlertCategory = { winter: boolean; severe: boolean; hurricane: boolean; tornado: boolean; flood: boolean };
+
+export function classifyEvent(event: string): AlertCategory {
   const e = (event || '').toLowerCase();
   // "freeze" alone should still catch "Freeze Warning/Watch" after the longer phrases above.
   const winter = includesAny(e, WINTER_FRAGMENTS) || /\bfreeze\b/.test(e) || /\bfrost\b/.test(e);
   const severe = includesAny(e, SEVERE_FRAGMENTS);
-  return { winter, severe };
+  const hurricane = includesAny(e, HURRICANE_FRAGMENTS);
+  const tornado = includesAny(e, TORNADO_FRAGMENTS);
+  const flood = includesAny(e, FLOOD_FRAGMENTS);
+  return { winter, severe, hurricane, tornado, flood };
 }
 
 function refs(slugs: string[]): LaneRef[] {

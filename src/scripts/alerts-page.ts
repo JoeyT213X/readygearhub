@@ -9,8 +9,10 @@ import {
 import {
   escapeHtml,
   fillCountySelect,
+  filterLabel,
   matchesAlertFilters,
   NWS_UNAVAILABLE_HTML,
+  readAlertFilters,
   renderAlertCard,
   sortAlerts,
 } from './alert-render';
@@ -18,8 +20,6 @@ import {
 export function initAlertsPage() {
   const stateEl = document.querySelector<HTMLSelectElement>('#alert-state');
   const countyEl = document.querySelector<HTMLSelectElement>('#alert-county');
-  const winterEl = document.querySelector<HTMLInputElement>('#filter-winter');
-  const severeEl = document.querySelector<HTMLInputElement>('#filter-severe');
   const locateBtn = document.querySelector<HTMLButtonElement>('#use-location');
   const results = document.querySelector<HTMLElement>('#alert-results');
   const status = document.querySelector<HTMLElement>('#alert-status');
@@ -41,21 +41,19 @@ export function initAlertsPage() {
   }
 
   function applyFilters(): NwsAlert[] {
-    return allAlerts.filter((a) => matchesAlertFilters(a, !!winterEl?.checked, !!severeEl?.checked));
+    return allAlerts.filter((a) => matchesAlertFilters(a, readAlertFilters()));
   }
 
   function paint() {
     const filtered = sortAlerts(applyFilters());
-    const winter = !!winterEl?.checked;
-    const severe = !!severeEl?.checked;
+    const filters = readAlertFilters();
     if (!allAlerts.length) {
       results.innerHTML = '';
       return;
     }
     if (!filtered.length) {
-      const filterText = winter && severe ? 'winter or severe ' : winter ? 'winter ' : severe ? 'severe ' : '';
       results.innerHTML = '';
-      setStatus(`No ${filterText}alerts for ${escapeHtml(placeLabel)} right now.`, 'empty');
+      setStatus(`No ${filterLabel(filters)}alerts for ${escapeHtml(placeLabel)} right now.`, 'empty');
       return;
     }
     setStatus(`Showing ${filtered.length} alert${filtered.length === 1 ? '' : 's'} for ${escapeHtml(placeLabel)}. Sorted by severity. Times are in your local time.`, '');
@@ -118,8 +116,9 @@ export function initAlertsPage() {
     locationMode = false;
     loadAlerts();
   });
-  winterEl?.addEventListener('change', paint);
-  severeEl?.addEventListener('change', paint);
+  document.querySelectorAll<HTMLInputElement>('#alert-controls input[type="checkbox"]').forEach((el) => {
+    el.addEventListener('change', paint);
+  });
 
   locateBtn?.addEventListener('click', () => {
     if (!navigator.geolocation) {

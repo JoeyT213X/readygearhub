@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/interactive.css';
+import { getItems, lanes } from '../../lib/data';
+import { KIT_LINES, WATER_MIN_DAYS, WATER_SOURCES } from '../../data/kit-guidance';
+
+const waterLine = KIT_LINES.find((l) => l.id === 'water');
+const items = await getItems();
+const relatedItems = (waterLine?.relatedItems || [])
+  .map((slug) => items.find((i) => i.id === slug))
+  .filter(Boolean);
+const relatedLanes = (waterLine?.relatedLanes || [])
+  .map((slug) => lanes.find((l) => l.slug === slug))
+  .filter(Boolean);
+---
+<Base title="Water Storage Calculator | ReadyGearHub" description="Calculate emergency water storage from Ready.gov guidance: one gallon per person per day for several days.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Water calculator</p>
+      <h1>Water storage calculator</h1>
+      <p class="lead">Ready.gov says to store at least one gallon of water per person per day for several days, for drinking and sanitation.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <form class="card form" id="water-form" onsubmit="return false;">
+      <div class="tool-toolbar cols-2" style="margin:0">
+        <label>People in the household
+          <input type="number" id="water-people" min="1" step="1" value="2" />
+        </label>
+        <label>Days to plan for (minimum {WATER_MIN_DAYS})
+          <input type="number" id="water-days" min={WATER_MIN_DAYS} step="1" value={WATER_MIN_DAYS} />
+        </label>
+      </div>
+    </form>
+    <div class="results-panel" style="margin:20px 0">
+      <p class="fine">Water to store</p>
+      <p class="stat" id="water-gallons">—</p>
+      <p class="fine" id="water-detail"></p>
+    </div>
+    <div class="prose">
+      <h2>What Ready.gov states</h2>
+      <ul>
+        <li>From <a href={WATER_SOURCES.water.url}>Ready.gov, Water</a> and <a href={WATER_SOURCES.kit.url}>Build A Kit</a>: “Store at least one gallon of water per person per day for several days, for drinking and sanitation.”</li>
+        <li>From <a href={WATER_SOURCES.areYouReady.url}>Ready.gov, Are You Ready? An In-Depth Guide to Citizen Preparedness</a>: “Keep one gallon of drinking water, per person, per day in your kit. Depending on where you live, you may wish to keep 3, 7, or even 14 days of water on hand.”</li>
+        <li>Ready.gov does not state a required “two-week supply for home.” The 14-day figure above is optional guidance in that guide, based on where you live. This calculator’s {WATER_MIN_DAYS}-day minimum is the shortest of those three figures.</li>
+        <li>Ready.gov also notes that children, nursing mothers, sick people, and very hot weather may require more water, and that in very hot temperatures water needs can double.</li>
+      </ul>
+      <p>For a full printable kit list that uses the same water math, use the <a href="/tools/kit-builder/">emergency kit builder</a>.</p>
+      {(relatedLanes.length > 0 || relatedItems.length > 0) && (
+        <>
+          <h2>Related listings already on this site</h2>
+          <div class="related-lanes">
+            {relatedLanes.map((l) => l && <a class="pill" href={`/${l.slug}/`}>{l.icon} {l.name}</a>)}
+            {relatedItems.map((i) => i && <a class="pill" href={`/gear/${i.id}/`}>{i.data.name}</a>)}
+          </div>
+        </>
+      )}
+    </div>
+  </section>
+</Base>
+<script>
+  import { waterGallons, waterPlanText } from '../../data/kit-guidance';
+
+  const peopleEl = document.querySelector<HTMLInputElement>('#water-people');
+  const daysEl = document.querySelector<HTMLInputElement>('#water-days');
+  const gallonsEl = document.querySelector('#water-gallons');
+  const detailEl = document.querySelector('#water-detail');
+
+  function paint() {
+    if (!peopleEl || !daysEl || !gallonsEl || !detailEl) return;
+    const plan = waterGallons(Number(peopleEl.value), Number(daysEl.value));
+    if (Number(peopleEl.value) !== plan.people) peopleEl.value = String(plan.people);
+    if (Number(daysEl.value) !== plan.days) daysEl.value = String(plan.days);
+    gallonsEl.textContent = `${plan.gallons.toLocaleString()} gallon${plan.gallons === 1 ? '' : 's'}`;
+    detailEl.textContent = waterPlanText(plan.people, plan.days);
+  }
+
+  peopleEl?.addEventListener('input', paint);
+  daysEl?.addEventListener('input', paint);
+  paint();
+</script>
