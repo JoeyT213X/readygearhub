@@ -1,37 +1,44 @@
 ---
 import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
+import { PRICES } from '../../lib/app-config';
 
 const apps = [
   {
     href: '/storm-tracker/',
     name: 'Storm Tracker',
     blurb: 'Official National Weather Service alerts for a saved county, plus an outage timer and a short Ready.gov checklist.',
+    pro: `${PRICES.stormTrackerMonthly} or ${PRICES.stormTrackerYearly}`,
   },
   {
     href: '/apps/runtime-reserve/',
     name: 'Runtime Reserve',
     blurb: 'Log generator fuel and runtime, and see estimated hours remaining from the numbers you enter. Works offline.',
+    pro: PRICES.runtimeReserve,
   },
   {
     href: '/apps/cold-hold/',
     name: 'Cold Hold',
     blurb: 'Log fridge and freezer temperatures during a power outage, with official FDA guidance on the same screen.',
+    pro: PRICES.coldHold,
   },
   {
     href: '/apps/all-accounted/',
     name: 'All Accounted',
     blurb: 'A household check-in board for storms and outages. Share a text snapshot. This is not an emergency service.',
+    pro: PRICES.allAccounted,
   },
   {
     href: '/apps/collar-card/',
     name: 'Collar Card',
     blurb: 'A pet emergency profile and kit tracker with expiry dates. Not veterinary advice.',
+    pro: PRICES.collarCard,
   },
   {
     href: '/apps/aid-dates/',
     name: 'Aid Dates',
     blurb: 'Track first-aid and supply expiry dates, soonest first. Not medical advice, and no dosing guidance.',
+    pro: PRICES.aidDates,
   },
 ];
 ---
@@ -49,11 +56,14 @@ const apps = [
         <a class="card tool-card" href={app.href}>
           <h2>{app.name}</h2>
           <p>{app.blurb}</p>
+          <p class="fine">Pro coming soon · {app.pro}</p>
           <p class="card-actions"><span class="btn small">Open</span></p>
         </a>
       ))}
     </div>
     <div class="prose" style="margin-top:32px">
+      <h2>Pro coming soon</h2>
+      <p>A ReadyGearHub Pro bundle for all apps is planned at {PRICES.bundleMonthly}, {PRICES.bundleYearly}, or {PRICES.bundleLifetime}. Individual Pro prices are shown on each card above. No payments are taken and no Pro features are turned on now.</p>
       <h2>Install an app on your phone or computer</h2>
       <ul>
         <li><strong>Chrome or Edge (Android or desktop):</strong> Open the app, then use the browser’s install or “Add to dock / home screen” control.</li>
@@ -61,8 +71,6 @@ const apps = [
         <li><strong>Firefox:</strong> Support varies; you can still bookmark the page and use it in the browser.</li>
       </ul>
       <p>Each app’s service worker is limited to that app’s path, so it does not intercept or cache the rest of ReadyGearHub.</p>
-      <h2>Later: a possible Pro tier</h2>
-      <p>These apps are built with feature flags so a later Pro tier could add extras such as more saved locations or extra generators. No payments or Pro features are turned on now.</p>
       <p>Related: <a href="/alerts/">Live weather alerts</a>, <a href="/tools/">the calculators</a>, and <a href="/widgets/">embeddable widgets</a>.</p>
     </div>
   </section>
