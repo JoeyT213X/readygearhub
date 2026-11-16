@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
+import '../../styles/interactive.css';
+---
+<Base title="Storm Tracker App | ReadyGearHub" description="Install ReadyGearHub Storm Tracker: official National Weather Service alerts for a saved county, an outage timer, and a short checklist that works offline.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / Apps</p>
+      <h1>Storm Tracker</h1>
+      <p class="lead">A small, installable app for official weather alerts, a fridge and freezer outage timer, and a short Ready.gov checklist. It works offline with the last alerts it successfully saved, including the time they were fetched.</p>
+    </div>
+  </section>
+  <section class="wrap section prose">
+    <AlertDisclaimer />
+    <p><a class="btn" href="/storm-tracker/">Open Storm Tracker</a></p>
+    <h2>What it does</h2>
+    <ul>
+      <li>Saves the state and county you choose on this device.</li>
+      <li>Loads live alerts from the official National Weather Service API (network first).</li>
+      <li>If you are offline, shows the last cached result with a timestamp — not a live official feed.</li>
+      <li>Includes the FoodSafety.gov fridge and freezer outage timer and a short Ready.gov checklist.</li>
+    </ul>
+    <h2>Install it on your phone or computer</h2>
+    <ul>
+      <li><strong>Chrome or Edge (Android or desktop):</strong> Open <a href="/storm-tracker/">Storm Tracker</a>, then use the browser’s install or “Add to dock / home screen” control. Look in the address bar or the browser menu.</li>
+      <li><strong>Safari on iPhone or iPad:</strong> Open Storm Tracker, tap the Share button, then “Add to Home Screen.”</li>
+      <li><strong>Firefox:</strong> Support varies by device; you can still bookmark the app page and use it in the browser.</li>
+    </ul>
+    <p>The app’s service worker is limited to <code>/storm-tracker/</code>, so it does not intercept or cache the rest of ReadyGearHub.</p>
+    <h2>Later: a possible Pro tier</h2>
+    <p>The app is built with a feature-flag so a later Pro tier could add multiple saved locations, alert history, and custom notification thresholds. No payments or Pro features are turned on now.</p>
+    <p>Related tools on the site: <a href="/alerts/">Live weather alerts</a>, <a href="/tools/">the calculators</a>, and <a href="/widgets/">embeddable widgets</a>.</p>
+  </section>
+</Base>
