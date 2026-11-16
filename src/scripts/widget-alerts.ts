@@ -1,9 +1,5 @@
-import { fetchActiveAlerts, fetchCounties, formatLocalTime, officialAlertHref, type NwsAlert } from './nws';
-import { SEVERITY_ORDER } from '../lib/alert-lanes';
-
-function escapeHtml(s: string) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+import { fetchActiveAlerts, fetchCounties } from './nws';
+import { escapeHtml, NWS_UNAVAILABLE_HTML, renderAlertCompactLine, sortAlerts } from './alert-render';
 
 export function initAlertsWidget() {
   const root = document.querySelector<HTMLElement>('#widget-alerts');
@@ -20,24 +16,20 @@ export function initAlertsWidget() {
         const county = counties.find((c) => c.id === zone);
         place = county ? `${county.name} County, ${county.state}` : zone;
       }
-      const alerts = (await fetchActiveAlerts({ state, zone: zone || undefined }))
-        .sort((a, b) => (SEVERITY_ORDER[a.severity] ?? 9) - (SEVERITY_ORDER[b.severity] ?? 9));
+      const alerts = sortAlerts(await fetchActiveAlerts({ state, zone: zone || undefined }));
       render(root, place, alerts);
     } catch {
       root.innerHTML = `<div class="widget-card">
         <h1>Live weather alerts</h1>
-        <p>We couldn’t load alerts. Check <a href="https://www.weather.gov/" target="_blank" rel="noopener">weather.gov</a>. In an emergency, call 911.</p>
+        <p>${NWS_UNAVAILABLE_HTML}</p>
         <p class="widget-powered">Powered by <a href="https://readygearhub.com/" target="_top">ReadyGearHub</a></p>
       </div>`;
     }
   })();
 }
 
-function render(root: HTMLElement, place: string, alerts: NwsAlert[]) {
-  const items = alerts.slice(0, 5).map((a) => {
-    const href = officialAlertHref(a);
-    return `<li><strong>${escapeHtml(a.event)}</strong> · ${escapeHtml(a.severity)} · expires ${escapeHtml(formatLocalTime(a.expires))} · <a href="${escapeHtml(href)}" target="_blank" rel="noopener">NWS</a></li>`;
-  }).join('');
+function render(root: HTMLElement, place: string, alerts: Awaited<ReturnType<typeof fetchActiveAlerts>>) {
+  const items = alerts.slice(0, 5).map(renderAlertCompactLine).join('');
   const more = alerts.length > 5 ? `<p class="fine">${alerts.length - 5} more — see weather.gov or ReadyGearHub.</p>` : '';
   const body = alerts.length
     ? `<p>${alerts.length} active alert${alerts.length === 1 ? '' : 's'} for ${escapeHtml(place)}.</p><ul>${items}</ul>${more}`
