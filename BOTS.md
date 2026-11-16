@@ -87,7 +87,7 @@ Each lane is a JSON object. Adding one creates a new page at `/<slug>/`, a nav e
 
 - `season` controls which home-page section a lane appears in. Lanes matching `currentSeason` show under "Winter lanes."
 - `active: false` hides a lane. Don't leave items pointing at a hidden lane, because the build will error.
-- Don't use a slug that collides with an existing page: `gear`, `guides`, `about`, `contact`, `privacy`, `affiliate-disclosure`, `get-featured`, `thanks`.
+- Don't use a slug that collides with an existing page: `gear`, `guides`, `about`, `contact`, `privacy`, `affiliate-disclosure`, `get-featured`, `thanks`, `alerts`, `tools`, `apps`, `storm-tracker`, `widgets`.
 
 ## Season switch (`src/data/site.json`)
 

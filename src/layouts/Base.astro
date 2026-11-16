@@ -45,6 +45,9 @@ const year = new Date().getFullYear();
         <summary aria-label="Menu">☰ Menu</summary>
         <nav aria-label="Main">
           <ul>
+            <li><a href="/alerts/">⚠️ Alerts</a></li>
+            <li><a href="/tools/">🛠️ Tools</a></li>
+            <li><a href="/apps/">📱 Apps</a></li>
             {navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.icon} {l.name}</a></li>)}
             <li><a href="/guides/">📘 Guides</a></li>
             <li><a href="/get-featured/">⭐ Get featured</a></li>
@@ -68,6 +71,10 @@ const year = new Date().getFullYear();
       <div>
         <p class="foot-h">ReadyGearHub</p>
         <ul>
+          <li><a href="/alerts/">Live weather alerts</a></li>
+          <li><a href="/tools/">Tools</a></li>
+          <li><a href="/apps/">Apps</a></li>
+          <li><a href="/widgets/">Widgets</a></li>
           <li><a href="/guides/">Guides</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/get-featured/">List your business</a></li>
