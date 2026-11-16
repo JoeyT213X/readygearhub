@@ -2,7 +2,7 @@
 name: "GRAYL 24oz GeoPress Purifier"
 brand: "GRAYL"
 lane: storm-hurricane-prep
-alsoIn: ["winter-storm-prep", "power-outage-kits"]
+alsoIn: ["winter-storm-prep", "power-outage-kits", "emergency-water"]
 tags: ["water purifier", "water bottle", "emergency water"]
 description: "A 24-ounce press-style water purifier bottle from GRAYL. The manufacturer says it purifies 24 ounces in as little as 8 to 10 seconds and is designed to remove waterborne pathogens as well as many chemicals, pesticides, heavy metals, and microplastics."
 uses:

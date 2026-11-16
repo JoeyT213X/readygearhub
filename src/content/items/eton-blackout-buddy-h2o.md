@@ -2,7 +2,7 @@
 name: "Eton American Red Cross Blackout Buddy H2O Water-Activated Flashlight"
 brand: "Eton"
 lane: power-outage-kits
-alsoIn: ["storm-hurricane-prep"]
+alsoIn: ["storm-hurricane-prep", "emergency-water"]
 tags: ["emergency light", "water activated", "stash light"]
 description: "A small water-activated emergency light designed to sit in a drawer or kit and switch on when you need it."
 uses:

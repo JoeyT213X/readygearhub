@@ -2,7 +2,7 @@
 name: "LifeStraw Straw Emergency Pack"
 brand: "LifeStraw"
 lane: storm-hurricane-prep
-alsoIn: []
+alsoIn: ["emergency-water"]
 tags: ["water filter", "family", "emergency pack"]
 description: "A multi-pack of LifeStraw personal filters so every family member can have one in their kit."
 uses:

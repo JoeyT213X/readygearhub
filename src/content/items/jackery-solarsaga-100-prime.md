@@ -2,7 +2,7 @@
 name: "Jackery SolarSaga 100 Prime Solar Panel"
 brand: "Jackery"
 lane: off-grid-power
-alsoIn: ["storm-hurricane-prep"]
+alsoIn: ["storm-hurricane-prep", "home-backup-power-solar"]
 tags: ["solar panel", "portable"]
 description: "A portable solar panel from Jackery designed to pair with Jackery power stations."
 uses:

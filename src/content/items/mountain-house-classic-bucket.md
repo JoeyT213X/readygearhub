@@ -2,7 +2,7 @@
 name: "Mountain House Classic Meal Assortment Bucket"
 brand: "Mountain House"
 lane: winter-storm-prep
-alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
+alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose", "emergency-water"]
 tags: ["freeze-dried food", "long shelf life", "food storage"]
 description: "An assortment of freeze-dried meals in a stackable bucket. Just add hot water, so it's a simple way to build a stored-food backup."
 uses:

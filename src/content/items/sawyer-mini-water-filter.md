@@ -2,7 +2,7 @@
 name: "Sawyer MINI Water Filtration System"
 brand: "Sawyer"
 lane: storm-hurricane-prep
-alsoIn: ["winter-storm-prep", "power-outage-kits"]
+alsoIn: ["winter-storm-prep", "power-outage-kits", "emergency-water"]
 tags: ["water filter", "emergency water", "hiking"]
 description: "A compact 0.1 micron hollow-fiber water filter from Sawyer, designed to screw onto a pouch or a standard disposable bottle, or to be used with the included straw."
 uses:

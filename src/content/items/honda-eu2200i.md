@@ -2,7 +2,7 @@
 name: "Honda EU2200i Super Quiet Inverter Generator"
 brand: "Honda"
 lane: off-grid-power
-alsoIn: ["power-outage-kits", "winter-storm-prep"]
+alsoIn: ["power-outage-kits", "winter-storm-prep", "home-backup-power-solar"]
 tags: ["inverter generator", "backup power", "carbon monoxide safety"]
 description: "A 2200-watt, 120V Honda inverter generator with the company's CO-MINDER carbon monoxide detection system. Honda lists a dry weight of 47.4 pounds and a run time of 3.2 to 8.1 hours on a 0.95-gallon tank, depending on load."
 uses:

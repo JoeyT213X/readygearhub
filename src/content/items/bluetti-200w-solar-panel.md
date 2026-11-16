@@ -2,7 +2,7 @@
 name: "BLUETTI 200W Portable Solar Panel"
 brand: "BLUETTI"
 lane: off-grid-power
-alsoIn: ["storm-hurricane-prep"]
+alsoIn: ["storm-hurricane-prep", "home-backup-power-solar"]
 tags: ["solar panel", "portable"]
 description: "A portable folding solar panel from BLUETTI for recharging power stations."
 uses:

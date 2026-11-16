@@ -2,7 +2,7 @@
 name: "waterBOB Emergency Drinking Water Storage"
 brand: "waterBOB"
 lane: winter-storm-prep
-alsoIn: ["storm-hurricane-prep", "power-outage-kits"]
+alsoIn: ["storm-hurricane-prep", "power-outage-kits", "emergency-water"]
 tags: ["water storage", "bathtub bladder", "emergency water"]
 description: "A one-time-use bathtub bladder that the manufacturer says holds up to 100 gallons of fresh drinking water and includes a siphon pump for dispensing."
 uses:
