@@ -6,7 +6,7 @@
  * the app and a contact. Browsers do not allow pages to set the User-Agent
  * header; the browser's own User-Agent is sent instead, which is acceptable
  * for this fully client-side tool. Server-side or curl checks should send:
- *   User-Agent: ReadyGearHub (https://readygearhub.com; info@omegaucosolutions.com)
+ *   User-Agent: ReadyGearHub (https://readygearhub.com; info@readygearhub.com)
  */
 export const NWS_BASE = 'https://api.weather.gov';
 
