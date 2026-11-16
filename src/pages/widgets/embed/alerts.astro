@@ -1,0 +1,10 @@
+---
+import Embed from '../../../layouts/Embed.astro';
+---
+<Embed title="Live weather alerts widget | ReadyGearHub" description="Embeddable National Weather Service alerts badge from ReadyGearHub.">
+  <div id="widget-alerts"><div class="widget-card"><p>Loading official alerts…</p></div></div>
+</Embed>
+<script>
+  import { initAlertsWidget } from '../../../scripts/widget-alerts';
+  initAlertsWidget();
+</script>
