@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+---
+<Base title="Contact ReadyGearHub" description="Contact ReadyGearHub with questions, corrections, product suggestions, or partnership requests.">
+  <section class="page-hero"><div class="wrap"><h1>Contact us</h1><p class="lead">Questions, corrections, or a product we should look at? We read everything.</p></div></section>
+  <section class="wrap section narrow">
+    <p>Email: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></p>
+    <form name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field" class="form card">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <label>Name<input name="name" autocomplete="name" required /></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+      <label>Topic
+        <select name="topic"><option>General question</option><option>Correction</option><option>Product suggestion</option><option>Partnership</option></select>
+      </label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </section>
+</Base>

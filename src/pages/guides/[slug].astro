@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import ItemCard from '../../components/ItemCard.astro';
+import Disclosure from '../../components/Disclosure.astro';
+import { render } from 'astro:content';
+import { getGuides, getItems, laneBySlug, site } from '../../lib/data';
+export async function getStaticPaths() {
+  const guides = await getGuides();
+  return guides.map((g) => ({ params: { slug: g.id }, props: { guide: g } }));
+}
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+const d = guide.data;
+const all = await getItems();
+const related = d.relatedItems.map((id) => all.find((i) => i.id === id)).filter(Boolean) as typeof all;
+const lane = d.lane ? laneBySlug(d.lane) : undefined;
+const url = new URL(`/guides/${guide.id}/`, Astro.site).href;
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, datePublished: d.published.toISOString(), dateModified: (d.updated ?? d.published).toISOString(),
+    mainEntityOfPage: url, author: { '@type': 'Organization', name: site.name, url: site.url }, publisher: { '@type': 'Organization', name: site.name, url: site.url } },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: new URL('/guides/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: d.title, item: url } ] },
+];
+const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+---
+<Base title={`${d.title} | ReadyGearHub`} description={d.description} schema={schema} type="article">
+  <section class="page-hero"><div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/guides/">Guides</a></nav>
+    <h1>{d.title}</h1>
+    <p class="fine light">Updated {fmt(d.updated ?? d.published)}{lane && <> · <a href={`/${lane.slug}/`}>{lane.name}</a></>}</p>
+  </div></section>
+  <article class="wrap section prose guide"><Content /></article>
+  {related.length > 0 && (
+    <section class="wrap section">
+      <h2>Gear mentioned in this guide</h2>
+      <Disclosure />
+      <div class="grid">{related.map((r) => <ItemCard item={r} />)}</div>
+    </section>
+  )}
+</Base>

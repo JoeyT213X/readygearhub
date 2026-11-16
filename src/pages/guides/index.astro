@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getGuides } from '../../lib/data';
+const guides = await getGuides();
+const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'ReadyGearHub guides',
+  itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/guides/${g.id}/`, Astro.site).href, name: g.data.title })) };
+---
+<Base title="Preparedness Guides & Checklists | ReadyGearHub" description="Plain-English preparedness guides: winter power outage checklist, what to keep in your car for winter, how to pick a portable power station, and more." schema={schema}>
+  <section class="page-hero"><div class="wrap"><nav class="crumbs"><a href="/">Home</a> › Guides</nav><h1>📘 Guides</h1><p class="lead">Checklists and buying help written to be useful, not to upsell.</p></div></section>
+  <section class="wrap section"><div class="grid">
+    {guides.map((g) => (<a class="card guide-card" href={`/guides/${g.id}/`}><h3>{g.data.title}</h3><p>{g.data.description}</p><span class="count">Read guide →</span></a>))}
+  </div></section>
+</Base>

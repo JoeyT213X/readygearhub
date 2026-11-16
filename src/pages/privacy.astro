@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+---
+<Base title="Privacy Policy | ReadyGearHub" description="ReadyGearHub's privacy policy: what information we collect, how we use it, and your choices.">
+  <section class="page-hero"><div class="wrap"><h1>Privacy Policy</h1><p class="fine light">Last updated November 15, 2026</p></div></section>
+  <section class="wrap section prose">
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Information you send us.</strong> If you use our contact or listing request forms, we receive what you type, such as your name, email, business name, and message. We use it only to reply and to evaluate listing requests.</li>
+      <li><strong>Basic technical data.</strong> Our hosting provider (Netlify) may log standard information like IP address, browser type, and pages requested, for security and performance.</li>
+      <li><strong>Analytics.</strong> We may use privacy-friendly analytics to understand which pages are popular. If we add analytics that use cookies, we'll update this page.</li>
+    </ul>
+    <h2>Affiliate links and third-party sites</h2>
+    <p>When you click a link to a brand or retailer, you leave ReadyGearHub. That site may use cookies to track the referral, including for affiliate commissions. Their privacy policies apply on their sites.</p>
+    <h2>What we don't do</h2>
+    <p>We don't sell your personal information. We don't send marketing emails unless you've asked to receive them.</p>
+    <h2>Your choices</h2>
+    <p>You can ask us to access or delete information you've sent us by emailing <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
+    <h2>Children</h2>
+    <p>ReadyGearHub is not directed to children under 13, and we don't knowingly collect their information.</p>
+    <h2>Changes</h2>
+    <p>We may update this policy. The date at the top shows when it last changed.</p>
+  </section>
+</Base>

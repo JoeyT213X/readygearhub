@@ -1,0 +1,21 @@
+---
+name: "Anker SOLIX C1000X Portable Power Station"
+brand: "Anker SOLIX"
+lane: power-outage-kits
+alsoIn: ["off-grid-power"]
+tags: ["power station", "battery backup", "fast charging"]
+description: "A mid-size portable power station from Anker SOLIX with an LFP battery and fast AC recharging, according to Anker."
+uses:
+  - "Outage backup for phones, lights, and small appliances"
+  - "Recharge quickly between outages"
+  - "Camping and RV power"
+  - "Remote work power"
+officialUrl: "https://www.ankersolix.com/products/a1761111"
+affiliateUrl: ""
+rank: 0
+featured: false
+season: ["winter", "hurricane", "all-season"]
+verified: "2026-11-15"
+---
+
+Anker lists this model at 1,056Wh capacity with LFP (lithium iron phosphate) battery chemistry. Check the official page for current specs and price.

@@ -1,0 +1,21 @@
+---
+import { laneBySlug, outUrl, isAffiliate, type Item } from '../lib/data';
+interface Props { item: Item; showRank?: boolean }
+const { item, showRank = false } = Astro.props;
+const lane = laneBySlug(item.data.lane);
+---
+<article class="card item-card">
+  <div class="card-top">
+    {lane && <a class="pill" href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a>}
+    {showRank && item.data.rank > 0 && <span class="pill hot">🔥 Trending</span>}
+    {item.data.featured && <span class="pill feat">⭐ Featured</span>}
+  </div>
+  <h3><a href={`/gear/${item.id}/`}>{item.data.name}</a></h3>
+  <p class="brand">{item.data.brand}</p>
+  <p>{item.data.description}</p>
+  {item.data.uses.length > 0 && <p class="uses"><strong>Also good for:</strong> {item.data.uses.slice(0, 2).join(' · ')}</p>}
+  <div class="card-actions">
+    <a class="btn small ghost" href={`/gear/${item.id}/`}>Details</a>
+    <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'}>Check current price ↗</a>
+  </div>
+</article>

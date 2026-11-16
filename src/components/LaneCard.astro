@@ -1,0 +1,10 @@
+---
+interface Props { lane: { slug: string; name: string; icon: string; summary: string }; count: number }
+const { lane, count } = Astro.props;
+---
+<a class="card lane-card" href={`/${lane.slug}/`}>
+  <span class="lane-icon" aria-hidden="true">{lane.icon}</span>
+  <h3>{lane.name}</h3>
+  <p>{lane.summary}</p>
+  <span class="count">{count} picks →</span>
+</a>

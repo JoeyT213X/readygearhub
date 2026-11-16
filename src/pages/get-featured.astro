@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import lanes from '../data/lanes.json';
+---
+<Base title="List Your Business or Get Featured | ReadyGearHub" description="Outfitters, makers, and gear brands: request a free listing or register interest in a featured spot on ReadyGearHub's preparedness gear directory.">
+  <section class="page-hero"><div class="wrap"><h1>⭐ List your business or get featured</h1><p class="lead">Outfitters, local hardware and farm stores, makers, and gear brands: tell us about your products. Basic listings are free for gear that fits our lanes.</p></div></section>
+  <section class="wrap section narrow">
+    <div class="prose">
+      <h2>How it works</h2>
+      <ol>
+        <li>Fill out the interest form below. No payment is collected.</li>
+        <li>We review fit and quality. We list gear from businesses with real product pages.</li>
+        <li>When featured placements open, we'll reach out first to businesses on this list with options.</li>
+      </ol>
+      <p class="fine">Featured placements are always labeled "Featured." We never publish fake reviews or ratings.</p>
+    </div>
+    <form name="get-featured" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field" class="form card">
+      <input type="hidden" name="form-name" value="get-featured" />
+      <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <label>Your name<input name="name" autocomplete="name" required /></label>
+      <label>Business name<input name="business" autocomplete="organization" required /></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+      <label>Website<input type="url" name="website" placeholder="https://" /></label>
+      <label>Best-fit lane
+        <select name="lane">{lanes.map((l) => <option value={l.slug}>{l.name}</option>)}<option value="other">Other / new niche</option></select>
+      </label>
+      <label>I'm interested in
+        <select name="interest"><option>Free basic listing</option><option>Featured placement (when available)</option><option>Both</option></select>
+      </label>
+      <label>Tell us about your products<textarea name="message" rows="5"></textarea></label>
+      <button class="btn" type="submit">Send interest form</button>
+    </form>
+  </section>
+</Base>

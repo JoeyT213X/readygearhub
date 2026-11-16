@@ -1,0 +1,71 @@
+---
+import Base from '../layouts/Base.astro';
+import ItemCard from '../components/ItemCard.astro';
+import LaneCard from '../components/LaneCard.astro';
+import Disclosure from '../components/Disclosure.astro';
+import { lanes, getItems, getTrending, getGuides, site } from '../lib/data';
+const items = await getItems();
+const trending = await getTrending(9);
+const guides = await getGuides();
+const counts = Object.fromEntries(lanes.map((l) => [l.slug, items.filter((i) => i.data.lane === l.slug || i.data.alsoIn.includes(l.slug)).length]));
+const seasonal = lanes.filter((l) => l.season.includes(site.currentSeason));
+const others = lanes.filter((l) => !l.season.includes(site.currentSeason));
+const schema = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: 'Trending preparedness gear',
+  itemListElement: trending.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/gear/${t.id}/`, Astro.site).href, name: t.data.name })),
+};
+const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url };
+---
+<Base title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, sorted into simple lanes and updated as trends shift." schema={[webSite, schema]}>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">❄️ {site.hero.eyebrow}</p>
+      <h1>{site.hero.title}</h1>
+      <p class="lead">{site.hero.text}</p>
+      <div class="hero-actions">
+        <a class="btn" href={site.hero.ctaHref}>{site.hero.ctaLabel}</a>
+        <a class="btn ghost light" href="/guides/winter-power-outage-checklist/">Winter outage checklist</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>🔥 Trending now</h2>
+      <p>What people are reaching for this week, re-ranked as weather and demand shift.</p>
+    </div>
+    <div class="grid">{trending.map((item) => <ItemCard item={item} showRank />)}</div>
+    <Disclosure />
+  </section>
+
+  <section class="wrap section">
+    <div class="section-head"><h2>Winter lanes</h2><p>Start here for this season.</p></div>
+    <div class="grid lanes">{seasonal.map((l) => <LaneCard lane={l} count={counts[l.slug]} />)}</div>
+  </section>
+
+  {others.length > 0 && (
+    <section class="wrap section">
+      <div class="section-head"><h2>Year-round & next season</h2><p>Off-grid power, homestead tools, and hurricane season prep.</p></div>
+      <div class="grid lanes">{others.map((l) => <LaneCard lane={l} count={counts[l.slug]} />)}</div>
+    </section>
+  )}
+
+  <section class="wrap section">
+    <div class="section-head"><h2>📘 Guides</h2><p>Plain-English checklists and buying help.</p></div>
+    <div class="grid">
+      {guides.map((g) => (
+        <a class="card guide-card" href={`/guides/${g.id}/`}>
+          <h3>{g.data.title}</h3>
+          <p>{g.data.description}</p>
+          <span class="count">Read guide →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap section cta-band">
+    <h2>Make or sell great gear?</h2>
+    <p>Local outfitters, makers, and brands can request a listing or a featured spot.</p>
+    <a class="btn" href="/get-featured/">List your business</a>
+  </section>
+</Base>

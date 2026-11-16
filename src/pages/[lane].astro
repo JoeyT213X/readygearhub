@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import ItemCard from '../components/ItemCard.astro';
+import Disclosure from '../components/Disclosure.astro';
+import { lanes, getItemsForLane, getGuides } from '../lib/data';
+export async function getStaticPaths() {
+  return lanes.map((lane) => ({ params: { lane: lane.slug }, props: { lane } }));
+}
+const { lane } = Astro.props;
+const items = await getItemsForLane(lane.slug);
+const guides = (await getGuides()).filter((g) => g.data.lane === lane.slug);
+const others = lanes.filter((l) => l.slug !== lane.slug);
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: lane.title, description: lane.summary, url: new URL(`/${lane.slug}/`, Astro.site).href },
+  { '@context': 'https://schema.org', '@type': 'ItemList', name: lane.name, numberOfItems: items.length,
+    itemListElement: items.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/gear/${t.id}/`, Astro.site).href, name: t.data.name })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: lane.name, item: new URL(`/${lane.slug}/`, Astro.site).href } ] },
+];
+---
+<Base title={`${lane.title} | ReadyGearHub`} description={`${lane.summary} ${items.length} hand-picked items from trusted brands.`} schema={schema}>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › {lane.name}</nav>
+      <h1>{lane.icon} {lane.name}</h1>
+      <p class="lead">{lane.intro}</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <Disclosure />
+    {items.length ? <div class="grid">{items.map((item) => <ItemCard item={item} showRank />)}</div> : <p>New picks coming soon.</p>}
+  </section>
+  {guides.length > 0 && (
+    <section class="wrap section">
+      <h2>Related guides</h2>
+      <ul class="link-list">{guides.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}</ul>
+    </section>
+  )}
+  <section class="wrap section">
+    <h2>Explore other lanes</h2>
+    <ul class="chip-list">{others.map((l) => <li><a class="pill" href={`/${l.slug}/`}>{l.icon} {l.name}</a></li>)}</ul>
+  </section>
+</Base>

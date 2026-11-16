@@ -1,0 +1,83 @@
+---
+import '../styles/global.css';
+import site from '../data/site.json';
+import lanesRaw from '../data/lanes.json';
+interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean }
+const { title, description, image = '/og-default.png', type = 'website', schema, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL(image, Astro.site).href;
+const navLanes = [...lanesRaw].filter((l) => l.active !== false).sort((a, b) => a.order - b.order);
+const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const orgSchema = { '@context': 'https://schema.org', '@type': 'Organization', name: site.name, url: site.url, logo: new URL('/favicon.svg', Astro.site).href, email: site.contactEmail };
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex" />}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <meta name="theme-color" content="#0f2a3d" />
+  <meta property="og:site_name" content={site.name} />
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="/" class="logo" aria-label={`${site.name} home`}><span class="logo-mark">⛺</span> Ready<span>Gear</span>Hub</a>
+      <details class="nav-menu">
+        <summary aria-label="Menu">☰ Menu</summary>
+        <nav aria-label="Main">
+          <ul>
+            {navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.icon} {l.name}</a></li>)}
+            <li><a href="/guides/">📘 Guides</a></li>
+            <li><a href="/get-featured/">⭐ Get featured</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+  <main id="main"><slot /></main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="logo small">Ready<span>Gear</span>Hub</p>
+        <p>{site.tagline}</p>
+        <p class="fine">As an affiliate, ReadyGearHub may earn a commission from qualifying purchases at no extra cost to you. <a href="/affiliate-disclosure/">Learn more</a>.</p>
+      </div>
+      <div>
+        <p class="foot-h">Lanes</p>
+        <ul>{navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.name}</a></li>)}</ul>
+      </div>
+      <div>
+        <p class="foot-h">ReadyGearHub</p>
+        <ul>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/get-featured/">List your business</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="wrap fine">© {year} {site.name}. Product names and trademarks belong to their owners. Always follow manufacturer safety instructions.</p>
+  </footer>
+</body>
+</html>
