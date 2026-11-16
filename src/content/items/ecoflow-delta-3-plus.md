@@ -2,7 +2,7 @@
 name: "EcoFlow DELTA 3 Plus Portable Power Station"
 brand: "EcoFlow"
 lane: power-outage-kits
-alsoIn: ["off-grid-power", "storm-hurricane-prep"]
+alsoIn: ["off-grid-power", "storm-hurricane-prep", "home-backup-power-solar"]
 tags: ["power station", "battery backup", "solar ready"]
 description: "A portable power station from EcoFlow that can recharge from wall power, solar, a car, or a generator, for running essentials during an outage."
 uses:

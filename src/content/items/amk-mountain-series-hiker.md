@@ -2,7 +2,7 @@
 name: "Adventure Medical Kits Mountain Series Hiker Medical Kit"
 brand: "Adventure Medical Kits"
 lane: vehicle-emergency-kits
-alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
+alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose", "first-aid-medical-prep"]
 tags: ["first aid", "medical kit"]
 description: "An organized first aid kit from Adventure Medical Kits, sized for a pack, vehicle, or home emergency shelf."
 uses:

@@ -30,5 +30,17 @@
   { "slug": "homestead-multi-purpose", "name": "Homestead & Multi-Purpose", "icon": "🛠️", "season": ["all-season"], "order": 8, "active": true,
     "title": "Homestead & Multi-Purpose Tools: Multi-Tools, Cast Iron & More",
     "summary": "Tools that earn their keep every day and in emergencies: multi-tools, cast iron, and versatile cookers.",
-    "intro": "The best preparedness gear is gear you use every week. Multi-tools, cast iron, and portable cookers work just as well for chores and cookouts as they do when the power is out." }
+    "intro": "The best preparedness gear is gear you use every week. Multi-tools, cast iron, and portable cookers work just as well for chores and cookouts as they do when the power is out." },
+  { "slug": "home-backup-power-solar", "name": "Home Backup Power & Solar", "icon": "⚡", "season": ["hurricane", "winter", "all-season"], "order": 9, "active": true,
+    "title": "Inverter Generator vs Power Station & Solar for Outages",
+    "summary": "Compare inverter generators, portable power stations, and solar panels for hurricane and everyday power outages.",
+    "intro": "When the lights go out, the usual choice is an inverter generator, a portable power station, or both, with solar to recharge when the grid is down. This lane gathers real generators, battery stations, and portable panels for home backup. Gas generators must be used only outdoors, more than 20 feet from windows, doors, and vents, with a working carbon monoxide alarm inside, following the manufacturer's ventilation instructions." },
+  { "slug": "emergency-water", "name": "Water & Food Storage", "icon": "💧", "season": ["hurricane", "winter", "all-season"], "order": 10, "active": true,
+    "title": "Emergency Water Filters vs Straw Filters, Plus Food Storage",
+    "summary": "Emergency water filters versus straw filters, plus water storage and hurricane food that needs no refrigeration.",
+    "intro": "Before a hurricane or long outage, store enough water and shelf-stable food, and have a way to treat more water if a boil-water notice lasts. This lane covers storage containers, gravity and bottle filters, straw-style filters, and long-shelf meals. Ready.gov recommends storing at least one gallon of water per person per day for several days, for drinking and sanitation." },
+  { "slug": "first-aid-medical-prep", "name": "First Aid & Medical Prep", "icon": "🩹", "season": ["hurricane", "winter", "all-season"], "order": 11, "active": true,
+    "title": "Family First Aid Kits for Storms, Outages, and Medical Prep",
+    "summary": "What to put in a family first aid kit for storms, plus medical-prep supplies to keep at home during an outage.",
+    "intro": "A storm kit should include a family first aid kit and the personal medical items your household actually uses. This lane collects organized kits, bleeding-control and splint supplies, and an AED option. This is not medical advice. Follow Red Cross, CDC, or manufacturer guidance, get first-aid training, and call 911 in an emergency." }
 ]

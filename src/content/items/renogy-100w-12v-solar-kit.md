@@ -2,7 +2,7 @@
 name: "Renogy 100W 12V Solar Panel Kit"
 brand: "Renogy"
 lane: off-grid-power
-alsoIn: ["homestead-multi-purpose"]
+alsoIn: ["homestead-multi-purpose", "home-backup-power-solar"]
 tags: ["solar panel", "12v", "diy solar"]
 description: "A starter 12-volt solar kit from Renogy for charging batteries on sheds, RVs, boats, and small off-grid builds."
 uses:

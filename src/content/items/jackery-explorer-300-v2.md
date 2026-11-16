@@ -2,7 +2,7 @@
 name: "Jackery Explorer 300 v2 Portable Power Station"
 brand: "Jackery"
 lane: power-outage-kits
-alsoIn: ["off-grid-power", "winter-storm-prep"]
+alsoIn: ["off-grid-power", "winter-storm-prep", "home-backup-power-solar"]
 tags: ["power station", "lifepo4", "usb charging"]
 description: "A compact LiFePO4 portable power station from Jackery. The manufacturer lists a 288Wh capacity, 300W rated output (600W surge), and a weight of 8.1 pounds."
 uses:

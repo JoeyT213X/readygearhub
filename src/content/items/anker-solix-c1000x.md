@@ -2,7 +2,7 @@
 name: "Anker SOLIX C1000X Portable Power Station"
 brand: "Anker SOLIX"
 lane: power-outage-kits
-alsoIn: ["off-grid-power"]
+alsoIn: ["off-grid-power", "home-backup-power-solar"]
 tags: ["power station", "battery backup", "fast charging"]
 description: "A mid-size portable power station from Anker SOLIX with an LFP battery and fast AC recharging, according to Anker."
 uses:

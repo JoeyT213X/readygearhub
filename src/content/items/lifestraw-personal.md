@@ -2,7 +2,7 @@
 name: "LifeStraw Personal Water Filter Straw"
 brand: "LifeStraw"
 lane: storm-hurricane-prep
-alsoIn: ["winter-storm-prep", "homestead-multi-purpose"]
+alsoIn: ["winter-storm-prep", "homestead-multi-purpose", "emergency-water"]
 tags: ["water filter", "boil water notice", "compact"]
 description: "A lightweight personal straw-style water filter for drinking directly from a water source."
 uses:

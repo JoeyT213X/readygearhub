@@ -2,7 +2,7 @@
 name: "ReadyWise 4-Week Emergency Food Supply"
 brand: "ReadyWise"
 lane: winter-storm-prep
-alsoIn: ["storm-hurricane-prep"]
+alsoIn: ["storm-hurricane-prep", "emergency-water"]
 tags: ["emergency food", "long shelf life", "food storage"]
 description: "A packaged emergency food supply designed to cover about four weeks for one person, built for long-term storage."
 uses:

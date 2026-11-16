@@ -2,7 +2,7 @@
 name: "Goal Zero Nomad 100+ Foldable Solar Panel"
 brand: "Goal Zero"
 lane: off-grid-power
-alsoIn: ["power-outage-kits", "storm-hurricane-prep"]
+alsoIn: ["power-outage-kits", "storm-hurricane-prep", "home-backup-power-solar"]
 tags: ["solar panel", "foldable"]
 description: "A foldable portable solar panel from Goal Zero for recharging power stations off the grid."
 uses:

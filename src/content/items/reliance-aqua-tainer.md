@@ -2,7 +2,7 @@
 name: "Reliance Aqua-Tainer Water Container"
 brand: "Reliance Outdoors"
 lane: winter-storm-prep
-alsoIn: ["storm-hurricane-prep", "power-outage-kits"]
+alsoIn: ["storm-hurricane-prep", "power-outage-kits", "emergency-water"]
 tags: ["water container", "water storage", "camping"]
 description: "A stackable, food-safe water container from Reliance Outdoors, officially offered in 4-gallon (15 L) and 7-gallon (26 L) sizes, with a hideaway spigot and a molded carry handle."
 uses:
