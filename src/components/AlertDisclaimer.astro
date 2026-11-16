@@ -1,0 +1,10 @@
+---
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+---
+<aside class="alert-disclaimer" role="note">
+  <p><strong>Not a replacement for official alerts.</strong> Data from the National Weather Service. In an emergency, call 911.</p>
+  {!compact && (
+    <p>Official alerts come first. Enable <a href="https://www.weather.gov/nwr/">NOAA Weather Radio</a> and Wireless Emergency Alerts on your phone, and follow instructions from local officials.</p>
+  )}
+</aside>
