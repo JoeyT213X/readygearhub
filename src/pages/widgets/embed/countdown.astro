@@ -1,0 +1,10 @@
+---
+import Embed from '../../../layouts/Embed.astro';
+---
+<Embed title="Storm prep countdown widget | ReadyGearHub" description="Embeddable storm-prep countdown from ReadyGearHub.">
+  <div id="widget-countdown"></div>
+</Embed>
+<script>
+  import { initCountdownWidget } from '../../../scripts/widget-countdown';
+  initCountdownWidget();
+</script>

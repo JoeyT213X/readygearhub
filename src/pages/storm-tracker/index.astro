@@ -1,0 +1,93 @@
+---
+import Base from '../../layouts/Base.astro';
+import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
+import '../../styles/interactive.css';
+import states from '../../data/us-states.json';
+import { DEFAULT_STATE } from '../../lib/app-config';
+---
+<Base title="Storm Tracker | ReadyGearHub" description="Official National Weather Service alerts for a saved county, plus a fridge outage timer and a short Ready.gov checklist. Works offline with the last cached alerts.">
+  <link slot="head" rel="manifest" href="/storm-tracker/manifest.webmanifest" />
+  <link slot="head" rel="apple-touch-icon" href="/storm-tracker/icon-192.png" />
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/apps/">Apps</a> / Storm Tracker</p>
+      <h1>Storm Tracker</h1>
+      <p class="lead">Official National Weather Service alerts for a saved county, plus the outage timer and a short Ready.gov checklist. When you are offline, the app shows the last alerts it saved, with the time they were fetched.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <AlertDisclaimer />
+    <div class="tool-actions no-print" style="margin-bottom:16px">
+      <button type="button" class="btn" id="install-app" hidden>Install Storm Tracker</button>
+    </div>
+    <div class="tool-tabs" role="tablist" aria-label="Storm Tracker sections">
+      <button type="button" role="tab" aria-selected="true" aria-controls="panel-alerts" id="tab-alerts">Alerts</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-timer" id="tab-timer">Outage timer</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="panel-kit" id="tab-kit">Checklist</button>
+    </div>
+
+    <section id="panel-alerts" role="tabpanel" aria-labelledby="tab-alerts">
+      <form class="tool-toolbar cols-3" onsubmit="return false;">
+        <label>State
+          <select id="alert-state" autocomplete="address-level1">
+            {states.map((s) => <option value={s.code} selected={s.code === DEFAULT_STATE}>{s.name}</option>)}
+          </select>
+        </label>
+        <label>County
+          <select id="alert-county" autocomplete="address-level2">
+            <option value="">All counties</option>
+          </select>
+        </label>
+        <div class="tool-actions">
+          <button type="button" class="btn" id="refresh">Refresh alerts</button>
+        </div>
+      </form>
+      <p class="fine">Your county is saved on this device. Alerts refresh every 5 minutes while the app is open.</p>
+      <div id="pro-locations" hidden class="card"><p>Pro multi-location tracking is not enabled yet.</p></div>
+      <div id="offline-flag" class="offline-flag" hidden></div>
+      <div id="alert-status" class="status-banner loading">Loading official alerts from the National Weather Service…</div>
+      <div id="alert-results" class="alert-list" aria-live="polite"></div>
+    </section>
+
+    <section id="panel-timer" role="tabpanel" aria-labelledby="tab-timer" hidden>
+      <p>Countdown windows come from <a href="https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency">FoodSafety.gov</a>: about 4 hours for an unopened refrigerator, about 48 hours for a full freezer, and about 24 hours if the freezer is half full. When in doubt, throw it out.</p>
+      <form class="tool-toolbar cols-3 no-print" onsubmit="return false;">
+        <label>When did the power go out?
+          <input type="datetime-local" id="outage-start" required />
+        </label>
+        <div class="tool-actions">
+          <button type="button" class="btn" id="outage-now">Power just went out</button>
+        </div>
+      </form>
+      <div class="timer-grid">
+        <article class="card timer-card" id="timer-fridge">
+          <h2>Refrigerator</h2>
+          <p>About 4 hours if it is unopened, per FoodSafety.gov.</p>
+          <p class="time">—</p>
+          <p class="timer-state fine"></p>
+        </article>
+        <article class="card timer-card" id="timer-freezer-full">
+          <h2>Full freezer</h2>
+          <p>About 48 hours if the door remains closed, per FoodSafety.gov.</p>
+          <p class="time">—</p>
+          <p class="timer-state fine"></p>
+        </article>
+        <article class="card timer-card" id="timer-freezer-half">
+          <h2>Half-full freezer</h2>
+          <p>About 24 hours if the door remains closed, per FoodSafety.gov.</p>
+          <p class="time">—</p>
+          <p class="timer-state fine"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="panel-kit" role="tabpanel" aria-labelledby="tab-kit" hidden>
+      <p>A short offline checklist from <a href="https://www.ready.gov/kit">Ready.gov, Build A Kit</a>. For a custom printable list, use the <a href="/tools/kit-builder/">kit builder</a> when you have a connection.</p>
+      <ul class="checklist" id="checklist"></ul>
+    </section>
+  </section>
+</Base>
+<script>
+  import { initStormTracker } from '../../scripts/storm-tracker';
+  initStormTracker();
+</script>

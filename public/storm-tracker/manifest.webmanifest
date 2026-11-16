@@ -1,0 +1,14 @@
+{
+  "name": "ReadyGearHub Storm Tracker",
+  "short_name": "Storm Tracker",
+  "description": "Official National Weather Service alerts for a saved county, plus an outage timer and a short offline checklist.",
+  "start_url": "/storm-tracker/",
+  "scope": "/storm-tracker/",
+  "display": "standalone",
+  "background_color": "#0f2a3d",
+  "theme_color": "#0f2a3d",
+  "icons": [
+    { "src": "/storm-tracker/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/storm-tracker/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

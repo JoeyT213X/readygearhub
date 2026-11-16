@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/interactive.css';
+import appliances from '../../data/appliances.json';
+---
+<Base title="Generator & Power Station Sizer | ReadyGearHub" description="Estimate running and starting watts for typical household appliances, and how long a power station might last. Typical wattages from Honda Power Equipment. Check your appliance label.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Power sizer</p>
+      <h1>Generator &amp; power-station sizer</h1>
+      <p class="lead">Pick the loads you want to run at the same time. Wattages below are typical estimates from Honda Power Equipment — check your appliance label and edit the numbers if they differ.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <aside class="alert-disclaimer" role="note">
+      <p><strong>Carbon monoxide and ventilation.</strong> Per <a href="https://www.ready.gov/power-outages">Ready.gov</a>: generators and fuel should always be used outdoors and at least 20 feet away from windows, doors, and attached garages. Install working carbon monoxide detectors on every level of your home. Carbon monoxide is a colorless, odorless gas that can kill you, your family, and pets. Follow the manufacturer's ventilation and operating instructions. Never use a gas stovetop or oven to heat your home. In an emergency, call 911.</p>
+    </aside>
+    <p>Typical wattages are approximate values published in Honda Power Equipment's <a href={appliances.source.url}>generator wattage estimation guide</a>. They are not measurements of a specific refrigerator, microwave, or other model you own. Label every figure in this tool: <strong>typical estimate, check your appliance label</strong>.</p>
+    <form class="tool-toolbar cols-2" onsubmit="return false;">
+      <label>Power station or battery capacity (watt-hours)
+        <input type="number" id="capacity-wh" min="0" step="1" value="1000" />
+      </label>
+      <p class="fine" style="align-self:end;margin:0">Enter the Wh rating from your unit's official specifications. Example capacities such as 1000 Wh are for the calculator only — they are not a claim about any listing on this site. See <a href="/off-grid-power/">Off-Grid Power</a> and <a href="/power-outage-kits/">Power Outage Kits</a> for existing product pages, and our guide on <a href="/guides/how-to-pick-a-portable-power-station/">how to pick a portable power station</a>.</p>
+    </form>
+    <div id="sizer-results" class="results-panel" style="margin-bottom:20px"></div>
+    <div id="appliance-list"></div>
+    <p class="fine" style="margin-top:20px">For fuel-burning heaters, stoves, and generators, follow the manufacturer's ventilation instructions and use a working CO alarm. See also <a href="/home-heating-backup/">Home Heating Backup</a>.</p>
+  </section>
+</Base>
+<script>
+  import { initPowerSizer } from '../../scripts/power-sizer';
+  import data from '../../data/appliances.json';
+  initPowerSizer(data);
+</script>

@@ -87,7 +87,7 @@ Each lane is a JSON object. Adding one creates a new page at `/<slug>/`, a nav e
 
 - `season` controls which home-page section a lane appears in. Lanes matching `currentSeason` show under "Winter lanes."
 - `active: false` hides a lane. Don't leave items pointing at a hidden lane, because the build will error.
-- Don't use a slug that collides with an existing page: `gear`, `guides`, `about`, `contact`, `privacy`, `affiliate-disclosure`, `get-featured`, `thanks`.
+- Don't use a slug that collides with an existing page: `gear`, `guides`, `about`, `contact`, `privacy`, `affiliate-disclosure`, `get-featured`, `thanks`, `alerts`, `tools`, `apps`, `storm-tracker`, `widgets`.
 
 ## Season switch (`src/data/site.json`)
 
@@ -131,6 +131,30 @@ npm run build && netlify deploy --prod --dir=dist
 ## Forms
 
 `/contact/` and `/get-featured/` use Netlify Forms. Submissions appear in the Netlify dashboard under the site's Forms tab (free plan: 100 per month). Bots may read and summarize them, but never reply to businesses without owner approval.
+
+
+## Interactive tools & PWA base
+
+Reuse these files. Do not copy-paste NWS fetch logic, alert-card HTML, or a second service worker.
+
+| What | Where |
+|---|---|
+| NWS client (`api.weather.gov`) | `src/scripts/nws.ts` |
+| Alert cards and compact badge lines | `src/scripts/alert-render.ts` |
+| Tool / widget / app styles | `src/styles/interactive.css` (plus the existing layout CSS) |
+| Site pages | `src/layouts/Base.astro` (use `<slot name="head" />` for a manifest) |
+| Iframe widgets | `src/layouts/Embed.astro` |
+| Service worker + install prompt | `src/lib/pwa.ts` — `registerSW(scope)` and `bindInstallPrompt(button)` |
+| PWA app list | `src/data/pwa-apps.json` |
+| Service worker template | `src/pwa/sw-template.js` (build writes `/<scope>/sw.js`) |
+| Feature flags, storage keys, default state | `src/lib/app-config.ts` |
+
+To add a new app or widget:
+
+1. Pick a slug that does not collide with a lane or an existing page.
+2. Use `Base` (or `Embed` for an iframe), `interactive.css`, and a script in `src/scripts/`. Import `nws.ts`, `alert-render.ts`, and `pwa.ts` instead of rewriting them.
+3. For a PWA, add a row to `src/data/pwa-apps.json` (`name`, `scope`, `swPath`, `precache`, `networkFirstHosts`). The build generates the service worker and precaches hashed `/_astro/` assets from that app's HTML. Keep `sw.js` under the app scope so it cannot control the rest of the site.
+4. Put the manifest and icons in `public/<slug>/`. Link the manifest from the page's `head` slot. Call `registerSW('/<slug>/')` only from pages inside that scope.
 
 ## Bot roles
 

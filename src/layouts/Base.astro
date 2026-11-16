@@ -35,6 +35,7 @@ const year = new Date().getFullYear();
   <meta name="twitter:image" content={ogImage} />
   <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
   {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <slot name="head" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -45,6 +46,9 @@ const year = new Date().getFullYear();
         <summary aria-label="Menu">☰ Menu</summary>
         <nav aria-label="Main">
           <ul>
+            <li><a href="/alerts/">⚠️ Alerts</a></li>
+            <li><a href="/tools/">🛠️ Tools</a></li>
+            <li><a href="/apps/">📱 Apps</a></li>
             {navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.icon} {l.name}</a></li>)}
             <li><a href="/guides/">📘 Guides</a></li>
             <li><a href="/kits/">🧰 Storm kits</a></li>
@@ -70,6 +74,10 @@ const year = new Date().getFullYear();
       <div>
         <p class="foot-h">ReadyGearHub</p>
         <ul>
+          <li><a href="/alerts/">Live weather alerts</a></li>
+          <li><a href="/tools/">Tools</a></li>
+          <li><a href="/apps/">Apps</a></li>
+          <li><a href="/widgets/">Widgets</a></li>
           <li><a href="/guides/">Guides</a></li>
           <li><a href="/kits/">Storm kits</a></li>
           <li><a href="/local/">Local resources</a></li>

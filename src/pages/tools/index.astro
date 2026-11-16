@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/interactive.css';
+---
+<Base title="Preparedness Tools | ReadyGearHub" description="Free, browser-based tools: live weather alerts, a generator and power-station sizer, a fridge and freezer outage timer, and a Ready.gov kit builder.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / Tools</p>
+      <h1>Preparedness tools</h1>
+      <p class="lead">Simple calculators and official-alert lookups you can use in the browser. No invented sample data, and no prices on this site.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <div class="tools-grid">
+      <a class="card tool-card" href="/alerts/">
+        <span class="lane-icon" aria-hidden="true">⚠️</span>
+        <h3>Live weather alerts</h3>
+        <p>Official National Weather Service alerts by state or county. Default view is Mississippi.</p>
+        <span class="count">Open alerts →</span>
+      </a>
+      <a class="card tool-card" href="/tools/power-sizer/">
+        <span class="lane-icon" aria-hidden="true">🔋</span>
+        <h3>Generator &amp; power-station sizer</h3>
+        <p>Add typical appliance watts, see running and starting totals, and estimate battery hours.</p>
+        <span class="count">Open sizer →</span>
+      </a>
+      <a class="card tool-card" href="/tools/outage-timer/">
+        <span class="lane-icon" aria-hidden="true">❄️</span>
+        <h3>Fridge &amp; freezer outage timer</h3>
+        <p>A live countdown based on FoodSafety.gov guidance for food kept in an unopened fridge or freezer.</p>
+        <span class="count">Open timer →</span>
+      </a>
+      <a class="card tool-card" href="/tools/kit-builder/">
+        <span class="lane-icon" aria-hidden="true">📋</span>
+        <h3>Emergency kit builder</h3>
+        <p>A printable checklist from Ready.gov guidance, sized to your household, with links to existing listings.</p>
+        <span class="count">Open kit builder →</span>
+      </a>
+      <a class="card tool-card" href="/apps/">
+        <span class="lane-icon" aria-hidden="true">📱</span>
+        <h3>Storm Tracker app</h3>
+        <p>Install a small app that saves your county, shows alerts, and works offline with the last cached result.</p>
+        <span class="count">Install or open →</span>
+      </a>
+      <a class="card tool-card" href="/widgets/">
+        <span class="lane-icon" aria-hidden="true">🔗</span>
+        <h3>Embeddable widgets</h3>
+        <p>Add a current-alerts badge or a storm-prep countdown to your own site with a copy-paste iframe.</p>
+        <span class="count">Build a widget →</span>
+      </a>
+    </div>
+  </section>
+</Base>

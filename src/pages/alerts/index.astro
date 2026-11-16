@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
+import '../../styles/interactive.css';
+import states from '../../data/us-states.json';
+import { DEFAULT_STATE } from '../../lib/app-config';
+---
+<Base title="Live Weather Alerts | ReadyGearHub" description="Check official National Weather Service alerts for your state or county. Not a replacement for official alerts. In an emergency, call 911.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / Alerts</p>
+      <h1>Live weather alerts</h1>
+      <p class="lead">Official National Weather Service alerts for a state or county, loaded in your browser. Default view is Mississippi. This page does not invent or demo sample alerts.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <AlertDisclaimer />
+    <form class="tool-toolbar cols-4" id="alert-controls" onsubmit="return false;">
+      <label>State
+        <select id="alert-state" autocomplete="address-level1">
+          {states.map((s) => <option value={s.code} selected={s.code === DEFAULT_STATE}>{s.name}</option>)}
+        </select>
+      </label>
+      <label>County
+        <select id="alert-county" autocomplete="address-level2">
+          <option value="">All counties</option>
+        </select>
+      </label>
+      <fieldset class="filter-toggles" style="border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;justify-content:end">
+        <legend>Filter (leave both off to show all)</legend>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <label class="filter-toggle"><input type="checkbox" id="filter-winter" /> Winter</label>
+          <label class="filter-toggle"><input type="checkbox" id="filter-severe" /> Severe</label>
+        </div>
+      </fieldset>
+      <div class="tool-actions">
+        <button type="button" class="btn ghost" id="use-location">Use my location</button>
+      </div>
+    </form>
+    <p class="fine">Your last state and county are remembered in this browser only. Alerts refresh every 5 minutes while this page stays open. Location is requested only if you click the button, and is sent only to the National Weather Service.</p>
+    <div id="alert-status" class="status-banner loading">Loading official alerts from the National Weather Service…</div>
+    <div id="alert-results" class="alert-list" aria-live="polite"></div>
+    <p class="fine" style="margin-top:22px">Gear links next to an alert go to existing ReadyGearHub lanes only. They are not official safety advice. For current conditions always use <a href="https://www.weather.gov/">weather.gov</a>.</p>
+  </section>
+</Base>
+<script>
+  import { initAlertsPage } from '../../scripts/alerts-page';
+  initAlertsPage();
+</script>

@@ -1,0 +1,143 @@
+---
+import Base from '../../layouts/Base.astro';
+import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
+import '../../styles/interactive.css';
+import states from '../../data/us-states.json';
+import { DEFAULT_STATE } from '../../lib/app-config';
+
+const site = Astro.site ? new URL(Astro.site).origin : 'https://readygearhub.com';
+---
+<Base title="Embeddable Widgets | ReadyGearHub" description="Build a copy-paste iframe widget: current National Weather Service alerts for a county, or a storm-prep countdown to a date you choose.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / Widgets</p>
+      <h1>Embeddable widgets</h1>
+      <p class="lead">Add a current-alerts badge or a storm-prep countdown to your own site. Each widget includes a “Powered by ReadyGearHub” link back to readygearhub.com.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <AlertDisclaimer />
+    <p>These widgets load official NWS alerts or a date countdown in an iframe. They are not a substitute for Wireless Emergency Alerts, NOAA Weather Radio, or local officials.</p>
+
+    <h2>Current-alerts badge</h2>
+    <form class="card form" id="alerts-builder" onsubmit="return false;">
+      <div class="tool-toolbar cols-2" style="margin:0">
+        <label>State
+          <select id="w-state">
+            {states.map((s) => <option value={s.code} selected={s.code === DEFAULT_STATE}>{s.name}</option>)}
+          </select>
+        </label>
+        <label>County
+          <select id="w-county"><option value="">All counties</option></select>
+        </label>
+      </div>
+      <p class="fine">Preview uses this site’s address. The embed code always points at {site} so it works when you paste it on another site.</p>
+      <iframe id="alerts-preview" class="embed-preview" title="Alerts widget preview" loading="lazy"></iframe>
+      <label>Copy-paste embed code
+        <textarea id="alerts-code" class="embed-code" readonly rows="5"></textarea>
+      </label>
+      <div class="tool-actions">
+        <button type="button" class="btn" id="copy-alerts">Copy embed code</button>
+      </div>
+    </form>
+
+    <h2 style="margin-top:2em">Storm-prep countdown</h2>
+    <form class="card form" id="count-builder" onsubmit="return false;">
+      <div class="tool-toolbar cols-2" style="margin:0">
+        <label>Label
+          <input type="text" id="c-label" value="Storm prep" maxlength="80" />
+        </label>
+        <label>Target date
+          <input type="date" id="c-date" />
+        </label>
+      </div>
+      <p class="fine">Pick any date you are preparing for. This is not an official forecast.</p>
+      <iframe id="count-preview" class="embed-preview" title="Countdown widget preview" loading="lazy"></iframe>
+      <label>Copy-paste embed code
+        <textarea id="count-code" class="embed-code" readonly rows="5"></textarea>
+      </label>
+      <div class="tool-actions">
+        <button type="button" class="btn" id="copy-count">Copy embed code</button>
+      </div>
+    </form>
+  </section>
+</Base>
+<script define:vars={{ site }}>
+  window.__rghWidgetSite = site;
+</script>
+<script>
+  import { fetchCounties } from '../../scripts/nws';
+
+  const site = (window as any).__rghWidgetSite as string;
+
+  const iframeSnippet = (src: string, title: string) =>
+    `<iframe src="${src}" title="${title}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%;max-width:420px;height:340px;border:1px solid #dfe6ec;border-radius:14px;background:#fff;"></iframe>`;
+
+  const stateEl = document.querySelector<HTMLSelectElement>('#w-state')!;
+  const countyEl = document.querySelector<HTMLSelectElement>('#w-county')!;
+  const alertsPreview = document.querySelector<HTMLIFrameElement>('#alerts-preview')!;
+  const alertsCode = document.querySelector<HTMLTextAreaElement>('#alerts-code')!;
+
+  async function loadCounties() {
+    countyEl.disabled = true;
+    try {
+      const counties = await fetchCounties(stateEl.value);
+      countyEl.innerHTML = ['<option value="">All counties</option>']
+        .concat(counties.map((c) => `<option value="${c.id}">${c.name} County</option>`))
+        .join('');
+    } catch {
+      countyEl.innerHTML = '<option value="">All counties</option>';
+    } finally {
+      countyEl.disabled = false;
+      paintAlerts();
+    }
+  }
+
+  function paintAlerts() {
+    const params = new URLSearchParams({ state: stateEl.value });
+    if (countyEl.value) params.set('zone', countyEl.value);
+    const path = `/widgets/embed/alerts/?${params.toString()}`;
+    alertsPreview.src = path;
+    alertsCode.value = iframeSnippet(`${site}${path}`, 'Live weather alerts');
+  }
+
+  stateEl.addEventListener('change', loadCounties);
+  countyEl.addEventListener('change', paintAlerts);
+
+  const labelEl = document.querySelector<HTMLInputElement>('#c-label')!;
+  const dateEl = document.querySelector<HTMLInputElement>('#c-date')!;
+  const countPreview = document.querySelector<HTMLIFrameElement>('#count-preview')!;
+  const countCode = document.querySelector<HTMLTextAreaElement>('#count-code')!;
+
+  if (!dateEl.value) {
+    const d = new Date();
+    d.setDate(d.getDate() + 7);
+    dateEl.value = d.toISOString().slice(0, 10);
+  }
+
+  function paintCount() {
+    const params = new URLSearchParams({ date: dateEl.value, label: labelEl.value || 'Storm prep' });
+    const path = `/widgets/embed/countdown/?${params.toString()}`;
+    countPreview.src = path;
+    countCode.value = iframeSnippet(`${site}${path}`, 'Storm prep countdown');
+  }
+
+  labelEl.addEventListener('input', paintCount);
+  dateEl.addEventListener('input', paintCount);
+
+  function copy(id: string, textarea: HTMLTextAreaElement) {
+    document.querySelector<HTMLButtonElement>(id)?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(textarea.value);
+      } catch {
+        textarea.select();
+        document.execCommand('copy');
+      }
+    });
+  }
+  copy('#copy-alerts', alertsCode);
+  copy('#copy-count', countCode);
+
+  loadCounties();
+  paintCount();
+</script>

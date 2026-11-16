@@ -1,0 +1,18 @@
+[
+  {
+    "name": "storm-tracker",
+    "cacheName": "rgh-storm-tracker-v1",
+    "scope": "/storm-tracker/",
+    "swPath": "/storm-tracker/sw.js",
+    "htmlPath": "/storm-tracker/",
+    "precache": [
+      "/storm-tracker/",
+      "/storm-tracker/manifest.webmanifest",
+      "/storm-tracker/icon-192.png",
+      "/storm-tracker/icon-512.png",
+      "/favicon.svg"
+    ],
+    "networkFirstHosts": ["api.weather.gov"],
+    "cacheOnFetchPrefixes": ["/_astro/"]
+  }
+]

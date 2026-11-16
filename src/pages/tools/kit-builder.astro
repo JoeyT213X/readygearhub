@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/interactive.css';
+import { getItems, getGuides, lanes } from '../../lib/data';
+import { KIT_SOURCES } from '../../data/kit-guidance';
+
+const items = await getItems();
+const guides = await getGuides();
+const catalog = {
+  items: Object.fromEntries(items.map((i) => [i.id, { name: i.data.name }])),
+  lanes: Object.fromEntries(lanes.map((l) => [l.slug, { name: l.name, icon: l.icon }])),
+  guides: Object.fromEntries(guides.map((g) => [g.id, { title: g.data.title }])),
+};
+---
+<Base title="Emergency Kit Builder | ReadyGearHub" description="Build a printable emergency kit checklist from Ready.gov guidance, sized to your household, with links to existing ReadyGearHub listings and lanes.">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Kit builder</p>
+      <h1>Emergency kit builder</h1>
+      <p class="lead">A custom, printable checklist based on <a href={KIT_SOURCES.kit.url}>Ready.gov’s Build A Kit</a> guidance. Water is calculated at 1 gallon per person per day, with a 3-day minimum.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <p>After an emergency, Ready.gov notes you may need to survive on your own for several days. This tool starts at 3 days, a common baseline in Ready.gov materials, and lets you plan for longer if you want. It does not invent supplies or products — only official kit items, plus links to listings and lanes that already exist on this site.</p>
+    <form class="card form no-print" id="kit-form" onsubmit="return false;">
+      <div class="tool-toolbar cols-2" style="margin:0">
+        <label>People in the household (including infants and children)
+          <input type="number" id="kit-people" min="1" step="1" value="2" />
+        </label>
+        <label>Days to plan for (minimum 3)
+          <input type="number" id="kit-days" min="3" step="1" value="3" />
+        </label>
+        <label>How many of those people are infants?
+          <input type="number" id="kit-infants" min="0" step="1" value="0" />
+        </label>
+        <label>Pets
+          <input type="number" id="kit-pets" min="0" step="1" value="0" />
+        </label>
+      </div>
+      <label class="filter-toggle" style="width:fit-content"><input type="checkbox" id="kit-meds" /> Someone takes prescription medication or uses prescription glasses</label>
+      <label class="filter-toggle" style="width:fit-content"><input type="checkbox" id="kit-vehicle" /> Include a car emergency kit</label>
+      <div class="tool-actions">
+        <button type="button" class="btn" id="kit-print">Print or save as PDF</button>
+      </div>
+    </form>
+    <div id="kit-output" class="prose" style="max-width:none;margin-top:22px"></div>
+  </section>
+</Base>
+<script define:vars={{ catalog }}>
+  window.__rghKitCatalog = catalog;
+</script>
+<script>
+  import { initKitBuilder } from '../../scripts/kit-builder';
+  initKitBuilder((window as any).__rghKitCatalog);
+</script>
