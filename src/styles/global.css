@@ -106,3 +106,7 @@ img{max-width:100%;height:auto}
 .signup-h{font-weight:700;margin:0 0 4px}
 .signup-footer{margin-top:16px;max-width:22rem}
 .signup-home,.signup-page{max-width:28rem}
+
+/* Pay-per-lead CTA boxes (src/components/LeadCta.astro) */
+.lead-ctas { display: grid; gap: 1rem; }
+.lead-cta h2 { margin-top: 0; font-size: 1.25rem; }

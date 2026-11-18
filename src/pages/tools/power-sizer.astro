@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LeadCta from '../../components/LeadCta.astro';
 import '../../styles/interactive.css';
 import appliances from '../../data/appliances.json';
 ---
@@ -26,6 +27,7 @@ import appliances from '../../data/appliances.json';
     <div id="appliance-list"></div>
     <p class="fine" style="margin-top:20px">For fuel-burning heaters, stoves, and generators, follow the manufacturer's ventilation instructions and use a working CO alarm. See also <a href="/home-heating-backup/">Home Heating Backup</a>.</p>
   </section>
+  <LeadCta place="tool:power-sizer" />
 </Base>
 <script>
   import { initPowerSizer } from '../../scripts/power-sizer';
