@@ -37,7 +37,7 @@ export const payhipProducts: PayhipProduct[] = [
       'Carbon monoxide and generator safety notes from Ready.gov and the CDC',
       'Personal-use license; print as many household copies as you need',
     ],
-    productId: '',
+    productId: 'ZwvsR',
     image: '/shop/family-emergency-binder.png',
     related: [
       { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
@@ -61,7 +61,7 @@ export const payhipProducts: PayhipProduct[] = [
       'Outage log and after-the-storm food-safety and recovery page',
       'Written contacts and check-in plan, plus a sources page you can keep',
     ],
-    productId: '',
+    productId: 'x7iZ2',
     image: '/shop/winter-storm-prep-planner.png',
     related: [
       { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
@@ -85,7 +85,7 @@ export const payhipProducts: PayhipProduct[] = [
       'Communications, driveway and tree safety, animals, and a storm-day sequence',
       'A sources page so you can go back to the official guidance yourself',
     ],
-    productId: '',
+    productId: 'wc9Ez',
     image: '/shop/homestead-prep-starter-guide.png',
     related: [
       { href: '/guides/emergency-water-storage/', label: 'Emergency water storage' },
