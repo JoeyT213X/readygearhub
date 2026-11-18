@@ -5,6 +5,7 @@ import lanesRaw from '../data/lanes.json';
 import { mailerlite } from '../data/mailerlite';
 import { anyPayhipReady } from '../data/payhip';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
+import Analytics from '../components/Analytics.astro';
 interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean }
 const { title, description, image = '/og-default.png', type = 'website', schema, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
@@ -45,6 +46,7 @@ const year = new Date().getFullYear();
   {anyPayhipReady() && (
     <script is:inline defer src="https://payhip.com/payhip.js"></script>
   )}
+  <Analytics />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>

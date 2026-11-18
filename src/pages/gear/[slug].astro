@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import Disclosure from '../../components/Disclosure.astro';
 import { render } from 'astro:content';
-import { getItems, laneBySlug, outUrl, isAffiliate, getGuides } from '../../lib/data';
+import { getItems, laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides } from '../../lib/data';
 export async function getStaticPaths() {
   const items = await getItems();
   return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
@@ -24,6 +24,7 @@ const schema = [
     { '@type': 'ListItem', position: 2, name: lane.name, item: new URL(`/${lane.slug}/`, Astro.site).href },
     { '@type': 'ListItem', position: 3, name: d.name, item: url } ] },
 ];
+const program = programIdForItem(item.id);
 const desc = `${d.description} See uses, lanes, and where to check the current price.`.slice(0, 300);
 ---
 <Base title={`${d.name}: Uses & Where to Buy | ReadyGearHub`} description={desc} schema={schema} type="product">
@@ -34,7 +35,7 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
       <p class="brand light">by {d.brand}</p>
       <p class="lead">{d.description}</p>
       <div class="hero-actions">
-        <a class="btn" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'}>Check current price at {isAffiliate(item) ? 'retailer' : d.brand} ↗</a>
+        <a class="btn" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={program || undefined}>Check current price at {isAffiliate(item) ? 'retailer' : d.brand} ↗</a>
       </div>
     </div>
   </section>

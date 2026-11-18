@@ -229,6 +229,19 @@ export function buildLink(p: Program, destination: string): string {
   return '';
 }
 
+/** Program id for a listing (approved match first, else first pending), or ''. */
+export function programIdForItem(itemId: string): string {
+  let pending = '';
+  for (const p of programs) {
+    if (p.kind !== 'product') continue;
+    const match = !!(p.itemLinks?.[itemId] || p.items?.includes(itemId) || p.retailerUrls?.[itemId]);
+    if (!match) continue;
+    if (live(p)) return p.id;
+    if (!pending) pending = p.id;
+  }
+  return pending;
+}
+
 /** Tracked link for a listing, or '' to keep the plain official URL. */
 export function trackedItemLink(itemId: string, officialUrl: string): string {
   for (const p of programs) {

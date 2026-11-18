@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import lanesRaw from '../data/lanes.json';
 import site from '../data/site.json';
-import { trackedItemLink } from '../data/affiliates';
+import { trackedItemLink, programIdForItem } from '../data/affiliates';
 
 export type Lane = (typeof lanesRaw)[number];
 export type Item = CollectionEntry<'items'>;
@@ -55,4 +55,4 @@ export async function getGuides() {
 const tracked = (item: Item) => item.data.affiliateUrl || trackedItemLink(item.id, item.data.officialUrl);
 export const outUrl = (item: Item) => tracked(item) || item.data.officialUrl;
 export const isAffiliate = (item: Item) => Boolean(tracked(item));
-export { site };
+export { site, programIdForItem };
