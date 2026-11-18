@@ -7,5 +7,5 @@
  */
 export const analytics = {
   ga4Id: 'G-WTEHYS97MQ',
-  clarityId: '',
+  clarityId: 'zfntfpi4qw',
 } as const;
