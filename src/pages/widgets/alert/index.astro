@@ -1,0 +1,23 @@
+---
+/**
+ * Embeddable winter-alert widget. Query: ?region=jackson-metro[&ref=host-slug]
+ * Fetches api.weather.gov in the browser. No ads, affiliate links, or trackers.
+ */
+import Embed from '../../../layouts/Embed.astro';
+---
+<Embed title="Winter storm alerts widget | ReadyGearHub" description="Embeddable National Weather Service winter storm, ice, and freeze alerts for a Mississippi region, from ReadyGearHub.">
+  <div id="widget-region-alert"><div class="widget-card"><p>Loading official winter alerts…</p></div></div>
+  <style is:inline>
+    .widget-card{background:#fff;color:#14212b;border:1px solid #dfe6ec;border-radius:14px;padding:14px;font-size:15px;line-height:1.5}
+    .widget-card h1{font-size:1.05rem;margin:0 0 8px}
+    .widget-card ul{margin:8px 0;padding-left:1.1em}
+    .widget-card li{margin:0 0 8px}
+    .widget-card .fine{font-size:.82rem;color:#3b4b57}
+    .widget-disclaimer,.widget-tip,.widget-powered{margin:10px 0 0;font-size:.8rem}
+    .widget-powered a{color:#0b6aa2;font-weight:600}
+  </style>
+</Embed>
+<script>
+  import { initRegionAlertWidget } from '../../../scripts/widget-region-alert';
+  initRegionAlertWidget();
+</script>

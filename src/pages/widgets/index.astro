@@ -4,22 +4,57 @@ import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
 import '../../styles/interactive.css';
 import states from '../../data/us-states.json';
 import { DEFAULT_STATE } from '../../lib/app-config';
+import { DEFAULT_REGION_SLUG, WIDGET_REGIONS, regionBySlug } from '../../data/widget-regions';
 
 const site = Astro.site ? new URL(Astro.site).origin : 'https://readygearhub.com';
+const requested = regionBySlug(Astro.url.searchParams.get('region'));
+const initialRegion = requested?.slug || DEFAULT_REGION_SLUG;
 ---
-<Base title="Embeddable Widgets | ReadyGearHub" description="Build a copy-paste iframe widget: current National Weather Service alerts for a county, or a storm-prep countdown to a date you choose.">
+<Base title="Embeddable Widgets | ReadyGearHub" description="Free, copy-paste winter storm alert box for Mississippi community sites. Official National Weather Service alerts for your region, with no ads or cookies.">
   <section class="page-hero">
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / Widgets</p>
       <h1>Embeddable widgets</h1>
-      <p class="lead">Add a current-alerts badge or a storm-prep countdown to your own site. Each widget includes a “Powered by ReadyGearHub” link back to readygearhub.com.</p>
+      <p class="lead">Add a free winter storm alert box to your site. It shows official National Weather Service winter storm, ice, and freeze alerts for a Mississippi region, plus one safety tip. No ads, no product links, and no cookies.</p>
     </div>
   </section>
   <section class="wrap section">
     <AlertDisclaimer />
-    <p>These widgets load official NWS alerts or a date countdown in an iframe. They are not a substitute for Wireless Emergency Alerts, NOAA Weather Radio, or local officials.</p>
+    <p>These widgets are informational and are not a substitute for Wireless Emergency Alerts, NOAA Weather Radio, the MEMA app, or local officials.</p>
 
-    <h2>Current-alerts badge</h2>
+    <h2>Winter storm alert box</h2>
+    <p>Pick a region, preview the box, and copy the snippet. Use this page as the outreach landing link: <a href={`${site}/widgets/?region=${initialRegion}`}>{`${site}/widgets/?region=${initialRegion}`}</a></p>
+    <form class="card form" id="region-builder" onsubmit="return false;">
+      <div class="tool-toolbar" style="margin:0">
+        <label>Mississippi region
+          <select id="w-region">
+            {WIDGET_REGIONS.map((r) => <option value={r.slug} selected={r.slug === initialRegion}>{r.name}</option>)}
+          </select>
+        </label>
+      </div>
+      <p class="fine">Preview uses this page’s address. The embed code always points at {site} so it works when you paste it on another site.</p>
+      <iframe id="region-preview" class="embed-preview" title="Winter storm alert widget preview" loading="lazy" style="height:360px"></iframe>
+      <label>Copy-paste embed code
+        <textarea id="region-code" class="embed-code" readonly rows="7"></textarea>
+      </label>
+      <div class="tool-actions">
+        <button type="button" class="btn" id="copy-region">Copy embed code</button>
+      </div>
+    </form>
+
+    <h2 style="margin-top:2em">Embed terms</h2>
+    <ol>
+      <li>Free to embed on any non-commercial or commercial site. No fee, no exclusivity.</li>
+      <li>Keep the attribution line visible and unaltered, and keep the NWS credit.</li>
+      <li>The ReadyGearHub credit uses plain brand anchor text and <code>rel="nofollow"</code>. If a placement is ever paid or exchanged for anything of value, that link must be marked <code>rel="sponsored"</code>. We do not pay for embeds and do not expect SEO credit from them.</li>
+      <li>No hidden links, and no extra links stuffed into the widget.</li>
+      <li>Hosts may remove the widget anytime. We may update its content or retire it, with notice on this page.</li>
+      <li>The widget is informational and not an official warning system, and that disclaimer is displayed. No warranty of timeliness.</li>
+      <li>Privacy: the widget sets no cookies and loads no third-party trackers or ads. The box talks only to the official National Weather Service API in the visitor’s browser.</li>
+    </ol>
+
+    <h2 style="margin-top:2em">County-level alerts badge</h2>
+    <p>Need a single county, or a state other than Mississippi? This badge shows all current NWS alerts for a county you choose.</p>
     <form class="card form" id="alerts-builder" onsubmit="return false;">
       <div class="tool-toolbar cols-2" style="margin:0">
         <label>State
@@ -31,8 +66,7 @@ const site = Astro.site ? new URL(Astro.site).origin : 'https://readygearhub.com
           <select id="w-county"><option value="">All counties</option></select>
         </label>
       </div>
-      <p class="fine">Preview uses this site’s address. The embed code always points at {site} so it works when you paste it on another site.</p>
-      <iframe id="alerts-preview" class="embed-preview" title="Alerts widget preview" loading="lazy"></iframe>
+      <iframe id="alerts-preview" class="embed-preview" title="County alerts widget preview" loading="lazy"></iframe>
       <label>Copy-paste embed code
         <textarea id="alerts-code" class="embed-code" readonly rows="5"></textarea>
       </label>
@@ -62,16 +96,36 @@ const site = Astro.site ? new URL(Astro.site).origin : 'https://readygearhub.com
     </form>
   </section>
 </Base>
-<script define:vars={{ site }}>
+<script define:vars={{ site, initialRegion }}>
   window.__rghWidgetSite = site;
+  window.__rghInitialRegion = initialRegion;
 </script>
 <script>
   import { fetchCounties } from '../../scripts/nws';
+  import { WIDGET_REGIONS } from '../../data/widget-regions';
 
   const site = (window as any).__rghWidgetSite as string;
+  const initialRegion = (window as any).__rghInitialRegion as string;
 
-  const iframeSnippet = (src: string, title: string) =>
-    `<iframe src="${src}" title="${title}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%;max-width:420px;height:340px;border:1px solid #dfe6ec;border-radius:14px;background:#fff;"></iframe>`;
+  const iframeSnippet = (src: string, title: string, height = '340') =>
+    `<iframe src="${src}" title="${title}" width="100%" height="${height}" loading="lazy" style="border:0;max-width:420px"></iframe>`;
+
+  const regionEl = document.querySelector<HTMLSelectElement>('#w-region')!;
+  const regionPreview = document.querySelector<HTMLIFrameElement>('#region-preview')!;
+  const regionCode = document.querySelector<HTMLTextAreaElement>('#region-code')!;
+  const fromQuery = new URLSearchParams(location.search).get('region')?.trim().toLowerCase() || '';
+  if (fromQuery && WIDGET_REGIONS.some((r) => r.slug === fromQuery)) regionEl.value = fromQuery;
+
+  function paintRegion() {
+    const slug = regionEl.value || initialRegion;
+    const region = WIDGET_REGIONS.find((r) => r.slug === slug) || WIDGET_REGIONS[0];
+    const src = `${site}/widgets/alert/?region=${encodeURIComponent(region.slug)}`;
+    const title = `Winter storm alerts for ${region.name}, from NWS via ReadyGearHub`;
+    regionPreview.src = `/widgets/alert/?region=${encodeURIComponent(region.slug)}`;
+    const credit = `<p style="font-size:12px">Storm alerts: <a href="https://www.weather.gov/">National Weather Service</a> · Safety tips: <a href="https://readygearhub.com/" rel="nofollow">ReadyGearHub</a></p>`;
+    regionCode.value = `${iframeSnippet(src, title, '360')}\n${credit}`;
+  }
+  regionEl.addEventListener('change', paintRegion);
 
   const stateEl = document.querySelector<HTMLSelectElement>('#w-state')!;
   const countyEl = document.querySelector<HTMLSelectElement>('#w-county')!;
@@ -135,9 +189,11 @@ const site = Astro.site ? new URL(Astro.site).origin : 'https://readygearhub.com
       }
     });
   }
+  copy('#copy-region', regionCode);
   copy('#copy-alerts', alertsCode);
   copy('#copy-count', countCode);
 
+  paintRegion();
   loadCounties();
   paintCount();
 </script>

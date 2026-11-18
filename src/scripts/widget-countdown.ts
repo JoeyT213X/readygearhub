@@ -29,6 +29,6 @@ export function initCountdownWidget() {
     ${date ? `<p class="fine">Target date: ${escapeHtml(date)}</p>` : ''}
     <p>Ready.gov recommends having water (one gallon per person per day for several days) and a several-day supply of non-perishable food, plus a radio, flashlight, and first aid kit. See <a href="https://www.ready.gov/kit" target="_blank" rel="noopener">Build A Kit</a>.</p>
     <p class="fine">This countdown is a reminder only. It is not an official forecast or alert. In an emergency, call 911.</p>
-    <p class="widget-powered">Powered by <a href="https://readygearhub.com/" target="_top">ReadyGearHub</a></p>
+    <p class="widget-powered">Powered by <a href="https://readygearhub.com/" target="_top" rel="nofollow noopener">ReadyGearHub</a></p>
   </div>`;
 }
