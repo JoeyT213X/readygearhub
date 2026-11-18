@@ -17,6 +17,31 @@ import {
   sortAlerts,
 } from './alert-render';
 
+type Saved = { state: string; zone: string };
+
+function loadSaved(): Saved {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.alerts);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && typeof parsed.state === 'string') {
+        return { state: parsed.state, zone: typeof parsed.zone === 'string' ? parsed.zone : '' };
+      }
+    }
+  } catch {
+    /* ignore unreadable localStorage */
+  }
+  return { state: DEFAULT_STATE, zone: '' };
+}
+
+function saveSaved(state: string, zone: string) {
+  try {
+    localStorage.setItem(STORAGE_KEYS.alerts, JSON.stringify({ state, zone }));
+  } catch {
+    /* ignore quota / private mode */
+  }
+}
+
 export function initAlertsPage() {
   const stateEl = document.querySelector<HTMLSelectElement>('#alert-state');
   const countyEl = document.querySelector<HTMLSelectElement>('#alert-county');
