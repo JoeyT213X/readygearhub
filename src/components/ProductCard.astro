@@ -1,0 +1,18 @@
+---
+import PayhipBuyButton from './PayhipBuyButton.astro';
+import type { PayhipProduct } from '../data/payhip';
+interface Props { product: PayhipProduct }
+const { product } = Astro.props;
+---
+<article class="card item-card product-card">
+  <a class="product-cover" href={`/shop/${product.slug}/`}>
+    <img src={product.image} alt="" width="640" height="360" />
+  </a>
+  <h3><a href={`/shop/${product.slug}/`}>{product.title}</a></h3>
+  <p class="product-price">{product.price}</p>
+  <p>{product.summary}</p>
+  <div class="card-actions">
+    <a class="btn small ghost" href={`/shop/${product.slug}/`}>Details</a>
+    <PayhipBuyButton product={product} small />
+  </div>
+</article>

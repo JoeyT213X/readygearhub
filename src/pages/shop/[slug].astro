@@ -1,0 +1,65 @@
+---
+import Base from '../../layouts/Base.astro';
+import PayhipBuyButton from '../../components/PayhipBuyButton.astro';
+import { payhipProducts, hasPayhipId, type PayhipProduct } from '../../data/payhip';
+
+export function getStaticPaths() {
+  return payhipProducts.map((product) => ({ params: { slug: product.slug }, props: { product } }));
+}
+
+interface Props { product: PayhipProduct }
+const { product } = Astro.props;
+const url = new URL(`/shop/${product.slug}/`, Astro.site).href;
+const image = new URL(product.image, Astro.site).href;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.title,
+  description: product.description,
+  image,
+  brand: { '@type': 'Brand', name: 'ReadyGearHub' },
+  offers: {
+    '@type': 'Offer',
+    price: product.priceAmount,
+    priceCurrency: 'USD',
+    availability: hasPayhipId(product) ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder',
+    url: hasPayhipId(product) ? `https://payhip.com/b/${product.productId}` : url,
+    seller: { '@type': 'Organization', name: 'ReadyGearHub' },
+  },
+};
+---
+<Base title={`${product.title} | ReadyGearHub`} description={product.description} image={product.image} schema={schema} type="product">
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/shop/">Shop</a></nav>
+      <h1>{product.title}</h1>
+      <p class="lead">{product.description}</p>
+      <p class="product-price hero-price">{product.price}</p>
+      <div class="hero-actions">
+        <PayhipBuyButton product={product} />
+        <a class="btn ghost light" href="/shop/">All guides</a>
+      </div>
+    </div>
+  </section>
+  <section class="wrap section product-detail">
+    <img class="product-hero-img" src={product.image} alt="" width="960" height="540" />
+    <div class="prose">
+      <h2>What's included</h2>
+      <ul>
+        {product.includes.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="fine">Instant PDF download after checkout, through Payhip. Personal-use license. This is a planning tool, not professional, legal, or medical advice. Always follow official guidance and manufacturer safety instructions.</p>
+      <div class="card-actions" style="padding-top:16px">
+        <PayhipBuyButton product={product} />
+      </div>
+      {product.related.length > 0 && (
+        <>
+          <h2>Related on ReadyGearHub</h2>
+          <ul>
+            {product.related.map((r) => <li><a href={r.href}>{r.label}</a></li>)}
+          </ul>
+        </>
+      )}
+    </div>
+  </section>
+</Base>

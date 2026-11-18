@@ -3,7 +3,11 @@ import Base from '../layouts/Base.astro';
 import ItemCard from '../components/ItemCard.astro';
 import LaneCard from '../components/LaneCard.astro';
 import Disclosure from '../components/Disclosure.astro';
+import ProductCard from '../components/ProductCard.astro';
+import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import { lanes, getItems, getTrending, getGuides, site } from '../lib/data';
+import { payhipProducts } from '../data/payhip';
+import { mailerlite } from '../data/mailerlite';
 const items = await getItems();
 const trending = await getTrending(9);
 const guides = await getGuides();
@@ -62,6 +66,20 @@ const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: si
       ))}
     </div>
   </section>
+
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>🛒 Printable guides</h2>
+      <p>ReadyGearHub planners and binders as instant PDF downloads. Checkout is handled by Payhip.</p>
+    </div>
+    <div class="grid">{payhipProducts.map((p) => <ProductCard product={p} />)}</div>
+  </section>
+
+  {mailerlite.enabled && (
+    <section class="wrap section">
+      <MailerLiteSignup variant="home" />
+    </section>
+  )}
 
   <section class="wrap section cta-band">
     <h2>Make or sell great gear?</h2>

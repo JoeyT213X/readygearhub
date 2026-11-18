@@ -1,0 +1,19 @@
+---
+import { hasPayhipId, type PayhipProduct } from '../data/payhip';
+interface Props { product: PayhipProduct; small?: boolean }
+const { product, small = false } = Astro.props;
+const ready = hasPayhipId(product);
+const cls = small ? 'btn small' : 'btn';
+---
+{ready ? (
+  <a
+    href={`https://payhip.com/b/${product.productId}`}
+    class:list={['payhip-buy-button', cls]}
+    data-theme="none"
+    data-product={product.productId}
+  >
+    Buy now · {product.price}
+  </a>
+) : (
+  <span class:list={[cls, 'coming-soon']} aria-disabled="true">Coming soon · {product.price}</span>
+)}
