@@ -6,6 +6,6 @@
  *   clarityId: "xxxxxxxxxx"     // Microsoft Clarity project ID
  */
 export const analytics = {
-  ga4Id: '',
+  ga4Id: 'G-WTEHYS97MQ',
   clarityId: '',
 } as const;
