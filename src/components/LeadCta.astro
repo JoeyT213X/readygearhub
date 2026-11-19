@@ -5,7 +5,7 @@ interface Props { place: string }
 const ctas = leadCtasFor(Astro.props.place);
 ---
 {ctas.length > 0 && (
-  <section class="wrap section lead-ctas" aria-label="Free quotes">
+  <section class="wrap section lead-ctas" aria-label="Sponsored offers">
     {ctas.map((c) => (
       <div class="card lead-cta">
         <h2>{c.title}</h2>

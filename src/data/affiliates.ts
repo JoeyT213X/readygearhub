@@ -31,7 +31,7 @@ export type Program = {
   network: Network;
   /** none = not applied; pending = applied, waiting; approved = tracked links are live. */
   status: 'none' | 'pending' | 'approved';
-  /** Official plain URL (homepage or a safe category page). Used as documentation; listings keep their own officialUrl. */
+  /** Official plain URL (homepage or a safe category page). Documentation only; listings keep their own officialUrl. */
   officialUrl?: string;
   /** product = swaps listing buy links; lead = pay-per-lead CTA box; text = no slots yet */
   kind: 'product' | 'lead' | 'text';
@@ -54,8 +54,12 @@ export const programs: Program[] = [
   // ---- Brand programs: listings switch automatically once approved ----
   { id: 'ecoflow', name: 'EcoFlow', network: 'TBD', status: 'pending', kind: 'product',
     items: ['ecoflow-400w-portable-solar-panel', 'ecoflow-delta-3-plus', 'ecoflow-glacier-classic', 'ecoflow-river-3-plus'] },
-  { id: 'bluetti', name: 'BLUETTI', network: 'TBD', status: 'pending', kind: 'product',
-    items: ['bluetti-200w-solar-panel', 'bluetti-ac180', 'bluetti-ac70'] },
+  { id: 'bluetti', name: 'BLUETTI', network: 'CJ', status: 'approved', kind: 'product',
+    items: ['bluetti-200w-solar-panel', 'bluetti-ac180', 'bluetti-ac70'],
+    cjAid: '16981946',
+    link: 'https://www.jdoqocy.com/click-101929817-16981946?url={url}',
+    officialUrl: 'https://www.bluettipower.com/',
+    note: 'CJ AID 16981946; lands on bluettipower.com. Program code AFF5OFF for 5% off sitewide, per BLUETTI; present plainly, no urgency or countdowns. Coupon codes are allowed only because they come through the program. No brand-term search bidding and no direct linking. Linked from /gear/ (power), BLUETTI gear pages, and the winter-storm pillar backup-power section.' },
   { id: 'jackery', name: 'Jackery', network: 'TBD', status: 'pending', kind: 'product',
     items: ['jackery-explorer-1000-plus', 'jackery-explorer-300-v2', 'jackery-solarsaga-100-prime', 'jackery-solarsaga-200'] },
   { id: 'anker-solix', name: 'Anker SOLIX', network: 'Impact', status: 'pending', kind: 'product',
@@ -107,7 +111,7 @@ export const programs: Program[] = [
     lead: { title: 'Worried about a furnace or water heater failing mid-storm?',
       blurb: 'A home warranty is a paid monthly or yearly plan that can cover repair or replacement of major systems and appliances. Check the price and read the coverage terms before you sign up.',
       button: 'See home warranty plans and prices',
-      places: ['how-to-keep-pipes-from-freezing', 'heat-one-room-safely-in-an-outage', 'how-to-stay-warm-without-power', 'winter-power-outage-checklist', 'ice-storm-prep-checklist-south'] } },
+      places: ['how-to-keep-pipes-from-freezing', 'heat-one-room-safely-in-an-outage', 'how-to-stay-warm-without-power', 'winter-power-outage-checklist', 'ice-storm-prep-checklist-south', 'winter-storm-power-outage-prep-guide-south'] } },
   { id: 'modernize', name: 'Modernize', network: 'Direct', status: 'pending', kind: 'lead', link: '',
     lead: { title: 'Need a contractor after the storm?',
       blurb: 'Modernize matches you with local pros for roofing, generators, and home repairs. Free, no-obligation quotes.',
@@ -133,10 +137,13 @@ export const programs: Program[] = [
   // ---- Added for tonight's signup wave (launch-prep); all stay pending until approved + link filled ----
   { id: 'sportsmans-guide', name: "Sportsman's Guide", network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {}, officialUrl: 'https://www.sportsmansguide.com/department/camping?d=117',
     note: 'Official page: 5% on most sales, 2% on guns & ammo. Directory links to the camping department only — never the homepage (which merchandises firearms). Do not promote firearms or ammo. Join only one of their programs (CJ, not also AvantLink). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
-  { id: 'allpowers', name: 'ALLPOWERS', network: 'CJ', status: 'pending', kind: 'product', cjAid: '',
-    note: 'CJ advertiser CID 7797916. Also listed on Awin and AvantLink; apply inside the existing CJ account first.' },
+  { id: 'allpowers', name: 'ALLPOWERS', network: 'CJ', status: 'approved', kind: 'product',
+    cjAid: '17227114',
+    link: 'https://www.kqzyfj.com/click-101929817-17227114',
+    officialUrl: 'https://www.iallpowers.com/',
+    note: 'CJ advertiser CID 7797916, AID 17227114; lands on iallpowers.com. Program code ALLPOWERS26 for 10% off sitewide, per ALLPOWERS; present plainly, no urgency or countdowns. Coupon codes are allowed only because they come through the program. No brand-term search bidding and no direct linking. Linked from /gear/ (power) and the winter-storm pillar backup-power section. Also listed on Awin and AvantLink; stay in the existing CJ account.' },
   { id: 'dicks', name: "DICK'S Sporting Goods", network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {}, officialUrl: 'https://www.dickssportinggoods.com/c/camping-hiking-gear',
-    note: 'Directory links to the camping & hiking category. Do not mention firearms or ammunition. Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
+    note: 'Directory links to the camping-hiking category only. Do not promote firearms or ammunition (BOTS.md rule 4). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
   { id: 'surfshark', name: 'Surfshark', network: 'CJ', status: 'approved', kind: 'text', link: 'https://www.dpbolvw.net/click-101929817-15438560',
     note: 'CJ advertiser CID 6282055. Official page: 40% of new sales, 30-day cookie, $100 minimum. Approved in CJ; stays hidden until a tracked link is filled. Also listed on Impact and Awin — do not join a second network for this advertiser.' },
   { id: 'liberty-mutual', name: 'Liberty Mutual', network: 'CJ', status: 'pending', kind: 'lead', link: '',
@@ -146,7 +153,7 @@ export const programs: Program[] = [
       button: 'Get a free insurance quote',
       places: ['how-to-keep-pipes-from-freezing', 'winter-power-outage-checklist', 'winter-car-emergency-kit'] } },
   { id: 'survival-frog', name: 'Survival Frog', network: 'Awin', status: 'pending', kind: 'product', officialUrl: 'https://www.survivalfrog.com/collections/n-camping',
-    note: '12%, 30-day cookie. Wants survival or outdoor sites. Shipping to the USA only. Directory links to the camping collection. Describe camping, lighting, power, and emergency-prep gear only.' },
+    note: '12%, 30-day cookie. Wants survival or outdoor sites. Shipping to the USA only. Directory links to the camping collection only. Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
   { id: 'legacy-food', name: 'Legacy Food Storage', network: 'Awin', status: 'pending', kind: 'product',
     note: '10% (up to 15%), 30-day cookie. Coupon sites get 1% only.' },
   { id: 'olight', name: 'Olight USA', network: 'Awin', status: 'pending', kind: 'product',
@@ -204,13 +211,13 @@ export const programs: Program[] = [
   { id: 'mailerlite-referral', name: 'MailerLite', network: 'Direct', status: 'pending', kind: 'text',
     note: '30% lifetime on paid plans, 45-day cookie, Trackdesk. $100 and 2 unique sales before payout. Already a MailerLite customer.' },
   { id: 'nordvpn', name: 'NordVPN', network: 'CJ', status: 'approved', kind: 'text', link: 'https://www.anrdoezrs.net/click-101929817-12814518',
-    note: 'CJ advertiser CID 4837117. Official page: 100% on a 1-month plan, 40% on 1- or 2-year, 30% on renewals, 30-day cookie. Approved in CJ; stays hidden until a tracked link is filled.' },
+    note: 'CJ advertiser CID 4837117. Official page: 100% on a 1-month plan, 40% on 1- or 2-year, 30% on renewals, 30-day cookie. Linked as a paid subscription from winter-storm-power-outage-prep-guide-south. Text affiliates have no lead.places slots; the in-guide link uses the tracked URL with rel=sponsored and data-program=nordvpn.' },
   { id: 'expressvpn', name: 'ExpressVPN', network: 'CJ', status: 'pending', kind: 'text',
     note: 'CJ advertiser CID 5577978. Rate is shown after apply. For a future privacy or comms guide.' },
   { id: 'proton', name: 'Proton', network: 'Direct', status: 'pending', kind: 'text',
     note: 'Official partners page: 30–100% by product and plan (VPN monthly new subs 100%; many others 30–40%), plus renewal share on some plans.' },
   { id: 'nordpass', name: 'NordPass', network: 'CJ', status: 'approved', kind: 'text', link: 'https://www.dpbolvw.net/click-101929817-13868703',
-    note: 'CJ advertiser CID 5324242. Approved in CJ; stays hidden until a tracked link is filled. May also be covered by the NordVPN program.' },
+    note: 'CJ advertiser CID 5324242. Linked as a paid subscription from winter-storm-power-outage-prep-guide-south. Text affiliates have no lead.places slots; the in-guide link uses the tracked URL with rel=sponsored and data-program=nordpass. May also be covered by the NordVPN program.' },
   { id: 'monarch', name: 'Monarch', network: 'Direct', status: 'pending', kind: 'text',
     note: 'Official Affiliate Partners page. Payout is shown on the apply form. Budgeting / emergency-fund angle.' },
 
@@ -230,6 +237,21 @@ export const programs: Program[] = [
   { id: 'coleman', name: 'Coleman', network: 'CJ', status: 'pending', kind: 'product', cjAid: '',
     items: ['coleman-classic-propane-stove-2-burner'],
     note: 'CJ advertiser CID 5975700.' },
+
+  // ---- Directory brands not yet applied (status none; flip to approved + link later) ----
+  { id: 'honda-power', name: 'Honda Power Equipment', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://powerequipment.honda.com/generators',
+    items: ['honda-eu2200i', 'honda-eu3200i'] },
+  { id: 'generac', name: 'Generac', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.generac.com/', items: ['generac-iq3500'] },
+  { id: 'katadyn', name: 'Katadyn', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://katadyn.com/en-us/', items: ['katadyn-befree-0-6l'] },
+  { id: 'sawyer', name: 'Sawyer', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.sawyer.com/', items: ['sawyer-mini-water-filter', 'sawyer-squeeze-water-filter'] },
+  { id: 'augason-farms', name: 'Augason Farms', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://augasonfarms.com/', items: ['augason-farms-30-day-1-person'] },
+  { id: 'amk', name: 'Adventure Medical Kits', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://adventuremedicalkits.com/',
+    items: ['amk-adventure-first-aid-family', 'amk-mountain-series-explorer', 'amk-mountain-series-hiker', 'amk-trauma-pak-quikclot', 'amk-ultralight-watertight-9'] },
+  { id: 'first-aid-only', name: 'First Aid Only', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://firstaidonly.com/', items: ['first-aid-only-50-person-272'] },
+  { id: 'petzl', name: 'Petzl', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.petzl.com/US/en', items: ['petzl-actik-core'] },
+  { id: 'black-diamond', name: 'Black Diamond', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.blackdiamondequipment.com/', items: ['black-diamond-spot-400'] },
+  { id: 'eton', name: 'Eton', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://etoncorp.com/', items: ['eton-blackout-buddy-co', 'eton-blackout-buddy-h2o', 'eton-red-cross-frx2'] },
+  { id: 'kidde', name: 'Kidde', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.kidde.com/', items: ['kidde-kn-cob-lp2', 'kidde-pro-210'] },
   { id: 'roboform', name: 'RoboForm', network: 'CJ', status: 'pending', kind: 'text',
     note: 'CJ advertiser CID 5258939. Password manager; for a future privacy or comms guide.' },
 
@@ -324,6 +346,7 @@ export function buildLink(p: Program, destination: string): string {
   if (p.network === 'CJ') return cjLink(destination, p.cjAid);
   return '';
 }
+
 
 export type OutboundLink = { href: string; affiliate: boolean; programId: string };
 

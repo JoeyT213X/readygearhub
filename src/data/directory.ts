@@ -55,12 +55,12 @@ const QUOTE = 'Quote or matching service; terms are set by the provider';
 export const entries: DirEntry[] = [
   // ---------------- Power ----------------
   { id: 'ecoflow', name: 'EcoFlow', category: 'power', type: 'Brand', url: 'https://www.ecoflow.com/us', desc: 'Portable power stations and solar panels.', offer: BRAND, program: 'ecoflow' },
-  { id: 'bluetti', name: 'BLUETTI', category: 'power', type: 'Brand', url: 'https://www.bluettipower.com/', desc: 'Portable power stations, solar panels and home backup systems.', offer: BRAND, program: 'bluetti' },
+  { id: 'bluetti', name: 'BLUETTI', category: 'power', type: 'Brand', url: 'https://www.bluettipower.com/', desc: 'Portable power stations, solar panels and home backup systems. Program code AFF5OFF for 5% off at checkout, per BLUETTI.', offer: BRAND, program: 'bluetti' },
   { id: 'jackery', name: 'Jackery', category: 'power', type: 'Brand', url: 'https://www.jackery.com/', desc: 'Portable power stations and SolarSaga solar panels.', offer: BRAND, program: 'jackery' },
   { id: 'anker-solix', name: 'Anker SOLIX', category: 'power', type: 'Brand', url: 'https://www.ankersolix.com/', desc: 'Power stations and home energy storage from Anker.', offer: BRAND, program: 'anker-solix' },
   { id: 'goal-zero', name: 'Goal Zero', category: 'power', type: 'Brand', url: 'https://goalzero.com/', desc: 'Power stations, solar panels and lanterns.', offer: BRAND, program: 'goal-zero' },
   { id: 'renogy', name: 'Renogy', category: 'power', type: 'Brand', url: 'https://www.renogy.com/', desc: 'Solar panels, solar kits and off-grid components.', offer: BRAND, program: 'renogy' },
-  { id: 'allpowers', name: 'ALLPOWERS', category: 'power', type: 'Brand', url: 'https://www.allpowers.com/', desc: 'Portable power stations and solar panels.', offer: BRAND, program: 'allpowers' },
+  { id: 'allpowers', name: 'ALLPOWERS', category: 'power', type: 'Brand', url: 'https://www.iallpowers.com/', desc: 'Portable power stations and solar panels. Program code ALLPOWERS26 for 10% off at checkout, per ALLPOWERS.', offer: BRAND, program: 'allpowers' },
   { id: 'pecron', name: 'PECRON', category: 'power', type: 'Brand', url: 'https://www.pecron.com/', desc: 'Portable power stations.', offer: BRAND, program: 'pecron' },
   { id: 'mighty-generators', name: 'Mighty Generators', category: 'power', type: 'Retailer', url: 'https://mightygenerators.com/', desc: 'Generator retailer.', offer: 'Retailer site', program: 'mighty-generators' },
   { id: 'honda-power', name: 'Honda Power Equipment', category: 'power', type: 'Brand', url: 'https://powerequipment.honda.com/generators', desc: 'Portable inverter generators. Run generators outdoors only, per the manual.', offer: BRAND, program: 'honda-power' },

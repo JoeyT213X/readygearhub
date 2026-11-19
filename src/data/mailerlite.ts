@@ -1,14 +1,14 @@
 /**
  * MailerLite embedded signup.
  *
- * Thursday: flip `enabled` to true once MailerLite domain authentication
- * for readygearhub.com has cleared. Leave it false until then — the
- * form markup and universal script are not rendered while this is off.
+ * Domain authentication for readygearhub.com is cleared. Embedded forms
+ * go live once this flag is on and the embed is on the page; there is
+ * no separate MailerLite publish switch.
  *
  * Account 2802221, form PTvH32.
  */
 export const mailerlite = {
-  enabled: false,
+  enabled: true,
   account: '2802221',
   form: 'PTvH32',
 } as const;
