@@ -1,9 +1,9 @@
 /**
  * ReadyGearHub affiliate programs — the ONE place to turn on tracked links.
  *
- * HOW TO ACTIVATE A PROGRAM (see /workspace/AFFILIATE_LINKS_HOWTO.md):
- *   1. Find the program below by `id`.
- *   2. Set `status: 'approved'`.
+ * HOW TO ACTIVATE A PROGRAM (see also BOTS.md and /workspace/AFFILIATE_LINKS_HOWTO.md):
+ *   1. Find the program below by `id`. Do not rewrite directory entries or listing files.
+ *   2. Set `status: 'approved'` (from 'none' or 'pending').
  *   3. Fill ONE of:
  *        - CJ programs:   `cjAid` (the AID number from any CJ link for that advertiser),
  *                         or leave it '' to use CJ's deep-link generator (PID only).
@@ -29,7 +29,10 @@ export type Program = {
   id: string;
   name: string;
   network: Network;
-  status: 'pending' | 'approved';
+  /** none = not applied; pending = applied, waiting; approved = tracked links are live. */
+  status: 'none' | 'pending' | 'approved';
+  /** Official plain URL (homepage or a safe category page). Used as documentation; listings keep their own officialUrl. */
+  officialUrl?: string;
   /** product = swaps listing buy links; lead = pay-per-lead CTA box; text = no slots yet */
   kind: 'product' | 'lead' | 'text';
   /** Listings (src/content/items/<id>.md) this program applies to. */
@@ -77,10 +80,14 @@ export const programs: Program[] = [
   // ---- Retailer programs: fill retailerUrls with the product page at that store ----
   { id: 'walmart', name: 'Walmart', network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {} },
   { id: 'home-depot', name: 'The Home Depot', network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {} },
-  { id: 'bass-pro', name: 'Bass Pro Shops', network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {} },
-  { id: 'cabelas', name: "Cabela's", network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {} },
-  { id: 'academy', name: 'Academy Sports + Outdoors', network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {} },
-  { id: 'sportsmans', name: "Sportsman's Warehouse", network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {} },
+  { id: 'bass-pro', name: 'Bass Pro Shops', network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {}, officialUrl: 'https://www.basspro.com/c/camping',
+    note: 'Directory links to the camping category only. Do not promote firearms or ammunition (BOTS.md rule 4). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
+  { id: 'cabelas', name: "Cabela's", network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {}, officialUrl: 'https://www.cabelas.com/c/camping',
+    note: 'Directory links to the camping category only. Do not promote firearms or ammunition (BOTS.md rule 4). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
+  { id: 'academy', name: 'Academy Sports + Outdoors', network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {}, officialUrl: 'https://www.academy.com/',
+    note: 'Directory uses the official homepage (camping category URLs were not reliably reachable). Do not promote firearms or ammunition (BOTS.md rule 4). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
+  { id: 'sportsmans', name: "Sportsman's Warehouse", network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {}, officialUrl: 'https://www.sportsmans.com/camping-gear-supplies/c/cat100829',
+    note: 'Directory links to the camping-gear category only. Do not promote firearms or ammunition (BOTS.md rule 4). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
   { id: 'berkey', name: 'The Berkey', network: 'Refersion', status: 'pending', kind: 'product', retailerUrls: {},
     note: 'No Berkey listing yet; add one, then list it here.' },
 
@@ -124,11 +131,12 @@ export const programs: Program[] = [
       places: ['power-outage-ice-storm-mississippi'] } },
 
   // ---- Added for tonight's signup wave (launch-prep); all stay pending until approved + link filled ----
-  { id: 'sportsmans-guide', name: "Sportsman's Guide", network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {},
-    note: 'Official page: 5% on most sales, 2% on guns & ammo. Do not promote firearms or ammo. Join only one of their programs (CJ, not also AvantLink).' },
+  { id: 'sportsmans-guide', name: "Sportsman's Guide", network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {}, officialUrl: 'https://www.sportsmansguide.com/department/camping?d=117',
+    note: 'Official page: 5% on most sales, 2% on guns & ammo. Directory links to the camping department only — never the homepage (which merchandises firearms). Do not promote firearms or ammo. Join only one of their programs (CJ, not also AvantLink). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
   { id: 'allpowers', name: 'ALLPOWERS', network: 'CJ', status: 'pending', kind: 'product', cjAid: '',
     note: 'CJ advertiser CID 7797916. Also listed on Awin and AvantLink; apply inside the existing CJ account first.' },
-  { id: 'dicks', name: "DICK'S Sporting Goods", network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {} },
+  { id: 'dicks', name: "DICK'S Sporting Goods", network: 'CJ', status: 'pending', kind: 'product', cjAid: '', retailerUrls: {}, officialUrl: 'https://www.dickssportinggoods.com/c/camping-hiking-gear',
+    note: 'Directory links to the camping & hiking category. Do not mention firearms or ammunition. Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
   { id: 'surfshark', name: 'Surfshark', network: 'CJ', status: 'approved', kind: 'text', link: 'https://www.dpbolvw.net/click-101929817-15438560',
     note: 'CJ advertiser CID 6282055. Official page: 40% of new sales, 30-day cookie, $100 minimum. Approved in CJ; stays hidden until a tracked link is filled. Also listed on Impact and Awin — do not join a second network for this advertiser.' },
   { id: 'liberty-mutual', name: 'Liberty Mutual', network: 'CJ', status: 'pending', kind: 'lead', link: '',
@@ -137,8 +145,8 @@ export const programs: Program[] = [
       blurb: 'Liberty Mutual lets you complete a home, auto, or renters quote online. Compare coverage for storm and freeze damage before you need a claim.',
       button: 'Get a free insurance quote',
       places: ['how-to-keep-pipes-from-freezing', 'winter-power-outage-checklist', 'winter-car-emergency-kit'] } },
-  { id: 'survival-frog', name: 'Survival Frog', network: 'Awin', status: 'pending', kind: 'product',
-    note: '12%, 30-day cookie. Wants survival or outdoor sites. Shipping to the USA only.' },
+  { id: 'survival-frog', name: 'Survival Frog', network: 'Awin', status: 'pending', kind: 'product', officialUrl: 'https://www.survivalfrog.com/collections/n-camping',
+    note: '12%, 30-day cookie. Wants survival or outdoor sites. Shipping to the USA only. Directory links to the camping collection. Describe camping, lighting, power, and emergency-prep gear only.' },
   { id: 'legacy-food', name: 'Legacy Food Storage', network: 'Awin', status: 'pending', kind: 'product',
     note: '10% (up to 15%), 30-day cookie. Coupon sites get 1% only.' },
   { id: 'olight', name: 'Olight USA', network: 'Awin', status: 'pending', kind: 'product',
@@ -224,6 +232,74 @@ export const programs: Program[] = [
     note: 'CJ advertiser CID 5975700.' },
   { id: 'roboform', name: 'RoboForm', network: 'CJ', status: 'pending', kind: 'text',
     note: 'CJ advertiser CID 5258939. Password manager; for a future privacy or comms guide.' },
+
+  // ---- Brand programs added so every commercial listing/directory entry is affiliate-ready ----
+  // status 'none' = we have not applied yet. Links stay plain until flipped to approved with a tracking URL.
+  { id: 'honda-power', name: 'Honda Power Equipment', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://powerequipment.honda.com/generators',
+    items: ['honda-eu2200i', 'honda-eu3200i'] },
+  { id: 'generac', name: 'Generac', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.generac.com/',
+    items: ['generac-iq3500'] },
+  { id: 'katadyn', name: 'Katadyn', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://katadyn.com/en-us/',
+    items: ['katadyn-befree-0-6l'] },
+  { id: 'sawyer', name: 'Sawyer', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.sawyer.com/',
+    items: ['sawyer-mini-water-filter', 'sawyer-squeeze-water-filter'] },
+  { id: 'augason-farms', name: 'Augason Farms', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://augasonfarms.com/',
+    items: ['augason-farms-30-day-1-person'] },
+  { id: 'amk', name: 'Adventure Medical Kits', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://adventuremedicalkits.com/',
+    items: ['amk-adventure-first-aid-family', 'amk-mountain-series-explorer', 'amk-mountain-series-hiker', 'amk-trauma-pak-quikclot', 'amk-ultralight-watertight-9'] },
+  { id: 'first-aid-only', name: 'First Aid Only', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://firstaidonly.com/',
+    items: ['first-aid-only-50-person-272'] },
+  { id: 'petzl', name: 'Petzl', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.petzl.com/US/en',
+    items: ['petzl-actik-core'] },
+  { id: 'black-diamond', name: 'Black Diamond', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.blackdiamondequipment.com/',
+    items: ['black-diamond-spot-400'] },
+  { id: 'eton', name: 'Eton', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://etoncorp.com/',
+    items: ['eton-blackout-buddy-co', 'eton-blackout-buddy-h2o', 'eton-red-cross-frx2'] },
+  { id: 'kidde', name: 'Kidde', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.kidde.com/',
+    items: ['kidde-kn-cob-lp2', 'kidde-pro-210'] },
+  { id: '3m', name: '3M', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.3m.com/',
+    items: ['3m-indoor-window-insulator-kit'] },
+  { id: 'darn-tough', name: 'Darn Tough', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.darntough.com/',
+    items: ['darn-tough-hiker-boot-full-cushion'] },
+  { id: 'datrex', name: 'Datrex', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.datrex.com/',
+    items: ['datrex-emergency-water-dx1000w'] },
+  { id: 'gerber', name: 'Gerber', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.gerbergear.com/',
+    items: ['gerber-multi-plier-600-basic'],
+    note: 'Listing is a multi-tool. Knives only as multi-tools or utility tools (BOTS.md rule 4).' },
+  { id: 'hothands', name: 'HotHands', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://kobayashiamericas.com/hothands/',
+    items: ['hothands-hand-warmers'] },
+  { id: 'kahtoola', name: 'Kahtoola', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://kahtoola.com/',
+    items: ['kahtoola-microspikes'] },
+  { id: 'lodge', name: 'Lodge', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.lodgecastiron.com/',
+    items: ['lodge-classic-cast-iron-skillet'] },
+  { id: 'mr-heater', name: 'Mr. Heater', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.mrheater.com/',
+    items: ['mr-heater-buddy-flex', 'mr-heater-buddy-flex-cooker', 'mr-heater-portable-buddy'] },
+  { id: 'noco', name: 'NOCO', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://no.co/gb40',
+    items: ['noco-boost-gb40'] },
+  { id: 'philips', name: 'Philips', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.usa.philips.com/healthcare/product/HCM5066A',
+    items: ['philips-heartstart-onsite'] },
+  { id: 'reliance', name: 'Reliance Outdoors', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://relianceoutdoors.com/',
+    items: ['reliance-aqua-tainer', 'reliance-jumbo-tainer-2'] },
+  { id: 'sam-medical', name: 'SAM Medical', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.sammedical.com/',
+    items: ['sam-splint'] },
+  { id: 'snow-joe', name: 'Snow Joe', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://shopjoe.com/',
+    items: ['snow-joe-shovelution-18', 'snow-joe-telescoping-snow-broom'] },
+  { id: 'sol', name: 'SOL (Survive Outdoors Longer)', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.surviveoutdoorslonger.com/',
+    items: ['sol-emergency-bivvy', 'sol-emergency-blanket'] },
+  { id: 'teton-sports', name: 'TETON Sports', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://tetongear.com/',
+    items: ['teton-sports-celsius-regular-0'] },
+  { id: 'therm-a-rest', name: 'Therm-a-Rest', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://cascadedesigns.com/',
+    items: ['therm-a-rest-z-lite-sol'] },
+  { id: 'uco', name: 'UCO', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://ucogear.com/',
+    items: ['uco-stormproof-match-kit'] },
+  { id: 'vornado', name: 'Vornado', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://vornado.com/',
+    items: ['vornado-avh10'] },
+  { id: 'waterbob', name: 'waterBOB', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://waterbob.com/',
+    items: ['waterbob'] },
+  { id: 'yaktrax', name: 'Yaktrax', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://yaktrax.com/',
+    items: ['yaktrax-pro'] },
+  { id: 'zippo', name: 'Zippo', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://zippo.com/',
+    items: ['zippo-heatbank-9s'] },
 ];
 
 // ---------------------------------------------------------------------------
@@ -249,7 +325,34 @@ export function buildLink(p: Program, destination: string): string {
   return '';
 }
 
-/** Program id for a listing (approved match first, else first pending), or ''. */
+export type OutboundLink = { href: string; affiliate: boolean; programId: string };
+
+/**
+ * Single outbound-link helper. Approved programs with a tracking URL become
+ * tracked links (caller should set rel="sponsored nofollow noopener" and
+ * data-program). Status "none" or "pending", missing tracking URLs, and
+ * entries with no program id stay on the plain destination — no sponsored
+ * label, no tracking. Government and free-resource entries must pass no
+ * programId so they can never flip.
+ */
+export function resolveOutbound(programId: string | undefined, destination: string): OutboundLink {
+  const id = programId || '';
+  if (!id) return { href: destination, affiliate: false, programId: '' };
+  const p = programs.find((x) => x.id === id);
+  const tracked = p ? buildLink(p, destination) : '';
+  return { href: tracked || destination, affiliate: Boolean(tracked), programId: id };
+}
+
+/** Listing buy-button resolver. A manual affiliateUrl in the markdown wins; otherwise the program helper. */
+export function resolveItemOutbound(itemId: string, officialUrl: string, affiliateUrl?: string): OutboundLink {
+  const programId = programIdForItem(itemId);
+  if (affiliateUrl) return { href: affiliateUrl, affiliate: true, programId };
+  const fromProgram = trackedItemLink(itemId, officialUrl);
+  if (fromProgram) return { href: fromProgram, affiliate: true, programId };
+  return { href: officialUrl, affiliate: false, programId };
+}
+
+/** Program id for a listing (approved match first, else first none/pending), or ''. */
 export function programIdForItem(itemId: string): string {
   let pending = '';
   for (const p of programs) {

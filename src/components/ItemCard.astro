@@ -17,6 +17,6 @@ const program = programIdForItem(item.id);
   {item.data.uses.length > 0 && <p class="uses"><strong>Also good for:</strong> {item.data.uses.slice(0, 2).join(' · ')}</p>}
   <div class="card-actions">
     <a class="btn small ghost" href={`/gear/${item.id}/`}>Details</a>
-    <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={program || undefined}>Check current price ↗</a>
+    <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>Check current price ↗</a>
   </div>
 </article>

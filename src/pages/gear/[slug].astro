@@ -35,7 +35,7 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
       <p class="brand light">by {d.brand}</p>
       <p class="lead">{d.description}</p>
       <div class="hero-actions">
-        <a class="btn" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={program || undefined}>Check current price at {isAffiliate(item) ? 'retailer' : d.brand} ↗</a>
+        <a class="btn" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>Check current price at {isAffiliate(item) ? 'retailer' : d.brand} ↗</a>
       </div>
     </div>
   </section>

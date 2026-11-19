@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import lanesRaw from '../data/lanes.json';
 import site from '../data/site.json';
-import { trackedItemLink, programIdForItem } from '../data/affiliates';
+import { resolveItemOutbound, programIdForItem } from '../data/affiliates';
 
 export type Lane = (typeof lanesRaw)[number];
 export type Item = CollectionEntry<'items'>;
@@ -51,8 +51,8 @@ export async function getGuides() {
   return g.sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
 }
 
-// Outbound buy link: manual affiliateUrl in the listing > approved program in src/data/affiliates.ts > official URL.
-const tracked = (item: Item) => item.data.affiliateUrl || trackedItemLink(item.id, item.data.officialUrl);
-export const outUrl = (item: Item) => tracked(item) || item.data.officialUrl;
-export const isAffiliate = (item: Item) => Boolean(tracked(item));
+// Outbound buy link: shared helper in affiliates.ts (manual affiliateUrl > approved program > official URL).
+export const itemOutbound = (item: Item) => resolveItemOutbound(item.id, item.data.officialUrl, item.data.affiliateUrl);
+export const outUrl = (item: Item) => itemOutbound(item).href;
+export const isAffiliate = (item: Item) => itemOutbound(item).affiliate;
 export { site, programIdForItem };
