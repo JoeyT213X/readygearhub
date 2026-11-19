@@ -8,11 +8,11 @@ relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-cran
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links, and one link goes to a sponsored home warranty partner. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
+*Heads up: some links on this page lead to gear listings that may have affiliate links, and some go to sponsored partners (a home warranty plan, a password manager, and a VPN, all paid services). If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
 
 Most winters in the South bring a few cold mornings and nothing more. Then every few years a storm drops freezing rain on trees and power lines, the roads glaze over, and a lot of us find out at the same time that our houses, cars, and plans were built for heat, not ice. This guide pulls everything together in one place: what to do before the storm, how to keep the house and the people in it safe while the power is out, and what to check once it's over.
 
-It's long on purpose. Use the contents below to jump to what you need right now, and print the [free Winter Storm Ready Checklist](/winter-storm-ready-checklist/) if you'd rather work from paper. Every safety number on this page comes from the National Weather Service (NWS), Ready.gov, the CDC, or FoodSafety.gov, with a link so you can check it yourself.
+It's long on purpose. Use the contents below to jump to what you need right now, and print the [free Winter Storm Ready Checklist](/winter-storm-ready-checklist/) if you'd rather work from paper. Every safety number on this page comes from the National Weather Service (NWS), Ready.gov, the CDC, or FoodSafety.gov, with a link so you can check it yourself. Advice on copies of important documents and on public Wi-Fi comes from Ready.gov and CISA.
 
 > **If a storm is already on top of you:** go straight to [During the outage](#during-the-outage-the-first-hours-and-days). Never run a generator, grill, camp stove, or charcoal indoors or in a garage, and never heat the house with a gas oven or stovetop. Call 911 if anyone shows signs of carbon monoxide poisoning or hypothermia.
 
@@ -28,10 +28,11 @@ It's long on purpose. Use the contents below to jump to what you need right now,
 8. [Medical and power-dependent needs](#medical-and-power-dependent-needs)
 9. [Pets and livestock](#pets-and-livestock)
 10. [Vehicles and travel](#vehicles-and-travel)
-11. [During the outage](#during-the-outage-the-first-hours-and-days)
-12. [After the storm](#after-the-storm)
-13. [Southern special cases: mobile homes, rural water, and more](#southern-special-cases)
-14. [Free tools, apps, and printables](#free-tools-apps-and-printables)
+11. [Protect your accounts and documents](#protect-your-accounts-and-documents)
+12. [During the outage](#during-the-outage-the-first-hours-and-days)
+13. [After the storm](#after-the-storm)
+14. [Southern special cases: mobile homes, rural water, and more](#southern-special-cases)
+15. [Free tools, apps, and printables](#free-tools-apps-and-printables)
 
 ## Why winter storms hit the South differently
 
@@ -80,6 +81,7 @@ You don't need to do everything on this page the day before. Spread it out.
 - [ ] Have your furnace, water heater, and any fuel-burning appliance serviced. The [CDC](https://www.cdc.gov/carbon-monoxide/about/index.html) recommends a yearly check by a qualified technician, and a yearly chimney check or cleaning.
 - [ ] Build a basic kit. The free [Emergency Kit Builder](/tools/kit-builder/) turns Ready.gov's list into a printable checklist sized to your household.
 - [ ] Write down important phone numbers on paper: utility outage line, county emergency management, doctors, pharmacy, vet, and family. A dead phone shouldn't mean a lost list.
+- [ ] Make electronic and paper copies of IDs, insurance policies, and other key documents, and decide how you'll stay safer on public Wi-Fi if you have to leave home. (See [Protect your accounts and documents](#protect-your-accounts-and-documents).)
 - [ ] If anyone in the home depends on powered medical equipment, talk to the doctor and call your power company now. (See [Medical needs](#medical-and-power-dependent-needs).)
 - [ ] Put a car kit in each vehicle. (See [Vehicles](#vehicles-and-travel).)
 - [ ] If you can't afford heating costs or weatherization, Ready.gov points to the **Low Income Home Energy Assistance Program (LIHEAP)** for help.
@@ -132,8 +134,6 @@ A house that holds heat buys you hours, sometimes days, when the furnace stops. 
 - [ ] Keep a headlamp per person, like the [Black Diamond Spot 400](/gear/black-diamond-spot-400/), plus a lantern for each main room, like the [Goal Zero Lighthouse 600](/gear/goal-zero-lighthouse-600/). The CDC recommends battery-powered flashlights and lanterns over candles, since candles can start house fires.
 - [ ] Gather blankets, sleeping bags, hats, wool socks, and warm coats for everyone. The CDC lists extra blankets, sleeping bags, and warm coats as a backup heat source.
 
-<!-- AFFILIATE SLOT: LeafFilter (gutter protection estimate) pending — would go here -->
-
 Renting an apartment or small home with no room for a generator? The [Apartment Outage Kit](/kits/apartment-outage-kit/) is built around light, water, warmth, and battery power, with no fuel-burning heat at all.
 
 ## Protect your pipes
@@ -151,8 +151,6 @@ The [CDC's winter storm guidance](https://www.cdc.gov/winter-weather/safety/stay
 Southern homes need extra attention in a few places: crawl spaces, pipes on exterior walls, attic lines, garage lines, outdoor hose bibs, and the exposed plumbing under mobile and manufactured homes. If your local water utility asks people not to drip faucets to protect system pressure, follow the utility.
 
 **If a pipe bursts:** shut off the main water valve right away, turn off electricity to any area where water is reaching outlets or appliances (only if you can reach the panel safely and stay dry), and call a licensed plumber.
-
-<!-- AFFILIATE SLOT: Networx / Modernize / Angi (local plumber or contractor) pending — would go here -->
 
 The full walkthrough, including which pipes freeze first and how to tell if one is frozen, is in [How to Keep Pipes From Freezing in a Southern Cold Snap](/guides/how-to-keep-pipes-from-freezing/).
 
@@ -196,8 +194,6 @@ Per the CDC and Ready.gov:
 **Never plug a generator into a wall outlet.** Feeding power back through your house wiring can hurt you and utility crews working on the lines. If you want a generator to power household circuits, have a licensed electrician install a transfer switch.
 
 Still deciding what to buy? [Inverter Generator vs Portable Power Station](/guides/generator-vs-power-station/) compares the two, and battery power stations make no exhaust at all, so they're the safer choice for apartments and for running things indoors. [How to Pick a Portable Power Station](/guides/how-to-pick-a-portable-power-station/) explains watt-hours and sizing, and the free [Generator & Power Station Sizer](/tools/power-sizer/) estimates what you'd actually need. Browse options in [Home Backup Power & Solar](/home-backup-power-solar/) and [Off-Grid Power](/off-grid-power/).
-
-<!-- AFFILIATE SLOT: EnergySage (solar + battery quotes) pending — would go here -->
 
 ### Fuel-burning heaters, fireplaces, and wood stoves
 
@@ -326,6 +322,16 @@ The best plan for an ice storm is to **not drive in it**. The [NWS](https://www.
 
 Full checklist: [What to Keep in Your Car for Winter](/guides/winter-car-emergency-kit/), the [Car Winter Kit](/kits/car-winter-kit/), and the [Vehicle Emergency Kits](/vehicle-emergency-kits/) lane.
 
+## Protect your accounts and documents
+
+If you have to leave home, or if a computer or a filing cabinet is damaged, you'll want copies of IDs, insurance policies, and other key papers you can still reach. [Ready.gov's emergency kit list](https://www.ready.gov/kit) includes copies of insurance policies, identification, and bank account records, saved electronically or in a waterproof, portable container. [Ready.gov's financial preparedness page](https://www.ready.gov/financial-preparedness) also suggests storing important documents in a safety deposit box, on an external drive, or in the cloud so you can get to them during a disaster.
+
+A password manager can keep logins in one place, and many also let you store secure copies of documents — IDs, insurance cards, and policies — so you can open them from a phone if you have to leave the house. [CISA](https://www.cisa.gov/secure-our-world/use-strong-passwords) recommends a password manager for creating and storing long, unique passwords, and notes that some are free (including the one built into your browser) and some cost money. <a href="https://www.dpbolvw.net/click-101929817-13868703" target="_blank" rel="sponsored nofollow noopener" data-program="nordpass">NordPass</a> is one paid subscription option. Use a strong, unique passphrase for the manager itself, and turn on multi-factor authentication if it's offered.
+
+Keep paper copies too, in a waterproof container you can grab quickly, in case phones and internet are down.
+
+**On shelter or public Wi-Fi.** If you end up at a warming center, hotel, or other public network, treat that connection as untrusted. [CISA](https://www.cisa.gov/news-events/news/good-security-habits) says public networks are not very secure, which makes it easier for others to intercept your data, and that if you connect to an open network you can use a virtual private network (VPN) to help keep your traffic private. <a href="https://www.anrdoezrs.net/click-101929817-12814518" target="_blank" rel="sponsored nofollow noopener" data-program="nordvpn">NordVPN</a> is a paid subscription VPN. A VPN is optional, not a requirement, and it doesn't replace careful habits: confirm the network name with staff when you can, avoid entering sensitive information if you have a better option (such as your phone's cellular data), and be cautious with unexpected login pages.
+
 ## During the outage: the first hours and days
 
 ### The first 30 minutes
@@ -391,11 +397,8 @@ The step-by-step version of this section is [What to Do When the Power Goes Out 
 - [ ] **Check for frozen or burst pipes** before you turn water fully back on, and watch for leaks as pipes thaw.
 - [ ] **Plug electronics back in slowly** once power is steady.
 - [ ] **Make sure the furnace and water heater restart normally.** The NWS says to make sure a gas furnace vent isn't blocked by a snowdrift once it's safe to go out, so check that outdoor vents aren't covered by ice or snow.
-- [ ] **Take photos** of any damage for insurance before you clean up, and keep receipts for repairs.
+- [ ] **Take photos** of any damage for insurance before you clean up, and keep receipts for repairs. If you made the document copies in [Protect your accounts and documents](#protect-your-accounts-and-documents), you'll have the policy information on hand.
 - [ ] **Restock** what you used so you're ready next time.
-
-<!-- AFFILIATE SLOT: Liberty Mutual (home/auto insurance quote) pending — would go here -->
-<!-- AFFILIATE SLOT: Modernize / Networx / Angi / MatchBurst (post-storm contractor quotes) pending — would go here -->
 
 **A note on repair costs:** a dead furnace or water heater after a hard freeze can be an expensive surprise. Some homeowners choose a <a href="https://www.dpbolvw.net/click-101929817-12337172" target="_blank" rel="sponsored nofollow noopener" data-program="choice-home-warranty">home warranty plan from Choice Home Warranty</a> (sponsored), which is a paid monthly or yearly service plan that can cover repair or replacement of some major systems and appliances. It's for homeowners only, it isn't insurance, and coverage has limits, so check the price and read the terms before you sign up.
 
@@ -477,13 +480,12 @@ Everything below is free to use in your browser unless noted.
 - [Winter Emergency Kit for Elderly Parents](/guides/winter-emergency-kit-for-elderly-parents/)
 - [What to Keep in Your Car for Winter](/guides/winter-car-emergency-kit/)
 
-<!-- AFFILIATE SLOT: Hunter Boots / Magid Glove & Safety (cold-weather boots and gloves) pending — would go here -->
-
 ## Sources
 
 - National Weather Service: [Ice Storms](https://www.weather.gov/safety/winter-ice-frost), [Winter Weather Warnings, Watches and Advisories](https://www.weather.gov/safety/winter-ww), [What To Do If You're Caught in a Winter Storm](https://www.weather.gov/safety/winter-during)
-- Ready.gov: [Winter Weather](https://www.ready.gov/winter-weather), [Power Outages](https://www.ready.gov/power-outages), [People with Disabilities](https://www.ready.gov/disability), [Prepare Your Pets for Disasters](https://www.ready.gov/pets)
+- Ready.gov: [Winter Weather](https://www.ready.gov/winter-weather), [Power Outages](https://www.ready.gov/power-outages), [People with Disabilities](https://www.ready.gov/disability), [Prepare Your Pets for Disasters](https://www.ready.gov/pets), [Build A Kit](https://www.ready.gov/kit), [Financial Preparedness](https://www.ready.gov/financial-preparedness)
 - CDC: [Safety Guidelines: During & After a Winter Storm](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html), [Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)
+- CISA: [Use Strong Passwords](https://www.cisa.gov/secure-our-world/use-strong-passwords), [Good Security Habits](https://www.cisa.gov/news-events/news/good-security-habits)
 - FoodSafety.gov: [Food Safety in a Disaster or Emergency](https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency)
 
 *This guide is general preparedness information, not medical advice. In an emergency, call 911, and always follow instructions from local officials and your utility.*
