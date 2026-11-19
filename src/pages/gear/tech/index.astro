@@ -60,7 +60,7 @@ const schema = {
                   {e.url ? (
                     <a class="btn small" href={e.href} target="_blank"
                        rel={e.affiliate ? 'sponsored nofollow noopener' : 'noopener'}
-                       data-program={e.affiliate ? e.programId : undefined}>{e.type === 'Free resource' ? 'Visit official site ↗' : 'Visit official page ↗'}</a>
+                       data-program={e.affiliate ? e.programId : undefined}>{e.cta ?? (e.type === 'Free resource' ? 'Visit official site ↗' : 'Visit official page ↗')}</a>
                   ) : (
                     <span class="pill">Coming soon</span>
                   )}

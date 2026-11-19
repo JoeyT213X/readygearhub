@@ -22,7 +22,7 @@
 export const CJ_PID = '101929817';
 
 export type Network =
-  | 'CJ' | 'Impact' | 'Awin' | 'Partnerize' | 'FlexOffers' | 'Refersion'
+  | 'CJ' | 'Impact' | 'Awin' | 'Partnerize' | 'FlexOffers' | 'Refersion' | 'GoAffPro'
   | 'AvantLink' | 'ShareASale' | 'Rakuten' | 'Amazon' | 'Direct' | 'TBD';
 
 export type Program = {
@@ -92,8 +92,14 @@ export const programs: Program[] = [
     note: 'Directory uses the official homepage (camping category URLs were not reliably reachable). Do not promote firearms or ammunition (BOTS.md rule 4). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
   { id: 'sportsmans', name: "Sportsman's Warehouse", network: 'Impact', status: 'pending', kind: 'product', retailerUrls: {}, officialUrl: 'https://www.sportsmans.com/camping-gear-supplies/c/cat100829',
     note: 'Directory links to the camping-gear category only. Do not promote firearms or ammunition (BOTS.md rule 4). Flip to approved only with a camping/outdoor deep link and owner sign-off.' },
-  { id: 'berkey', name: 'The Berkey', network: 'Refersion', status: 'pending', kind: 'product', retailerUrls: {},
-    note: 'No Berkey listing yet; add one, then list it here.' },
+  { id: 'berkey', name: 'TheBerkey.com', network: 'Refersion', status: 'approved', kind: 'product',
+    officialUrl: 'https://theberkey.com/',
+    link: 'https://theberkey.com/?rfsn=9422720.32fae8',
+    note: 'Refersion 15%, 365-day cookie. Official retailer TheBerkey.com. Linked from /gear/ (water) and /gear/tech/ (water filters).' },
+  { id: 'redi', name: 'REDI', network: 'GoAffPro', status: 'approved', kind: 'product',
+    officialUrl: 'https://getredi.com/',
+    link: 'https://getredi.goaffpro.com/?ref=JOSEPHTINDIGLIA',
+    note: 'GoAffPro 10%, 30-day cookie. Emergency and readiness kits. Linked from /gear/ (kits).' },
 
   // ---- Programs with no listing slot yet (use in new listings/guides later) ----
   { id: 'hunter-boots', name: 'Hunter Boots', network: 'CJ', status: 'pending', kind: 'text', cjAid: '' },

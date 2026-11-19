@@ -15,7 +15,7 @@
 import { resolveOutbound } from './affiliates';
 
 export type CategoryId =
-  | 'power' | 'water' | 'food' | 'first-aid' | 'lighting' | 'comms'
+  | 'power' | 'water' | 'food' | 'kits' | 'first-aid' | 'lighting' | 'comms'
   | 'home-protection' | 'insurance' | 'digital-safety' | 'more';
 
 export type TechGroupId =
@@ -41,6 +41,7 @@ export const categories: { id: CategoryId; name: string; icon: string; blurb: st
     note: 'Fuel-burning gear (generators, heaters, stoves) must be used outdoors or as the manufacturer directs, with a working carbon monoxide alarm in your home. Follow each maker\u2019s ventilation instructions.' },
   { id: 'water', name: 'Water', icon: '💧', blurb: 'Filters, purifiers, storage containers and water testing.' },
   { id: 'food', name: 'Food', icon: '🥫', blurb: 'Long-shelf-life food and food-safety guidance for outages.' },
+  { id: 'kits', name: 'Emergency kits', icon: '🎒', blurb: 'Ready-made emergency and readiness kits.' },
   { id: 'first-aid', name: 'First Aid', icon: '🩹', blurb: 'First aid kits, supplies and training.',
     note: 'Information here is not professional medical advice. Take a first aid class and ask a clinician what belongs in your kit.' },
   { id: 'lighting', name: 'Lighting', icon: '🔦', blurb: 'Flashlights, headlamps and lanterns for outages.' },
@@ -66,6 +67,8 @@ export type DirEntry = {
   program?: string;
   /** If set, this entry also appears in the matching group on /gear/tech/. */
   tech?: TechGroupId;
+  /** Optional button label. Defaults to a generic official-site label. */
+  cta?: string;
 };
 
 const BRAND = 'Manufacturer site';
@@ -97,7 +100,7 @@ export const entries: DirEntry[] = [
   { id: 'grayl', name: 'GRAYL', category: 'water', type: 'Brand', url: 'https://grayl.com/', desc: 'Press-style water purifier bottles.', offer: BRAND, program: 'grayl' },
   { id: 'katadyn', name: 'Katadyn', category: 'water', type: 'Brand', url: 'https://katadyn.com/en-us/', desc: 'Backpacking and emergency water filters.', offer: BRAND, program: 'katadyn' },
   { id: 'sawyer', name: 'Sawyer', category: 'water', type: 'Brand', url: 'https://www.sawyer.com/', desc: 'Squeeze and mini water filters.', offer: BRAND, program: 'sawyer' },
-  { id: 'berkey', name: 'The Berkey', category: 'water', type: 'Retailer', url: 'https://www.theberkey.com/', desc: 'Gravity-fed countertop water filter systems.', offer: 'Retailer site', program: 'berkey' },
+  { id: 'berkey', name: 'The Berkey', category: 'water', type: 'Retailer', url: 'https://theberkey.com/', desc: 'Gravity-fed countertop water filter systems.', offer: 'Retailer site', program: 'berkey', tech: 'water-tech', cta: 'See Berkey filters' },
   { id: 'aquasana', name: 'Aquasana', category: 'water', type: 'Brand', url: 'https://www.aquasana.com/', desc: 'Home water filtration systems.', offer: BRAND, program: 'aquasana' },
   { id: 'tap-score', name: 'Tap Score', category: 'water', type: 'Service', url: 'https://www.mytapscore.com/', desc: 'Mail-in home water test kits that analyze a sample you send.', offer: 'Paid test kits', program: 'tap-score' },
   { id: 'ready-water', name: 'Ready.gov: Water', category: 'water', type: 'Free resource', url: 'https://www.ready.gov/water', desc: 'Official guidance on storing and treating emergency drinking water.', offer: GOV },
@@ -110,6 +113,9 @@ export const entries: DirEntry[] = [
   { id: 'augason-farms', name: 'Augason Farms', category: 'food', type: 'Brand', url: 'https://augasonfarms.com/', desc: 'Emergency food and pantry staples.', offer: BRAND, program: 'augason-farms' },
   { id: 'ready-food', name: 'Ready.gov: Food', category: 'food', type: 'Free resource', url: 'https://www.ready.gov/food', desc: 'Official guidance on stocking and handling food for emergencies.', offer: GOV },
   { id: 'usda-outage-food', name: 'USDA FSIS: Keep Your Food Safe During Emergencies', category: 'food', type: 'Free resource', url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies', desc: 'Official USDA guidance on what to keep or discard after an outage.', offer: GOV },
+
+  // ---------------- Emergency kits ----------------
+  { id: 'redi', name: 'REDI', category: 'kits', type: 'Brand', url: 'https://getredi.com/', desc: 'Emergency and readiness kits.', offer: 'Retailer site', program: 'redi', cta: 'See REDI kits' },
 
   // ---------------- First aid ----------------
   { id: 'mymedic', name: 'MyMedic', category: 'first-aid', type: 'Brand', url: 'https://mymedic.com/', desc: 'First aid kits and medical supplies.', offer: BRAND, program: 'mymedic' },
