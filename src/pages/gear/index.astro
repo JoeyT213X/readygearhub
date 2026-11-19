@@ -3,11 +3,64 @@ import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import Disclosure from '../../components/Disclosure.astro';
 import { getItems } from '../../lib/data';
+import { categories, entries, categoryForItem, resolveEntry } from '../../data/directory';
 const items = await getItems();
-const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'All gear', numberOfItems: items.length,
+const resolved = entries.map(resolveEntry);
+const total = items.length + resolved.length;
+const groups = categories.map((c) => ({
+  ...c,
+  items: items.filter((i) => categoryForItem(i.id) === c.id),
+  entries: resolved.filter((e) => e.category === c.id),
+}));
+const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'ReadyGearHub preparedness directory', numberOfItems: items.length,
   itemListElement: items.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/gear/${t.id}/`, Astro.site).href, name: t.data.name })) };
 ---
-<Base title="All Gear: Full Preparedness & Multi-Purpose Gear Directory | ReadyGearHub" description={`Browse all ${items.length} hand-picked survival, winter storm, power outage, off-grid, and multi-purpose gear listings on ReadyGearHub.`} schema={schema}>
-  <section class="page-hero"><div class="wrap"><nav class="crumbs"><a href="/">Home</a> › All gear</nav><h1>All gear</h1><p class="lead">Every listing in the directory, trending picks first.</p></div></section>
-  <section class="wrap section"><Disclosure /><div class="grid">{items.map((item) => <ItemCard item={item} showRank />)}</div></section>
+<Base title="Preparedness Directory: Gear, Brands, Services & Free Resources | ReadyGearHub" description={`Browse ${total} preparedness listings by category: power, water, food, first aid, lighting, radios, home protection, insurance and digital safety, plus free government resources.`} schema={schema}>
+  <section class="page-hero"><div class="wrap"><nav class="crumbs"><a href="/">Home</a> › Directory</nav><h1>Preparedness directory</h1><p class="lead">Gear listings, brands, services and free official resources, sorted by category. Free resources from NWS, FEMA, Ready.gov and MEMA are marked as such.</p></div></section>
+  <section class="wrap section">
+    <p class="disclosure"><strong>Affiliate disclosure:</strong> Some links in this directory are affiliate links, marked with an "Affiliate link" tag. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. Affiliate relationships do not change what we list or how we describe it. Entries without that tag are plain links to the official site. Each card says what the offer is (for example, a paid plan or a free public resource). We do not show prices or ratings. <a href="/affiliate-disclosure/">Full disclosure</a></p>
+    <nav class="dir-nav" aria-label="Directory categories">
+      {groups.map((g) => <a class="pill" href={`#${g.id}`}>{g.icon} {g.name} ({g.items.length + g.entries.length})</a>)}
+    </nav>
+    <p class="fine">{total} listings: {items.length} gear listings with detail pages and {resolved.length} brands, services and resources.</p>
+
+    {groups.map((g) => (
+      <section id={g.id} class="dir-section">
+        <h2>{g.icon} {g.name}</h2>
+        <p>{g.blurb}</p>
+        {g.note && <p class="fine"><strong>Note:</strong> {g.note}</p>}
+        {g.items.length > 0 && (<>
+          <h3>Gear listings</h3>
+          <div class="grid">{g.items.map((item) => <ItemCard item={item} showRank />)}</div>
+        </>)}
+        {g.entries.length > 0 && (<>
+          <h3>Brands, services &amp; resources</h3>
+          <div class="grid">
+            {g.entries.map((e) => (
+              <article class="card item-card">
+                <div class="card-top">
+                  <span class="pill">{e.type}</span>
+                  {e.affiliate && <span class="pill feat">Affiliate link</span>}
+                </div>
+                <h3>{e.name}</h3>
+                <p>{e.desc}</p>
+                <p class="uses"><strong>Offer:</strong> {e.offer}</p>
+                <div class="card-actions">
+                  <a class="btn small" href={e.href} target="_blank"
+                     rel={e.affiliate ? 'sponsored nofollow noopener' : 'noopener'}
+                     data-program={e.affiliate ? e.programId : undefined}>{e.type === 'Free resource' ? 'Visit official site ↗' : 'Visit site ↗'}</a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </>)}
+      </section>
+    ))}
+    <p class="fine">Links go to third-party sites we do not control. Check the provider for current terms. Preparedness and medical information here is general and is not professional advice.</p>
+  </section>
 </Base>
+<style>
+  .dir-nav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+  .dir-section{margin-top:36px;scroll-margin-top:80px}
+  .dir-section h3{margin-top:22px}
+</style>
