@@ -16,9 +16,9 @@ const extraLanes = d.alsoIn.map(laneBySlug).filter(Boolean);
 const related = (await getItems()).filter((i) => i.id !== item.id && (i.data.lane === d.lane || i.data.alsoIn.includes(d.lane))).slice(0, 3);
 const guides = (await getGuides()).filter((g) => g.data.relatedItems.includes(item.id));
 const url = new URL(`/gear/${item.id}/`, Astro.site).href;
-// Product schema without price/review data (we don't publish prices or ratings).
+// Editorial Article markup, not Product: we don't sell these items or publish prices/ratings.
 const schema = [
-  { '@context': 'https://schema.org', '@type': 'Product', name: d.name, brand: { '@type': 'Brand', name: d.brand }, description: d.description, url, category: lane.name, sameAs: d.officialUrl },
+  { '@context': 'https://schema.org', '@type': 'Article', headline: d.name, description: d.description, url, about: { '@type': 'Thing', name: d.name, sameAs: d.officialUrl } },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
     { '@type': 'ListItem', position: 2, name: lane.name, item: new URL(`/${lane.slug}/`, Astro.site).href },
@@ -27,7 +27,7 @@ const schema = [
 const program = programIdForItem(item.id);
 const desc = `${d.description} See uses, lanes, and where to check the current price.`.slice(0, 300);
 ---
-<Base title={`${d.name}: Uses & Where to Buy | ReadyGearHub`} description={desc} schema={schema} type="product">
+<Base title={`${d.name}: Uses & Where to Buy | ReadyGearHub`} description={desc} schema={schema} type="article">
   <section class="page-hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href={`/${lane.slug}/`}>{lane.name}</a> › {d.name}</nav>
