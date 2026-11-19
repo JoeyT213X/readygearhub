@@ -82,7 +82,7 @@ export const entries: DirEntry[] = [
   { id: 'legacy-food', name: 'Legacy Food Storage', category: 'food', type: 'Brand', url: 'https://legacyfoodstorage.com/', desc: 'Long-term food storage kits.', offer: BRAND, program: 'legacy-food' },
   { id: 'augason-farms', name: 'Augason Farms', category: 'food', type: 'Brand', url: 'https://augasonfarms.com/', desc: 'Emergency food and pantry staples.', offer: BRAND },
   { id: 'ready-food', name: 'Ready.gov: Food', category: 'food', type: 'Free resource', url: 'https://www.ready.gov/food', desc: 'Official guidance on stocking and handling food for emergencies.', offer: GOV },
-  { id: 'usda-outage-food', name: 'USDA FSIS: Food Safety During Power Outages', category: 'food', type: 'Free resource', url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/food-safety-during-power-outages', desc: 'Official USDA guidance on what to keep or discard after an outage.', offer: GOV },
+  { id: 'usda-outage-food', name: 'USDA FSIS: Keep Your Food Safe During Emergencies', category: 'food', type: 'Free resource', url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies', desc: 'Official USDA guidance on what to keep or discard after an outage.', offer: GOV },
 
   // ---------------- First aid ----------------
   { id: 'mymedic', name: 'MyMedic', category: 'first-aid', type: 'Brand', url: 'https://mymedic.com/', desc: 'First aid kits and medical supplies.', offer: BRAND, program: 'mymedic' },
@@ -124,7 +124,6 @@ export const entries: DirEntry[] = [
   { id: 'angi', name: 'Angi', category: 'home-protection', type: 'Service', url: 'https://www.angi.com/', desc: 'Find local contractors for repairs.', offer: QUOTE, program: 'angi' },
   { id: 'modernize', name: 'Modernize', category: 'home-protection', type: 'Service', url: 'https://modernize.com/', desc: 'Matches homeowners with local home-improvement contractors.', offer: QUOTE, program: 'modernize' },
   { id: 'networx', name: 'Networx', category: 'home-protection', type: 'Service', url: 'https://www.networx.com/', desc: 'Connects homeowners with local contractors.', offer: QUOTE, program: 'networx' },
-  { id: 'matchburst', name: 'MatchBurst', category: 'home-protection', type: 'Service', url: 'https://matchburst.com/', desc: 'Home-improvement quote matching.', offer: QUOTE, program: 'matchburst' },
   { id: 'leaffilter', name: 'LeafFilter', category: 'home-protection', type: 'Service', url: 'https://www.leaffilter.com/', desc: 'Gutter protection installation.', offer: 'Paid installation service', program: 'leaffilter' },
   { id: 'ready-home-fires', name: 'Ready.gov: Home Fires', category: 'home-protection', type: 'Free resource', url: 'https://www.ready.gov/home-fires', desc: 'Official home fire safety and smoke alarm guidance.', offer: GOV },
 
@@ -150,7 +149,7 @@ export const entries: DirEntry[] = [
   { id: 'deleteme', name: 'DeleteMe', category: 'digital-safety', type: 'Service', url: 'https://joindeleteme.com/', desc: 'Personal data-removal service sold as a paid subscription.', offer: PAID_SUB, program: 'deleteme' },
   { id: 'incogni', name: 'Incogni', category: 'digital-safety', type: 'Service', url: 'https://incogni.com/', desc: 'Personal data-removal service sold as a paid subscription.', offer: PAID_SUB, program: 'incogni' },
   { id: 'monarch', name: 'Monarch', category: 'digital-safety', type: 'Service', url: 'https://www.monarchmoney.com/', desc: 'Personal finance and budgeting app; useful for tracking an emergency fund.', offer: 'See provider plans', program: 'monarch' },
-  { id: 'cisa-sow', name: 'CISA: Secure Our World', category: 'digital-safety', type: 'Free resource', url: 'https://www.cisa.gov/secure-our-world', desc: 'Official basic cybersecurity tips: passwords, updates, phishing, MFA.', offer: GOV },
+  { id: 'cisa-sow', name: 'CISA: Secure Our World', category: 'digital-safety', type: 'Free resource', url: 'https://www.cisa.gov/secure-our-world/secure-yourself-your-family', desc: 'Official basic cybersecurity tips: passwords, updates, phishing, MFA.', offer: GOV },
   { id: 'identitytheft', name: 'IdentityTheft.gov', category: 'digital-safety', type: 'Free resource', url: 'https://www.identitytheft.gov/', desc: 'FTC\u2019s official site to report identity theft and get a recovery plan.', offer: GOV },
 
   // ---------------- Warmth, vehicle, tools & retailers ----------------
@@ -160,6 +159,13 @@ export const entries: DirEntry[] = [
   { id: 'hunter-boots', name: 'Hunter Boots', category: 'more', type: 'Brand', url: 'https://www.hunterboots.com/us/en_us/', desc: 'Rain and wet-weather boots.', offer: BRAND, program: 'hunter-boots' },
   { id: 'magid', name: 'Magid Glove & Safety', category: 'more', type: 'Brand', url: 'https://www.magidglove.com/', desc: 'Work gloves and safety gear.', offer: BRAND, program: 'magid' },
   { id: 'mro-supreme', name: 'MRO Supreme', category: 'more', type: 'Retailer', url: 'https://www.mrosupreme.com/', desc: 'Maintenance, repair and operations supplies and tools.', offer: 'Retailer site', program: 'mro-supreme' },
+  { id: 'bass-pro', name: 'Bass Pro Shops', category: 'more', type: 'Retailer', url: 'https://www.basspro.com/', desc: 'Outdoor and sporting goods retailer.', offer: 'Retailer site', program: 'bass-pro' },
+  { id: 'cabelas', name: "Cabela's", category: 'more', type: 'Retailer', url: 'https://www.cabelas.com/', desc: 'Outdoor and sporting goods retailer.', offer: 'Retailer site', program: 'cabelas' },
+  { id: 'academy', name: 'Academy Sports + Outdoors', category: 'more', type: 'Retailer', url: 'https://www.academy.com/', desc: 'Sporting goods and outdoor retailer.', offer: 'Retailer site', program: 'academy' },
+  { id: 'sportsmans', name: "Sportsman's Warehouse", category: 'more', type: 'Retailer', url: 'https://www.sportsmans.com/', desc: 'Outdoor and sporting goods retailer.', offer: 'Retailer site', program: 'sportsmans' },
+  { id: 'sportsmans-guide', name: "Sportsman's Guide", category: 'more', type: 'Retailer', url: 'https://www.sportsmansguide.com/', desc: 'Outdoor and sporting goods catalog retailer.', offer: 'Retailer site', program: 'sportsmans-guide' },
+  { id: 'dicks', name: "DICK'S Sporting Goods", category: 'more', type: 'Retailer', url: 'https://www.dickssportinggoods.com/', desc: 'Sporting goods retailer.', offer: 'Retailer site', program: 'dicks' },
+  { id: 'survival-frog', name: 'Survival Frog', category: 'more', type: 'Retailer', url: 'https://www.survivalfrog.com/', desc: 'Survival and emergency preparedness gear.', offer: 'Retailer site', program: 'survival-frog' },
   { id: 'walmart', name: 'Walmart', category: 'more', type: 'Retailer', url: 'https://www.walmart.com/', desc: 'General retailer.', offer: 'Retailer site', program: 'walmart' },
   { id: 'home-depot', name: 'The Home Depot', category: 'more', type: 'Retailer', url: 'https://www.homedepot.com/', desc: 'Home improvement retailer.', offer: 'Retailer site', program: 'home-depot' },
   { id: 'ace-hardware', name: 'Ace Hardware', category: 'more', type: 'Retailer', url: 'https://www.acehardware.com/', desc: 'Hardware retailer.', offer: 'Retailer site', program: 'ace-hardware' },
