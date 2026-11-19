@@ -100,7 +100,7 @@ export const programs: Program[] = [
     lead: { title: 'Worried about a furnace or water heater failing mid-storm?',
       blurb: 'A home warranty is a paid monthly or yearly plan that can cover repair or replacement of major systems and appliances. Check the price and read the coverage terms before you sign up.',
       button: 'See home warranty plans and prices',
-      places: ['how-to-keep-pipes-from-freezing', 'heat-one-room-safely-in-an-outage', 'how-to-stay-warm-without-power', 'winter-power-outage-checklist', 'ice-storm-prep-checklist-south'] } },
+      places: ['how-to-keep-pipes-from-freezing', 'heat-one-room-safely-in-an-outage', 'how-to-stay-warm-without-power', 'winter-power-outage-checklist', 'ice-storm-prep-checklist-south', 'winter-storm-power-outage-prep-guide-south'] } },
   { id: 'modernize', name: 'Modernize', network: 'Direct', status: 'pending', kind: 'lead', link: '',
     lead: { title: 'Need a contractor after the storm?',
       blurb: 'Modernize matches you with local pros for roofing, generators, and home repairs. Free, no-obligation quotes.',
