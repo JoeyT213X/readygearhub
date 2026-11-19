@@ -238,20 +238,6 @@ export const programs: Program[] = [
     items: ['coleman-classic-propane-stove-2-burner'],
     note: 'CJ advertiser CID 5975700.' },
 
-  // ---- Directory brands not yet applied (status none; flip to approved + link later) ----
-  { id: 'honda-power', name: 'Honda Power Equipment', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://powerequipment.honda.com/generators',
-    items: ['honda-eu2200i', 'honda-eu3200i'] },
-  { id: 'generac', name: 'Generac', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.generac.com/', items: ['generac-iq3500'] },
-  { id: 'katadyn', name: 'Katadyn', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://katadyn.com/en-us/', items: ['katadyn-befree-0-6l'] },
-  { id: 'sawyer', name: 'Sawyer', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.sawyer.com/', items: ['sawyer-mini-water-filter', 'sawyer-squeeze-water-filter'] },
-  { id: 'augason-farms', name: 'Augason Farms', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://augasonfarms.com/', items: ['augason-farms-30-day-1-person'] },
-  { id: 'amk', name: 'Adventure Medical Kits', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://adventuremedicalkits.com/',
-    items: ['amk-adventure-first-aid-family', 'amk-mountain-series-explorer', 'amk-mountain-series-hiker', 'amk-trauma-pak-quikclot', 'amk-ultralight-watertight-9'] },
-  { id: 'first-aid-only', name: 'First Aid Only', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://firstaidonly.com/', items: ['first-aid-only-50-person-272'] },
-  { id: 'petzl', name: 'Petzl', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.petzl.com/US/en', items: ['petzl-actik-core'] },
-  { id: 'black-diamond', name: 'Black Diamond', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.blackdiamondequipment.com/', items: ['black-diamond-spot-400'] },
-  { id: 'eton', name: 'Eton', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://etoncorp.com/', items: ['eton-blackout-buddy-co', 'eton-blackout-buddy-h2o', 'eton-red-cross-frx2'] },
-  { id: 'kidde', name: 'Kidde', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.kidde.com/', items: ['kidde-kn-cob-lp2', 'kidde-pro-210'] },
   { id: 'roboform', name: 'RoboForm', network: 'CJ', status: 'pending', kind: 'text',
     note: 'CJ advertiser CID 5258939. Password manager; for a future privacy or comms guide.' },
 
@@ -322,6 +308,14 @@ export const programs: Program[] = [
     items: ['yaktrax-pro'] },
   { id: 'zippo', name: 'Zippo', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://zippo.com/',
     items: ['zippo-heatbank-9s'] },
+  { id: 'zoleo', name: 'ZOLEO', network: 'TBD', status: 'pending', kind: 'product', officialUrl: 'https://www.zoleo.com/en-us/product/zoleo-global-satellite-communicator',
+    note: 'Impact/AvantLink/Awin pending. Keep links plain until approved and a tracking URL is filled.' },
+  { id: 'iridium', name: 'Iridium', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.iridium.com/products/iridium-go-exec-portable-wireless-access-device',
+    note: 'Not applied yet. Directory links stay plain until flipped to approved with a tracking URL.' },
+  { id: 'moen', name: 'Moen (Flo)', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.moen.com/products/900-001',
+    note: 'Not applied yet. Directory links stay plain until flipped to approved with a tracking URL.' },
+  { id: 'yolink', name: 'YoLink', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://shop.yosmart.com/products/ys7986',
+    note: 'Not applied yet. Directory links stay plain until flipped to approved with a tracking URL.' },
 ];
 
 // ---------------------------------------------------------------------------
