@@ -22,7 +22,7 @@ export function initAlertsWidget() {
       root.innerHTML = `<div class="widget-card">
         <h1>Live weather alerts</h1>
         <p>${NWS_UNAVAILABLE_HTML}</p>
-        <p class="widget-powered">Powered by <a href="https://readygearhub.com/" target="_top">ReadyGearHub</a></p>
+        <p class="widget-powered">Powered by <a href="https://readygearhub.com/" target="_top" rel="nofollow noopener">ReadyGearHub</a></p>
       </div>`;
     }
   })();
@@ -38,6 +38,6 @@ function render(root: HTMLElement, place: string, alerts: Awaited<ReturnType<typ
     <h1>Live weather alerts</h1>
     <p class="fine">Official National Weather Service data. Not a replacement for official alerts. In an emergency, call 911.</p>
     ${body}
-    <p class="widget-powered">Powered by <a href="https://readygearhub.com/" target="_top">ReadyGearHub</a></p>
+    <p class="widget-powered">Powered by <a href="https://readygearhub.com/" target="_top" rel="nofollow noopener">ReadyGearHub</a></p>
   </div>`;
 }

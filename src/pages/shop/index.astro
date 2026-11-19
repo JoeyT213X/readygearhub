@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { payhipProducts } from '../../data/payhip';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'ReadyGearHub shop',
+  description: 'Printable ReadyGearHub preparedness guides and planners, sold as instant PDF downloads.',
+  url: new URL('/shop/', Astro.site).href,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: payhipProducts.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: new URL(`/shop/${p.slug}/`, Astro.site).href,
+      name: p.title,
+    })),
+  },
+};
+---
+<Base title="Shop: Printable Prep Guides & Planners | ReadyGearHub" description="Buy ReadyGearHub's printable preparedness guides: the Family Emergency Binder, Winter Storm Prep Planner, and Homestead Prep Starter Guide. Instant PDF downloads." schema={schema}>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › Shop</nav>
+      <h1>🛒 Shop</h1>
+      <p class="lead">Printable ReadyGearHub guides and planners. Checkout is handled by Payhip, and you get an instant PDF download. These are our own digital products, not affiliate gear listings.</p>
+    </div>
+  </section>
+  <section class="wrap section">
+    <div class="grid">{payhipProducts.map((p) => <ProductCard product={p} />)}</div>
+  </section>
+</Base>

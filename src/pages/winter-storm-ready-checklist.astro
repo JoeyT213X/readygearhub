@@ -1,5 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import MailerLiteSignup from '../components/MailerLiteSignup.astro';
+import { mailerlite } from '../data/mailerlite';
+import { productBySlug } from '../data/payhip';
+const planner = productBySlug('winter-storm-prep-planner');
 ---
 <Base title="Free Winter Storm Ready Checklist (Printable PDF) | ReadyGearHub" description="A free 6-page printable winter storm checklist: before the storm, kit checklist, during an outage, after the storm, and an emergency contacts page.">
   <section class="page-hero"><div class="wrap"><h1>Free Winter Storm Ready Checklist</h1><p class="lead">Six printable pages to get your home, car, and family ready before the ice hits.</p></div></section>
@@ -12,6 +16,11 @@ import Base from '../layouts/Base.astro';
       <li>Emergency contacts page to fill in and post on the fridge</li>
     </ul>
     <p><a class="btn" href="/downloads/winter-storm-ready-checklist.pdf" download>Download the free checklist (PDF)</a></p>
-    <p>Want gear ideas to go with it? Start with <a href="/winter-storm-prep/">Winter Storm Prep</a> or <a href="/power-outage-kits/">Power Outage Kits</a>.</p>
+    <p>Want a seven-day countdown you can print and keep with the kit? See the <a href="/shop/winter-storm-prep-planner/">Winter Storm Prep Planner</a>{planner && <> ({planner.price})</>}. For gear ideas, start with <a href="/winter-storm-prep/">Winter Storm Prep</a> or <a href="/power-outage-kits/">Power Outage Kits</a>.</p>
   </section>
+  {mailerlite.enabled && (
+    <section class="wrap section">
+      <MailerLiteSignup variant="page" heading="Get this kind of checklist by email" intro="Occasional storm-prep reminders and printable updates. Unsubscribe anytime." />
+    </section>
+  )}
 </Base>

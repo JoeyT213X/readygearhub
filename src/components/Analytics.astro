@@ -1,0 +1,73 @@
+---
+/**
+ * Loads GA4 and Microsoft Clarity only when their IDs are set in
+ * src/data/analytics.ts. Also attaches outbound click tracking (GA4
+ * affiliate_click / buy_click, beacon transport) when ga4Id is set.
+ */
+import { analytics } from '../data/analytics';
+import { getCollection } from 'astro:content';
+import { programs } from '../data/affiliates';
+
+const idOk = (value: string, re: RegExp) => (re.test(value) ? value : '');
+const ga4Id = idOk(analytics.ga4Id.trim(), /^G-[A-Z0-9]+$/i);
+const clarityId = idOk(analytics.clarityId.trim(), /^[A-Za-z0-9]+$/);
+
+const NETWORK_HOSTS = [
+  'anrdoezrs.net', 'dpbolvw.net', 'jdoqocy.com', 'tkqlhce.com', 'qksrv.net', 'emjcd.com',
+  'sjv.io', 'pxf.io', 'ojrq.net', 'evyy.net', 'impact.com',
+  'awin1.com', 'dwin1.com',
+  'shareasale.com',
+  'linksynergy.com', 'rakuten.com',
+  'avantlink.com', 'pjatr.com', 'pntra.com', 'pntrs.com',
+  'prf.hn', 'partnerize.com',
+  'flexoffers.com', 'flexlinkspro.com',
+  'rfsn.io', 'refersion.com',
+  'amazon.com', 'amzn.to',
+  'payhip.com',
+];
+
+function addHost(set: Set<string>, raw?: string) {
+  if (!raw) return;
+  try {
+    const host = new URL(raw, 'https://example.com').hostname.replace(/^www\./, '').toLowerCase();
+    if (host && host !== 'example.com') set.add(host);
+  } catch { /* ignore unparsable templates */ }
+}
+
+const hosts = new Set<string>(NETWORK_HOSTS);
+if (ga4Id) {
+  const items = await getCollection('items');
+  for (const item of items) {
+    addHost(hosts, item.data.officialUrl);
+    addHost(hosts, item.data.affiliateUrl);
+  }
+  for (const p of programs) {
+    addHost(hosts, p.link);
+    if (p.retailerUrls) Object.values(p.retailerUrls).forEach((u) => addHost(hosts, u));
+    if (p.itemLinks) Object.values(p.itemLinks).forEach((u) => addHost(hosts, u));
+  }
+}
+const domainJson = JSON.stringify([...hosts].sort());
+
+const gaBoot = ga4Id
+  ? `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');`
+  : '';
+
+const clickJs = ga4Id
+  ? `document.addEventListener('click',function(e){var t=e.target;if(!t||!t.closest)return;var a=t.closest('a');if(!a)return;var href=a.href||'';if(!href)return;var host='';try{host=new URL(href,location.href).hostname.replace(/^www\\./,'').toLowerCase();}catch(err){return;}var here=location.hostname.replace(/^www\\./,'').toLowerCase();if(host===here||(here&&host.endsWith('.'+here)))return;var path=location.pathname;var pay=a.classList.contains('payhip-buy-button')||host==='payhip.com'||host.endsWith('.payhip.com');if(pay){if(typeof gtag==='function')gtag('event','buy_click',{link_url:href,link_domain:host,page_path:path,transport_type:'beacon'});return;}var rel=(a.getAttribute('rel')||'').toLowerCase();var prog=a.getAttribute('data-program')||'';var lead=!!a.closest('.lead-cta,.lead-ctas');var list=${domainJson};var shop=false;for(var i=0;i<list.length;i++){var d=list[i];if(host===d||host.endsWith('.'+d)){shop=true;break;}}if(rel.indexOf('sponsored')===-1&&!prog&&!lead&&!shop)return;if(typeof gtag==='function')gtag('event','affiliate_click',{link_url:href,link_domain:host,program:prog,page_path:path,transport_type:'beacon'});},true);`
+  : '';
+
+const gaInline = gaBoot + clickJs;
+const clarityJs = clarityId
+  ? `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","${clarityId}");`
+  : '';
+---
+{ga4Id && (
+  <>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+    <script is:inline set:html={gaInline} />
+  </>
+)}
+{clarityId && (
+  <script is:inline set:html={clarityJs} />
+)}

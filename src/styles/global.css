@@ -92,3 +92,21 @@ img{max-width:100%;height:auto}
 .kit-item .card{margin:0}
 .kit-reason{margin:8px 4px 0;color:var(--muted);font-size:.95rem}
 .kit-reason a{margin-left:.25em}
+
+.product-card .product-cover{display:block;margin:-18px -18px 14px;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;background:#eef2f5}
+.product-card .product-cover img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.product-price{font-weight:700;color:var(--ink);margin:.15em 0 .4em}
+.hero-price{font-size:1.35rem;margin:8px 0 0}
+.btn.coming-soon{background:transparent;color:var(--muted);border:1.5px solid var(--line);cursor:default;font-weight:700}
+.btn.coming-soon:hover{background:transparent;color:var(--muted)}
+.product-detail{display:grid;gap:28px}
+@media(min-width:860px){.product-detail{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:start}}
+.product-hero-img{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);background:#eef2f5}
+.signup-slot{margin-top:12px}
+.signup-h{font-weight:700;margin:0 0 4px}
+.signup-footer{margin-top:16px;max-width:22rem}
+.signup-home,.signup-page{max-width:28rem}
+
+/* Pay-per-lead CTA boxes (src/components/LeadCta.astro) */
+.lead-ctas { display: grid; gap: 1rem; }
+.lead-cta h2 { margin-top: 0; font-size: 1.25rem; }

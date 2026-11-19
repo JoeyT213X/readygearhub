@@ -1,0 +1,20 @@
+---
+import { mailerlite } from '../data/mailerlite';
+interface Props {
+  variant?: 'page' | 'home' | 'footer';
+  heading?: string;
+  intro?: string;
+}
+const {
+  variant = 'page',
+  heading = 'Get storm-ready tips by email',
+  intro = 'Occasional checklists and seasonal reminders. Unsubscribe anytime.',
+} = Astro.props;
+---
+{mailerlite.enabled && (
+  <div class={`signup-slot signup-${variant}`}>
+    {heading && <p class="signup-h">{heading}</p>}
+    {intro && <p class="fine">{intro}</p>}
+    <div class="ml-embedded" data-form={mailerlite.form}></div>
+  </div>
+)}

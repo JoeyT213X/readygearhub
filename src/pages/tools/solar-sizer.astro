@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LeadCta from '../../components/LeadCta.astro';
 import '../../styles/interactive.css';
 import appliances from '../../data/appliances.json';
 ---
@@ -36,6 +37,7 @@ import appliances from '../../data/appliances.json';
     <div id="sizer-results" class="results-panel" style="margin-bottom:20px"></div>
     <div id="appliance-list"></div>
   </section>
+  <LeadCta place="tool:solar-sizer" />
 </Base>
 <script>
   import { initSolarSizer } from '../../scripts/solar-sizer';
