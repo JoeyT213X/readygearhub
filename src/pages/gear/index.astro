@@ -21,7 +21,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
     <nav class="dir-nav" aria-label="Directory categories">
       {groups.map((g) => <a class="pill" href={`#${g.id}`}>{g.icon} {g.name} ({g.items.length + g.entries.length})</a>)}
     </nav>
-    <p class="fine">{total} listings: {items.length} gear listings with detail pages and {resolved.length} brands, services and resources.</p>
+    <p class="fine">{total} listings: {items.length} gear listings with detail pages and {resolved.length} brands, services and resources. For current portable power, home backup batteries, satellite messengers, weather radios, water filters, and smart sensors, see <a href="/gear/tech/">newest prep tech</a>.</p>
 
     {groups.map((g) => (
       <section id={g.id} class="dir-section">
@@ -47,7 +47,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
                 <div class="card-actions">
                   <a class="btn small" href={e.href} target="_blank"
                      rel={e.affiliate ? 'sponsored nofollow noopener' : 'noopener'}
-                     data-program={e.affiliate ? e.programId : undefined}>{e.type === 'Free resource' ? 'Visit official site ↗' : 'Visit site ↗'}</a>
+                     data-program={e.affiliate ? e.programId : undefined}>{e.cta ?? (e.type === 'Free resource' ? 'Visit official site ↗' : 'Visit site ↗')}</a>
                 </div>
               </article>
             ))}

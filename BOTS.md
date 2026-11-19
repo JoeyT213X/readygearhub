@@ -29,7 +29,7 @@ ReadyGearHub is a static Astro site. **All content lives in plain files.** Bots 
 | Link checker | `scripts/check-links.mjs` (`npm run check-links`) |
 | Pages and templates (rarely touched) | `src/pages/`, `src/components/`, `src/layouts/` |
 
-The file name is the URL: `src/content/items/noco-boost-gb40.md` becomes `/gear/noco-boost-gb40/`. **Don't rename existing files**, because that breaks inbound links. If you must, add a redirect in `netlify.toml`.
+The file name is the URL: `src/content/items/noco-boost-gb40.md` becomes `/gear/noco-boost-gb40/`. **Don't rename existing files**, because that breaks inbound links. If you must, add a redirect in `netlify.toml`. Do not use the listing id `tech` — `/gear/tech/` is the newest-prep-tech section.
 
 ## Listing fields (`src/content/items/*.md`)
 
@@ -73,6 +73,15 @@ Set `draft: true` (preferred, since it's reversible), or delete the file if the 
 ### Add affiliate links / flip a program to approved
 Do not rewrite directory entries or listing files to turn tracking on. In `src/data/affiliates.ts`, find the program by `id`, set `status: 'approved'`, and add the tracking URL (`link`, or a CJ `cjAid`). After the next build, matching directory cards and gear "Check current price" buttons use the tracked link with `rel="sponsored nofollow noopener"` and `data-program`, and the disclosure applies. Leave `status` as `none` (not applied yet) or `pending` (applied, waiting) to keep links plain — no sponsored label and no tracking. Government and free-resource entries (NWS, FEMA, Ready.gov, MEMA, CDC, Red Cross, and similar) have no program id and must stay permanently plain. A listing can still use a one-off `affiliateUrl` if needed; don't change `officialUrl`. See also `/workspace/AFFILIATE_LINKS_HOWTO.md`.
 
+## Newest tech section (`/gear/tech/`)
+
+Reuse the gear directory. Do not build a second catalog.
+
+- Add a directory entry in `src/data/directory.ts` with `tech: '<group id>'` (portable-power, home-backup, satcom, weather-radios, water-tech, or smart-sensors), or add a gear listing id to the `putTech(...)` map in that file.
+- The `/gear/tech/` page reuses `ItemCard` and the same directory card markup and `resolveOutbound` helper as `/gear/`.
+- Keep descriptions general unless a spec is confirmed on the manufacturer page. No invented prices or ratings.
+- Affiliate tracking still flips only in `src/data/affiliates.ts`.
+
 ## Lanes / new niches (`src/data/lanes.json`)
 
 Each lane is a JSON object. Adding one creates a new page at `/<slug>/`, a nav entry, and a home card, with no code changes.
@@ -87,7 +96,7 @@ Each lane is a JSON object. Adding one creates a new page at `/<slug>/`, a nav e
 
 - `season` controls which home-page section a lane appears in. Lanes matching `currentSeason` show under "Winter lanes."
 - `active: false` hides a lane. Don't leave items pointing at a hidden lane, because the build will error.
-- Don't use a slug that collides with an existing page: `gear`, `guides`, `about`, `contact`, `privacy`, `affiliate-disclosure`, `get-featured`, `thanks`, `alerts`, `tools`, `apps`, `storm-tracker`, `widgets`.
+- Don't use a slug that collides with an existing page: `gear`, `guides`, `about`, `contact`, `privacy`, `affiliate-disclosure`, `get-featured`, `thanks`, `alerts`, `tools`, `apps`, `storm-tracker`, `widgets`. Also don't create a listing whose id is `tech` (`/gear/tech/` is reserved).
 
 ## Season switch (`src/data/site.json`)
 

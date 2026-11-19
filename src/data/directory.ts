@@ -1,6 +1,7 @@
 /**
  * ReadyGearHub directory data: brands, services and free resources.
  * Gear listings (src/content/items) are grouped into the same categories on /gear/.
+ * Entries or listings with a `tech` group also appear on /gear/tech/.
  *
  * Rules:
  *  - `program` = id in src/data/affiliates.ts. Every commercial entry should have one so it
@@ -14,14 +15,33 @@
 import { resolveOutbound } from './affiliates';
 
 export type CategoryId =
-  | 'power' | 'water' | 'food' | 'first-aid' | 'lighting' | 'comms'
+  | 'power' | 'water' | 'food' | 'kits' | 'first-aid' | 'lighting' | 'comms'
   | 'home-protection' | 'insurance' | 'digital-safety' | 'more';
+
+export type TechGroupId =
+  | 'portable-power' | 'home-backup' | 'satcom' | 'weather-radios' | 'water-tech' | 'smart-sensors';
+
+export const techGroups: { id: TechGroupId; name: string; icon: string; blurb: string; note?: string }[] = [
+  { id: 'portable-power', name: 'Portable power stations & solar', icon: '🔋',
+    blurb: 'A portable power station and a foldable solar panel can run lights, phones, a fridge, or medical devices like a CPAP when the grid is down. Compare the manufacturer\u2019s capacity and output figures with what you actually need to run, and follow the manual for charging and storage.' },
+  { id: 'home-backup', name: 'Home backup batteries', icon: '🏠',
+    blurb: 'Larger battery systems are meant to cover more of the house during a longer outage. Whole-home setups and transfer equipment often need a licensed electrician. Follow the manufacturer\u2019s installation instructions, and keep a working carbon monoxide alarm if you also use a fuel generator to recharge.' },
+  { id: 'satcom', name: 'Satellite messengers & satellite access', icon: '📡',
+    blurb: 'When cell towers fail after a storm, a satellite messenger or a portable satellite access device can still send a text or an SOS. These tools need a clear view of the sky and a paid satellite subscription. They do not replace 911 where regular phone service still works. Some places restrict satellite communicators; check local rules.' },
+  { id: 'weather-radios', name: 'NOAA weather radios', icon: '📻',
+    blurb: 'A NOAA weather radio can keep working when the power and your phone network do not, so you can still hear watches and warnings. Look for SAME location coding so you get alerts for your county, and keep spare batteries or a hand-crank option.' },
+  { id: 'water-tech', name: 'Water filters & purifiers', icon: '💧',
+    blurb: 'Stored water is the first line of defense. A filter or purifier is a backup if that supply runs out or you have to use another source. Each model treats different contaminants \u2014 read the manufacturer\u2019s page for what it does and does not remove.' },
+  { id: 'smart-sensors', name: 'Smart leak, freeze & smoke/CO sensors', icon: '🚨',
+    blurb: 'Leak, freeze, and smoke/CO sensors can alert you early, including when you are away from home. They add a layer of warning; they do not replace regularly tested smoke and carbon monoxide alarms required by code. Follow the manufacturer\u2019s placement instructions, and check whether a hub, app, or professional install is required.' },
+];
 
 export const categories: { id: CategoryId; name: string; icon: string; blurb: string; note?: string }[] = [
   { id: 'power', name: 'Power', icon: '🔋', blurb: 'Power stations, solar panels, generators and power banks.',
     note: 'Fuel-burning gear (generators, heaters, stoves) must be used outdoors or as the manufacturer directs, with a working carbon monoxide alarm in your home. Follow each maker\u2019s ventilation instructions.' },
   { id: 'water', name: 'Water', icon: '💧', blurb: 'Filters, purifiers, storage containers and water testing.' },
   { id: 'food', name: 'Food', icon: '🥫', blurb: 'Long-shelf-life food and food-safety guidance for outages.' },
+  { id: 'kits', name: 'Emergency kits', icon: '🎒', blurb: 'Ready-made emergency and readiness kits.' },
   { id: 'first-aid', name: 'First Aid', icon: '🩹', blurb: 'First aid kits, supplies and training.',
     note: 'Information here is not professional medical advice. Take a first aid class and ask a clinician what belongs in your kit.' },
   { id: 'lighting', name: 'Lighting', icon: '🔦', blurb: 'Flashlights, headlamps and lanterns for outages.' },
@@ -37,7 +57,7 @@ export type DirEntry = {
   id: string;
   name: string;
   category: CategoryId;
-  type: 'Brand' | 'Retailer' | 'Service' | 'Free resource';
+  type: 'Brand' | 'Retailer' | 'Service' | 'Free resource' | 'Product';
   /** Official plain URL. */
   url: string;
   desc: string;
@@ -45,6 +65,10 @@ export type DirEntry = {
   offer: string;
   /** affiliates.ts program id, if any. */
   program?: string;
+  /** If set, this entry also appears in the matching group on /gear/tech/. */
+  tech?: TechGroupId;
+  /** Optional button label. Defaults to a generic official-site label. */
+  cta?: string;
 };
 
 const BRAND = 'Manufacturer site';
@@ -66,6 +90,9 @@ export const entries: DirEntry[] = [
   { id: 'honda-power', name: 'Honda Power Equipment', category: 'power', type: 'Brand', url: 'https://powerequipment.honda.com/generators', desc: 'Portable inverter generators. Run generators outdoors only, per the manual.', offer: BRAND, program: 'honda-power' },
   { id: 'generac', name: 'Generac', category: 'power', type: 'Brand', url: 'https://www.generac.com/', desc: 'Portable and home standby generators. Run generators outdoors only, per the manual.', offer: BRAND, program: 'generac' },
   { id: 'energysage', name: 'EnergySage', category: 'power', type: 'Service', url: 'https://www.energysage.com/', desc: 'Marketplace for comparing rooftop solar and battery installer quotes.', offer: QUOTE, program: 'energysage' },
+  { id: 'ecoflow-delta-pro-ultra', name: 'EcoFlow DELTA Pro Ultra', category: 'power', type: 'Product', url: 'https://www.ecoflow.com/us/delta-pro-ultra', desc: 'A whole-home backup battery system from EcoFlow. The official page describes an expandable system that can be paired with EcoFlow\u2019s Smart Home Panel 2. Installation may require a licensed electrician; follow EcoFlow\u2019s instructions.', offer: BRAND, program: 'ecoflow', tech: 'home-backup' },
+  { id: 'anker-solix-f3800', name: 'Anker SOLIX F3800', category: 'power', type: 'Product', url: 'https://www.ankersolix.com/f3800-pps', desc: 'A large portable power station from Anker SOLIX designed for home backup. Anker lists 6,000W output, 3.84 kWh of capacity, 120V/240V output, and optional expansion batteries. Follow Anker\u2019s installation guidance for home-backup accessories.', offer: BRAND, program: 'anker-solix', tech: 'home-backup' },
+  { id: 'bluetti-apex-300', name: 'BLUETTI Apex 300 Home Battery Backup', category: 'power', type: 'Product', url: 'https://www.bluettipower.com/products/apex-300-home-battery-backup', desc: 'A home battery backup power station from BLUETTI. The official page lists 3,840W of output and 2,764.8Wh of capacity, with options to expand for longer outages. Follow BLUETTI\u2019s installation guidance.', offer: BRAND, program: 'bluetti', tech: 'home-backup' },
   { id: 'ready-power', name: 'Ready.gov: Power Outages', category: 'power', type: 'Free resource', url: 'https://www.ready.gov/power-outages', desc: 'Official guidance on preparing for and getting through a power outage.', offer: GOV },
 
   // ---------------- Water ----------------
@@ -73,7 +100,7 @@ export const entries: DirEntry[] = [
   { id: 'grayl', name: 'GRAYL', category: 'water', type: 'Brand', url: 'https://grayl.com/', desc: 'Press-style water purifier bottles.', offer: BRAND, program: 'grayl' },
   { id: 'katadyn', name: 'Katadyn', category: 'water', type: 'Brand', url: 'https://katadyn.com/en-us/', desc: 'Backpacking and emergency water filters.', offer: BRAND, program: 'katadyn' },
   { id: 'sawyer', name: 'Sawyer', category: 'water', type: 'Brand', url: 'https://www.sawyer.com/', desc: 'Squeeze and mini water filters.', offer: BRAND, program: 'sawyer' },
-  { id: 'berkey', name: 'The Berkey', category: 'water', type: 'Retailer', url: 'https://www.theberkey.com/', desc: 'Gravity-fed countertop water filter systems.', offer: 'Retailer site', program: 'berkey' },
+  { id: 'berkey', name: 'The Berkey', category: 'water', type: 'Retailer', url: 'https://theberkey.com/', desc: 'Gravity-fed countertop water filter systems.', offer: 'Retailer site', program: 'berkey', tech: 'water-tech', cta: 'See Berkey filters' },
   { id: 'aquasana', name: 'Aquasana', category: 'water', type: 'Brand', url: 'https://www.aquasana.com/', desc: 'Home water filtration systems.', offer: BRAND, program: 'aquasana' },
   { id: 'tap-score', name: 'Tap Score', category: 'water', type: 'Service', url: 'https://www.mytapscore.com/', desc: 'Mail-in home water test kits that analyze a sample you send.', offer: 'Paid test kits', program: 'tap-score' },
   { id: 'ready-water', name: 'Ready.gov: Water', category: 'water', type: 'Free resource', url: 'https://www.ready.gov/water', desc: 'Official guidance on storing and treating emergency drinking water.', offer: GOV },
@@ -86,6 +113,9 @@ export const entries: DirEntry[] = [
   { id: 'augason-farms', name: 'Augason Farms', category: 'food', type: 'Brand', url: 'https://augasonfarms.com/', desc: 'Emergency food and pantry staples.', offer: BRAND, program: 'augason-farms' },
   { id: 'ready-food', name: 'Ready.gov: Food', category: 'food', type: 'Free resource', url: 'https://www.ready.gov/food', desc: 'Official guidance on stocking and handling food for emergencies.', offer: GOV },
   { id: 'usda-outage-food', name: 'USDA FSIS: Keep Your Food Safe During Emergencies', category: 'food', type: 'Free resource', url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies', desc: 'Official USDA guidance on what to keep or discard after an outage.', offer: GOV },
+
+  // ---------------- Emergency kits ----------------
+  { id: 'redi', name: 'REDI', category: 'kits', type: 'Brand', url: 'https://getredi.com/', desc: 'Emergency and readiness kits.', offer: 'Retailer site', program: 'redi', cta: 'See REDI kits' },
 
   // ---------------- First aid ----------------
   { id: 'mymedic', name: 'MyMedic', category: 'first-aid', type: 'Brand', url: 'https://mymedic.com/', desc: 'First aid kits and medical supplies.', offer: BRAND, program: 'mymedic' },
@@ -107,6 +137,9 @@ export const entries: DirEntry[] = [
   { id: 'midland', name: 'Midland Radio', category: 'comms', type: 'Brand', url: 'https://midlandusa.com/', desc: 'Weather alert radios and two-way radios.', offer: BRAND, program: 'midland' },
   { id: 'eton', name: 'Eton', category: 'comms', type: 'Brand', url: 'https://etoncorp.com/', desc: 'Hand-crank and solar emergency radios.', offer: BRAND, program: 'eton' },
   { id: 'garmin', name: 'Garmin inReach', category: 'comms', type: 'Brand', url: 'https://www.garmin.com/en-US/c/outdoor-recreation/satellite-communicators/', desc: 'Satellite communicators. A subscription plan is needed for satellite messaging; check the maker\u2019s plan terms.', offer: BRAND, program: 'garmin' },
+  { id: 'garmin-inreach-messenger', name: 'Garmin inReach Messenger', category: 'comms', type: 'Product', url: 'https://www.garmin.com/en-US/p/793265/', desc: 'A compact satellite communicator for two-way messaging and SOS when you are outside cell coverage. A satellite subscription is required; check Garmin\u2019s plan terms.', offer: BRAND, program: 'garmin', tech: 'satcom' },
+  { id: 'zoleo-satellite-communicator', name: 'ZOLEO Satellite Communicator', category: 'comms', type: 'Product', url: 'https://www.zoleo.com/en-us/product/zoleo-global-satellite-communicator', desc: 'A satellite communicator for two-way messaging, check-ins, and SOS beyond cell coverage, via the Iridium network. An active subscription is required, and the device needs a clear view of the sky.', offer: BRAND, program: 'zoleo', tech: 'satcom' },
+  { id: 'iridium-go-exec', name: 'Iridium GO! exec', category: 'comms', type: 'Product', url: 'https://www.iridium.com/products/iridium-go-exec-portable-wireless-access-device', desc: 'A portable, battery-powered satellite Wi-Fi access device from Iridium. The official page says it can provide satellite connectivity for smartphones and laptops, with optional SOS monitoring. A satellite service plan is required.', offer: BRAND, program: 'iridium', tech: 'satcom' },
   { id: 'bluecosmo', name: 'BlueCosmo (ZOLEO)', category: 'comms', type: 'Retailer', url: 'https://www.bluecosmo.com/', desc: 'Satellite messenger devices and service plans. Satellite service is a paid plan.', offer: 'Retailer site', program: 'bluecosmo' },
   { id: 'btech', name: 'BTECH', category: 'comms', type: 'Brand', url: 'https://www.baofengtech.com/', desc: 'Two-way radios. Check FCC rules and licensing requirements before transmitting.', offer: BRAND, program: 'btech' },
   { id: 'acurite', name: 'AcuRite', category: 'comms', type: 'Brand', url: 'https://www.acurite.com/', desc: 'Home weather stations and thermometers.', offer: BRAND, program: 'acurite' },
@@ -123,6 +156,10 @@ export const entries: DirEntry[] = [
   { id: 'american-home-shield', name: 'American Home Shield', category: 'home-protection', type: 'Service', url: 'https://www.ahs.com/', desc: 'Sells home warranty plans. A warranty is a paid plan; check the price and coverage terms.', offer: 'Paid plan: check price and terms', program: 'american-home-shield' },
   { id: 'kidde', name: 'Kidde', category: 'home-protection', type: 'Brand', url: 'https://www.kidde.com/', desc: 'Smoke, carbon monoxide and fire extinguisher products.', offer: BRAND, program: 'kidde' },
   { id: 'ring', name: 'Ring', category: 'home-protection', type: 'Brand', url: 'https://ring.com/', desc: 'Doorbells, cameras and home security devices. Some features need a paid plan.', offer: BRAND, program: 'ring' },
+  { id: 'flo-smart-water-monitor', name: 'Flo by Moen Smart Water Monitor and Shutoff', category: 'home-protection', type: 'Product', url: 'https://www.moen.com/products/900-001', desc: 'An in-line device that monitors household water flow, sends leak alerts, and can automatically shut off the supply, per Moen. The official page says it needs Wi-Fi and a nearby AC outlet, and recommends installation by a licensed plumber.', offer: BRAND, program: 'moen', tech: 'smart-sensors' },
+  { id: 'yolink-water-leak-sensor-5', name: 'YoLink Water Leak Sensor 5', category: 'home-protection', type: 'Product', url: 'https://shop.yosmart.com/products/ys7986', desc: 'A water leak sensor from YoLink that can send app alerts. A YoLink hub is required for app alerts and is not included, per the official page. Automatic shutoff needs a compatible valve sold separately.', offer: BRAND, program: 'yolink', tech: 'smart-sensors' },
+  { id: 'ring-flood-freeze-sensor', name: 'Ring Flood & Freeze Sensor', category: 'home-protection', type: 'Product', url: 'https://ring.com/products/flood-and-freeze-sensor', desc: 'A Ring sensor for standing water and freezing temperatures, with alerts on your phone. Check the official page for which Ring system or service it works with; some Ring features need a paid plan.', offer: BRAND, program: 'ring', tech: 'smart-sensors' },
+  { id: 'kidde-smart-combo-smoke-co', name: 'Kidde Smart Combo Smoke + CO Alarm', category: 'home-protection', type: 'Product', url: 'https://www.kidde.com/products/smart/smart-combo-smoke-co-alarm-hardwired-aa-backup-battery', desc: 'A hardwired Kidde smoke and carbon monoxide alarm with AA backup batteries, Wi-Fi setup, and notifications in the Kidde app, per Kidde. Follow the manufacturer\u2019s placement instructions and local code.', offer: BRAND, program: 'kidde', tech: 'smart-sensors' },
   { id: 'cove', name: 'Cove Smart Home Security', category: 'home-protection', type: 'Service', url: 'https://www.covesmart.com/', desc: 'Home security systems with monitoring plans.', offer: 'Paid monitoring plans', program: 'cove' },
   { id: 'angi', name: 'Angi', category: 'home-protection', type: 'Service', url: 'https://www.angi.com/', desc: 'Find local contractors for repairs.', offer: QUOTE, program: 'angi' },
   { id: 'modernize', name: 'Modernize', category: 'home-protection', type: 'Service', url: 'https://modernize.com/', desc: 'Matches homeowners with local home-improvement contractors.', offer: QUOTE, program: 'modernize' },
@@ -192,6 +229,19 @@ put('comms', ['eton-red-cross-frx2', 'garmin-inreach-mini-2', 'midland-er310-cra
 put('home-protection', ['eton-blackout-buddy-co', 'kidde-kn-cob-lp2', 'kidde-pro-210']);
 
 export const categoryForItem = (id: string): CategoryId => itemCategory[id] ?? 'more';
+
+/** Gear listing id -> tech group for /gear/tech/. Listings not listed here stay off that page. */
+const itemTech: Record<string, TechGroupId> = {};
+const putTech = (group: TechGroupId, ids: string[]) => ids.forEach((i) => (itemTech[i] = group));
+putTech('portable-power', [
+  'ecoflow-delta-3-plus', 'ecoflow-river-3-plus', 'ecoflow-400w-portable-solar-panel',
+  'jackery-explorer-1000-plus', 'bluetti-ac180', 'anker-solix-c1000x', 'goal-zero-yeti-1500',
+]);
+putTech('satcom', ['garmin-inreach-mini-2']);
+putTech('weather-radios', ['midland-wr400', 'midland-er310-crank-radio', 'eton-red-cross-frx2']);
+putTech('water-tech', ['grayl-geopress-24oz', 'lifestraw-family', 'sawyer-mini-water-filter', 'katadyn-befree-0-6l']);
+
+export const techGroupForItem = (id: string): TechGroupId | undefined => itemTech[id];
 
 export type ResolvedEntry = DirEntry & { href: string; affiliate: boolean; programId: string };
 
