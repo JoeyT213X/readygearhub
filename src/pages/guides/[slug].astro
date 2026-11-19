@@ -3,8 +3,6 @@ import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import Disclosure from '../../components/Disclosure.astro';
 import LeadCta from '../../components/LeadCta.astro';
-import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
-import { mailerlite } from '../../data/mailerlite';
 import { render } from 'astro:content';
 import { getGuides, getItems, laneBySlug, site } from '../../lib/data';
 export async function getStaticPaths() {
@@ -35,11 +33,6 @@ const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month:
     <p class="fine light">Updated {fmt(d.updated ?? d.published)}{lane && <> · <a href={`/${lane.slug}/`}>{lane.name}</a></>}</p>
   </div></section>
   <article class="wrap section prose guide"><Content /></article>
-  {mailerlite.enabled && (
-    <section class="wrap section">
-      <MailerLiteSignup variant="page" />
-    </section>
-  )}
   <LeadCta place={guide.id} />
   {related.length > 0 && (
     <section class="wrap section">

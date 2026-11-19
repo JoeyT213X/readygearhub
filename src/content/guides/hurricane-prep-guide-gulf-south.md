@@ -174,7 +174,7 @@ Browse related gear in [Storm & Hurricane Prep](/storm-hurricane-prep/), [Power 
 
 Use the [Water Storage Calculator](/tools/water-calculator/) to size a household supply, and read [How Much Water to Store for a Hurricane](/guides/emergency-water-storage/) for storage containers, bathtub bladders, and when a filter is a backup rather than a substitute. Ready.gov says boiling is the safest treatment method: bring water to a rolling boil for one full minute, then let it cool. If you cannot boil, follow the chlorination steps on that same Ready.gov water page, and listen to local officials about boil-water notices. Do not use water you have been told is contaminated — or that you suspect is — to make baby formula, make ice, brush your teeth, wash food, wash your hands, or wash dishes, the CDC says. Bottled, boiled, or treated water is the safe option until officials say otherwise.
 
-If you have a private well and the area has flooded, the CDC's [reentering a flooded home](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html/) guidance is to get the water tested before you use it.
+If you have a private well and the area has flooded, the CDC's [reentering a flooded home](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html) guidance is to get the water tested before you use it.
 
 ### Food: before the power goes out
 
@@ -222,7 +222,7 @@ Follow the manufacturer's ventilation instructions, and run a battery-powered or
 
 **Never plug a generator into a wall outlet.** Feeding power back through house wiring can hurt you and utility crews working on the lines. If you want a generator to power household circuits, have a licensed electrician install a transfer switch. The CDC also notes that it is against the law and a violation of electrical codes to connect a generator to a home's circuits without the approved automatic-interrupt devices.
 
-After a hurricane, this matters even more than usual: people run generators and gas pressure washers during wet cleanup, sometimes on a porch or in an open garage. The CDC's [flooded-home guidance](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html/) says not to operate a gasoline engine in a home, basement, garage, carport, porch, or other enclosed or partially enclosed structure, or less than 20 feet from a door, window, or vent, even if windows and doors are open.
+After a hurricane, this matters even more than usual: people run generators and gas pressure washers during wet cleanup, sometimes on a porch or in an open garage. The CDC's [flooded-home guidance](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html) says not to operate a gasoline engine in a home, basement, garage, carport, porch, or other enclosed or partially enclosed structure, or less than 20 feet from a door, window, or vent, even if windows and doors are open.
 
 A working CO alarm such as the [Kidde KN-COB-LP2](/gear/kidde-kn-cob-lp2/), or a unit that also works as a nightlight such as the [Eton Blackout Buddy CO](/gear/eton-blackout-buddy-co/), belongs inside the house before you ever start a generator. Test it, and keep batteries on hand.
 
@@ -295,7 +295,7 @@ The storm ending is not the same thing as it being safe. Follow local officials 
 
 - Wear protective clothing. Ready.gov says to use appropriate face coverings or masks if you are cleaning mold or debris, to work with someone else, and that children should not help with disaster cleanup. People with asthma, other lung conditions, or immune suppression should not enter buildings with indoor water leaks or mold growth that can be seen or smelled, even if they are not allergic to mold.
 - Generators and gas pressure washers used during cleanup follow the same [20-foot, outdoor-only, CO-alarm rules](#power-generators-and-carbon-monoxide) as they did during the outage.
-- The CDC's [reentering a flooded home](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html/) page covers drying, mold, and having a flooded HVAC system checked before you turn it on.
+- The CDC's [reentering a flooded home](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html) page covers drying, mold, and having a flooded HVAC system checked before you turn it on.
 
 **Food, water, and health**
 
@@ -395,7 +395,7 @@ Everything below is free to use in your browser unless noted. You can also get o
 - National Weather Service: [Hurricane Safety](https://www.weather.gov/safety/hurricane), [Hurricane and Tropical Storm Watches, Warnings, Advisories and Outlooks](https://www.weather.gov/safety/hurricane-ww)
 - Ready.gov (FEMA): [Hurricanes](https://www.ready.gov/hurricanes), [Evacuation](https://www.ready.gov/evacuation), [Build A Kit](https://www.ready.gov/kit), [Water](https://www.ready.gov/water), [Power Outages](https://www.ready.gov/power-outages), [People with Disabilities](https://www.ready.gov/disability), [Prepare Your Pets for Disasters](https://www.ready.gov/pets), [Financial Preparedness](https://www.ready.gov/financial-preparedness)
 - FEMA: [Homeowners Insurance and Flooding](https://www.fema.gov/faq/homeowners-insurance-and-flooding), [Flood Insurance](https://www.fema.gov/flood-insurance)
-- CDC: [Safety Guidelines: After a Hurricane or Other Tropical Storm](https://www.cdc.gov/hurricanes/safety/how-to-safely-stay-safe-after-a-hurricane-or-other-tropical-storm.html), [Reentering Your Flooded Home](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html/), [Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)
+- CDC: [Safety Guidelines: After a Hurricane or Other Tropical Storm](https://www.cdc.gov/hurricanes/safety/how-to-safely-stay-safe-after-a-hurricane-or-other-tropical-storm.html), [Reentering Your Flooded Home](https://www.cdc.gov/floods/safety/reentering-your-flooded-home-safety.html), [Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)
 - CISA: [Use Strong Passwords](https://www.cisa.gov/secure-our-world/use-strong-passwords), [Good Security Habits](https://www.cisa.gov/news-events/news/good-security-habits)
 - FoodSafety.gov: [Food Safety in a Disaster or Emergency](https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency)
 
