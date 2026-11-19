@@ -70,8 +70,8 @@ Body text: 1–3 short paragraphs on why it's useful. Attribute any spec to the 
 ### Remove or pause a listing
 Set `draft: true` (preferred, since it's reversible), or delete the file if the product is discontinued. Run `npm run check-links` weekly. A dead official URL means find the replacement model or draft the listing.
 
-### Add affiliate links
-When a program approves us, put the tracking link in `affiliateUrl`. Don't change `officialUrl`. The site automatically adds `rel="sponsored nofollow"`, and every page with item buttons already shows the disclosure line.
+### Add affiliate links / flip a program to approved
+Do not rewrite directory entries or listing files to turn tracking on. In `src/data/affiliates.ts`, find the program by `id`, set `status: 'approved'`, and add the tracking URL (`link`, or a CJ `cjAid`). After the next build, matching directory cards and gear "Check current price" buttons use the tracked link with `rel="sponsored nofollow noopener"` and `data-program`, and the disclosure applies. Leave `status` as `none` (not applied yet) or `pending` (applied, waiting) to keep links plain — no sponsored label and no tracking. Government and free-resource entries (NWS, FEMA, Ready.gov, MEMA, CDC, Red Cross, and similar) have no program id and must stay permanently plain. A listing can still use a one-off `affiliateUrl` if needed; don't change `officialUrl`. See also `/workspace/AFFILIATE_LINKS_HOWTO.md`.
 
 ## Lanes / new niches (`src/data/lanes.json`)
 

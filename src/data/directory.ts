@@ -3,12 +3,15 @@
  * Gear listings (src/content/items) are grouped into the same categories on /gear/.
  *
  * Rules:
- *  - `program` = id in src/data/affiliates.ts. If that program is approved, the link is built
- *    with buildLink() and marked rel="sponsored nofollow" + data-program. Otherwise the
- *    plain official URL is used (pending programs are never tracked).
+ *  - `program` = id in src/data/affiliates.ts. Every commercial entry should have one so it
+ *    is affiliate-ready. resolveOutbound() emits a tracked link only when that program is
+ *    `approved` and has a tracking URL; otherwise the plain official URL is used (no
+ *    sponsored label, no tracking). Flip a program in affiliates.ts — do not rewrite entries.
+ *  - Government and free resources (NWS, FEMA, Ready.gov, MEMA, CDC, Red Cross, and similar)
+ *    must NOT have a `program` field. They stay permanently plain.
  *  - No prices, ratings or invented numbers. Say what the offer is (paid plan, quote service, free public resource).
  */
-import { programs, buildLink } from './affiliates';
+import { resolveOutbound } from './affiliates';
 
 export type CategoryId =
   | 'power' | 'water' | 'food' | 'first-aid' | 'lighting' | 'comms'
@@ -52,24 +55,24 @@ const QUOTE = 'Quote or matching service; terms are set by the provider';
 export const entries: DirEntry[] = [
   // ---------------- Power ----------------
   { id: 'ecoflow', name: 'EcoFlow', category: 'power', type: 'Brand', url: 'https://www.ecoflow.com/us', desc: 'Portable power stations and solar panels.', offer: BRAND, program: 'ecoflow' },
-  { id: 'bluetti', name: 'BLUETTI', category: 'power', type: 'Brand', url: 'https://www.bluettipower.com/', desc: 'Portable power stations, solar panels and home backup systems.', offer: BRAND, program: 'bluetti' },
+  { id: 'bluetti', name: 'BLUETTI', category: 'power', type: 'Brand', url: 'https://www.bluettipower.com/', desc: 'Portable power stations, solar panels and home backup systems. Program code AFF5OFF for 5% off at checkout, per BLUETTI.', offer: BRAND, program: 'bluetti' },
   { id: 'jackery', name: 'Jackery', category: 'power', type: 'Brand', url: 'https://www.jackery.com/', desc: 'Portable power stations and SolarSaga solar panels.', offer: BRAND, program: 'jackery' },
   { id: 'anker-solix', name: 'Anker SOLIX', category: 'power', type: 'Brand', url: 'https://www.ankersolix.com/', desc: 'Power stations and home energy storage from Anker.', offer: BRAND, program: 'anker-solix' },
   { id: 'goal-zero', name: 'Goal Zero', category: 'power', type: 'Brand', url: 'https://goalzero.com/', desc: 'Power stations, solar panels and lanterns.', offer: BRAND, program: 'goal-zero' },
   { id: 'renogy', name: 'Renogy', category: 'power', type: 'Brand', url: 'https://www.renogy.com/', desc: 'Solar panels, solar kits and off-grid components.', offer: BRAND, program: 'renogy' },
-  { id: 'allpowers', name: 'ALLPOWERS', category: 'power', type: 'Brand', url: 'https://www.allpowers.com/', desc: 'Portable power stations and solar panels.', offer: BRAND, program: 'allpowers' },
+  { id: 'allpowers', name: 'ALLPOWERS', category: 'power', type: 'Brand', url: 'https://www.iallpowers.com/', desc: 'Portable power stations and solar panels. Program code ALLPOWERS26 for 10% off at checkout, per ALLPOWERS.', offer: BRAND, program: 'allpowers' },
   { id: 'pecron', name: 'PECRON', category: 'power', type: 'Brand', url: 'https://www.pecron.com/', desc: 'Portable power stations.', offer: BRAND, program: 'pecron' },
   { id: 'mighty-generators', name: 'Mighty Generators', category: 'power', type: 'Retailer', url: 'https://mightygenerators.com/', desc: 'Generator retailer.', offer: 'Retailer site', program: 'mighty-generators' },
-  { id: 'honda-power', name: 'Honda Power Equipment', category: 'power', type: 'Brand', url: 'https://powerequipment.honda.com/generators', desc: 'Portable inverter generators. Run generators outdoors only, per the manual.', offer: BRAND },
-  { id: 'generac', name: 'Generac', category: 'power', type: 'Brand', url: 'https://www.generac.com/', desc: 'Portable and home standby generators. Run generators outdoors only, per the manual.', offer: BRAND },
+  { id: 'honda-power', name: 'Honda Power Equipment', category: 'power', type: 'Brand', url: 'https://powerequipment.honda.com/generators', desc: 'Portable inverter generators. Run generators outdoors only, per the manual.', offer: BRAND, program: 'honda-power' },
+  { id: 'generac', name: 'Generac', category: 'power', type: 'Brand', url: 'https://www.generac.com/', desc: 'Portable and home standby generators. Run generators outdoors only, per the manual.', offer: BRAND, program: 'generac' },
   { id: 'energysage', name: 'EnergySage', category: 'power', type: 'Service', url: 'https://www.energysage.com/', desc: 'Marketplace for comparing rooftop solar and battery installer quotes.', offer: QUOTE, program: 'energysage' },
   { id: 'ready-power', name: 'Ready.gov: Power Outages', category: 'power', type: 'Free resource', url: 'https://www.ready.gov/power-outages', desc: 'Official guidance on preparing for and getting through a power outage.', offer: GOV },
 
   // ---------------- Water ----------------
   { id: 'lifestraw', name: 'LifeStraw', category: 'water', type: 'Brand', url: 'https://www.lifestraw.com/', desc: 'Portable water filters and purifiers.', offer: BRAND, program: 'lifestraw' },
   { id: 'grayl', name: 'GRAYL', category: 'water', type: 'Brand', url: 'https://grayl.com/', desc: 'Press-style water purifier bottles.', offer: BRAND, program: 'grayl' },
-  { id: 'katadyn', name: 'Katadyn', category: 'water', type: 'Brand', url: 'https://katadyn.com/en-us/', desc: 'Backpacking and emergency water filters.', offer: BRAND },
-  { id: 'sawyer', name: 'Sawyer', category: 'water', type: 'Brand', url: 'https://www.sawyer.com/', desc: 'Squeeze and mini water filters.', offer: BRAND },
+  { id: 'katadyn', name: 'Katadyn', category: 'water', type: 'Brand', url: 'https://katadyn.com/en-us/', desc: 'Backpacking and emergency water filters.', offer: BRAND, program: 'katadyn' },
+  { id: 'sawyer', name: 'Sawyer', category: 'water', type: 'Brand', url: 'https://www.sawyer.com/', desc: 'Squeeze and mini water filters.', offer: BRAND, program: 'sawyer' },
   { id: 'berkey', name: 'The Berkey', category: 'water', type: 'Retailer', url: 'https://www.theberkey.com/', desc: 'Gravity-fed countertop water filter systems.', offer: 'Retailer site', program: 'berkey' },
   { id: 'aquasana', name: 'Aquasana', category: 'water', type: 'Brand', url: 'https://www.aquasana.com/', desc: 'Home water filtration systems.', offer: BRAND, program: 'aquasana' },
   { id: 'tap-score', name: 'Tap Score', category: 'water', type: 'Service', url: 'https://www.mytapscore.com/', desc: 'Mail-in home water test kits that analyze a sample you send.', offer: 'Paid test kits', program: 'tap-score' },
@@ -80,14 +83,14 @@ export const entries: DirEntry[] = [
   { id: 'readywise', name: 'ReadyWise', category: 'food', type: 'Brand', url: 'https://readywise.com/', desc: 'Long-shelf-life emergency food kits and supplies.', offer: BRAND, program: 'readywise' },
   { id: 'mountain-house', name: 'Mountain House', category: 'food', type: 'Brand', url: 'https://mountainhouse.com/', desc: 'Freeze-dried meals and emergency food buckets.', offer: BRAND, program: 'mountain-house' },
   { id: 'legacy-food', name: 'Legacy Food Storage', category: 'food', type: 'Brand', url: 'https://legacyfoodstorage.com/', desc: 'Long-term food storage kits.', offer: BRAND, program: 'legacy-food' },
-  { id: 'augason-farms', name: 'Augason Farms', category: 'food', type: 'Brand', url: 'https://augasonfarms.com/', desc: 'Emergency food and pantry staples.', offer: BRAND },
+  { id: 'augason-farms', name: 'Augason Farms', category: 'food', type: 'Brand', url: 'https://augasonfarms.com/', desc: 'Emergency food and pantry staples.', offer: BRAND, program: 'augason-farms' },
   { id: 'ready-food', name: 'Ready.gov: Food', category: 'food', type: 'Free resource', url: 'https://www.ready.gov/food', desc: 'Official guidance on stocking and handling food for emergencies.', offer: GOV },
   { id: 'usda-outage-food', name: 'USDA FSIS: Keep Your Food Safe During Emergencies', category: 'food', type: 'Free resource', url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies', desc: 'Official USDA guidance on what to keep or discard after an outage.', offer: GOV },
 
   // ---------------- First aid ----------------
   { id: 'mymedic', name: 'MyMedic', category: 'first-aid', type: 'Brand', url: 'https://mymedic.com/', desc: 'First aid kits and medical supplies.', offer: BRAND, program: 'mymedic' },
-  { id: 'amk', name: 'Adventure Medical Kits', category: 'first-aid', type: 'Brand', url: 'https://adventuremedicalkits.com/', desc: 'Outdoor and family first aid kits.', offer: BRAND },
-  { id: 'first-aid-only', name: 'First Aid Only', category: 'first-aid', type: 'Brand', url: 'https://firstaidonly.com/', desc: 'First aid kits for home, work and vehicles.', offer: BRAND },
+  { id: 'amk', name: 'Adventure Medical Kits', category: 'first-aid', type: 'Brand', url: 'https://adventuremedicalkits.com/', desc: 'Outdoor and family first aid kits.', offer: BRAND, program: 'amk' },
+  { id: 'first-aid-only', name: 'First Aid Only', category: 'first-aid', type: 'Brand', url: 'https://firstaidonly.com/', desc: 'First aid kits for home, work and vehicles.', offer: BRAND, program: 'first-aid-only' },
   { id: 'mira-safety', name: 'MIRA Safety', category: 'first-aid', type: 'Brand', url: 'https://www.mirasafety.com/', desc: 'Protective and safety equipment.', offer: BRAND, program: 'mira-safety' },
   { id: 'redcross-first-aid', name: 'American Red Cross: First Aid Training', category: 'first-aid', type: 'Service', url: 'https://www.redcross.org/take-a-class/first-aid', desc: 'Find first aid, CPR and AED classes. Class fees vary by course.', offer: 'Training classes (course fees may apply)' },
   { id: 'redcross-prepare', name: 'American Red Cross: How to Prepare', category: 'first-aid', type: 'Free resource', url: 'https://www.redcross.org/get-help/how-to-prepare-for-emergencies.html', desc: 'Preparedness guides and checklists from the Red Cross.', offer: 'Free public resource' },
@@ -97,12 +100,12 @@ export const entries: DirEntry[] = [
   { id: 'fenix', name: 'Fenix Lighting', category: 'lighting', type: 'Brand', url: 'https://www.fenixlighting.com/', desc: 'Flashlights and headlamps.', offer: BRAND, program: 'fenix' },
   { id: 'olight', name: 'Olight USA', category: 'lighting', type: 'Brand', url: 'https://www.olightstore.com/', desc: 'Flashlights and EDC lighting.', offer: BRAND, program: 'olight' },
   { id: 'nitecore', name: 'NITECORE', category: 'lighting', type: 'Brand', url: 'https://www.nitecorestore.com/', desc: 'Flashlights, headlamps and power banks.', offer: BRAND, program: 'nitecore' },
-  { id: 'petzl', name: 'Petzl', category: 'lighting', type: 'Brand', url: 'https://www.petzl.com/US/en', desc: 'Headlamps.', offer: BRAND },
-  { id: 'black-diamond', name: 'Black Diamond', category: 'lighting', type: 'Brand', url: 'https://www.blackdiamondequipment.com/', desc: 'Headlamps and lanterns.', offer: BRAND },
+  { id: 'petzl', name: 'Petzl', category: 'lighting', type: 'Brand', url: 'https://www.petzl.com/US/en', desc: 'Headlamps.', offer: BRAND, program: 'petzl' },
+  { id: 'black-diamond', name: 'Black Diamond', category: 'lighting', type: 'Brand', url: 'https://www.blackdiamondequipment.com/', desc: 'Headlamps and lanterns.', offer: BRAND, program: 'black-diamond' },
 
   // ---------------- Comms & radios ----------------
   { id: 'midland', name: 'Midland Radio', category: 'comms', type: 'Brand', url: 'https://midlandusa.com/', desc: 'Weather alert radios and two-way radios.', offer: BRAND, program: 'midland' },
-  { id: 'eton', name: 'Eton', category: 'comms', type: 'Brand', url: 'https://etoncorp.com/', desc: 'Hand-crank and solar emergency radios.', offer: BRAND },
+  { id: 'eton', name: 'Eton', category: 'comms', type: 'Brand', url: 'https://etoncorp.com/', desc: 'Hand-crank and solar emergency radios.', offer: BRAND, program: 'eton' },
   { id: 'garmin', name: 'Garmin inReach', category: 'comms', type: 'Brand', url: 'https://www.garmin.com/en-US/c/outdoor-recreation/satellite-communicators/', desc: 'Satellite communicators. A subscription plan is needed for satellite messaging; check the maker\u2019s plan terms.', offer: BRAND, program: 'garmin' },
   { id: 'bluecosmo', name: 'BlueCosmo (ZOLEO)', category: 'comms', type: 'Retailer', url: 'https://www.bluecosmo.com/', desc: 'Satellite messenger devices and service plans. Satellite service is a paid plan.', offer: 'Retailer site', program: 'bluecosmo' },
   { id: 'btech', name: 'BTECH', category: 'comms', type: 'Brand', url: 'https://www.baofengtech.com/', desc: 'Two-way radios. Check FCC rules and licensing requirements before transmitting.', offer: BRAND, program: 'btech' },
@@ -118,7 +121,7 @@ export const entries: DirEntry[] = [
   // ---------------- Home protection & warranties ----------------
   { id: 'choice-home-warranty', name: 'Choice Home Warranty', category: 'home-protection', type: 'Service', url: 'https://www.choicehomewarranty.com/', desc: 'Sells home warranty plans for major systems and appliances. A warranty is a paid plan; check the price and coverage terms before you sign up.', offer: 'Paid plan: check price and terms', program: 'choice-home-warranty' },
   { id: 'american-home-shield', name: 'American Home Shield', category: 'home-protection', type: 'Service', url: 'https://www.ahs.com/', desc: 'Sells home warranty plans. A warranty is a paid plan; check the price and coverage terms.', offer: 'Paid plan: check price and terms', program: 'american-home-shield' },
-  { id: 'kidde', name: 'Kidde', category: 'home-protection', type: 'Brand', url: 'https://www.kidde.com/', desc: 'Smoke, carbon monoxide and fire extinguisher products.', offer: BRAND },
+  { id: 'kidde', name: 'Kidde', category: 'home-protection', type: 'Brand', url: 'https://www.kidde.com/', desc: 'Smoke, carbon monoxide and fire extinguisher products.', offer: BRAND, program: 'kidde' },
   { id: 'ring', name: 'Ring', category: 'home-protection', type: 'Brand', url: 'https://ring.com/', desc: 'Doorbells, cameras and home security devices. Some features need a paid plan.', offer: BRAND, program: 'ring' },
   { id: 'cove', name: 'Cove Smart Home Security', category: 'home-protection', type: 'Service', url: 'https://www.covesmart.com/', desc: 'Home security systems with monitoring plans.', offer: 'Paid monitoring plans', program: 'cove' },
   { id: 'angi', name: 'Angi', category: 'home-protection', type: 'Service', url: 'https://www.angi.com/', desc: 'Find local contractors for repairs.', offer: QUOTE, program: 'angi' },
@@ -159,13 +162,13 @@ export const entries: DirEntry[] = [
   { id: 'hunter-boots', name: 'Hunter Boots', category: 'more', type: 'Brand', url: 'https://www.hunterboots.com/us/en_us/', desc: 'Rain and wet-weather boots.', offer: BRAND, program: 'hunter-boots' },
   { id: 'magid', name: 'Magid Glove & Safety', category: 'more', type: 'Brand', url: 'https://www.magidglove.com/', desc: 'Work gloves and safety gear.', offer: BRAND, program: 'magid' },
   { id: 'mro-supreme', name: 'MRO Supreme', category: 'more', type: 'Retailer', url: 'https://www.mrosupreme.com/', desc: 'Maintenance, repair and operations supplies and tools.', offer: 'Retailer site', program: 'mro-supreme' },
-  { id: 'bass-pro', name: 'Bass Pro Shops', category: 'more', type: 'Retailer', url: 'https://www.basspro.com/', desc: 'Outdoor and sporting goods retailer.', offer: 'Retailer site', program: 'bass-pro' },
-  { id: 'cabelas', name: "Cabela's", category: 'more', type: 'Retailer', url: 'https://www.cabelas.com/', desc: 'Outdoor and sporting goods retailer.', offer: 'Retailer site', program: 'cabelas' },
-  { id: 'academy', name: 'Academy Sports + Outdoors', category: 'more', type: 'Retailer', url: 'https://www.academy.com/', desc: 'Sporting goods and outdoor retailer.', offer: 'Retailer site', program: 'academy' },
-  { id: 'sportsmans', name: "Sportsman's Warehouse", category: 'more', type: 'Retailer', url: 'https://www.sportsmans.com/', desc: 'Outdoor and sporting goods retailer.', offer: 'Retailer site', program: 'sportsmans' },
-  { id: 'sportsmans-guide', name: "Sportsman's Guide", category: 'more', type: 'Retailer', url: 'https://www.sportsmansguide.com/', desc: 'Outdoor and sporting goods catalog retailer.', offer: 'Retailer site', program: 'sportsmans-guide' },
-  { id: 'dicks', name: "DICK'S Sporting Goods", category: 'more', type: 'Retailer', url: 'https://www.dickssportinggoods.com/', desc: 'Sporting goods retailer.', offer: 'Retailer site', program: 'dicks' },
-  { id: 'survival-frog', name: 'Survival Frog', category: 'more', type: 'Retailer', url: 'https://www.survivalfrog.com/', desc: 'Survival and emergency preparedness gear.', offer: 'Retailer site', program: 'survival-frog' },
+  { id: 'bass-pro', name: 'Bass Pro Shops', category: 'more', type: 'Retailer', url: 'https://www.basspro.com/c/camping', desc: 'Outdoor retailer with camping, cooking, lighting, and weather gear.', offer: 'Retailer site', program: 'bass-pro' },
+  { id: 'cabelas', name: "Cabela's", category: 'more', type: 'Retailer', url: 'https://www.cabelas.com/c/camping', desc: 'Outdoor retailer with camping, cooking, lighting, and weather gear.', offer: 'Retailer site', program: 'cabelas' },
+  { id: 'academy', name: 'Academy Sports + Outdoors', category: 'more', type: 'Retailer', url: 'https://www.academy.com/', desc: 'Outdoor retailer with camping, cooking, lighting, and weather gear.', offer: 'Retailer site', program: 'academy' },
+  { id: 'sportsmans', name: "Sportsman's Warehouse", category: 'more', type: 'Retailer', url: 'https://www.sportsmans.com/camping-gear-supplies/c/cat100829', desc: 'Outdoor retailer with camping, cooking, lighting, and emergency gear.', offer: 'Retailer site', program: 'sportsmans' },
+  { id: 'sportsmans-guide', name: "Sportsman's Guide", category: 'more', type: 'Retailer', url: 'https://www.sportsmansguide.com/department/camping?d=117', desc: 'Catalog retailer with camping, cooking, lighting, and outdoor gear.', offer: 'Retailer site', program: 'sportsmans-guide' },
+  { id: 'dicks', name: "DICK'S Sporting Goods", category: 'more', type: 'Retailer', url: 'https://www.dickssportinggoods.com/c/camping-hiking-gear', desc: 'Retailer with camping, cooking, lighting, and outdoor gear.', offer: 'Retailer site', program: 'dicks' },
+  { id: 'survival-frog', name: 'Survival Frog', category: 'more', type: 'Retailer', url: 'https://www.survivalfrog.com/collections/n-camping', desc: 'Camping, lighting, power, and emergency-prep gear.', offer: 'Retailer site', program: 'survival-frog' },
   { id: 'walmart', name: 'Walmart', category: 'more', type: 'Retailer', url: 'https://www.walmart.com/', desc: 'General retailer.', offer: 'Retailer site', program: 'walmart' },
   { id: 'home-depot', name: 'The Home Depot', category: 'more', type: 'Retailer', url: 'https://www.homedepot.com/', desc: 'Home improvement retailer.', offer: 'Retailer site', program: 'home-depot' },
   { id: 'ace-hardware', name: 'Ace Hardware', category: 'more', type: 'Retailer', url: 'https://www.acehardware.com/', desc: 'Hardware retailer.', offer: 'Retailer site', program: 'ace-hardware' },
@@ -192,9 +195,8 @@ export const categoryForItem = (id: string): CategoryId => itemCategory[id] ?? '
 
 export type ResolvedEntry = DirEntry & { href: string; affiliate: boolean; programId: string };
 
-/** Resolve the outbound link. Approved programs get the tracked link; everything else stays plain. */
+/** Resolve the outbound link through the shared helper. Free resources omit `program` and stay plain. */
 export function resolveEntry(e: DirEntry): ResolvedEntry {
-  const p = e.program ? programs.find((x) => x.id === e.program) : undefined;
-  const tracked = p && p.status === 'approved' ? buildLink(p, e.url) : '';
-  return { ...e, href: tracked || e.url, affiliate: Boolean(tracked), programId: e.program ?? '' };
+  const out = resolveOutbound(e.program, e.url);
+  return { ...e, href: out.href, affiliate: out.affiliate, programId: out.programId };
 }
