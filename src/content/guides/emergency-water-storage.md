@@ -9,6 +9,8 @@ relatedItems: ["reliance-jumbo-tainer-2", "reliance-aqua-tainer", "datrex-emerge
 
 Clean drinking water may be hard to get after a hurricane. Power outages can stop pumps and treatment plants, flooding can contaminate wells, and a boil-water notice can last after the winds die down. The most reliable plan is to store water *before* the storm, then have a way to treat more if you need it.
 
+*Heads up: some links on this page lead to gear listings that may have affiliate links, and one section links to a sponsored home-filter retailer. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
+
 ## How much water to store
 
 [Ready.gov](https://www.ready.gov/water) recommends storing **at least one gallon of water per person per day for several days**, for drinking and sanitation. A normally active person needs about three-quarters of a gallon of fluid a day, but needs vary with age, health, activity, and climate. Ready.gov notes that children, nursing mothers, and sick people may need more, a medical emergency may require more, and in very hot weather water needs can double.
@@ -41,7 +43,9 @@ If you cannot boil, choose a device that matches the risk:
 - **Purifiers** such as the [GRAYL UltraPress](/gear/grayl-ultrapress-16-9oz/) or the gravity-fed [LifeStraw Family](/gear/lifestraw-family/) are designed to reduce viruses as well as bacteria and protozoa, according to their manufacturers. That matters more when the water source is uncertain.
 - **Clear-water-only filters** such as the [Katadyn BeFree](/gear/katadyn-befree-0-6l/) are not the right tool for cloudy floodwater. Ready.gov says to let sediment settle or strain dirty water before treatment, and floodwater can contain chemicals and debris that a household filter is not designed to handle. Do not drink floodwater if you can avoid it.
 
-No portable filter replaces the need to follow a local boil-water notice and the latest instructions from your utility or health department. Mississippi households can start with the [local resource directory](/local/mississippi/) for official county and utility links.
+Home filtration systems, such as whole-house or under-sink units, are a different category from the portable emergency filters above. They treat water at the home under normal plumbing, and they are not a substitute for stored water or for following a local boil-water notice. If you are comparing home systems, you can <a href="https://click.linksynergy.com/fs-bin/click?id=j8aaZmp7txc&offerid=1108576.10002524&type=3&subid=0" target="_blank" rel="sponsored nofollow noopener" data-program="aquasana">shop whole-house filters at Aquasana</a> or <a href="https://click.linksynergy.com/fs-bin/click?id=j8aaZmp7txc&offerid=1108576.10001416&type=3&subid=0" target="_blank" rel="sponsored nofollow noopener" data-program="aquasana">shop under-sink filters at Aquasana</a>. Read the official pages for what a system does and does not remove, and for installation guidance.
+
+No portable filter or home system replaces the need to follow a local boil-water notice and the latest instructions from your utility or health department. Mississippi households can start with the [local resource directory](/local/mississippi/) for official county and utility links.
 
 ## Don't forget food that does not need a fridge
 

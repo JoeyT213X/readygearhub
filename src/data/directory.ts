@@ -109,7 +109,9 @@ export const entries: DirEntry[] = [
   { id: 'sawyer', name: 'Sawyer', category: 'water', type: 'Brand', url: 'https://www.sawyer.com/', desc: 'Squeeze and mini water filters.', offer: BRAND, program: 'sawyer' },
   { id: 'berkey', name: 'The Berkey', category: 'water', type: 'Retailer', url: 'https://theberkey.com/', desc: 'Gravity-fed countertop water filter systems.', offer: 'Retailer site', program: 'berkey', tech: 'water-tech', cta: 'See Berkey filters' },
   { id: 'waterdrop', name: 'Waterdrop', category: 'water', type: 'Retailer', url: 'https://www.waterdropfilter.com/', desc: 'Under-sink, countertop and pitcher water filters, including tankless reverse-osmosis systems.', offer: 'Retailer site', program: 'waterdrop', tech: 'water-tech', cta: 'See Waterdrop filters' },
-  { id: 'aquasana', name: 'Aquasana', category: 'water', type: 'Brand', url: 'https://www.aquasana.com/', desc: 'Home water filtration systems.', offer: BRAND, program: 'aquasana' },
+  { id: 'aquasana', name: 'Aquasana', category: 'water', type: 'Brand', url: 'https://www.aquasana.com/', desc: 'Home water filtration systems, including whole-house and under-sink filters. Read the official pages for what a system does and does not remove, and for installation guidance.', offer: BRAND, program: 'aquasana', tech: 'water-tech', cta: 'Shop home water filters at Aquasana' },
+  { id: 'aquasana-whole-house', name: 'Aquasana whole-house filters', category: 'water', type: 'Product', url: 'https://www.aquasana.com/whole-house-water-filters/', desc: 'Whole-house water filtration systems from Aquasana, installed at the home\'s main water line. Read the official page for what a system does and does not remove, and for installation guidance.', offer: BRAND, program: 'aquasana', tech: 'water-tech', cta: 'Shop whole-house filters at Aquasana' },
+  { id: 'aquasana-under-sink', name: 'Aquasana under-sink filters', category: 'water', type: 'Product', url: 'https://www.aquasana.com/under-sink-water-filters/', desc: 'Under-sink water filtration systems from Aquasana, for treating water at a single faucet. Read the official page for what a system does and does not remove, and for installation guidance.', offer: BRAND, program: 'aquasana', tech: 'water-tech', cta: 'Shop under-sink filters at Aquasana' },
   { id: 'tap-score', name: 'Tap Score', category: 'water', type: 'Service', url: 'https://www.mytapscore.com/', desc: 'Mail-in home water test kits that analyze a sample you send.', offer: 'Paid test kits', program: 'tap-score' },
   { id: 'ready-water', name: 'Ready.gov: Water', category: 'water', type: 'Free resource', url: 'https://www.ready.gov/water', desc: 'Official guidance on storing and treating emergency drinking water.', offer: GOV },
   { id: 'cdc-water', name: 'CDC: Water Emergencies', category: 'water', type: 'Free resource', url: 'https://www.cdc.gov/water-emergency/index.html', desc: 'CDC information on safe water during and after emergencies.', offer: GOV },
@@ -272,6 +274,6 @@ export type ResolvedEntry = DirEntry & { href: string; affiliate: boolean; progr
 
 /** Resolve the outbound link through the shared helper. Free resources omit `program` and stay plain. */
 export function resolveEntry(e: DirEntry): ResolvedEntry {
-  const out = resolveOutbound(e.program, e.url);
+  const out = resolveOutbound(e.program, e.url, e.id);
   return { ...e, href: out.href, affiliate: out.affiliate, programId: out.programId };
 }

@@ -64,7 +64,7 @@ export type Program = {
   link?: string;
   /** CJ only: AID of any link from this advertiser (optional). */
   cjAid?: string;
-  /** Exact tracked link per listing; wins over everything else. */
+  /** Exact tracked link per listing or directory entry id; wins over the default `link`. */
   itemLinks?: Record<string, string>;
   /** Lead CTA box (kind: 'lead'). `places` are guide slugs or 'tool:<slug>'. */
   lead?: { title: string; blurb: string; button: string; places: string[] };
@@ -235,8 +235,14 @@ export const programs: Program[] = [
       places: ['ice-storm-prep-checklist-south'] } },
   { id: 'tap-score', name: 'Tap Score', network: 'Direct', status: 'pending', kind: 'product',
     note: 'Purchase commission on water-test kits, not pay-per-lead. Rate is shown at signup. Questions: affiliates@mytapscore.com.' },
-  { id: 'aquasana', name: 'Aquasana', network: 'Rakuten', status: 'pending', kind: 'product',
-    note: 'Official page: commissions starting at 10%, $300+ average order, 30-day cookie. Join Rakuten Advertising (LinkShare), then apply.' },
+  { id: 'aquasana', name: 'Aquasana', network: 'Rakuten', status: 'approved', kind: 'product',
+    officialUrl: 'https://www.aquasana.com/',
+    link: 'https://click.linksynergy.com/fs-bin/click?id=j8aaZmp7txc&offerid=1108576.10001627&type=3&subid=0',
+    itemLinks: {
+      'aquasana-whole-house': 'https://click.linksynergy.com/fs-bin/click?id=j8aaZmp7txc&offerid=1108576.10002524&type=3&subid=0',
+      'aquasana-under-sink': 'https://click.linksynergy.com/fs-bin/click?id=j8aaZmp7txc&offerid=1108576.10001416&type=3&subid=0',
+    },
+    note: 'Rakuten MID 36667, publisher SID 4780263, 0-10% tiered last-click commission, approved Nov 20, 2026. Homepage, whole-house, and under-sink tracking URLs verified from the portal. Shower link was not verified and was skipped. Linked from /gear/ (water), /gear/tech/ (water filters), and /guides/emergency-water-storage/.' },
   { id: 'amazon', name: 'Amazon Associates', network: 'Amazon', status: 'pending', kind: 'product', retailerUrls: {},
     note: 'Catch-all retailer for listings without a brand program. Official page: up to 10% depending on category. Paid ~60 days after month end.' },
   { id: 'mailerlite-referral', name: 'MailerLite', network: 'Direct', status: 'pending', kind: 'text',
@@ -461,10 +467,13 @@ export type OutboundLink = { href: string; affiliate: boolean; programId: string
  * label, no tracking. Government and free-resource entries must pass no
  * programId so they can never flip.
  */
-export function resolveOutbound(programId: string | undefined, destination: string): OutboundLink {
+export function resolveOutbound(programId: string | undefined, destination: string, entryId?: string): OutboundLink {
   const id = programId || '';
   if (!id) return { href: destination, affiliate: false, programId: '' };
   const p = programs.find((x) => x.id === id);
+  if (p && live(p) && entryId && p.itemLinks?.[entryId]) {
+    return { href: p.itemLinks[entryId], affiliate: true, programId: id };
+  }
   const tracked = p ? buildLink(p, destination) : '';
   return { href: tracked || destination, affiliate: Boolean(tracked), programId: id };
 }
