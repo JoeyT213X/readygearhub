@@ -1,6 +1,9 @@
 import { STORAGE_KEYS } from '../lib/app-config';
 import { KIT_LINES, waterGallons, waterPlanText, type KitLine } from '../data/kit-guidance';
 
+const NO_SEARCH_GUIDES = new Set(['winter-power-outage-checklist', 'how-to-stay-warm-without-power', 'heat-one-room-safely-in-an-outage', 'how-to-keep-pipes-from-freezing', 'ice-storm-prep-checklist-south', 'winter-storm-power-outage-prep-guide-south', 'hurricane-prep-guide-gulf-south']);
+const PAID_SESSION = (() => { try { return sessionStorage.getItem('rgh_paid_search') === '1'; } catch { return false; } })();
+
 export type Catalog = {
   items: Record<string, { name: string }>;
   lanes: Record<string, { name: string; icon: string }>;
@@ -90,6 +93,8 @@ function linksHtml(line: KitLine, catalog: Catalog) {
     if (item) parts.push(`<a class="pill" href="/gear/${slug}/">${item.name}</a>`);
   }
   for (const slug of line.relatedGuides || []) {
+    // Paid-ad visits: skip guides that carry a no-search-traffic program (see FunnelGuards.astro).
+    if (PAID_SESSION && NO_SEARCH_GUIDES.has(slug)) continue;
     const g = catalog.guides[slug];
     if (g) parts.push(`<a class="pill" href="/guides/${slug}/">${g.title}</a>`);
   }

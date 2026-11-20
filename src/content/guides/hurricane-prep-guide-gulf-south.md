@@ -309,7 +309,11 @@ The storm ending is not the same thing as it being safe. Follow local officials 
 - Remember the FEMA distinction: flood damage is not typically covered by a homeowners policy, and flood insurance is a separate policy. Wind damage and flood damage are often handled by different policies, so you may be working with more than one adjuster.
 - Restock water, medicine, fuel, and batteries once it is safe to travel, and replace anything you used from the kit. The [Aid Dates](/apps/aid-dates/) app can track expiration dates on first-aid supplies.
 
+<div data-chw-wrap="choice-home-warranty">
+
 **A note on repair costs:** a damaged air conditioner, water heater, or other major system after a long outage or a storm can be an expensive surprise. Some homeowners choose a <a href="https://www.dpbolvw.net/click-101929817-12337172" target="_blank" rel="sponsored nofollow noopener" data-program="choice-home-warranty">home warranty plan from Choice Home Warranty</a> (sponsored), which is a paid monthly or yearly service plan that can cover repair or replacement of some major systems and appliances. It's for homeowners only, it isn't insurance, it is not a substitute for homeowners or flood insurance, and coverage has limits, so check the price and read the terms before you sign up.
+
+</div>
 
 If you need federal disaster-assistance information after a declaration, FEMA points survivors to [disasterassistance.gov](https://www.disasterassistance.gov/) and the FEMA Helpline at 1-800-621-3362. That is official aid information, not a product offer.
 

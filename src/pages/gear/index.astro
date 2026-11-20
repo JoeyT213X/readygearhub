@@ -36,7 +36,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
           <h3>Brands, services &amp; resources</h3>
           <div class="grid">
             {g.entries.map((e) => (
-              <article class="card item-card">
+              <article class="card item-card" data-chw={(e.programId === 'choice-home-warranty' || e.id === 'choice-home-warranty') ? '' : undefined}>
                 <div class="card-top">
                   <span class="pill">{e.type}</span>
                   {e.affiliate && <span class="pill feat">Affiliate link</span>}

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
+import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 ---
 <Base title="Fridge & Freezer Outage Timer | ReadyGearHub" description="A live countdown based on FoodSafety.gov guidance: about 4 hours for an unopened refrigerator, about 48 hours for a full freezer, and about 24 hours if the freezer is half full.">
   <section class="page-hero">
@@ -55,7 +56,25 @@ import '../../styles/interactive.css';
         <li>Frozen food may be refrozen or cooked if it still contains ice crystals or is at 40°F (4°C) or below.</li>
         <li>When in doubt, throw it out. Never taste food to determine its safety.</li>
       </ul>
-      <p>Read the official pages: <a href="https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency">Food safety in a disaster or emergency</a> and the <a href="https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage">food safety during a power outage chart</a>. A related ReadyGearHub guide is <a href="/guides/winter-power-outage-checklist/">the winter power outage checklist</a>.</p>
+      <p>Read the official pages: <a href="https://www.foodsafety.gov/keep-food-safe/food-safety-in-disaster-or-emergency">Food safety in a disaster or emergency</a> and the <a href="https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage">food safety during a power outage chart</a>. To keep a running log of actual thermometer readings, try <a href="/apps/cold-hold/">Cold Hold</a>, our free offline fridge and freezer log.</p>
+    </div>
+    <div class="prose" style="margin-top:24px">
+      <h2>Fridge and freezer questions</h2>
+      <div class="faq-list">
+        <details><summary>How long is food in the fridge safe without power?</summary><p>About 4 hours if the door stays closed, per FoodSafety.gov and the FDA. After that, discard perishable refrigerated food such as meat, poultry, seafood, milk, eggs, and leftovers that has been above 40°F for 4 hours or more.</p></details>
+        <details><summary>How long will a freezer keep food frozen?</summary><p>About 48 hours for a full freezer and about 24 hours for a half-full one, as long as the door stays closed.</p></details>
+        <details><summary>Can I refreeze food that started to thaw?</summary><p>Yes, if it still has ice crystals or reads 40°F or below on a thermometer, per the FDA. Otherwise, cook it right away or discard it.</p></details>
+        <details><summary>Can I tell by smell or look whether food is safe?</summary><p>No. Appearance and odor are not reliable tests. Never taste food to check it. When in doubt, throw it out.</p></details>
+        <details><summary>What helps before the next outage?</summary><p>Keep appliance thermometers in the fridge (40°F or below) and freezer (0°F or below), keep a few frozen water jugs or ice packs in the freezer, and keep the doors closed once the power goes out.</p></details>
+      </div>
+      <p class="fine">Sources: <a href="https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage">FoodSafety.gov</a> and <a href="https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods">FDA</a>. General guidance, not a guarantee for your own appliances or food.</p>
+    </div>
+    <div class="no-print">
+      <MailerLiteSignup
+        variant="card"
+        heading="Want a printable fridge & freezer safety card plus quiet storm-readiness reminders?"
+        intro="Leave your email and we'll hand you our free printable storm checklist, with the fridge and freezer times on one page you can tape inside a cabinet. A few times a season we'll send a calm reminder to check your thermometers and kit."
+      />
     </div>
   </section>
 </Base>

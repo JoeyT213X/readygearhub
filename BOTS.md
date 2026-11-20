@@ -175,3 +175,13 @@ To add a new app or widget:
 - **Listing Builder:** adds and verifies new products and lanes, and runs `check-links` weekly.
 - **Guide Writer:** writes and refreshes guides tied to hot lanes.
 - **Site Ops:** keeps the build green and handles redirects, performance, and the dependency updates in `package.json`.
+
+## Paid search funnel rules (approved Nov 19, 2026)
+
+Google Ads account 440-754-7278 runs **non-brand Search only** to our own pages. Full policy: `AFFILIATE_ANSWER_KIT.md` §7 in the workspace. Every bot keeps these rules:
+
+1. **Ad landing pages** (outage food safety: `/tools/outage-timer/`, `/apps/cold-hold/`; storm checklists: `/winter-storm-ready-checklist/`, `/tools/kit-builder/`; family binder: `/shop/family-emergency-binder/`, `/apps/all-accounted/`) must carry **no Choice Home Warranty links and no body links into CHW-bearing guides** (the guides in CHW `lead.places` plus both pillar guides). Never use `/gear/` or `/gear/tech/` as ad landers.
+2. **Every CHW link must carry `data-program="choice-home-warranty"`**, ideally inside a `data-chw-wrap` wrapper. `src/components/FunnelGuards.astro` hides all of them for the whole session once a visit arrives with `gclid` / `gbraid` / `wbraid` / `utm_medium=cpc|paid` (`sessionStorage.rgh_paid_search`).
+3. **Email signups:** use `<MailerLiteSignup variant="card" … />` (form PTvH32). FunnelGuards detects MailerLite's success panel, fires GA4 `generate_lead`, and sends the reader to `/thank-you/?src=<slug>`, which hands over the free checklist and fires `email_signup`. Do not add a second form, a second Google tag, or GTM.
+4. **Tone:** signups are a calm, useful guide or seasonal reminder service, a small thank-you. No "FREE GIFT", countdowns, urgency, or hype. Paid products are mentioned low-key ("here whenever you want them, no pressure").
+5. Do not bid on, or write ad copy using, any partner brand. All partner brands are negative keywords.

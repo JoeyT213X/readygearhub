@@ -18,6 +18,12 @@ export type PayhipProduct = {
   productId: string;
   image: string;
   related: { href: string; label: string }[];
+  /** Optional page-by-page preview shown on the product page. */
+  preview?: { title: string; note: string }[];
+  /** Optional short, honest FAQ shown on the product page. */
+  faq?: { q: string; a: string }[];
+  /** Show the calm free-guide / reminder signup box on the product page. */
+  freeSignup?: boolean;
 };
 
 export const payhipProducts: PayhipProduct[] = [
@@ -39,8 +45,31 @@ export const payhipProducts: PayhipProduct[] = [
     ],
     productId: 'ZwvsR',
     image: '/shop/family-emergency-binder.png',
+    preview: [
+      { title: 'Cover and page index', note: 'What is inside and how to print it.' },
+      { title: 'How to use this binder', note: 'Fill it in now, keep a paper copy, review it once a year.' },
+      { title: 'Household information', note: 'Address, everyone who lives there, and access or language notes.' },
+      { title: 'Emergency contacts', note: '911 and Poison Help pre-printed; room for your local numbers and an out-of-town contact.' },
+      { title: 'Medical information', note: 'Conditions, medicines, allergies, doctors, and pharmacy for each person.' },
+      { title: 'Insurance, work, and records', note: 'Policy numbers and who to call, without sensitive account details.' },
+      { title: 'Home utilities and shut-offs', note: 'Where the water, gas, and electric shut-offs are, and the outage lines.' },
+      { title: 'Evacuation and shelter-in-place', note: 'Meeting places, routes, and a go-bag list.' },
+      { title: 'Pets and service animals', note: 'Food, medicines, vet, and papers to bring.' },
+      { title: 'Emergency supply checklist', note: 'A starter kit based on Ready.gov that you can tick off.' },
+      { title: 'Documents to copy', note: 'Which papers to copy and where the copies live.' },
+      { title: 'Annual review and notes', note: 'A simple yearly check so the binder stays current.' },
+    ],
+    faq: [
+      { q: 'Can I type into it, or do I have to print it?', a: 'Either. The fields can be typed in most PDF readers (Adobe Acrobat Reader, Preview on Mac, most phone PDF apps), then printed. Or print it blank and fill it in by hand.' },
+      { q: 'Is anything about my family sent to ReadyGearHub?', a: 'No. It is a regular PDF file on your own device. Nothing you type is uploaded or seen by us.' },
+      { q: 'Does it replace official alerts or 911?', a: 'No. It is a planning and reference tool. In a life-threatening emergency, call 911 or your local emergency number.' },
+      { q: 'Can I print copies for the whole household?', a: 'Yes. The personal-use license lets you print as many copies as your household needs, for example one for the fridge and one for a go-bag.' },
+      { q: 'What if it is not right for me?', a: 'Start with the free printable checklist below, or the free All Accounted app. If something in the binder is wrong or unclear, write to us from the contact page and we will help.' },
+    ],
+    freeSignup: true,
     related: [
       { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
+      { href: '/apps/all-accounted/', label: 'All Accounted: free household check-in app' },
       { href: '/guides/winter-emergency-kit-for-elderly-parents/', label: 'Emergency kit for elderly parents' },
       { href: '/guides/storm-first-aid-kit/', label: 'Storm first aid kit' },
     ],
@@ -65,8 +94,8 @@ export const payhipProducts: PayhipProduct[] = [
     image: '/shop/winter-storm-prep-planner.png',
     related: [
       { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
-      { href: '/guides/winter-power-outage-checklist/', label: 'Winter power outage checklist' },
-      { href: '/guides/how-to-stay-warm-without-power/', label: 'How to stay warm without power' },
+      { href: '/apps/cold-hold/', label: 'Cold Hold: free fridge and freezer temperature log' },
+      { href: '/tools/kit-builder/', label: 'Free emergency kit builder' },
     ],
   },
   {

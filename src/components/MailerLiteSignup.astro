@@ -1,20 +1,28 @@
 ---
 import { mailerlite } from '../data/mailerlite';
 interface Props {
-  variant?: 'page' | 'home' | 'footer';
+  variant?: 'page' | 'home' | 'footer' | 'card';
   heading?: string;
   intro?: string;
+  /** Short reassurance line under the form (card variant). */
+  note?: string;
+  /** Optional list of what the reader gets (card variant). */
+  perks?: string[];
 }
 const {
   variant = 'page',
   heading = 'Get storm-ready tips by email',
   intro = 'Occasional checklists and seasonal reminders. Unsubscribe anytime.',
+  note = variant === 'card' ? 'A few calm emails a season, never daily. No sales pressure, and you can unsubscribe with one click.' : '',
+  perks = [],
 } = Astro.props;
 ---
 {mailerlite.enabled && (
-  <div class={`signup-slot signup-${variant}`}>
+  <div class={`signup-slot signup-${variant}${variant === 'card' ? ' card' : ''}`}>
     {heading && <p class="signup-h">{heading}</p>}
-    {intro && <p class="fine">{intro}</p>}
+    {intro && <p class={variant === 'card' ? '' : 'fine'}>{intro}</p>}
+    {perks.length > 0 && <ul class="signup-perks">{perks.map((p) => <li>{p}</li>)}</ul>}
     <div class="ml-embedded" data-form={mailerlite.form}></div>
+    {note && <p class="fine">{note}</p>}
   </div>
 )}

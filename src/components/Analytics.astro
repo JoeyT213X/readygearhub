@@ -3,6 +3,8 @@
  * Loads GA4 and Microsoft Clarity only when their IDs are set in
  * src/data/analytics.ts. Also attaches outbound click tracking (GA4
  * affiliate_click / buy_click, beacon transport) when ga4Id is set.
+ * The Google Ads tag (adsId) is configured on the same gtag.js loader, so
+ * there is only one Google script on the page (no GTM stacking).
  */
 import { analytics } from '../data/analytics';
 import { getCollection } from 'astro:content';
@@ -11,6 +13,7 @@ import { programs } from '../data/affiliates';
 const idOk = (value: string, re: RegExp) => (re.test(value) ? value : '');
 const ga4Id = idOk(analytics.ga4Id.trim(), /^G-[A-Z0-9]+$/i);
 const clarityId = idOk(analytics.clarityId.trim(), /^[A-Za-z0-9]+$/);
+const adsId = idOk(analytics.adsId.trim(), /^AW-[0-9]+$/i);
 
 const NETWORK_HOSTS = [
   'anrdoezrs.net', 'dpbolvw.net', 'jdoqocy.com', 'tkqlhce.com', 'qksrv.net', 'emjcd.com',
@@ -50,7 +53,7 @@ if (ga4Id) {
 const domainJson = JSON.stringify([...hosts].sort());
 
 const gaBoot = ga4Id
-  ? `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');`
+  ? `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');${adsId ? `gtag('config','${adsId}');` : ''}`
   : '';
 
 const clickJs = ga4Id

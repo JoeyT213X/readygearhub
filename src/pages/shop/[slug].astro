@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PayhipBuyButton from '../../components/PayhipBuyButton.astro';
+import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 import { payhipProducts, hasPayhipId, type PayhipProduct } from '../../data/payhip';
 
 export function getStaticPaths() {
@@ -52,6 +53,29 @@ const schema = {
       <div class="card-actions" style="padding-top:16px">
         <PayhipBuyButton product={product} />
       </div>
+      {product.preview && product.preview.length > 0 && (
+        <>
+          <h2>A look inside: all {product.preview.length} pages</h2>
+          <ol class="binder-pages">
+            {product.preview.map((pg) => <li><strong>{pg.title}</strong> — {pg.note}</li>)}
+          </ol>
+        </>
+      )}
+      {product.faq && product.faq.length > 0 && (
+        <>
+          <h2>Questions people ask</h2>
+          <div class="faq-list">
+            {product.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+          </div>
+        </>
+      )}
+      {product.freeSignup && (
+        <MailerLiteSignup
+          variant="card"
+          heading="Not ready to buy? Start with our free printable household guide"
+          intro="Leave your email and we'll hand you the free Winter Storm Ready Checklist right away, including a contacts page you can fill in today. Now and then we'll send a calm seasonal reminder to check your kit and update your numbers."
+        />
+      )}
       {product.related.length > 0 && (
         <>
           <h2>Related on ReadyGearHub</h2>

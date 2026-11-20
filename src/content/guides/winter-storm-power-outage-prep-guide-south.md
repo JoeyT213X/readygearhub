@@ -400,7 +400,11 @@ The step-by-step version of this section is [What to Do When the Power Goes Out 
 - [ ] **Take photos** of any damage for insurance before you clean up, and keep receipts for repairs. If you made the document copies in [Protect your accounts and documents](#protect-your-accounts-and-documents), you'll have the policy information on hand.
 - [ ] **Restock** what you used so you're ready next time.
 
+<div data-chw-wrap="choice-home-warranty">
+
 **A note on repair costs:** a dead furnace or water heater after a hard freeze can be an expensive surprise. Some homeowners choose a <a href="https://www.dpbolvw.net/click-101929817-12337172" target="_blank" rel="sponsored nofollow noopener" data-program="choice-home-warranty">home warranty plan from Choice Home Warranty</a> (sponsored), which is a paid monthly or yearly service plan that can cover repair or replacement of some major systems and appliances. It's for homeowners only, it isn't insurance, and coverage has limits, so check the price and read the terms before you sign up.
+
+</div>
 
 ## Southern special cases
 

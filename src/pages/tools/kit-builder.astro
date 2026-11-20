@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
+import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 import { getItems, getGuides, lanes } from '../../lib/data';
 import { KIT_SOURCES } from '../../data/kit-guidance';
 
@@ -21,6 +22,7 @@ const catalog = {
     </div>
   </section>
   <section class="wrap section">
+    <p><strong>How it works:</strong> tell it who lives in your home and how many days you want to plan for, and it builds a checklist you can print or save as a PDF. It takes about a minute, and nothing you enter leaves this browser.</p>
     <p>After an emergency, Ready.gov notes you may need to survive on your own for several days. This tool starts at 3 days, a common baseline in Ready.gov materials, and lets you plan for longer if you want. It does not invent supplies or products — only official kit items, plus links to listings and lanes that already exist on this site.</p>
     <form class="card form no-print" id="kit-form" onsubmit="return false;">
       <div class="tool-toolbar cols-2" style="margin:0">
@@ -44,6 +46,13 @@ const catalog = {
       </div>
     </form>
     <div id="kit-output" class="prose" style="max-width:none;margin-top:22px"></div>
+    <div class="no-print">
+      <MailerLiteSignup
+        variant="card"
+        heading="Like a gentle nudge to refresh your kit?"
+        intro="Leave your email for our free printable Winter Storm Ready Checklist, plus an occasional seasonal reminder to swap water, check batteries, and update your list before storm season."
+      />
+    </div>
   </section>
 </Base>
 <script define:vars={{ catalog }}>

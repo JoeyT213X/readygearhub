@@ -56,6 +56,6 @@ The CDC is direct: walking on ice is extremely dangerous, and many winter injuri
 
 ## During an outage at their house
 
-Keep them in one closed-off room with the supplies, follow the [safe-heating guidance](/guides/heat-one-room-safely-in-an-outage/), and use a battery-powered thermometer to watch indoor temperature. If the house cannot be kept reasonably warm, if a CO alarm sounds, or if the parent becomes confused, drowsy, or unusually quiet, move them to a warming center or to someone with heat. Confusion and drowsiness can be signs of hypothermia, which Ready.gov treats as an emergency when body temperature drops below 95°F.
+Keep them in one closed-off room with the supplies, follow [Ready.gov's winter weather safety guidance](https://www.ready.gov/winter-weather) on heating safely without carbon monoxide risk, and use a battery-powered thermometer to watch indoor temperature. If the house cannot be kept reasonably warm, if a CO alarm sounds, or if the parent becomes confused, drowsy, or unusually quiet, move them to a warming center or to someone with heat. Confusion and drowsiness can be signs of hypothermia, which Ready.gov treats as an emergency when body temperature drops below 95°F.
 
 For related gear, see [Winter Storm Prep](/winter-storm-prep/) and [Power Outage Kits](/power-outage-kits/). For a storm-day checklist aimed at Southern ice, use [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/).

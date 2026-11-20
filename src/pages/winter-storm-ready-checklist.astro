@@ -6,8 +6,27 @@ import { productBySlug } from '../data/payhip';
 const planner = productBySlug('winter-storm-prep-planner');
 ---
 <Base title="Free Winter Storm Ready Checklist (Printable PDF) | ReadyGearHub" description="A free 6-page printable winter storm checklist: before the storm, kit checklist, during an outage, after the storm, and an emergency contacts page.">
-  <section class="page-hero"><div class="wrap"><h1>Free Winter Storm Ready Checklist</h1><p class="lead">Six printable pages to get your home, car, and family ready before the ice hits.</p></div></section>
+  <section class="page-hero"><div class="wrap"><h1>Free Winter Storm Ready Checklist</h1><p class="lead">Six printable pages to get your home, car, and family ready before the ice hits. Yours to keep, as a small thank-you for stopping by.</p></div></section>
+  {mailerlite.enabled ? (
+    <section class="wrap section">
+      <MailerLiteSignup
+        variant="card"
+        heading="Where should we send your printable checklist?"
+        intro="Enter your email and the checklist opens on the next page, ready to download and print. Now and then, usually ahead of storm season, we'll send a calm reminder to check your kit."
+        perks={[
+          'The 6-page printable checklist, right away',
+          'An occasional seasonal storm-readiness reminder',
+          'No daily emails, no sales pressure, one-click unsubscribe',
+        ]}
+      />
+    </section>
+  ) : (
+    <section class="wrap section prose">
+      <p><a class="btn" href="/downloads/winter-storm-ready-checklist.pdf" download>Download the free checklist (PDF)</a></p>
+    </section>
+  )}
   <section class="wrap section prose">
+    <h2>What's inside</h2>
     <ul>
       <li>Before the storm: the prep list</li>
       <li>Kit checklist: power, heat, light, water, and food</li>
@@ -15,12 +34,8 @@ const planner = productBySlug('winter-storm-prep-planner');
       <li>After the storm: safety checks</li>
       <li>Emergency contacts page to fill in and post on the fridge</li>
     </ul>
-    <p><a class="btn" href="/downloads/winter-storm-ready-checklist.pdf" download>Download the free checklist (PDF)</a></p>
+    <p>Every item follows published guidance from Ready.gov, the CDC, and FoodSafety.gov. For a household-sized list, try the free <a href="/tools/kit-builder/">kit builder</a>; to time the fridge and freezer during an outage, use the <a href="/tools/outage-timer/">outage timer</a>.</p>
     <p>Want a seven-day countdown you can print and keep with the kit? See the <a href="/shop/winter-storm-prep-planner/">Winter Storm Prep Planner</a>{planner && <> ({planner.price})</>}. For gear ideas, start with <a href="/winter-storm-prep/">Winter Storm Prep</a> or <a href="/power-outage-kits/">Power Outage Kits</a>.</p>
+    {mailerlite.enabled && <p class="fine">Prefer to skip email? That's fine too: <a href="/downloads/winter-storm-ready-checklist.pdf" rel="nofollow" download>open the checklist directly</a>.</p>}
   </section>
-  {mailerlite.enabled && (
-    <section class="wrap section">
-      <MailerLiteSignup variant="page" heading="Get this kind of checklist by email" intro="Occasional storm-prep reminders and printable updates. Unsubscribe anytime." />
-    </section>
-  )}
 </Base>

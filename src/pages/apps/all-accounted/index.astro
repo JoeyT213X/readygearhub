@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import '../../../styles/interactive.css';
+import MailerLiteSignup from '../../../components/MailerLiteSignup.astro';
 ---
 <Base title="All Accounted | ReadyGearHub" description="A household check-in board for storms and outages. Works offline on this device. Share a text snapshot. This is not an emergency service.">
   <link slot="head" rel="manifest" href="/apps/all-accounted/manifest.webmanifest" />
@@ -94,6 +95,13 @@ import '../../../styles/interactive.css';
         <p>A later Pro tier could add more than six people, backup meeting points, a contact list, check-in history, and a snapshot link. No payments or Pro features are turned on now. Live multi-device sync would still need a backend later.</p>
       </article>
     </section>
+    <div class="no-print">
+      <MailerLiteSignup
+        variant="card"
+        heading="A calm reminder to keep your household plan current"
+        intro="Leave your email for our free printable checklist, which includes an emergency contacts page to fill in and post on the fridge. A few times a year we'll send a short reminder to check your meeting points and numbers."
+      />
+    </div>
   </section>
 </Base>
 <script>
