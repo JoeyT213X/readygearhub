@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
+---
+<Base
+  title="Local & community safety updates | ReadyGearHub"
+  description="Occasional notes about National Weather Service advisories, official food and product recalls, and Mississippi or Southern community outage updates. Unsubscribe anytime."
+>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="/">Home</a> / Updates</p>
+      <h1>Local & community safety updates</h1>
+      <p class="lead">A short email when there's a weather advisory, an official recall, or a community outage worth knowing about. Not a daily message, and not a sales list.</p>
+    </div>
+  </section>
+  <section class="wrap section prose">
+    <h2>What you'll get</h2>
+    <ul>
+      <li>National Weather Service watches, warnings, and freeze or heat advisories for Mississippi and the Gulf South</li>
+      <li>Official FDA, USDA, and CPSC food and product safety recalls</li>
+      <li>Occasional seasonal reminders about power or water at home</li>
+      <li>Mississippi and Southern community outage notes, when we can point to a public official source</li>
+    </ul>
+    <h2>What we won't send</h2>
+    <ul>
+      <li>Daily mail, product pitches, or partner offers</li>
+      <li>Anything we cannot tie to an official public source</li>
+    </ul>
+    <MailerLiteSignup
+      variant="card"
+      form="communityUpdates"
+      heading="Get the occasional update"
+      intro="Confirm your email after you sign up. You can unsubscribe anytime."
+      note="A quiet list. If a week is uneventful, we don't write."
+    />
+    <h2>Helpful links</h2>
+    <ul>
+      <li><a href="/storm-tracker/">Storm Tracker</a></li>
+      <li><a href="/alerts/">Live weather alerts</a></li>
+      <li><a href="/local/mississippi/">Mississippi local resources</a></li>
+      <li><a href="/privacy/">Privacy Policy</a></li>
+    </ul>
+  </section>
+</Base>

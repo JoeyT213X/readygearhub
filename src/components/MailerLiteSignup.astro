@@ -1,5 +1,5 @@
 ---
-import { mailerlite } from '../data/mailerlite';
+import { mailerlite, type MailerLiteFormSlot } from '../data/mailerlite';
 interface Props {
   variant?: 'page' | 'home' | 'footer' | 'card';
   heading?: string;
@@ -8,6 +8,8 @@ interface Props {
   note?: string;
   /** Optional list of what the reader gets (card variant). */
   perks?: string[];
+  /** Key in mailerlite.forms, or a raw embed slug. Empty / missing key hides the slot. */
+  form?: MailerLiteFormSlot | string;
 }
 const {
   variant = 'page',
@@ -15,14 +17,19 @@ const {
   intro = 'Occasional checklists and seasonal reminders. Unsubscribe anytime.',
   note = variant === 'card' ? 'A few calm emails a season, never daily. No sales pressure, and you can unsubscribe with one click.' : '',
   perks = [],
+  form: formKey = 'default',
 } = Astro.props;
+const formId =
+  formKey in mailerlite.forms
+    ? mailerlite.forms[formKey as MailerLiteFormSlot]
+    : String(formKey || '');
 ---
-{mailerlite.enabled && (
+{mailerlite.enabled && formId && (
   <div class={`signup-slot signup-${variant}${variant === 'card' ? ' card' : ''}`}>
     {heading && <p class="signup-h">{heading}</p>}
     {intro && <p class={variant === 'card' ? '' : 'fine'}>{intro}</p>}
     {perks.length > 0 && <ul class="signup-perks">{perks.map((p) => <li>{p}</li>)}</ul>}
-    <div class="ml-embedded" data-form={mailerlite.form}></div>
+    <div class="ml-embedded" data-form={formId}></div>
     {note && <p class="fine">{note}</p>}
   </div>
 )}
