@@ -1,21 +1,29 @@
 /**
  * ReadyGearHub affiliate programs — the ONE place to turn on tracked links.
  *
- * HOW TO ACTIVATE A PROGRAM (see also BOTS.md and /workspace/AFFILIATE_LINKS_HOWTO.md):
+ * HOW TO ACTIVATE A PROGRAM (1-line config swap; see also BOTS.md and
+ * /workspace/AFFILIATE_LINKS_HOWTO.md):
  *   1. Find the program below by `id`. Do not rewrite directory entries or listing files.
- *   2. Set `status: 'approved'` (from 'none' or 'pending').
- *   3. Fill ONE of:
- *        - CJ programs:   `cjAid` (the AID number from any CJ link for that advertiser),
- *                         or leave it '' to use CJ's deep-link generator (PID only).
- *        - other networks: `link` — a deep-link template with {url} where the
- *                         encoded product URL goes (e.g. Impact: https://x.sjv.io/c/123/456/789?u={url}),
- *                         or a plain tracked URL (no {url}) to send every click to one page.
- *        - lead programs:  `link` = the tracked landing URL from the network.
- *      Optional: `itemLinks` to paste an exact tracked link for one listing.
- *   4. Commit and push. Matching listings switch to the tracked link with
- *      rel="sponsored nofollow"; lead boxes appear on the guides listed in `lead.places`.
+ *   2. Set `status: 'live'` (or the equivalent `status: 'approved'`).
+ *   3. Paste the network tracking URL into `url` (or the existing `link` field).
+ *        - Deep-link template: put {url} where the encoded product URL goes
+ *          (e.g. Impact: https://x.sjv.io/c/123/456/789?u={url}).
+ *        - Or a plain tracked URL (no {url}) to send every click to one page.
+ *        - CJ programs may instead use `cjAid` (the AID from any CJ link for
+ *          that advertiser), or leave it '' to use CJ's deep-link generator (PID only).
+ *        - Optional: `itemLinks` to paste an exact tracked link for one listing.
+ *   After the next build, matching listings switch to the tracked link with
+ *   rel="sponsored nofollow noopener"; lead boxes appear on the guides in `lead.places`.
  *
- * Until then everything stays on the plain retailer URL and lead boxes stay hidden.
+ * Until status is live/approved, everything stays on the plain retailer URL and
+ * lead boxes stay hidden — no sponsored label, no tracking, no invented affiliate URLs.
+ *
+ * ppcAllowed: set `ppcAllowed: false` for partners that bar paid-search promotion
+ * (currently Choice Home Warranty, REDI, and Waterdrop Filter). FunnelGuards hides
+ * those cards and links during an rgh_paid_search session; they stay visible on
+ * ordinary organic visits. Omit the field or set it true when paid search is allowed
+ * under the site Paid Advertising Policy. Use isPpcAllowed(id) and isProgramLive(id).
+ *
  * No secrets live here — tracking IDs are public by design (they appear in every link).
  */
 
@@ -29,8 +37,16 @@ export type Program = {
   id: string;
   name: string;
   network: Network;
-  /** none = not applied; pending = applied, waiting; approved = tracked links are live. */
-  status: 'none' | 'pending' | 'approved';
+  /**
+   * none = not applied; pending = applied, waiting;
+   * live (or the equivalent approved) = tracked links are on.
+   */
+  status: 'none' | 'pending' | 'approved' | 'live';
+  /**
+   * false = FunnelGuards hides this program during paid-search sessions.
+   * Omit or true = paid search is allowed under the site policy. Default true.
+   */
+  ppcAllowed?: boolean;
   /** Official plain URL (homepage or a safe category page). Documentation only; listings keep their own officialUrl. */
   officialUrl?: string;
   /** product = swaps listing buy links; lead = pay-per-lead CTA box; text = no slots yet */
@@ -39,7 +55,12 @@ export type Program = {
   items?: string[];
   /** Retailer programs: the product page at THAT retailer for a listing (itemId -> URL). */
   retailerUrls?: Record<string, string>;
-  /** Deep-link template ({url} = encoded product URL, {rawurl} = unencoded) or a fixed tracked URL. */
+  /**
+   * Tracked URL or deep-link template ({url} = encoded product URL, {rawurl} = unencoded).
+   * Alias of `link` — paste either one. This is the 1-line swap field.
+   */
+  url?: string;
+  /** Deep-link template or a fixed tracked URL. Same as `url`; either field works. */
   link?: string;
   /** CJ only: AID of any link from this advertiser (optional). */
   cjAid?: string;
@@ -96,11 +117,11 @@ export const programs: Program[] = [
     officialUrl: 'https://theberkey.com/',
     link: 'https://theberkey.com/?rfsn=9422720.32fae8',
     note: 'Refersion 15%, 365-day cookie. Official retailer TheBerkey.com. Linked from /gear/ (water) and /gear/tech/ (water filters).' },
-  { id: 'waterdrop', name: 'Waterdrop Filter', network: 'Rakuten', status: 'approved', kind: 'product',
+  { id: 'waterdrop', name: 'Waterdrop Filter', network: 'Rakuten', status: 'approved', kind: 'product', ppcAllowed: false,
     officialUrl: 'https://www.waterdropfilter.com/',
     link: 'https://click.linksynergy.com/fs-bin/click?id=j8aaZmp7txc&offerid=1888875&type=3&subid=0',
     note: 'Rakuten, approved Nov 19, 2026. Linked from /gear/ (water) and /gear/tech/.' },
-  { id: 'redi', name: 'REDI', network: 'GoAffPro', status: 'approved', kind: 'product',
+  { id: 'redi', name: 'REDI', network: 'GoAffPro', status: 'approved', kind: 'product', ppcAllowed: false,
     officialUrl: 'https://getredi.com/',
     link: 'https://getredi.goaffpro.com/?ref=JOSEPHTINDIGLIA',
     note: 'GoAffPro 10%, 30-day cookie. Emergency and readiness kits. Linked from /gear/ (kits).' },
@@ -116,7 +137,7 @@ export const programs: Program[] = [
       blurb: 'EnergySage lets you compare quotes from pre-screened local installers for free, with no obligation to buy.',
       button: 'Compare free solar quotes',
       places: ['generator-vs-power-station', 'how-to-pick-a-portable-power-station', 'winter-power-outage-checklist', 'tool:solar-sizer', 'tool:power-sizer'] } },
-  { id: 'choice-home-warranty', name: 'Choice Home Warranty', network: 'CJ', status: 'approved', kind: 'lead', link: 'https://www.dpbolvw.net/click-101929817-12337172',
+  { id: 'choice-home-warranty', name: 'Choice Home Warranty', network: 'CJ', status: 'approved', kind: 'lead', ppcAllowed: false, link: 'https://www.dpbolvw.net/click-101929817-12337172',
     note: 'CJ advertiser CID 4593144; $20/lead homeowners; no search bidding.',
     lead: { title: 'Worried about a furnace or water heater failing mid-storm?',
       blurb: 'A home warranty is a paid monthly or yearly plan that can cover repair or replacement of major systems and appliances. Check the price and read the coverage terms before you sign up.',
@@ -365,7 +386,19 @@ export const programs: Program[] = [
 
 // ---------------------------------------------------------------------------
 
-const live = (p: Program) => p.status === 'approved';
+const live = (p: Program) => p.status === 'approved' || p.status === 'live';
+
+/** True when the program is live/approved and may emit a tracked link. */
+export function isProgramLive(programId: string | undefined | null): boolean {
+  if (!programId) return false;
+  const p = programs.find((x) => x.id === programId);
+  return !!p && live(p);
+}
+
+/** Tracked template from `link` or `url` (either field is enough). */
+function trackingTemplate(p: Program): string {
+  return (p.link || p.url || '').trim();
+}
 
 /** CJ deep link. With an AID uses click-PID-AID?url=; otherwise CJ's deep-link generator. */
 export function cjLink(productUrl: string, aid = ''): string {
@@ -377,10 +410,11 @@ export function cjLink(productUrl: string, aid = ''): string {
 /** Build a tracked link for a destination URL, or '' if the program isn't ready. */
 export function buildLink(p: Program, destination: string): string {
   if (!live(p)) return '';
-  if (p.link) {
-    return p.link.includes('{url}') || p.link.includes('{rawurl}')
-      ? p.link.replace('{url}', encodeURIComponent(destination)).replace('{rawurl}', destination)
-      : p.link;
+  const template = trackingTemplate(p);
+  if (template) {
+    return template.includes('{url}') || template.includes('{rawurl}')
+      ? template.replace('{url}', encodeURIComponent(destination)).replace('{rawurl}', destination)
+      : template;
   }
   if (p.network === 'CJ') return cjLink(destination, p.cjAid);
   return '';
@@ -391,16 +425,36 @@ export function buildLink(p: Program, destination: string): string {
  * Programs that bar paid-search / PPC promotion. During an rgh_paid_search
  * session, FunnelGuards hides every card or link for these ids (and matching
  * official / tracking URLs). They stay fully visible on ordinary organic visits.
+ * Prefer setting `ppcAllowed: false` on the program as well; isPpcAllowed()
+ * and noPpcProgramIds() honor both this list and the per-program flag.
  */
 export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop'] as const;
+
+/** Paid-search allowed for this program? Default true unless listed or ppcAllowed is false. */
+export function isPpcAllowed(programId: string | undefined | null): boolean {
+  if (!programId) return true;
+  const p = programs.find((x) => x.id === programId);
+  if (p && typeof p.ppcAllowed === 'boolean') return p.ppcAllowed;
+  return !(NO_PPC_PROGRAM_IDS as readonly string[]).includes(programId);
+}
+
 export function isNoPpcProgram(id: string | undefined | null): boolean {
-  return !!id && (NO_PPC_PROGRAM_IDS as readonly string[]).includes(id);
+  return !!id && !isPpcAllowed(id);
+}
+
+/** Ids FunnelGuards should hide in a paid-search session (list + ppcAllowed: false). */
+export function noPpcProgramIds(): string[] {
+  const ids = new Set<string>(NO_PPC_PROGRAM_IDS);
+  for (const p of programs) {
+    if (p.ppcAllowed === false) ids.add(p.id);
+  }
+  return [...ids];
 }
 
 export type OutboundLink = { href: string; affiliate: boolean; programId: string };
 
 /**
- * Single outbound-link helper. Approved programs with a tracking URL become
+ * Single outbound-link helper. Live/approved programs with a tracking URL become
  * tracked links (caller should set rel="sponsored nofollow noopener" and
  * data-program). Status "none" or "pending", missing tracking URLs, and
  * entries with no program id stay on the plain destination — no sponsored
@@ -454,7 +508,7 @@ export type LeadCta = { id: string; url: string; title: string; blurb: string; b
 /** Approved lead boxes for a place (guide slug or 'tool:<slug>'), max 2. */
 export function leadCtasFor(place: string, max = 2): LeadCta[] {
   return programs
-    .filter((p) => p.kind === 'lead' && live(p) && p.link && p.lead?.places.includes(place))
+    .filter((p) => p.kind === 'lead' && live(p) && trackingTemplate(p) && p.lead?.places.includes(place))
     .slice(0, max)
-    .map((p) => ({ id: p.id, url: p.link!, name: p.name, ...p.lead! }));
+    .map((p) => ({ id: p.id, url: trackingTemplate(p), name: p.name, ...p.lead! }));
 }

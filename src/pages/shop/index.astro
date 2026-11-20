@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import { payhipProducts } from '../../data/payhip';
+import { payhipProducts, PAYHIP_GUIDE_PRICE, PAYHIP_BUNDLE_PRICE } from '../../data/payhip';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -20,12 +20,12 @@ const schema = {
   },
 };
 ---
-<Base title="Shop: Printable Prep Guides & Planners | ReadyGearHub" description="Print-at-home ReadyGearHub guides: the Family Emergency Binder, Winter Storm Prep Planner, and Homestead Prep Starter Guide, $5 each, or $10 for all three together. Instant PDF downloads." schema={schema}>
+<Base title="Shop: Printable Prep Guides & Planners | ReadyGearHub" description={`Print-at-home ReadyGearHub guides: the Family Emergency Binder, Winter Storm Prep Planner, and Homestead Prep Starter Guide, ${PAYHIP_GUIDE_PRICE} each, or ${PAYHIP_BUNDLE_PRICE} for all three together. Instant PDF downloads.`} schema={schema}>
   <section class="page-hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › Shop</nav>
       <h1>Shop</h1>
-      <p class="lead">Print-at-home ReadyGearHub guides, $5 each, or $10 for all three together. Checkout is handled by Payhip, and you get an instant PDF download. These are our own digital products, not affiliate gear listings.</p>
+      <p class="lead">Print-at-home ReadyGearHub guides, {PAYHIP_GUIDE_PRICE} each, or {PAYHIP_BUNDLE_PRICE} for all three together. Checkout is handled by Payhip, and you get an instant PDF download. These are our own digital products, not affiliate gear listings.</p>
     </div>
   </section>
   <section class="wrap section">
