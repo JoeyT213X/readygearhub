@@ -1,10 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
+import PageHero from '../components/PageHero.astro';
+import Photo from '../components/Photo.astro';
+import { photos } from '../data/images';
+const credits = Object.values(photos);
 ---
 <Base title="About ReadyGearHub: How We Pick Preparedness Gear" description="ReadyGearHub is a directory of practical preparedness and multi-purpose gear. Here's how we choose listings, how trending ranks work, and how we stay independent.">
-  <section class="page-hero"><div class="wrap"><h1>About ReadyGearHub</h1><p class="lead">{site.tagline}</p></div></section>
-  <section class="wrap section prose">
+  <PageHero title="About ReadyGearHub" lead={site.tagline} photo="storm-barn" crumbs={[{ label: 'About' }]} />
+  <section class="wrap section">
+    <ul class="trust" aria-label="Our principles">
+      <li><span class="t-icon" aria-hidden="true">🔗</span><div><strong>Official product pages</strong><span>Every listing links to the maker's own page.</span></div></li>
+      <li><span class="t-icon" aria-hidden="true">🧾</span><div><strong>No made-up numbers</strong><span>No retailer prices, star ratings, or invented reviews.</span></div></li>
+      <li><span class="t-icon" aria-hidden="true">🏷️</span><div><strong>Labeled affiliate links</strong><span>Commissions never change what we list.</span></div></li>
+      <li><span class="t-icon" aria-hidden="true">🛡️</span><div><strong>Safety first</strong><span>CO, generator, and heater safety come from official sources.</span></div></li>
+    </ul>
+  </section>
+  <section class="wrap section prose" style="padding-top:0">
     <p>ReadyGearHub is a directory of practical gear for the moments that matter: winter storms, power outages, roadside breakdowns, hurricane season, and everyday life on the homestead. We sort everything into simple <strong>lanes</strong> so you can find what you need fast.</p>
     <h2>How we choose listings</h2>
     <ul>
@@ -21,5 +33,14 @@ import site from '../data/site.json';
     <p>ReadyGearHub is a site of {site.legalName}, {site.streetAddress}, {site.addressLocality}, {site.addressRegion} {site.postalCode}. Email: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
     <h2>Get in touch</h2>
     <p>Questions, corrections, or a product we should look at? <a href="/contact/">Contact us</a>.</p>
+    <h2>Where to start</h2>
+    <ul>
+      <li><a href="/guides/">Guides and checklists</a> for winter storms, outages, hurricanes, water, and first aid</li>
+      <li><a href="/gear/">The gear directory</a>, sorted into simple lanes</li>
+      <li><a href="/tools/">Free tools</a> and <a href="/alerts/">live weather alerts</a></li>
+    </ul>
+    <h2 id="photo-credits">Photo credits</h2>
+    <p>Photos on ReadyGearHub are from <a href="https://unsplash.com" rel="noopener">Unsplash</a>, used under the <a href="https://unsplash.com/license" rel="noopener">Unsplash License</a>. They are illustrative scene photos, not photos of the specific products we list. Thank you to:</p>
+    <ul class="credit-list">{credits.map((c) => <li><a href={c.sourceUrl} rel="noopener">{c.alt}</a> by <a href={c.authorUrl} rel="noopener">{c.author}</a></li>)}</ul>
   </section>
 </Base>

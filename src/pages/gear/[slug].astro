@@ -2,6 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import Disclosure from '../../components/Disclosure.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import SectionHead from '../../components/SectionHead.astro';
 import { render } from 'astro:content';
 import { getItems, laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides } from '../../lib/data';
 export async function getStaticPaths() {
@@ -14,7 +16,10 @@ const d = item.data;
 const lane = laneBySlug(d.lane)!;
 const extraLanes = d.alsoIn.map(laneBySlug).filter(Boolean);
 const related = (await getItems()).filter((i) => i.id !== item.id && (i.data.lane === d.lane || i.data.alsoIn.includes(d.lane))).slice(0, 3);
-const guides = (await getGuides()).filter((g) => g.data.relatedItems.includes(item.id));
+const allGuides = await getGuides();
+const guides = allGuides.filter((g) => g.data.relatedItems.includes(item.id));
+// Always offer 3 guides: ones that mention this item, then guides in the same lane, then same season.
+const moreGuides = [...guides, ...allGuides.filter((g) => !guides.includes(g) && g.data.lane === d.lane), ...allGuides.filter((g) => !guides.includes(g) && g.data.lane !== d.lane && g.data.season.some((s) => d.season.includes(s as any)))].slice(0, 3);
 const url = new URL(`/gear/${item.id}/`, Astro.site).href;
 // Editorial Article markup, not Product: we don't sell these items or publish prices/ratings.
 const schema = [
@@ -30,11 +35,12 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
 <Base title={`${d.name}: Uses & Where to Buy | ReadyGearHub`} description={desc} schema={schema} type="article">
   <section class="page-hero">
     <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href={`/${lane.slug}/`}>{lane.name}</a> › {d.name}</nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/gear/">Gear</a></li><li><a href={`/${lane.slug}/`}>{lane.name}</a></li><li><span aria-current="page">{d.name}</span></li></ol></nav>
       <h1>{d.name}</h1>
       <p class="brand light">by {d.brand}</p>
       <p class="lead">{d.description}</p>
       <div class="hero-actions">
+        {guides[0] && <a class="btn ghost light" href={`/guides/${guides[0].id}/`}>Read the guide first</a>}
         <a class="btn" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>Check current price at {isAffiliate(item) ? 'retailer' : d.brand} ↗</a>
       </div>
     </div>
@@ -55,6 +61,11 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
       <a class="btn small" href={d.officialUrl} target="_blank" rel="noopener">Official product page ↗</a>
     </aside>
   </section>
-  {guides.length > 0 && (<section class="wrap section"><h2>Mentioned in</h2><ul class="link-list">{guides.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}</ul></section>)}
-  {related.length > 0 && (<section class="wrap section"><h2>More in {lane.name}</h2><div class="grid">{related.map((r) => <ItemCard item={r} />)}</div></section>)}
+  {moreGuides.length > 0 && (
+    <section class="band"><div class="wrap section">
+      <SectionHead kicker={guides.length ? 'Mentioned in' : 'Related reading'} title={guides.length ? 'Guides that mention this pick' : `Guides for ${lane.name.toLowerCase()}`} href="/guides/" linkLabel="All guides" />
+      <div class="grid">{moreGuides.map((g) => <GuideCard guide={g} />)}</div>
+    </div></section>
+  )}
+  {related.length > 0 && (<section class="wrap section"><SectionHead kicker="Same lane" title={`More in ${lane.name}`} href={`/${lane.slug}/`} linkLabel={`All ${lane.name}`} /><div class="grid">{related.map((r) => <ItemCard item={r} />)}</div></section>)}
 </Base>

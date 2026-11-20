@@ -2,14 +2,43 @@
 import Base from '../layouts/Base.astro';
 import ItemCard from '../components/ItemCard.astro';
 import Disclosure from '../components/Disclosure.astro';
-import { lanes, getItemsForLane, getGuides } from '../lib/data';
+import PageHero from '../components/PageHero.astro';
+import GuideCard from '../components/GuideCard.astro';
+import LaneCard from '../components/LaneCard.astro';
+import SectionHead from '../components/SectionHead.astro';
+import { lanes, getItems, getItemsForLane, getGuides } from '../lib/data';
+import { photoForLane } from '../data/images';
+import { CALCULATORS } from '../lib/app-config';
 export async function getStaticPaths() {
   return lanes.map((lane) => ({ params: { lane: lane.slug }, props: { lane } }));
 }
 const { lane } = Astro.props;
 const items = await getItemsForLane(lane.slug);
-const guides = (await getGuides()).filter((g) => g.data.lane === lane.slug);
+const allItems = await getItems();
+const allGuides = await getGuides();
+const ids = new Set(items.map((i) => i.id));
+// Guides in this lane first, then guides that mention any item in this lane.
+const guides = [
+  ...allGuides.filter((g) => g.data.lane === lane.slug),
+  ...allGuides.filter((g) => g.data.lane !== lane.slug && g.data.relatedItems.some((id) => ids.has(id))),
+].slice(0, 6);
 const others = lanes.filter((l) => l.slug !== lane.slug);
+const counts = Object.fromEntries(lanes.map((l) => [l.slug, allItems.filter((i) => i.data.lane === l.slug || i.data.alsoIn.includes(l.slug)).length]));
+// Sibling lanes that share items with this one come first.
+const siblings = [...others].sort((a, b) => {
+  const sa = items.filter((i) => i.data.alsoIn.includes(a.slug) || i.data.lane === a.slug).length;
+  const sb = items.filter((i) => i.data.alsoIn.includes(b.slug) || i.data.lane === b.slug).length;
+  return sb - sa;
+}).slice(0, 4);
+const toolFor: Record<string, string[]> = {
+  'power-outage-kits': ['/tools/outage-timer/', '/tools/power-sizer/'],
+  'home-backup-power-solar': ['/tools/power-sizer/', '/tools/solar-sizer/'],
+  'off-grid-power': ['/tools/solar-sizer/', '/tools/power-sizer/'],
+  'emergency-water': ['/tools/water-calculator/', '/tools/kit-builder/'],
+  'storm-hurricane-prep': ['/tools/water-calculator/', '/tools/kit-builder/'],
+  'winter-storm-prep': ['/tools/kit-builder/', '/tools/outage-timer/'],
+};
+const tools = (toolFor[lane.slug] ?? ['/tools/kit-builder/', '/tools/outage-timer/']).map((h) => CALCULATORS.find((c) => c.href === h)).filter(Boolean) as typeof CALCULATORS;
 const schema = [
   { '@context': 'https://schema.org', '@type': 'CollectionPage', name: lane.title, description: lane.summary, url: new URL(`/${lane.slug}/`, Astro.site).href },
   { '@context': 'https://schema.org', '@type': 'ItemList', name: lane.name, numberOfItems: items.length,
@@ -20,25 +49,41 @@ const schema = [
 ];
 ---
 <Base title={`${lane.title} | ReadyGearHub`} description={`${lane.summary} ${items.length} hand-picked items from trusted brands.`} schema={schema}>
-  <section class="page-hero">
-    <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › {lane.name}</nav>
-      <h1>{lane.icon} {lane.name}</h1>
-      <p class="lead">{lane.intro}</p>
+  <PageHero title={`${lane.icon} ${lane.name}`} lead={lane.intro} photo={photoForLane(lane.slug)} crumbs={[{ href: '/gear/', label: 'Gear' }, { label: lane.name }]}>
+    <div class="hero-actions">
+      <a class="btn" href="#picks">See {items.length} picks</a>
+      {guides[0] && <a class="btn ghost light" href={`/guides/${guides[0].id}/`}>Read: {guides[0].data.title.replace(/\s*[:(].*$/, '')}</a>}
     </div>
-  </section>
-  <section class="wrap section">
-    <Disclosure />
-    {items.length ? <div class="grid">{items.map((item) => <ItemCard item={item} showRank />)}</div> : <p>New picks coming soon.</p>}
-  </section>
+  </PageHero>
   {guides.length > 0 && (
-    <section class="wrap section">
-      <h2>Related guides</h2>
-      <ul class="link-list">{guides.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}</ul>
+    <section class="band">
+      <div class="wrap section tight">
+        <SectionHead kicker="Read first" title={`Guides for ${lane.name.toLowerCase()}`} intro="Decide what you need before you buy. These guides explain the trade-offs and link back to the picks below." href="/guides/" linkLabel="All guides" />
+        <div class="grid">{guides.slice(0, 3).map((g) => <GuideCard guide={g} />)}</div>
+        {guides.length > 3 && <ul class="chip-list" style="margin-top:16px">{guides.slice(3).map((g) => <li><a class="pill" href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}</ul>}
+      </div>
     </section>
   )}
   <section class="wrap section">
-    <h2>Explore other lanes</h2>
-    <ul class="chip-list">{others.map((l) => <li><a class="pill" href={`/${l.slug}/`}>{l.icon} {l.name}</a></li>)}</ul>
+    <SectionHead id="picks" kicker="Gear picks" title={`${items.length} ${lane.name.toLowerCase()} picks`} intro="Ranked by timeliness, not payment. Details pages explain uses and safety notes; price links go to the retailer or maker." />
+    <Disclosure />
+    {items.length ? <div class="grid">{items.map((item) => <ItemCard item={item} showRank />)}</div> : <p>New picks coming soon.</p>}
+  </section>
+  {tools.length > 0 && (
+    <section class="wrap section tight">
+      <SectionHead kicker="Free tools" title="Size it before you buy" href="/tools/" linkLabel="All tools" />
+      <div class="next-steps">
+        {tools.map((t) => <a class="card next-step" href={t.href}><span class="ns-icon" aria-hidden="true">{t.icon}</span><span><strong>{t.name}</strong><span>{t.blurb}</span></span></a>)}
+        <a class="card next-step" href="/alerts/"><span class="ns-icon" aria-hidden="true">⚠️</span><span><strong>Live weather alerts</strong><span>Official National Weather Service alerts by state or county.</span></span></a>
+      </div>
+    </section>
+  )}
+  <section class="band">
+    <div class="wrap section">
+      <SectionHead title="Related lanes" intro="Lanes that share gear with this one." href="/gear/" linkLabel="Full directory" />
+      <div class="grid lanes">{siblings.map((l) => <LaneCard lane={l} count={counts[l.slug]} compact />)}</div>
+      <h3 style="margin-top:26px">All lanes</h3>
+      <ul class="chip-list">{others.map((l) => <li><a class="pill" href={`/${l.slug}/`}>{l.icon} {l.name}</a></li>)}</ul>
+    </div>
   </section>
 </Base>

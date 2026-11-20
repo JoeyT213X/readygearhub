@@ -3,21 +3,40 @@ import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import Disclosure from '../../components/Disclosure.astro';
 import LeadCta from '../../components/LeadCta.astro';
+import PageHero from '../../components/PageHero.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import SectionHead from '../../components/SectionHead.astro';
+import Photo from '../../components/Photo.astro';
 import { render } from 'astro:content';
 import { getGuides, getItems, laneBySlug, site } from '../../lib/data';
+import { photoForGuide, photos } from '../../data/images';
+import { CALCULATORS } from '../../lib/app-config';
 export async function getStaticPaths() {
   const guides = await getGuides();
   return guides.map((g) => ({ params: { slug: g.id }, props: { guide: g } }));
 }
 const { guide } = Astro.props;
-const { Content } = await render(guide);
+const { Content, headings } = await render(guide);
 const d = guide.data;
 const all = await getItems();
 const related = d.relatedItems.map((id) => all.find((i) => i.id === id)).filter(Boolean) as typeof all;
 const lane = d.lane ? laneBySlug(d.lane) : undefined;
 const url = new URL(`/guides/${guide.id}/`, Astro.site).href;
+const allGuides = await getGuides();
+// Related guides: same lane, then shared gear, then same season; never the current guide.
+const score = (g: typeof guide) => (g.data.lane && g.data.lane === d.lane ? 10 : 0) + g.data.relatedItems.filter((id) => d.relatedItems.includes(id)).length + (g.data.season.some((s) => d.season.includes(s)) ? 1 : 0);
+const relatedGuides = allGuides.filter((g) => g.id !== guide.id).map((g) => ({ g, s: score(g) })).sort((a, b) => b.s - a.s).slice(0, 3).map((x) => x.g);
+const toc = headings.filter((h) => h.depth === 2);
+const photoKey = photoForGuide(guide.id, d.lane);
+const toolByLane: Record<string, string> = {
+  'power-outage-kits': '/tools/outage-timer/', 'home-backup-power-solar': '/tools/power-sizer/', 'off-grid-power': '/tools/solar-sizer/',
+  'emergency-water': '/tools/water-calculator/', 'storm-hurricane-prep': '/tools/water-calculator/', 'winter-storm-prep': '/tools/kit-builder/',
+  'home-heating-backup': '/tools/outage-timer/', 'vehicle-emergency-kits': '/tools/kit-builder/', 'first-aid-medical-prep': '/tools/kit-builder/',
+};
+const tool = CALCULATORS.find((c) => c.href === (toolByLane[d.lane ?? ''] ?? '/tools/kit-builder/'));
 const schema = [
   { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, datePublished: d.published.toISOString(), dateModified: (d.updated ?? d.published).toISOString(),
+    image: new URL(`/images/photos/${photoKey}-1600.webp`, Astro.site).href,
     mainEntityOfPage: url, author: { '@type': 'Organization', name: site.name, url: site.url }, publisher: { '@type': 'Organization', name: site.name, url: site.url } },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
@@ -27,18 +46,54 @@ const schema = [
 const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 ---
 <Base title={`${d.title} | ReadyGearHub`} description={d.description} schema={schema} type="article">
-  <section class="page-hero"><div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/guides/">Guides</a></nav>
-    <h1>{d.title}</h1>
-    <p class="fine light">Updated {fmt(d.updated ?? d.published)}{lane && <> · <a href={`/${lane.slug}/`}>{lane.name}</a></>}</p>
-  </div></section>
-  <article class="wrap section prose guide"><Content /></article>
+  <PageHero title={d.title} lead={d.description} crumbs={[{ href: '/guides/', label: 'Guides' }, ...(lane ? [{ href: `/${lane.slug}/`, label: lane.name }] : [])]}>
+    <p class="meta-row">Updated {fmt(d.updated ?? d.published)}{lane && <> · <a href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a></>}{related.length > 0 && <> · <a href="#gear">{related.length} gear picks</a></>}</p>
+  </PageHero>
+  <div class="wrap section guide-layout">
+    <article class="guide-main">
+      <figure class="guide-cover">
+        <Photo name={photoKey} eager sizes="(min-width: 1024px) 760px, 100vw" />
+        <figcaption>Photo: <a href={photos[photoKey].sourceUrl} rel="noopener" target="_blank">{photos[photoKey].author} on Unsplash</a></figcaption>
+      </figure>
+      <div class="prose guide"><Content /></div>
+    </article>
+    <aside class="guide-aside" aria-label="Guide navigation">
+      {toc.length > 2 && (
+        <nav class="card toc" aria-label="In this guide">
+          <p class="aside-h">In this guide</p>
+          <ol>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+        </nav>
+      )}
+      {lane && (
+        <div class="card">
+          <p class="aside-h">{lane.icon} {lane.name}</p>
+          <p class="fine" style="margin:.2em 0 .6em">{lane.summary}</p>
+          <a class="btn small" href={`/${lane.slug}/`}>Browse the lane</a>
+        </div>
+      )}
+      {tool && (
+        <a class="card next-step" href={tool.href}><span class="ns-icon" aria-hidden="true">{tool.icon}</span><span><strong>{tool.name}</strong><span>{tool.blurb}</span></span></a>
+      )}
+    </aside>
+  </div>
   <LeadCta place={guide.id} />
   {related.length > 0 && (
-    <section class="wrap section">
-      <h2>Gear mentioned in this guide</h2>
+    <section class="wrap section" id="gear">
+      <SectionHead kicker="Gear mentioned" title="Gear mentioned in this guide" intro="Each pick has a details page with uses and safety notes, plus a link to check the current price." href={lane ? `/${lane.slug}/` : '/gear/'} linkLabel={lane ? `All ${lane.name}` : 'Full directory'} />
       <Disclosure />
-      <div class="grid">{related.map((r) => <ItemCard item={r} />)}</div>
+      <div class="grid">{related.map((r) => <ItemCard item={r} showGuide={false} />)}</div>
     </section>
   )}
+  <section class="band">
+    <div class="wrap section">
+      <SectionHead kicker="Keep going" title="Related guides" href="/guides/" linkLabel="All guides" />
+      <div class="grid">{relatedGuides.map((g) => <GuideCard guide={g} laneName={g.data.lane ? laneBySlug(g.data.lane)?.name : undefined} />)}</div>
+      <h3 style="margin-top:28px">Next steps</h3>
+      <div class="next-steps">
+        <a class="card next-step" href="/alerts/"><span class="ns-icon" aria-hidden="true">⚠️</span><span><strong>Check live alerts</strong><span>Official NWS watches and warnings for your area.</span></span></a>
+        <a class="card next-step" href="/tools/kit-builder/"><span class="ns-icon" aria-hidden="true">📋</span><span><strong>Build your kit list</strong><span>A printable Ready.gov checklist sized to your household.</span></span></a>
+        <a class="card next-step" href="/shop/"><span class="ns-icon" aria-hidden="true">🖨️</span><span><strong>Printable planners</strong><span>Our own binders and checklists as PDF downloads.</span></span></a>
+      </div>
+    </div>
+  </section>
 </Base>

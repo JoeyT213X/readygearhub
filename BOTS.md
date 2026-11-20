@@ -185,3 +185,10 @@ Google Ads account 440-754-7278 runs **non-brand Search only** to our own pages.
 3. **Email signups:** use `<MailerLiteSignup variant="card" … />` (form PTvH32). FunnelGuards detects MailerLite's success panel, fires GA4 `generate_lead`, and sends the reader to `/thank-you/?src=<slug>`, which hands over the free checklist and fires `email_signup`. Do not add a second form, a second Google tag, or GTM.
 4. **Tone:** signups are a calm, useful guide or seasonal reminder service, a small thank-you. No "FREE GIFT", countdowns, urgency, or hype. Paid products are mentioned low-key ("here whenever you want them, no pressure").
 5. Do not bid on, or write ad copy using, any partner brand. All partner brands are negative keywords.
+
+## Design system & photos (Nov 2026 redesign)
+
+- Styles: `src/styles/global.css` (tokens at the top). Shared pieces: `PageHero`, `SectionHead`, `GuideCard`, `LaneCard`, `Photo`, `RelatedLinks` in `src/components/`.
+- Photos: self-hosted Unsplash images in `public/images/photos/<key>-{480,960,1600}.webp`. Register each new photo (alt text + credit) in `src/data/images.ts` and `IMAGE_CREDITS.md`. Map lanes and guides to photos in `lanePhoto` / `guidePhoto`.
+- Menu: the side drawer lives in `src/layouts/Base.astro` (`menuGroups`). It scrolls on its own, locks the page behind it, and closes on link tap, Escape, or backdrop tap.
+- Internal links: every guide ends with related guides + next steps; every gear page links to guides that mention it; lane pages lead with their guides. Keep in-content links to `/gear/<id>/` pages where readers decide.

@@ -32,15 +32,15 @@ Look at the label or power brick on each device for its watts. Typical examples:
 
 These are ballpark figures. Always check your own device labels.
 
-**Simple sizing math:** add up the watts of what you'll run at the same time, then multiply by the hours you want. Then add about 15–20% because of conversion losses.
+**Simple sizing math** (or let the [generator & power-station sizer](/tools/power-sizer/) do it): add up the watts of what you'll run at the same time, then multiply by the hours you want. Then add about 15–20% because of conversion losses.
 
 > Example: router (20 W) + two lamps (20 W) + phone charging (20 W) = 60 W. Running that for 10 hours = 600 Wh. Add 20%, and you're looking at roughly **700 Wh or more** of capacity.
 
 ## Step 3: Rough size categories
 
 - **Under 500 Wh:** phones, lights, a router, and a laptop for an evening. Easy to carry.
-- **About 1,000 Wh:** the sweet spot for most households. It covers essentials overnight and can run a fridge in short bursts. Most of the models in our [Power Outage Kits](/power-outage-kits/) lane are around this size.
-- **1,500–3,000+ Wh:** for longer outages, medical equipment, or running a fridge for longer. Heavier, and often expandable with add-on batteries.
+- **About 1,000 Wh:** the sweet spot for most households (for example the [Jackery Explorer 1000 Plus](/gear/jackery-explorer-1000-plus/) or [Anker SOLIX C1000X](/gear/anker-solix-c1000x/)). It covers essentials overnight and can run a fridge in short bursts. Most of the models in our [Power Outage Kits](/power-outage-kits/) lane are around this size.
+- **1,500–3,000+ Wh:** for longer outages (like the [Goal Zero Yeti 1500](/gear/goal-zero-yeti-1500/)), medical equipment, or running a fridge for longer. Heavier, and often expandable with add-on batteries.
 
 ## Step 4: Check the battery type
 
@@ -51,7 +51,7 @@ Most newer models use **LiFePO4 (LFP)** batteries, which are rated by manufactur
 During a multi-day outage, how you recharge matters as much as capacity:
 
 - **Wall charging speed:** many new models recharge from an outlet in about an hour, which is handy between rolling outages.
-- **Solar input:** check the maximum solar watts and connector type, and buy a panel that matches. Real-world solar output is usually lower than the panel's rating, especially in winter.
+- **Solar input:** check the maximum solar watts and connector type, and buy a panel that matches. The [solar sizer](/tools/solar-sizer/) estimates panel watts from your daily load. Real-world solar output is usually lower than the panel's rating, especially in winter.
 - **Car charging:** a slow but useful backup.
 
 ## Step 6: Don't skip these details
@@ -63,8 +63,8 @@ During a multi-day outage, how you recharge matters as much as capacity:
 
 ## What a power station can't do well
 
-It isn't a whole-home solution. Electric heat, electric ovens, well pumps, and central AC draw too much for most portable units. For those, people use a properly installed generator with a transfer switch, operated outdoors and at least 20 feet from the home as the CDC recommends.
+It isn't a whole-home solution. Electric heat, electric ovens, well pumps, and central AC draw too much for most portable units. For those, people use a properly installed generator with a transfer switch (see [inverter generator vs. power station](/guides/generator-vs-power-station/)), operated outdoors and at least 20 feet from the home as the CDC recommends.
 
 ## Bottom line
 
-For most homes, a **1,000 Wh-class LFP power station plus one compatible solar panel** covers the essentials through a typical outage. Compare current models in our [Off-Grid Power](/off-grid-power/) and [Power Outage Kits](/power-outage-kits/) lanes, and always check the manufacturer's page for current specs and price.
+For most homes, a **1,000 Wh-class LFP power station plus one compatible solar panel** covers the essentials through a typical outage. Compare current models in our [Off-Grid Power](/off-grid-power/), [Power Outage Kits](/power-outage-kits/), and [Home Backup Power & Solar](/home-backup-power-solar/) lanes, and always check the manufacturer's page for current specs and price.

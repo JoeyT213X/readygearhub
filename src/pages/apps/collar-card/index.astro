@@ -1,4 +1,5 @@
 ---
+import RelatedLinks from '../../../components/RelatedLinks.astro';
 import Base from '../../../layouts/Base.astro';
 import '../../../styles/interactive.css';
 import SupporterNote from '../../../components/SupporterNote.astro';
@@ -81,6 +82,12 @@ import SupporterNote from '../../../components/SupporterNote.astro';
       <input id="import-file" type="file" accept="application/json,.json" hidden />
     </article>
   </section>
+  <RelatedLinks links={[
+    { href: "/tools/kit-builder/", icon: "📋", title: "Emergency kit builder", text: "A printable Ready.gov checklist for your household." },
+    { href: "/guides/winter-power-outage-checklist/", icon: "✅", title: "Winter outage checklist", text: "What to do before, during, and after." },
+    { href: "/apps/", icon: "📱", title: "Offline apps", text: "Small tools that keep working without a network." },
+    { href: "/guides/", icon: "📘", title: "Guides & checklists", text: "Plain-English prep guides for storms, outages, and water." }
+  ]} />
 </Base>
 <script>
   import { initCollarCard } from '../../../scripts/collar-card';

@@ -13,22 +13,22 @@ Ice storms and blizzards are some of the most common causes of long power outage
 
 **Light and communication**
 
-- [ ] At least one **headlamp or flashlight per person**, plus a **lantern** for each main room. Skip candles if you can, since they're a leading cause of fires during outages.
-- [ ] A **battery or hand-crank weather radio** so you can hear alerts if cell service goes down.
-- [ ] Phones, power banks, and any **portable power station** fully charged.
+- [ ] At least one **headlamp or flashlight per person**, plus a **lantern** for each main room (the [Goal Zero Lighthouse 600](/gear/goal-zero-lighthouse-600/) also charges a phone). Skip candles if you can, since they're a leading cause of fires during outages.
+- [ ] A **battery or hand-crank weather radio**, like the [Midland ER310](/gear/midland-er310-crank-radio/), so you can hear alerts if cell service goes down.
+- [ ] Phones, power banks, and any **portable power station** fully charged. Not sure what size you need? See [how to pick a portable power station](/guides/how-to-pick-a-portable-power-station/) or try the [generator & power-station sizer](/tools/power-sizer/).
 - [ ] A written list of important phone numbers, in case your phone dies.
 
 **Heat and safety**
 
-- [ ] A **carbon monoxide alarm** with battery backup on every level of the home, especially near bedrooms. Test it now.
-- [ ] If you plan to use a backup heater, make sure it's **rated for indoor use**, and keep the fuel stored safely.
+- [ ] A **carbon monoxide alarm** with battery backup on every level of the home, especially near bedrooms. Test it now. A portable one like the [Eton Blackout Buddy CO](/gear/eton-blackout-buddy-co/) can go in the warm room.
+- [ ] If you plan to use a backup heater, make sure it's **rated for indoor use**, and keep the fuel stored safely. Read [how to heat one room safely in an outage](/guides/heat-one-room-safely-in-an-outage/) first.
 - [ ] Extra blankets, sleeping bags, and wool socks and hats for everyone.
-- [ ] Know where your water shut-off valve is, in case pipes freeze and burst.
+- [ ] Know where your water shut-off valve is, in case pipes freeze and burst. See [how to keep pipes from freezing](/guides/how-to-keep-pipes-from-freezing/).
 
 **Food and water**
 
 - [ ] At least **3 days of food** that doesn't need cooking or refrigeration, plus a manual can opener.
-- [ ] About **1 gallon of water per person per day** for at least 3 days, which is the common Ready.gov guideline. Fill the bathtub for flushing water if you're on a well pump.
+- [ ] About **1 gallon of water per person per day** for at least 3 days, which is the common Ready.gov guideline. The [water storage calculator](/tools/water-calculator/) does the math for your household, and [how much water to store](/guides/emergency-water-storage/) covers containers. Fill the bathtub for flushing water if you're on a well pump.
 - [ ] Prescription medications refilled, plus a plan for anything that needs refrigeration.
 - [ ] Pet food and supplies.
 
@@ -43,11 +43,11 @@ Ice storms and blizzards are some of the most common causes of long power outage
 1. **Pick one warm room.** Close off unused rooms, hang blankets over doorways, and put towels along door gaps. A small interior room with few windows holds heat best.
 2. **Dress in layers.** Wool and synthetic fabrics stay warmer than cotton when damp. Wear a hat indoors, and keep feet dry and warm.
 3. **Never use a generator, grill, camp stove, or charcoal indoors**, in a garage, or near open windows. The CDC says to keep generators at least 20 feet from the home. Carbon monoxide is odorless and can kill quickly.
-4. **Keep the fridge and freezer closed.** According to FoodSafety.gov, a closed refrigerator keeps food safe for about 4 hours, and a full closed freezer for about 48 hours (about 24 if half full).
+4. **Keep the fridge and freezer closed.** According to FoodSafety.gov, a closed refrigerator keeps food safe for about 4 hours, and a full closed freezer for about 48 hours (about 24 if half full). Start the [fridge & freezer outage timer](/tools/outage-timer/) when the power goes out.
 5. **Drip faucets** on outside walls to help prevent frozen pipes, if you still have water pressure.
 6. **Use a power station wisely.** Prioritize phones, a radio, lights, medical devices, and your internet router. Don't try to run space heaters off a battery, since they drain it very fast.
 7. **Check on neighbors**, especially older adults, people with medical needs, and families with infants.
-8. **Watch for signs of hypothermia**: shivering, confusion, slurred speech, and drowsiness. Get medical help if needed. Warming centers often open during big outages, so listen to local alerts.
+8. **Watch for signs of hypothermia**: shivering, confusion, slurred speech, and drowsiness. Get medical help if needed. Warming centers often open during big outages, so listen to local alerts and check [live NWS alerts](/alerts/). More ideas: [how to stay warm without power](/guides/how-to-stay-warm-without-power/).
 
 ## After the power comes back
 

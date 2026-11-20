@@ -11,25 +11,25 @@ Winter is hard on cars and drivers. Cold drains batteries, ice puts cars in ditc
 
 ## The essentials
 
-- [ ] **Jump starter or jumper cables.** A charged lithium jump starter lets you start a dead battery without waiting for another car. Recharge it every couple of months, since cold drains it too.
-- [ ] **Snow brush and ice scraper.** Clear the whole car, roof included. Snow sliding off your roof can blind you or the driver behind you.
+- [ ] **Jump starter or jumper cables.** A charged lithium jump starter (like the [NOCO Boost GB40](/gear/noco-boost-gb40/)) lets you start a dead battery without waiting for another car. Recharge it every couple of months, since cold drains it too.
+- [ ] **Snow brush and ice scraper.** A [telescoping snow broom](/gear/snow-joe-telescoping-snow-broom/) reaches across an SUV or truck roof. Clear the whole car, roof included. Snow sliding off your roof can blind you or the driver behind you.
 - [ ] **Phone charger cable and a charged power bank.**
-- [ ] **Flashlight or headlamp** with spare batteries. A headlamp keeps both hands free for tire changes.
-- [ ] **Warm layers:** a blanket or emergency bivvy, plus a hat, gloves, and dry wool socks.
-- [ ] **First aid kit.**
+- [ ] **Flashlight or headlamp** with spare batteries, such as the [Black Diamond Spot 400](/gear/black-diamond-spot-400/). A headlamp keeps both hands free for tire changes.
+- [ ] **Warm layers:** a blanket or [emergency bivvy](/gear/sol-emergency-bivvy/), plus a hat, gloves, and dry wool socks.
+- [ ] **First aid kit.** See [what to put in a family first aid kit](/guides/storm-first-aid-kit/).
 - [ ] **Water and high-calorie snacks** like granola bars, nuts, or jerky. Bottles can freeze, so leave some room in them.
 
 ## Helpful extras
 
 - [ ] A small **folding shovel** to dig out around tires.
 - [ ] **Traction aid:** a bag of sand or cat litter (non-clumping) or traction mats for when you're stuck on ice.
-- [ ] **Multi-tool** for quick fixes.
-- [ ] **Hand warmers**, either single-use packs or rechargeable.
+- [ ] **Multi-tool** for quick fixes, like the [Leatherman Wave+](/gear/leatherman-wave-plus/).
+- [ ] **Hand warmers**, either single-use packs or rechargeable, like the [Zippo HeatBank 9s](/gear/zippo-heatbank-9s/).
 - [ ] **Reflective triangles or flares** and a bright cloth to tie to your antenna.
 - [ ] **Tow strap.**
 - [ ] **Windshield washer fluid** rated for winter temperatures.
 - [ ] **Paper map** of your area, in case your phone and GPS aren't working.
-- [ ] If you drive rural roads with no cell coverage, consider a **satellite messenger** that can send an SOS.
+- [ ] If you drive rural roads with no cell coverage, consider a **satellite messenger** that can send an SOS, such as the [Garmin inReach Mini 2](/gear/garmin-inreach-mini-2/).
 
 ## If you get stranded
 
@@ -46,4 +46,4 @@ Winter is hard on cars and drivers. Cold drains batteries, ice puts cars in ditc
 - Check tire tread and pressure. Pressure drops as temperatures fall.
 - Keep your gas tank at least half full all winter.
 
-See all the picks in the [Vehicle Emergency Kits](/vehicle-emergency-kits/) lane.
+See all the picks in the [Vehicle Emergency Kits](/vehicle-emergency-kits/) lane. Heading out before a storm? Check [live weather alerts](/alerts/) and read [winter storm watch vs. warning](/guides/winter-storm-watch-vs-warning/) so you know when to stay home. If you're packing for an older relative, see the [winter emergency kit for elderly parents](/guides/winter-emergency-kit-for-elderly-parents/).

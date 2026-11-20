@@ -1,13 +1,33 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { getGuides } from '../../lib/data';
+import PageHero from '../../components/PageHero.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import SectionHead from '../../components/SectionHead.astro';
+import { getGuides, lanes, laneBySlug } from '../../lib/data';
 const guides = await getGuides();
 const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'ReadyGearHub guides',
   itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/guides/${g.id}/`, Astro.site).href, name: g.data.title })) };
+const groups = lanes.map((l) => ({ lane: l, guides: guides.filter((g) => g.data.lane === l.slug) })).filter((x) => x.guides.length > 0);
+const unlaned = guides.filter((g) => !g.data.lane || !laneBySlug(g.data.lane));
+const latest = guides.slice(0, 3);
 ---
 <Base title="Preparedness Guides & Checklists | ReadyGearHub" description="Plain-English preparedness guides: winter power outage checklist, what to keep in your car for winter, how to pick a portable power station, and more." schema={schema}>
-  <section class="page-hero"><div class="wrap"><nav class="crumbs"><a href="/">Home</a> › Guides</nav><h1>📘 Guides</h1><p class="lead">Checklists and buying help written to be useful, not to upsell.</p></div></section>
-  <section class="wrap section"><div class="grid">
-    {guides.map((g) => (<a class="card guide-card" href={`/guides/${g.id}/`}><h3>{g.data.title}</h3><p>{g.data.description}</p><span class="count">Read guide →</span></a>))}
-  </div></section>
+  <PageHero title="📘 Guides & checklists" lead="Checklists and buying help written to be useful, not to upsell. Each guide links to the official sources behind it and the gear it mentions." photo="gear-flatlay" crumbs={[{ label: 'Guides' }]}>
+    <nav aria-label="Guide topics"><ul class="hero-quick">{groups.map((g) => <li><a href={`#${g.lane.slug}`}>{g.lane.icon} {g.lane.name} ({g.guides.length})</a></li>)}</ul></nav>
+  </PageHero>
+  <section class="wrap section">
+    <SectionHead kicker="Newest" title="Latest guides" />
+    <div class="grid">{latest.map((g, i) => <GuideCard guide={g} laneName={g.data.lane ? laneBySlug(g.data.lane)?.name : undefined} />)}</div>
+  </section>
+  {groups.map((x, i) => (
+    <section class:list={[{ band: i % 2 === 0 }]} id={x.lane.slug}>
+      <div class="wrap section">
+        <SectionHead title={`${x.lane.icon} ${x.lane.name}`} intro={x.lane.summary} href={`/${x.lane.slug}/`} linkLabel={`Shop ${x.lane.name}`} />
+        <div class="grid">{x.guides.map((g) => <GuideCard guide={g} />)}</div>
+      </div>
+    </section>
+  ))}
+  {unlaned.length > 0 && (
+    <section class="wrap section"><SectionHead title="More guides" /><div class="grid">{unlaned.map((g) => <GuideCard guide={g} />)}</div></section>
+  )}
 </Base>

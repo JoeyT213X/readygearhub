@@ -7,6 +7,7 @@ import { anyPayhipReady } from '../data/payhip';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import Analytics from '../components/Analytics.astro';
 import FunnelGuards from '../components/FunnelGuards.astro';
+import { getCollection } from 'astro:content';
 interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean }
 const { title, description, image = '/og-default.png', type = 'website', schema, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
@@ -31,6 +32,46 @@ const orgSchema = {
   },
 };
 const year = new Date().getFullYear();
+const path = Astro.url.pathname;
+const isCurrent = (href: string) => href === '/' ? path === '/' : path === href || path.startsWith(href);
+const allGuides = (await getCollection('guides', (e) => !e.data.draft)).sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+const footerGuides = allGuides.slice(0, 7);
+const primaryNav = [
+  { href: '/gear/', label: 'Gear' },
+  { href: '/guides/', label: 'Guides' },
+  { href: '/tools/', label: 'Tools' },
+  { href: '/alerts/', label: 'Alerts' },
+  { href: '/shop/', label: 'Shop' },
+];
+const menuGroups = [
+  { title: 'Start here', links: [
+    { href: '/', icon: '🏠', label: 'Home' },
+    { href: '/alerts/', icon: '⚠️', label: 'Live weather alerts' },
+    { href: '/storm-tracker/', icon: '🌀', label: 'Storm tracker' },
+    { href: '/winter-storm-ready-checklist/', icon: '✅', label: 'Winter storm checklist' },
+    { href: '/updates/', icon: '✉️', label: 'Community safety updates' },
+  ] },
+  { title: 'Gear by lane', links: [
+    { href: '/gear/', icon: '📚', label: 'Full gear directory' },
+    ...navLanes.map((l) => ({ href: `/${l.slug}/`, icon: l.icon, label: l.name })),
+    { href: '/gear/tech/', icon: '🔋', label: 'Newest prep tech' },
+    { href: '/kits/', icon: '🧰', label: 'Storm kits' },
+  ] },
+  { title: 'Guides & tools', links: [
+    { href: '/guides/', icon: '📘', label: 'All guides' },
+    { href: '/tools/', icon: '🛠️', label: 'Calculators & tools' },
+    { href: '/apps/', icon: '📱', label: 'Offline apps' },
+    { href: '/local/', icon: '📍', label: 'Local resources' },
+    { href: '/shop/', icon: '🛒', label: 'Printable guides shop' },
+  ] },
+  { title: 'About', links: [
+    { href: '/about/', icon: 'ℹ️', label: 'About ReadyGearHub' },
+    { href: '/get-featured/', icon: '⭐', label: 'Get featured' },
+    { href: '/contact/', icon: '💬', label: 'Contact' },
+  ] },
+];
+// Drawer menu: plain links (no preventDefault), scrollable panel, body scroll lock, Escape / backdrop / link click closes, focus trap.
+const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]'),dr=d.getElementById('site-drawer'),bd=d.querySelector('.drawer-backdrop');if(!btn||!dr)return;var last=null,y=0;function focusables(){return [].slice.call(dr.querySelectorAll('a[href],button:not([disabled])'));}function open(){last=d.activeElement;y=window.scrollY;dr.hidden=false;bd.hidden=false;d.documentElement.classList.add('menu-open');d.body.style.top=(-y)+'px';void dr.offsetWidth;dr.classList.add('is-open');bd.classList.add('is-open');btn.setAttribute('aria-expanded','true');var c=dr.querySelector('.drawer-close');c&&c.focus({preventScroll:true});}function close(restore){if(dr.hidden)return;dr.classList.remove('is-open');bd.classList.remove('is-open');d.documentElement.classList.remove('menu-open');d.body.style.top='';window.scrollTo(0,y);btn.setAttribute('aria-expanded','false');setTimeout(function(){if(!dr.classList.contains('is-open')){dr.hidden=true;bd.hidden=true;}},200);if(restore!==false&&last&&last.focus)last.focus({preventScroll:true});}btn.addEventListener('click',function(){dr.hidden?open():close();});[].slice.call(d.querySelectorAll('[data-menu-close]')).forEach(function(el){el.addEventListener('click',function(){close();});});dr.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(a){close(false);}});d.addEventListener('keydown',function(e){if(dr.hidden)return;if(e.key==='Escape'){e.preventDefault();close();}else if(e.key==='Tab'){var f=focusables();if(!f.length)return;var first=f[0],lst=f[f.length-1];if(e.shiftKey&&d.activeElement===first){e.preventDefault();lst.focus();}else if(!e.shiftKey&&d.activeElement===lst){e.preventDefault();first.focus();}}});window.addEventListener('pageshow',function(e){if(e.persisted&&!dr.hidden)close(false);});})();`;
 ---
 <!doctype html>
 <html lang="en">
@@ -70,50 +111,62 @@ const year = new Date().getFullYear();
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="/" class="logo" aria-label={`${site.name} home`}><span class="logo-mark">⛺</span> Ready<span>Gear</span>Hub</a>
-      <details class="nav-menu">
-        <summary aria-label="Menu">☰ Menu</summary>
-        <nav aria-label="Main">
-          <ul>
-            <li><a href="/alerts/">⚠️ Alerts</a></li>
-            <li><a href="/tools/">🛠️ Tools</a></li>
-            <li><a href="/apps/">📱 Apps</a></li>
-            {navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.icon} {l.name}</a></li>)}
-            <li><a href="/guides/">📘 Guides</a></li>
-            <li><a href="/shop/">🛒 Shop</a></li>
-            <li><a href="/kits/">🧰 Storm kits</a></li>
-            <li><a href="/local/">📍 Local resources</a></li>
-            <li><a href="/get-featured/">⭐ Get featured</a></li>
-          </ul>
-        </nav>
-      </details>
+      <a href="/" class="logo" aria-label={`${site.name} home`}><span class="logo-mark" aria-hidden="true">⛺</span> Ready<span>Gear</span>Hub</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          {primaryNav.map((n) => <li><a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
+        </ul>
+      </nav>
+      <button type="button" class="menu-toggle" aria-controls="site-drawer" aria-expanded="false" data-menu-open>
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-label">Menu</span>
+      </button>
     </div>
   </header>
+  <div class="drawer-backdrop" data-menu-close hidden></div>
+  <aside id="site-drawer" class="drawer" aria-label="Site menu" hidden>
+    <div class="drawer-head">
+      <span class="drawer-title">Menu</span>
+      <button type="button" class="drawer-close" data-menu-close aria-label="Close menu">✕</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Site menu">
+      {menuGroups.map((g) => (
+        <div class="drawer-group">
+          <p class="drawer-group-h">{g.title}</p>
+          <ul>
+            {g.links.map((n) => <li><a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}><span class="dn-icon" aria-hidden="true">{n.icon}</span>{n.label}</a></li>)}
+          </ul>
+        </div>
+      ))}
+    </nav>
+  </aside>
   <main id="main"><slot /></main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <div>
+      <div class="footer-brand">
         <p class="logo small">Ready<span>Gear</span>Hub</p>
         <p>{site.tagline}</p>
         <p class="fine">As an affiliate, ReadyGearHub may earn a commission from qualifying purchases at no extra cost to you. <a href="/affiliate-disclosure/">Learn more</a>.</p>
         <MailerLiteSignup variant="footer" heading="Email tips" intro="Occasional checklists. Unsubscribe anytime." />
       </div>
       <div>
-        <p class="foot-h">Lanes</p>
-        <ul>{navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.name}</a></li>)}</ul>
+        <p class="foot-h">Gear by lane</p>
+        <ul>{navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.name}</a></li>)}<li><a href="/gear/">Full directory</a></li><li><a href="/gear/tech/">Newest tech</a></li></ul>
+      </div>
+      <div>
+        <p class="foot-h">Popular guides</p>
+        <ul>{footerGuides.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}<li><a href="/guides/">All guides</a></li></ul>
       </div>
       <div>
         <p class="foot-h">ReadyGearHub</p>
         <ul>
           <li><a href="/alerts/">Live weather alerts</a></li>
+          <li><a href="/storm-tracker/">Storm tracker</a></li>
           <li><a href="/tools/">Tools</a></li>
           <li><a href="/apps/">Apps</a></li>
           <li><a href="/widgets/">Widgets</a></li>
-          <li><a href="/guides/">Guides</a></li>
           <li><a href="/shop/">Shop</a></li>
           <li><a href="/kits/">Storm kits</a></li>
-          <li><a href="/gear/">Directory</a></li>
-          <li><a href="/gear/tech/">Newest tech</a></li>
           <li><a href="/local/">Local resources</a></li>
           <li><a href="/updates/">Local & community safety updates</a></li>
           <li><a href="/about/">About</a></li>
@@ -124,7 +177,8 @@ const year = new Date().getFullYear();
         </ul>
       </div>
     </div>
-    <p class="wrap fine">© {year} {site.name}, operated by {site.legalName}, {site.streetAddress}, {site.addressLocality}, {site.addressRegion} {site.postalCode}. <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>. Product names and trademarks belong to their owners. Always follow manufacturer safety instructions.</p>
+    <p class="wrap fine">© {year} {site.name}, operated by {site.legalName}, {site.streetAddress}, {site.addressLocality}, {site.addressRegion} {site.postalCode}. <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>. Product names and trademarks belong to their owners. Always follow manufacturer safety instructions. Photos from Unsplash, <a href="/about/#photo-credits">credits</a>.</p>
   </footer>
+  <script is:inline set:html={menuJs}></script>
 </body>
 </html>

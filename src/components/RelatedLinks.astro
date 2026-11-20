@@ -1,0 +1,14 @@
+---
+// "Keep exploring" block: a small set of relevant internal links so no page is a dead end.
+interface L { href: string; icon: string; title: string; text: string }
+interface Props { links: L[]; title?: string }
+const { links, title = 'Keep exploring' } = Astro.props;
+---
+<section class="band related-links" aria-label={title}>
+  <div class="wrap section tight">
+    <h2 style="margin-top:0">{title}</h2>
+    <div class="next-steps">
+      {links.map((l) => <a class="card next-step" href={l.href}><span class="ns-icon" aria-hidden="true">{l.icon}</span><span><strong>{l.title}</strong><span>{l.text}</span></span></a>)}
+    </div>
+  </div>
+</section>

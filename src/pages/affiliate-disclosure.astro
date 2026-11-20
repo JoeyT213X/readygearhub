@@ -1,4 +1,5 @@
 ---
+import RelatedLinks from '../components/RelatedLinks.astro';
 import Base from '../layouts/Base.astro';
 ---
 <Base title="Affiliate Disclosure | ReadyGearHub" description="How ReadyGearHub earns money: affiliate links, featured listings, and how we keep recommendations honest, in line with FTC guidelines.">
@@ -21,4 +22,12 @@ import Base from '../layouts/Base.astro';
     <p>This disclosure is provided in accordance with the U.S. Federal Trade Commission's guidance on endorsements and testimonials (16 CFR Part 255).</p>
     <p>Questions? <a href="/contact/">Contact us</a>.</p>
   </section>
+  <RelatedLinks links={[
+    { href: "/about/", icon: "ℹ️", title: "About ReadyGearHub", text: "How we choose listings and stay independent." },
+    { href: "/gear/", icon: "📚", title: "Gear directory", text: "Hand-picked gear sorted into simple lanes." },
+    { href: "/guides/", icon: "📘", title: "Guides & checklists", text: "Plain-English prep guides for storms, outages, and water." },
+    { href: "/privacy/", icon: "🔒", title: "Privacy policy", text: "What we collect and your choices." },
+    { href: "/contact/", icon: "💬", title: "Contact us", text: "Questions, corrections, or product suggestions." },
+    { href: "/get-featured/", icon: "⭐", title: "Get featured", text: "List your business in the directory." }
+  ]} />
 </Base>

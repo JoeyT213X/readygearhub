@@ -1,4 +1,5 @@
 ---
+import RelatedLinks from '../components/RelatedLinks.astro';
 import Base from '../layouts/Base.astro';
 import lanes from '../data/lanes.json';
 ---
@@ -31,4 +32,12 @@ import lanes from '../data/lanes.json';
       <button class="btn" type="submit">Send interest form</button>
     </form>
   </section>
+  <RelatedLinks links={[
+    { href: "/gear/", icon: "📚", title: "Gear directory", text: "Hand-picked gear sorted into simple lanes." },
+    { href: "/about/", icon: "ℹ️", title: "About ReadyGearHub", text: "How we choose listings and stay independent." },
+    { href: "/affiliate-disclosure/", icon: "🏷️", title: "Affiliate disclosure", text: "How affiliate links work on this site." },
+    { href: "/contact/", icon: "💬", title: "Contact us", text: "Questions, corrections, or product suggestions." },
+    { href: "/guides/", icon: "📘", title: "Guides & checklists", text: "Plain-English prep guides for storms, outages, and water." },
+    { href: "/local/", icon: "📍", title: "Local resources", text: "Official emergency offices and outage maps by state." }
+  ]} />
 </Base>

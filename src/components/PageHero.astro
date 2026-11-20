@@ -1,0 +1,23 @@
+---
+import Photo from './Photo.astro';
+interface Crumb { href?: string; label: string }
+interface Props { title: string; lead?: string; eyebrow?: string; photo?: string; crumbs?: Crumb[]; compact?: boolean }
+const { title, lead, eyebrow, photo, crumbs = [], compact = false } = Astro.props;
+---
+<section class:list={['page-hero', { 'has-photo': !!photo, compact }]}>
+  {photo && <div class="page-hero-media" aria-hidden="true"><Photo name={photo} sizes="(max-width: 699px) 250px, 100vw" eager decorative /></div>}
+  <div class="wrap page-hero-inner">
+    {crumbs.length > 0 && (
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          {crumbs.map((c) => <li>{c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}</li>)}
+        </ol>
+      </nav>
+    )}
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h1>{title}</h1>
+    {lead && <p class="lead">{lead}</p>}
+    <slot />
+  </div>
+</section>

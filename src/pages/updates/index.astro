@@ -1,44 +1,52 @@
 ---
 import Base from '../../layouts/Base.astro';
 import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
+import PageHero from '../../components/PageHero.astro';
+import Photo from '../../components/Photo.astro';
 ---
 <Base
   title="Local & community safety updates | ReadyGearHub"
   description="Occasional notes about National Weather Service advisories, official food and product recalls, and Mississippi or Southern community outage updates. Unsubscribe anytime."
 >
-  <section class="page-hero">
-    <div class="wrap">
-      <p class="crumbs"><a href="/">Home</a> / Updates</p>
-      <h1>Local & community safety updates</h1>
-      <p class="lead">A short email when there's a weather advisory, an official recall, or a community outage worth knowing about. Not a daily message, and not a sales list.</p>
+  <PageHero title="Local & community safety updates" lead="A short email when there's a weather advisory, an official recall, or a community outage worth knowing about. Not a daily message, and not a sales list." photo="lineworker-repair" crumbs={[{ label: 'Updates' }]} />
+  <section class="wrap section">
+    <div class="split">
+      <div>
+        <h2 style="margin-top:0">What you'll get</h2>
+        <ul class="check-list">
+          <li>National Weather Service watches, warnings, and freeze or heat advisories for Mississippi and the Gulf South</li>
+          <li>Official FDA, USDA, and CPSC food and product safety recalls</li>
+          <li>Occasional seasonal reminders about power or water at home</li>
+          <li>Mississippi and Southern community outage notes, when we can point to a public official source</li>
+        </ul>
+        <h2>What we won't send</h2>
+        <ul>
+          <li>Daily mail, product pitches, or partner offers</li>
+          <li>Anything we cannot tie to an official public source</li>
+        </ul>
+      </div>
+      <div>
+        <MailerLiteSignup
+          variant="card"
+          form="communityUpdates"
+          heading="Get the occasional update"
+          intro="Confirm your email after you sign up. You can unsubscribe anytime."
+          note="A quiet list. If a week is uneventful, we don't write."
+        />
+      </div>
     </div>
   </section>
-  <section class="wrap section prose">
-    <h2>What you'll get</h2>
-    <ul>
-      <li>National Weather Service watches, warnings, and freeze or heat advisories for Mississippi and the Gulf South</li>
-      <li>Official FDA, USDA, and CPSC food and product safety recalls</li>
-      <li>Occasional seasonal reminders about power or water at home</li>
-      <li>Mississippi and Southern community outage notes, when we can point to a public official source</li>
-    </ul>
-    <h2>What we won't send</h2>
-    <ul>
-      <li>Daily mail, product pitches, or partner offers</li>
-      <li>Anything we cannot tie to an official public source</li>
-    </ul>
-    <MailerLiteSignup
-      variant="card"
-      form="communityUpdates"
-      heading="Get the occasional update"
-      intro="Confirm your email after you sign up. You can unsubscribe anytime."
-      note="A quiet list. If a week is uneventful, we don't write."
-    />
-    <h2>Helpful links</h2>
-    <ul>
-      <li><a href="/storm-tracker/">Storm Tracker</a></li>
-      <li><a href="/alerts/">Live weather alerts</a></li>
-      <li><a href="/local/mississippi/">Mississippi local resources</a></li>
-      <li><a href="/privacy/">Privacy Policy</a></li>
-    </ul>
+  <section class="band">
+    <div class="wrap section tight">
+      <h2 style="margin-top:0">Helpful links</h2>
+      <div class="next-steps">
+        <a class="card next-step" href="/storm-tracker/"><span class="ns-icon" aria-hidden="true">🌀</span><span><strong>Storm Tracker</strong><span>Official NWS alerts for a saved county, plus an outage timer.</span></span></a>
+        <a class="card next-step" href="/alerts/"><span class="ns-icon" aria-hidden="true">⚠️</span><span><strong>Live weather alerts</strong><span>Watches and warnings by state or county.</span></span></a>
+        <a class="card next-step" href="/local/mississippi/"><span class="ns-icon" aria-hidden="true">📍</span><span><strong>Mississippi local resources</strong><span>County emergency management and utility outage pages.</span></span></a>
+        <a class="card next-step" href="/guides/power-outage-ice-storm-mississippi/"><span class="ns-icon" aria-hidden="true">📘</span><span><strong>Mississippi outage guide</strong><span>What to do when the power goes out in an ice storm.</span></span></a>
+        <a class="card next-step" href="/guides/winter-storm-watch-vs-warning/"><span class="ns-icon" aria-hidden="true">📘</span><span><strong>Watch vs. warning</strong><span>What each winter weather alert means and what to do.</span></span></a>
+        <a class="card next-step" href="/privacy/"><span class="ns-icon" aria-hidden="true">🔒</span><span><strong>Privacy Policy</strong><span>How we handle your email address.</span></span></a>
+      </div>
+    </div>
   </section>
 </Base>

@@ -2,20 +2,17 @@
 import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
 import { CALCULATORS, OFFLINE_APPS } from '../../lib/app-config';
+import PageHero from '../../components/PageHero.astro';
+import SectionHead from '../../components/SectionHead.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { getGuides } from '../../lib/data';
+const guideIds = ['generator-vs-power-station', 'emergency-water-storage', 'winter-power-outage-checklist'];
+const guides = (await getGuides()).filter((g) => guideIds.includes(g.id));
 ---
 <Base title="Preparedness Tools | ReadyGearHub" description="Free, browser-based tools: live weather alerts, generator and solar sizers, a water storage calculator, a fridge and freezer outage timer, a Ready.gov kit builder, and six installable offline apps.">
-  <section class="page-hero">
-    <div class="wrap">
-      <p class="crumbs"><a href="/">Home</a> / Tools</p>
-      <h1>Preparedness tools</h1>
-      <p class="lead">Simple calculators and official-alert lookups you can use in the browser, plus installable apps that work offline on this device. No invented sample data, and no prices on this site.</p>
-    </div>
-  </section>
+  <PageHero title="Preparedness tools" lead="Simple calculators and official-alert lookups you can use in the browser, plus installable apps that work offline on this device. No invented sample data, and no prices on this site." photo="power-banks" crumbs={[{ label: 'Tools' }]} />
   <section class="wrap section">
-    <div class="section-head">
-      <h2>Calculators &amp; lookups</h2>
-      <p>Use these in the browser. Live alerts come from the National Weather Service.</p>
-    </div>
+    <SectionHead kicker="In your browser" title="Calculators & lookups" intro="Use these in the browser. Live alerts come from the National Weather Service." />
     <div class="tools-grid">
       <a class="card tool-card" href="/alerts/">
         <span class="lane-icon" aria-hidden="true">⚠️</span>
@@ -40,10 +37,7 @@ import { CALCULATORS, OFFLINE_APPS } from '../../lib/app-config';
     </div>
   </section>
   <section class="wrap section">
-    <div class="section-head">
-      <h2>Offline apps</h2>
-      <p>Six small, installable apps that keep working offline on this device. <a href="/apps/">See all apps →</a></p>
-    </div>
+    <SectionHead kicker="Works offline" title="Offline apps" intro="Six small, installable apps that keep working offline on this device." href="/apps/" linkLabel="See all apps" />
     <div class="tools-grid">
       {OFFLINE_APPS.map((app) => (
         <a class="card tool-card" href={app.href}>
@@ -53,6 +47,12 @@ import { CALCULATORS, OFFLINE_APPS } from '../../lib/app-config';
           <span class="count">Open app →</span>
         </a>
       ))}
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap section">
+      <SectionHead kicker="Pair with a guide" title="Guides that use these tools" href="/guides/" linkLabel="All guides" />
+      <div class="grid">{guides.map((g) => <GuideCard guide={g} />)}</div>
     </div>
   </section>
 </Base>

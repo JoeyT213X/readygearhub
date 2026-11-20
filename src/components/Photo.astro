@@ -1,0 +1,19 @@
+---
+import { photos, photoSrc, photoSrcset } from '../data/images';
+interface Props { name: string; sizes?: string; eager?: boolean; class?: string; alt?: string; decorative?: boolean }
+const { name, sizes = '(min-width: 980px) 33vw, (min-width: 640px) 50vw, 100vw', eager = false, class: cls, alt, decorative = false } = Astro.props;
+const p = photos[name];
+if (!p) throw new Error(`Unknown photo "${name}" (see src/data/images.ts)`);
+---
+<img
+  class={cls}
+  src={photoSrc(name, 960)}
+  srcset={photoSrcset(name)}
+  sizes={sizes}
+  width="960"
+  height="540"
+  alt={decorative ? '' : (alt ?? p.alt)}
+  loading={eager ? 'eager' : 'lazy'}
+  decoding="async"
+  fetchpriority={eager ? 'high' : undefined}
+/>

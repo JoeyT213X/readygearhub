@@ -1,4 +1,5 @@
 ---
+import RelatedLinks from '../components/RelatedLinks.astro';
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
 ---
@@ -19,4 +20,12 @@ import site from '../data/site.json';
       <button class="btn" type="submit">Send message</button>
     </form>
   </section>
+  <RelatedLinks links={[
+    { href: "/about/", icon: "ℹ️", title: "About ReadyGearHub", text: "How we choose listings and stay independent." },
+    { href: "/get-featured/", icon: "⭐", title: "Get featured", text: "List your business in the directory." },
+    { href: "/guides/", icon: "📘", title: "Guides & checklists", text: "Plain-English prep guides for storms, outages, and water." },
+    { href: "/gear/", icon: "📚", title: "Gear directory", text: "Hand-picked gear sorted into simple lanes." },
+    { href: "/affiliate-disclosure/", icon: "🏷️", title: "Affiliate disclosure", text: "How affiliate links work on this site." },
+    { href: "/privacy/", icon: "🔒", title: "Privacy policy", text: "What we collect and your choices." }
+  ]} />
 </Base>

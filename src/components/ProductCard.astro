@@ -5,8 +5,8 @@ interface Props { product: PayhipProduct }
 const { product } = Astro.props;
 ---
 <article class="card item-card product-card">
-  <a class="product-cover" href={`/shop/${product.slug}/`}>
-    <img src={product.image} alt="" width="640" height="360" />
+  <a class="product-cover" href={`/shop/${product.slug}/`} aria-label={product.title} tabindex="-1">
+    <img src={product.image} alt="" width="640" height="360" loading="lazy" decoding="async" />
   </a>
   <h3><a href={`/shop/${product.slug}/`}>{product.title}</a></h3>
   <p class="product-price">{product.price}</p>

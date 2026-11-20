@@ -1,8 +1,9 @@
 ---
-import { laneBySlug, outUrl, isAffiliate, programIdForItem, type Item } from '../lib/data';
+import { laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides, type Item } from '../lib/data';
 import { isNoPpcProgram } from '../data/affiliates';
-interface Props { item: Item; showRank?: boolean }
-const { item, showRank = false } = Astro.props;
+interface Props { item: Item; showRank?: boolean; showGuide?: boolean }
+const { item, showRank = false, showGuide = true } = Astro.props;
+const guide = showGuide ? (await getGuides()).find((g) => g.data.relatedItems.includes(item.id)) : undefined;
 const lane = laneBySlug(item.data.lane);
 const program = programIdForItem(item.id);
 ---
@@ -16,6 +17,7 @@ const program = programIdForItem(item.id);
   <p class="brand">{item.data.brand}</p>
   <p>{item.data.description}</p>
   {item.data.uses.length > 0 && <p class="uses"><strong>Also good for:</strong> {item.data.uses.slice(0, 2).join(' · ')}</p>}
+  {guide && <p class="card-guide-link">📘 How it fits: <a href={`/guides/${guide.id}/`}>{guide.data.title}</a></p>}
   <div class="card-actions">
     <a class="btn small ghost" href={`/gear/${item.id}/`}>Details</a>
     <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>Check current price ↗</a>
