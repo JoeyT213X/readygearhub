@@ -5,21 +5,20 @@
  * and /winter-storm-ready-checklist/ read these values — do not hardcode
  * product IDs or prices in those templates.
  *
- * When a guest-checkout Complete Prep Bundle product replaces the current
- * one, change PAYHIP_BUNDLE_ID only (then rebuild). Buy buttons show
- * "Coming soon" and the Payhip overlay script is not loaded until at least
- * one ID is filled.
+ * To swap any product ID or price later, change the matching constant below
+ * and rebuild. Buy buttons show "Coming soon" and the Payhip overlay script
+ * is not loaded until at least one ID is filled.
  *
  *   family-emergency-binder        ZwvsR   $5   https://payhip.com/b/ZwvsR
  *   winter-storm-prep-planner      x7iZ2   $5   https://payhip.com/b/x7iZ2
  *   homestead-prep-starter-guide   wc9Ez   $5   https://payhip.com/b/wc9Ez
- *   complete-prep-bundle           vwexQ  $10   https://payhip.com/b/vwexQ
- *     (Payhip natively bundles the three guides. The 1-page food-safety chart
- *     and 2-page contacts sheet are free printables, linked from /thank-you/.)
+ *   complete-prep-bundle           kRx6L  $10   https://payhip.com/b/kRx6L
+ *     (Guest-checkout digital ZIP: all three guides plus both free quick-reference
+ *     sheets packed together for easy printing.)
  */
 
-/** 1-line swap when the guest-checkout complete-prep-bundle.zip product is live. */
-export const PAYHIP_BUNDLE_ID = 'vwexQ';
+/** Single-line bundle Payhip ID (guest-checkout complete-prep-bundle.zip). */
+export const PAYHIP_BUNDLE_ID = 'kRx6L';
 export const PAYHIP_BINDER_ID = 'ZwvsR';
 export const PAYHIP_PLANNER_ID = 'x7iZ2';
 export const PAYHIP_HOMESTEAD_ID = 'wc9Ez';
@@ -66,7 +65,8 @@ export const payhipProducts: PayhipProduct[] = [
       'Family Emergency Binder — 12-page fillable household plan',
       'Winter Storm Prep Planner — 10-page seven-day countdown for the week before the ice',
       'Homestead Prep Starter Guide — 10-page starter for a farm, cabin, or house on a well',
-      'Instant PDF download after checkout, through Payhip',
+      'Both free quick-reference sheets packed in for easy printing (Outage Food-Safety Chart + Emergency Contacts & Shut-Offs Sheet)',
+      'Instant ZIP download after checkout, through Payhip',
       'Personal-use license; print as many household copies as you need',
     ],
     productId: PAYHIP_BUNDLE_ID,

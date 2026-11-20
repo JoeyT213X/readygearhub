@@ -2,8 +2,8 @@
 title: "Complete Storm & Family Prep Bundle"
 shortDescription: "The three ReadyGearHub print-at-home guides together: the Family Emergency Binder, the Winter Storm Prep Planner, and the Homestead Prep Starter Guide."
 price: 10
-payhipId: vwexQ
-payhipUrl: https://payhip.com/b/vwexQ
+payhipId: kRx6L
+payhipUrl: https://payhip.com/b/kRx6L
 tags:
   - emergency binder
   - winter storm planner
@@ -34,7 +34,8 @@ Each guide is also available on its own for $5.
 - Family Emergency Binder — 12-page US Letter fillable PDF
 - Winter Storm Prep Planner — 10-page US Letter fillable planner
 - Homestead Prep Starter Guide — 10-page US Letter practical guide
-- Instant PDF download after checkout, through Payhip
+- Both free quick-reference sheets included for easy printing (Fridge & Freezer Outage Food-Safety Chart and Emergency Contacts & Shut-Offs Quick Sheet)
+- Instant ZIP download (`complete-prep-bundle.zip`) after guest checkout, through Payhip
 
 ## Who it's for
 
