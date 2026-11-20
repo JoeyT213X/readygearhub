@@ -16,7 +16,7 @@ import { resolveOutbound } from './affiliates';
 
 export type CategoryId =
   | 'power' | 'water' | 'food' | 'kits' | 'first-aid' | 'lighting' | 'comms'
-  | 'home-protection' | 'insurance' | 'digital-safety' | 'more';
+  | 'offline-entertainment' | 'home-protection' | 'insurance' | 'digital-safety' | 'more';
 
 export type TechGroupId =
   | 'portable-power' | 'home-backup' | 'satcom' | 'weather-radios' | 'water-tech' | 'smart-sensors';
@@ -46,6 +46,9 @@ export const categories: { id: CategoryId; name: string; icon: string; blurb: st
     note: 'Information here is not professional medical advice. Take a first aid class and ask a clinician what belongs in your kit.' },
   { id: 'lighting', name: 'Lighting', icon: '🔦', blurb: 'Flashlights, headlamps and lanterns for outages.' },
   { id: 'comms', name: 'Comms & Radios', icon: '📻', blurb: 'Weather radios, satellite messengers, two-way radios and official alert sources.' },
+  { id: 'offline-entertainment', name: 'Offline entertainment', icon: '🎧',
+    blurb: 'Things that can still work when the power or your phone network is down: music and audiobooks you already downloaded, a battery-powered speaker, and physical card games or printed comics that need no electricity. Streaming apps and audiobook services are paid subscriptions. Offline listening only works if you download the titles while you still have a connection, and if your phone, tablet, or speaker still has battery.',
+    note: 'Hand-crank and solar weather radios are listed under Comms & Radios and on the newest prep tech page. This section does not include sports cards or sports content. Marvel Unlimited, the old digital comics app, is not listed because Marvel is retiring that service.' },
   { id: 'home-protection', name: 'Home Protection & Warranties', icon: '🏠', blurb: 'Smoke and CO alarms, security, home warranties and repair help.',
     note: 'A home warranty is a paid plan with its own coverage limits and exclusions. Read the contract and compare plans before you sign.' },
   { id: 'insurance', name: 'Insurance', icon: '📄', blurb: 'Where to compare coverage, plus official consumer guidance. Insurance is a paid product.' },
@@ -75,6 +78,7 @@ const BRAND = 'Manufacturer site';
 const GOV = 'Free public resource';
 const PAID_SUB = 'Paid subscription';
 const QUOTE = 'Quote or matching service; terms are set by the provider';
+const MARKET = 'Marketplace; terms are set by the seller';
 
 export const entries: DirEntry[] = [
   // ---------------- Power ----------------
@@ -210,6 +214,23 @@ export const entries: DirEntry[] = [
   { id: 'home-depot', name: 'The Home Depot', category: 'more', type: 'Retailer', url: 'https://www.homedepot.com/', desc: 'Home improvement retailer.', offer: 'Retailer site', program: 'home-depot' },
   { id: 'ace-hardware', name: 'Ace Hardware', category: 'more', type: 'Retailer', url: 'https://www.acehardware.com/', desc: 'Hardware retailer.', offer: 'Retailer site', program: 'ace-hardware' },
   { id: 'amazon', name: 'Amazon', category: 'more', type: 'Retailer', url: 'https://www.amazon.com/', desc: 'General retailer.', offer: 'Retailer site', program: 'amazon' },
+
+  // ---------------- Offline entertainment ----------------
+  { id: 'audible', name: 'Audible', category: 'offline-entertainment', type: 'Service', url: 'https://www.audible.com/', desc: 'A paid audiobook and podcast service from Amazon. You can download titles to listen later, including when you do not have a signal, as long as your device still has battery.', offer: PAID_SUB, program: 'amazon' },
+  { id: 'amazon-music', name: 'Amazon Music Unlimited', category: 'offline-entertainment', type: 'Service', url: 'https://www.amazon.com/music/unlimited', desc: 'A paid music streaming plan from Amazon. Amazon says you can download songs and albums to play offline. Download the music while you still have a connection, and keep your device charged.', offer: PAID_SUB, program: 'amazon' },
+  { id: 'apple-music', name: 'Apple Music', category: 'offline-entertainment', type: 'Service', url: 'https://www.apple.com/apple-music/', desc: 'A paid music streaming plan from Apple. Apple says you can download music and playlists to play offline on a compatible device. Download the music while you still have a connection, and keep your device charged.', offer: PAID_SUB, program: 'apple-services' },
+  { id: 'jbl-flip-7', name: 'JBL Flip 7', category: 'offline-entertainment', type: 'Product', url: 'https://www.jbl.com/FLIP-7.html', desc: 'A portable Bluetooth speaker from JBL with a rechargeable battery. JBL describes the Flip 7 as waterproof and drop-proof. Charge it while you have power if you want to use it during an outage.', offer: BRAND, program: 'jbl' },
+  { id: 'sonos-roam-2', name: 'Sonos Roam 2', category: 'offline-entertainment', type: 'Product', url: 'https://www.sonos.com/en-us/shop/roam-2', desc: 'A portable Bluetooth speaker from Sonos with a rechargeable battery. Sonos describes Roam 2 as waterproof. It can also connect to Wi-Fi at home. Charge it while you have power if you want to use it during an outage.', offer: BRAND, program: 'sonos' },
+  { id: 'skullcandy-session-360', name: 'Skullcandy Session 360', category: 'offline-entertainment', type: 'Product', url: 'https://www.skullcandy.com/products/session-360', desc: 'A portable Bluetooth speaker from Skullcandy with a rechargeable battery. Skullcandy describes it as a rugged, waterproof speaker. Charge it while you have power if you want to use it during an outage.', offer: BRAND, program: 'skullcandy' },
+  { id: 'crutchfield', name: 'Crutchfield', category: 'offline-entertainment', type: 'Retailer', url: 'https://www.crutchfield.com/', desc: 'A specialty audio and electronics retailer that sells headphones, portable speakers, radios, and home audio gear. Check the product page for the current model and whether a speaker or radio runs on batteries.', offer: 'Retailer site', program: 'crutchfield' },
+  { id: 'tcgplayer', name: 'TCGplayer', category: 'offline-entertainment', type: 'Retailer', url: 'https://www.tcgplayer.com/', desc: 'A marketplace for trading card games such as Pokémon and Magic: The Gathering. Cards and decks are physical, so they do not need power or a signal once you have them.', offer: MARKET, program: 'tcgplayer' },
+  { id: 'ebay-collectible-card-games', name: 'eBay Collectible Card Games', category: 'offline-entertainment', type: 'Retailer', url: 'https://www.ebay.com/b/Collectible-Card-Games-Accessories/2536/bn_1852210', desc: "eBay's Collectible Card Games category, including games such as Pokémon and Magic: The Gathering. This is not eBay's sports-card category. Listings come from many sellers; check condition and seller terms before you buy.", offer: MARKET, program: 'ebay' },
+  { id: 'ebay-non-sport-trading-cards', name: 'eBay Non-Sport Trading Cards', category: 'offline-entertainment', type: 'Retailer', url: 'https://www.ebay.com/t/Non-Sport-Trading-Card-Singles/183050/bn_2313580', desc: "eBay's Non-Sport Trading Card Singles category, for collectible cards that are not sports cards. Listings come from many sellers; check condition and seller terms before you buy.", offer: MARKET, program: 'ebay' },
+  { id: 'pokemon-tcg', name: 'Pokémon Trading Card Game', category: 'offline-entertainment', type: 'Brand', url: 'https://www.pokemon.com/us/pokemon-tcg', desc: 'The official Pokémon Trading Card Game site, with current game information and official product news. The cards themselves are a physical game that needs no power.', offer: BRAND, program: 'pokemon-tcg' },
+  { id: 'magic-the-gathering', name: 'Magic: The Gathering', category: 'offline-entertainment', type: 'Brand', url: 'https://magic.wizards.com/en/products', desc: 'The official Magic: The Gathering products site from Wizards of the Coast. Magic is a physical card game that needs no power once you have a deck.', offer: BRAND, program: 'wizards-mtg' },
+  { id: 'marvel-comics', name: 'Marvel Comics', category: 'offline-entertainment', type: 'Brand', url: 'https://www.marvel.com/comics/', desc: "Marvel's official comics page for current issues and release information. Printed comics need no power to read. This is not a link to Marvel Unlimited, the digital subscription app Marvel is retiring.", offer: 'Official comics site', program: 'marvel' },
+  { id: 'dc-shop-books', name: 'DC Shop Books & Comics', category: 'offline-entertainment', type: 'Retailer', url: 'https://shop.dc.com/collections/books', desc: 'The official DC Shop collection of comic books and graphic novels. Printed comics need no power to read.', offer: 'Official shop', program: 'dc-shop' },
+  { id: 'amazon-comics', name: 'Amazon Comics & Graphic Novels', category: 'offline-entertainment', type: 'Retailer', url: 'https://www.amazon.com/comics', desc: "Amazon's Comics & Graphic Novels store, including print and some digital titles. Digital comics need a charged device; printed comics do not need power.", offer: 'Retailer site', program: 'amazon' },
 ];
 
 /** Gear listing id -> category. Anything not listed falls into 'more'. */

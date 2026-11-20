@@ -14,14 +14,14 @@ const groups = categories.map((c) => ({
 const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'ReadyGearHub preparedness directory', numberOfItems: items.length,
   itemListElement: items.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/gear/${t.id}/`, Astro.site).href, name: t.data.name })) };
 ---
-<Base title="Preparedness Directory: Gear, Brands, Services & Free Resources | ReadyGearHub" description={`Browse ${total} preparedness listings by category: power, water, food, first aid, lighting, radios, home protection, insurance and digital safety, plus free government resources.`} schema={schema}>
+<Base title="Preparedness Directory: Gear, Brands, Services & Free Resources | ReadyGearHub" description={`Browse ${total} preparedness listings by category: power, water, food, first aid, lighting, radios, offline entertainment, home protection, insurance and digital safety, plus free government resources.`} schema={schema}>
   <section class="page-hero"><div class="wrap"><nav class="crumbs"><a href="/">Home</a> › Directory</nav><h1>Preparedness directory</h1><p class="lead">Gear listings, brands, services and free official resources, sorted by category. Free resources from NWS, FEMA, Ready.gov and MEMA are marked as such.</p></div></section>
   <section class="wrap section">
     <p class="disclosure"><strong>Affiliate disclosure:</strong> Some links in this directory are affiliate links, marked with an "Affiliate link" tag. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. Affiliate relationships do not change what we list or how we describe it. Entries without that tag are plain links to the official site. Each card says what the offer is (for example, a paid plan or a free public resource). We do not show prices or ratings. <a href="/affiliate-disclosure/">Full disclosure</a></p>
     <nav class="dir-nav" aria-label="Directory categories">
       {groups.map((g) => <a class="pill" href={`#${g.id}`}>{g.icon} {g.name} ({g.items.length + g.entries.length})</a>)}
     </nav>
-    <p class="fine">{total} listings: {items.length} gear listings with detail pages and {resolved.length} brands, services and resources. For current portable power, home backup batteries, satellite messengers, weather radios, water filters, and smart sensors, see <a href="/gear/tech/">newest prep tech</a>.</p>
+    <p class="fine">{total} listings: {items.length} gear listings with detail pages and {resolved.length} brands, services and resources. For current portable power, home backup batteries, satellite messengers, weather radios, water filters, and smart sensors, see <a href="/gear/tech/">newest prep tech</a>. For downloaded music and audiobooks, battery-powered speakers, and card games or comics that need no power, see <a href="#offline-entertainment">offline entertainment</a>.</p>
 
     {groups.map((g) => (
       <section id={g.id} class="dir-section">

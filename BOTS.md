@@ -82,6 +82,10 @@ Reuse the gear directory. Do not build a second catalog.
 - Keep descriptions general unless a spec is confirmed on the manufacturer page. No invented prices or ratings.
 - Affiliate tracking still flips only in `src/data/affiliates.ts`.
 
+## Offline entertainment category (`/gear/#offline-entertainment`)
+
+A category on the existing `/gear/` directory (no separate template). Add entries in `src/data/directory.ts` with `category: 'offline-entertainment'` and a `program` id in `src/data/affiliates.ts` at `status: 'none'` until approved. Keep copy honest: paid apps are paid; offline listening needs a prior download and a charged device; no sports cards; do not list Marvel Unlimited.
+
 ## Lanes / new niches (`src/data/lanes.json`)
 
 Each lane is a JSON object. Adding one creates a new page at `/<slug>/`, a nav entry, and a home card, with no code changes.
