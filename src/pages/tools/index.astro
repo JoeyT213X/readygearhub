@@ -1,16 +1,21 @@
 ---
 import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
+import { CALCULATORS, OFFLINE_APPS } from '../../lib/app-config';
 ---
-<Base title="Preparedness Tools | ReadyGearHub" description="Free, browser-based tools: live weather alerts, generator and solar sizers, a water storage calculator, a fridge and freezer outage timer, and a Ready.gov kit builder.">
+<Base title="Preparedness Tools | ReadyGearHub" description="Free, browser-based tools: live weather alerts, generator and solar sizers, a water storage calculator, a fridge and freezer outage timer, a Ready.gov kit builder, and six installable offline apps.">
   <section class="page-hero">
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / Tools</p>
       <h1>Preparedness tools</h1>
-      <p class="lead">Simple calculators and official-alert lookups you can use in the browser. No invented sample data, and no prices on this site.</p>
+      <p class="lead">Simple calculators and official-alert lookups you can use in the browser, plus installable apps that work offline on this device. No invented sample data, and no prices on this site.</p>
     </div>
   </section>
   <section class="wrap section">
+    <div class="section-head">
+      <h2>Calculators &amp; lookups</h2>
+      <p>Use these in the browser. Live alerts come from the National Weather Service.</p>
+    </div>
     <div class="tools-grid">
       <a class="card tool-card" href="/alerts/">
         <span class="lane-icon" aria-hidden="true">⚠️</span>
@@ -18,48 +23,36 @@ import '../../styles/interactive.css';
         <p>Official National Weather Service alerts by state or county. Default view is Mississippi.</p>
         <span class="count">Open alerts →</span>
       </a>
-      <a class="card tool-card" href="/tools/power-sizer/">
-        <span class="lane-icon" aria-hidden="true">🔋</span>
-        <h3>Generator &amp; power-station sizer</h3>
-        <p>Add typical appliance watts, see running and starting totals, and estimate battery hours.</p>
-        <span class="count">Open sizer →</span>
-      </a>
-      <a class="card tool-card" href="/tools/solar-sizer/">
-        <span class="lane-icon" aria-hidden="true">☀️</span>
-        <h3>Solar &amp; power-station sizer</h3>
-        <p>Estimate panel watts and battery watt-hours from your daily load and peak sun hours you look up at NREL.</p>
-        <span class="count">Open solar sizer →</span>
-      </a>
-      <a class="card tool-card" href="/tools/water-calculator/">
-        <span class="lane-icon" aria-hidden="true">💧</span>
-        <h3>Water storage calculator</h3>
-        <p>Ready.gov’s one gallon per person per day, sized to your household and the number of days you plan for.</p>
-        <span class="count">Open water calculator →</span>
-      </a>
-      <a class="card tool-card" href="/tools/outage-timer/">
-        <span class="lane-icon" aria-hidden="true">❄️</span>
-        <h3>Fridge &amp; freezer outage timer</h3>
-        <p>A live countdown based on FoodSafety.gov guidance for food kept in an unopened fridge or freezer.</p>
-        <span class="count">Open timer →</span>
-      </a>
-      <a class="card tool-card" href="/tools/kit-builder/">
-        <span class="lane-icon" aria-hidden="true">📋</span>
-        <h3>Emergency kit builder</h3>
-        <p>A printable checklist from Ready.gov guidance, sized to your household, with links to existing listings.</p>
-        <span class="count">Open kit builder →</span>
-      </a>
-      <a class="card tool-card" href="/apps/">
-        <span class="lane-icon" aria-hidden="true">📱</span>
-        <h3>Storm Tracker app</h3>
-        <p>Install a small app that saves your county, shows alerts, and works offline with the last cached result.</p>
-        <span class="count">Install or open →</span>
-      </a>
+      {CALCULATORS.map((tool) => (
+        <a class="card tool-card" href={tool.href}>
+          <span class="lane-icon" aria-hidden="true">{tool.icon}</span>
+          <h3>{tool.name}</h3>
+          <p>{tool.blurb}</p>
+          <span class="count">{tool.cta}</span>
+        </a>
+      ))}
       <a class="card tool-card" href="/widgets/">
         <span class="lane-icon" aria-hidden="true">🔗</span>
         <h3>Embeddable widgets</h3>
         <p>Add a current-alerts badge or a storm-prep countdown to your own site with a copy-paste iframe.</p>
         <span class="count">Build a widget →</span>
       </a>
+    </div>
+  </section>
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>Offline apps</h2>
+      <p>Six small, installable apps that keep working offline on this device. <a href="/apps/">See all apps →</a></p>
+    </div>
+    <div class="tools-grid">
+      {OFFLINE_APPS.map((app) => (
+        <a class="card tool-card" href={app.href}>
+          <span class="lane-icon" aria-hidden="true">{app.icon}</span>
+          <h3>{app.name}</h3>
+          <p>{app.blurb}</p>
+          <span class="count">Open app →</span>
+        </a>
+      ))}
     </div>
   </section>
 </Base>

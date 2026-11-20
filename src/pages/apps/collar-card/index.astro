@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import '../../../styles/interactive.css';
+import { SUPPORTER_COPY } from '../../../lib/app-config';
 ---
 <Base title="Collar Card | ReadyGearHub" description="A pet emergency profile and kit tracker with expiry dates. Works offline on this device. Not veterinary advice.">
   <link slot="head" rel="manifest" href="/apps/collar-card/manifest.webmanifest" />
@@ -66,8 +67,8 @@ import '../../../styles/interactive.css';
         <button type="button" class="btn ghost" id="print-card">Print card</button>
       </div>
       <article class="card" id="pro-note">
-        <h2>Later: a possible Pro tier</h2>
-        <p>A later Pro tier could add more than one pet, a printable or shareable emergency card, and expiry reminders. No payments or Pro features are turned on now. Reminders would still depend on this page being open or reopened, and would not replace a calendar you already use.</p>
+        <h2>Support ReadyGearHub</h2>
+        <p>{SUPPORTER_COPY.intro} On Collar Card, that could include more than one pet and a printable emergency card. {SUPPORTER_COPY.noPayments} Any later reminders would still depend on this page being open or reopened, and would not replace a calendar you already use.</p>
       </article>
     </section>
 

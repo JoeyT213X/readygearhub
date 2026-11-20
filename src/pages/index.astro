@@ -8,6 +8,7 @@ import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import { lanes, getItems, getTrending, getGuides, site } from '../lib/data';
 import { payhipProducts } from '../data/payhip';
 import { mailerlite } from '../data/mailerlite';
+import { OFFLINE_APPS, CALCULATORS } from '../lib/app-config';
 const items = await getItems();
 const trending = await getTrending(9);
 const guides = await getGuides();
@@ -62,6 +63,42 @@ const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: si
           <h3>{g.data.title}</h3>
           <p>{g.data.description}</p>
           <span class="count">Read guide →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+
+  <section class="wrap section">
+    <div class="section-head">
+      <h2>Free Tools &amp; Offline Apps</h2>
+      <p>Simple calculators you can use in the browser, and small apps you can install and keep on this device — even offline. No account needed.</p>
+    </div>
+    <div class="section-head">
+      <h3>Offline apps</h3>
+      <p>Installable tools that keep working if the network drops. <a href="/apps/">See all apps →</a></p>
+    </div>
+    <div class="grid">
+      {OFFLINE_APPS.map((app) => (
+        <a class="card guide-card" href={app.href}>
+          <span class="lane-icon" aria-hidden="true">{app.icon}</span>
+          <h3>{app.name}</h3>
+          <p>{app.blurb}</p>
+          <span class="count">Open app →</span>
+        </a>
+      ))}
+    </div>
+    <div class="section-head" style="margin-top:28px">
+      <h3>Calculators</h3>
+      <p>Browser tools for outages, kits, power, solar, and water. <a href="/tools/">See all tools →</a></p>
+    </div>
+    <div class="grid">
+      {CALCULATORS.map((tool) => (
+        <a class="card guide-card" href={tool.href}>
+          <span class="lane-icon" aria-hidden="true">{tool.icon}</span>
+          <h3>{tool.name}</h3>
+          <p>{tool.blurb}</p>
+          <span class="count">{tool.cta}</span>
         </a>
       ))}
     </div>

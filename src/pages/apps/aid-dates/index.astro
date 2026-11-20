@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import '../../../styles/interactive.css';
+import { SUPPORTER_COPY } from '../../../lib/app-config';
 ---
 <Base title="Aid Dates | ReadyGearHub" description="Track first-aid and supply expiry dates. Works offline on this device. Not medical advice, and no dosing guidance.">
   <link slot="head" rel="manifest" href="/apps/aid-dates/manifest.webmanifest" />
@@ -56,8 +57,8 @@ import '../../../styles/interactive.css';
         <input id="import-file" type="file" accept="application/json,.json" hidden />
       </article>
       <article class="card" id="pro-note">
-        <h2>Later: a possible Pro tier</h2>
-        <p>A later Pro tier could add more than one kit or location, expiry reminders, CSV export, and a printable list. No payments or Pro features are turned on now. This app still would not give medical advice or dosing guidance.</p>
+        <h2>Support ReadyGearHub</h2>
+        <p>{SUPPORTER_COPY.intro} On Aid Dates, that could include more than one kit or location, plus CSV and print exports. {SUPPORTER_COPY.noPayments} This app still would not give medical advice or dosing guidance.</p>
       </article>
     </section>
   </section>

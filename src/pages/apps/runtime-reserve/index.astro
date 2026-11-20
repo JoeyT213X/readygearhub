@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import '../../../styles/interactive.css';
+import { SUPPORTER_COPY } from '../../../lib/app-config';
 ---
 <Base title="Runtime Reserve | ReadyGearHub" description="Log generator fuel and runtime, and see estimated hours remaining. Works offline on this device.">
   <link slot="head" rel="manifest" href="/apps/runtime-reserve/manifest.webmanifest" />
@@ -118,8 +119,8 @@ import '../../../styles/interactive.css';
         <input id="import-file" type="file" accept="application/json,.json" hidden />
       </article>
       <article class="card" id="pro-note">
-        <h2>Later: a possible Pro tier</h2>
-        <p>A later Pro tier could add extra generators, fuel-can inventory with stabilizer dates, maintenance reminders by hours, cost totals, and CSV export. No payments or Pro features are turned on now.</p>
+        <h2>Support ReadyGearHub</h2>
+        <p>{SUPPORTER_COPY.intro} On Runtime Reserve, that could include extra generators and CSV export. {SUPPORTER_COPY.noPayments}</p>
       </article>
     </section>
   </section>

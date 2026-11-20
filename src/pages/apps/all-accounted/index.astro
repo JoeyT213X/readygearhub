@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import '../../../styles/interactive.css';
 import MailerLiteSignup from '../../../components/MailerLiteSignup.astro';
+import { SUPPORTER_COPY } from '../../../lib/app-config';
 ---
 <Base title="All Accounted | ReadyGearHub" description="A household check-in board for storms and outages. Works offline on this device. Share a text snapshot. This is not an emergency service.">
   <link slot="head" rel="manifest" href="/apps/all-accounted/manifest.webmanifest" />
@@ -91,10 +92,15 @@ import MailerLiteSignup from '../../../components/MailerLiteSignup.astro';
         <input id="import-file" type="file" accept="application/json,.json" hidden />
       </article>
       <article class="card" id="pro-note">
-        <h2>Later: a possible Pro tier</h2>
-        <p>A later Pro tier could add more than six people, backup meeting points, a contact list, check-in history, and a snapshot link. No payments or Pro features are turned on now. Live multi-device sync would still need a backend later.</p>
+        <h2>Support ReadyGearHub</h2>
+        <p>{SUPPORTER_COPY.intro} On All Accounted, that could include more than six people and print or CSV extras. {SUPPORTER_COPY.noPayments} {SUPPORTER_COPY.noServer}</p>
       </article>
     </section>
+    <aside class="card no-print" style="margin-top:24px">
+      <h2>A paper backup: Family Emergency Binder</h2>
+      <p>For a printable, fillable PDF of household contacts, medicines, shut-offs, and meeting places to keep alongside this offline check-in board, see the <a href="/shop/family-emergency-binder/">Family Emergency Binder</a>.</p>
+      <p class="card-actions"><a class="btn small ghost" href="/shop/family-emergency-binder/">See the Family Emergency Binder</a></p>
+    </aside>
     <div class="no-print">
       <MailerLiteSignup
         variant="card"

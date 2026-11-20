@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import '../../../styles/interactive.css';
 import MailerLiteSignup from '../../../components/MailerLiteSignup.astro';
+import { SUPPORTER_COPY } from '../../../lib/app-config';
 ---
 <Base title="Cold Hold | ReadyGearHub" description="Log fridge and freezer temperatures during a power outage, with official FDA guidance. Works offline on this device.">
   <link slot="head" rel="manifest" href="/apps/cold-hold/manifest.webmanifest" />
@@ -21,6 +22,11 @@ import MailerLiteSignup from '../../../components/MailerLiteSignup.astro';
     <div class="tool-actions no-print" style="margin-bottom:16px">
       <button type="button" class="btn" id="install-app" hidden>Install Cold Hold</button>
     </div>
+    <aside class="card no-print" style="margin-bottom:16px">
+      <h2>Need a quick FoodSafety.gov countdown?</h2>
+      <p>For a browser countdown based on FoodSafety.gov’s 4-hour fridge and 24- or 48-hour freezer windows, use the <a href="/tools/outage-timer/">fridge and freezer outage timer</a>. Cold Hold is here when you want to log the actual temperatures you read.</p>
+      <p class="card-actions"><a class="btn small ghost" href="/tools/outage-timer/">Open the outage timer</a></p>
+    </aside>
     <div class="tool-tabs" role="tablist" aria-label="Cold Hold sections">
       <button type="button" role="tab" aria-selected="true" aria-controls="panel-status" id="tab-status">Status</button>
       <button type="button" role="tab" aria-selected="false" aria-controls="panel-log" id="tab-log">Log</button>
@@ -92,8 +98,8 @@ import MailerLiteSignup from '../../../components/MailerLiteSignup.astro';
         <input id="import-file" type="file" accept="application/json,.json" hidden />
       </article>
       <article class="card" id="pro-note">
-        <h2>Later: a possible Pro tier</h2>
-        <p>A later Pro tier could add more than two appliances, missed-log reminders during an outage, CSV export, and a printable report. No payments or Pro features are turned on now.</p>
+        <h2>Support ReadyGearHub</h2>
+        <p>{SUPPORTER_COPY.intro} On Cold Hold, that could include more than two appliances and CSV or print exports. {SUPPORTER_COPY.noPayments}</p>
       </article>
     </section>
     <div class="prose no-print" style="margin-top:32px">

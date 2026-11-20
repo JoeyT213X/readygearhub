@@ -1,46 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
-import { PRICES } from '../../lib/app-config';
-
-const apps = [
-  {
-    href: '/storm-tracker/',
-    name: 'Storm Tracker',
-    blurb: 'Official National Weather Service alerts for a saved county, plus an outage timer and a short Ready.gov checklist.',
-    pro: `${PRICES.stormTrackerMonthly} or ${PRICES.stormTrackerYearly}`,
-  },
-  {
-    href: '/apps/runtime-reserve/',
-    name: 'Runtime Reserve',
-    blurb: 'Log generator fuel and runtime, and see estimated hours remaining from the numbers you enter. Works offline.',
-    pro: PRICES.runtimeReserve,
-  },
-  {
-    href: '/apps/cold-hold/',
-    name: 'Cold Hold',
-    blurb: 'Log fridge and freezer temperatures during a power outage, with official FDA guidance on the same screen.',
-    pro: PRICES.coldHold,
-  },
-  {
-    href: '/apps/all-accounted/',
-    name: 'All Accounted',
-    blurb: 'A household check-in board for storms and outages. Share a text snapshot. This is not an emergency service.',
-    pro: PRICES.allAccounted,
-  },
-  {
-    href: '/apps/collar-card/',
-    name: 'Collar Card',
-    blurb: 'A pet emergency profile and kit tracker with expiry dates. Not veterinary advice.',
-    pro: PRICES.collarCard,
-  },
-  {
-    href: '/apps/aid-dates/',
-    name: 'Aid Dates',
-    blurb: 'Track first-aid and supply expiry dates, soonest first. Not medical advice, and no dosing guidance.',
-    pro: PRICES.aidDates,
-  },
-];
+import { OFFLINE_APPS, PRICES, SUPPORTER_COPY } from '../../lib/app-config';
 ---
 <Base title="Apps | ReadyGearHub" description="Installable ReadyGearHub apps for official weather alerts, generator runtime, fridge and freezer temperatures, a household check-in board, pet profiles, and first-aid expiry tracking. They work offline on this device.">
   <section class="page-hero">
@@ -52,18 +13,19 @@ const apps = [
   </section>
   <section class="wrap section">
     <div class="tools-grid">
-      {apps.map((app) => (
+      {OFFLINE_APPS.map((app) => (
         <a class="card tool-card" href={app.href}>
+          <span class="lane-icon" aria-hidden="true">{app.icon}</span>
           <h2>{app.name}</h2>
           <p>{app.blurb}</p>
-          <p class="fine">Pro coming soon · {app.pro}</p>
+          <p class="fine">{SUPPORTER_COPY.short}</p>
           <p class="card-actions"><span class="btn small">Open</span></p>
         </a>
       ))}
     </div>
     <div class="prose" style="margin-top:32px">
-      <h2>Pro coming soon</h2>
-      <p>A ReadyGearHub Pro bundle for all apps is planned at {PRICES.bundleMonthly}, {PRICES.bundleYearly}, or {PRICES.bundleLifetime}. Individual Pro prices are shown on each card above. No payments are taken and no Pro features are turned on now.</p>
+      <h2>A simple way to support ReadyGearHub</h2>
+      <p>Every app is free, fast, and works offline on your device with no account. An optional {PRICES.supporter} supporter unlock is coming soon. It is a simple way to support ReadyGearHub and turn on a few lightweight extras that stay on this device, such as additional units, pets, kits, or saved counties, plus CSV or print exports where they apply. No payments are taken yet, and no unlock features are turned on now. Live multi-device sync or push alerts are not included — those would need a server.</p>
       <h2>Install an app on your phone or computer</h2>
       <ul>
         <li><strong>Chrome or Edge (Android or desktop):</strong> Open the app, then use the browser’s install or “Add to dock / home screen” control.</li>
