@@ -1,7 +1,7 @@
 ---
 title: "Family Emergency Binder (Fillable PDF)"
 shortDescription: "A 12-page fillable US Letter binder for the people, numbers, medicines, shut-offs, and meeting places your household needs when the power is out and the phones are dead."
-price: 13.47
+price: 5
 tags:
   - family emergency binder
   - fillable PDF

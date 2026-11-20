@@ -11,6 +11,9 @@
  *  - Government and free resources (NWS, FEMA, Ready.gov, MEMA, CDC, Red Cross, and similar)
  *    must NOT have a `program` field. They stay permanently plain.
  *  - No prices, ratings or invented numbers. Say what the offer is (paid plan, quote service, free public resource).
+ *  - /gear/ and /gear/tech/ stay strictly organic-only (no paid ads). Do not use these
+ *    pages as paid-ad landing or bridge pages. Choice Home Warranty, REDI, and
+ *    Waterdrop Filter are confirmed no-PPC.
  */
 import { resolveOutbound } from './affiliates';
 
@@ -48,7 +51,7 @@ export const categories: { id: CategoryId; name: string; icon: string; blurb: st
   { id: 'comms', name: 'Comms & Radios', icon: '📻', blurb: 'Weather radios, satellite messengers, two-way radios and official alert sources.' },
   { id: 'offline-entertainment', name: 'Offline entertainment', icon: '🎧',
     blurb: 'Things that can still work when the power or your phone network is down: music and audiobooks you already downloaded, a battery-powered speaker, and physical card games or printed comics that need no electricity. Streaming apps and audiobook services are paid subscriptions. Offline listening only works if you download the titles while you still have a connection, and if your phone, tablet, or speaker still has battery.',
-    note: 'Hand-crank and solar weather radios are listed under Comms & Radios and on the newest prep tech page. This section does not include sports cards or sports content. Marvel Unlimited, the old digital comics app, is not listed because Marvel is retiring that service.' },
+    note: 'Hand-crank and solar weather radios are listed under Comms & Radios and on the newest prep tech page. This section does not include sports cards or sports content.' },
   { id: 'home-protection', name: 'Home Protection & Warranties', icon: '🏠', blurb: 'Smoke and CO alarms, security, home warranties and repair help.',
     note: 'A home warranty is a paid plan with its own coverage limits and exclusions. Read the contract and compare plans before you sign.' },
   { id: 'insurance', name: 'Insurance', icon: '📄', blurb: 'Where to compare coverage, plus official consumer guidance. Insurance is a paid product.' },
