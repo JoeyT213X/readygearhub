@@ -6,5 +6,5 @@ export default defineConfig({
   site: 'https://readygearhub.com',
   trailingSlash: 'always',
   build: { format: 'directory' },
-  integrations: [sitemap({ filter: (page) => !page.includes('/thanks/') && !page.includes('/404') && !page.includes('/widgets/embed/') }), pwaIntegration()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/thanks/') && !page.includes('/thank-you/') && !page.includes('/404') && !page.includes('/widgets/embed/') }), pwaIntegration()],
 });
