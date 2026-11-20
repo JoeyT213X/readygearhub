@@ -1,0 +1,15 @@
+---
+/**
+ * The "Support ReadyGearHub" paragraph on each offline app page. Price, link,
+ * and coming-soon state come from SUPPORTER_UNLOCK in src/lib/app-config.ts;
+ * the per-app sentence comes from OFFLINE_APPS[].extras. Any app-specific
+ * caveat goes in the default slot.
+ */
+import { PRICES, SUPPORTER_COPY, appExtras } from '../lib/app-config';
+interface Props { app: string; server?: boolean }
+const { app, server = false } = Astro.props;
+---
+<p>{SUPPORTER_COPY.intro} {appExtras(app)} <slot /> {SUPPORTER_COPY.noPayments} {server && SUPPORTER_COPY.noServer}</p>
+{SUPPORTER_COPY.live && (
+  <p class="card-actions"><a class="btn small" href={SUPPORTER_COPY.url} rel="noopener">{SUPPORTER_COPY.linkLabel} · {PRICES.supporter}</a></p>
+)}

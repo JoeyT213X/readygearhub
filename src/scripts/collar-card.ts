@@ -1,8 +1,8 @@
-import { APP_FEATURES, STORAGE_KEYS } from '../lib/app-config';
+import { APP_FEATURES, FREE_LIMITS, STORAGE_KEYS } from '../lib/app-config';
 import { bindInstallPrompt, registerSW } from '../lib/pwa';
 
 const SCOPE = '/apps/collar-card/';
-const FREE_PETS = 1;
+const FREE_PETS = FREE_LIMITS.collarCardPets;
 const SOON_DAYS = 30;
 
 type Pet = {

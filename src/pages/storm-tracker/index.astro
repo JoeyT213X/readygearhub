@@ -4,7 +4,8 @@ import AlertDisclaimer from '../../components/AlertDisclaimer.astro';
 import AlertFilters from '../../components/AlertFilters.astro';
 import '../../styles/interactive.css';
 import states from '../../data/us-states.json';
-import { DEFAULT_STATE, SUPPORTER_COPY } from '../../lib/app-config';
+import { DEFAULT_STATE } from '../../lib/app-config';
+import SupporterNote from '../../components/SupporterNote.astro';
 ---
 <Base title="Storm Tracker | ReadyGearHub" description="Official National Weather Service alerts for a saved county, plus a fridge outage timer and a short Ready.gov checklist. Works offline with the last cached alerts.">
   <link slot="head" rel="manifest" href="/storm-tracker/manifest.webmanifest" />
@@ -89,7 +90,7 @@ import { DEFAULT_STATE, SUPPORTER_COPY } from '../../lib/app-config';
     </section>
     <article class="card no-print" id="pro-note" style="margin-top:24px">
       <h2>Support ReadyGearHub</h2>
-      <p>{SUPPORTER_COPY.intro} On Storm Tracker, that could include extra saved counties, alert history, and custom thresholds on this device. Official National Weather Service alerts and 911 always come first. {SUPPORTER_COPY.noPayments} {SUPPORTER_COPY.noServer}</p>
+      <SupporterNote app="/storm-tracker/" server>Official National Weather Service alerts and 911 always come first.</SupporterNote>
     </article>
   </section>
 </Base>

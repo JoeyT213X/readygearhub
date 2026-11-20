@@ -1,8 +1,8 @@
-import { APP_FEATURES, STORAGE_KEYS } from '../lib/app-config';
+import { APP_FEATURES, FREE_LIMITS, STORAGE_KEYS } from '../lib/app-config';
 import { bindInstallPrompt, registerSW } from '../lib/pwa';
 
 const SCOPE = '/apps/cold-hold/';
-const FREE_LIMIT = 2;
+const FREE_LIMIT = FREE_LIMITS.coldHoldAppliances;
 const FRIDGE_F = 40;
 const FREEZER_F = 0;
 

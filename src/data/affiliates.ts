@@ -123,7 +123,7 @@ export const programs: Program[] = [
     note: 'Rakuten, approved Nov 19, 2026. Linked from /gear/ (water) and /gear/tech/.' },
   { id: 'redi', name: 'REDI', network: 'GoAffPro', status: 'approved', kind: 'product', ppcAllowed: false,
     officialUrl: 'https://getredi.com/',
-    link: 'https://getredi.goaffpro.com/?ref=JOSEPHTINDIGLIA',
+    link: 'https://getredi.com/?ref=JOSEPHTINDIGLIA',
     note: 'GoAffPro 10%, 30-day cookie. Emergency and readiness kits. Linked from /gear/ (kits).' },
 
   // ---- Programs with no listing slot yet (use in new listings/guides later) ----

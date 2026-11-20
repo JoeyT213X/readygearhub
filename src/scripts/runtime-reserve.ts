@@ -1,4 +1,4 @@
-import { APP_FEATURES, STORAGE_KEYS } from '../lib/app-config';
+import { STORAGE_KEYS } from '../lib/app-config';
 import { bindInstallPrompt, registerSW } from '../lib/pwa';
 
 const SCOPE = '/apps/runtime-reserve/';
@@ -122,9 +122,6 @@ export function initRuntimeReserve() {
   bindInstallPrompt(document.querySelector('#install-app'));
   initTabs();
   const store = load();
-  if (!APP_FEATURES.proEnabled && !APP_FEATURES.extraGenerators) {
-    /* Pro extras stay off; the setup card explains the later tier. */
-  }
 
   const hoursEl = document.querySelector('#hours-left')!;
   const fuelMeta = document.querySelector('#fuel-meta')!;
