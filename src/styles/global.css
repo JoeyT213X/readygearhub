@@ -298,3 +298,6 @@ html.menu-open body{position:fixed;left:0;right:0;overflow:hidden;width:100%}
 .section-head+.grid+.section-head,.grid+.section-head,.tools-band-grid+.section-head{margin-top:var(--s7)}
 .page-hero>.wrap:not(.page-hero-inner){padding-top:38px;padding-bottom:42px}
 .related-links .next-steps{margin-top:6px}
+/* Keep the open menu above host-injected overlays (e.g. the Netlify badge). */
+.drawer-backdrop{z-index:2147483646}
+.drawer{z-index:2147483647}
