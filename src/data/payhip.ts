@@ -1,9 +1,14 @@
 /**
  * ReadyGearHub digital products sold through Payhip.
  *
- * Live product IDs (paste a new short code from https://payhip.com/b/XXXX
- * into `productId` if a listing is replaced). Buy buttons show "Coming soon"
- * and the Payhip overlay script is not loaded until at least one ID is filled.
+ * 1-LINE SWAPS live in the constants below. Pages under /shop/, /thank-you/,
+ * and /winter-storm-ready-checklist/ read these values — do not hardcode
+ * product IDs or prices in those templates.
+ *
+ * When a guest-checkout Complete Prep Bundle product replaces the current
+ * one, change PAYHIP_BUNDLE_ID only (then rebuild). Buy buttons show
+ * "Coming soon" and the Payhip overlay script is not loaded until at least
+ * one ID is filled.
  *
  *   family-emergency-binder        ZwvsR   $5   https://payhip.com/b/ZwvsR
  *   winter-storm-prep-planner      x7iZ2   $5   https://payhip.com/b/x7iZ2
@@ -12,6 +17,21 @@
  *     (Payhip natively bundles the three guides. The 1-page food-safety chart
  *     and 2-page contacts sheet are free printables, linked from /thank-you/.)
  */
+
+/** 1-line swap when the guest-checkout complete-prep-bundle.zip product is live. */
+export const PAYHIP_BUNDLE_ID = 'vwexQ';
+export const PAYHIP_BINDER_ID = 'ZwvsR';
+export const PAYHIP_PLANNER_ID = 'x7iZ2';
+export const PAYHIP_HOMESTEAD_ID = 'wc9Ez';
+
+export const PAYHIP_GUIDE_PRICE = '$5';
+export const PAYHIP_GUIDE_PRICE_AMOUNT = '5.00';
+export const PAYHIP_BUNDLE_PRICE = '$10';
+export const PAYHIP_BUNDLE_PRICE_AMOUNT = '10.00';
+
+export function payhipUrl(productId: string): string {
+  return productId ? `https://payhip.com/b/${productId}` : '';
+}
 export type PayhipProduct = {
   slug: string;
   title: string;
@@ -36,8 +56,8 @@ export const payhipProducts: PayhipProduct[] = [
   {
     slug: 'complete-prep-bundle',
     title: 'Complete Storm & Family Prep Bundle',
-    price: '$10',
-    priceAmount: '10.00',
+    price: PAYHIP_BUNDLE_PRICE,
+    priceAmount: PAYHIP_BUNDLE_PRICE_AMOUNT,
     description:
       'The three ReadyGearHub print-at-home guides together: the Family Emergency Binder, the Winter Storm Prep Planner, and the Homestead Prep Starter Guide. A simple way to keep the household plan, the week-before-the-ice countdown, and the rural or well-water starter in one download.',
     summary:
@@ -49,21 +69,21 @@ export const payhipProducts: PayhipProduct[] = [
       'Instant PDF download after checkout, through Payhip',
       'Personal-use license; print as many household copies as you need',
     ],
-    productId: 'vwexQ',
+    productId: PAYHIP_BUNDLE_ID,
     image: '/shop/complete-prep-bundle.png',
     freeSignup: true,
     related: [
-      { href: '/shop/family-emergency-binder/', label: 'Family Emergency Binder on its own ($5)' },
-      { href: '/shop/winter-storm-prep-planner/', label: 'Winter Storm Prep Planner on its own ($5)' },
-      { href: '/shop/homestead-prep-starter-guide/', label: 'Homestead Prep Starter Guide on its own ($5)' },
+      { href: '/shop/family-emergency-binder/', label: `Family Emergency Binder on its own (${PAYHIP_GUIDE_PRICE})` },
+      { href: '/shop/winter-storm-prep-planner/', label: `Winter Storm Prep Planner on its own (${PAYHIP_GUIDE_PRICE})` },
+      { href: '/shop/homestead-prep-starter-guide/', label: `Homestead Prep Starter Guide on its own (${PAYHIP_GUIDE_PRICE})` },
       { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
     ],
   },
   {
     slug: 'family-emergency-binder',
     title: 'Family Emergency Binder (Fillable PDF)',
-    price: '$5',
-    priceAmount: '5.00',
+    price: PAYHIP_GUIDE_PRICE,
+    priceAmount: PAYHIP_GUIDE_PRICE_AMOUNT,
     description:
       'A fillable US Letter household plan for the people, numbers, medicines, shut-offs, and meeting places Ready.gov already tells families to write down — plus a supply checklist and a documents list. Type into the fields in a regular PDF reader, or print the pages and fill them by hand.',
     summary:
@@ -75,7 +95,7 @@ export const payhipProducts: PayhipProduct[] = [
       'Carbon monoxide and generator safety notes from Ready.gov and the CDC',
       'Personal-use license; print as many household copies as you need',
     ],
-    productId: 'ZwvsR',
+    productId: PAYHIP_BINDER_ID,
     image: '/shop/family-emergency-binder.png',
     preview: [
       { title: 'Cover and page index', note: 'What is inside and how to print it.' },
@@ -109,8 +129,8 @@ export const payhipProducts: PayhipProduct[] = [
   {
     slug: 'winter-storm-prep-planner',
     title: 'Winter Storm Prep Planner',
-    price: '$5',
-    priceAmount: '5.00',
+    price: PAYHIP_GUIDE_PRICE,
+    priceAmount: PAYHIP_GUIDE_PRICE_AMOUNT,
     description:
       'A seven-day countdown for the week before the ice: water and food, the house and the pipes, the car and cash, the kit and the contacts, then a one-room warmth plan for the outage itself. Checklists and food-safety times are taken from Ready.gov, the CDC, and FoodSafety.gov.',
     summary:
@@ -122,7 +142,7 @@ export const payhipProducts: PayhipProduct[] = [
       'Outage log and after-the-storm food-safety and recovery page',
       'Written contacts and check-in plan, plus a sources page you can keep',
     ],
-    productId: 'x7iZ2',
+    productId: PAYHIP_PLANNER_ID,
     image: '/shop/winter-storm-prep-planner.png',
     related: [
       { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
@@ -133,8 +153,8 @@ export const payhipProducts: PayhipProduct[] = [
   {
     slug: 'homestead-prep-starter-guide',
     title: 'Homestead Prep Starter Guide',
-    price: '$5',
-    priceAmount: '5.00',
+    price: PAYHIP_GUIDE_PRICE,
+    priceAmount: PAYHIP_GUIDE_PRICE_AMOUNT,
     description:
       'A practical sequence for a farm, a cabin, or a house on a well: stored water, indoor-safe battery power, outdoor-only generators, food that does not need the fridge, heat without carbon monoxide, communications, animals, and a storm-day order of operations. Every safety number is cited to Ready.gov, the CDC, or FoodSafety.gov.',
     summary:
@@ -146,7 +166,7 @@ export const payhipProducts: PayhipProduct[] = [
       'Communications, driveway and tree safety, animals, and a storm-day sequence',
       'A sources page so you can go back to the official guidance yourself',
     ],
-    productId: 'wc9Ez',
+    productId: PAYHIP_HOMESTEAD_ID,
     image: '/shop/homestead-prep-starter-guide.png',
     related: [
       { href: '/guides/emergency-water-storage/', label: 'Emergency water storage' },

@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { analytics } from '../data/analytics';
-import { productBySlug } from '../data/payhip';
+import { productBySlug, PAYHIP_GUIDE_PRICE, PAYHIP_BUNDLE_PRICE } from '../data/payhip';
 
 const planner = productBySlug('winter-storm-prep-planner');
 const binder = productBySlug('family-emergency-binder');
@@ -59,7 +59,7 @@ const thanksJs = `(function(){var src='';try{src=sessionStorage.getItem('rgh_sig
     </div>
 
     <h2>If you'd like to go further</h2>
-    <p>Everything above is yours to keep. If you'd like something more complete to print, these are here whenever you want them — no pressure at all. Each guide is $5, or you can get all three together for $10:</p>
+    <p>Everything above is yours to keep. If you'd like something more complete to print, these are here whenever you want them — no pressure at all. Each guide is {PAYHIP_GUIDE_PRICE}, or you can get all three together for {PAYHIP_BUNDLE_PRICE}:</p>
     <ul>
       {planner && <li><a href="/shop/winter-storm-prep-planner/">{planner.title}</a> ({planner.price}): a seven-day countdown for the week before the ice.</li>}
       {binder && <li><a href="/shop/family-emergency-binder/">{binder.title}</a> ({binder.price}): 12 fillable pages for your household's people, numbers, medicines, and meeting places.</li>}
