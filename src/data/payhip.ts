@@ -1,11 +1,16 @@
 /**
  * ReadyGearHub digital products sold through Payhip.
  *
- * Thursday setup: after each PDF is uploaded at https://payhip.com/,
- * paste the product ID (the short code from the buy-button snippet or
- * the https://payhip.com/b/XXXX URL) into `productId`. Leave it as an
- * empty string until then. Buy buttons show "Coming soon" and the
- * Payhip overlay script is not loaded until at least one ID is filled.
+ * Live product IDs (paste a new short code from https://payhip.com/b/XXXX
+ * into `productId` if a listing is replaced). Buy buttons show "Coming soon"
+ * and the Payhip overlay script is not loaded until at least one ID is filled.
+ *
+ *   family-emergency-binder        ZwvsR   $5   https://payhip.com/b/ZwvsR
+ *   winter-storm-prep-planner      x7iZ2   $5   https://payhip.com/b/x7iZ2
+ *   homestead-prep-starter-guide   wc9Ez   $5   https://payhip.com/b/wc9Ez
+ *   complete-prep-bundle           vwexQ  $10   https://payhip.com/b/vwexQ
+ *     (Payhip natively bundles the three guides. The 1-page food-safety chart
+ *     and 2-page contacts sheet are free printables, linked from /thank-you/.)
  */
 export type PayhipProduct = {
   slug: string;
@@ -27,11 +32,38 @@ export type PayhipProduct = {
 };
 
 export const payhipProducts: PayhipProduct[] = [
+
+  {
+    slug: 'complete-prep-bundle',
+    title: 'Complete Storm & Family Prep Bundle',
+    price: '$10',
+    priceAmount: '10.00',
+    description:
+      'The three ReadyGearHub print-at-home guides together: the Family Emergency Binder, the Winter Storm Prep Planner, and the Homestead Prep Starter Guide. A simple way to keep the household plan, the week-before-the-ice countdown, and the rural or well-water starter in one download.',
+    summary:
+      'The Family Emergency Binder, Winter Storm Prep Planner, and Homestead Prep Starter Guide, together as a print-at-home set.',
+    includes: [
+      'Family Emergency Binder — 12-page fillable household plan',
+      'Winter Storm Prep Planner — 10-page seven-day countdown for the week before the ice',
+      'Homestead Prep Starter Guide — 10-page starter for a farm, cabin, or house on a well',
+      'Instant PDF download after checkout, through Payhip',
+      'Personal-use license; print as many household copies as you need',
+    ],
+    productId: 'vwexQ',
+    image: '/shop/complete-prep-bundle.png',
+    freeSignup: true,
+    related: [
+      { href: '/shop/family-emergency-binder/', label: 'Family Emergency Binder on its own ($5)' },
+      { href: '/shop/winter-storm-prep-planner/', label: 'Winter Storm Prep Planner on its own ($5)' },
+      { href: '/shop/homestead-prep-starter-guide/', label: 'Homestead Prep Starter Guide on its own ($5)' },
+      { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
+    ],
+  },
   {
     slug: 'family-emergency-binder',
     title: 'Family Emergency Binder (Fillable PDF)',
-    price: '$13.47',
-    priceAmount: '13.47',
+    price: '$5',
+    priceAmount: '5.00',
     description:
       'A fillable US Letter household plan for the people, numbers, medicines, shut-offs, and meeting places Ready.gov already tells families to write down — plus a supply checklist and a documents list. Type into the fields in a regular PDF reader, or print the pages and fill them by hand.',
     summary:
@@ -77,8 +109,8 @@ export const payhipProducts: PayhipProduct[] = [
   {
     slug: 'winter-storm-prep-planner',
     title: 'Winter Storm Prep Planner',
-    price: '$8.73',
-    priceAmount: '8.73',
+    price: '$5',
+    priceAmount: '5.00',
     description:
       'A seven-day countdown for the week before the ice: water and food, the house and the pipes, the car and cash, the kit and the contacts, then a one-room warmth plan for the outage itself. Checklists and food-safety times are taken from Ready.gov, the CDC, and FoodSafety.gov.',
     summary:
@@ -101,8 +133,8 @@ export const payhipProducts: PayhipProduct[] = [
   {
     slug: 'homestead-prep-starter-guide',
     title: 'Homestead Prep Starter Guide',
-    price: '$17.86',
-    priceAmount: '17.86',
+    price: '$5',
+    priceAmount: '5.00',
     description:
       'A practical sequence for a farm, a cabin, or a house on a well: stored water, indoor-safe battery power, outdoor-only generators, food that does not need the fridge, heat without carbon monoxide, communications, animals, and a storm-day order of operations. Every safety number is cited to Ready.gov, the CDC, or FoodSafety.gov.',
     summary:

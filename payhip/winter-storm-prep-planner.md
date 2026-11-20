@@ -1,7 +1,7 @@
 ---
 title: "Winter Storm Prep Planner (Fillable PDF)"
 shortDescription: "A 10-page fillable US Letter planner that turns the week before an ice or winter storm into a seven-day countdown, with checklists and an outage log drawn from official safety guidance."
-price: 8.73
+price: 5
 tags:
   - winter storm planner
   - fillable PDF

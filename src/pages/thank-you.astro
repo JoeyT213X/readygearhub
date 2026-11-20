@@ -5,6 +5,8 @@ import { productBySlug } from '../data/payhip';
 
 const planner = productBySlug('winter-storm-prep-planner');
 const binder = productBySlug('family-emergency-binder');
+const homestead = productBySlug('homestead-prep-starter-guide');
+const bundle = productBySlug('complete-prep-bundle');
 
 // Fires only when the reader arrived here from a real MailerLite signup on
 // this site (sessionStorage.rgh_signup_pending, set by FunnelGuards). Direct
@@ -24,6 +26,11 @@ const thanksJs = `(function(){var src='';try{src=sessionStorage.getItem('rgh_sig
   <section class="wrap section prose">
     <p><a class="btn" href="/downloads/winter-storm-ready-checklist.pdf" download>Download the Winter Storm Ready Checklist (PDF)</a></p>
     <p class="fine">Six printable pages: before the storm, the kit, during an outage, after the storm, and an emergency contacts page for the fridge.</p>
+    <p>Two more short printables, also free, if you'd like something to tape inside a cabinet door:</p>
+    <ul>
+      <li><a href="/downloads/outage-food-safety-chart.pdf" download>Fridge &amp; Freezer Outage Food-Safety Chart</a> (1 page, from FoodSafety.gov, the FDA, and the CDC)</li>
+      <li><a href="/downloads/emergency-contacts-shutoffs-sheet.pdf" download>Emergency Contacts &amp; Shut-Offs Quick Sheet</a> (2 fillable pages for numbers and shut-off locations)</li>
+    </ul>
 
     <h2>One quick step</h2>
     <p>MailerLite will send you a short confirmation email. Tap the button in it so our occasional storm-readiness reminders reach you. If you don't see it in a few minutes, check your spam or promotions folder.</p>
@@ -37,7 +44,7 @@ const thanksJs = `(function(){var src='';try{src=sessionStorage.getItem('rgh_sig
           <li>A full freezer holds for about <strong>48 hours</strong> (about 24 if half full) with the door closed.</li>
           <li>Toss perishables that sat above 40°F for 2 hours or more. When in doubt, throw it out.</li>
         </ul>
-        <p class="fine">Prefer a timer? <a href="/tools/outage-timer/">Outage timer</a> · <a href="/apps/cold-hold/">Cold Hold</a> (free, works offline)</p>
+        <p class="fine"><a href="/downloads/outage-food-safety-chart.pdf" download>Download the 1-page chart (PDF)</a> · <a href="/tools/outage-timer/">Outage timer</a> · <a href="/apps/cold-hold/">Cold Hold</a> (free, works offline)</p>
       </article>
       <article class="card">
         <h2>Emergency contacts, written down</h2>
@@ -47,15 +54,17 @@ const thanksJs = `(function(){var src='';try{src=sessionStorage.getItem('rgh_sig
           <li>Doctors, pharmacy, and your power company's outage line</li>
           <li>Poison Help: 1-800-222-1222</li>
         </ul>
-        <p class="fine">For check-ins on the day: <a href="/apps/all-accounted/">All Accounted</a> (free household board, works offline)</p>
+        <p class="fine"><a href="/downloads/emergency-contacts-shutoffs-sheet.pdf" download>Download the 2-page contacts &amp; shut-offs sheet (PDF)</a> · <a href="/apps/all-accounted/">All Accounted</a> (free household board, works offline)</p>
       </article>
     </div>
 
     <h2>If you'd like to go further</h2>
-    <p>Everything above is yours to keep. If you'd like something more complete to print, these are here whenever you want them — no pressure at all:</p>
+    <p>Everything above is yours to keep. If you'd like something more complete to print, these are here whenever you want them — no pressure at all. Each guide is $5, or you can get all three together for $10:</p>
     <ul>
       {planner && <li><a href="/shop/winter-storm-prep-planner/">{planner.title}</a> ({planner.price}): a seven-day countdown for the week before the ice.</li>}
       {binder && <li><a href="/shop/family-emergency-binder/">{binder.title}</a> ({binder.price}): 12 fillable pages for your household's people, numbers, medicines, and meeting places.</li>}
+      {homestead && <li><a href="/shop/homestead-prep-starter-guide/">{homestead.title}</a> ({homestead.price}): a practical starter for a farm, a cabin, or a house on a well.</li>}
+      {bundle && <li><a href="/shop/complete-prep-bundle/">{bundle.title}</a> ({bundle.price}): the three guides above, together as one download.</li>}
     </ul>
     <p>Or keep exploring the free tools: <a href="/tools/kit-builder/">kit builder</a>, <a href="/tools/water-calculator/">water calculator</a>, and the <a href="/apps/">offline apps</a>.</p>
     <p class="fine">You can unsubscribe from any email with one click. We never sell or share your address. <a href="/privacy/">Privacy</a></p>

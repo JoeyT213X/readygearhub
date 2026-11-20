@@ -1,7 +1,7 @@
 ---
 title: "Homestead Prep Starter Guide"
 shortDescription: "A 10-page US Letter starter guide for farms, cabins, and houses on a well, covering water, power, food, heat, and a storm-day sequence with official safety citations."
-price: 17.86
+price: 5
 tags:
   - homestead preparedness
   - rural outage
