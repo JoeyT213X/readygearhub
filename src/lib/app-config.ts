@@ -1,8 +1,8 @@
 /**
  * Feature flags and shared catalog for ReadyGearHub interactive tools and PWAs.
  *
- * A simple $5 one-time supporter unlock can be added later by flipping these
- * flags and wiring a checkout. No payments or entitlements are implemented.
+ * Supporter price, link, and on/off copy live in SUPPORTER_UNLOCK below.
+ * No payments or entitlements are implemented.
  */
 export const APP_FEATURES = {
   proEnabled: false,
@@ -30,17 +30,45 @@ export const STORAGE_KEYS = {
   aidDates: 'rgh-apps.aid-dates',
 } as const;
 
-/** Optional supporter unlock. Display only; no payments are taken yet. */
-export const PRICES = {
-  supporter: '$5 one-time',
+/**
+ * Optional supporter unlock — the one place to change its price, link, and
+ * on/off state across all six offline apps, /apps/, and the app pages.
+ * Leave `available: false` (or `url` empty) to show calm "coming soon" copy.
+ * Set `available: true` and paste a checkout link (for example a $5 Payhip
+ * product, https://payhip.com/b/XXXX) to show a "Support ReadyGearHub" link.
+ * This does not turn any extras on; APP_FEATURES still controls those.
+ */
+export const SUPPORTER_UNLOCK = {
+  available: false,
+  price: '$5',
+  priceNote: 'one-time',
+  url: '',
+  linkLabel: 'Support ReadyGearHub',
 } as const;
 
-/** Shared, calm copy for the optional supporter unlock (coming soon). */
+/** Free-tier limits used by the offline app scripts. */
+export const FREE_LIMITS = {
+  coldHoldAppliances: 2,
+  allAccountedPeople: 6,
+  collarCardPets: 1,
+  aidDatesKits: 1,
+} as const;
+
+/** Optional supporter unlock. Display only; no payments are taken yet. */
+export const PRICES = {
+  supporter: `${SUPPORTER_UNLOCK.price} ${SUPPORTER_UNLOCK.priceNote}`,
+} as const;
+
+const SUPPORTER_LIVE = SUPPORTER_UNLOCK.available && SUPPORTER_UNLOCK.url.trim() !== '';
+
+/** Shared, calm copy for the optional supporter unlock. */
 export const SUPPORTER_COPY = {
-  short: 'Optional $5 one-time supporter unlock coming soon',
-  intro:
-    'The core app is free, works offline on this device, and does not need an account. An optional $5 one-time supporter unlock is coming soon — a simple way to support ReadyGearHub and turn on a few extra local conveniences.',
-  noPayments: 'No payments are taken yet.',
+  live: SUPPORTER_LIVE,
+  url: SUPPORTER_LIVE ? SUPPORTER_UNLOCK.url.trim() : '',
+  linkLabel: SUPPORTER_UNLOCK.linkLabel,
+  short: `Optional ${PRICES.supporter} supporter unlock${SUPPORTER_LIVE ? '' : ' coming soon'}`,
+  intro: `The core app is free, works offline on this device, and does not need an account. An optional ${PRICES.supporter} supporter unlock ${SUPPORTER_LIVE ? 'is available' : 'is coming soon'} — a simple way to support ReadyGearHub and turn on a few extra local conveniences.`,
+  noPayments: SUPPORTER_LIVE ? '' : 'No payments are taken yet.',
   noServer:
     'Live multi-device sync or push alerts would need a server, and are not part of this unlock.',
 } as const;
@@ -127,3 +155,8 @@ export const CALCULATORS = [
     cta: 'Open water calculator →',
   },
 ] as const;
+
+/** The per-app "what the supporter unlock could add" sentence, from OFFLINE_APPS. */
+export function appExtras(href: string): string {
+  return OFFLINE_APPS.find((app) => app.href === href)?.extras ?? '';
+}

@@ -25,7 +25,7 @@ import { OFFLINE_APPS, PRICES, SUPPORTER_COPY } from '../../lib/app-config';
     </div>
     <div class="prose" style="margin-top:32px">
       <h2>A simple way to support ReadyGearHub</h2>
-      <p>Every app is free, fast, and works offline on your device with no account. An optional {PRICES.supporter} supporter unlock is coming soon. It is a simple way to support ReadyGearHub and turn on a few lightweight extras that stay on this device, such as additional units, pets, kits, or saved counties, plus CSV or print exports where they apply. No payments are taken yet, and no unlock features are turned on now. Live multi-device sync or push alerts are not included — those would need a server.</p>
+      <p>Every app is free, fast, and works offline on your device with no account. An optional {PRICES.supporter} supporter unlock {SUPPORTER_COPY.live ? 'is available' : 'is coming soon'}. It is a simple way to support ReadyGearHub and turn on a few lightweight extras that stay on this device, such as additional units, pets, kits, or saved counties, plus CSV or print exports where they apply. {SUPPORTER_COPY.live ? '' : 'No payments are taken yet, and no unlock features are turned on now.'} Live multi-device sync or push alerts are not included — those would need a server.</p>
       <h2>Install an app on your phone or computer</h2>
       <ul>
         <li><strong>Chrome or Edge (Android or desktop):</strong> Open the app, then use the browser’s install or “Add to dock / home screen” control.</li>

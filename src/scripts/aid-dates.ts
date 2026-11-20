@@ -1,8 +1,8 @@
-import { APP_FEATURES, STORAGE_KEYS } from '../lib/app-config';
+import { APP_FEATURES, FREE_LIMITS, STORAGE_KEYS } from '../lib/app-config';
 import { bindInstallPrompt, registerSW } from '../lib/pwa';
 
 const SCOPE = '/apps/aid-dates/';
-const FREE_KITS = 1;
+const FREE_KITS = FREE_LIMITS.aidDatesKits;
 const SOON_DAYS = 30;
 
 type Kit = { id: string; name: string };

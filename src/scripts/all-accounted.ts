@@ -1,8 +1,8 @@
-import { APP_FEATURES, STORAGE_KEYS } from '../lib/app-config';
+import { APP_FEATURES, FREE_LIMITS, STORAGE_KEYS } from '../lib/app-config';
 import { bindInstallPrompt, registerSW } from '../lib/pwa';
 
 const SCOPE = '/apps/all-accounted/';
-const FREE_PEOPLE = 6;
+const FREE_PEOPLE = FREE_LIMITS.allAccountedPeople;
 const STATUSES = [
   { id: 'unknown', label: 'Not yet checked in' },
   { id: 'safe', label: 'Safe' },
