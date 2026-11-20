@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import ItemCard from '../../../components/ItemCard.astro';
 import { getItems } from '../../../lib/data';
 import { techGroups, entries, resolveEntry, techGroupForItem } from '../../../data/directory';
+import { isNoPpcProgram } from '../../../data/affiliates';
 const items = (await getItems()).filter((i) => techGroupForItem(i.id));
 const resolved = entries.filter((e) => e.tech).map(resolveEntry);
 const total = items.length + resolved.length;
@@ -48,7 +49,7 @@ const schema = {
           <h3>{g.items.length > 0 ? 'More official pages' : 'Official product pages'}</h3>
           <div class="grid">
             {g.entries.map((e) => (
-              <article class="card item-card">
+              <article class="card item-card" data-no-ppc={(isNoPpcProgram(e.programId) || isNoPpcProgram(e.id) || isNoPpcProgram(e.program)) ? '' : undefined}>
                 <div class="card-top">
                   <span class="pill">{e.type}</span>
                   {e.affiliate && <span class="pill feat">Affiliate link</span>}

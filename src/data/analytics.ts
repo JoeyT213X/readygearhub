@@ -12,6 +12,6 @@
 export const analytics = {
   ga4Id: 'G-WTEHYS97MQ',
   adsId: 'AW-18585587131',
-  adsSignupLabel: '',
+  adsSignupLabel: 'ZpPmCNmi9bsdELubpp5F',
   clarityId: 'zfntfpi4qw',
 } as const;

@@ -1,11 +1,12 @@
 ---
 import { laneBySlug, outUrl, isAffiliate, programIdForItem, type Item } from '../lib/data';
+import { isNoPpcProgram } from '../data/affiliates';
 interface Props { item: Item; showRank?: boolean }
 const { item, showRank = false } = Astro.props;
 const lane = laneBySlug(item.data.lane);
 const program = programIdForItem(item.id);
 ---
-<article class="card item-card">
+<article class="card item-card" data-no-ppc={isNoPpcProgram(program) ? '' : undefined}>
   <div class="card-top">
     {lane && <a class="pill" href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a>}
     {showRank && item.data.rank > 0 && <span class="pill hot">🔥 Trending</span>}

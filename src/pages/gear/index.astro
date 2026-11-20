@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import { getItems } from '../../lib/data';
 import { categories, entries, categoryForItem, resolveEntry } from '../../data/directory';
+import { isNoPpcProgram } from '../../data/affiliates';
 const items = await getItems();
 const resolved = entries.map(resolveEntry);
 const total = items.length + resolved.length;
@@ -36,7 +37,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
           <h3>Brands, services &amp; resources</h3>
           <div class="grid">
             {g.entries.map((e) => (
-              <article class="card item-card" data-chw={(e.programId === 'choice-home-warranty' || e.id === 'choice-home-warranty') ? '' : undefined}>
+              <article class="card item-card" data-chw={(e.programId === 'choice-home-warranty' || e.id === 'choice-home-warranty') ? '' : undefined} data-no-ppc={(isNoPpcProgram(e.programId) || isNoPpcProgram(e.id) || isNoPpcProgram(e.program)) ? '' : undefined}>
                 <div class="card-top">
                   <span class="pill">{e.type}</span>
                   {e.affiliate && <span class="pill feat">Affiliate link</span>}

@@ -387,6 +387,16 @@ export function buildLink(p: Program, destination: string): string {
 }
 
 
+/**
+ * Programs that bar paid-search / PPC promotion. During an rgh_paid_search
+ * session, FunnelGuards hides every card or link for these ids (and matching
+ * official / tracking URLs). They stay fully visible on ordinary organic visits.
+ */
+export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop'] as const;
+export function isNoPpcProgram(id: string | undefined | null): boolean {
+  return !!id && (NO_PPC_PROGRAM_IDS as readonly string[]).includes(id);
+}
+
 export type OutboundLink = { href: string; affiliate: boolean; programId: string };
 
 /**

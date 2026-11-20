@@ -5,12 +5,13 @@
  * 1. Paid-ad session guard (rgh_paid_search).
  *    If a visit lands with a Google Ads click ID (gclid / gbraid / wbraid) or
  *    utm_medium=cpc|ppc|paid..., sessionStorage.rgh_paid_search = '1' is set.
- *    For the rest of that browser session, every Choice Home Warranty element
- *    (data-program="choice-home-warranty", data-chw, or any link to the CHW
- *    tracking URL / choicehomewarranty.com) is hidden by CSS immediately and
- *    then removed together with its wrapper (lead box, directory card, list
- *    item, or paragraph) so no empty box is left behind. Choice Home Warranty
- *    does not allow any search traffic, so paid visitors never see it.
+ *    For the rest of that browser session, every no-PPC program element
+ *    (Choice Home Warranty, REDI, and Waterdrop Filter — via data-program,
+ *    data-no-ppc, data-chw, or a matching official / tracking URL) is hidden
+ *    by CSS immediately and then removed together with its wrapper (lead box,
+ *    directory card, list item, or paragraph) so no empty box is left behind.
+ *    These programs do not allow paid-search promotion, so paid visitors never
+ *    see them. Ordinary organic visits are unchanged and still show the links.
  *
  * 2. MailerLite signup hook.
  *    Watches for the PTvH32 success panel (.ml-form-successBody) to become
@@ -20,13 +21,23 @@
  */
 import { analytics } from '../data/analytics';
 import { mailerlite } from '../data/mailerlite';
+import { NO_PPC_PROGRAM_IDS } from '../data/affiliates';
 
-const CHW_ID = 'choice-home-warranty';
-const CHW_LINK_MARKERS = ['click-101929817-12337172', 'choicehomewarranty.com'];
+const NO_PPC_LINK_MARKERS = [
+  'click-101929817-12337172',
+  'choicehomewarranty.com',
+  'getredi.com',
+  'getredi.goaffpro',
+  'waterdropfilter.com',
+  'offerid=1888875',
+];
 
-const guardJs = `(function(){try{var q=location.search||'';var paid=/[?&](gclid|gbraid|wbraid)=/i.test(q)||/[?&]utm_medium=(cpc|ppc|paid|paidsearch|paid_search|paid-search|paid_social)(&|$)/i.test(q);if(paid)sessionStorage.setItem('rgh_paid_search','1');if(sessionStorage.getItem('rgh_paid_search')!=='1')return;var d=document.documentElement;d.classList.add('rgh-paid');var markers=${JSON.stringify(CHW_LINK_MARKERS)};function sweep(){var sel='[data-program="${CHW_ID}"],[data-chw]';var list=[].slice.call(document.querySelectorAll(sel));[].slice.call(document.querySelectorAll('a[href]')).forEach(function(a){var h=(a.getAttribute('href')||'').toLowerCase();for(var i=0;i<markers.length;i++){if(h.indexOf(markers[i])!==-1){list.push(a);break;}}});list.forEach(function(el){var w=el.closest('[data-chw-wrap],.lead-cta,.item-card,li,p,blockquote')||el;if(w.parentNode)w.parentNode.removeChild(w);});[].slice.call(document.querySelectorAll('[data-chw-wrap],[data-chw]')).forEach(function(w){if(w.parentNode)w.parentNode.removeChild(w);});[].slice.call(document.querySelectorAll('.lead-ctas')).forEach(function(s){if(!s.querySelector('.lead-cta'))s.parentNode&&s.parentNode.removeChild(s);});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',sweep);}else{sweep();}window.addEventListener('load',sweep);}catch(e){}})();`;
+const noPpcSel = ['[data-no-ppc]', '[data-chw]', '[data-chw-wrap]', ...NO_PPC_PROGRAM_IDS.map((id) => `[data-program="${id}"]`)].join(',');
+const noPpcCssSel = noPpcSel.split(',').map((s) => `html.rgh-paid ${s}`).join(',');
 
-const guardCss = `html.rgh-paid [data-program="${CHW_ID}"],html.rgh-paid [data-chw],html.rgh-paid [data-chw-wrap]{display:none!important}`;
+const guardJs = `(function(){try{var q=location.search||'';var paid=/[?&](gclid|gbraid|wbraid)=/i.test(q)||/[?&]utm_medium=(cpc|ppc|paid|paidsearch|paid_search|paid-search|paid_social)(&|$)/i.test(q);if(paid)sessionStorage.setItem('rgh_paid_search','1');if(sessionStorage.getItem('rgh_paid_search')!=='1')return;var d=document.documentElement;d.classList.add('rgh-paid');var markers=${JSON.stringify(NO_PPC_LINK_MARKERS)};var sel=${JSON.stringify(noPpcSel)};function sweep(){var list=[].slice.call(document.querySelectorAll(sel));[].slice.call(document.querySelectorAll('a[href]')).forEach(function(a){var h=(a.getAttribute('href')||'').toLowerCase();for(var i=0;i<markers.length;i++){if(h.indexOf(markers[i])!==-1){list.push(a);break;}}});list.forEach(function(el){var w=el.closest('[data-no-ppc],[data-chw-wrap],.lead-cta,.item-card,li,p,blockquote')||el;if(w.parentNode)w.parentNode.removeChild(w);});[].slice.call(document.querySelectorAll('[data-no-ppc],[data-chw-wrap],[data-chw]')).forEach(function(w){if(w.parentNode)w.parentNode.removeChild(w);});[].slice.call(document.querySelectorAll('.lead-ctas')).forEach(function(s){if(!s.querySelector('.lead-cta'))s.parentNode&&s.parentNode.removeChild(s);});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',sweep);}else{sweep();}window.addEventListener('load',sweep);}catch(e){}})();`;
+
+const guardCss = `${noPpcCssSel}{display:none!important}`;
 
 const ga4On = /^G-[A-Z0-9]+$/i.test(analytics.ga4Id.trim());
 const signupJs = mailerlite.enabled
