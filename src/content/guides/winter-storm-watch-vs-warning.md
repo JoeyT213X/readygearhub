@@ -4,6 +4,7 @@ description: "Winter storm watch, warning, or advisory? What each National Weath
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-16
+updated: 2026-11-21
 relatedItems: ["midland-er310-crank-radio", "eton-red-cross-frx2", "black-diamond-spot-400", "noco-boost-gb40", "snow-joe-telescoping-snow-broom", "yaktrax-pro"]
 draft: false
 ---
@@ -77,6 +78,8 @@ So if you live in Mississippi, Alabama, or Louisiana and see a warning for what 
 
 Ready.gov lists several ways to get emergency alerts: sign up for your community's warning system, the **Emergency Alert System (EAS)**, and **NOAA Weather Radio**. Phones also get Wireless Emergency Alerts, but a long outage can knock out cell service or drain your battery. That's why a battery or hand-crank weather radio is one of the most common items on emergency kit lists.
 
+You can also watch official National Weather Service alerts on our home [What's happening now](/#live-status) board, the [live alerts](/alerts/) page, or [Storm Tracker](/storm-tracker/). You can also follow occasional official-source notes on [Local & community safety updates](/updates/).
+
 Two options on ReadyGearHub:
 
 - [Midland ER310 Emergency Crank Weather Radio](/gear/midland-er310-crank-radio/)
@@ -91,6 +94,21 @@ Check each manufacturer's page for current features and power options. Browse mo
 | Watch (prep window) | [Weather radio](/gear/midland-er310-crank-radio/), [headlamp](/gear/black-diamond-spot-400/), stored food in [Winter Storm Prep](/winter-storm-prep/) |
 | Warning (ice or outage likely) | [Power Outage Kits](/power-outage-kits/), [Home Heating Backup](/home-heating-backup/) with a CO alarm |
 | Advisory (slick roads) | [NOCO Boost GB40 jump starter](/gear/noco-boost-gb40/), [Snow Joe snow broom and scraper](/gear/snow-joe-telescoping-snow-broom/), [Yaktrax Pro](/gear/yaktrax-pro/) |
+Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast.
+
+Late fall can overlap winter-weather and tornado threats in Mississippi. If thunderstorms are also in the forecast, see [Tornado Watch vs. Warning in Mississippi and the Gulf South](/guides/tornado-watch-vs-warning-mississippi/).
+
+## Common questions
+
+**Does a Winter Weather Advisory mean I can ignore it?**
+No. An advisory means wintry weather is expected, even if it should not reach warning level. Use extra caution, especially on roads. In the South, even a modest amount of ice can make travel dangerous.
+
+**How far ahead are watches and warnings usually issued?**
+Ready.gov says Winter Storm Watches are usually issued 12 to 48 hours before a storm, and Winter Storm Warnings usually 12 to 24 hours before. Use the watch as your prep window.
+
+**Where should I look first when an alert is issued?**
+The [What's happening now](/#live-status) board and [live alerts](/alerts/) show official NWS alerts. Then follow the checklist in [How to Prepare for an Ice Storm in the South](/guides/ice-storm-prep-checklist-south/).
+
 
 ## Bottom line
 

@@ -4,6 +4,7 @@ description: "Power out in a Mississippi ice storm? A calm, step-by-step guide t
 lane: power-outage-kits
 season: ["winter"]
 published: 2026-11-16
+updated: 2026-11-21
 relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "mr-heater-portable-buddy", "sol-emergency-bivvy", "yaktrax-pro"]
 draft: false
 ---
@@ -83,7 +84,7 @@ It's time to go somewhere warmer if:
 - Anyone shows signs of hypothermia.
 - Someone depends on powered medical equipment and you're running out of backup power.
 
-Ready.gov suggests checking with local officials about heating locations. In Mississippi, watch for announcements from your county emergency management office and MEMA, and listen to local news on your radio.
+Ready.gov suggests checking with local officials about heating locations. In Mississippi, watch for announcements from your county emergency management office and MEMA, listen to local news on your radio, and use the official contacts and outage maps on the [Mississippi local resources](/local/mississippi/) pages — including [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast, and [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro. During the storm, the [What's happening now](/#live-status) board and [live alerts](/alerts/) show official National Weather Service alerts. You can also follow occasional official-source notes on [Local & community safety updates](/updates/).
 
 ## Gear that makes an ice-storm outage easier
 
@@ -103,6 +104,17 @@ Browse the full [Power Outage Kits](/power-outage-kits/) and [Winter Storm Prep]
 ## Before the next one
 
 Once the power's back, check for frozen or burst pipes (see [how to keep pipes from freezing](/guides/how-to-keep-pipes-from-freezing/)), recharge everything, and restock what you used. Our [ice storm prep checklist for the South](/guides/ice-storm-prep-checklist-south/) walks through the 48 hours before a storm, and the [winter power outage checklist](/guides/winter-power-outage-checklist/) covers the basics.
+## Common questions
+
+**Where should I look first if the power just went out?**
+Stay away from downed lines, start the [Fridge & Freezer Outage Timer](/tools/outage-timer/), and check official alerts on the [What's happening now](/#live-status) board. If you use a generator or any fuel-burning heater, follow the [carbon monoxide safety](/guides/carbon-monoxide-safety-during-an-outage/) steps.
+
+**How do I report an outage or find a county warming site?**
+Use the utility named on your bill and the official outage map linked from your [county page](/local/mississippi/). Warming sites are opened as needed; confirm with county emergency management or [MEMA](https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms) before you travel.
+
+**What if severe thunderstorms or a tornado threat arrives with the same front?**
+Treat a tornado warning as an immediate-action alert, separate from winter-storm guidance. See [Tornado Watch vs. Warning in Mississippi and the Gulf South](/guides/tornado-watch-vs-warning-mississippi/).
+
 
 > **Want it all on one page?** Get the free **Winter Storm Ready Checklist** and we'll email it to you. [Get the checklist](/winter-storm-ready-checklist/)
 

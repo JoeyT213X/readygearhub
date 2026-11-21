@@ -4,6 +4,7 @@ description: "How to get a Southern home ready for a winter storm and power outa
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-19
+updated: 2026-11-21
 relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40"]
 draft: false
 ---
@@ -64,11 +65,13 @@ Ready.gov adds that Winter Storm Watches are usually issued 12 to 48 hours befor
 
 **Where to watch:**
 
+- The home [What's happening now](/#live-status) board shows official National Weather Service alerts, National Hurricane Center updates when they apply, and Mississippi outage and MEMA links in one place.
 - [Live Weather Alerts](/alerts/) shows official NWS alerts for your state or county, free in your browser.
 - [Storm Tracker](/storm-tracker/) saves your county and keeps the last alerts it downloaded available offline, along with a fridge outage timer and a short Ready.gov checklist.
+- [Local & community safety updates](/updates/) is a calm email list for official weather advisories, recalls, and community outage notes.
 - A battery or hand-crank **NOAA weather radio**, such as the [Midland ER310](/gear/midland-er310-crank-radio/), keeps alerts coming if cell service goes down. Ready.gov lists NOAA Weather Radio and the Emergency Alert System as alert sources.
 - Your phone's **Wireless Emergency Alerts** should be switched on.
-- Your utility's **outage map** and your county emergency management office. We list official ones on [Local Preparedness Resources](/local/), starting with [Mississippi](/local/mississippi/).
+- Your utility's **outage map** and your county emergency management office. We list official ones on [Local Preparedness Resources](/local/), starting with [Mississippi](/local/mississippi/). That includes Jackson metro pages for [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/), and Gulf Coast pages for [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/).
 
 ## Before the storm: a countdown
 
@@ -470,6 +473,8 @@ Everything below is free to use in your browser unless noted.
 **More guides** ([all guides](/guides/))
 
 - [Winter Storm Watch vs. Warning](/guides/winter-storm-watch-vs-warning/)
+- [Tornado Watch vs. Warning in Mississippi and the Gulf South](/guides/tornado-watch-vs-warning-mississippi/)
+- [Carbon Monoxide Safety During a Power Outage](/guides/carbon-monoxide-safety-during-an-outage/)
 - [How to Prepare for an Ice Storm in the South: 48-Hour Checklist](/guides/ice-storm-prep-checklist-south/)
 - [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/)
 - [What to Do When the Power Goes Out in a Mississippi Ice Storm](/guides/power-outage-ice-storm-mississippi/)
@@ -483,6 +488,18 @@ Everything below is free to use in your browser unless noted.
 - [Family First Aid Kit for Storms](/guides/storm-first-aid-kit/)
 - [Winter Emergency Kit for Elderly Parents](/guides/winter-emergency-kit-for-elderly-parents/)
 - [What to Keep in Your Car for Winter](/guides/winter-car-emergency-kit/)
+
+## Common questions
+
+**Where can I see if a warning is in effect right now?**
+Start with the [What's happening now](/#live-status) board on the home page, or open [live alerts](/alerts/). Both use official National Weather Service data. You can also sign up for occasional official-source notes on [Local & community safety updates](/updates/).
+
+**I live on the Mississippi Gulf Coast. Do these steps still apply?**
+Yes. Ice, freeze, and long outages happen on the coast too, even if they are less frequent than in the hills. Use the same heat, pipe, food, and carbon monoxide steps, and keep your county emergency-management and outage-map links handy: [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/).
+
+**November is also tornado season here. Should I watch for that too?**
+Yes. NWS Jackson notes that November marks the peak of Mississippi's second severe-weather season. If thunderstorms are in the forecast alongside a cold front, read [Tornado Watch vs. Warning in Mississippi and the Gulf South](/guides/tornado-watch-vs-warning-mississippi/) and keep the same alert tools handy.
+
 
 ## Sources
 

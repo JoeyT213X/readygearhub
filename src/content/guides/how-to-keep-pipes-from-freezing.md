@@ -4,6 +4,7 @@ description: "A hard freeze is coming. Here's how to keep pipes from freezing in
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-16
+updated: 2026-11-21
 relatedItems: ["black-diamond-spot-400", "fenix-hm65r-v2", "leatherman-wave-plus", "eton-blackout-buddy-co", "darn-tough-hiker-boot-full-cushion"]
 draft: false
 ---
@@ -91,6 +92,21 @@ Pipe prep is mostly free: draining hoses, opening cabinets, and dripping faucets
 
 
 For the rest of your storm prep, see our [ice storm prep checklist for the South](/guides/ice-storm-prep-checklist-south/) and the [Winter Storm Prep](/winter-storm-prep/) lane.
+## Official conditions and local pages
+
+When a storm is underway, start with the official picture on our home [What's happening now](/#live-status) board, or open [live alerts](/alerts/). You can also follow occasional official-source notes on [Local & community safety updates](/updates/). If a freeze warning or hard freeze is posted, finish the "night of a freeze" steps above while you still have water pressure. Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast. If you also lose heat, use [How to Stay Warm When the Power Goes Out](/guides/how-to-stay-warm-without-power/) and [Carbon Monoxide Safety During a Power Outage](/guides/carbon-monoxide-safety-during-an-outage/) so pipe protection does not turn into an indoor combustion hazard.
+
+## Common questions
+
+**Should I drip faucets during a freeze if the power is already out?**
+Yes, if you still have water pressure. A slight drip on pipes along outside walls is the usual official advice from the American Red Cross and the CDC. If you have already lost pressure, do not keep a faucet open, and get ready to shut the main valve if a pipe bursts.
+
+**Is it safe to thaw a frozen pipe with a torch?**
+No. The American Red Cross specifically says not to use a blowtorch, kerosene or propane heater, charcoal stove, or other open-flame device. Use gentle heat instead, such as an electric heating pad, a hair dryer, a portable space heater kept away from anything flammable, or towels soaked in hot water, and keep the faucet open. Know where the main shut-off is first.
+
+**When does a Winter Storm Warning or Freeze Warning mean I should start these steps?**
+Start the one-time prep before cold weather, and use the night-of-a-freeze steps as soon as a watch or a freeze warning is issued. [Winter Storm Watch vs. Warning](/guides/winter-storm-watch-vs-warning/) explains each alert.
+
 
 > **Get the free Winter Storm Ready Checklist.** It covers pipes, power, heat, and food on one page. [Get the checklist](/winter-storm-ready-checklist/)
 

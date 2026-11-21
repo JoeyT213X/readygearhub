@@ -4,6 +4,7 @@ description: "Ice storm coming to Mississippi or the South? A 48-hour checklist 
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-16
+updated: 2026-11-21
 relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "goal-zero-lighthouse-600", "mountain-house-classic-bucket", "noco-boost-gb40", "snow-joe-telescoping-snow-broom", "yaktrax-pro", "jackery-explorer-1000-plus"]
 draft: false
 ---
@@ -108,6 +109,21 @@ You likely have most of this already. Fill the gaps first:
 | Ice and car | [Yaktrax Pro](/gear/yaktrax-pro/), [NOCO GB40](/gear/noco-boost-gb40/), [Snow Joe broom/scraper](/gear/snow-joe-telescoping-snow-broom/) |
 
 Check each manufacturer's page for current specs, and the retailer for current prices.
+## Official conditions, tools, and local pages
+
+When a storm is underway, start with the official picture on our home [What's happening now](/#live-status) board, or open [live alerts](/alerts/). You can also follow occasional official-source notes on [Local & community safety updates](/updates/). Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast. The [Emergency Kit Builder](/tools/kit-builder/) can turn a household list into a printable checklist, and [Storm Tracker](/storm-tracker/) keeps official NWS alerts for a saved county available offline.
+
+## Common questions
+
+**What's the difference between a Winter Storm Watch and a Warning?**
+A watch means conditions are favorable and you still have a prep window. A warning means hazardous winter weather is expected or happening and you should finish prep and stay put. See [Winter Storm Watch vs. Warning](/guides/winter-storm-watch-vs-warning/).
+
+**How do I lower carbon monoxide risk if we lose power?**
+Keep generators outdoors and more than 20 feet from the home, and never use a grill, camp stove, or oven to heat indoors. Details are in [Carbon Monoxide Safety During a Power Outage](/guides/carbon-monoxide-safety-during-an-outage/).
+
+**Where can I check my utility's outage map?**
+Use the provider named on your bill. Official utility and cooperative maps for Mississippi counties are linked from the [Mississippi local resources](/local/mississippi/) pages.
+
 
 > **Don't wait for the next watch.** Get the free **Winter Storm Ready Checklist** now, while it's calm. [Get the checklist](/winter-storm-ready-checklist/)
 

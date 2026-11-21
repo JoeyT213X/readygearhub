@@ -4,6 +4,7 @@ description: "No power and no heat? Safe ways to stay warm in a winter outage: o
 lane: home-heating-backup
 season: ["winter"]
 published: 2026-11-16
+updated: 2026-11-21
 relatedItems: ["eton-blackout-buddy-co", "mr-heater-portable-buddy", "mr-heater-buddy-flex", "sol-emergency-bivvy", "sol-emergency-blanket", "darn-tough-hiker-boot-full-cushion", "zippo-heatbank-9s", "ecoflow-delta-3-plus"]
 draft: false
 ---
@@ -78,9 +79,11 @@ Ready.gov lists these warning signs:
 
 Infants, older adults, and people with health conditions get cold faster. Check on them often.
 
+A fuller walkthrough of generator placement, indoor-heat mistakes, and alarm placement is in [Carbon Monoxide Safety During a Power Outage](/guides/carbon-monoxide-safety-during-an-outage/).
+
 ## When to leave
 
-If you can't keep a room warm, someone is showing signs of hypothermia, or someone depends on medical equipment and your backup power is running low, go somewhere with heat. Ready.gov suggests checking with local officials about warming locations. Your weather radio and local news will usually carry the announcements.
+If you can't keep a room warm, someone is showing signs of hypothermia, or someone depends on medical equipment and your backup power is running low, go somewhere with heat. Ready.gov suggests checking with local officials about warming locations. Your weather radio, the [What's happening now](/#live-status) board, [live alerts](/alerts/), and local news will usually carry the announcements. You can also follow occasional official-source notes on [Local & community safety updates](/updates/). Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast.
 
 ## Quick checklist
 
@@ -92,6 +95,17 @@ If you can't keep a room warm, someone is showing signs of hypothermia, or someo
 - [ ] A plan for where you'll go if it gets too cold
 
 For the full storm picture, see [what to do when the power goes out in an ice storm](/guides/power-outage-ice-storm-mississippi/) and our [winter power outage checklist](/guides/winter-power-outage-checklist/).
+## Common questions
+
+**Can I heat the room with the gas oven if I crack a window?**
+No. The CDC says never to heat your house with a gas oven, and never to use a portable gas camp stove or charcoal indoors. Opening a window does not make those methods safe.
+
+**How far away should a generator be?**
+The CDC and Ready.gov say to use a generator only outdoors, more than 20 feet (at least 20 feet) from windows, doors, and vents, and not in a garage. See the [carbon monoxide safety](/guides/carbon-monoxide-safety-during-an-outage/) guide.
+
+**Where do warming centers get announced?**
+Ready.gov says to check with local officials. In Mississippi, use your [county emergency-management page](/local/mississippi/) and MEMA.
+
 
 > **Print it before you need it.** Get the free **Winter Storm Ready Checklist** by email. [Get the checklist](/winter-storm-ready-checklist/)
 
