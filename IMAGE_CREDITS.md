@@ -31,4 +31,34 @@ All photographs in `public/images/photos/` are from [Unsplash](https://unsplash.
 
 Category tiles on `/directory/` reuse existing self-hosted Unsplash photos from the table above (`gear-flatlay`, `power-banks`, `solar-rooftops`, `fireplace-living-room`, `water-bottles`, `lantern-dusk`, `multitools`, `car-in-snow`, `first-aid-kit-open`, `checklist-writing`). Our own Payhip cover images in `public/shop/` are used for download cards.
 
-Product-card covers in `public/directory/covers/` are original geometric SVG illustrations made for this catalog (not photographs, not AI-generated images, and not merchant or brand logos). They are decorative placeholders so we do not hotlink or reuse product photos we are not licensed to host. Audio & Entertainment and Fun & Gifts category tiles use `cat-audio.svg` and `cat-fun.svg` from the same set.
+Product-card covers in `public/directory/covers/` are original geometric SVG illustrations made for this catalog (not photographs, not AI-generated images, and not merchant or brand logos). They remain in use on listings without a licensed product or brand creative: ALLPOWERS product and merchant cards, TheBerkey.com, and REDI, plus the Audio & Entertainment and Fun & Gifts category tiles (`cat-audio.svg`, `cat-fun.svg`).
+
+### Official affiliate creatives (`public/directory/photos/`)
+
+These files were downloaded from official publisher dashboards on 2026-11-21 (America/Chicago), validated, resized (longest side at most 1,200 px), and re-encoded as self-hosted WebP. They are not hotlinked. Credit line for each: image provided by the advertiser via the network named below.
+
+| File | Listing | Advertiser | Network / source | Notes |
+|---|---|---|---|---|
+| `bluetti-elite-200-v2.webp` | BLUETTI Elite 200 V2 product card; also the BLUETTI portable power stations merchant card | Bluetti Global | CJ Affiliate (Campaigns > Products catalog) | Official 120×90 logo creative is too small for a card, so the merchant card uses this catalog product photo instead. |
+| `bluetti-ac180.webp` | BLUETTI AC180 product card | Bluetti Global | CJ Affiliate product catalog | |
+| `bluetti-ac200l.webp` | BLUETTI AC200L product card | Bluetti Global | CJ Affiliate product catalog | |
+| `bluetti-ac2a.webp` | BLUETTI AC2A product card | Bluetti Global | CJ Affiliate product catalog | |
+| `bluetti-elite-100-v2.webp` | BLUETTI Elite 100 V2 product card | Bluetti Global | CJ Affiliate product catalog | |
+| `bluetti-ac70.webp` | BLUETTI AC70 product card | Bluetti Global | CJ Affiliate product catalog | |
+| `bluetti-elite-300.webp` | BLUETTI Elite 300 product card | Bluetti Global | CJ Affiliate product catalog | |
+| `bluetti-sp200l-200w.webp` | BLUETTI SP200L 200W solar panel product card | Bluetti Global | CJ Affiliate product catalog | Catalog asset filename SP200L; listing also says PV200. |
+| `aquasana-brand-300x250.webp` | Aquasana water filters merchant card | Aquasana | Rakuten Advertising (creative 36667_1359) | First frame of the official 300×250 brand GIF, saved as a still WebP. Image provided by Aquasana via Rakuten Advertising. |
+| `aquasana-under-sink-claryum-3stage.webp` | Aquasana under-sink filters product card | Aquasana | Rakuten Advertising | Photo of the Claryum 3-Stage Under Sink Water Filter, Matte Black (SKU AQ-6300-MB). Image provided by Aquasana via Rakuten Advertising. |
+| `aquasana-rhino-whole-house.webp` | Aquasana whole-house filters product card | Aquasana | Rakuten Advertising | Photo of the Rhino Whole House Water Filter System (SKU WH-1000). Image provided by Aquasana via Rakuten Advertising. |
+| `waterdrop-g3p600.webp` | Waterdrop Filter merchant card | Waterdrop Filter | Rakuten Advertising | No brand banner was in the media library; this is the official G3P600 product photo, used only as the shop-card visual. The card remains a merchant-level shop link, not a G3P600 product listing. Image provided by Waterdrop Filter via Rakuten Advertising. |
+| `nordvpn-faster-300x250.webp` | NordVPN merchant card | NordVPN | CJ Affiliate (link 15640650, “faster-than-ever-300x250”) | Image provided by NordVPN via CJ Affiliate. |
+| `nordpass-logo-512.webp` | NordPass merchant card | NordPass | CJ Affiliate (link 15111945, “Logo 512x512”) | Image provided by NordPass via CJ Affiliate. |
+| `surfshark-privacy.webp` | Surfshark merchant card | Surfshark | CJ Affiliate (link 15554631) | Image provided by Surfshark via CJ Affiliate. |
+| `choice-home-warranty-250.webp` | Choice Home Warranty merchant card | Choice Home Warranty | CJ Affiliate (link 12469543, 250×250 logo) | Image provided by Choice Home Warranty via CJ Affiliate. |
+
+Images provided by Bluetti Global, NordVPN, NordPass, Surfshark, and Choice Home Warranty via CJ Affiliate. Images provided by Aquasana and Waterdrop Filter via Rakuten Advertising.
+
+Creatives inspected and not used on any card:
+
+- BLUETTI 120×90 logo (`bluetti-logo-120x90.jpeg`, CJ link 15845593): too small and soft for a product-card cover.
+- ALLPOWERS 300×250 “EU Smart Balcony Solar Storage” banner (`allpowers-balcony-300x250.jpeg`, CJ link 17351044): shows BS2500 Pro / BS5000 Pro, which are not the S2000 Pro, R2500 V2, R600, or VOLIX P300 cards, and would misrepresent those products. No ALLPOWERS catalog product images were available, so those four product cards and the ALLPOWERS bestsellers merchant card keep the geometric SVG placeholders.

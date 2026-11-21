@@ -393,6 +393,14 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
 .coming-soon-list li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;display:inline-flex;gap:8px;align-items:baseline}
 .coming-soon-list li span{color:var(--muted);font-size:.82rem}
 .source-card .product-meta{margin:0 0 2px}
+/* Affiliate product photos, banners, and logos: contain on the light cover so they are not cropped. SVG placeholders and Payhip covers keep object-fit: cover. */
+.source-card .product-cover img.source-fit{object-fit:contain;object-position:center center;background:#eef2f5}
+.source-card.is-photo .product-cover img{padding:8px}
+.source-card.is-banner .product-cover img{padding:0}
+.source-card.is-logo .product-cover img{padding:12% 16%}
+.source-card.is-photo:hover .product-cover img,
+.source-card.is-banner:hover .product-cover img,
+.source-card.is-logo:hover .product-cover img{transform:none}
 .cat-tile-grid{margin-top:8px}
 .source-teaser{display:grid;gap:16px}
 @media(min-width:900px){.source-teaser{grid-template-columns:1.1fr 1.4fr;align-items:start}}
