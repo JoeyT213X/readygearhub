@@ -4,6 +4,7 @@ description: "How to keep one room livable in a winter outage without creating a
 lane: home-heating-backup
 season: ["winter"]
 published: 2026-11-15
+updated: 2026-11-21
 relatedItems: ["kidde-kn-cob-lp2", "vornado-avh10", "teton-sports-celsius-regular-0", "therm-a-rest-z-lite-sol", "3m-indoor-window-insulator-kit", "mr-heater-portable-buddy", "eton-blackout-buddy-co", "honda-eu2200i"]
 ---
 
@@ -67,10 +68,23 @@ If you use any combustion heater or a vented fireplace or wood stove:
 - Open a window slightly if the manufacturer requires it. "Ventless" is not the same as "no oxygen use and no exhaust."
 - Never fall asleep next to a fuel-burning heater unless the instructions expressly allow overnight use.
 
-If you cannot meet those conditions, do not use the heater. Extra blankets are safer than a closed-room combustion source.
+If you cannot meet those conditions, do not use the heater. Extra blankets are safer than a closed-room combustion source. For generator placement and other outage CO rules, see [Carbon Monoxide Safety During a Power Outage](/guides/carbon-monoxide-safety-during-an-outage/).
 
 ## When the house is no longer safe to stay in
 
-If indoor temperatures keep falling, if anyone is medically vulnerable, or if you smell exhaust or the CO alarm sounds, leave. Many communities open warming centers during long winter outages; listen to local officials and a weather radio for locations. Go to a friend or relative with heat if you can travel safely, or wait for a plow or sand truck if the roads are ice-covered.
+If indoor temperatures keep falling, if anyone is medically vulnerable, or if you smell exhaust or the CO alarm sounds, leave. Many communities open warming centers during long winter outages; listen to local officials, a weather radio, the [What's happening now](/#live-status) board, and [live alerts](/alerts/) for locations. You can also follow occasional official-source notes on [Local & community safety updates](/updates/). Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast. Go to a friend or relative with heat if you can travel safely, or wait for a plow or sand truck if the roads are ice-covered.
 
 More gear for this situation lives in the [Home Heating Backup](/home-heating-backup/) and [Power Outage Kits](/power-outage-kits/) lanes. For a South-specific storm checklist, see [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/).
+
+## Common questions
+
+**Is a "ventless" propane heater automatically safe in a closed room?**
+No. Use a combustion heater only if the manufacturer rates it for indoor use, follow every ventilation and clearance instruction, and keep a working battery-powered carbon monoxide alarm in the room. "Ventless" is not the same as no exhaust.
+
+**What should I never use to heat one room?**
+The CDC says never to use a generator, grill, camp stove, or charcoal indoors, and never to heat the house with a gas oven. Details are in [Carbon Monoxide Safety During a Power Outage](/guides/carbon-monoxide-safety-during-an-outage/).
+
+**When is it time to leave instead of trying to heat one room?**
+If indoor temperatures keep falling, if anyone is medically vulnerable, if you smell exhaust, or if a CO alarm sounds, leave for a warming center or a place with heat, as local officials announce.
+
+*Sources: CDC (Carbon Monoxide Poisoning Basics); Ready.gov (Power Outages, Winter Weather).*

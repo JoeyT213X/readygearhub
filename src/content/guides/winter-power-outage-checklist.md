@@ -4,6 +4,7 @@ description: "A practical winter power outage checklist: what to stock before an
 lane: power-outage-kits
 season: ["winter"]
 published: 2026-11-15
+updated: 2026-11-21
 relatedItems: ["midland-er310-crank-radio", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "eton-blackout-buddy-co", "mr-heater-portable-buddy", "black-diamond-spot-400", "mountain-house-classic-bucket"]
 ---
 
@@ -42,12 +43,12 @@ Ice storms and blizzards are some of the most common causes of long power outage
 
 1. **Pick one warm room.** Close off unused rooms, hang blankets over doorways, and put towels along door gaps. A small interior room with few windows holds heat best.
 2. **Dress in layers.** Wool and synthetic fabrics stay warmer than cotton when damp. Wear a hat indoors, and keep feet dry and warm.
-3. **Never use a generator, grill, camp stove, or charcoal indoors**, in a garage, or near open windows. The CDC says to keep generators at least 20 feet from the home. Carbon monoxide is odorless and can kill quickly.
+3. **Never use a generator, grill, camp stove, or charcoal indoors**, in a garage, or near open windows. The CDC says to keep generators at least 20 feet from the home. Carbon monoxide is odorless and can kill quickly. See [carbon monoxide safety during a power outage](/guides/carbon-monoxide-safety-during-an-outage/).
 4. **Keep the fridge and freezer closed.** According to FoodSafety.gov, a closed refrigerator keeps food safe for about 4 hours, and a full closed freezer for about 48 hours (about 24 if half full). Start the [fridge & freezer outage timer](/tools/outage-timer/) when the power goes out.
 5. **Drip faucets** on outside walls to help prevent frozen pipes, if you still have water pressure.
 6. **Use a power station wisely.** Prioritize phones, a radio, lights, medical devices, and your internet router. Don't try to run space heaters off a battery, since they drain it very fast.
 7. **Check on neighbors**, especially older adults, people with medical needs, and families with infants.
-8. **Watch for signs of hypothermia**: shivering, confusion, slurred speech, and drowsiness. Get medical help if needed. Warming centers often open during big outages, so listen to local alerts and check [live NWS alerts](/alerts/). More ideas: [how to stay warm without power](/guides/how-to-stay-warm-without-power/).
+8. **Watch for signs of hypothermia**: shivering, confusion, slurred speech, and drowsiness. Get medical help if needed. Warming centers often open during big outages, so listen to local alerts, check the [What's happening now](/#live-status) board or [live NWS alerts](/alerts/), and use your [county resource page](/local/mississippi/) for official local contacts. More ideas: [how to stay warm without power](/guides/how-to-stay-warm-without-power/).
 
 ## After the power comes back
 
@@ -58,4 +59,21 @@ Ice storms and blizzards are some of the most common causes of long power outage
 
 ## Quick-grab gear list
 
-The items below are a good starting point. Browse the full [Power Outage Kits](/power-outage-kits/) and [Home Heating Backup](/home-heating-backup/) lanes for more.
+The items mentioned in this checklist also appear as gear cards at the bottom of the page. Browse the full [Power Outage Kits](/power-outage-kits/) and [Home Heating Backup](/home-heating-backup/) lanes for more.
+
+## Official conditions, tools, and local pages
+
+For food-safety timing, use the [Fridge & Freezer Outage Timer](/tools/outage-timer/) or the [Cold Hold](/apps/cold-hold/) app. When a storm is underway, start with the official picture on our home [What's happening now](/#live-status) board, or open [live alerts](/alerts/). You can also follow occasional official-source notes on [Local & community safety updates](/updates/). Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast.
+
+## Common questions
+
+**How long will food stay safe in a closed fridge or freezer?**
+FoodSafety.gov says a closed refrigerator keeps food cold about 4 hours, a full closed freezer about 48 hours, and a half-full freezer about 24 hours. Start the [outage timer](/tools/outage-timer/) when the power goes out, and when in doubt, throw it out.
+
+**Where should a portable generator go?**
+Outdoors, more than 20 feet from windows, doors, and vents, never in a garage or enclosed porch even with the door open. The CDC, Ready.gov, and CPSC all give that same basic rule. The [carbon monoxide safety](/guides/carbon-monoxide-safety-during-an-outage/) guide has the details.
+
+**Where do I look for a warming center?**
+Ready.gov says to check with local officials. In Mississippi, start with your county emergency-management office and MEMA, listed on the [Mississippi local resources](/local/mississippi/) pages.
+
+*Sources: Ready.gov (Power Outages, Winter Weather); CDC (Carbon Monoxide Poisoning Basics); FoodSafety.gov (Food Safety in a Disaster or Emergency).*

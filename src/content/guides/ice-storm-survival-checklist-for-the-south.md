@@ -4,6 +4,7 @@ description: "A practical checklist for Southern ice storms: what to do before f
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-15
+updated: 2026-11-21
 relatedItems: ["midland-wr400", "waterbob", "reliance-aqua-tainer", "kahtoola-microspikes", "3m-indoor-window-insulator-kit", "midland-er310-crank-radio", "kidde-kn-cob-lp2", "teton-sports-celsius-regular-0"]
 ---
 
@@ -37,7 +38,7 @@ Pay attention to National Weather Service products: a **Winter Storm Watch** mea
 
 1. **Stay inside if you can.** Walking on ice is extremely dangerous, the CDC notes, and many winter injuries come from falls on sidewalks, steps, driveways, and porches. If you must go out, wear shoes with traction, take small steps, and use handrails.
 2. **Stay far from downed or sagging power lines**, and from anything they are touching, including fences and puddles. Report them to the utility. After an ice storm, limbs and lines can still fall as ice melts or the wind shifts.
-3. **Do not run a generator, grill, camp stove, or charcoal indoors**, in a garage, or near windows. Ready.gov and the CDC both say generators belong outdoors and **at least 20 feet** from windows, doors, and attached garages. Never heat the house with a gas stovetop or oven. Keep a working CO alarm on.
+3. **Do not run a generator, grill, camp stove, or charcoal indoors**, in a garage, or near windows. Ready.gov and the CDC both say generators belong outdoors and **at least 20 feet** from windows, doors, and attached garages. Never heat the house with a gas stovetop or oven. Keep a working CO alarm on. See [carbon monoxide safety during a power outage](/guides/carbon-monoxide-safety-during-an-outage/).
 4. **Protect pipes.** If you still have water pressure, the CDC recommends leaving taps slightly open so they drip, keeping the house as warm as you reasonably can, and leaving sink-cabinet doors open. If pipes freeze, do not thaw them with a torch.
 5. **Pick one room to keep warm**, close unused rooms, and cover windows at night. Extra blankets, a [sleeping bag](/gear/teton-sports-celsius-regular-0/), and dry socks matter more than trying to heat the whole house. See our guide on [heating one room safely in an outage](/guides/heat-one-room-safely-in-an-outage/).
 6. **Keep the fridge and freezer closed.** FoodSafety.gov says a closed refrigerator keeps food cold about 4 hours, a full closed freezer about 48 hours, and a half-full freezer about 24 hours.
@@ -53,5 +54,20 @@ Skip the heroic outdoor cleanup while ice is still falling or clinging to trees.
 - [ ] When the power returns, check that the furnace or heat pump restarts, then inspect for frozen or burst pipes before opening the water fully.
 - [ ] Throw out refrigerated perishables that sat above 40°F for more than 2 hours. When in doubt, throw it out, as FoodSafety.gov advises.
 - [ ] Recharge devices, refill water, and restock what you used.
+
+## Official conditions, tools, and local pages
+
+When a storm is underway, start with the official picture on our home [What's happening now](/#live-status) board, or open [live alerts](/alerts/). You can also follow occasional official-source notes on [Local & community safety updates](/updates/). Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast. For fridge and freezer timing, use the [Fridge & Freezer Outage Timer](/tools/outage-timer/) or [Cold Hold](/apps/cold-hold/).
+
+## Common questions
+
+**When should I throw food out after the power returns?**
+FoodSafety.gov says to throw out refrigerated perishables that sat above 40°F for more than 2 hours. When in doubt, throw it out. A closed fridge holds safe temperatures only about 4 hours; a full closed freezer about 48 hours.
+
+**How do I find official warming or cooling sites?**
+We do not keep a static address list, because sites open and close as officials need them. Use your [county emergency-management page](/local/mississippi/) and [MEMA's shelters list](https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms).
+
+**Is a NOAA weather radio still useful if I have Wireless Emergency Alerts on my phone?**
+Yes. Phone batteries die and cell service can fail in a long outage. Ready.gov lists both Wireless Emergency Alerts and NOAA Weather Radio as official alert channels.
 
 For gear that helps with this kind of storm, browse [Winter Storm Prep](/winter-storm-prep/) and [Power Outage Kits](/power-outage-kits/). If you are putting together a kit for an older parent, see [Winter Emergency Kit for Elderly Parents](/guides/winter-emergency-kit-for-elderly-parents/).
