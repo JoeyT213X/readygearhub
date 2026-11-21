@@ -1,0 +1,53 @@
+---
+import Photo from './Photo.astro';
+import { shopCategoryChips, type ShopBoardTile } from '../data/full-catalog';
+
+interface Props {
+  tiles: ShopBoardTile[];
+  catalogCount: number;
+}
+const { tiles, catalogCount } = Astro.props;
+
+function isInternal(href: string) {
+  return href.startsWith('/');
+}
+---
+<div class="bento-tile is-feature is-shop-board">
+  <div class="shop-board">
+    <div class="shop-board-grid">
+      {tiles.map((tile) => {
+        const internal = isInternal(tile.href);
+        return (
+          <a
+            class={`shop-board-cell is-${tile.fit}`}
+            href={tile.href}
+            data-no-ppc={tile.hideOnPaid ? '' : undefined}
+            data-program={tile.hideOnPaid && tile.id.includes('waterdrop') ? 'waterdrop' : undefined}
+            target={internal ? undefined : '_blank'}
+            rel={internal ? undefined : (tile.rel || 'noopener')}
+          >
+            {tile.photoKey ? (
+              <Photo name={tile.photoKey} sizes="(max-width: 719px) 30vw, 12vw" alt={tile.label} />
+            ) : (
+              <img src={tile.image} alt={tile.label} width="400" height="400" loading="lazy" decoding="async" />
+            )}
+            <span class="shop-board-caption">{tile.label}</span>
+          </a>
+        );
+      })}
+    </div>
+    <div class="shop-board-foot">
+      <div class="shop-board-copy">
+        <span class="bento-kicker">Explore</span>
+        <a class="shop-board-title" href="/directory/">Shop the Directory</a>
+        <p class="shop-board-text">{catalogCount} listings from partner stores, official shops, gear write-ups, downloads, and free tools.</p>
+      </div>
+      <nav class="shop-board-chips" aria-label="Shop by category">
+        {shopCategoryChips.map((chip) => (
+          <a class="shop-chip" href={chip.href}>{chip.label}</a>
+        ))}
+        <a class="shop-chip is-all" href="/directory/">All {catalogCount}</a>
+      </nav>
+    </div>
+  </div>
+</div>

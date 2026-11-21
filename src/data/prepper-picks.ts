@@ -644,7 +644,7 @@ const LANE_GROUP: Record<PrepperLaneId, SourceGroupId> = {
 
 const LANE_CATEGORY: Record<PrepperLaneId, string> = {
   water: 'water',
-  food: 'safety',
+  food: 'food',
   power: 'power',
   lighting: 'power',
   comms: 'tech',

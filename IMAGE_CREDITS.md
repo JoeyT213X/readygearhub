@@ -1,6 +1,6 @@
 # Image credits
 
-All photographs in `public/images/photos/` are from [Unsplash](https://unsplash.com) and are used under the [Unsplash License](https://unsplash.com/license): free to use for commercial and non-commercial purposes, no permission needed. Attribution is not required but is given here and on the About page. Images were downloaded on 2026-11-20 (America/Chicago), cropped to 16:9, and re-encoded as WebP at 480, 960, and 1600 px wide. They are self-hosted (no hotlinking). None are AI-generated. They are illustrative scene photos, not photos of the specific products in our listings.
+Most photographs in `public/images/photos/` are from [Unsplash](https://unsplash.com) and are used under the [Unsplash License](https://unsplash.com/license): free to use for commercial and non-commercial purposes, no permission needed. Additional hero and category photographs (added 2026-11-21) are from [Pexels](https://www.pexels.com) under the [Pexels License](https://www.pexels.com/license/) or are U.S. government public-domain works via Wikimedia Commons; those are listed in a section below. Attribution is given here and on the About page. Images were downloaded, and re-encoded as self-hosted WebP at 480, 960, and 1600 px wide (no hotlinking). None are AI-generated. Unsplash and Pexels scene photos are illustrative, not photos of the specific products in our listings, unless a credit says otherwise.
 
 | File key | Photo | Photographer | Used on |
 |---|---|---|---|
@@ -114,3 +114,20 @@ The home Shop the Directory collage tile shows a mini-grid of official affiliate
 
 
 A second set of official catalog photos was added on 2026-11-21 from `/workspace/rgh-redesign/directory-images/more/products.csv` (25 BLUETTI, 10 Aquasana, 10 Waterdrop). Images were resized (longest side at most 1,200 px) and re-encoded as self-hosted WebP in `public/directory/photos/`. NordVPN catalog images in that collection were favicons and were not used.
+
+## Home hero collage (Pexels & Wikimedia)
+
+These files were downloaded on 2026-11-21 (America/Chicago), re-encoded as self-hosted WebP at 480, 960, and 1600 px wide, and are not hotlinked. Pexels photos are used under the [Pexels License](https://www.pexels.com/license/). They are generic scene photographs: tiles link to our category or listing pages, and the captions do not present a stock vehicle, drone, or radio as a specific partner product. The Ghost Robotics photograph is used only on the Ghost Robotics official listing (and the hero tile that points there).
+
+| File key | Photo | Photographer / source | Used on |
+|---|---|---|---|
+| `hero-drone` | [Low Angle Shot of Drone Flying in the Sky](https://www.pexels.com/photo/low-angle-shot-of-drone-flying-in-the-sky-3722737/) | [Daniel Reche](https://www.pexels.com/@daniel-reche-718241/) / Pexels | Home hero, `/directory/drones/` |
+| `hero-utv-dunes` | [Driving All Terrain Vehicles in the Desert](https://www.pexels.com/photo/driving-all-terrain-vehicles-in-the-desert-13252297/) | [Denys Gromov](https://www.pexels.com/@jdgromov/) / Pexels | Home hero and Shop the Directory board, `/directory/vehicles/` |
+| `hero-overland-truck` | [Camper Pickup on Brown Sand](https://www.pexels.com/photo/camper-pickup-on-brown-sand-7287112/) | [ArtHouse Studio](https://www.pexels.com/@arthousestudio/) / Pexels | Home hero, `/directory/vehicles/` |
+| `hero-overland-cruiser` | [Man Driving a Land Cruiser on the Desert](https://www.pexels.com/photo/man-driving-a-land-cruiser-on-the-desert-4781950/) | [Denys Gromov](https://www.pexels.com/@jdgromov/) / Pexels | Home hero (category tile only; not used as a brand product photo) |
+| `hero-bunker-hatch` | [Round Bunker Entrance and Bushes](https://www.pexels.com/photo/round-bunker-entrance-and-bushes-8518186/) | [Erik Mclean](https://www.pexels.com/@erikmclean/) / Pexels | Home hero and Shop the Directory board, `/directory/security/` |
+| `hero-radios` | [Close Up Shot of Walkie Talkies](https://www.pexels.com/photo/close-up-shot-of-walkie-talkies-5733665/) | [Grégory Costa](https://www.pexels.com/@gregory-costa/) / Pexels | Home hero and Shop the Directory board (radios category / Midland listing link; not a photo of that listing’s product) |
+| `hero-pantry-cans` | [Top View of Cans](https://www.pexels.com/photo/top-view-of-cans-19723918/) | [Michaela St](https://www.pexels.com/@michaela-st-3448542/) / Pexels | Home hero, `/directory/food/` |
+| `hero-security-robot` | [Ghost Robotics Vision 60 at BSDA 2024](https://commons.wikimedia.org/wiki/File:Ghost_Robotics_-_Civitas_Group_Vision_60_robot_dog_at_BSDA_2024.jpg) | Pfc. Alexcia Rupert, U.S. Army (public domain) via Wikimedia Commons | Ghost Robotics official listing and the home-hero tile that links to it |
+
+`public/directory/covers/drone.svg`, `vehicle.svg`, `shelter.svg`, and `robot.svg` are original geometric illustrations made for these listings (not photographs, not AI-generated images, and not merchant or brand logos). They are used on official high-ticket cards that do not have a licensed product photo, including Boston Dynamics, Unitree, and Knightscope — those cards never use the Ghost Robotics photograph.

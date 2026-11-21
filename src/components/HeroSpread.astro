@@ -1,0 +1,62 @@
+---
+import Photo from './Photo.astro';
+import type { HeroCutout } from '../data/full-catalog';
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  lead: string;
+  cutouts: HeroCutout[];
+}
+const { eyebrow, title, lead, cutouts } = Astro.props;
+
+function isInternal(href: string) {
+  return href.startsWith('/');
+}
+---
+<section class="hero is-spread hero-spread">
+  <div class="hero-spread-stage" aria-hidden="false">
+    {cutouts.map((cut) => {
+      const internal = isInternal(cut.href);
+      return (
+        <a
+          class={`hero-cutout is-${cut.slot}${cut.shape === 'round' ? ' is-round' : ''}${cut.fit === 'contain' ? ' is-contain' : ''}`}
+          href={cut.href}
+          data-depth={String(cut.depth)}
+          data-no-ppc={cut.hideOnPaid ? '' : undefined}
+          data-program={cut.hideOnPaid && cut.id.includes('waterdrop') ? 'waterdrop' : undefined}
+          target={internal ? undefined : '_blank'}
+          rel={internal ? undefined : (cut.rel || 'noopener')}
+        >
+          {cut.photoKey ? (
+            <Photo name={cut.photoKey} sizes="(max-width: 699px) 40vw, 22vw" eager={cut.eager} alt={cut.label} />
+          ) : (
+            <img
+              src={cut.image}
+              alt={cut.label}
+              width="400"
+              height="400"
+              loading={cut.eager ? 'eager' : 'lazy'}
+              decoding="async"
+            />
+          )}
+          <span class="hero-cutout-label">{cut.label}</span>
+        </a>
+      );
+    })}
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{title}</h1>
+      <p class="lead">{lead}</p>
+      <div class="hero-actions">
+        <a class="btn" href="/directory/">Shop the Directory</a>
+        <a class="btn ghost light" href="/guides/winter-power-outage-checklist/">Winter outage checklist</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  import '../scripts/hero-spread';
+</script>

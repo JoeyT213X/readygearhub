@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-hidden="true">
+  <rect width="640" height="360" fill="#0f2a3d"/>
+  <rect x="0" y="0" width="640" height="360" fill="#163a54" opacity=".35"/>
+  <ellipse cx="320" cy="230" rx="150" ry="40" fill="#1b4a3a" opacity=".8"/>
+  <path d="M200 230 C200 140, 440 140, 440 230" fill="#7cc8f2" opacity=".25"/>
+  <rect x="292" y="168" width="56" height="78" rx="8" fill="#e3f0f7"/>
+  <circle cx="336" cy="210" r="5" fill="#163a54"/>
+  <text x="36" y="324" fill="#e3f0f7" font-family="system-ui,Segoe UI,sans-serif" font-size="18" font-weight="700" letter-spacing=".04em">Shelters</text>
+</svg>

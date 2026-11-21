@@ -9,6 +9,7 @@ import { entries, resolveEntry, categoryForItem, type CategoryId } from './direc
 import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
 import { catalogExtraById, type CatalogExtra } from './catalog-extras';
 import { newPrepperOnlyPicks, prepperPickToCatalogItem } from './prepper-picks';
+import { highTicketCatalogItems } from './high-ticket';
 import {
   sourceGroups,
   resolvedSourceItems,
@@ -324,6 +325,12 @@ export function buildFullCatalog(gearItems: GearInput[]): CatalogItem[] {
     used.add(pick.id);
   }
 
+  for (const item of highTicketCatalogItems()) {
+    if (used.has(item.id)) continue;
+    items.push(applyExtra(item, catalogExtraById[item.id]));
+    used.add(item.id);
+  }
+
   return sortFullCatalog(items);
 }
 
@@ -383,3 +390,188 @@ export function catalogPhotoUrls(items: CatalogItem[], limit = 6): string[] {
   }
   return urls;
 }
+
+export type ShopBoardTile = {
+  id: string;
+  label: string;
+  href: string;
+  image: string;
+  photoKey?: string;
+  fit: 'contain' | 'cover';
+  hideOnPaid: boolean;
+  rel: string;
+  affiliate: boolean;
+};
+
+/** Prefer an on-site listing page when we have one; otherwise the partner or official link. */
+function listingHref(item: CatalogItem): string {
+  return item.detailHref || item.href;
+}
+
+const SHOP_BOARD_PRODUCT_IDS = [
+  'bluetti-apex-300',
+  'bluetti-ac180',
+  'bluetti-premium-200-v2',
+  'bluetti-350w-solar',
+  'aquasana-under-sink',
+  'aquasana-whole-house',
+  'waterdrop-shop',
+];
+
+export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
+  const byId = new Map(items.map((i) => [i.id, i]));
+  const tiles: ShopBoardTile[] = [];
+  const usedImages = new Set<string>();
+
+  const pushProduct = (item: CatalogItem) => {
+    if (!item.image) return;
+    if (usedImages.has(item.image)) return;
+    usedImages.add(item.image);
+    tiles.push({
+      id: item.id,
+      label: item.title.replace(/\s+official.*$/i, ''),
+      href: listingHref(item),
+      image: item.image,
+      fit: item.imageKind === 'photo' ? 'contain' : 'cover',
+      hideOnPaid: item.hideOnPaid,
+      rel: item.rel,
+      affiliate: item.affiliate,
+    });
+  };
+
+  for (const id of SHOP_BOARD_PRODUCT_IDS) {
+    const item = byId.get(id);
+    if (item) pushProduct(item);
+  }
+  if (tiles.length < 7) {
+    for (const item of items) {
+      if (item.imageKind === 'photo' && item.image && !item.image.endsWith('.svg')) {
+        pushProduct(item);
+      }
+      if (tiles.length >= 7) break;
+    }
+  }
+
+  const midland = byId.get('midland-wr400') || byId.get('midland-er310-crank-radio');
+  const scenes: ShopBoardTile[] = [
+    { id: 'scene-drone', label: 'Drones', href: '/directory/drones/', image: '', photoKey: 'hero-drone', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    { id: 'scene-utv', label: 'Off-road vehicles', href: '/directory/vehicles/', image: '', photoKey: 'hero-utv-dunes', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    { id: 'scene-bunker', label: 'Shelters', href: '/directory/security/', image: '', photoKey: 'hero-bunker-hatch', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    {
+      id: 'scene-radios',
+      label: 'Radios',
+      href: midland ? listingHref(midland) : '/directory/tech/',
+      image: '',
+      photoKey: 'hero-radios',
+      fit: 'cover',
+      hideOnPaid: midland ? midland.hideOnPaid : false,
+      rel: midland?.rel || '',
+      affiliate: midland?.affiliate || false,
+    },
+    { id: 'scene-food', label: 'Food & pantry', href: '/directory/food/', image: '', photoKey: 'hero-pantry-cans', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+  ];
+
+  // 12 tiles: keep as many official product shots as we have, then fill with scenes.
+  tiles.push(...scenes.slice(0, Math.max(0, 12 - tiles.length)));
+  return tiles.slice(0, 12);
+}
+
+export const shopCategoryChips: { label: string; href: string }[] = [
+  { label: 'Power', href: '/directory/power/' },
+  { label: 'Water', href: '/directory/water/' },
+  { label: 'Drones', href: '/directory/drones/' },
+  { label: 'Vehicles', href: '/directory/vehicles/' },
+  { label: 'Security', href: '/directory/security/' },
+  { label: 'Food', href: '/directory/food/' },
+  { label: 'Outdoor', href: '/directory/outdoor/' },
+];
+
+export type HeroCutout = {
+  id: string;
+  href: string;
+  label: string;
+  photoKey?: string;
+  image?: string;
+  fit: 'cover' | 'contain';
+  hideOnPaid: boolean;
+  rel: string;
+  affiliate: boolean;
+  slot: string;
+  depth: number;
+  eager?: boolean;
+  shape?: 'round' | 'tile';
+};
+
+export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
+  const byId = new Map(items.map((i) => [i.id, i]));
+  const product = (id: string, slot: string, depth: number, eager = false): HeroCutout | null => {
+    const item = byId.get(id);
+    if (!item?.image) return null;
+    return {
+      id: `cut-${id}`,
+      href: listingHref(item),
+      label: item.title.replace(/\s+official.*$/i, ''),
+      image: item.image,
+      fit: 'contain',
+      hideOnPaid: item.hideOnPaid,
+      rel: item.rel,
+      affiliate: item.affiliate,
+      slot,
+      depth,
+      eager,
+    };
+  };
+
+  const ghost = byId.get('ghost-robotics-official');
+  const midland = byId.get('midland-wr400') || byId.get('midland-er310-crank-radio');
+  const lantern = byId.get('goal-zero-lighthouse-600');
+
+  const cuts: Array<HeroCutout | null> = [
+    { id: 'cut-drone', href: '/directory/drones/', label: 'Drones', photoKey: 'hero-drone', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'drone', depth: 0.08, eager: true },
+    { id: 'cut-utv', href: '/directory/vehicles/', label: 'Off-road UTVs', photoKey: 'hero-utv-dunes', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'utv', depth: 0.06, eager: true },
+    { id: 'cut-truck', href: '/directory/vehicles/', label: 'Overland trucks', photoKey: 'hero-overland-truck', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'truck', depth: 0.05, eager: true },
+    { id: 'cut-cruiser', href: '/directory/vehicles/', label: 'Overland SUVs', photoKey: 'hero-overland-cruiser', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'cruiser', depth: 0.07, eager: false },
+    { id: 'cut-bunker', href: '/directory/security/', label: 'Shelters', photoKey: 'hero-bunker-hatch', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'bunker', depth: 0.04, eager: true },
+    {
+      id: 'cut-robot',
+      href: ghost ? listingHref(ghost) : '/directory/security/',
+      label: 'Security robots',
+      photoKey: 'hero-security-robot',
+      fit: 'cover',
+      hideOnPaid: false,
+      rel: ghost?.rel || 'noopener',
+      affiliate: ghost?.affiliate || false,
+      slot: 'robot',
+      depth: 0.06,
+      eager: false,
+    },
+    {
+      id: 'cut-radios',
+      href: midland ? listingHref(midland) : '/directory/tech/',
+      label: 'Radios',
+      photoKey: 'hero-radios',
+      fit: 'cover',
+      hideOnPaid: midland ? midland.hideOnPaid : false,
+      rel: midland?.rel || '',
+      affiliate: midland?.affiliate || false,
+      slot: 'radios',
+      depth: 0.05,
+      eager: false,
+    },
+    { id: 'cut-food', href: '/directory/food/', label: 'Food kits', photoKey: 'hero-pantry-cans', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'food', depth: 0.04, eager: false },
+    { id: 'cut-lantern', href: lantern ? listingHref(lantern) : '/directory/outdoor/', label: 'Lanterns', photoKey: 'lantern-dusk', fit: 'cover', hideOnPaid: lantern ? lantern.hideOnPaid : false, rel: lantern?.rel || '', affiliate: lantern?.affiliate || false, slot: 'lantern', depth: 0.05, eager: false },
+    { id: 'cut-water', href: '/directory/water/', label: 'Water stores', photoKey: 'water-bottles', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'water', depth: 0.03, eager: false },
+    { id: 'cut-generator', href: '/directory/power/', label: 'Generators', photoKey: 'portable-generator', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'generator', depth: 0.04, eager: false },
+    { id: 'cut-aid', href: '/directory/safety/', label: 'First aid', photoKey: 'first-aid-kit-open', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'aid', depth: 0.03, eager: false },
+    { id: 'cut-banks', href: '/directory/power/', label: 'Power banks', photoKey: 'power-banks', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'banks', depth: 0.05, eager: false },
+    { id: 'cut-flatlay', href: '/directory/outdoor/', label: 'Outdoor kits', photoKey: 'gear-flatlay', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'flatlay', depth: 0.03, eager: false },
+    { id: 'cut-solar', href: '/directory/power/', label: 'Solar', photoKey: 'solar-rooftops', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'solar', depth: 0.02, eager: false },
+    product('bluetti-apex-300', 'power-a', 0.05, true),
+    product('bluetti-ac180', 'power-b', 0.04),
+    product('aquasana-under-sink', 'filter-a', 0.04),
+    product('waterdrop-shop', 'filter-b', 0.03),
+    product('bluetti-350w-solar', 'panel', 0.03),
+  ];
+  return cuts.filter((c): c is HeroCutout => Boolean(c));
+}
+
