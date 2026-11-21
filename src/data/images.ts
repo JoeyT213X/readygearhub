@@ -61,6 +61,8 @@ export const guidePhoto: Record<string, string> = {
   'winter-power-outage-checklist': 'outage-candle',
   'winter-storm-power-outage-prep-guide-south': 'winter-storm-street',
   'winter-storm-watch-vs-warning': 'storm-barn',
+  'tornado-watch-vs-warning-mississippi': 'lightning-road',
+  'carbon-monoxide-safety-during-an-outage': 'portable-generator',
 };
 export const photoForGuide = (id: string, lane?: string) => guidePhoto[id] ?? (lane && lanePhoto[lane]) ?? 'gear-flatlay';
 export const photoForLane = (slug: string) => lanePhoto[slug] ?? 'gear-flatlay';
