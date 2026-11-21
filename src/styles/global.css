@@ -586,3 +586,12 @@ background-size:18px 18px,18px 18px,auto,auto;min-height:420px;padding:0;color:#
 .prepper-lanes{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 18px}
 .prepper-lane-chip{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--paper,#fff);border:1px solid var(--line,#d5dde3);color:var(--navy,#0f2a3d);text-decoration:none;font-size:.82rem;font-weight:700}
 .prepper-lane-chip:hover{border-color:var(--navy,#0f2a3d);color:var(--navy,#0f2a3d)}
+
+/* Prepper's Picks 5-spot sits first in the home collage. */
+.home-prepper{margin:0 0 22px}
+.home-prepper .section-head{margin-bottom:12px}
+.bento-text.is-more{margin-top:10px;font-weight:800;color:#f6b98c}
+@media(min-width:720px){
+  .prepper-bento{margin-bottom:4px}
+  .bento-tile.is-shop-board.is-wide{grid-column:1 / -1;grid-row:auto;min-height:480px}
+}

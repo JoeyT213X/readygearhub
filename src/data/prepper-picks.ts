@@ -705,3 +705,73 @@ export function countsByPrepperLane(picks = resolvedPrepperPicks()): Record<Prep
   for (const p of picks) counts[p.lane] += 1;
   return counts;
 }
+
+
+export type HomePrepperSpot = {
+  id: string;
+  href: string;
+  kicker: string;
+  title: string;
+  text?: string;
+  photoKey: string;
+  hideOnPaid: boolean;
+  feature?: boolean;
+};
+
+/**
+ * Home-page 5-spot (one large feature + four photo tiles).
+ * Do not include portable power stations here; solar panels would be fine,
+ * but this set stays on water, food, radios, and first aid.
+ */
+export function homePrepperSpots(catalog: CatalogItem[]): HomePrepperSpot[] {
+  const byId = new Map(catalog.map((i) => [i.id, i]));
+  const hrefFor = (id: string, fallback: string) => {
+    const item = byId.get(id);
+    return item ? item.detailHref || item.href : fallback;
+  };
+  const hideFor = (id: string) => Boolean(byId.get(id)?.hideOnPaid);
+  return [
+    {
+      id: 'prepper-feature',
+      href: '/prepper-picks/',
+      kicker: "Prepper’s Picks",
+      title: 'Built for a 72-hour bag, and a longer pantry',
+      text: 'Water, food, radios, first aid, and the documents you want on paper.',
+      photoKey: 'gear-flatlay',
+      hideOnPaid: false,
+      feature: true,
+    },
+    {
+      id: 'spot-water',
+      href: hrefFor('reliance-aqua-tainer', '/prepper-picks/'),
+      kicker: 'Water',
+      title: 'Stored water',
+      photoKey: 'water-bottles',
+      hideOnPaid: hideFor('reliance-aqua-tainer'),
+    },
+    {
+      id: 'spot-food',
+      href: hrefFor('readywise-72-hour-food-kit', '/prepper-picks/'),
+      kicker: 'Food',
+      title: 'Food kits',
+      photoKey: 'hero-pantry-cans',
+      hideOnPaid: hideFor('readywise-72-hour-food-kit'),
+    },
+    {
+      id: 'spot-radios',
+      href: hrefFor('midland-er310-crank-radio', '/prepper-picks/'),
+      kicker: 'Comms',
+      title: 'Radios',
+      photoKey: 'hero-radios',
+      hideOnPaid: hideFor('midland-er310-crank-radio'),
+    },
+    {
+      id: 'spot-aid',
+      href: hrefFor('mymedic-myfak', '/prepper-picks/'),
+      kicker: 'Medical',
+      title: 'First aid',
+      photoKey: 'first-aid-kit-open',
+      hideOnPaid: hideFor('mymedic-myfak'),
+    },
+  ];
+}

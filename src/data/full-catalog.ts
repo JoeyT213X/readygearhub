@@ -354,19 +354,56 @@ function hasProductPhoto(item: CatalogItem): boolean {
   return Boolean(item.image && !item.image.endsWith('.svg'));
 }
 
-/** Home shop section: prefer cards with real photos, then trending text cards. */
+/**
+ * Portable power stations (BLUETTI Apex/AC180/Elite, Jackery, EcoFlow, etc.)
+ * must not be featured on the home page. Solar panels and PV kits are allowed.
+ * See docs/home-design-notes.md.
+ */
+export function isPortablePowerStation(item: { id?: string; title?: string; image?: string; label?: string }): boolean {
+  const id = (item.id || '').toLowerCase();
+  const title = (item.title || item.label || '').toLowerCase();
+  const image = (item.image || '').toLowerCase();
+  const hay = `${id} ${title} ${image}`;
+  const isSolar =
+    /\b(solar|solarsaga|nomad|renogy|pv\b|sp200|sp100|sp120|350w-solar|solar-kit|solar-panel)\b/.test(hay) ||
+    /panel/.test(id);
+  if (isSolar && !/power[\s-]?station/.test(title)) return false;
+  if (/power[\s-]?station/.test(title) || /power[\s-]?station/.test(id)) return true;
+  if (/\b(jackery|ecoflow|anker-solix|goal-zero-yeti)\b/.test(hay)) return true;
+  if (/bluetti/.test(hay) && !isSolar) return true;
+  return false;
+}
+
+/** Home shop section: prefer cards with real photos, then trending text cards. Cap per brand so one filter line does not fill the grid. */
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {
-  const photoTrending = items.filter((i) => i.trending && hasProductPhoto(i));
-  const photoRest = items.filter((i) => !i.trending && hasProductPhoto(i));
-  const textTrending = items.filter((i) => i.trending && !hasProductPhoto(i));
-  const rest = items.filter((i) => !i.trending && !hasProductPhoto(i));
+  const eligible = items.filter((i) => !isPortablePowerStation(i));
+  const photoTrending = eligible.filter((i) => i.trending && hasProductPhoto(i));
+  const photoRest = eligible.filter((i) => !i.trending && hasProductPhoto(i));
+  const textTrending = eligible.filter((i) => i.trending && !hasProductPhoto(i));
+  const rest = eligible.filter((i) => !i.trending && !hasProductPhoto(i));
   const picked: CatalogItem[] = [];
   const seen = new Set<string>();
-  for (const item of [...photoTrending, ...photoRest, ...textTrending, ...rest]) {
-    if (seen.has(item.id)) continue;
+  const brandCounts = new Map<string, number>();
+  const brandKey = (item: CatalogItem) => (item.sourceName || item.title.split(/\s+/)[0] || item.id).toLowerCase();
+  const tryAdd = (item: CatalogItem, maxPerBrand: number) => {
+    if (seen.has(item.id)) return false;
+    const key = brandKey(item);
+    if ((brandCounts.get(key) || 0) >= maxPerBrand) return false;
     seen.add(item.id);
+    brandCounts.set(key, (brandCounts.get(key) || 0) + 1);
     picked.push(item);
+    return true;
+  };
+  const ranked = [...photoTrending, ...photoRest, ...textTrending, ...rest];
+  for (const item of ranked) {
+    tryAdd(item, 2);
     if (picked.length >= limit) break;
+  }
+  if (picked.length < limit) {
+    for (const item of ranked) {
+      tryAdd(item, 99);
+      if (picked.length >= limit) break;
+    }
   }
   return picked;
 }
@@ -409,12 +446,11 @@ function listingHref(item: CatalogItem): string {
 }
 
 const SHOP_BOARD_PRODUCT_IDS = [
-  'bluetti-apex-300',
-  'bluetti-ac180',
-  'bluetti-premium-200-v2',
   'bluetti-350w-solar',
   'aquasana-under-sink',
   'aquasana-whole-house',
+  'aquasana-shower-chrome',
+  'aquasana-healthshield-ro-matte-black',
   'waterdrop-shop',
 ];
 
@@ -424,6 +460,7 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   const usedImages = new Set<string>();
 
   const pushProduct = (item: CatalogItem) => {
+    if (isPortablePowerStation(item)) return;
     if (!item.image) return;
     if (usedImages.has(item.image)) return;
     usedImages.add(item.image);
@@ -443,16 +480,18 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
     const item = byId.get(id);
     if (item) pushProduct(item);
   }
-  if (tiles.length < 7) {
+  if (tiles.length < 6) {
     for (const item of items) {
+      if (isPortablePowerStation(item)) continue;
       if (item.imageKind === 'photo' && item.image && !item.image.endsWith('.svg')) {
         pushProduct(item);
       }
-      if (tiles.length >= 7) break;
+      if (tiles.length >= 6) break;
     }
   }
 
   const midland = byId.get('midland-wr400') || byId.get('midland-er310-crank-radio');
+  const lantern = byId.get('goal-zero-lighthouse-600');
   const scenes: ShopBoardTile[] = [
     { id: 'scene-drone', label: 'Drones', href: '/directory/drones/', image: '', photoKey: 'hero-drone', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
     { id: 'scene-utv', label: 'Off-road vehicles', href: '/directory/vehicles/', image: '', photoKey: 'hero-utv-dunes', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
@@ -469,6 +508,22 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
       affiliate: midland?.affiliate || false,
     },
     { id: 'scene-food', label: 'Food & pantry', href: '/directory/food/', image: '', photoKey: 'hero-pantry-cans', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    { id: 'scene-tent', label: 'Tents', href: '/directory/outdoor/', image: '', photoKey: 'hero-tent-stars', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    { id: 'scene-binoculars', label: 'Binoculars', href: '/directory/outdoor/', image: '', photoKey: 'hero-binoculars', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    { id: 'scene-camp', label: 'Camp & shelter', href: '/directory/outdoor/', image: '', photoKey: 'hero-campsite', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    { id: 'scene-aid', label: 'First aid', href: '/directory/safety/', image: '', photoKey: 'first-aid-kit-open', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    { id: 'scene-water', label: 'Water stores', href: '/directory/water/', image: '', photoKey: 'water-bottles', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
+    {
+      id: 'scene-lantern',
+      label: 'Lanterns',
+      href: lantern ? listingHref(lantern) : '/directory/outdoor/',
+      image: '',
+      photoKey: 'lantern-dusk',
+      fit: 'cover',
+      hideOnPaid: lantern ? lantern.hideOnPaid : false,
+      rel: lantern?.rel || '',
+      affiliate: lantern?.affiliate || false,
+    },
   ];
 
   // 12 tiles: keep as many official product shots as we have, then fill with scenes.
@@ -559,6 +614,7 @@ export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
   ): HeroCutout | null => {
     const item = byId.get(id);
     if (!item?.image) return null;
+    if (isPortablePowerStation(item)) return null;
     return {
       id: `cut-${id}`,
       href: listingHref(item),
@@ -619,9 +675,9 @@ export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
     scene('cut-drone', '/directory/drones/', 'Drones', 'hero-drone', 0.08, 'always',
       { w: '13%', ar: '1', l: '47%', t: '2%', rot: -7, z: 3 },
       { w: '30%', ar: '1', r: '2%', t: '2%', rot: -8, z: 3 }, true),
-    product('bluetti-apex-300', 'power-a', 0.05, 'always',
-      { w: '11%', ar: '1', l: '36%', t: '16%', rot: -3, z: 3 },
-      { w: '30%', ar: '1', l: '42%', t: '2%', rot: -4, z: 4 }, true),
+    scene('cut-tent', '/directory/outdoor/', 'Tents', 'hero-tent-stars', 0.05, 'always',
+      { w: '11%', ar: '3 / 4', l: '36%', t: '16%', rot: -3, z: 3 },
+      { w: '30%', ar: '3 / 4', l: '42%', t: '2%', rot: -4, z: 4 }, true),
     scene('cut-bunker', '/directory/security/', 'Shelters', 'hero-bunker-hatch', 0.04, 'always',
       { w: '10%', ar: '3 / 4', l: '26%', t: '1%', rot: -10, z: 3 },
       { w: '36%', ar: '3 / 4', l: '2%', t: '22%', rot: -10, z: 3 }, true),
@@ -644,9 +700,9 @@ export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
       undefined, false, { hideOnPaid: lantern ? lantern.hideOnPaid : false, rel: lantern?.rel || '', affiliate: lantern?.affiliate || false }),
     scene('cut-solar', '/directory/power/', 'Solar', 'solar-rooftops', 0.02, 'md',
       { w: '12%', ar: '16 / 10', l: '87%', t: '0.5%', rot: 3, z: 3 }),
-    scene('cut-banks', '/directory/power/', 'Power banks', 'power-banks', 0.05, 'lg',
-      { w: '9%', ar: '1', l: '48%', t: '18%', rot: 11, z: 3 }),
-    scene('cut-generator', '/directory/power/', 'Generators', 'portable-generator', 0.04, 'md',
+    scene('cut-binoculars', '/directory/outdoor/', 'Binoculars', 'hero-binoculars', 0.05, 'lg',
+      { w: '9%', ar: '4 / 3', l: '48%', t: '18%', rot: 11, z: 3 }),
+    scene('cut-camp', '/directory/outdoor/', 'Camp & shelter', 'hero-campsite', 0.04, 'md',
       { w: '14%', ar: '4 / 3', l: '84%', t: '17%', rot: 3, z: 3 }),
     scene('cut-food', '/directory/food/', 'Food kits', 'hero-pantry-cans', 0.04, 'md',
       { w: '11%', ar: '1', l: '1%', t: '28%', rot: 8, z: 3 }),
@@ -654,8 +710,8 @@ export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
       { w: '12%', ar: '1', l: '56%', t: '62%', rot: -6, z: 3 }),
     scene('cut-flatlay', '/directory/outdoor/', 'Outdoor kits', 'gear-flatlay', 0.03, 'lg',
       { w: '11%', ar: '1', l: '86%', t: '35%', rot: -5, z: 3 }),
-    scene('cut-aid', '/directory/safety/', 'First aid', 'first-aid-kit-open', 0.03, 'lg',
-      { w: '10%', ar: '1', l: '43%', t: '88%', rot: -9, z: 3 }),
+    scene('cut-woods', '/guides/how-to-keep-pipes-from-freezing/', 'Winter roads', 'snowy-trees-road', 0.03, 'lg',
+      { w: '10%', ar: '16 / 10', l: '43%', t: '88%', rot: -9, z: 3 }),
     scene('cut-snowy', '/guides/winter-power-outage-checklist/', 'Winter prep', 'hero-snowy-home', 0.03, 'lg',
       { w: '10%', ar: '16 / 10', l: '23%', t: '22%', rot: 7, z: 2 }),
     scene('cut-tools', '/directory/outdoor/', 'Tools', 'multitools', 0.03, 'lg',
@@ -675,17 +731,22 @@ export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
     scene('cut-checklist', '/guides/', 'Guides', 'checklist-writing', 0.02, 'lg',
       { w: '9%', ar: '16 / 10', l: '58%', t: '86%', rot: -3, z: 2 }),
 
-    product('bluetti-ac180', 'power-b', 0.04, 'md', { w: '10%', ar: '1', l: '50%', t: '36%', rot: 5, z: 3 }),
     product('bluetti-350w-solar', 'panel', 0.03, 'lg', { w: '10%', ar: '1', l: '61%', t: '39%', rot: -8, z: 3 }),
     product('aquasana-under-sink', 'filter-a', 0.04, 'md', { w: '10%', ar: '1', l: '39%', t: '58%', rot: -2, z: 3 }),
     product('waterdrop-shop', 'filter-b', 0.03, 'lg', { w: '9%', ar: '1', l: '58%', t: '78%', rot: 5, z: 3 }),
-    product('bluetti-premium-200-v2', 'power-c', 0.03, 'lg', { w: '9%', ar: '1', l: '52%', t: '51%', rot: 4, z: 3 }),
-    product('bluetti-ac50b', 'power-d', 0.03, 'lg', { w: '9%', ar: '1', l: '80%', t: '49%', rot: -6, z: 3 }),
     product('aquasana-whole-house', 'filter-c', 0.03, 'lg', { w: '9%', ar: '1', l: '52%', t: '73%', rot: 2, z: 3 }),
-    product('bluetti-ac180p', 'power-e', 0.03, 'md', { w: '9%', ar: '1', l: '40%', t: '48%', rot: -4, z: 3 }),
-    product('bluetti-sora-60', 'power-f', 0.02, 'lg', { w: '8%', ar: '1', l: '89%', t: '54%', rot: 7, z: 2 }),
+    product('aquasana-healthshield-ro-matte-black', 'filter-e', 0.03, 'md', { w: '9%', ar: '1', l: '40%', t: '48%', rot: -4, z: 3 }),
     product('aquasana-shower-chrome', 'filter-d', 0.02, 'lg', { w: '8%', ar: '1', l: '48%', t: '64%', rot: 6, z: 2 }),
-    product('bluetti-elite-30-mini', 'power-g', 0.02, 'lg', { w: '8%', ar: '1', l: '85%', t: '78%', rot: -4, z: 2 }),
+    scene('cut-aid-mid', '/directory/safety/', 'First aid', 'first-aid-kit-open', 0.04, 'md',
+      { w: '10%', ar: '1', l: '50%', t: '36%', rot: 5, z: 3 }),
+    scene('cut-tools-mid', '/directory/outdoor/', 'Knives & multi-tools', 'multitools', 0.03, 'lg',
+      { w: '9%', ar: '1', l: '52%', t: '51%', rot: 4, z: 3 }),
+    scene('cut-storm-street', '/guides/winter-storm-power-outage-prep-guide-south/', 'Storm prep', 'winter-storm-street', 0.03, 'lg',
+      { w: '9%', ar: '16 / 10', l: '80%', t: '49%', rot: -6, z: 3 }),
+    scene('cut-barn', '/alerts/', 'Severe weather', 'storm-barn', 0.02, 'lg',
+      { w: '8%', ar: '16 / 10', l: '89%', t: '54%', rot: 7, z: 2 }),
+    scene('cut-sea', '/guides/hurricane-prep-guide-gulf-south/', 'Hurricane prep', 'storm-over-sea', 0.02, 'lg',
+      { w: '8%', ar: '16 / 10', l: '85%', t: '78%', rot: -4, z: 2 }),
 
     // ---- Sticker lines among the photos ----
     ...HERO_STICKERS.map((s) => ({
@@ -705,5 +766,9 @@ export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
       desk: s.desk,
     })),
   ];
-  return cuts.filter((c): c is HeroCutout => Boolean(c));
+  return cuts.filter((c): c is HeroCutout => Boolean(c)).filter((c) => {
+    if (c.kind === 'sticker') return true;
+    if (c.photoKey === 'power-banks' || c.photoKey === 'portable-generator') return false;
+    return !isPortablePowerStation({ id: c.id, title: c.label, image: c.image || '', label: c.label });
+  });
 }

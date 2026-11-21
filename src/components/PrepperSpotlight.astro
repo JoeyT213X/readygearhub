@@ -1,0 +1,36 @@
+---
+import Photo from './Photo.astro';
+import type { HomePrepperSpot } from '../data/prepper-picks';
+
+interface Props {
+  spots: HomePrepperSpot[];
+  pickCount: number;
+}
+const { spots, pickCount } = Astro.props;
+const feature = spots.find((s) => s.feature) ?? spots[0];
+const tiles = spots.filter((s) => s !== feature);
+---
+<nav class="bento prepper-bento" aria-label="Prepper’s Picks">
+  <a class="bento-tile is-feature" href={feature.href}>
+    <Photo name={feature.photoKey} decorative sizes="(min-width: 720px) 50vw, 100vw" />
+    <span class="bento-tile-body">
+      <span class="bento-kicker">{feature.kicker}</span>
+      <span class="bento-title">{feature.title}</span>
+      {feature.text && <span class="bento-text">{feature.text}</span>}
+      <span class="bento-text is-more">See all {pickCount} picks</span>
+    </span>
+  </a>
+  {tiles.map((spot) => (
+    <a
+      class="bento-tile"
+      href={spot.href}
+      data-no-ppc={spot.hideOnPaid ? '' : undefined}
+    >
+      <Photo name={spot.photoKey} decorative sizes="(min-width: 720px) 25vw, 50vw" />
+      <span class="bento-tile-body">
+        <span class="bento-kicker">{spot.kicker}</span>
+        <span class="bento-title">{spot.title}</span>
+      </span>
+    </a>
+  ))}
+</nav>

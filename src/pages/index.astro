@@ -16,11 +16,12 @@ import { payhipProducts } from '../data/payhip';
 import { photoForGuide } from '../data/images';
 import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
 import { buildFullCatalog, homeShopPicks, countsByCatalogGroup, shopBoardTiles, heroCutouts } from '../data/full-catalog';
-import { prepperLanes, featuredPrepperPicks, resolvedPrepperPicks, prepperPickToCatalogItem } from '../data/prepper-picks';
+import { prepperLanes, resolvedPrepperPicks, homePrepperSpots } from '../data/prepper-picks';
+import PrepperSpotlight from '../components/PrepperSpotlight.astro';
 
 const guides = await getGuides();
 const guideById = Object.fromEntries(guides.map((g) => [g.id, g]));
-const featuredIds = ['winter-storm-power-outage-prep-guide-south', 'winter-power-outage-checklist', 'emergency-water-storage', 'generator-vs-power-station', 'how-to-stay-warm-without-power'];
+const featuredIds = ['winter-storm-power-outage-prep-guide-south', 'winter-power-outage-checklist', 'emergency-water-storage', 'storm-first-aid-kit', 'how-to-stay-warm-without-power'];
 const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean)];
 
 const catalog = buildFullCatalog(await getItems());
@@ -28,8 +29,8 @@ const shopPicks = homeShopPicks(catalog, 16);
 const boardTiles = shopBoardTiles(catalog);
 const spread = heroCutouts(catalog);
 const groupCounts = countsByCatalogGroup(catalog);
-const prepperFeatured = featuredPrepperPicks();
 const prepperCount = resolvedPrepperPicks().length;
+const prepperSpots = homePrepperSpots(catalog);
 const toolTeasers = [...CALCULATORS.slice(0, 2), ...OFFLINE_APPS.slice(0, 2)];
 const localTeasers = [
   { href: '/local/mississippi/', label: 'Mississippi' },
@@ -62,6 +63,16 @@ const navList = {
   />
 
   <div class="wrap home-collage">
+    <section class="home-prepper" id="preppers-picks">
+      <SectionHead kicker="Prepper’s Picks" title="Built for a 72-hour bag, and a longer pantry" intro="Gear many households already keep on hand — stored water, a three-day food kit and a longer pantry, radios, first aid, and the documents you want on paper. Some links are partner links; others go straight to the official page until a program is approved." href="/prepper-picks/" linkLabel="See all picks" />
+      <PrepperSpotlight spots={prepperSpots} pickCount={prepperCount} />
+      <nav class="prepper-lanes" aria-label="Prepper’s Picks categories">
+        {prepperLanes.map((lane) => (
+          <a class="prepper-lane-chip" href={`/prepper-picks/#${lane.id}`}>{lane.name}</a>
+        ))}
+      </nav>
+    </section>
+
     <nav class="bento" aria-label="What's on ReadyGearHub">
       <ShopBoard tiles={boardTiles} catalogCount={catalog.length} />
 
@@ -82,7 +93,7 @@ const navList = {
       </a>
 
       <a class="bento-tile" href="/tools/">
-        <Photo name="power-banks" decorative sizes="(min-width: 900px) 25vw, 50vw" />
+        <Photo name="lantern-dusk" decorative sizes="(min-width: 900px) 25vw, 50vw" />
         <span class="bento-tile-body">
           <span class="bento-kicker">Explore</span>
           <span class="bento-title">Free tools &amp; apps</span>
@@ -133,18 +144,6 @@ const navList = {
     <p class="fine trend-more"><a href="/directory/#listings">See all {catalog.length} listings in the directory</a></p>
   </section>
 
-  <section class="wrap section tight" id="preppers-picks">
-    <SectionHead kicker="Prepper’s Picks" title="Built for a 72-hour bag, and a longer pantry" intro="Gear many households already keep on hand, from stored water and a three-day food kit up through a longer supply, backup power, radios, first aid, and the documents you want on paper. Some links are partner links; others go straight to the official page until a program is approved." href="/prepper-picks/" linkLabel="See all picks" />
-    <nav class="prepper-lanes" aria-label="Prepper’s Picks categories">
-      {prepperLanes.map((lane) => (
-        <a class="prepper-lane-chip" href={`/prepper-picks/#${lane.id}`}>{lane.name}</a>
-      ))}
-    </nav>
-    <div class="grid shop-grid source-grid home-shop-grid">
-      {prepperFeatured.map((pick) => <SourceCard item={prepperPickToCatalogItem(pick)} />)}
-    </div>
-    <p class="fine trend-more"><a href="/prepper-picks/">See all {prepperCount} Prepper’s Picks</a></p>
-  </section>
 
   <section class="wrap section tight" id="guides">
     <SectionHead kicker="Guides" title="Start with a guide" href="/guides/" linkLabel="All guides" />
