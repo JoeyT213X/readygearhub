@@ -1,0 +1,18 @@
+---
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+---
+<ul class:list={['shop-trust', { compact }]} aria-label="Shop promises">
+  <li>
+    <strong>Instant PDF download</strong>
+    <span>Your files arrive right after checkout. Nothing is shipped.</span>
+  </li>
+  <li>
+    <strong>Secure checkout via Payhip</strong>
+    <span>Payment is handled by Payhip, not on this page.</span>
+  </li>
+  <li>
+    <strong>Refund if a file doesn't work</strong>
+    <span>Digital sales are final, except if a file is broken or does not run as described. <a href="/refund-policy/">Refund policy</a>.</span>
+  </li>
+</ul>

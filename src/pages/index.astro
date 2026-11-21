@@ -8,6 +8,7 @@ import ProductCard from '../components/ProductCard.astro';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import SectionHead from '../components/SectionHead.astro';
 import Photo from '../components/Photo.astro';
+import LiveStatus from '../components/LiveStatus.astro';
 import { lanes, getItems, getTrending, getGuides, site, laneBySlug } from '../lib/data';
 import { payhipProducts } from '../data/payhip';
 import { mailerlite } from '../data/mailerlite';
@@ -46,13 +47,15 @@ const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: si
         <a class="btn ghost light" href="/guides/winter-power-outage-checklist/">Winter outage checklist</a>
       </div>
       <ul class="hero-quick" aria-label="Quick links">
-        <li><a href="/alerts/">⚠️ Live NWS alerts</a></li>
+        <li><a href="#live-status">⚠️ Live official status</a></li>
         <li><a href="/tools/outage-timer/">❄️ Fridge outage timer</a></li>
         <li><a href="/tools/water-calculator/">💧 Water calculator</a></li>
         <li><a href="/tools/kit-builder/">📋 Kit builder</a></li>
       </ul>
     </div>
   </section>
+
+  <LiveStatus />
 
   <section class="band">
     <div class="wrap section tight">
@@ -120,8 +123,8 @@ const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: si
 
   <section class="wrap section">
     <div class="alert-callout">
-      <p><strong>⚠️ Is weather headed your way?</strong>Check official National Weather Service alerts for your state or county, then follow your local officials.</p>
-      <div class="hero-actions" style="margin:0"><a class="btn" href="/alerts/">Live alerts</a><a class="btn ghost" href="/storm-tracker/">Storm tracker</a></div>
+      <p><strong>Want a closer look?</strong>The home-page status board shows official feeds for a whole state. Open the alerts page for a county, or the storm tracker for a saved county plus the outage timer.</p>
+      <div class="hero-actions" style="margin:0"><a class="btn" href="/alerts/">County alerts</a><a class="btn ghost" href="/storm-tracker/">Storm tracker</a></div>
     </div>
   </section>
 

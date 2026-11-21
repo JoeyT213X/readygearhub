@@ -6,11 +6,13 @@ const { product } = Astro.props;
 ---
 <article class="card item-card product-card">
   <a class="product-cover" href={`/shop/${product.slug}/`} aria-label={product.title} tabindex="-1">
+    <span class="badge">Instant PDF</span>
     <img src={product.image} alt="" width="640" height="360" loading="lazy" decoding="async" />
   </a>
   <h3><a href={`/shop/${product.slug}/`}>{product.title}</a></h3>
   <p class="product-price">{product.price}</p>
   <p>{product.summary}</p>
+  <p class="product-meta">Instant download · Checkout via Payhip</p>
   <div class="card-actions">
     <a class="btn small ghost" href={`/shop/${product.slug}/`}>Details</a>
     <PayhipBuyButton product={product} small />

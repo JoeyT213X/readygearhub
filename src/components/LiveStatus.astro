@@ -1,0 +1,81 @@
+---
+import states from '../data/us-states.json';
+import { DEFAULT_STATE } from '../lib/app-config';
+
+const outageLinks = [
+  { href: 'https://www.psc.ms.gov/psc/outagetracker', label: 'Mississippi PSC outage trackers', note: 'Official directory of utility and co-op outage maps.' },
+  { href: 'https://www.etrviewoutage.com/map?state=MS', label: 'Entergy Mississippi outage map', note: 'Live map for Entergy Mississippi customers.' },
+  { href: 'https://outagemap.mississippipower.com/external/default.html', label: 'Mississippi Power outage map', note: 'Live map for Mississippi Power customers.' },
+  { href: 'https://www.ecm.coop/member-co-ops/', label: 'Electric Cooperatives of Mississippi', note: 'Find your co-op, then its official outage page.' },
+  { href: 'https://www.msema.org/', label: 'Mississippi Emergency Management Agency', note: 'State emergency information. 24-hour line: 1-800-222-6362.' },
+];
+---
+<section class="live-dash" id="live-status" aria-labelledby="live-status-title">
+  <div class="wrap section">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Live official status</p>
+        <h2 id="live-status-title">What's happening now</h2>
+        <p>Official National Weather Service alerts, National Hurricane Center tropical updates, and the outage maps and MEMA pages this site already points you to — shown here so you don't have to open a separate window. This is not a substitute for Wireless Emergency Alerts, NOAA Weather Radio, or local officials. In an emergency, call 911.</p>
+      </div>
+      <a class="section-link" href="/alerts/">Full alerts page →</a>
+    </div>
+
+    <div class="live-grid">
+      <article class="live-card" aria-labelledby="live-nws-heading">
+        <header class="live-card-head">
+          <div>
+            <h3 id="live-nws-heading">Weather alerts</h3>
+            <p class="live-source">National Weather Service</p>
+          </div>
+          <label class="live-state">State
+            <select id="live-state" autocomplete="address-level1">
+              {states.map((s) => <option value={s.code} selected={s.code === DEFAULT_STATE}>{s.name}</option>)}
+            </select>
+          </label>
+        </header>
+        <time class="live-updated" id="live-nws-updated" datetime="">Waiting for official alerts…</time>
+        <p class="live-status-msg" id="live-nws-status">Loading official National Weather Service alerts…</p>
+        <ul class="live-list" id="live-nws-list" hidden></ul>
+        <p class="live-foot"><a href="https://www.weather.gov/" target="_blank" rel="noopener">weather.gov</a> · <a href="/alerts/">County-level alerts</a></p>
+      </article>
+
+      <article class="live-card" aria-labelledby="live-nhc-heading">
+        <header class="live-card-head">
+          <div>
+            <h3 id="live-nhc-heading">Tropical systems</h3>
+            <p class="live-source">National Hurricane Center</p>
+          </div>
+        </header>
+        <time class="live-updated" id="live-nhc-updated" datetime="">Waiting for official status…</time>
+        <p class="live-status-msg" id="live-nhc-status">Loading official National Hurricane Center status…</p>
+        <ul class="live-list" id="live-nhc-list" hidden></ul>
+        <p class="live-foot"><a href="https://www.nhc.noaa.gov/" target="_blank" rel="noopener">hurricanes.gov</a></p>
+      </article>
+
+      <article class="live-card" aria-labelledby="live-maps-heading">
+        <header class="live-card-head">
+          <div>
+            <h3 id="live-maps-heading">Outages &amp; local offices</h3>
+            <p class="live-source">Official Mississippi maps and MEMA</p>
+          </div>
+        </header>
+        <time class="live-updated" id="live-maps-updated" datetime=""></time>
+        <p class="live-status-msg" data-kind="empty">There is no single public outage feed we can republish, and these official pages cannot be embedded. Open the map for your utility here.</p>
+        <ul class="live-list live-links">
+          {outageLinks.map((l) => (
+            <li class="live-item">
+              <a href={l.href} target="_blank" rel="noopener">{l.label}</a>
+              <span>{l.note}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="live-foot"><a href="/local/">County emergency offices and outage maps</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+<script>
+  import { initLiveStatus } from '../scripts/live-status';
+  initLiveStatus();
+</script>

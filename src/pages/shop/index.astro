@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
+import ShopTrust from '../../components/ShopTrust.astro';
 import { payhipProducts, PAYHIP_GUIDE_PRICE, PAYHIP_BUNDLE_PRICE } from '../../data/payhip';
 
 const schema = {
@@ -29,7 +30,8 @@ const schema = {
     </div>
   </section>
   <section class="wrap section">
-    <div class="grid">{payhipProducts.map((p) => <ProductCard product={p} />)}</div>
+    <ShopTrust />
+    <div class="grid shop-grid">{payhipProducts.map((p) => <ProductCard product={p} />)}</div>
   </section>
   <section class="wrap section prose">
     <h2>Questions people ask</h2>

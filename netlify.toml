@@ -9,3 +9,10 @@
   for = "/_astro/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Same-origin proxy for the official NHC CurrentStorms.json feed (no CORS on nhc.noaa.gov).
+[[redirects]]
+  from = "/feeds/nhc-current-storms.json"
+  to = "https://www.nhc.noaa.gov/CurrentStorms.json"
+  status = 200
+  force = true
