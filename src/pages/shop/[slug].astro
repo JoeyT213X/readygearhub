@@ -2,7 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import PayhipBuyButton from '../../components/PayhipBuyButton.astro';
 import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
-import { payhipProducts, hasPayhipId, type PayhipProduct } from '../../data/payhip';
+import { payhipProducts, type PayhipProduct } from '../../data/payhip';
+import { shopProductSchema } from '../../lib/shop-schema';
 
 export function getStaticPaths() {
   return payhipProducts.map((product) => ({ params: { slug: product.slug }, props: { product } }));
@@ -12,22 +13,7 @@ interface Props { product: PayhipProduct }
 const { product } = Astro.props;
 const url = new URL(`/shop/${product.slug}/`, Astro.site).href;
 const image = new URL(product.image, Astro.site).href;
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: product.title,
-  description: product.description,
-  image,
-  brand: { '@type': 'Brand', name: 'ReadyGearHub' },
-  offers: {
-    '@type': 'Offer',
-    price: product.priceAmount,
-    priceCurrency: 'USD',
-    availability: hasPayhipId(product) ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder',
-    url: hasPayhipId(product) ? `https://payhip.com/b/${product.productId}` : url,
-    seller: { '@type': 'Organization', name: 'ReadyGearHub' },
-  },
-};
+const schema = shopProductSchema(product, url, image);
 ---
 <Base title={`${product.title} | ReadyGearHub`} description={product.description} image={product.image} schema={schema} type="product">
   <section class="page-hero">
@@ -49,7 +35,7 @@ const schema = {
       <ul>
         {product.includes.map((item) => <li>{item}</li>)}
       </ul>
-      <p class="fine">Instant PDF download after checkout, through Payhip. Personal-use license. This is a planning tool, not professional, legal, or medical advice. Always follow official guidance and manufacturer safety instructions.</p>
+      <p class="fine">Instant PDF download after checkout, through Payhip. There is no physical shipment. Personal-use license. This is a planning tool, not professional, legal, or medical advice. Always follow official guidance and manufacturer safety instructions. Questions about an order: <a href="/contact/">contact us</a>.</p>
       <div class="card-actions" style="padding-top:16px">
         <PayhipBuyButton product={product} />
       </div>
