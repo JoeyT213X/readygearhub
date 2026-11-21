@@ -116,7 +116,7 @@ export const payhipProducts: PayhipProduct[] = [
       { q: 'Is anything about my family sent to ReadyGearHub?', a: 'No. It is a regular PDF file on your own device. Nothing you type is uploaded or seen by us.' },
       { q: 'Does it replace official alerts or 911?', a: 'No. It is a planning and reference tool. In a life-threatening emergency, call 911 or your local emergency number.' },
       { q: 'Can I print copies for the whole household?', a: 'Yes. The personal-use license lets you print as many copies as your household needs, for example one for the fridge and one for a go-bag.' },
-      { q: 'What if it is not right for me?', a: 'Start with the free printable checklist below, or the free All Accounted app. If something in the binder is wrong or unclear, write to us from the contact page and we will help.' },
+      { q: 'What if it is not right for me?', a: 'Start with the free printable checklist below, or the free All Accounted app. If something in the binder is wrong or unclear, write to us from the contact page and we will help. If a file is broken or does not work as described, we give a full refund or a replacement; see the refund policy. Change-of-mind refunds after a working download are not offered.' },
     ],
     freeSignup: true,
     related: [

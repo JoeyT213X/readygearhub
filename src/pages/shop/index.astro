@@ -25,10 +25,19 @@ const schema = {
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › Shop</nav>
       <h1>Shop</h1>
-      <p class="lead">Print-at-home ReadyGearHub guides, {PAYHIP_GUIDE_PRICE} each, or {PAYHIP_BUNDLE_PRICE} for all three together. Checkout is handled by Payhip, and you get an instant PDF download. These are our own digital products, not affiliate gear listings.</p>
+      <p class="lead">Print-at-home ReadyGearHub guides, {PAYHIP_GUIDE_PRICE} each, or {PAYHIP_BUNDLE_PRICE} for all three together. Checkout is handled by Payhip, and you get an instant PDF download. These are our own digital products, not affiliate gear listings. Digital downloads are a final sale, except if a file is broken or does not work as described. See the <a href="/refund-policy/">refund policy</a>.</p>
     </div>
   </section>
   <section class="wrap section">
     <div class="grid">{payhipProducts.map((p) => <ProductCard product={p} />)}</div>
+  </section>
+  <section class="wrap section prose">
+    <h2>Questions people ask</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Can I get a refund?</summary>
+        <p>Digital downloads are a final sale. If a file is broken, will not open or download, or does not work as described, we give a full refund, or a replacement if you prefer. See the <a href="/refund-policy/">refund policy</a>.</p>
+      </details>
+    </div>
   </section>
 </Base>

@@ -73,9 +73,27 @@ for (const file of pages) {
             issues.push({ rel, error: 'digital delivery times should be 0–0 days' });
           }
         }
-        // Return policy: we intentionally omit it until a real published policy exists.
-        if (o.hasMerchantReturnPolicy) {
-          issues.push({ rel, error: 'hasMerchantReturnPolicy is present; confirm it matches a published policy before shipping this' });
+        const ret = o.hasMerchantReturnPolicy;
+        if (!ret) issues.push({ rel, error: 'Offer missing hasMerchantReturnPolicy' });
+        else {
+          if (ret.applicableCountry !== 'US') issues.push({ rel, error: 'return applicableCountry should be US' });
+          if (ret.returnPolicyCategory !== 'https://schema.org/MerchantReturnUnlimitedWindow') {
+            issues.push({ rel, error: `returnPolicyCategory should be MerchantReturnUnlimitedWindow (defective refunds, no stated window), got ${ret.returnPolicyCategory}` });
+          }
+          if (ret.merchantReturnDays != null) issues.push({ rel, error: 'merchantReturnDays must not be invented' });
+          if (ret.merchantReturnLink !== 'https://readygearhub.com/refund-policy/') {
+            issues.push({ rel, error: `merchantReturnLink should be the refund policy URL, got ${ret.merchantReturnLink}` });
+          }
+          const refunds = Array.isArray(ret.refundType) ? ret.refundType : [ret.refundType];
+          if (!refunds.includes('https://schema.org/FullRefund')) issues.push({ rel, error: 'refundType should include FullRefund' });
+          const cond = ret.itemCondition;
+          const conds = Array.isArray(cond) ? cond : [cond];
+          if (!conds.includes('https://schema.org/DamagedCondition')) {
+            issues.push({ rel, error: 'itemCondition should include DamagedCondition (broken/unusable files only)' });
+          }
+          if (conds.includes('https://schema.org/NewCondition')) {
+            issues.push({ rel, error: 'itemCondition should not include NewCondition; working downloads are final sale' });
+          }
         }
       }
     }
@@ -97,4 +115,4 @@ if (shopProducts.length < 4) {
   console.error('Expected at least 4 shop Product pages');
   process.exit(1);
 }
-console.log('Schema checks passed: shop Products have 0-USD digital shippingDetails; no return-policy invention; no review/rating markup; no Offers on affiliate pages.');
+console.log('Schema checks passed: shop Products have 0-USD digital shippingDetails, defective-only return policy, no review/rating markup, no Offers on affiliate pages.');

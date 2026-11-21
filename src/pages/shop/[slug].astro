@@ -26,6 +26,7 @@ const schema = shopProductSchema(product, url, image);
         <PayhipBuyButton product={product} />
         <a class="btn ghost light" href="/shop/">All guides</a>
       </div>
+      <p class="fine light">Digital downloads are a final sale, except if a file is broken or does not work as described. <a href="/refund-policy/">Refund policy</a>.</p>
     </div>
   </section>
   <section class="wrap section product-detail">
@@ -35,7 +36,7 @@ const schema = shopProductSchema(product, url, image);
       <ul>
         {product.includes.map((item) => <li>{item}</li>)}
       </ul>
-      <p class="fine">Instant PDF download after checkout, through Payhip. There is no physical shipment. Personal-use license. This is a planning tool, not professional, legal, or medical advice. Always follow official guidance and manufacturer safety instructions. Questions about an order: <a href="/contact/">contact us</a>.</p>
+      <p class="fine">Instant PDF download after checkout, through Payhip. There is no physical shipment. Personal-use license. This is a planning tool, not professional, legal, or medical advice. Always follow official guidance and manufacturer safety instructions. Questions about an order: <a href="/contact/">contact us</a>. Digital downloads are a final sale, except if a file is broken or does not work as described. See the <a href="/refund-policy/">refund policy</a>.</p>
       <div class="card-actions" style="padding-top:16px">
         <PayhipBuyButton product={product} />
       </div>
@@ -47,14 +48,14 @@ const schema = shopProductSchema(product, url, image);
           </ol>
         </>
       )}
-      {product.faq && product.faq.length > 0 && (
-        <>
-          <h2>Questions people ask</h2>
-          <div class="faq-list">
-            {product.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
-          </div>
-        </>
-      )}
+      <h2>Questions people ask</h2>
+      <div class="faq-list">
+        {product.faq?.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+        <details>
+          <summary>Can I get a refund?</summary>
+          <p>Digital downloads are a final sale. If a file is broken, will not open or download, or does not work as described, we give a full refund, or a replacement if you prefer. See the <a href="/refund-policy/">refund policy</a>.</p>
+        </details>
+      </div>
       {product.freeSignup && (
         <MailerLiteSignup
           variant="card"

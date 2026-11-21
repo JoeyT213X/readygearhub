@@ -4,6 +4,7 @@ import site from '../data/site.json';
 import lanesRaw from '../data/lanes.json';
 import { mailerlite } from '../data/mailerlite';
 import { anyPayhipReady } from '../data/payhip';
+import { merchantReturnPolicy } from '../lib/shop-schema';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import Analytics from '../components/Analytics.astro';
 import FunnelGuards from '../components/FunnelGuards.astro';
@@ -30,6 +31,7 @@ const orgSchema = {
     postalCode: site.postalCode,
     addressCountry: site.addressCountry,
   },
+  hasMerchantReturnPolicy: merchantReturnPolicy(),
 };
 const year = new Date().getFullYear();
 const path = Astro.url.pathname;
@@ -173,6 +175,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
           <li><a href="/get-featured/">List your business</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+          <li><a href="/refund-policy/">Refund Policy</a></li>
           <li><a href="/privacy/">Privacy</a></li>
         </ul>
       </div>

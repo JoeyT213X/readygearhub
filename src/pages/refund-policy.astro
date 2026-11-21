@@ -1,0 +1,24 @@
+---
+import RelatedLinks from '../components/RelatedLinks.astro';
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+---
+<Base title="Refund Policy | ReadyGearHub" description="Refund policy for ReadyGearHub digital downloads: sales are final, except a full refund or replacement if a file is broken or does not work as described.">
+  <section class="page-hero"><div class="wrap"><h1>Refund Policy</h1><p class="fine light">Effective November 21, 2026</p></div></section>
+  <section class="wrap section prose">
+    <p>ReadyGearHub is operated by {site.legalName}, {site.streetAddress}, {site.addressLocality}, {site.addressRegion} {site.postalCode}. You can reach us at <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or through our <a href="/contact/">contact page</a>.</p>
+    <p>This policy covers ReadyGearHub's own digital downloads sold in the <a href="/shop/">shop</a> — printable guides and planners delivered as instant PDF or ZIP files after checkout through Payhip. It does not cover products sold by other retailers that we may link to.</p>
+    <h2>Final sale</h2>
+    <p>Digital downloads are a final sale. We do not offer a refund because you changed your mind, bought a different guide than you meant to, or no longer want the file after it has been delivered.</p>
+    <h2>Broken or unusable files</h2>
+    <p>If a file is broken, will not open or download, or does not work as described, we will give you a full refund, or a replacement file if you prefer.</p>
+    <h2>How to request a refund or replacement</h2>
+    <p>Email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or use the <a href="/contact/">contact page</a>, and include your order details — for example the product name and the email address used at checkout. We aim to reply within 2 business days.</p>
+  </section>
+  <RelatedLinks links={[
+    { href: "/shop/", icon: "🛒", title: "Shop", text: "Printable ReadyGearHub guides and planners." },
+    { href: "/contact/", icon: "💬", title: "Contact us", text: "Ask about an order or request a refund or replacement." },
+    { href: "/privacy/", icon: "🔒", title: "Privacy policy", text: "What we collect and your choices." },
+    { href: "/affiliate-disclosure/", icon: "🏷️", title: "Affiliate disclosure", text: "How affiliate links work on this site." },
+  ]} />
+</Base>
