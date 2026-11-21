@@ -7,11 +7,11 @@ import ComingSoonPartners from '../../components/ComingSoonPartners.astro';
 import {
   sourceCategories,
   sourceStores,
-  resolvedSourceItems,
-  itemsInCategory,
   comingSoonFor,
   categoryBySlug,
 } from '../../data/source-directory';
+import { getItems } from '../../lib/data';
+import { buildFullCatalog } from '../../data/full-catalog';
 
 export function getStaticPaths() {
   return sourceCategories.map((c) => ({ params: { category: c.slug } }));
@@ -21,8 +21,8 @@ const slug = Astro.params.category as string;
 const category = categoryBySlug(slug);
 if (!category) throw new Error(`Unknown directory category: ${slug}`);
 
-const all = resolvedSourceItems();
-const items = itemsInCategory(category.id, all);
+const all = buildFullCatalog(await getItems());
+const items = all.filter((i) => i.category === category.id || (i.alsoIn ?? []).includes(category.id));
 const pending = comingSoonFor(category.id);
 const storesInCat = sourceStores().filter((s) => items.some((i) => i.programId === s.id));
 
@@ -84,7 +84,7 @@ const schema = {
           {items.map((item) => <SourceCard item={item} />)}
         </div>
       ) : (
-        <p>No approved partner listings in this category yet.</p>
+        <p>No listings in this category yet. Partners still on the way are listed below.</p>
       )}
       <ComingSoonPartners partners={pending} />
     </section>

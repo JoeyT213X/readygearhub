@@ -6,9 +6,12 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
   const catBtns = [...bar.querySelectorAll<HTMLButtonElement>('[data-filter-cat]')];
   const srcBtns = [...bar.querySelectorAll<HTMLButtonElement>('[data-filter-src]')];
   const live = bar.querySelector<HTMLElement>('[data-filter-status]');
+  const moreBtn = root.querySelector<HTMLButtonElement>('[data-load-more]');
+  const pageSize = Number(bar.getAttribute('data-page-size') || '0') || 0;
 
   let cat = bar.getAttribute('data-current-cat') || 'all';
   let src = 'all';
+  let shown = pageSize || Number.POSITIVE_INFINITY;
 
   function hashFilter(): string | null {
     if (typeof location === 'undefined') return null;
@@ -22,6 +25,7 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
   if (fromHash) cat = fromHash;
 
   function apply() {
+    let matches = 0;
     let visible = 0;
     for (const card of cards()) {
       const c = card.getAttribute('data-category') || '';
@@ -36,7 +40,9 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
         also.includes(cat) ||
         groups.includes(cat);
       const srcOk = src === 'all' || s === src;
-      const show = catOk && srcOk;
+      const match = catOk && srcOk;
+      if (match) matches += 1;
+      const show = match && matches <= shown;
       card.hidden = !show;
       if (show) visible += 1;
     }
@@ -54,15 +60,32 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
     if (live) {
       const catLabel = catBtns.find((b) => b.getAttribute('data-filter-cat') === cat)?.textContent?.trim() || cat;
       const srcLabel = srcBtns.find((b) => b.getAttribute('data-filter-src') === src)?.textContent?.trim() || src;
-      live.textContent = `${visible} ${visible === 1 ? 'listing' : 'listings'} · ${catLabel} · ${srcLabel}`;
+      const extra = matches > visible ? ` · showing ${visible}` : '';
+      live.textContent = `${matches} ${matches === 1 ? 'listing' : 'listings'} · ${catLabel} · ${srcLabel}${extra}`;
+    }
+    if (moreBtn) {
+      const remaining = Math.max(0, matches - visible);
+      moreBtn.hidden = remaining === 0;
+      moreBtn.textContent = remaining > 0 ? `Load more (${remaining} left)` : 'Load more';
     }
   }
 
   bar.addEventListener('click', (e) => {
     const t = (e.target as HTMLElement).closest('button');
     if (!t || !bar.contains(t)) return;
-    if (t.hasAttribute('data-filter-cat')) cat = t.getAttribute('data-filter-cat') || 'all';
-    if (t.hasAttribute('data-filter-src')) src = t.getAttribute('data-filter-src') || 'all';
+    if (t.hasAttribute('data-filter-cat')) {
+      cat = t.getAttribute('data-filter-cat') || 'all';
+      shown = pageSize || Number.POSITIVE_INFINITY;
+    }
+    if (t.hasAttribute('data-filter-src')) {
+      src = t.getAttribute('data-filter-src') || 'all';
+      shown = pageSize || Number.POSITIVE_INFINITY;
+    }
+    apply();
+  });
+
+  moreBtn?.addEventListener('click', () => {
+    shown += pageSize || 48;
     apply();
   });
 
@@ -70,6 +93,7 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
     const next = hashFilter();
     if (next) {
       cat = next;
+      shown = pageSize || Number.POSITIVE_INFINITY;
       apply();
       document.getElementById('listings')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }

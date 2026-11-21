@@ -7,25 +7,32 @@ import Photo from '../components/Photo.astro';
 import LiveStatus from '../components/LiveStatus.astro';
 import SourceCard from '../components/SourceCard.astro';
 import DirectoryGroupTile from '../components/DirectoryGroupTile.astro';
-import { getGuides, site } from '../lib/data';
-import { sourceGroups, trendingSourceItems, countsByGroup, resolvedSourceItems } from '../data/source-directory';
+import { getGuides, getItems, site } from '../lib/data';
+import { sourceGroups } from '../data/source-directory';
 import { mailerlite } from '../data/mailerlite';
+import { payhipProducts } from '../data/payhip';
+import { photoForGuide } from '../data/images';
+import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
+import { buildFullCatalog, homeShopPicks, catalogPhotoUrls, countsByCatalogGroup } from '../data/full-catalog';
+import { prepperLanes, featuredPrepperPicks, resolvedPrepperPicks, prepperPickToCatalogItem } from '../data/prepper-picks';
 
 const guides = await getGuides();
 const guideById = Object.fromEntries(guides.map((g) => [g.id, g]));
 const featuredIds = ['winter-storm-power-outage-prep-guide-south', 'winter-power-outage-checklist', 'emergency-water-storage', 'generator-vs-power-station', 'how-to-stay-warm-without-power'];
 const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean)];
 
-const sourceCatalog = resolvedSourceItems();
-const sourceTrending = trendingSourceItems(sourceCatalog).slice(0, 8);
-const groupCounts = countsByGroup(sourceCatalog);
-
-const collage = [
-  { id: 'directory', href: '/directory/', title: 'Shop the Directory', text: 'Partner stores and our downloads, in one catalog.', photo: null as string | null, image: '/directory/photos/bluetti-elite-200-v2.webp', feature: true },
-  { id: 'guides', href: '/guides/', title: 'Guides', text: 'Checklists and how-tos in plain English.', photo: 'checklist-writing', image: null as string | null, feature: false },
-  { id: 'tools', href: '/tools/', title: 'Free tools & apps', text: 'Calculators and offline tools. No account needed.', photo: 'power-banks', image: null, feature: false },
-  { id: 'downloads', href: '/shop/', title: 'Our Downloads', text: 'Print-at-home planners and binders.', photo: 'gear-flatlay', image: null, feature: false },
-  { id: 'local', href: '/local/', title: 'Local & county info', text: 'Mississippi offices, shelters, and outage maps.', photo: 'lightning-road', image: null, feature: false },
+const catalog = buildFullCatalog(await getItems());
+const shopPicks = homeShopPicks(catalog, 16);
+const shopPhotos = catalogPhotoUrls(catalog, 6);
+const groupCounts = countsByCatalogGroup(catalog);
+const prepperFeatured = featuredPrepperPicks();
+const prepperCount = resolvedPrepperPicks().length;
+const toolTeasers = [...CALCULATORS.slice(0, 2), ...OFFLINE_APPS.slice(0, 2)];
+const localTeasers = [
+  { href: '/local/mississippi/', label: 'Mississippi' },
+  { href: '/local/mississippi/hancock/', label: 'Hancock County' },
+  { href: '/local/mississippi/harrison/', label: 'Harrison County' },
+  { href: '/local/mississippi/jackson/', label: 'Jackson County' },
 ];
 
 const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url };
@@ -40,6 +47,7 @@ const navList = {
     { '@type': 'ListItem', position: 4, url: new URL('/alerts/', Astro.site).href, name: 'Live official alerts' },
     { '@type': 'ListItem', position: 5, url: new URL('/shop/', Astro.site).href, name: 'Our Downloads' },
     { '@type': 'ListItem', position: 6, url: new URL('/local/', Astro.site).href, name: 'Local and county info' },
+    { '@type': 'ListItem', position: 7, url: new URL('/prepper-picks/', Astro.site).href, name: 'Prepper’s Picks' },
   ],
 };
 ---
@@ -59,38 +67,98 @@ const navList = {
 
   <div class="wrap home-collage">
     <nav class="bento" aria-label="What's on ReadyGearHub">
-      {collage.map((tile) => (
-        <a class:list={['bento-tile', tile.feature && 'is-feature']} href={tile.href}>
-          {tile.image ? (
-            <img src={tile.image} alt="" width="800" height="800" loading="eager" decoding="async" />
-          ) : (
-            <Photo name={tile.photo!} decorative sizes={tile.feature ? '(min-width: 900px) 50vw, 100vw' : '(min-width: 900px) 25vw, 50vw'} />
-          )}
-          <span class="bento-tile-body">
-            <span class="bento-kicker">Explore</span>
-            <span class="bento-title">{tile.title}</span>
-            <span class="bento-text">{tile.text}</span>
+      <a class="bento-tile is-feature" href="/directory/">
+        <span class="bento-mosaic" aria-hidden="true">
+          {shopPhotos.map((src) => (
+            <img src={src} alt="" width="400" height="400" loading="eager" decoding="async" />
+          ))}
+        </span>
+        <span class="bento-tile-body">
+          <span class="bento-kicker">Explore</span>
+          <span class="bento-title">Shop the Directory</span>
+          <span class="bento-text">{catalog.length} listings from partner stores, gear write-ups, downloads, and free tools.</span>
+        </span>
+      </a>
+
+      <a class="bento-tile" href="/guides/">
+        <Photo name="checklist-writing" decorative sizes="(min-width: 900px) 25vw, 50vw" />
+        <span class="bento-thumbs" aria-hidden="true">
+          {featured.slice(0, 4).map((g) => (
+            <span class="bento-thumb">
+              <Photo name={photoForGuide(g.id, g.data.lane)} decorative sizes="120px" />
+            </span>
+          ))}
+        </span>
+        <span class="bento-tile-body">
+          <span class="bento-kicker">Explore</span>
+          <span class="bento-title">Guides</span>
+          <span class="bento-text">Checklists and how-tos in plain English.</span>
+        </span>
+      </a>
+
+      <a class="bento-tile" href="/tools/">
+        <Photo name="power-banks" decorative sizes="(min-width: 900px) 25vw, 50vw" />
+        <span class="bento-tile-body">
+          <span class="bento-kicker">Explore</span>
+          <span class="bento-title">Free tools &amp; apps</span>
+          <span class="bento-text">Calculators and offline tools. No account needed.</span>
+          <span class="bento-mini-list" aria-hidden="true">
+            {toolTeasers.map((t) => <span>{t.icon} {t.name}</span>)}
           </span>
-        </a>
-      ))}
+        </span>
+      </a>
+
+      <a class="bento-tile" href="/shop/">
+        <Photo name="gear-flatlay" decorative sizes="(min-width: 900px) 25vw, 50vw" />
+        <span class="bento-thumbs is-covers" aria-hidden="true">
+          {payhipProducts.slice(0, 4).map((p) => (
+            <span class="bento-thumb"><img src={p.image} alt="" width="200" height="120" loading="lazy" decoding="async" /></span>
+          ))}
+        </span>
+        <span class="bento-tile-body">
+          <span class="bento-kicker">Explore</span>
+          <span class="bento-title">Our Downloads</span>
+          <span class="bento-text">Print-at-home planners and binders.</span>
+        </span>
+      </a>
+
+      <a class="bento-tile" href="/local/">
+        <Photo name="lightning-road" decorative sizes="(min-width: 900px) 25vw, 50vw" />
+        <span class="bento-tile-body">
+          <span class="bento-kicker">Explore</span>
+          <span class="bento-title">Local &amp; county info</span>
+          <span class="bento-text">Mississippi offices, shelters, and outage maps.</span>
+          <span class="bento-mini-list" aria-hidden="true">
+            {localTeasers.map((l) => <span>{l.label}</span>)}
+          </span>
+        </span>
+      </a>
     </nav>
   </div>
 
   <LiveStatus compact />
 
   <section class="wrap section tight" id="directory">
-    <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro="Five broad groups from partner stores we already work with. Open the directory for the full catalog." href="/directory/" linkLabel="Open the directory" />
+    <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro={`The full catalog: partner stores, gear listings, downloads, and free tools. ${catalog.length} listings in all.`} href="/directory/" linkLabel="Open the directory" />
     <Disclosure />
     <div class="grid five group-grid">{sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}</div>
-    {sourceTrending.length > 0 && (
-      <div class="trend-block">
-        <h3 class="trend-label">Trending now</h3>
-        <div class="trend-row" tabindex="0" aria-label="Trending directory listings">
-          {sourceTrending.map((item) => <SourceCard item={item} />)}
-        </div>
-        <p class="fine trend-more"><a href="/directory/#listings">See all listings in the directory</a></p>
-      </div>
-    )}
+    <div class="grid shop-grid source-grid home-shop-grid" style="margin-top:28px">
+      {shopPicks.map((item) => <SourceCard item={item} />)}
+    </div>
+    <p class="fine trend-more"><a href="/directory/#listings">See all {catalog.length} listings in the directory</a></p>
+  </section>
+
+  <section class="wrap section tight" id="preppers-picks">
+    <SectionHead kicker="Prepper’s Picks" title="Built for a 72-hour bag, and a longer pantry" intro="Gear many households already keep on hand, from stored water and a three-day food kit up through a longer supply, backup power, radios, first aid, and the documents you want on paper. Some links are partner links; others go straight to the official page until a program is approved." href="/prepper-picks/" linkLabel="See all picks" />
+    <nav class="prepper-lanes" aria-label="Prepper’s Picks categories">
+      {prepperLanes.map((lane) => (
+        <a class="prepper-lane-chip" href={`/prepper-picks/#${lane.id}`}>{lane.name}</a>
+      ))}
+    </nav>
+    <div class="grid shop-grid source-grid home-shop-grid">
+      {prepperFeatured.map((pick) => <SourceCard item={prepperPickToCatalogItem(pick)} />)}
+    </div>
+    <p class="fine trend-more"><a href="/prepper-picks/">See all {prepperCount} Prepper’s Picks</a></p>
   </section>
 
   <section class="wrap section tight" id="guides">

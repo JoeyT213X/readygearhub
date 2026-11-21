@@ -1,39 +1,63 @@
 ---
-import type { ResolvedSourceItem } from '../data/source-directory';
-import { sourceGroups, itemMatchesGroup } from '../data/source-directory';
-interface Props { item: ResolvedSourceItem; heading?: 'h2' | 'h3' }
+import type { CatalogItem } from '../data/full-catalog';
+interface Props { item: CatalogItem; heading?: 'h2' | 'h3' }
 const { item, heading = 'h3' } = Astro.props;
 const Tag = heading;
-const isInternal = item.href.startsWith('/');
-const kindClass = item.imageKind ? ` is-${item.imageKind}` : '';
-const groups = sourceGroups.filter((g) => itemMatchesGroup(item, g)).map((g) => g.id).join(' ');
+const titleHref = item.detailHref || item.href;
+const ctaHref = item.href;
+const titleInternal = titleHref.startsWith('/');
+const ctaInternal = ctaHref.startsWith('/');
+const titleRel = titleInternal ? undefined : (item.rel || undefined);
+const ctaRel = ctaInternal ? undefined : (item.rel || undefined);
+const coverClass = [
+  item.imageKind ? ` is-${item.imageKind}` : '',
+  item.image ? '' : ' is-text',
+  item.kind === 'tool' ? ' is-free' : '',
+].join('');
+const sourceFilter = item.kind === 'resource' ? 'official' : item.kind === 'tool' ? 'rgh-tools' : item.programId;
+const badge = item.trending
+  ? 'Trending'
+  : item.offerLabel === 'Instant PDF'
+    ? 'Instant PDF'
+    : item.kind === 'tool'
+      ? 'Free'
+      : item.kind === 'resource'
+        ? 'Free resource'
+        : undefined;
 ---
 <article
-  class={`card item-card product-card source-card${kindClass}`}
-  data-program={item.affiliate ? item.programId : undefined}
+  class={`card item-card product-card source-card${coverClass}`}
+  data-program={item.affiliate && item.programId ? item.programId : undefined}
   data-no-ppc={item.hideOnPaid ? '' : undefined}
   data-category={item.category}
-  data-also={ (item.alsoIn ?? []).join(' ') }
-  data-source={item.programId}
+  data-also={(item.alsoIn ?? []).join(' ')}
+  data-source={sourceFilter || undefined}
+  data-kind={item.kind}
   data-trending={item.trending ? '1' : undefined}
-  data-groups={groups || undefined}
+  data-groups={item.groups.join(' ') || undefined}
 >
-  <a class="product-cover" href={item.href} aria-label={item.title} tabindex="-1" target={isInternal ? undefined : '_blank'} rel={item.rel || undefined}>
-    {item.trending && <span class="badge">Trending</span>}
-    {!item.trending && item.offerLabel === 'Instant PDF' && <span class="badge">Instant PDF</span>}
-    <img src={item.image} alt="" width="640" height="360" loading="lazy" decoding="async" class={item.imageKind ? "source-fit" : undefined} />
+  <a class="product-cover" href={titleHref} aria-label={item.title} tabindex="-1" target={titleInternal ? undefined : '_blank'} rel={titleRel}>
+    {badge && <span class="badge">{badge}</span>}
+    {item.image ? (
+      <img src={item.image} alt="" width="640" height="360" loading="lazy" decoding="async" class={item.imageKind ? 'source-fit' : undefined} />
+    ) : (
+      <span class="source-cover-label">
+        <span class="source-cover-kicker">{item.sourceName}</span>
+        <span class="source-cover-title">{item.title}</span>
+      </span>
+    )}
   </a>
   <p class="product-meta">{item.sourceName}{item.offerLabel ? ` · ${item.offerLabel}` : ''}</p>
-  <Tag><a href={item.href} target={isInternal ? undefined : '_blank'} rel={item.rel || undefined}>{item.title}</a></Tag>
+  <Tag><a href={titleHref} target={titleInternal ? undefined : '_blank'} rel={titleRel}>{item.title}</a></Tag>
   <p class="product-price">{item.priceLabel}</p>
   <p>{item.blurb}</p>
   <div class="card-actions">
     <a
       class="btn small"
-      href={item.href}
-      target={isInternal ? undefined : '_blank'}
-      rel={item.rel || undefined}
-      data-program={item.affiliate ? item.programId : undefined}
-    >{item.ctaLabel}{isInternal ? '' : ' ↗'}</a>
+      href={ctaHref}
+      target={ctaInternal ? undefined : '_blank'}
+      rel={ctaRel}
+      data-program={item.affiliate && item.programId ? item.programId : undefined}
+    >{item.ctaLabel}{ctaInternal ? '' : ' ↗'}</a>
   </div>
 </article>

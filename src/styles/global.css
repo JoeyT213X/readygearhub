@@ -120,6 +120,7 @@ html.menu-open body{position:fixed;left:0;right:0;overflow:hidden;width:100%}
 .card h3{margin:.3em 0 .15em;font-size:var(--fs-h3);line-height:1.3}
 .card h3 a{color:var(--ink);text-decoration:none}.card h3 a:hover{text-decoration:underline}
 .item-card{display:flex;flex-direction:column}
+.item-card[hidden],.source-card[hidden]{display:none!important}
 .item-card p{margin:.4em 0;font-size:.95rem}
 .brand{color:var(--muted);font-size:.88rem!important;margin:0!important;font-weight:600}
 .uses{color:var(--muted)}
@@ -417,20 +418,19 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
 /* Home collage (bento) overlaps the hero slightly. */
 .home-collage{margin-top:-36px;position:relative;z-index:2;padding-bottom:4px}
 .bento{display:grid;gap:12px;grid-template-columns:1fr}
-.bento-tile{position:relative;display:flex;align-items:flex-end;overflow:hidden;border-radius:var(--radius);color:#fff;text-decoration:none;min-height:170px;background:#0e2433;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.bento-tile{position:relative;display:flex;align-items:flex-end;overflow:hidden;border-radius:var(--radius);color:#fff;text-decoration:none;min-height:200px;background:#0e2433;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
 .bento-tile:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);color:#fff}
-.bento-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.bento-tile.is-feature img{object-fit:contain;object-position:center 40%;background:#eef2f5;padding:18px 18px 48px}
-.bento-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,25,38,.08) 20%,rgba(9,25,38,.82) 100%);z-index:0;pointer-events:none}
-.bento-tile-body{position:relative;z-index:1;padding:16px 18px;display:flex;flex-direction:column;width:100%}
+.bento-tile > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0}
+.bento-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,25,38,.12) 28%,rgba(9,25,38,.9) 100%);z-index:1;pointer-events:none}
+.bento-tile-body{position:relative;z-index:3;padding:16px 18px;display:flex;flex-direction:column;width:100%}
 .bento-kicker{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#f6b98c}
 .bento-title{font-size:1.2rem;font-weight:800;color:#fff;margin-top:2px;line-height:1.2}
-.bento-tile.is-feature{min-height:230px}
+.bento-tile.is-feature{min-height:260px}
 .bento-tile.is-feature .bento-title{font-size:clamp(1.35rem,2.8vw,1.8rem)}
 .bento-text{color:#e3f1f9;font-size:.9rem;margin-top:4px;max-width:36ch}
 @media(min-width:720px){
-  .bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(150px,1fr)}
-  .bento-tile.is-feature{grid-column:1 / span 2;grid-row:1 / span 2;min-height:320px}
+  .bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(190px,1fr)}
+  .bento-tile.is-feature{grid-column:1 / span 2;grid-row:1 / span 2;min-height:400px}
 }
 @media(prefers-reduced-motion:reduce){.bento-tile:hover{transform:none}}
 
@@ -468,3 +468,29 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
 .guide-compact li{border-bottom:1px solid var(--line);margin:0}
 .guide-compact a{display:block;padding:12px 4px;font-weight:700;text-decoration:none;color:var(--ink)}
 .guide-compact a:hover{color:var(--navy);text-decoration:underline}
+
+/* Home collage: several items inside each tile */
+.bento-mosaic{position:absolute;inset:0;z-index:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:6px;padding:10px 10px 108px;background:#e8eef2}
+.bento-mosaic img{position:relative;inset:auto;width:100%;height:100%;object-fit:contain;object-position:center;background:#fff;border-radius:8px;padding:6px;box-shadow:0 1px 3px rgba(15,42,61,.12)}
+.bento-tile.is-feature::after{background:linear-gradient(180deg,rgba(9,25,38,0) 42%,rgba(9,25,38,.92) 100%)}
+.bento-thumbs{position:absolute;top:10px;left:10px;right:10px;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;pointer-events:none}
+.bento-thumb{position:relative;display:block;aspect-ratio:1;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.45);background:#fff}
+.bento-thumb img{position:relative;inset:auto;width:100%;height:100%;object-fit:cover;display:block;padding:0;background:transparent}
+.bento-thumbs.is-covers .bento-thumb{aspect-ratio:16/10}
+.bento-thumbs.is-covers .bento-thumb img{object-fit:contain;padding:3px;background:#fff}
+.bento-mini-list{position:static;z-index:3;display:flex;flex-direction:column;gap:4px;margin-top:8px;pointer-events:none}
+.bento-mini-list span{background:rgba(255,255,255,.14);color:#fff;border-radius:8px;padding:4px 8px;font-size:.75rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Text-only catalog covers (gear and brand cards without a licensed photo) */
+.source-card.is-text .product-cover{aspect-ratio:16/9;background:linear-gradient(165deg,#1a3c54 0%,#0f2a3d 75%);display:flex;align-items:stretch}
+.source-cover-label{display:flex;flex-direction:column;justify-content:flex-end;width:100%;padding:16px;color:#fff;box-sizing:border-box}
+.source-cover-kicker{font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#f6b98c}
+.source-cover-title{font-size:1.05rem;font-weight:800;color:#fff;margin-top:4px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.source-card.is-free .product-cover{background:linear-gradient(165deg,#1b4a3a 0%,#12362c 75%)}
+.dir-more{margin:18px 0 8px;text-align:center}
+.home-shop-grid{margin-top:28px}
+
+/* Prepper's Picks */
+.prepper-lanes{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 18px}
+.prepper-lane-chip{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--paper,#fff);border:1px solid var(--line,#d5dde3);color:var(--navy,#0f2a3d);text-decoration:none;font-size:.82rem;font-weight:700}
+.prepper-lane-chip:hover{border-color:var(--navy,#0f2a3d);color:var(--navy,#0f2a3d)}
