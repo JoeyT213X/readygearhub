@@ -120,6 +120,7 @@ html.menu-open body{position:fixed;left:0;right:0;overflow:hidden;width:100%}
 .card h3{margin:.3em 0 .15em;font-size:var(--fs-h3);line-height:1.3}
 .card h3 a{color:var(--ink);text-decoration:none}.card h3 a:hover{text-decoration:underline}
 .item-card{display:flex;flex-direction:column}
+.item-card[hidden],.source-card[hidden]{display:none!important}
 .item-card p{margin:.4em 0;font-size:.95rem}
 .brand{color:var(--muted);font-size:.88rem!important;margin:0!important;font-weight:600}
 .uses{color:var(--muted)}
@@ -371,3 +372,125 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
   .card,.btn,.product-card .product-cover img{transition:none}
   a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hover,.btn:hover{transform:none}
 }
+
+/* —— Full Source Directory (shopping catalog) —— */
+.dir-filters{margin:0 0 28px}
+.filter-row{margin:0 0 12px}
+.filter-label{font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.filter-pills{display:flex;flex-wrap:wrap;gap:8px}
+.filter-pills .pill{background:#fff;border:1px solid var(--line);color:var(--ink);cursor:pointer;font:inherit;font-size:.88rem;font-weight:600;padding:8px 12px;min-height:40px}
+.filter-pills .pill:hover{border-color:var(--line-2)}
+.filter-pills .pill[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.store-row{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.store-pill{background:#fff;border:1px solid var(--line);color:var(--ink);padding:8px 14px;font-size:.92rem}
+.store-pill:hover{border-color:var(--line-2);color:var(--ink)}
+.dir-section{margin-top:var(--s7)}
+.dir-section > .section-head{margin-bottom:16px}
+.dir-nav{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.coming-soon-panel{margin-top:22px;background:var(--paper);border:1px dashed var(--line-2);border-radius:var(--radius);padding:18px 20px}
+.coming-soon-panel h3{margin:0 0 6px;font-size:1.05rem}
+.coming-soon-panel p{margin:0 0 12px;color:var(--muted)}
+.coming-soon-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.coming-soon-list li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;display:inline-flex;gap:8px;align-items:baseline}
+.coming-soon-list li span{color:var(--muted);font-size:.82rem}
+.source-card .product-meta{margin:0 0 2px}
+/* Affiliate product photos, banners, and logos: contain on the light cover so they are not cropped. SVG placeholders and Payhip covers keep object-fit: cover. */
+.source-card .product-cover img.source-fit{object-fit:contain;object-position:center center;background:#eef2f5}
+.source-card.is-photo .product-cover img{padding:8px}
+.source-card.is-banner .product-cover img{padding:0}
+.source-card.is-logo .product-cover img{padding:12% 16%}
+.source-card.is-photo:hover .product-cover img,
+.source-card.is-banner:hover .product-cover img,
+.source-card.is-logo:hover .product-cover img{transform:none}
+.cat-tile-grid{margin-top:8px}
+.source-teaser{display:grid;gap:16px}
+@media(min-width:900px){.source-teaser{grid-template-columns:1.1fr 1.4fr;align-items:start}}
+.source-teaser-tiles{margin:0}
+
+/* Compact home hero: photo is the main visual, less copy, less height. */
+.hero.is-compact{min-height:min(48vh,400px);display:flex;align-items:flex-end}
+.hero.is-compact .hero-inner{padding:40px 20px 64px;width:100%}
+.hero.is-compact h1{max-width:16ch;margin:.1em 0 .25em}
+.hero.is-compact .lead{max-width:42ch;margin:0;font-size:1.05rem}
+.hero.is-compact .hero-actions{margin-top:16px}
+.hero.is-compact .hero-media::after{background:linear-gradient(180deg,rgba(9,25,38,.18) 0%,rgba(9,25,38,.32) 45%,rgba(9,25,38,.88) 100%)}
+
+/* Home collage (bento) overlaps the hero slightly. */
+.home-collage{margin-top:-36px;position:relative;z-index:2;padding-bottom:4px}
+.bento{display:grid;gap:12px;grid-template-columns:1fr}
+.bento-tile{position:relative;display:flex;align-items:flex-end;overflow:hidden;border-radius:var(--radius);color:#fff;text-decoration:none;min-height:200px;background:#0e2433;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.bento-tile:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);color:#fff}
+.bento-tile > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0}
+.bento-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,25,38,.12) 28%,rgba(9,25,38,.9) 100%);z-index:1;pointer-events:none}
+.bento-tile-body{position:relative;z-index:3;padding:16px 18px;display:flex;flex-direction:column;width:100%}
+.bento-kicker{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#f6b98c}
+.bento-title{font-size:1.2rem;font-weight:800;color:#fff;margin-top:2px;line-height:1.2}
+.bento-tile.is-feature{min-height:260px}
+.bento-tile.is-feature .bento-title{font-size:clamp(1.35rem,2.8vw,1.8rem)}
+.bento-text{color:#e3f1f9;font-size:.9rem;margin-top:4px;max-width:36ch}
+@media(min-width:720px){
+  .bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(190px,1fr)}
+  .bento-tile.is-feature{grid-column:1 / span 2;grid-row:1 / span 2;min-height:400px}
+}
+@media(prefers-reduced-motion:reduce){.bento-tile:hover{transform:none}}
+
+/* Compact live official status strip */
+.live-dash.is-compact{background:var(--paper);border-top:0}
+.live-dash.is-compact .live-compact-wrap{padding:10px 20px 18px}
+.live-compact-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 16px;margin:0 0 10px}
+.live-compact-head h2{margin:0;font-size:1.2rem}
+.live-compact-head p{margin:.25em 0 0;color:var(--muted);font-size:.9rem;max-width:62ch}
+.live-dash.is-compact .live-grid{gap:10px}
+.live-dash.is-compact .live-card{padding:10px 12px;box-shadow:none}
+.live-dash.is-compact .live-card h3{font-size:.98rem}
+.live-dash.is-compact .live-source{display:none}
+.live-dash.is-compact .live-list.is-ticker{max-height:8.75rem;overflow:auto}
+.live-dash.is-compact .live-links{max-height:none;overflow:visible}
+.live-dash.is-compact .live-item{padding:6px 8px}
+.live-dash.is-compact .live-item span{display:none}
+.live-dash.is-compact .live-foot{margin-top:8px;padding-top:8px}
+@media(min-width:800px){
+  .live-dash.is-compact .live-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+/* Five-group directory tiles + trending carousel */
+@media(min-width:640px){.grid.five{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid.five{grid-template-columns:repeat(5,1fr)}}
+.group-grid{margin-top:8px}
+.trend-block{margin-top:28px}
+.trend-label{margin:0 0 12px;font-size:1.05rem}
+.trend-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 16px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.trend-row .source-card{flex:0 0 min(300px,78vw);scroll-snap-align:start;margin:0}
+.trend-more{margin:0}
+
+/* Compact home guide list */
+.guide-compact{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.guide-compact li{border-bottom:1px solid var(--line);margin:0}
+.guide-compact a{display:block;padding:12px 4px;font-weight:700;text-decoration:none;color:var(--ink)}
+.guide-compact a:hover{color:var(--navy);text-decoration:underline}
+
+/* Home collage: several items inside each tile */
+.bento-mosaic{position:absolute;inset:0;z-index:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:6px;padding:10px 10px 108px;background:#e8eef2}
+.bento-mosaic img{position:relative;inset:auto;width:100%;height:100%;object-fit:contain;object-position:center;background:#fff;border-radius:8px;padding:6px;box-shadow:0 1px 3px rgba(15,42,61,.12)}
+.bento-tile.is-feature::after{background:linear-gradient(180deg,rgba(9,25,38,0) 42%,rgba(9,25,38,.92) 100%)}
+.bento-thumbs{position:absolute;top:10px;left:10px;right:10px;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;pointer-events:none}
+.bento-thumb{position:relative;display:block;aspect-ratio:1;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.45);background:#fff}
+.bento-thumb img{position:relative;inset:auto;width:100%;height:100%;object-fit:cover;display:block;padding:0;background:transparent}
+.bento-thumbs.is-covers .bento-thumb{aspect-ratio:16/10}
+.bento-thumbs.is-covers .bento-thumb img{object-fit:contain;padding:3px;background:#fff}
+.bento-mini-list{position:static;z-index:3;display:flex;flex-direction:column;gap:4px;margin-top:8px;pointer-events:none}
+.bento-mini-list span{background:rgba(255,255,255,.14);color:#fff;border-radius:8px;padding:4px 8px;font-size:.75rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Text-only catalog covers (gear and brand cards without a licensed photo) */
+.source-card.is-text .product-cover{aspect-ratio:16/9;background:linear-gradient(165deg,#1a3c54 0%,#0f2a3d 75%);display:flex;align-items:stretch}
+.source-cover-label{display:flex;flex-direction:column;justify-content:flex-end;width:100%;padding:16px;color:#fff;box-sizing:border-box}
+.source-cover-kicker{font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#f6b98c}
+.source-cover-title{font-size:1.05rem;font-weight:800;color:#fff;margin-top:4px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.source-card.is-free .product-cover{background:linear-gradient(165deg,#1b4a3a 0%,#12362c 75%)}
+.dir-more{margin:18px 0 8px;text-align:center}
+.home-shop-grid{margin-top:28px}
+
+/* Prepper's Picks */
+.prepper-lanes{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 18px}
+.prepper-lane-chip{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--paper,#fff);border:1px solid var(--line,#d5dde3);color:var(--navy,#0f2a3d);text-decoration:none;font-size:.82rem;font-weight:700}
+.prepper-lane-chip:hover{border-color:var(--navy,#0f2a3d);color:var(--navy,#0f2a3d)}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-hidden="true">
+  <rect width="640" height="360" fill="#2a2f3d"/>
+  <rect x="0" y="0" width="640" height="360" fill="#3d4658" opacity=".4"/>
+  <rect x="210" y="96" width="150" height="190" rx="8" fill="#f3f1ea" transform="rotate(-8 285 191)"/>
+  <rect x="280" y="108" width="150" height="190" rx="8" fill="#eef5ef"/>
+  <rect x="300" y="140" width="110" height="10" rx="4" fill="#3d4658" opacity=".25"/>
+  <rect x="300" y="164" width="90" height="10" rx="4" fill="#3d4658" opacity=".2"/>
+  <rect x="300" y="188" width="110" height="10" rx="4" fill="#3d4658" opacity=".2"/>
+  <text x="36" y="324" fill="#eef5ef" font-family="system-ui,Segoe UI,sans-serif" font-size="18" font-weight="700" letter-spacing=".04em">Documents</text>
+</svg>

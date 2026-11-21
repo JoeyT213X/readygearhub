@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-hidden="true">
+  <rect width="640" height="360" fill="#1a4a63"/>
+  <rect x="0" y="0" width="640" height="360" fill="#2a6a86" opacity=".35"/>
+  <ellipse cx="320" cy="86" rx="70" ry="18" fill="#7cc8f2"/>
+<path d="M250 86v140c0 50 140 50 140 0V86" fill="#cfe5f2"/>
+<path d="M265 150h110" stroke="#2a6a86" stroke-width="6"/>
+<ellipse cx="320" cy="86" rx="58" ry="12" fill="#eef7fb"/>
+<rect x="300" y="226" width="40" height="28" rx="6" fill="#2a6a86"/>
+  <text x="36" y="324" fill="#eef7fb" font-family="system-ui,Segoe UI,sans-serif" font-size="18" font-weight="700" letter-spacing=".04em">Water filter</text>
+</svg>

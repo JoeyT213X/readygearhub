@@ -1,0 +1,1352 @@
+/**
+ * Full Source Directory catalog.
+ *
+ * Add a new approved partner by appending a SourceItem (and, if needed, a
+ * SourceStore). Tracking links must come from affiliates.ts (exact `link` /
+ * `itemLinks`, a `{url}` template via buildLink, or cjLink with an existing
+ * cjAid). Never invent tracking URLs or prices. Pending partners go in
+ * comingSoonPartners with no links.
+ */
+import {
+  programs,
+  isProgramLive,
+  buildLink,
+  cjLink,
+  isNoPpcProgram,
+  type Program,
+} from './affiliates';
+import { payhipProducts } from './payhip';
+
+export type SourceCategoryId =
+  | 'tech'
+  | 'power'
+  | 'home'
+  | 'water'
+  | 'outdoor'
+  | 'audio'
+  | 'tools'
+  | 'auto'
+  | 'fun'
+  | 'safety'
+  | 'downloads';
+
+export type SourceLinkLevel = 'product' | 'merchant' | 'own';
+
+export type SourceCategory = {
+  id: SourceCategoryId;
+  slug: string;
+  name: string;
+  short: string;
+  blurb: string;
+  photo?: string;
+  image?: string;
+};
+
+export const sourceCategories: SourceCategory[] = [
+  { id: 'tech', slug: 'tech', name: 'Tech & Gadgets', short: 'Tech', blurb: 'Paid software and everyday tech from partner stores. Plans and prices are on the seller’s site.', photo: 'power-banks' },
+  { id: 'power', slug: 'power', name: 'Power & Energy', short: 'Power', blurb: 'Portable power stations and solar from partner brands we already link. Check the official page for current capacity, output, and price.', photo: 'solar-rooftops' },
+  { id: 'home', slug: 'home', name: 'Home & Kitchen', short: 'Home', blurb: 'Filters and other home setups from approved partners. Read the official page for what a system does and does not treat, and for install notes.', photo: 'fireplace-living-room' },
+  { id: 'water', slug: 'water', name: 'Water & Air', short: 'Water', blurb: 'Drinking-water filters and related gear from official partner shops.', photo: 'water-bottles' },
+  { id: 'outdoor', slug: 'outdoor', name: 'Outdoor & Camping', short: 'Outdoor', blurb: 'Portable power that travels, plus outdoor retailers we are still waiting to add.', photo: 'lantern-dusk' },
+  { id: 'audio', slug: 'audio', name: 'Audio & Entertainment', short: 'Audio', blurb: 'Headphones, speakers, and home audio once pending audio partners are approved.', image: '/directory/covers/cat-audio.svg' },
+  { id: 'tools', slug: 'tools', name: 'Tools & DIY', short: 'Tools', blurb: 'Tools, parts, and workshop supplies once pending tool partners are approved.', photo: 'multitools' },
+  { id: 'auto', slug: 'auto', name: 'Auto & Travel', short: 'Auto', blurb: 'Vehicle and travel electronics once pending auto partners are approved.', photo: 'car-in-snow' },
+  { id: 'fun', slug: 'fun', name: 'Fun & Gifts', short: 'Fun', blurb: 'A place for gifts and just-for-fun finds as more partner stores come online.', image: '/directory/covers/cat-fun.svg' },
+  { id: 'safety', slug: 'safety', name: 'Safety & Prep', short: 'Safety', blurb: 'Ready kits and paid home plans from approved partners, described plainly.', photo: 'first-aid-kit-open' },
+  { id: 'downloads', slug: 'downloads', name: 'Our Downloads', short: 'Downloads', blurb: 'ReadyGearHub’s own print-at-home guides, sold as instant PDFs through Payhip.', photo: 'checklist-writing' },
+];
+
+/** Broader home/directory groupings. Per-category pages stay at /directory/{slug}/. */
+export type SourceGroupId = 'power-tech' | 'home-water' | 'outdoor-auto' | 'safety-prep' | 'downloads';
+
+export type SourceGroup = {
+  id: SourceGroupId;
+  name: string;
+  short: string;
+  blurb: string;
+  categories: SourceCategoryId[];
+  photo?: string;
+  image?: string;
+};
+
+export const sourceGroups: SourceGroup[] = [
+  { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar, and everyday tech from partner stores.', categories: ['power', 'tech', 'audio'], photo: 'solar-rooftops' },
+  { id: 'home-water', name: 'Home & Water', short: 'Home & Water', blurb: 'Drinking-water filters and home setups from approved partners.', categories: ['home', 'water'], photo: 'water-bottles' },
+  { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus partners still on the way.', categories: ['outdoor', 'auto', 'tools'], photo: 'lantern-dusk' },
+  { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits and paid home plans, described plainly.', categories: ['safety', 'fun'], photo: 'first-aid-kit-open' },
+  { id: 'downloads', name: 'Our Downloads', short: 'Downloads', blurb: 'ReadyGearHub print-at-home guides, sold as instant PDFs.', categories: ['downloads'], photo: 'checklist-writing' },
+];
+
+export type ComingSoonPartner = {
+  id: string;
+  name: string;
+  network: string;
+  catalogId: string;
+  categories: SourceCategoryId[];
+};
+
+/** Applied, still waiting. Shown as “More partners coming soon” with no links. */
+export const comingSoonPartners: ComingSoonPartner[] = [
+  { id: 'anker-solix-rakuten', name: 'Anker SOLIX US', network: 'Rakuten', catalogId: '53552', categories: ['power', 'tech'] },
+  { id: 'powermarket', name: 'Powermarket', network: 'Rakuten', catalogId: '53433', categories: ['power'] },
+  { id: 'batteries-plus', name: 'Batteries Plus', network: 'Rakuten', catalogId: '45126', categories: ['tools', 'power'] },
+  { id: 'eastern-mountain-sports', name: 'Eastern Mountain Sports', network: 'Rakuten', catalogId: '53845', categories: ['outdoor'] },
+  { id: 'cobra-electronics', name: 'Cobra Electronics', network: 'Rakuten', catalogId: '53731', categories: ['auto'] },
+  { id: 'vevor', name: 'Vevor', network: 'Rakuten', catalogId: '53191', categories: ['tools'] },
+  { id: 'crutchfield', name: 'Crutchfield', network: 'Rakuten', catalogId: '54321', categories: ['audio'] },
+  { id: 'harman', name: 'Harman', network: 'CJ', catalogId: '3805502', categories: ['audio'] },
+];
+
+export type SourceItem = {
+  id: string;
+  title: string;
+  blurb: string;
+  category: SourceCategoryId;
+  alsoIn?: SourceCategoryId[];
+  /** affiliates.ts program id, or `payhip` for our own downloads. */
+  programId: string;
+  sourceName: string;
+  linkLevel: SourceLinkLevel;
+  /** Official product or category URL, wrapped with the program’s existing deep-link method. */
+  destination?: string;
+  /** Use this exact tracked URL from affiliates.ts (no wrapping). */
+  useProgramLink?: boolean;
+  /** Use program.itemLinks[id] (verified portal links). */
+  useItemLink?: boolean;
+  trending?: boolean;
+  trendingRank?: number;
+  image: string;
+  /** How the cover should sit in the 16:9 frame. Omit for SVG placeholders and Payhip covers (object-fit: cover). */
+  imageKind?: 'photo' | 'banner' | 'logo';
+  cta?: string;
+  offerLabel?: string;
+  /** Internal path for our own products (preferred over the Payhip checkout URL). */
+  internalHref?: string;
+  /** Verified price already in the repo (Payhip only today). */
+  price?: string;
+};
+
+function payhipItems(): SourceItem[] {
+  const blurbs: Record<string, string> = {
+    'complete-prep-bundle': 'The three ReadyGearHub print-at-home guides together, plus both free quick-reference sheets, in one instant ZIP.',
+    'family-emergency-binder': 'A fill-in household plan you can print and keep on paper: contacts, medicines, and utility shut-offs.',
+    'winter-storm-prep-planner': 'A seven-day countdown and supply lists for the week before ice or a winter storm.',
+    'homestead-prep-starter-guide': 'A starter plan for a farm, cabin, or house on a well: water, power, and what to write down.',
+  };
+  const ranks: Record<string, number> = { 'complete-prep-bundle': 7 };
+  return payhipProducts.map((p) => ({
+    id: `payhip-${p.slug}`,
+    title: p.title,
+    blurb: blurbs[p.slug] ?? p.summary,
+    category: 'downloads' as const,
+    programId: 'payhip',
+    sourceName: 'ReadyGearHub shop',
+    linkLevel: 'own' as const,
+    image: p.image,
+    internalHref: `/shop/${p.slug}/`,
+    price: p.price,
+    offerLabel: 'Instant PDF',
+    cta: 'Details',
+    trending: p.slug === 'complete-prep-bundle',
+    trendingRank: ranks[p.slug],
+  }));
+}
+
+export const sourceItems: SourceItem[] = [
+  // ---- Power: BLUETTI product deep links via the existing {url} template ----
+  {
+    id: 'bluetti-elite-200-v2',
+    title: 'BLUETTI Elite 200 V2 portable power station',
+    blurb: 'A mid-size portable battery listed as a popular pick on BLUETTI’s official US shop. See the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/elite-200-v2-portable-power-station',
+    trending: true,
+    trendingRank: 1,
+    image: '/directory/photos/bluetti-elite-200-v2.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-ac180',
+    title: 'BLUETTI AC180 portable power station',
+    blurb: 'A compact station we already list in the gear directory. Check BLUETTI for current output, capacity, and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/ac180',
+    trending: true,
+    trendingRank: 2,
+    image: '/directory/photos/bluetti-ac180.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-ac200l',
+    title: 'BLUETTI AC200L portable power station',
+    blurb: 'A larger portable station in BLUETTI’s current US lineup. The official product page has the current specs and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/ac200l-portable-power-station',
+    trending: true,
+    trendingRank: 3,
+    image: '/directory/photos/bluetti-ac200l.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-ac2a',
+    title: 'BLUETTI AC2A portable power station',
+    blurb: 'A small, travel-friendly battery for phones, lights, and light charging on the go. See BLUETTI for current details.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/ac2a',
+    trending: true,
+    trendingRank: 5,
+    image: '/directory/photos/bluetti-ac2a.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-elite-100-v2',
+    title: 'BLUETTI Elite 100 V2 portable power station',
+    blurb: 'A smaller unit in BLUETTI’s current Elite line. Confirm capacity and price on the official page.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/elite-100-v2-portable-power-station',
+    trending: true,
+    trendingRank: 10,
+    image: '/directory/photos/bluetti-elite-100-v2.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-ac70',
+    title: 'BLUETTI AC70 portable power station',
+    blurb: 'A mid-compact station already in our gear listings. The official page has current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/ac70',
+    image: '/directory/photos/bluetti-ac70.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-elite-300',
+    title: 'BLUETTI Elite 300 portable power station',
+    blurb: 'A higher-capacity portable station in the current Elite line, including RV-oriented outlets on the official listing.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/elite-300-portable-power-station',
+    image: '/directory/photos/bluetti-elite-300.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-sp200l',
+    title: 'BLUETTI SP200L 200W solar panel',
+    blurb: 'A foldable 200W solar panel already in our gear listings, for charging a compatible power station outdoors.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-sp200l-solar-panel-200w',
+    image: '/directory/photos/bluetti-sp200l-200w.webp',
+    imageKind: 'photo',
+    offerLabel: 'Solar panel',
+  },
+  {
+    id: 'bluetti-power-stations',
+    title: 'BLUETTI portable power stations',
+    blurb: 'Browse BLUETTI’s official portable power station collection, including current and older models.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'merchant',
+    destination: 'https://www.bluettipower.com/collections/power-stations',
+    image: '/directory/photos/bluetti-elite-200-v2.webp',
+    imageKind: 'photo',
+    offerLabel: 'Official collection',
+    cta: 'Browse BLUETTI power stations',
+  },
+
+  // ---- Power: more BLUETTI product deep links via the existing {url} template ----
+  {
+    id: 'bluetti-elite-30-mini',
+    title: 'BLUETTI Elite 30 mini portable power station',
+    blurb: 'A compact portable battery listed on BLUETTI’s official US shop. See the official page for current output, capacity, and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/elite-30-mini-portable-power-station',
+    image: '/directory/photos/bluetti-elite-30-mini.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-elite-100-mini',
+    title: 'BLUETTI Elite 100 mini portable power station',
+    blurb: 'A mid-size portable battery listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/elite-100-mini-portable-power-station',
+    image: '/directory/photos/bluetti-elite-100-mini.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-elite-30-v2',
+    title: 'BLUETTI Elite 30 V2 portable power station',
+    blurb: 'A compact station listed on BLUETTI’s official US shop. Check the official page for current output, capacity, and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/elite-30-v2-portable-power-station',
+    image: '/directory/photos/bluetti-elite-30-v2.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-elite-10-mini',
+    title: 'BLUETTI Elite 10 Mini power station',
+    blurb: 'A small grab-and-go battery listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-elite-10-mini-power-station-200w-128wh-green',
+    image: '/directory/photos/bluetti-elite-10-mini.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-elite-400',
+    title: 'BLUETTI Elite 400 portable power station',
+    blurb: 'A larger portable battery listed on BLUETTI’s official US shop. See the official page for current capacity, output, and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/elite-400-portable-power-station',
+    image: '/directory/photos/bluetti-elite-400.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-apex-300',
+    title: 'BLUETTI Apex 300 versatile power station',
+    blurb: 'A home battery backup listed on BLUETTI’s official US shop. Follow BLUETTI’s installation guidance, and check the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['home'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/apex-300-home-battery-backup',
+    image: '/directory/photos/bluetti-apex-300.webp',
+    imageKind: 'photo',
+    offerLabel: 'Home battery backup',
+  },
+  {
+    id: 'bluetti-apex-200',
+    title: 'BLUETTI Apex 200 versatile power station',
+    blurb: 'An expandable power station listed on BLUETTI’s official US shop. See the official page for current specs, expansion options, and price.',
+    category: 'power',
+    alsoIn: ['home'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/apex-200-expandable-power-station',
+    image: '/directory/photos/bluetti-apex-200.webp',
+    imageKind: 'photo',
+    offerLabel: 'Home battery backup',
+  },
+  {
+    id: 'bluetti-premium-100-v2',
+    title: 'BLUETTI Premium 100 V2 portable power station',
+    blurb: 'A portable battery listed on BLUETTI’s official US shop. See the official page for current output, capacity, and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-premium-100-v2-portable-power-station',
+    image: '/directory/photos/bluetti-premium-100-v2.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-premium-200-v2',
+    title: 'BLUETTI Premium 200 V2 portable power station',
+    blurb: 'A larger portable battery listed on BLUETTI’s official US shop. Check the official page for current specs and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-premium-200-v2-portable-power-station',
+    image: '/directory/photos/bluetti-premium-200-v2.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-ac180p',
+    title: 'BLUETTI AC180P portable power station',
+    blurb: 'A mid-size station listed on BLUETTI’s official US shop, in the same family as the AC180 we already list. See the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/ac180p',
+    image: '/directory/photos/bluetti-ac180p.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-ac200p-l',
+    title: 'BLUETTI AC200P L portable power station',
+    blurb: 'A larger portable battery listed on BLUETTI’s official US shop. See the official page for current capacity, output, and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/ac200p-l',
+    image: '/directory/photos/bluetti-ac200p-l.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-ac50b',
+    title: 'BLUETTI AC50B portable power station',
+    blurb: 'A compact portable battery listed on BLUETTI’s official US shop. Check the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/ac50b',
+    image: '/directory/photos/bluetti-ac50b.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-pioneer-na',
+    title: 'BLUETTI Pioneer Na portable power station',
+    blurb: 'A sodium-ion portable battery listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/sodium-ion-battery-pioneer-na',
+    image: '/directory/photos/bluetti-pioneer-na.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'bluetti-bc200',
+    title: 'BLUETTI BC200 battery',
+    blurb: 'A BLUETTI battery listed on the official US shop. See the official page for compatibility, capacity, and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-bluecell-200-battery',
+    image: '/directory/photos/bluetti-bc200.webp',
+    imageKind: 'photo',
+    offerLabel: 'Battery',
+  },
+  {
+    id: 'bluetti-fridgepower',
+    title: 'BLUETTI FridgePower',
+    blurb: 'A fridge-focused battery backup listed on BLUETTI’s official US shop. See the official page for compatibility, runtime notes, and price.',
+    category: 'power',
+    alsoIn: ['home'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/fridgepower-battery-backup',
+    image: '/directory/photos/bluetti-fridgepower.webp',
+    imageKind: 'photo',
+    offerLabel: 'Fridge backup',
+  },
+  {
+    id: 'bluetti-b300k',
+    title: 'BLUETTI B300K expansion battery',
+    blurb: 'An expansion battery listed for BLUETTI Apex systems. Confirm compatibility and current price on the official page.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/apex-300-b300k-expansion-battery',
+    image: '/directory/photos/bluetti-b300k.webp',
+    imageKind: 'photo',
+    offerLabel: 'Expansion battery',
+  },
+  {
+    id: 'bluetti-b210',
+    title: 'BLUETTI B210 expansion battery',
+    blurb: 'An expansion battery listed on BLUETTI’s official US shop. Confirm compatibility and current price on the official page.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/b210',
+    image: '/directory/photos/bluetti-b210.webp',
+    imageKind: 'photo',
+    offerLabel: 'Expansion battery',
+  },
+  {
+    id: 'bluetti-b1210',
+    title: 'BLUETTI B1210 LiFePO4 battery',
+    blurb: 'A LiFePO4 battery listed on BLUETTI’s official US shop. See the official page for specs, compatibility, and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/lifepo4-lithium-batteries',
+    image: '/directory/photos/bluetti-b1210.webp',
+    imageKind: 'photo',
+    offerLabel: 'Battery',
+  },
+  {
+    id: 'bluetti-b4810',
+    title: 'BLUETTI B4810 LiFePO4 battery',
+    blurb: 'A LiFePO4 battery listed on BLUETTI’s official US shop. See the official page for specs, compatibility, and price.',
+    category: 'power',
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-b4810-lifepo-battery-51-2-v-100-ah',
+    image: '/directory/photos/bluetti-b4810.webp',
+    imageKind: 'photo',
+    offerLabel: 'Battery',
+  },
+  {
+    id: 'bluetti-charger-1',
+    title: 'BLUETTI Charger 1',
+    blurb: 'A BLUETTI charger listed on the official US shop. See the official page for compatibility and current price.',
+    category: 'power',
+    alsoIn: ['auto'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-charger-1',
+    image: '/directory/photos/bluetti-charger-1.webp',
+    imageKind: 'photo',
+    offerLabel: 'Charger',
+  },
+  {
+    id: 'bluetti-350w-solar',
+    title: 'BLUETTI 350W solar panel',
+    blurb: 'A 350W solar panel listed on BLUETTI’s official US shop. Confirm compatibility with your station and current price on the official page.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-pv350d-solar-panel',
+    image: '/directory/photos/bluetti-350w-solar.webp',
+    imageKind: 'photo',
+    offerLabel: 'Solar panel',
+  },
+  {
+    id: 'bluetti-sora-60',
+    title: 'BLUETTI SORA 60 solar panel',
+    blurb: 'A 60W solar panel listed on BLUETTI’s official US shop. See the official page for compatibility and current price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-sora-60-solar-panel-60w',
+    image: '/directory/photos/bluetti-sora-60.webp',
+    imageKind: 'photo',
+    offerLabel: 'Solar panel',
+  },
+  {
+    id: 'bluetti-sp100l',
+    title: 'BLUETTI SP100L solar panel',
+    blurb: 'A foldable 100W solar panel listed on BLUETTI’s official US shop. Confirm compatibility and current price on the official page.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/foldable-solar-panel-sp100l',
+    image: '/directory/photos/bluetti-sp100l.webp',
+    imageKind: 'photo',
+    offerLabel: 'Solar panel',
+  },
+  {
+    id: 'bluetti-x20',
+    title: 'BLUETTI X20 power bank',
+    blurb: 'A portable power bank listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/x20-portable-power-bank',
+    image: '/directory/photos/bluetti-x20.webp',
+    imageKind: 'photo',
+    offerLabel: 'Power bank',
+  },
+  {
+    id: 'bluetti-charger-2',
+    title: 'BLUETTI Charger 2',
+    blurb: 'An alternator and solar charger listed on BLUETTI’s official US shop. See the official page for compatibility and current price.',
+    category: 'power',
+    alsoIn: ['auto'],
+    programId: 'bluetti',
+    sourceName: 'BLUETTI',
+    linkLevel: 'product',
+    destination: 'https://www.bluettipower.com/products/bluetti-charger-2-alternator-solar-charger',
+    image: '/directory/photos/bluetti-charger-2.webp',
+    imageKind: 'photo',
+    offerLabel: 'Charger',
+  },
+
+  // ---- Power: ALLPOWERS via existing CJ AID deep-link helper ----
+  {
+    id: 'allpowers-s2000-pro',
+    title: 'ALLPOWERS S2000 Pro portable power station',
+    blurb: 'A 2400W-class station listed among ALLPOWERS’ official US bestsellers. See the official page for current specs and price.',
+    category: 'power',
+    programId: 'allpowers',
+    sourceName: 'ALLPOWERS',
+    linkLevel: 'product',
+    destination: 'https://iallpowers.com/products/allpowers-2400w-portable-power-station',
+    trending: true,
+    trendingRank: 4,
+    image: '/directory/covers/power-station.svg',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'allpowers-r2500-v2',
+    title: 'ALLPOWERS R2500 V2 portable power station',
+    blurb: 'A larger home-and-outdoor battery in ALLPOWERS’ current US catalog. Confirm details on the official product page.',
+    category: 'power',
+    programId: 'allpowers',
+    sourceName: 'ALLPOWERS',
+    linkLevel: 'product',
+    destination: 'https://iallpowers.com/products/allpowers-r2500-v2-portable-power-station-2500w-1920wh',
+    image: '/directory/covers/expandable-power.svg',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'allpowers-r600',
+    title: 'ALLPOWERS R600 portable power station',
+    blurb: 'A compact 600W-class station listed on ALLPOWERS’ official bestsellers page. See the official page for current price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'allpowers',
+    sourceName: 'ALLPOWERS',
+    linkLevel: 'product',
+    destination: 'https://iallpowers.com/products/allpowersportable-power-station-r600-600w-299wh-with-lifep04-battery',
+    image: '/directory/covers/compact-power.svg',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'allpowers-volix-p300',
+    title: 'ALLPOWERS VOLIX P300 portable power station',
+    blurb: 'A small grab-and-go battery for light charging. Check ALLPOWERS for current capacity and price.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'allpowers',
+    sourceName: 'ALLPOWERS',
+    linkLevel: 'product',
+    destination: 'https://iallpowers.com/products/allpowers-volix-p300-portable-power-station',
+    image: '/directory/covers/compact-power.svg',
+    offerLabel: 'Portable power station',
+  },
+  {
+    id: 'allpowers-best-sellers',
+    title: 'ALLPOWERS official bestsellers',
+    blurb: 'The official ALLPOWERS US bestsellers collection, including power stations and solar kits.',
+    category: 'power',
+    programId: 'allpowers',
+    sourceName: 'ALLPOWERS',
+    linkLevel: 'merchant',
+    destination: 'https://iallpowers.com/collections/best-sellers',
+    image: '/directory/covers/store.svg',
+    offerLabel: 'Official collection',
+    cta: 'Browse ALLPOWERS bestsellers',
+  },
+
+  // ---- Water & Home: Aquasana (verified Rakuten item links + homepage) ----
+  {
+    id: 'aquasana-home',
+    title: 'Aquasana water filters',
+    blurb: 'The official Aquasana shop for under-sink, whole-house, and other drinking-water filters.',
+    category: 'water',
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-brand-300x250.webp',
+    imageKind: 'banner',
+    offerLabel: 'Official shop',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-under-sink',
+    title: 'Aquasana under-sink filters',
+    blurb: 'Under-sink systems for treating water at a single faucet. Read the official page for what a system does and does not remove, and for installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    useItemLink: true,
+    trending: true,
+    trendingRank: 6,
+    image: '/directory/photos/aquasana-under-sink-claryum-3stage.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filters',
+    cta: 'Shop under-sink filters at Aquasana',
+  },
+  {
+    id: 'aquasana-whole-house',
+    title: 'Aquasana whole-house filters',
+    blurb: 'Whole-house systems installed at the home’s main water line. Read the official page for coverage, limits, and installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    useItemLink: true,
+    image: '/directory/photos/aquasana-rhino-whole-house.webp',
+    imageKind: 'photo',
+    offerLabel: 'Whole-house filters',
+    cta: 'Shop whole-house filters at Aquasana',
+  },
+  {
+    id: 'waterdrop-shop',
+    title: 'Waterdrop Filter',
+    blurb: 'The official Waterdrop shop for drinking-water filters and related home systems. See their site for current models and prices.',
+    category: 'water',
+    alsoIn: ['home'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    trending: true,
+    trendingRank: 9,
+    image: '/directory/photos/waterdrop-g3p600.webp',
+    imageKind: 'photo',
+    offerLabel: 'Official shop',
+    cta: 'Shop at Waterdrop',
+  },
+  // ---- More Aquasana and Waterdrop products from the official catalog.
+  // No product-level Rakuten {url} template or itemLinks exist for these ids,
+  // so cards use the existing official-shop tracking link (useProgramLink).
+  // Official product URLs are stored on `destination` for a later one-line upgrade.
+  {
+    id: 'aquasana-shower-chrome',
+    title: 'Aquasana shower filter with chrome handheld wand',
+    blurb: 'A shower filter listed on Aquasana’s official shop. The link opens their site; see the official page for this model’s current specs, limits, and price.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/shower-head-water-filters/chrome-shower-wand-100236241.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-shower-chrome.webp',
+    imageKind: 'photo',
+    offerLabel: 'Shower filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-healthshield-ro-matte-black',
+    title: 'Aquasana HealthShield reverse osmosis system, matte black',
+    blurb: 'A reverse osmosis system listed on Aquasana’s official shop. The link opens their site; read the official page for what it does and does not treat, install notes, and price.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/reverse-osmosis-water-filters/healthshield-reverse-osmosis/matte-black-100404429.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-healthshield-ro-matte-black.webp',
+    imageKind: 'photo',
+    offerLabel: 'Reverse osmosis',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-clean-water-machine-black',
+    title: 'Aquasana Clean Water Machine countertop filter, black',
+    blurb: 'A countertop filter listed on Aquasana’s official shop. The link opens their site; see the official page for this model’s current specs, limits, and price.',
+    category: 'water',
+    alsoIn: ['home'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/countertop-water-filters/clean-water-machine/black-100348638.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-clean-water-machine-black.webp',
+    imageKind: 'photo',
+    offerLabel: 'Countertop filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-claryum-2stage-chrome',
+    title: 'Aquasana Claryum 2-Stage under-sink filter, chrome',
+    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/under-sink-water-filters/claryum-2-stage/chrome-100391685.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-claryum-2stage-chrome.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-claryum-3stage-maxflow-chrome',
+    title: 'Aquasana Claryum 3-Stage Max Flow under-sink filter, chrome',
+    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; read the official page for flow, limits, and installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/under-sink-water-filters/claryum-3-stage-max-flow/chrome-100391705.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-claryum-3stage-maxflow-chrome.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-claryum-direct-connect',
+    title: 'Aquasana Claryum Direct Connect under-sink filter',
+    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; see the official page for install notes, limits, and current price.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/under-sink-water-filters/claryum-direct-connect-100329886.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-claryum-direct-connect.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-salt-free-conditioner',
+    title: 'Aquasana salt-free water conditioner',
+    blurb: 'A whole-house water conditioner listed on Aquasana’s official shop. The link opens their site; read the official page for coverage, limits, and installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/whole-house-water-filters/salt-free-water-conditioner-100365583.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-salt-free-conditioner.webp',
+    imageKind: 'photo',
+    offerLabel: 'Water conditioner',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-sediment-prefilter',
+    title: 'Aquasana high sediment pre-filter for countertop diverter',
+    blurb: 'A sediment pre-filter listed on Aquasana’s official shop. The link opens their site; see the official page for compatibility and current price.',
+    category: 'water',
+    alsoIn: ['home'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/parts-accessories/faucet-attachment-prefilter-100236067.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-sediment-prefilter.webp',
+    imageKind: 'photo',
+    offerLabel: 'Pre-filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-healthshield-whole-house',
+    title: 'Aquasana HealthShield whole-house water filter',
+    blurb: 'A whole-house filter listed on Aquasana’s official shop. The link opens their site; read the official page for coverage, limits, and installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/whole-house-water-filters/healthshield-100393882.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-healthshield-whole-house.webp',
+    imageKind: 'photo',
+    offerLabel: 'Whole-house filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'aquasana-claryum-2stage-matte-black',
+    title: 'Aquasana Claryum 2-Stage under-sink filter, matte black',
+    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'aquasana',
+    sourceName: 'Aquasana',
+    linkLevel: 'product',
+    destination: 'https://www.aquasana.com/under-sink-water-filters/claryum-2-stage/matte-black-100391687.html',
+    useProgramLink: true,
+    image: '/directory/photos/aquasana-claryum-2stage-matte-black.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filter',
+    cta: 'Shop at Aquasana',
+  },
+  {
+    id: 'waterdrop-g3p800-black',
+    title: 'Waterdrop G3P800 undersink tankless reverse osmosis system, black faucet',
+    blurb: 'An under-sink reverse osmosis system listed on Waterdrop’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/under-sink-reverse-osmosis-system-g3p800-black',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-g3p800-black.webp',
+    imageKind: 'photo',
+    offerLabel: 'Reverse osmosis',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-elfin-pitcher',
+    title: 'Waterdrop Elfin pitcher water filter PT-05',
+    blurb: 'A pitcher filter listed on Waterdrop’s official shop. The link opens their site; see the official page for this model’s current specs and price.',
+    category: 'water',
+    alsoIn: ['home'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/elfin-water-filter-pitcher',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-elfin-pitcher.webp',
+    imageKind: 'photo',
+    offerLabel: 'Pitcher filter',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-undersink-direct-connect',
+    title: 'Waterdrop under-sink direct connect filtration system',
+    blurb: 'An under-sink filter listed on Waterdrop’s official shop. The link opens their site; see the official page for install notes, limits, and current price.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/under-sink-water-filter-direct-connect-filtration-system',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-undersink-direct-connect.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filter',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-tsb-alk',
+    title: 'Waterdrop TSB-ALK 3-stage under-sink water filter',
+    blurb: 'An under-sink filter listed on Waterdrop’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/3-stage-under-sink-water-filter-with-dedicated-faucet-waterdrop-tsb-alk',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-tsb-alk.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filter',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-g3p800-replacement-filters',
+    title: 'Waterdrop G3P800 RO system replacement filters',
+    blurb: 'Replacement filters listed for the G3P800 system on Waterdrop’s official shop. The link opens their site; confirm compatibility and current price on the official page.',
+    category: 'water',
+    alsoIn: ['home'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/waterdrop-g3p800-ro-system-replacement-filters',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-g3p800-replacement-filters.webp',
+    imageKind: 'photo',
+    offerLabel: 'Replacement filters',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-g3p600-replacement-filters',
+    title: 'Waterdrop G3P600 RO system replacement filters',
+    blurb: 'Replacement filters listed for the G3P600 system on Waterdrop’s official shop. The link opens their site; confirm compatibility and current price on the official page.',
+    category: 'water',
+    alsoIn: ['home'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/ro-system-replacement-filters-g3p600',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-g3p600-replacement-filters.webp',
+    imageKind: 'photo',
+    offerLabel: 'Replacement filters',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-whf21-pg',
+    title: 'Waterdrop WHF21-PG 5 micron 2-stage whole-house water filter',
+    blurb: 'A whole-house filter listed on Waterdrop’s official shop. The link opens their site; read the official page for coverage, limits, and installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/waterdrop-whf21-pg-5-micron-2-stage-wholehouse-water-filtration-system',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-whf21-pg.webp',
+    imageKind: 'photo',
+    offerLabel: 'Whole-house filter',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-n1-replacement-filters',
+    title: 'Waterdrop N1 countertop RO replacement filters',
+    blurb: 'Replacement filters listed for the N1 countertop RO system on Waterdrop’s official shop. The link opens their site; confirm compatibility and current price on the official page.',
+    category: 'water',
+    alsoIn: ['home'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/ro-replacement-filters-set-n1-cfro',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-n1-replacement-filters.webp',
+    imageKind: 'photo',
+    offerLabel: 'Replacement filters',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-as13',
+    title: 'Waterdrop AS13 stainless steel direct connect under-sink filter',
+    blurb: 'An under-sink filter listed on Waterdrop’s official shop. The link opens their site; see the official page for install notes, limits, and current price.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/under-sink-stainless-steel-water-filter-as13',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-as13.webp',
+    imageKind: 'photo',
+    offerLabel: 'Under-sink filter',
+    cta: 'Shop at Waterdrop Filter',
+  },
+  {
+    id: 'waterdrop-g5p800a',
+    title: 'Waterdrop G5P800A alkaline reverse osmosis system',
+    blurb: 'A reverse osmosis system listed on Waterdrop’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    category: 'home',
+    alsoIn: ['water'],
+    programId: 'waterdrop',
+    sourceName: 'Waterdrop Filter',
+    linkLevel: 'product',
+    destination: 'https://www.waterdropfilter.com/products/g5p800a-alkaline-reverse-osmosis-system',
+    useProgramLink: true,
+    image: '/directory/photos/waterdrop-g5p800a.webp',
+    imageKind: 'photo',
+    offerLabel: 'Reverse osmosis',
+    cta: 'Shop at Waterdrop Filter',
+  },
+
+  {
+    id: 'berkey-shop',
+    title: 'TheBerkey.com gravity filters',
+    blurb: 'Official retailer for Berkey gravity-fed drinking-water filters. See the shop for current models, replacement elements, and price.',
+    category: 'water',
+    programId: 'berkey',
+    sourceName: 'TheBerkey.com',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    image: '/directory/covers/countertop-filter.svg',
+    offerLabel: 'Official shop',
+    cta: 'Shop at TheBerkey.com',
+  },
+
+  // ---- Tech: paid subscriptions, merchant-level tracked links ----
+  {
+    id: 'nordvpn',
+    title: 'NordVPN',
+    blurb: 'A paid VPN subscription. Read the current plan length, price, and terms on NordVPN’s site before you sign up.',
+    category: 'tech',
+    programId: 'nordvpn',
+    sourceName: 'NordVPN',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    trending: true,
+    trendingRank: 8,
+    image: '/directory/photos/nordvpn-faster-300x250.webp',
+    imageKind: 'banner',
+    offerLabel: 'Paid subscription',
+    cta: 'See NordVPN plans and prices',
+  },
+  {
+    id: 'nordpass',
+    title: 'NordPass',
+    blurb: 'A paid password manager from Nord Security. Check the official page for current plans and prices.',
+    category: 'tech',
+    programId: 'nordpass',
+    sourceName: 'NordPass',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    image: '/directory/photos/nordpass-logo-512.webp',
+    imageKind: 'logo',
+    offerLabel: 'Paid subscription',
+    cta: 'See NordPass plans and prices',
+  },
+  {
+    id: 'surfshark',
+    title: 'Surfshark',
+    blurb: 'A paid VPN subscription. See Surfshark’s official page for current plans, prices, and terms.',
+    category: 'tech',
+    programId: 'surfshark',
+    sourceName: 'Surfshark',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    image: '/directory/photos/surfshark-privacy.webp',
+    imageKind: 'banner',
+    offerLabel: 'Paid subscription',
+    cta: 'See Surfshark plans and prices',
+  },
+
+  // ---- Safety ----
+  {
+    id: 'redi-shop',
+    title: 'REDI emergency kits',
+    blurb: 'Ready-made emergency and readiness kits from REDI. See the official shop for what is in each kit and the current price.',
+    category: 'safety',
+    programId: 'redi',
+    sourceName: 'REDI',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    image: '/directory/covers/ready-kit.svg',
+    offerLabel: 'Ready kits',
+    cta: 'Shop kits at REDI',
+  },
+  {
+    id: 'choice-home-warranty',
+    title: 'Choice Home Warranty',
+    blurb: 'A paid monthly or yearly home warranty plan that can cover repair or replacement of major systems and appliances. Check the price and read the coverage terms before you sign up.',
+    category: 'safety',
+    alsoIn: ['home'],
+    programId: 'choice-home-warranty',
+    sourceName: 'Choice Home Warranty',
+    linkLevel: 'merchant',
+    useProgramLink: true,
+    image: '/directory/photos/choice-home-warranty-250.webp',
+    imageKind: 'logo',
+    offerLabel: 'Paid home warranty plans',
+    cta: 'See home warranty plans and prices',
+  },
+
+  ...payhipItems(),
+];
+
+export type SourceStore = {
+  id: string;
+  name: string;
+  programId: string;
+  hideOnPaid: boolean;
+};
+
+export function sourceStores(): SourceStore[] {
+  const seen = new Map<string, SourceStore>();
+  for (const item of sourceItems) {
+    if (!seen.has(item.programId)) {
+      seen.set(item.programId, {
+        id: item.programId,
+        name: item.sourceName,
+        programId: item.programId,
+        hideOnPaid: item.programId !== 'payhip' && isNoPpcProgram(item.programId),
+      });
+    }
+  }
+  return [...seen.values()];
+}
+
+function programById(id: string): Program | undefined {
+  return programs.find((p) => p.id === id);
+}
+
+export type ResolvedSourceItem = SourceItem & {
+  href: string;
+  affiliate: boolean;
+  hideOnPaid: boolean;
+  rel: string;
+  priceLabel: string;
+  ctaLabel: string;
+};
+
+export function resolveSourceItem(item: SourceItem): ResolvedSourceItem {
+  const hideOnPaid = item.programId !== 'payhip' && isNoPpcProgram(item.programId);
+  const priceLabel = item.price || 'See price';
+  const defaultCta = item.linkLevel === 'own'
+    ? 'Details'
+    : item.linkLevel === 'merchant'
+      ? `Shop at ${item.sourceName}`
+      : 'See price';
+  const ctaLabel = item.cta || defaultCta;
+
+  if (item.programId === 'payhip') {
+    const href = item.internalHref || '/shop/';
+    return { ...item, href, affiliate: false, hideOnPaid: false, rel: '', priceLabel, ctaLabel };
+  }
+
+  const p = programById(item.programId);
+  if (!p || !isProgramLive(item.programId)) {
+    return { ...item, href: item.destination || item.internalHref || '#', affiliate: false, hideOnPaid, rel: 'noopener', priceLabel, ctaLabel };
+  }
+
+  let href = '';
+  if (item.useItemLink && p.itemLinks?.[item.id]) {
+    href = p.itemLinks[item.id];
+  } else if (item.useProgramLink) {
+    href = (p.link || p.url || '').trim();
+  } else if (item.destination) {
+    const template = (p.link || p.url || '').trim();
+    if (template.includes('{url}') || template.includes('{rawurl}')) {
+      href = buildLink(p, item.destination);
+    } else if (p.network === 'CJ' && p.cjAid) {
+      href = cjLink(item.destination, p.cjAid);
+    } else {
+      href = buildLink(p, item.destination) || template;
+    }
+  }
+  if (!href) href = (p.link || p.url || item.destination || '').trim();
+
+  return {
+    ...item,
+    href,
+    affiliate: true,
+    hideOnPaid,
+    rel: 'sponsored nofollow noopener',
+    priceLabel,
+    ctaLabel,
+  };
+}
+
+export function resolvedSourceItems(): ResolvedSourceItem[] {
+  return sourceItems.map(resolveSourceItem).filter((i) => !!i.href && i.href !== '#');
+}
+
+export function itemMatchesCategory(item: SourceItem, category: SourceCategoryId): boolean {
+  return item.category === category || (item.alsoIn ?? []).includes(category);
+}
+
+export function itemsInCategory(category: SourceCategoryId, resolved = resolvedSourceItems()): ResolvedSourceItem[] {
+  return sortCatalog(resolved.filter((i) => itemMatchesCategory(i, category)));
+}
+
+export function sortCatalog(items: ResolvedSourceItem[]): ResolvedSourceItem[] {
+  return [...items].sort((a, b) => {
+    const ar = a.trending ? (a.trendingRank ?? 50) : 1000;
+    const br = b.trending ? (b.trendingRank ?? 50) : 1000;
+    if (ar !== br) return ar - br;
+    return a.title.localeCompare(b.title);
+  });
+}
+
+export function trendingSourceItems(resolved = resolvedSourceItems()): ResolvedSourceItem[] {
+  return sortCatalog(resolved.filter((i) => i.trending));
+}
+
+export function comingSoonFor(category?: SourceCategoryId): ComingSoonPartner[] {
+  if (!category) return comingSoonPartners;
+  return comingSoonPartners.filter((p) => p.categories.includes(category));
+}
+
+export function categoryBySlug(slug: string): SourceCategory | undefined {
+  return sourceCategories.find((c) => c.slug === slug);
+}
+
+export function countsByCategory(resolved = resolvedSourceItems()): Record<SourceCategoryId, number> {
+  const counts = Object.fromEntries(sourceCategories.map((c) => [c.id, 0])) as Record<SourceCategoryId, number>;
+  for (const item of resolved) {
+    counts[item.category] += 1;
+    for (const extra of item.alsoIn ?? []) counts[extra] += 1;
+  }
+  return counts;
+}
+
+export function countsBySource(resolved = resolvedSourceItems()): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const item of resolved) {
+    counts[item.sourceName] = (counts[item.sourceName] || 0) + 1;
+  }
+  return counts;
+}
+
+export function groupForCategory(category: SourceCategoryId): SourceGroup | undefined {
+  return sourceGroups.find((g) => g.categories.includes(category));
+}
+
+export function itemMatchesGroup(item: SourceItem, group: SourceGroup): boolean {
+  return group.categories.some((c) => itemMatchesCategory(item, c));
+}
+
+export function itemsInGroup(groupId: SourceGroupId, resolved = resolvedSourceItems()): ResolvedSourceItem[] {
+  const group = sourceGroups.find((g) => g.id === groupId);
+  if (!group) return [];
+  return sortCatalog(resolved.filter((i) => itemMatchesGroup(i, group)));
+}
+
+export function countsByGroup(resolved = resolvedSourceItems()): Record<SourceGroupId, number> {
+  const counts = Object.fromEntries(sourceGroups.map((g) => [g.id, 0])) as Record<SourceGroupId, number>;
+  for (const item of resolved) {
+    for (const g of sourceGroups) {
+      if (itemMatchesGroup(item, g)) counts[g.id] += 1;
+    }
+  }
+  return counts;
+}
+
+export function comingSoonForGroup(groupId?: SourceGroupId): ComingSoonPartner[] {
+  if (!groupId) return comingSoonPartners;
+  const group = sourceGroups.find((g) => g.id === groupId);
+  if (!group) return [];
+  return comingSoonPartners.filter((p) => p.categories.some((c) => group.categories.includes(c)));
+}
+
+export function groupById(id: string): SourceGroup | undefined {
+  return sourceGroups.find((g) => g.id === id);
+}

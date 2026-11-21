@@ -42,6 +42,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
     <nav class="dir-nav" aria-label="Directory categories">
       {groups.map((g) => <a class="pill" href={`#${g.id}`}>{g.icon} {g.name} ({g.items.length + g.entries.length})</a>)}
     </nav>
+    <p class="alert-callout" style="margin:0 0 18px"><span><strong>Looking for a shopping catalog?</strong> The <a href="/directory/">Full Source Directory</a> lists trending items and partner stores we already work with — tech, power, home, water, and our own downloads — plus partners still on the way.</span></p>
     <p class="fine">{total} listings: {items.length} gear listings with detail pages and {resolved.length} brands, services and resources. For current portable power, home backup batteries, satellite messengers, weather radios, water filters, and smart sensors, see <a href="/gear/tech/">newest prep tech</a>. For downloaded music and audiobooks, battery-powered speakers, and card games or comics that need no power, see <a href="#offline-entertainment">offline entertainment</a>.</p>
 
     {groups.map((g) => (

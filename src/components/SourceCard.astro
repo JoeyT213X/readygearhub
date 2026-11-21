@@ -1,0 +1,63 @@
+---
+import type { CatalogItem } from '../data/full-catalog';
+interface Props { item: CatalogItem; heading?: 'h2' | 'h3' }
+const { item, heading = 'h3' } = Astro.props;
+const Tag = heading;
+const titleHref = item.detailHref || item.href;
+const ctaHref = item.href;
+const titleInternal = titleHref.startsWith('/');
+const ctaInternal = ctaHref.startsWith('/');
+const titleRel = titleInternal ? undefined : (item.rel || undefined);
+const ctaRel = ctaInternal ? undefined : (item.rel || undefined);
+const coverClass = [
+  item.imageKind ? ` is-${item.imageKind}` : '',
+  item.image ? '' : ' is-text',
+  item.kind === 'tool' ? ' is-free' : '',
+].join('');
+const sourceFilter = item.kind === 'resource' ? 'official' : item.kind === 'tool' ? 'rgh-tools' : item.programId;
+const badge = item.trending
+  ? 'Trending'
+  : item.offerLabel === 'Instant PDF'
+    ? 'Instant PDF'
+    : item.kind === 'tool'
+      ? 'Free'
+      : item.kind === 'resource'
+        ? 'Free resource'
+        : undefined;
+---
+<article
+  class={`card item-card product-card source-card${coverClass}`}
+  data-program={item.affiliate && item.programId ? item.programId : undefined}
+  data-no-ppc={item.hideOnPaid ? '' : undefined}
+  data-category={item.category}
+  data-also={(item.alsoIn ?? []).join(' ')}
+  data-source={sourceFilter || undefined}
+  data-kind={item.kind}
+  data-trending={item.trending ? '1' : undefined}
+  data-groups={item.groups.join(' ') || undefined}
+>
+  <a class="product-cover" href={titleHref} aria-label={item.title} tabindex="-1" target={titleInternal ? undefined : '_blank'} rel={titleRel}>
+    {badge && <span class="badge">{badge}</span>}
+    {item.image ? (
+      <img src={item.image} alt="" width="640" height="360" loading="lazy" decoding="async" class={item.imageKind ? 'source-fit' : undefined} />
+    ) : (
+      <span class="source-cover-label">
+        <span class="source-cover-kicker">{item.sourceName}</span>
+        <span class="source-cover-title">{item.title}</span>
+      </span>
+    )}
+  </a>
+  <p class="product-meta">{item.sourceName}{item.offerLabel ? ` · ${item.offerLabel}` : ''}</p>
+  <Tag><a href={titleHref} target={titleInternal ? undefined : '_blank'} rel={titleRel}>{item.title}</a></Tag>
+  <p class="product-price">{item.priceLabel}</p>
+  <p>{item.blurb}</p>
+  <div class="card-actions">
+    <a
+      class="btn small"
+      href={ctaHref}
+      target={ctaInternal ? undefined : '_blank'}
+      rel={ctaRel}
+      data-program={item.affiliate && item.programId ? item.programId : undefined}
+    >{item.ctaLabel}{ctaInternal ? '' : ' ↗'}</a>
+  </div>
+</article>

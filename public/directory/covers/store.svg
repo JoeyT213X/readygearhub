@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-hidden="true">
+  <rect width="640" height="360" fill="#0f2a3d"/>
+  <rect x="0" y="0" width="640" height="360" fill="#1a455e" opacity=".35"/>
+  <path d="M140 150l40-50h280l40 50v140H140z" fill="#e3f0f7"/>
+<rect x="140" y="150" width="360" height="22" fill="#7cc8f2"/>
+<rect x="200" y="200" width="70" height="90" fill="#163a54"/>
+<rect x="300" y="210" width="80" height="50" fill="#163a54" opacity=".5"/>
+<rect x="410" y="210" width="50" height="80" fill="#163a54" opacity=".35"/>
+  <text x="36" y="324" fill="#fbfaf7" font-family="system-ui,Segoe UI,sans-serif" font-size="18" font-weight="700" letter-spacing=".04em">Partner store</text>
+</svg>

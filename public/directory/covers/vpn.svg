@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-hidden="true">
+  <rect width="640" height="360" fill="#1b2430"/>
+  <rect x="0" y="0" width="640" height="360" fill="#2a3648" opacity=".35"/>
+  <path d="M320 80l110 50v70c0 62-48 96-110 114C258 296 210 262 210 200v-70z" fill="#8ab4f8" opacity=".35"/>
+<path d="M320 110l80 36v52c0 46-36 72-80 86-44-14-80-40-80-86v-52z" fill="#e8eef6"/>
+<rect x="300" y="168" width="40" height="34" rx="6" fill="#1b2430"/>
+<path d="M312 168v-16a8 8 0 0 1 16 0v16" stroke="#1b2430" stroke-width="5" fill="none"/>
+  <text x="36" y="324" fill="#e8eef6" font-family="system-ui,Segoe UI,sans-serif" font-size="18" font-weight="700" letter-spacing=".04em">Paid subscription</text>
+</svg>
