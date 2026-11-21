@@ -3,7 +3,7 @@
   "name": "Mississippi",
   "abbreviation": "MS",
   "verified": "2026-11-15",
-  "intro": "Official local contacts for winter storms, outages, and extreme temperatures in central Mississippi. Every office, shelter source, and outage map below is from a county or city government, the Mississippi Emergency Management Agency, the Mississippi Public Service Commission, an electric utility or cooperative, or the American Red Cross. Shelter and warming or cooling center locations are opened as needed \u2014 always check the official sources, not a static list.",
+  "intro": "Official local contacts for winter storms, outages, and extreme temperatures in central Mississippi and on the Mississippi Gulf Coast. Every office, shelter source, and outage map below is from a county or city government, the Mississippi Emergency Management Agency, the Mississippi Public Service Commission, an electric utility or cooperative, or the American Red Cross. Shelter and warming or cooling center locations are opened as needed \u2014 always check the official sources, not a static list.",
   "statewideSources": [
     {
       "name": "Mississippi Emergency Management Agency (MEMA)",
@@ -782,6 +782,230 @@
           },
           "notes": "Electric Cooperatives of Mississippi, the official statewide association, lists this county among the counties served by Yazoo Valley Electric Power Association. The official co-op website is linked here for outage reporting and service information; a dedicated public outage-map URL was not listed on the PSC outage-tracker page (it links the co-op's service-area page).",
           "verified": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "slug": "hancock",
+      "name": "Hancock County",
+      "verified": "2026-11-21",
+      "emergencyManagement": {
+        "name": "Hancock County Emergency Management / Fire Department",
+        "url": "https://www.hancockcounty.ms.gov/163/Emergency-Management-Fire-Department",
+        "phone": "228-255-0942",
+        "notes": "MEMA's official county contacts list names Holly Bilbo as the Hancock County emergency management director and lists 228-255-0942. The county Emergency Management / Fire Department page is the local official source. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Hancock County Emergency Management / Fire Department",
+          "url": "https://www.hancockcounty.ms.gov/163/Emergency-Management-Fire-Department",
+          "verified": "2026-11-21",
+          "notes": "County official source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "Hancock County \u2014 Shelters",
+          "url": "https://www.hancockcounty.ms.gov/166/Shelters",
+          "verified": "2026-11-21",
+          "notes": "Official county page describing emergency shelters the Hancock County Emergency Management Agency can activate. Locations are opened as needed; confirm with the county or MEMA before traveling to a site."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-21",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-21",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-21",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-21",
+          "notes": "Regional Red Cross page for Alabama and Mississippi."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Mississippi Power",
+          "outageMapUrl": "https://outagemap.mississippipower.com/external/default.html",
+          "territorySource": {
+            "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+            "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+            "verified": "2026-11-21"
+          },
+          "notes": "Mississippi Power's official 23-county service territory map includes this county. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-21"
+        },
+        {
+          "name": "Coast Electric Power Association",
+          "outageMapUrl": "https://outages.coastelectric.coop/",
+          "territorySource": {
+            "name": "Coast Electric \u2014 2024 Annual Report (PDF)",
+            "url": "https://coastelectric.coop/wp-content/uploads/2025/09/2024-COAST-ELECTRIC-ANNUAL-REPORT.pdf",
+            "verified": "2026-11-21"
+          },
+          "notes": "Coast Electric's 2024 Annual Report, published in 2025, states that the cooperative serves homes and businesses in Hancock, Harrison, and Pearl River counties. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-21"
+        }
+      ]
+    },
+    {
+      "slug": "harrison",
+      "name": "Harrison County",
+      "verified": "2026-11-21",
+      "emergencyManagement": {
+        "name": "Harrison County Emergency Management Agency / Homeland Security",
+        "url": "https://harrisoncountyms.gov/departments/ema_homeland_security/index.php",
+        "phone": "228-865-4002",
+        "notes": "Director Matt Stratton is named on the county's official EMA/Homeland Security page, which also lists 228-865-4002. MEMA's county contacts list matches that name and number. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Harrison County Emergency Management Agency / Homeland Security",
+          "url": "https://harrisoncountyms.gov/departments/ema_homeland_security/index.php",
+          "verified": "2026-11-21",
+          "notes": "County official source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "Harrison County \u2014 Evacuations and Shelters",
+          "url": "https://harrisoncountyms.gov/departments/ema_homeland_security/shelter_list.php",
+          "verified": "2026-11-21",
+          "notes": "Official county page for evacuation and shelter information. The county states that which sites open is situation-specific and that openings are announced through official channels. Do not treat a listed address as open unless officials say it is."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-21",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-21",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-21",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-21",
+          "notes": "Regional Red Cross page for Alabama and Mississippi."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Mississippi Power",
+          "outageMapUrl": "https://outagemap.mississippipower.com/external/default.html",
+          "territorySource": {
+            "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+            "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+            "verified": "2026-11-21"
+          },
+          "notes": "Mississippi Power's official 23-county service territory map includes this county. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-21"
+        },
+        {
+          "name": "Coast Electric Power Association",
+          "outageMapUrl": "https://outages.coastelectric.coop/",
+          "territorySource": {
+            "name": "Coast Electric \u2014 2024 Annual Report (PDF)",
+            "url": "https://coastelectric.coop/wp-content/uploads/2025/09/2024-COAST-ELECTRIC-ANNUAL-REPORT.pdf",
+            "verified": "2026-11-21"
+          },
+          "notes": "Coast Electric's 2024 Annual Report, published in 2025, states that the cooperative serves homes and businesses in Hancock, Harrison, and Pearl River counties. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-21"
+        },
+        {
+          "name": "Singing River Electric Cooperative",
+          "outageMapUrl": "https://outageviewer.singingriver.com/",
+          "territorySource": {
+            "name": "Singing River Electric \u2014 Our History",
+            "url": "https://singingriver.com/my-coop/history/",
+            "verified": "2026-11-21"
+          },
+          "notes": "Singing River Electric's official history page states that it maintains lines in Jackson, George, Greene, Harrison, Perry, Stone, and Wayne counties in Mississippi, plus Mobile and Washington counties in Alabama. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-21"
+        }
+      ]
+    },
+    {
+      "slug": "jackson",
+      "name": "Jackson County",
+      "verified": "2026-11-21",
+      "emergencyManagement": {
+        "name": "Jackson County Office of Emergency Services",
+        "url": "https://co.jackson.ms.us/224/Office-of-Emergency-Services",
+        "phone": "228-769-3111",
+        "notes": "The official Office of Emergency Services page lists Director Earl Etheridge, the address 600 Convent Avenue, Pascagoula, MS 39567, phone 228-769-3111, and an emergency phone of 228-769-3063. MEMA's county contacts list matches the director and main number. The office states it can activate Jackson County landlines and cellphones to pass on critical information. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
+      },
+      "warmingCoolingSources": [
+        {
+          "name": "Jackson County Office of Emergency Services",
+          "url": "https://co.jackson.ms.us/224/Office-of-Emergency-Services",
+          "verified": "2026-11-21",
+          "notes": "County official source for local emergency information. Ask the office or watch official alerts for any open warming or cooling sites."
+        },
+        {
+          "name": "MEMA \u2014 Shelters and Safe Rooms",
+          "url": "https://www.msema.org/get-assistance/disaster-resources/shelters-and-safe-rooms",
+          "verified": "2026-11-21",
+          "notes": "MEMA's official statewide list of shelter and safe-room openings reported by local officials. Locations are opened at the local level and change; MEMA's page may show none until an event is underway."
+        },
+        {
+          "name": "MEMA \u2014 Extreme Heat Safety Tips",
+          "url": "https://www.msema.org/prepare/types-disasters/extreme-heat-safety-tips",
+          "verified": "2026-11-21",
+          "notes": "Official MEMA heat-safety guidance. Cooling centers, when opened, are announced locally and may also appear on the MEMA shelters page."
+        },
+        {
+          "name": "American Red Cross \u2014 Find an Open Shelter",
+          "url": "https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html",
+          "verified": "2026-11-21",
+          "notes": "Official Red Cross tool for open disaster shelters, which may include warming or cooling sites when the Red Cross is operating them."
+        },
+        {
+          "name": "American Red Cross of Alabama and Mississippi",
+          "url": "https://www.redcross.org/local/al-ms.html",
+          "verified": "2026-11-21",
+          "notes": "Regional Red Cross page for Alabama and Mississippi."
+        }
+      ],
+      "utilities": [
+        {
+          "name": "Mississippi Power",
+          "outageMapUrl": "https://outagemap.mississippipower.com/external/default.html",
+          "territorySource": {
+            "name": "Mississippi Power \u2014 23-county service territory map (PDF)",
+            "url": "https://www.mississippipower.com/content/dam/mississippi-power/pdfs/business/reference-maps/Mississippi_Power_23_County_Map.pdf",
+            "verified": "2026-11-21"
+          },
+          "notes": "Mississippi Power's official 23-county service territory map includes this county. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-21"
+        },
+        {
+          "name": "Singing River Electric Cooperative",
+          "outageMapUrl": "https://outageviewer.singingriver.com/",
+          "territorySource": {
+            "name": "Singing River Electric \u2014 Our History",
+            "url": "https://singingriver.com/my-coop/history/",
+            "verified": "2026-11-21"
+          },
+          "notes": "Singing River Electric's official history page states that it maintains lines in Jackson, George, Greene, Harrison, Perry, Stone, and Wayne counties in Mississippi, plus Mobile and Washington counties in Alabama. Service is not necessarily county-wide; check your bill for your provider.",
+          "verified": "2026-11-21"
         }
       ]
     }
