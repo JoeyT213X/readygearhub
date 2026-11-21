@@ -1,10 +1,12 @@
 ---
 import type { ResolvedSourceItem } from '../data/source-directory';
+import { sourceGroups, itemMatchesGroup } from '../data/source-directory';
 interface Props { item: ResolvedSourceItem; heading?: 'h2' | 'h3' }
 const { item, heading = 'h3' } = Astro.props;
 const Tag = heading;
 const isInternal = item.href.startsWith('/');
 const kindClass = item.imageKind ? ` is-${item.imageKind}` : '';
+const groups = sourceGroups.filter((g) => itemMatchesGroup(item, g)).map((g) => g.id).join(' ');
 ---
 <article
   class={`card item-card product-card source-card${kindClass}`}
@@ -14,6 +16,7 @@ const kindClass = item.imageKind ? ` is-${item.imageKind}` : '';
   data-also={ (item.alsoIn ?? []).join(' ') }
   data-source={item.programId}
   data-trending={item.trending ? '1' : undefined}
+  data-groups={groups || undefined}
 >
   <a class="product-cover" href={item.href} aria-label={item.title} tabindex="-1" target={isInternal ? undefined : '_blank'} rel={item.rel || undefined}>
     {item.trending && <span class="badge">Trending</span>}

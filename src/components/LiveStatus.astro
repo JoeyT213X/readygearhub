@@ -1,6 +1,8 @@
 ---
 import states from '../data/us-states.json';
 import { DEFAULT_STATE } from '../lib/app-config';
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
 
 const outageLinks = [
   { href: 'https://www.psc.ms.gov/psc/outagetracker', label: 'Mississippi PSC outage trackers', note: 'Official directory of utility and co-op outage maps.' },
@@ -10,8 +12,17 @@ const outageLinks = [
   { href: 'https://www.msema.org/', label: 'Mississippi Emergency Management Agency', note: 'State emergency information. 24-hour line: 1-800-222-6362.' },
 ];
 ---
-<section class="live-dash" id="live-status" aria-labelledby="live-status-title">
-  <div class="wrap section">
+<section class:list={["live-dash", compact && "is-compact"]} id="live-status" aria-labelledby="live-status-title">
+  <div class={compact ? "wrap live-compact-wrap" : "wrap section"}>
+    {compact ? (
+      <div class="live-compact-head">
+        <div>
+          <h2 id="live-status-title">What's happening now</h2>
+          <p>Official NWS, NHC, and Mississippi outage maps. Not a substitute for Wireless Emergency Alerts, NOAA Weather Radio, or 911.</p>
+        </div>
+        <a class="section-link" href="/alerts/">Full alerts →</a>
+      </div>
+    ) : (
     <div class="section-head">
       <div>
         <p class="kicker">Live official status</p>
@@ -21,6 +32,7 @@ const outageLinks = [
       </div>
       <a class="section-link" href="/alerts/">Full alerts page →</a>
     </div>
+    )}
 
     <div class="live-grid">
       <article class="live-card" aria-labelledby="live-nws-heading">

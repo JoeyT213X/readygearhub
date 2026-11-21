@@ -10,18 +10,31 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
   let cat = bar.getAttribute('data-current-cat') || 'all';
   let src = 'all';
 
+  function hashFilter(): string | null {
+    if (typeof location === 'undefined') return null;
+    const raw = decodeURIComponent(location.hash.replace(/^#/, ''));
+    if (!raw) return null;
+    if (catBtns.some((b) => b.getAttribute('data-filter-cat') === raw)) return raw;
+    return null;
+  }
+
+  const fromHash = hashFilter();
+  if (fromHash) cat = fromHash;
+
   function apply() {
     let visible = 0;
     for (const card of cards()) {
       const c = card.getAttribute('data-category') || '';
       const also = (card.getAttribute('data-also') || '').split(/\s+/).filter(Boolean);
+      const groups = (card.getAttribute('data-groups') || '').split(/\s+/).filter(Boolean);
       const s = card.getAttribute('data-source') || '';
       const trending = card.getAttribute('data-trending') === '1';
       const catOk =
         cat === 'all' ||
         (cat === 'trending' && trending) ||
         c === cat ||
-        also.includes(cat);
+        also.includes(cat) ||
+        groups.includes(cat);
       const srcOk = src === 'all' || s === src;
       const show = catOk && srcOk;
       card.hidden = !show;
@@ -53,5 +66,17 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
     apply();
   });
 
+  window.addEventListener('hashchange', () => {
+    const next = hashFilter();
+    if (next) {
+      cat = next;
+      apply();
+      document.getElementById('listings')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+
   apply();
+  if (fromHash) {
+    document.getElementById('listings')?.scrollIntoView({ block: 'start' });
+  }
 }

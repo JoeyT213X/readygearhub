@@ -62,3 +62,5 @@ Creatives inspected and not used on any card:
 
 - BLUETTI 120×90 logo (`bluetti-logo-120x90.jpeg`, CJ link 15845593): too small and soft for a product-card cover.
 - ALLPOWERS 300×250 “EU Smart Balcony Solar Storage” banner (`allpowers-balcony-300x250.jpeg`, CJ link 17351044): shows BS2500 Pro / BS5000 Pro, which are not the S2000 Pro, R2500 V2, R600, or VOLIX P300 cards, and would misrepresent those products. No ALLPOWERS catalog product images were available, so those four product cards and the ALLPOWERS bestsellers merchant card keep the geometric SVG placeholders.
+
+The home-page collage on `/` reuses the BLUETTI Elite 200 V2 catalog photo (`bluetti-elite-200-v2.webp`, image provided by Bluetti Global via CJ Affiliate) for the Shop the Directory tile, and existing self-hosted Unsplash photos for Guides (`checklist-writing`), Free tools & apps (`power-banks`), Our Downloads (`gear-flatlay`), and Local & county info (`lightning-road`). The compact home hero still uses `hero-snowy-home`.

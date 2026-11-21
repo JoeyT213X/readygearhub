@@ -1,210 +1,110 @@
 ---
 import Base from '../layouts/Base.astro';
-import ItemCard from '../components/ItemCard.astro';
-import LaneCard from '../components/LaneCard.astro';
-import GuideCard from '../components/GuideCard.astro';
 import Disclosure from '../components/Disclosure.astro';
-import ProductCard from '../components/ProductCard.astro';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import SectionHead from '../components/SectionHead.astro';
 import Photo from '../components/Photo.astro';
 import LiveStatus from '../components/LiveStatus.astro';
-import { lanes, getItems, getTrending, getGuides, site, laneBySlug } from '../lib/data';
-import { payhipProducts } from '../data/payhip';
-import CategoryTile from '../components/CategoryTile.astro';
 import SourceCard from '../components/SourceCard.astro';
-import { sourceCategories, trendingSourceItems, countsByCategory, resolvedSourceItems } from '../data/source-directory';
+import DirectoryGroupTile from '../components/DirectoryGroupTile.astro';
+import { getGuides, site } from '../lib/data';
+import { sourceGroups, trendingSourceItems, countsByGroup, resolvedSourceItems } from '../data/source-directory';
 import { mailerlite } from '../data/mailerlite';
-import { OFFLINE_APPS, CALCULATORS } from '../lib/app-config';
-const items = await getItems();
-const trending = await getTrending(9);
+
 const guides = await getGuides();
 const guideById = Object.fromEntries(guides.map((g) => [g.id, g]));
-const counts = Object.fromEntries(lanes.map((l) => [l.slug, items.filter((i) => i.data.lane === l.slug || i.data.alsoIn.includes(l.slug)).length]));
-const seasonal = lanes.filter((l) => l.season.includes(site.currentSeason));
-const others = lanes.filter((l) => !l.season.includes(site.currentSeason));
 const featuredIds = ['winter-storm-power-outage-prep-guide-south', 'winter-power-outage-checklist', 'emergency-water-storage', 'generator-vs-power-station', 'how-to-stay-warm-without-power'];
-const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean), ...guides.filter((g) => !featuredIds.includes(g.id))].slice(0, 5);
-const moreGuides = guides.filter((g) => !featured.includes(g));
+const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean)];
+
 const sourceCatalog = resolvedSourceItems();
-const sourceTrending = trendingSourceItems(sourceCatalog).slice(0, 4);
-const sourceCounts = countsByCategory(sourceCatalog);
-const sourceTiles = sourceCategories.filter((c) => ['power', 'tech', 'home', 'water', 'downloads', 'outdoor'].includes(c.id));
-const situations = [
-  { title: 'Winter storms & ice', text: 'Heat, water, and a way to hear alerts when roads and power go out.', href: '/winter-storm-prep/', photo: 'winter-storm-street', links: [['winter-storm-power-outage-prep-guide-south', 'Southern storm prep'], ['winter-storm-watch-vs-warning', 'Watch vs. warning'], ['how-to-keep-pipes-from-freezing', 'Frozen pipes']] },
-  { title: 'Power outages', text: 'Light, charging, and keeping food safe for the first 72 hours.', href: '/power-outage-kits/', photo: 'lineworker-repair', links: [['winter-power-outage-checklist', 'Outage checklist'], ['generator-vs-power-station', 'Generator or battery?'], ['how-to-stay-warm-without-power', 'Stay warm safely']] },
-  { title: 'Hurricanes & storms', text: 'Water, food that needs no fridge, and a bag ready if you leave.', href: '/storm-hurricane-prep/', photo: 'storm-over-sea', links: [['hurricane-prep-guide-gulf-south', 'Gulf hurricane prep'], ['emergency-water-storage', 'How much water'], ['storm-first-aid-kit', 'First aid kit']] },
-  { title: 'On the road', text: 'A small trunk kit that turns a cold wait into an inconvenience.', href: '/vehicle-emergency-kits/', photo: 'car-in-snow', links: [['winter-car-emergency-kit', 'Winter car kit'], ['winter-emergency-kit-for-elderly-parents', 'Kit for older parents']] },
+const sourceTrending = trendingSourceItems(sourceCatalog).slice(0, 8);
+const groupCounts = countsByGroup(sourceCatalog);
+
+const collage = [
+  { id: 'directory', href: '/directory/', title: 'Shop the Directory', text: 'Partner stores and our downloads, in one catalog.', photo: null as string | null, image: '/directory/photos/bluetti-elite-200-v2.webp', feature: true },
+  { id: 'guides', href: '/guides/', title: 'Guides', text: 'Checklists and how-tos in plain English.', photo: 'checklist-writing', image: null as string | null, feature: false },
+  { id: 'tools', href: '/tools/', title: 'Free tools & apps', text: 'Calculators and offline tools. No account needed.', photo: 'power-banks', image: null, feature: false },
+  { id: 'downloads', href: '/shop/', title: 'Our Downloads', text: 'Print-at-home planners and binders.', photo: 'gear-flatlay', image: null, feature: false },
+  { id: 'local', href: '/local/', title: 'Local & county info', text: 'Mississippi offices, shelters, and outage maps.', photo: 'lightning-road', image: null, feature: false },
 ];
-const schema = {
-  '@context': 'https://schema.org', '@type': 'ItemList', name: 'Trending preparedness gear',
-  itemListElement: trending.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/gear/${t.id}/`, Astro.site).href, name: t.data.name })),
-};
+
 const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url };
+const navList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'ReadyGearHub',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, url: new URL('/directory/', Astro.site).href, name: 'Full Source Directory' },
+    { '@type': 'ListItem', position: 2, url: new URL('/guides/', Astro.site).href, name: 'Guides' },
+    { '@type': 'ListItem', position: 3, url: new URL('/tools/', Astro.site).href, name: 'Free tools' },
+    { '@type': 'ListItem', position: 4, url: new URL('/alerts/', Astro.site).href, name: 'Live official alerts' },
+    { '@type': 'ListItem', position: 5, url: new URL('/shop/', Astro.site).href, name: 'Our Downloads' },
+    { '@type': 'ListItem', position: 6, url: new URL('/local/', Astro.site).href, name: 'Local and county info' },
+  ],
+};
 ---
-<Base title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, sorted into simple lanes and updated as trends shift." schema={[webSite, schema]}>
-  <section class="hero">
-    <div class="hero-media" aria-hidden="true"><Photo name="hero-snowy-home" sizes="(max-width: 699px) 250px, 100vw" eager decorative /></div>
+<Base title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, plus guides, free tools, and live official alerts." schema={[webSite, navList]}>
+  <section class="hero is-compact">
+    <div class="hero-media" aria-hidden="true"><Photo name="hero-snowy-home" sizes="(max-width: 699px) 640px, 100vw" eager decorative /></div>
     <div class="wrap hero-inner">
-      <p class="eyebrow">❄️ {site.hero.eyebrow}</p>
+      <p class="eyebrow">{site.hero.eyebrow}</p>
       <h1>{site.hero.title}</h1>
-      <p class="lead">{site.hero.text}</p>
+      <p class="lead">Shop partner stores, read the guides, and check live official alerts.</p>
       <div class="hero-actions">
-        <a class="btn" href={site.hero.ctaHref}>{site.hero.ctaLabel}</a>
+        <a class="btn" href="/directory/">Shop the Directory</a>
         <a class="btn ghost light" href="/guides/winter-power-outage-checklist/">Winter outage checklist</a>
       </div>
-      <ul class="hero-quick" aria-label="Quick links">
-        <li><a href="#live-status">⚠️ Live official status</a></li>
-        <li><a href="/tools/outage-timer/">❄️ Fridge outage timer</a></li>
-        <li><a href="/tools/water-calculator/">💧 Water calculator</a></li>
-        <li><a href="/tools/kit-builder/">📋 Kit builder</a></li>
-      </ul>
     </div>
   </section>
 
-  <LiveStatus />
-
-  <section class="band">
-    <div class="wrap section tight">
-      <ul class="trust" aria-label="How ReadyGearHub works">
-        <li><span class="t-icon" aria-hidden="true">🔗</span><div><strong>Official product pages</strong><span>Every listing links to the maker's own page for current specs and safety instructions.</span></div></li>
-        <li><span class="t-icon" aria-hidden="true">🧾</span><div><strong>No made-up numbers</strong><span>We don't publish retailer prices, star ratings, or reviews we didn't do.</span></div></li>
-        <li><span class="t-icon" aria-hidden="true">🏷️</span><div><strong>Affiliate links labeled</strong><span>Some links earn a commission at no cost to you. <a href="/affiliate-disclosure/">How that works</a>.</span></div></li>
-        <li><span class="t-icon" aria-hidden="true">🏛️</span><div><strong>Official guidance first</strong><span>Safety advice points to Ready.gov, the Red Cross, NWS, and FoodSafety.gov.</span></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="wrap section">
-    <SectionHead kicker="Start here" title="Prepare by situation" intro="Pick what you're getting ready for. Each one leads to the gear lane and the guides that go with it." />
-    <div class="situations">
-      {situations.map((s) => (
-        <div class="situation">
-          <Photo name={s.photo} decorative sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
-          <div class="situation-body">
-            <h3><a href={s.href}>{s.title}</a></h3>
-            <p>{s.text}</p>
-            <span class="go" aria-hidden="true">See the gear →</span>
-            <ul class="situation-links">
-              {s.links.map(([id, label]) => guideById[id] && <li><a href={`/guides/${id}/`} title={guideById[id].data.title}>{label}</a></li>)}
-            </ul>
-          </div>
-        </div>
+  <div class="wrap home-collage">
+    <nav class="bento" aria-label="What's on ReadyGearHub">
+      {collage.map((tile) => (
+        <a class:list={['bento-tile', tile.feature && 'is-feature']} href={tile.href}>
+          {tile.image ? (
+            <img src={tile.image} alt="" width="800" height="800" loading="eager" decoding="async" />
+          ) : (
+            <Photo name={tile.photo!} decorative sizes={tile.feature ? '(min-width: 900px) 50vw, 100vw' : '(min-width: 900px) 25vw, 50vw'} />
+          )}
+          <span class="bento-tile-body">
+            <span class="bento-kicker">Explore</span>
+            <span class="bento-title">{tile.title}</span>
+            <span class="bento-text">{tile.text}</span>
+          </span>
+        </a>
       ))}
-    </div>
-  </section>
+    </nav>
+  </div>
 
-  <section class="band">
-    <div class="wrap section">
-      <SectionHead kicker="Guides" title="Plain-English guides & checklists" intro="Written to be useful, not to upsell. Each guide links to the gear it mentions and the official sources behind it." href="/guides/" linkLabel="All guides" />
-      <div class="grid">
-        {featured.map((g, i) => <GuideCard guide={g} laneName={g.data.lane ? laneBySlug(g.data.lane)?.name : undefined} size={i === 0 ? 'large' : 'normal'} />)}
-      </div>
-      {moreGuides.length > 0 && (
-        <>
-          <h3 style="margin-top:28px">More guides</h3>
-          <ul class="chip-list">{moreGuides.map((g) => <li><a class="pill" href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}</ul>
-        </>
-      )}
-    </div>
-  </section>
+  <LiveStatus compact />
 
-  <section class="wrap section">
-    <SectionHead kicker="Gear picks" title="🔥 Trending now" intro="What people are reaching for this week, re-ranked as weather and demand shift." href="/gear/" linkLabel="Full directory" />
+  <section class="wrap section tight" id="directory">
+    <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro="Five broad groups from partner stores we already work with. Open the directory for the full catalog." href="/directory/" linkLabel="Open the directory" />
     <Disclosure />
-    <div class="grid">{trending.map((item) => <ItemCard item={item} showRank />)}</div>
-  </section>
-
-  <section class="band">
-    <div class="wrap section">
-      <SectionHead kicker="Gear by lane" title="Winter lanes" intro="Start here for this season." href="/gear/" linkLabel="Browse everything" />
-      <div class="grid lanes">{seasonal.map((l) => <LaneCard lane={l} count={counts[l.slug]} />)}</div>
-      {others.length > 0 && (
-        <>
-          <SectionHead title="Year-round & next season" intro="Off-grid power, homestead tools, water, first aid, and hurricane season prep." />
-          <div class="grid lanes">{others.map((l) => <LaneCard lane={l} count={counts[l.slug]} />)}</div>
-        </>
-      )}
-    </div>
-  </section>
-
-  <section class="wrap section">
-    <div class="alert-callout">
-      <p><strong>Want a closer look?</strong>The home-page status board shows official feeds for a whole state. Open the alerts page for a county, or the storm tracker for a saved county plus the outage timer.</p>
-      <div class="hero-actions" style="margin:0"><a class="btn" href="/alerts/">County alerts</a><a class="btn ghost" href="/storm-tracker/">Storm tracker</a></div>
-    </div>
-  </section>
-
-  <section class="band-dark">
-    <div class="wrap section">
-      <SectionHead kicker="Free tools" title="Calculators & offline apps" intro="Simple browser tools for outages, kits, power, solar, and water, plus small apps that keep working offline on this device. No account needed." href="/tools/" linkLabel="All tools" />
-      <div class="tools-band-grid">
-        {CALCULATORS.map((tool) => (
-          <a class="card tool-card" href={tool.href}>
-            <span class="lane-icon" aria-hidden="true">{tool.icon}</span>
-            <h3>{tool.name}</h3>
-            <p>{tool.blurb}</p>
-            <span class="count">{tool.cta}</span>
-          </a>
-        ))}
+    <div class="grid five group-grid">{sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}</div>
+    {sourceTrending.length > 0 && (
+      <div class="trend-block">
+        <h3 class="trend-label">Trending now</h3>
+        <div class="trend-row" tabindex="0" aria-label="Trending directory listings">
+          {sourceTrending.map((item) => <SourceCard item={item} />)}
+        </div>
+        <p class="fine trend-more"><a href="/directory/#listings">See all listings in the directory</a></p>
       </div>
-      <SectionHead title="Offline apps" intro="Installable tools that keep working if the network drops." href="/apps/" linkLabel="See all apps" />
-      <div class="tools-band-grid">
-        {OFFLINE_APPS.map((app) => (
-          <a class="card tool-card" href={app.href}>
-            <span class="lane-icon" aria-hidden="true">{app.icon}</span>
-            <h3>{app.name}</h3>
-            <p>{app.blurb}</p>
-            <span class="count">Open app →</span>
-          </a>
-        ))}
-      </div>
-    </div>
+    )}
   </section>
 
-  <section class="wrap section">
-    <div class="split">
-      <div class="split-media"><Photo name="checklist-writing" sizes="(min-width: 900px) 50vw, 100vw" alt="A hand checking items off a printed preparedness checklist" /></div>
-      <div>
-        <p class="kicker">Printable guides</p>
-        <h2 style="margin-top:0">Planners and binders you can print</h2>
-        <p>ReadyGearHub's own checklists and household binders as instant PDF downloads. Checkout is handled by Payhip.</p>
-        <ul class="check-list">
-          <li>Fill-in pages for contacts, medical info, and utilities</li>
-          <li>A seven-day winter storm countdown and supply checklists</li>
-          <li>Works on paper when the power and Wi-Fi are out</li>
-        </ul>
-        <a class="btn ghost" href="/shop/">Visit the shop</a>
-      </div>
-    </div>
-    <div class="grid" style="margin-top:28px">{payhipProducts.map((p) => <ProductCard product={p} />)}</div>
-  </section>
-
-
-  <section class="band">
-    <div class="wrap section">
-      <SectionHead kicker="Full Source Directory" title="Shop across our partner stores" intro="A wider catalog than the gear lanes: tech, power, home, water, and our own downloads from stores we already work with, plus partners still on the way." href="/directory/" linkLabel="Open the directory" />
-      <Disclosure />
-      <div class="grid four cat-tile-grid">{sourceTiles.map((c) => <CategoryTile category={c} count={sourceCounts[c.id]} />)}</div>
-      <div class="grid shop-grid" style="margin-top:28px">{sourceTrending.map((item) => <SourceCard item={item} />)}</div>
-    </div>
+  <section class="wrap section tight" id="guides">
+    <SectionHead kicker="Guides" title="Start with a guide" href="/guides/" linkLabel="All guides" />
+    <ul class="guide-compact">
+      {featured.map((g) => (
+        <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>
+      ))}
+    </ul>
   </section>
 
   {mailerlite.enabled && (
-    <section class="wrap section">
-      <div class="signup-split">
-        <Photo name="fireplace-living-room" sizes="(min-width: 900px) 45vw, 100vw" alt="A warm living room with a fireplace on a winter day" />
-        <div class="signup-split-body">
-          <MailerLiteSignup variant="home" />
-          <p class="fine">Also available: occasional <a href="/updates/">local and community safety updates</a> — weather advisories, official recalls, and Mississippi or Southern community notes. Not a daily email.</p>
-        </div>
-      </div>
+    <section class="wrap section tight" id="signup">
+      <MailerLiteSignup variant="home" />
     </section>
   )}
-
-  <section class="wrap section cta-band">
-    <h2>Make or sell great gear?</h2>
-    <p>Local outfitters, makers, and brands can request a listing or a featured spot.</p>
-    <a class="btn" href="/get-featured/">List your business</a>
-  </section>
 </Base>

@@ -56,6 +56,27 @@ export const sourceCategories: SourceCategory[] = [
   { id: 'downloads', slug: 'downloads', name: 'Our Downloads', short: 'Downloads', blurb: 'ReadyGearHub’s own print-at-home guides, sold as instant PDFs through Payhip.', photo: 'checklist-writing' },
 ];
 
+/** Broader home/directory groupings. Per-category pages stay at /directory/{slug}/. */
+export type SourceGroupId = 'power-tech' | 'home-water' | 'outdoor-auto' | 'safety-prep' | 'downloads';
+
+export type SourceGroup = {
+  id: SourceGroupId;
+  name: string;
+  short: string;
+  blurb: string;
+  categories: SourceCategoryId[];
+  photo?: string;
+  image?: string;
+};
+
+export const sourceGroups: SourceGroup[] = [
+  { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar, and everyday tech from partner stores.', categories: ['power', 'tech', 'audio'], photo: 'solar-rooftops' },
+  { id: 'home-water', name: 'Home & Water', short: 'Home & Water', blurb: 'Drinking-water filters and home setups from approved partners.', categories: ['home', 'water'], photo: 'water-bottles' },
+  { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus partners still on the way.', categories: ['outdoor', 'auto', 'tools'], photo: 'lantern-dusk' },
+  { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits and paid home plans, described plainly.', categories: ['safety', 'fun'], photo: 'first-aid-kit-open' },
+  { id: 'downloads', name: 'Our Downloads', short: 'Downloads', blurb: 'ReadyGearHub print-at-home guides, sold as instant PDFs.', categories: ['downloads'], photo: 'checklist-writing' },
+];
+
 export type ComingSoonPartner = {
   id: string;
   name: string;
@@ -624,4 +645,39 @@ export function countsBySource(resolved = resolvedSourceItems()): Record<string,
     counts[item.sourceName] = (counts[item.sourceName] || 0) + 1;
   }
   return counts;
+}
+
+export function groupForCategory(category: SourceCategoryId): SourceGroup | undefined {
+  return sourceGroups.find((g) => g.categories.includes(category));
+}
+
+export function itemMatchesGroup(item: SourceItem, group: SourceGroup): boolean {
+  return group.categories.some((c) => itemMatchesCategory(item, c));
+}
+
+export function itemsInGroup(groupId: SourceGroupId, resolved = resolvedSourceItems()): ResolvedSourceItem[] {
+  const group = sourceGroups.find((g) => g.id === groupId);
+  if (!group) return [];
+  return sortCatalog(resolved.filter((i) => itemMatchesGroup(i, group)));
+}
+
+export function countsByGroup(resolved = resolvedSourceItems()): Record<SourceGroupId, number> {
+  const counts = Object.fromEntries(sourceGroups.map((g) => [g.id, 0])) as Record<SourceGroupId, number>;
+  for (const item of resolved) {
+    for (const g of sourceGroups) {
+      if (itemMatchesGroup(item, g)) counts[g.id] += 1;
+    }
+  }
+  return counts;
+}
+
+export function comingSoonForGroup(groupId?: SourceGroupId): ComingSoonPartner[] {
+  if (!groupId) return comingSoonPartners;
+  const group = sourceGroups.find((g) => g.id === groupId);
+  if (!group) return [];
+  return comingSoonPartners.filter((p) => p.categories.some((c) => group.categories.includes(c)));
+}
+
+export function groupById(id: string): SourceGroup | undefined {
+  return sourceGroups.find((g) => g.id === id);
 }

@@ -3,23 +3,21 @@ import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SourceCard from '../../components/SourceCard.astro';
-import CategoryTile from '../../components/CategoryTile.astro';
+import DirectoryGroupTile from '../../components/DirectoryGroupTile.astro';
 import ComingSoonPartners from '../../components/ComingSoonPartners.astro';
 import {
-  sourceCategories,
+  sourceGroups,
   sourceStores,
   resolvedSourceItems,
   sortCatalog,
-  trendingSourceItems,
-  itemsInCategory,
   comingSoonFor,
-  countsByCategory,
+  countsByGroup,
 } from '../../data/source-directory';
 
 const items = sortCatalog(resolvedSourceItems());
-const trending = trendingSourceItems(items);
 const stores = sourceStores();
-const counts = countsByCategory(items);
+const groupCounts = countsByGroup(items);
+const pending = comingSoonFor();
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -28,11 +26,11 @@ const schema = {
   url: new URL('/directory/', Astro.site).href,
   mainEntity: {
     '@type': 'ItemList',
-    itemListElement: sourceCategories.map((c, i) => ({
+    itemListElement: sourceGroups.map((g, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: new URL(`/directory/${c.slug}/`, Astro.site).href,
-      name: c.name,
+      url: new URL(`/directory/#${g.id}`, Astro.site).href,
+      name: g.name,
     })),
   },
 };
@@ -44,53 +42,33 @@ const schema = {
 >
   <PageHero
     title="Full Source Directory"
-    eyebrow="Shop by category and store"
-    lead="A catalog of partner shops we already make a commission from, plus space for stores we’re still waiting on. This is a shopping list across those sources — not only survival gear. Prices, stock, and terms live on the seller’s site."
+    eyebrow="Shop by group and store"
+    lead="Partner shops we already work with, plus space for stores still on the way. Prices, stock, and terms live on the seller’s site."
     photo="gear-flatlay"
     crumbs={[{ label: 'Full Source Directory' }]}
   />
 
-  <section class="wrap section">
+  <section class="wrap section tight">
     <p class="disclosure"><strong>Affiliate disclosure:</strong> Many links on this page are affiliate links. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. We only use tracking links from programs we’re already approved for. We don’t invent prices or ratings; if we don’t already have a verified price, the card says “See price.” Paid plans and warranties are labeled as such. <a href="/affiliate-disclosure/">Full disclosure</a></p>
   </section>
 
   <section class="wrap section tight" id="categories">
-    <SectionHead kicker="Browse" title="Shop by category" intro="Each category can stand on its own as inventory grows. Categories without an approved partner yet show who is on the way." />
-    <div class="grid four cat-tile-grid">
-      {sourceCategories.map((c) => <CategoryTile category={c} count={counts[c.id]} />)}
+    <SectionHead kicker="Browse" title="Shop by group" intro="Five broad groups. Each older category page is still available for a closer look." />
+    <div class="grid five group-grid">
+      {sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}
     </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap section" id="trending">
-      <SectionHead kicker="Start here" title="Trending now" intro="Popular picks from official partner shops, plus our own best-selling download bundle. Always confirm the current price with the seller." href="/directory/" linkLabel="All listings" />
-      <div class="grid shop-grid source-grid">
-        {trending.map((item) => <SourceCard item={item} />)}
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap section tight" id="stores">
-    <SectionHead kicker="Stores" title="Browse by store" intro="Every source here is an approved partner, or our own shop." />
-    <ul class="store-row">
-      {stores.map((s) => (
-        <li data-program={s.programId !== 'payhip' ? s.programId : undefined} data-no-ppc={s.hideOnPaid ? '' : undefined}>
-          <a class="pill store-pill" href={`#listings`} data-jump-src={s.id}>{s.name}</a>
-        </li>
-      ))}
-    </ul>
   </section>
 
   <section class="wrap section" id="listings">
-    <SectionHead kicker="Catalog" title="All listings" intro="Filter by category or store. Trending items stay first." />
+    <SectionHead kicker="Catalog" title="All listings" intro="Filter by group or store. Trending items stay first." />
     <div class="dir-filters" data-source-filters>
       <div class="filter-row">
-        <p class="filter-label" id="filter-cat-label">Category</p>
+        <p class="filter-label" id="filter-cat-label">Group</p>
         <div class="filter-pills" role="toolbar" aria-labelledby="filter-cat-label">
           <button type="button" class="pill" data-filter-cat="all" aria-pressed="true">All</button>
           <button type="button" class="pill" data-filter-cat="trending" aria-pressed="false">Trending</button>
-          {sourceCategories.map((c) => (
-            <button type="button" class="pill" data-filter-cat={c.id} aria-pressed="false">{c.short}</button>
+          {sourceGroups.map((g) => (
+            <button type="button" class="pill" data-filter-cat={g.id} aria-pressed="false">{g.short}</button>
           ))}
         </div>
       </div>
@@ -106,34 +84,17 @@ const schema = {
       <p class="fine" data-filter-status></p>
     </div>
 
-    {sourceCategories.map((c) => {
-      const sectionItems = itemsInCategory(c.id, items);
-      const pending = comingSoonFor(c.id);
-      return (
-        <section class="dir-section" id={c.slug} data-dir-section={c.id}>
-          <header class="section-head">
-            <div>
-              <h2>{c.name}</h2>
-              <p>{c.blurb}</p>
-            </div>
-            <a class="section-link" href={`/directory/${c.slug}/`}>Open {c.short} <span aria-hidden="true">→</span></a>
-          </header>
-          {sectionItems.length > 0 && (
-            <div class="grid shop-grid source-grid">
-              {sectionItems.map((item) => <SourceCard item={item} />)}
-            </div>
-          )}
-          <ComingSoonPartners partners={pending} />
-        </section>
-      );
-    })}
+    <div class="grid shop-grid source-grid" id="catalog-grid">
+      {items.map((item) => <SourceCard item={item} />)}
+    </div>
 
+    <ComingSoonPartners partners={pending} heading="More partners coming soon" />
   </section>
 
-  <section class="wrap section prose">
+  <section class="wrap section tight prose">
     <h2>How this directory works</h2>
     <p>Listings use the same partner programs already on ReadyGearHub. A product-level card opens that item on the official shop, through our existing tracking link. A store-level card opens the partner’s official shop or a verified category page, also through an existing tracking link. Our downloads open on this site and check out through Payhip. Some cards are hidden if you arrived from a paid ad, because those partners don’t allow paid-search promotion.</p>
-    <p>Looking for organic gear write-ups instead of this shopping catalog? See the <a href="/gear/">gear directory</a> and <a href="/shop/">printable guides shop</a>.</p>
+    <p>Looking for organic gear write-ups instead of this shopping catalog? See the <a href="/gear/">gear directory</a> and <a href="/shop/">printable guides shop</a>. Individual category pages such as <a href="/directory/power/">Power &amp; Energy</a> and <a href="/directory/tech/">Tech &amp; Gadgets</a> are still here.</p>
   </section>
 
   <script>

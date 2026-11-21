@@ -1,0 +1,19 @@
+---
+import Photo from './Photo.astro';
+import type { SourceGroup } from '../data/source-directory';
+interface Props { group: SourceGroup; count: number; href?: string }
+const { group, count, href = `/directory/#${group.id}` } = Astro.props;
+---
+<a class="card lane-card group-tile" href={href}>
+  <span class="lane-card-img">
+    {group.photo ? (
+      <Photo name={group.photo} decorative sizes="(min-width: 980px) 20vw, (min-width: 640px) 50vw, 100vw" />
+    ) : (
+      <img src={group.image} alt="" width="640" height="360" loading="lazy" decoding="async" />
+    )}
+  </span>
+  <span class="lane-card-body">
+    <span class="lane-title">{group.name}</span>
+    <span class="count">{count} {count === 1 ? 'listing' : 'listings'} →</span>
+  </span>
+</a>
