@@ -341,11 +341,16 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
 .live-grid{display:grid;gap:16px;grid-template-columns:1fr}
 @media(min-width:900px){.live-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}}
 .live-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 18px 14px;display:flex;flex-direction:column;min-height:100%}
-.live-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:4px}
+.live-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px 12px;margin-bottom:4px;flex-wrap:wrap}
 .live-card h3{margin:0;font-size:1.05rem}
 .live-source{margin:2px 0 0;color:var(--muted);font-size:.82rem;font-weight:600}
 .live-state{display:grid;gap:4px;font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .live-state select{font:inherit;font-size:.9rem;font-weight:600;text-transform:none;letter-spacing:0;color:var(--ink);border:1px solid var(--line-2);border-radius:8px;padding:6px 8px;background:#fff;min-height:40px;max-width:11.5rem}
+@media(max-width:600px){
+  .live-card-head{flex-direction:column;align-items:stretch}
+  .live-state select{max-width:none;width:100%}
+}
+.page-hero .product-price,.page-hero .hero-price{color:#fff}
 .live-updated{display:block;font-size:.78rem;color:var(--muted);margin:0 0 8px}
 .live-status-msg{margin:0 0 8px;font-size:.92rem;color:var(--ink);background:var(--green-soft);border-radius:var(--radius-sm);padding:10px 12px}
 .live-status-msg[data-kind="empty"]{background:var(--ice);color:var(--ink)}
