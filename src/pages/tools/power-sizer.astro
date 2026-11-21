@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import LeadCta from '../../components/LeadCta.astro';
+import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 import '../../styles/interactive.css';
 import appliances from '../../data/appliances.json';
 ---
@@ -26,6 +27,13 @@ import appliances from '../../data/appliances.json';
     <div id="sizer-results" class="results-panel" style="margin-bottom:20px"></div>
     <div id="appliance-list"></div>
     <p class="fine" style="margin-top:20px">For fuel-burning heaters, stoves, and generators, follow the manufacturer's ventilation instructions and use a working CO alarm. See also <a href="/home-heating-backup/">Home Heating Backup</a>.</p>
+    <div class="no-print">
+      <MailerLiteSignup
+        variant="card"
+        heading="Want an occasional reminder to recheck your power plan?"
+        intro="Leave your email for a calm seasonal nudge to review your generator or power-station setup. Unsubscribe anytime."
+      />
+    </div>
   </section>
   <LeadCta place="tool:power-sizer" />
 </Base>

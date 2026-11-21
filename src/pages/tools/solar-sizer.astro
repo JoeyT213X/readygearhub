@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import LeadCta from '../../components/LeadCta.astro';
+import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 import '../../styles/interactive.css';
 import appliances from '../../data/appliances.json';
 ---
@@ -36,6 +37,13 @@ import appliances from '../../data/appliances.json';
     </form>
     <div id="sizer-results" class="results-panel" style="margin-bottom:20px"></div>
     <div id="appliance-list"></div>
+    <div class="no-print">
+      <MailerLiteSignup
+        variant="card"
+        heading="Want an occasional reminder to review your solar plan?"
+        intro="Leave your email for a calm seasonal nudge to look over your panel and battery sizing. Unsubscribe anytime."
+      />
+    </div>
   </section>
   <LeadCta place="tool:solar-sizer" />
 </Base>

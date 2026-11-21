@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 import '../../styles/interactive.css';
 import { getItems, lanes } from '../../lib/data';
 import { KIT_LINES, WATER_MIN_DAYS, WATER_SOURCES } from '../../data/kit-guidance';
@@ -55,6 +56,13 @@ const relatedLanes = (waterLine?.relatedLanes || [])
           </div>
         </>
       )}
+    </div>
+    <div class="no-print">
+      <MailerLiteSignup
+        variant="card"
+        heading="Want an occasional reminder to check your water stores?"
+        intro="Leave your email for a calm seasonal nudge to rotate stored water and review your household plan. Unsubscribe anytime."
+      />
     </div>
   </section>
 </Base>
