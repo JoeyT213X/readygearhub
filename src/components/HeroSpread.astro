@@ -1,9 +1,9 @@
 ---
 import Photo from './Photo.astro';
-import type { HeroCutout } from '../data/full-catalog';
+import { heroCutoutStyle, type HeroCutout } from '../data/full-catalog';
 
 interface Props {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   lead: string;
   cutouts: HeroCutout[];
@@ -13,23 +13,35 @@ const { eyebrow, title, lead, cutouts } = Astro.props;
 function isInternal(href: string) {
   return href.startsWith('/');
 }
+
+const titleLines = title.split('\n');
 ---
 <section class="hero is-spread hero-spread">
-  <div class="hero-spread-stage" aria-hidden="false">
+  <div class="hero-spread-stage">
     {cutouts.map((cut) => {
       const internal = isInternal(cut.href);
+      const sticker = cut.kind === 'sticker';
       return (
         <a
-          class={`hero-cutout is-${cut.slot}${cut.shape === 'round' ? ' is-round' : ''}${cut.fit === 'contain' ? ' is-contain' : ''}`}
+          class:list={[
+            'hero-cutout',
+            `is-show-${cut.show}`,
+            cut.fit === 'contain' && !sticker && 'is-contain',
+            sticker && 'is-sticker',
+            sticker && cut.tone && `is-${cut.tone}`,
+          ]}
           href={cut.href}
+          style={heroCutoutStyle(cut)}
           data-depth={String(cut.depth)}
           data-no-ppc={cut.hideOnPaid ? '' : undefined}
           data-program={cut.hideOnPaid && cut.id.includes('waterdrop') ? 'waterdrop' : undefined}
           target={internal ? undefined : '_blank'}
           rel={internal ? undefined : (cut.rel || 'noopener')}
         >
-          {cut.photoKey ? (
-            <Photo name={cut.photoKey} sizes="(max-width: 699px) 40vw, 22vw" eager={cut.eager} alt={cut.label} />
+          {sticker ? (
+            <span class="hero-sticker-text">{cut.label}</span>
+          ) : cut.photoKey ? (
+            <Photo name={cut.photoKey} sizes="(max-width: 699px) 40vw, 18vw" eager={cut.eager} alt={cut.label} />
           ) : (
             <img
               src={cut.image}
@@ -40,15 +52,15 @@ function isInternal(href: string) {
               decoding="async"
             />
           )}
-          <span class="hero-cutout-label">{cut.label}</span>
+          {!sticker && <span class="hero-cutout-label">{cut.label}</span>}
         </a>
       );
     })}
   </div>
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">{eyebrow}</p>
-      <h1>{title}</h1>
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1>{titleLines.map((line) => <span class="hero-line">{line}</span>)}</h1>
       <p class="lead">{lead}</p>
       <div class="hero-actions">
         <a class="btn" href="/directory/">Shop the Directory</a>

@@ -486,6 +486,17 @@ export const shopCategoryChips: { label: string; href: string }[] = [
   { label: 'Outdoor', href: '/directory/outdoor/' },
 ];
 
+export type HeroPos = {
+  w: string;
+  ar?: string;
+  t?: string;
+  l?: string;
+  r?: string;
+  b?: string;
+  rot: number;
+  z?: number;
+};
+
 export type HeroCutout = {
   id: string;
   href: string;
@@ -499,12 +510,53 @@ export type HeroCutout = {
   slot: string;
   depth: number;
   eager?: boolean;
-  shape?: 'round' | 'tile';
+  kind?: 'photo' | 'sticker';
+  tone?: 'ink' | 'cream' | 'ember' | 'sky';
+  show: 'always' | 'md' | 'lg';
+  mobile?: HeroPos;
+  desk: HeroPos;
 };
+
+export function heroCutoutStyle(cut: HeroCutout): string {
+  const parts: string[] = [];
+  const add = (pos: HeroPos, pre: 'm' | 'd') => {
+    parts.push(`--${pre}w:${pos.w}`);
+    if (pos.ar) parts.push(`--${pre}ar:${pos.ar}`);
+    if (pos.t) parts.push(`--${pre}t:${pos.t}`);
+    if (pos.l) parts.push(`--${pre}l:${pos.l}`);
+    if (pos.r) parts.push(`--${pre}r:${pos.r}`);
+    if (pos.b) parts.push(`--${pre}b:${pos.b}`);
+    parts.push(`--${pre}rot:${pos.rot}deg`);
+    if (pos.z) parts.push(`--${pre}z:${pos.z}`);
+  };
+  if (cut.mobile) add(cut.mobile, 'm');
+  add(cut.desk, 'd');
+  return parts.join(';');
+}
+
+export const HERO_STICKERS = [
+  { id: 'tag-ready-life', label: 'Everything for the ready life.', tone: 'cream' as const, show: 'lg' as const, desk: { w: '15%', ar: '2.4 / 1', l: '10%', t: '19%', rot: -4, z: 4 } },
+  { id: 'tag-whats-next', label: "Built for whatever's next.", tone: 'ink' as const, show: 'lg' as const, desk: { w: '14%', ar: '2.3 / 1', l: '37%', t: '37%', rot: 6, z: 4 } },
+  { id: 'tag-ultimate', label: 'The ultimate gear hub.', tone: 'ember' as const, show: 'always' as const, mobile: { w: '42%', ar: '2.4 / 1', l: '52%', t: '36%', rot: 5, z: 5 }, desk: { w: '13%', ar: '2.2 / 1', l: '35%', t: '2%', rot: 5, z: 4 } },
+  { id: 'tag-off-grid', label: 'Off-grid, on point.', tone: 'sky' as const, show: 'always' as const, mobile: { w: '40%', ar: '2.2 / 1', r: '2%', t: '46%', rot: -6, z: 5 }, desk: { w: '12%', ar: '2.1 / 1', l: '73%', t: '21%', rot: -7, z: 5 } },
+  { id: 'tag-hq', label: 'Your all-in-one prep & gear HQ.', tone: 'cream' as const, show: 'lg' as const, desk: { w: '16%', ar: '2.5 / 1', l: '83%', t: '84%', rot: 4, z: 4 } },
+  { id: 'tag-gobags', label: 'From go-bags to drones.', tone: 'ink' as const, show: 'always' as const, mobile: { w: '44%', ar: '2.3 / 1', l: '2%', t: '47%', rot: -5, z: 5 }, desk: { w: '13%', ar: '2.2 / 1', l: '72%', t: '38%', rot: 4, z: 4 } },
+  { id: 'tag-stock-up', label: 'Stock up. Power up. Head out.', tone: 'ember' as const, show: 'lg' as const, desk: { w: '16%', ar: '2.4 / 1', l: '44%', t: '67%', rot: 3, z: 4 } },
+  { id: 'tag-distance', label: 'Gear that goes the distance.', tone: 'sky' as const, show: 'md' as const, desk: { w: '15%', ar: '2.4 / 1', l: '67%', t: '83%', rot: -5, z: 4 } },
+  { id: 'tag-zero', label: 'Zero guesswork.', tone: 'ember' as const, show: 'always' as const, mobile: { w: '38%', ar: '2.1 / 1', l: '3%', t: '8%', rot: 7, z: 5 }, desk: { w: '11%', ar: '2 / 1', l: '59%', t: '3%', rot: -6, z: 5 } },
+];
 
 export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
   const byId = new Map(items.map((i) => [i.id, i]));
-  const product = (id: string, slot: string, depth: number, eager = false): HeroCutout | null => {
+  const product = (
+    id: string,
+    slot: string,
+    depth: number,
+    show: HeroCutout['show'],
+    desk: HeroPos,
+    mobile?: HeroPos,
+    eager = false,
+  ): HeroCutout | null => {
     const item = byId.get(id);
     if (!item?.image) return null;
     return {
@@ -519,59 +571,139 @@ export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
       slot,
       depth,
       eager,
+      kind: 'photo',
+      show,
+      mobile,
+      desk,
     };
   };
+
+  const scene = (
+    id: string,
+    href: string,
+    label: string,
+    photoKey: string,
+    depth: number,
+    show: HeroCutout['show'],
+    desk: HeroPos,
+    mobile?: HeroPos,
+    eager = false,
+    extra?: Partial<HeroCutout>,
+  ): HeroCutout => ({
+    id,
+    href,
+    label,
+    photoKey,
+    fit: 'cover',
+    hideOnPaid: extra?.hideOnPaid ?? false,
+    rel: extra?.rel ?? '',
+    affiliate: extra?.affiliate ?? false,
+    slot: id.replace(/^cut-/, ''),
+    depth,
+    eager,
+    kind: 'photo',
+    show,
+    mobile,
+    desk,
+  });
 
   const ghost = byId.get('ghost-robotics-official');
   const midland = byId.get('midland-wr400') || byId.get('midland-er310-crank-radio');
   const lantern = byId.get('goal-zero-lighthouse-600');
 
   const cuts: Array<HeroCutout | null> = [
-    { id: 'cut-drone', href: '/directory/drones/', label: 'Drones', photoKey: 'hero-drone', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'drone', depth: 0.08, eager: true },
-    { id: 'cut-utv', href: '/directory/vehicles/', label: 'Off-road UTVs', photoKey: 'hero-utv-dunes', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'utv', depth: 0.06, eager: true },
-    { id: 'cut-truck', href: '/directory/vehicles/', label: 'Overland trucks', photoKey: 'hero-overland-truck', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'truck', depth: 0.05, eager: true },
-    { id: 'cut-cruiser', href: '/directory/vehicles/', label: 'Overland SUVs', photoKey: 'hero-overland-cruiser', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'cruiser', depth: 0.07, eager: false },
-    { id: 'cut-bunker', href: '/directory/security/', label: 'Shelters', photoKey: 'hero-bunker-hatch', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'bunker', depth: 0.04, eager: true },
-    {
-      id: 'cut-robot',
-      href: ghost ? listingHref(ghost) : '/directory/security/',
-      label: 'Security robots',
-      photoKey: 'hero-security-robot',
-      fit: 'cover',
+    // ---- Mobile + desktop hero staples ----
+    scene('cut-utv', '/directory/vehicles/', 'Off-road UTVs', 'hero-utv-dunes', 0.06, 'always',
+      { w: '20%', ar: '16 / 10', l: '68%', t: '1%', rot: 5, z: 3 },
+      { w: '48%', ar: '16 / 10', l: '2%', t: '3%', rot: 6, z: 3 }, true),
+    scene('cut-drone', '/directory/drones/', 'Drones', 'hero-drone', 0.08, 'always',
+      { w: '13%', ar: '1', l: '47%', t: '2%', rot: -7, z: 3 },
+      { w: '30%', ar: '1', r: '2%', t: '2%', rot: -8, z: 3 }, true),
+    product('bluetti-apex-300', 'power-a', 0.05, 'always',
+      { w: '11%', ar: '1', l: '36%', t: '16%', rot: -3, z: 3 },
+      { w: '30%', ar: '1', l: '42%', t: '2%', rot: -4, z: 4 }, true),
+    scene('cut-bunker', '/directory/security/', 'Shelters', 'hero-bunker-hatch', 0.04, 'always',
+      { w: '10%', ar: '3 / 4', l: '26%', t: '1%', rot: -10, z: 3 },
+      { w: '36%', ar: '3 / 4', l: '2%', t: '22%', rot: -10, z: 3 }, true),
+    scene('cut-truck', '/directory/vehicles/', 'Overland trucks', 'hero-overland-truck', 0.05, 'always',
+      { w: '20%', ar: '4 / 3', l: '70%', t: '56%', rot: -4, z: 3 },
+      { w: '50%', ar: '4 / 3', r: '2%', t: '20%', rot: -4, z: 3 }, true),
+    scene('cut-robot', ghost ? listingHref(ghost) : '/directory/security/', 'Security robots', 'hero-security-robot', 0.06, 'always',
+      { w: '14%', ar: '1', l: '58%', t: '21%', rot: 4, z: 3 },
+      { w: '40%', ar: '1', l: '28%', t: '40%', rot: 5, z: 3 },
+      false, { rel: ghost?.rel || 'noopener', affiliate: ghost?.affiliate || false }),
+
+    // ---- Desktop/tablet fill (and some mid-size) ----
+    scene('cut-radios', midland ? listingHref(midland) : '/directory/tech/', 'Radios', 'hero-radios', 0.05, 'md',
+      { w: '14%', ar: '16 / 9', l: '0.5%', t: '1.5%', rot: -8, z: 3 },
+      undefined, false, { hideOnPaid: midland ? midland.hideOnPaid : false, rel: midland?.rel || '', affiliate: midland?.affiliate || false }),
+    scene('cut-cruiser', '/directory/vehicles/', 'Overland SUVs', 'hero-overland-cruiser', 0.07, 'lg',
+      { w: '16%', ar: '16 / 10', l: '12%', t: '0.5%', rot: 6, z: 3 }),
+    scene('cut-lantern', lantern ? listingHref(lantern) : '/directory/outdoor/', 'Lanterns', 'lantern-dusk', 0.05, 'md',
+      { w: '10%', ar: '1', l: '0.5%', t: '18%', rot: 9, z: 3 },
+      undefined, false, { hideOnPaid: lantern ? lantern.hideOnPaid : false, rel: lantern?.rel || '', affiliate: lantern?.affiliate || false }),
+    scene('cut-solar', '/directory/power/', 'Solar', 'solar-rooftops', 0.02, 'md',
+      { w: '12%', ar: '16 / 10', l: '87%', t: '0.5%', rot: 3, z: 3 }),
+    scene('cut-banks', '/directory/power/', 'Power banks', 'power-banks', 0.05, 'lg',
+      { w: '9%', ar: '1', l: '48%', t: '18%', rot: 11, z: 3 }),
+    scene('cut-generator', '/directory/power/', 'Generators', 'portable-generator', 0.04, 'md',
+      { w: '14%', ar: '4 / 3', l: '84%', t: '17%', rot: 3, z: 3 }),
+    scene('cut-food', '/directory/food/', 'Food kits', 'hero-pantry-cans', 0.04, 'md',
+      { w: '11%', ar: '1', l: '1%', t: '28%', rot: 8, z: 3 }),
+    scene('cut-water', '/directory/water/', 'Water stores', 'water-bottles', 0.03, 'md',
+      { w: '12%', ar: '1', l: '56%', t: '62%', rot: -6, z: 3 }),
+    scene('cut-flatlay', '/directory/outdoor/', 'Outdoor kits', 'gear-flatlay', 0.03, 'lg',
+      { w: '11%', ar: '1', l: '86%', t: '35%', rot: -5, z: 3 }),
+    scene('cut-aid', '/directory/safety/', 'First aid', 'first-aid-kit-open', 0.03, 'lg',
+      { w: '10%', ar: '1', l: '43%', t: '88%', rot: -9, z: 3 }),
+    scene('cut-snowy', '/guides/winter-power-outage-checklist/', 'Winter prep', 'hero-snowy-home', 0.03, 'lg',
+      { w: '10%', ar: '16 / 10', l: '23%', t: '22%', rot: 7, z: 2 }),
+    scene('cut-tools', '/directory/outdoor/', 'Tools', 'multitools', 0.03, 'lg',
+      { w: '9%', ar: '1', l: '22%', t: '32%', rot: -9, z: 2 }),
+    scene('cut-car', '/directory/vehicles/', 'Vehicle kits', 'car-in-snow', 0.03, 'lg',
+      { w: '11%', ar: '16 / 10', l: '31%', t: '29%', rot: 5, z: 2 }),
+    scene('cut-candle', '/directory/power/', 'Lighting', 'outage-candle', 0.03, 'lg',
+      { w: '8%', ar: '1', l: '12%', t: '31%', rot: 8, z: 2 }),
+    scene('cut-storm', '/alerts/', 'Live alerts', 'lightning-road', 0.02, 'lg',
+      { w: '10%', ar: '16 / 10', l: '63%', t: '51%', rot: 3, z: 2 }),
+    scene('cut-hearth', '/directory/home/', 'Home backup', 'fireplace-living-room', 0.02, 'lg',
+      { w: '10%', ar: '16 / 10', l: '88%', t: '68%', rot: 6, z: 2 }),
+    scene('cut-cook', '/directory/food/', 'Cooking', 'cast-iron-fire', 0.02, 'lg',
+      { w: '9%', ar: '1', l: '78%', t: '71%', rot: -7, z: 2 }),
+    scene('cut-socks', '/directory/outdoor/', 'Cold-weather gear', 'wool-socks-snow', 0.02, 'lg',
+      { w: '8%', ar: '1', l: '48%', t: '86%', rot: 8, z: 2 }),
+    scene('cut-checklist', '/guides/', 'Guides', 'checklist-writing', 0.02, 'lg',
+      { w: '9%', ar: '16 / 10', l: '58%', t: '86%', rot: -3, z: 2 }),
+
+    product('bluetti-ac180', 'power-b', 0.04, 'md', { w: '10%', ar: '1', l: '50%', t: '36%', rot: 5, z: 3 }),
+    product('bluetti-350w-solar', 'panel', 0.03, 'lg', { w: '10%', ar: '1', l: '61%', t: '39%', rot: -8, z: 3 }),
+    product('aquasana-under-sink', 'filter-a', 0.04, 'md', { w: '10%', ar: '1', l: '39%', t: '58%', rot: -2, z: 3 }),
+    product('waterdrop-shop', 'filter-b', 0.03, 'lg', { w: '9%', ar: '1', l: '58%', t: '78%', rot: 5, z: 3 }),
+    product('bluetti-premium-200-v2', 'power-c', 0.03, 'lg', { w: '9%', ar: '1', l: '52%', t: '51%', rot: 4, z: 3 }),
+    product('bluetti-ac50b', 'power-d', 0.03, 'lg', { w: '9%', ar: '1', l: '80%', t: '49%', rot: -6, z: 3 }),
+    product('aquasana-whole-house', 'filter-c', 0.03, 'lg', { w: '9%', ar: '1', l: '52%', t: '73%', rot: 2, z: 3 }),
+    product('bluetti-ac180p', 'power-e', 0.03, 'md', { w: '9%', ar: '1', l: '40%', t: '48%', rot: -4, z: 3 }),
+    product('bluetti-sora-60', 'power-f', 0.02, 'lg', { w: '8%', ar: '1', l: '89%', t: '54%', rot: 7, z: 2 }),
+    product('aquasana-shower-chrome', 'filter-d', 0.02, 'lg', { w: '8%', ar: '1', l: '48%', t: '64%', rot: 6, z: 2 }),
+    product('bluetti-elite-30-mini', 'power-g', 0.02, 'lg', { w: '8%', ar: '1', l: '85%', t: '78%', rot: -4, z: 2 }),
+
+    // ---- Sticker lines among the photos ----
+    ...HERO_STICKERS.map((s) => ({
+      id: s.id,
+      href: '/directory/',
+      label: s.label,
+      fit: 'cover' as const,
       hideOnPaid: false,
-      rel: ghost?.rel || 'noopener',
-      affiliate: ghost?.affiliate || false,
-      slot: 'robot',
-      depth: 0.06,
-      eager: false,
-    },
-    {
-      id: 'cut-radios',
-      href: midland ? listingHref(midland) : '/directory/tech/',
-      label: 'Radios',
-      photoKey: 'hero-radios',
-      fit: 'cover',
-      hideOnPaid: midland ? midland.hideOnPaid : false,
-      rel: midland?.rel || '',
-      affiliate: midland?.affiliate || false,
-      slot: 'radios',
-      depth: 0.05,
-      eager: false,
-    },
-    { id: 'cut-food', href: '/directory/food/', label: 'Food kits', photoKey: 'hero-pantry-cans', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'food', depth: 0.04, eager: false },
-    { id: 'cut-lantern', href: lantern ? listingHref(lantern) : '/directory/outdoor/', label: 'Lanterns', photoKey: 'lantern-dusk', fit: 'cover', hideOnPaid: lantern ? lantern.hideOnPaid : false, rel: lantern?.rel || '', affiliate: lantern?.affiliate || false, slot: 'lantern', depth: 0.05, eager: false },
-    { id: 'cut-water', href: '/directory/water/', label: 'Water stores', photoKey: 'water-bottles', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'water', depth: 0.03, eager: false },
-    { id: 'cut-generator', href: '/directory/power/', label: 'Generators', photoKey: 'portable-generator', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'generator', depth: 0.04, eager: false },
-    { id: 'cut-aid', href: '/directory/safety/', label: 'First aid', photoKey: 'first-aid-kit-open', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'aid', depth: 0.03, eager: false },
-    { id: 'cut-banks', href: '/directory/power/', label: 'Power banks', photoKey: 'power-banks', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'banks', depth: 0.05, eager: false },
-    { id: 'cut-flatlay', href: '/directory/outdoor/', label: 'Outdoor kits', photoKey: 'gear-flatlay', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'flatlay', depth: 0.03, eager: false },
-    { id: 'cut-solar', href: '/directory/power/', label: 'Solar', photoKey: 'solar-rooftops', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false, slot: 'solar', depth: 0.02, eager: false },
-    product('bluetti-apex-300', 'power-a', 0.05, true),
-    product('bluetti-ac180', 'power-b', 0.04),
-    product('aquasana-under-sink', 'filter-a', 0.04),
-    product('waterdrop-shop', 'filter-b', 0.03),
-    product('bluetti-350w-solar', 'panel', 0.03),
+      rel: '',
+      affiliate: false,
+      slot: s.id,
+      depth: 0.04,
+      kind: 'sticker' as const,
+      tone: s.tone,
+      show: s.show,
+      mobile: s.mobile,
+      desk: s.desk,
+    })),
   ];
   return cuts.filter((c): c is HeroCutout => Boolean(c));
 }
-
