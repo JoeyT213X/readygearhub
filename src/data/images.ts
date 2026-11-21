@@ -46,6 +46,7 @@ export const lanePhoto: Record<string, string> = {
 // Guide id -> photo key (falls back to the guide's lane photo)
 export const guidePhoto: Record<string, string> = {
   'emergency-water-storage': 'water-bottles',
+  'emergency-food-storage': 'cast-iron-fire',
   'generator-vs-power-station': 'portable-generator',
   'heat-one-room-safely-in-an-outage': 'fireplace-living-room',
   'how-to-keep-pipes-from-freezing': 'snowy-trees-road',
