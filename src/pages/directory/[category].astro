@@ -73,7 +73,9 @@ const schema = {
           </div>
         </div>
       )}
-      <p class="fine" data-filter-status>{items.length} {items.length === 1 ? 'listing' : 'listings'}</p>
+      {items.length > 0 && (
+        <p class="fine" data-filter-status>{items.length} {items.length === 1 ? 'listing' : 'listings'}</p>
+      )}
     </div>
 
     <section class="dir-section" data-dir-section={category.id}>
