@@ -371,3 +371,29 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
   .card,.btn,.product-card .product-cover img{transition:none}
   a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hover,.btn:hover{transform:none}
 }
+
+/* —— Full Source Directory (shopping catalog) —— */
+.dir-filters{margin:0 0 28px}
+.filter-row{margin:0 0 12px}
+.filter-label{font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.filter-pills{display:flex;flex-wrap:wrap;gap:8px}
+.filter-pills .pill{background:#fff;border:1px solid var(--line);color:var(--ink);cursor:pointer;font:inherit;font-size:.88rem;font-weight:600;padding:8px 12px;min-height:40px}
+.filter-pills .pill:hover{border-color:var(--line-2)}
+.filter-pills .pill[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.store-row{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.store-pill{background:#fff;border:1px solid var(--line);color:var(--ink);padding:8px 14px;font-size:.92rem}
+.store-pill:hover{border-color:var(--line-2);color:var(--ink)}
+.dir-section{margin-top:var(--s7)}
+.dir-section > .section-head{margin-bottom:16px}
+.dir-nav{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.coming-soon-panel{margin-top:22px;background:var(--paper);border:1px dashed var(--line-2);border-radius:var(--radius);padding:18px 20px}
+.coming-soon-panel h3{margin:0 0 6px;font-size:1.05rem}
+.coming-soon-panel p{margin:0 0 12px;color:var(--muted)}
+.coming-soon-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.coming-soon-list li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;display:inline-flex;gap:8px;align-items:baseline}
+.coming-soon-list li span{color:var(--muted);font-size:.82rem}
+.source-card .product-meta{margin:0 0 2px}
+.cat-tile-grid{margin-top:8px}
+.source-teaser{display:grid;gap:16px}
+@media(min-width:900px){.source-teaser{grid-template-columns:1.1fr 1.4fr;align-items:start}}
+.source-teaser-tiles{margin:0}

@@ -42,6 +42,7 @@ const primaryNav = [
   { href: '/guides/', label: 'Guides' },
   { href: '/tools/', label: 'Tools' },
   { href: '/alerts/', label: 'Alerts' },
+  { href: '/directory/', label: 'Directory' },
   { href: '/shop/', label: 'Shop' },
 ];
 const menuGroups = [
@@ -63,6 +64,7 @@ const menuGroups = [
     { href: '/tools/', icon: '🛠️', label: 'Calculators & tools' },
     { href: '/apps/', icon: '📱', label: 'Offline apps' },
     { href: '/local/', icon: '📍', label: 'Local resources' },
+    { href: '/directory/', icon: '🛍️', label: 'Full Source Directory' },
     { href: '/shop/', icon: '🛒', label: 'Printable guides shop' },
   ] },
   { title: 'About', links: [
@@ -152,7 +154,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
       </div>
       <div>
         <p class="foot-h">Gear by lane</p>
-        <ul>{navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.name}</a></li>)}<li><a href="/gear/">Full directory</a></li><li><a href="/gear/tech/">Newest tech</a></li></ul>
+        <ul>{navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.name}</a></li>)}<li><a href="/gear/">Gear directory</a></li><li><a href="/gear/tech/">Newest tech</a></li><li><a href="/directory/">Full Source Directory</a></li></ul>
       </div>
       <div>
         <p class="foot-h">Popular guides</p>
@@ -166,6 +168,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
           <li><a href="/tools/">Tools</a></li>
           <li><a href="/apps/">Apps</a></li>
           <li><a href="/widgets/">Widgets</a></li>
+          <li><a href="/directory/">Full Source Directory</a></li>
           <li><a href="/shop/">Shop</a></li>
           <li><a href="/kits/">Storm kits</a></li>
           <li><a href="/local/">Local resources</a></li>

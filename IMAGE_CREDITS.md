@@ -26,3 +26,9 @@ All photographs in `public/images/photos/` are from [Unsplash](https://unsplash.
 | `power-banks` | [A couple of electronic devices sitting on top of a bed](https://unsplash.com/photos/a-couple-of-electronic-devices-sitting-on-top-of-a-bed-8q8icoKEJIY) | [Konstantinos Papadopoulos](https://unsplash.com/@kosti_2) | see `src/data/images.ts` |
 | `cast-iron-fire` | [A cast iron skillet sitting on top of a fire pit](https://unsplash.com/photos/a-cast-iron-skillet-sitting-on-top-of-a-fire-pit-xV7y6lQ90FM) | [Anshu A](https://unsplash.com/@anshu18) | see `src/data/images.ts` |
 | `snowy-trees-road` | [Empty roadway between trees covered by snow](https://unsplash.com/photos/empty-roadway-between-trees-covered-by-snow-Oww-awml8ek) | [Aaron Burden](https://unsplash.com/@aaronburden) | see `src/data/images.ts` |
+
+## Full Source Directory
+
+Category tiles on `/directory/` reuse existing self-hosted Unsplash photos from the table above (`gear-flatlay`, `power-banks`, `solar-rooftops`, `fireplace-living-room`, `water-bottles`, `lantern-dusk`, `multitools`, `car-in-snow`, `first-aid-kit-open`, `checklist-writing`). Our own Payhip cover images in `public/shop/` are used for download cards.
+
+Product-card covers in `public/directory/covers/` are original geometric SVG illustrations made for this catalog (not photographs, not AI-generated images, and not merchant or brand logos). They are decorative placeholders so we do not hotlink or reuse product photos we are not licensed to host. Audio & Entertainment and Fun & Gifts category tiles use `cat-audio.svg` and `cat-fun.svg` from the same set.

@@ -11,6 +11,9 @@ import Photo from '../components/Photo.astro';
 import LiveStatus from '../components/LiveStatus.astro';
 import { lanes, getItems, getTrending, getGuides, site, laneBySlug } from '../lib/data';
 import { payhipProducts } from '../data/payhip';
+import CategoryTile from '../components/CategoryTile.astro';
+import SourceCard from '../components/SourceCard.astro';
+import { sourceCategories, trendingSourceItems, countsByCategory, resolvedSourceItems } from '../data/source-directory';
 import { mailerlite } from '../data/mailerlite';
 import { OFFLINE_APPS, CALCULATORS } from '../lib/app-config';
 const items = await getItems();
@@ -23,6 +26,10 @@ const others = lanes.filter((l) => !l.season.includes(site.currentSeason));
 const featuredIds = ['winter-storm-power-outage-prep-guide-south', 'winter-power-outage-checklist', 'emergency-water-storage', 'generator-vs-power-station', 'how-to-stay-warm-without-power'];
 const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean), ...guides.filter((g) => !featuredIds.includes(g.id))].slice(0, 5);
 const moreGuides = guides.filter((g) => !featured.includes(g));
+const sourceCatalog = resolvedSourceItems();
+const sourceTrending = trendingSourceItems(sourceCatalog).slice(0, 4);
+const sourceCounts = countsByCategory(sourceCatalog);
+const sourceTiles = sourceCategories.filter((c) => ['power', 'tech', 'home', 'water', 'downloads', 'outdoor'].includes(c.id));
 const situations = [
   { title: 'Winter storms & ice', text: 'Heat, water, and a way to hear alerts when roads and power go out.', href: '/winter-storm-prep/', photo: 'winter-storm-street', links: [['winter-storm-power-outage-prep-guide-south', 'Southern storm prep'], ['winter-storm-watch-vs-warning', 'Watch vs. warning'], ['how-to-keep-pipes-from-freezing', 'Frozen pipes']] },
   { title: 'Power outages', text: 'Light, charging, and keeping food safe for the first 72 hours.', href: '/power-outage-kits/', photo: 'lineworker-repair', links: [['winter-power-outage-checklist', 'Outage checklist'], ['generator-vs-power-station', 'Generator or battery?'], ['how-to-stay-warm-without-power', 'Stay warm safely']] },
@@ -171,6 +178,16 @@ const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: si
       </div>
     </div>
     <div class="grid" style="margin-top:28px">{payhipProducts.map((p) => <ProductCard product={p} />)}</div>
+  </section>
+
+
+  <section class="band">
+    <div class="wrap section">
+      <SectionHead kicker="Full Source Directory" title="Shop across our partner stores" intro="A wider catalog than the gear lanes: tech, power, home, water, and our own downloads from stores we already work with, plus partners still on the way." href="/directory/" linkLabel="Open the directory" />
+      <Disclosure />
+      <div class="grid four cat-tile-grid">{sourceTiles.map((c) => <CategoryTile category={c} count={sourceCounts[c.id]} />)}</div>
+      <div class="grid shop-grid" style="margin-top:28px">{sourceTrending.map((item) => <SourceCard item={item} />)}</div>
+    </div>
   </section>
 
   {mailerlite.enabled && (

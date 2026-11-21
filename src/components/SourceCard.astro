@@ -1,0 +1,35 @@
+---
+import type { ResolvedSourceItem } from '../data/source-directory';
+interface Props { item: ResolvedSourceItem; heading?: 'h2' | 'h3' }
+const { item, heading = 'h3' } = Astro.props;
+const Tag = heading;
+const isInternal = item.href.startsWith('/');
+---
+<article
+  class="card item-card product-card source-card"
+  data-program={item.affiliate ? item.programId : undefined}
+  data-no-ppc={item.hideOnPaid ? '' : undefined}
+  data-category={item.category}
+  data-also={ (item.alsoIn ?? []).join(' ') }
+  data-source={item.programId}
+  data-trending={item.trending ? '1' : undefined}
+>
+  <a class="product-cover" href={item.href} aria-label={item.title} tabindex="-1" target={isInternal ? undefined : '_blank'} rel={item.rel || undefined}>
+    {item.trending && <span class="badge">Trending</span>}
+    {!item.trending && item.offerLabel === 'Instant PDF' && <span class="badge">Instant PDF</span>}
+    <img src={item.image} alt="" width="640" height="360" loading="lazy" decoding="async" />
+  </a>
+  <p class="product-meta">{item.sourceName}{item.offerLabel ? ` · ${item.offerLabel}` : ''}</p>
+  <Tag><a href={item.href} target={isInternal ? undefined : '_blank'} rel={item.rel || undefined}>{item.title}</a></Tag>
+  <p class="product-price">{item.priceLabel}</p>
+  <p>{item.blurb}</p>
+  <div class="card-actions">
+    <a
+      class="btn small"
+      href={item.href}
+      target={isInternal ? undefined : '_blank'}
+      rel={item.rel || undefined}
+      data-program={item.affiliate ? item.programId : undefined}
+    >{item.ctaLabel}{isInternal ? '' : ' ↗'}</a>
+  </div>
+</article>

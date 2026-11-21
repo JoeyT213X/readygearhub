@@ -1,0 +1,20 @@
+---
+import Photo from './Photo.astro';
+import type { SourceCategory } from '../data/source-directory';
+interface Props { category: SourceCategory; count: number }
+const { category, count } = Astro.props;
+const href = `/directory/${category.slug}/`;
+---
+<a class="card lane-card" href={href}>
+  <span class="lane-card-img">
+    {category.photo ? (
+      <Photo name={category.photo} decorative sizes="(min-width: 980px) 25vw, (min-width: 640px) 50vw, 100vw" />
+    ) : (
+      <img src={category.image} alt="" width="640" height="360" loading="lazy" decoding="async" />
+    )}
+  </span>
+  <span class="lane-card-body">
+    <span class="lane-title">{category.name}</span>
+    <span class="count">{count > 0 ? `${count} ${count === 1 ? 'listing' : 'listings'} →` : 'Partners coming soon →'}</span>
+  </span>
+</a>

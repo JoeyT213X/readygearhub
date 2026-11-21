@@ -1,0 +1,19 @@
+---
+import type { ComingSoonPartner } from '../data/source-directory';
+interface Props { partners: ComingSoonPartner[]; heading?: string }
+const { partners, heading = 'More partners coming soon' } = Astro.props;
+---
+{partners.length > 0 && (
+  <aside class="coming-soon-panel" aria-label={heading}>
+    <h3>{heading}</h3>
+    <p>These stores are in the queue. We’ll add their catalogs here after approval, with the same honest labels and tracking links we already use.</p>
+    <ul class="coming-soon-list">
+      {partners.map((p) => (
+        <li>
+          <strong>{p.name}</strong>
+          <span>{p.network}</span>
+        </li>
+      ))}
+    </ul>
+  </aside>
+)}
