@@ -27,12 +27,24 @@ const order: HeroBentoTile['id'][] = [
 <section class="hero is-bento">
   <div class="hero-bento">
     <div class="hero-bento-copy">
-      <a class="btn hero-btn-dir" href="/directory/">Ultimate Directory</a>
+      <div class="hero-bento-actions">
+        <a class="btn hero-btn-dir" href="/directory/">Ultimate Directory</a>
+        <a class="btn ghost light hero-btn-hub" href="/alerts/">Outages, Alerts &amp; Checklists</a>
+      </div>
       <div class="hero-bento-copy-text">
         <h1>{title}</h1>
         <p class="lead">{lead}</p>
       </div>
-      <a class="btn ghost light hero-btn-hub" href="/alerts/">Outages, Alerts &amp; Checklists</a>
+      <nav class="hero-quick hero-quick-left" aria-label="Quick links">
+        <a class="hero-quick-link" href="/guides/">Guides<span class="hero-quick-arrow" aria-hidden="true">→</span></a>
+        <a class="hero-quick-link" href="/tools/">Free tools<span class="hero-quick-arrow" aria-hidden="true">→</span></a>
+        <a class="hero-quick-link" href="/winter-storm-ready-checklist/">Checklists<span class="hero-quick-arrow" aria-hidden="true">→</span></a>
+      </nav>
+      <nav class="hero-quick hero-quick-right" aria-label="More quick links">
+        <a class="hero-quick-link" href="/storm-hurricane-prep/">Hurricane prep<span class="hero-quick-arrow" aria-hidden="true">→</span></a>
+        <a class="hero-quick-link" href="/shop/">Our Downloads<span class="hero-quick-arrow" aria-hidden="true">→</span></a>
+        <a class="hero-quick-link" href="/local/">Local &amp; county<span class="hero-quick-arrow" aria-hidden="true">→</span></a>
+      </nav>
     </div>
     {order.map((id) => {
       const tile = byId[id];
