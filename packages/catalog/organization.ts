@@ -1,13 +1,14 @@
 /**
  * Legal and contact identity for both ReadyGearHub and the company hub.
  *
- * LEGAL NAME PLACEHOLDER: the exact LLC name is being verified with the
- * Mississippi Secretary of State (review window 22 Nov 2026, 1:15 PM
- * America/Chicago). Until that is confirmed, use this value everywhere.
+ * Confirmed legal name (22 Nov 2026, America/Chicago): OMEGA UCO SOLUTIONS, LLC
+ * (all caps, comma before LLC), from D&B DUNS and Mississippi new-business records.
  * Change `legalName` here only — both sites read it at build time.
+ * Brand prose may still use the title-case shortName; legal-entity mentions must
+ * use legalName verbatim.
  */
 export const organization = {
-  legalName: 'Omega UCO Solutions LLC',
+  legalName: 'OMEGA UCO SOLUTIONS, LLC',
   shortName: 'Omega UCO Solutions',
   tagline: 'Unified Commerce Operations',
   city: 'Walnut Grove, MS',
