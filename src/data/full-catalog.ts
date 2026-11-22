@@ -550,9 +550,8 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   const scenes: ShopBoardTile[] = [
     sceneTile('scene-power', 'Power', '/directory/power/', 'solar-rooftops'),
     sceneTile('scene-drone', 'Drones', '/directory/drones/', 'hero-drone'),
-    // Vehicle emergency kits fold into this tile; keep the broader vehicles directory.
     sceneTile('scene-utv', 'Off-road vehicles', '/directory/vehicles/', 'hero-utv-dunes'),
-    sceneTile('scene-security', 'Security', '/directory/security/', 'hero-security-robot'),
+    sceneTile('scene-bunker', 'Shelters', '/directory/security/', 'hero-bunker-hatch'),
     sceneTile(
       'scene-radios-tents-water',
       'Radios, tents & water',
@@ -561,7 +560,7 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
     ),
     sceneTile('scene-food', 'Food & pantry', '/directory/food/', 'prep-food-storage'),
     sceneTile('scene-outdoor', 'Outdoor', '/directory/outdoor/', 'hero-tent-stars'),
-    sceneTile('scene-aid', 'First aid', '/first-aid-medical-prep/', 'first-aid-kit-open'),
+    sceneTile('scene-aid', 'First aid', '/directory/safety/', 'first-aid-kit-open'),
   ];
 
   if (lantern && lanternHref && lanternHref !== '/directory/outdoor/' && !isPortablePowerStation(lantern)) {
@@ -576,25 +575,12 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
 
   for (const scene of scenes) push(scene);
 
-  // Destinations folded in from the former hero category windows and home collage, deduped by href.
-  // Water storage stays on "Radios, tents & water". Vehicle kits stay on "Off-road vehicles".
+  // Destinations from the former home collage cards, folded into this grid and deduped by href.
   const hubTiles: ShopBoardTile[] = [
-    sceneTile('hub-winter', 'Winter storm & outages', '/guides/winter-storm-power-outage-prep-guide-south/', 'winter-storm-street'),
-    sceneTile('hub-prepper', "Prepper's Picks", '/prepper-picks/', 'gear-flatlay'),
-    sceneTile('hub-alerts', 'Live alerts', '/alerts/', 'lightning-road'),
     sceneTile('hub-guides', 'Guides', '/guides/', 'checklist-writing'),
     sceneTile('hub-tools', 'Free tools', '/tools/', 'multitools'),
-    {
-      id: 'hub-downloads',
-      label: 'Our Downloads',
-      href: '/shop/',
-      image: '/shop/family-emergency-binder.png',
-      fit: 'contain',
-      hideOnPaid: false,
-      rel: '',
-      affiliate: false,
-    },
-    sceneTile('hub-local', 'Local & county', '/local/', 'lineworker-repair'),
+    sceneTile('hub-downloads', 'Our Downloads', '/shop/', 'gear-flatlay'),
+    sceneTile('hub-local', 'Local & county', '/local/', 'lightning-road'),
   ];
   for (const tile of hubTiles) push(tile);
 

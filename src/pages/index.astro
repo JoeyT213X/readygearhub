@@ -11,7 +11,7 @@ import DirectoryGroupTile from '../components/DirectoryGroupTile.astro';
 import { getGuides, getItems, site } from '../lib/data';
 import { sourceGroups } from '../data/source-directory';
 import { mailerlite } from '../data/mailerlite';
-import { buildFullCatalog, homeShopPicks, countsByCatalogGroup, shopBoardTiles } from '../data/full-catalog';
+import { buildFullCatalog, homeShopPicks, countsByCatalogGroup, shopBoardTiles, heroBentoTiles } from '../data/full-catalog';
 
 const guides = await getGuides();
 const guideById = Object.fromEntries(guides.map((g) => [g.id, g]));
@@ -21,6 +21,7 @@ const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean)];
 const catalog = buildFullCatalog(await getItems());
 const shopPicks = homeShopPicks(catalog, 16);
 const boardTiles = shopBoardTiles(catalog);
+const heroTiles = heroBentoTiles();
 const groupCounts = countsByCatalogGroup(catalog);
 
 const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url };
@@ -43,6 +44,7 @@ const navList = {
   <HeroSpread
     title="Prepping & Survival Network"
     lead="From go-bags to drones. Every shop, one hub."
+    tiles={heroTiles}
   />
 
   <div class="wrap home-collage">

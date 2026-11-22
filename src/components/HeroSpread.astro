@@ -1,11 +1,30 @@
 ---
+import Photo from './Photo.astro';
+import type { HeroBentoTile } from '../data/full-catalog';
+
 interface Props {
   title: string;
   lead: string;
+  tiles: HeroBentoTile[];
 }
-const { title, lead } = Astro.props;
+const { title, lead, tiles } = Astro.props;
+const byId = Object.fromEntries(tiles.map((t) => [t.id, t]));
+const order: HeroBentoTile['id'][] = [
+  'winter',
+  'water',
+  'food',
+  'vehicle',
+  'camping',
+  'drones',
+  'overland',
+  'first-aid',
+  'radios',
+  'security',
+  'prepper',
+  'alerts',
+];
 ---
-<section class="hero is-bento is-copy-only">
+<section class="hero is-bento">
   <div class="hero-bento">
     <div class="hero-bento-copy">
       <a class="btn hero-btn-dir" href="/directory/">Ultimate Directory</a>
@@ -15,5 +34,18 @@ const { title, lead } = Astro.props;
       </div>
       <a class="btn ghost light hero-btn-hub" href="/alerts/">Outages, Alerts &amp; Checklists</a>
     </div>
+    {order.map((id) => {
+      const tile = byId[id];
+      if (!tile) return null;
+      return (
+        <a class:list={['hero-bento-tile', `is-${tile.id}`]} href={tile.href}>
+          <Photo name={tile.photoKey} sizes="(max-width: 699px) 100vw, (max-width: 1099px) 50vw, 25vw" eager={tile.eager} decorative />
+          <span class="hero-bento-chip">
+            <span class="hero-bento-chip-label">{tile.label}</span>
+            <span class="hero-bento-chip-arrow" aria-hidden="true">→</span>
+          </span>
+        </a>
+      );
+    })}
   </div>
 </section>
