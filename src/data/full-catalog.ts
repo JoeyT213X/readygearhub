@@ -177,10 +177,20 @@ function fromPartner(item: ResolvedSourceItem): CatalogItem {
 
 const TOOLS_GEAR_IDS = new Set([
   'leatherman-wave-plus', 'leatherman-signal', 'leatherman-rebar', 'leatherman-wingman', 'leatherman-skeletool-cx', 'leatherman-raptor-rescue', 'leatherman-arc', 'leatherman-micra',
+  'leatherman-surge', 'leatherman-free-p4', 'leatherman-bond', 'leatherman-super-tool-300', 'leatherman-crunch',
   'gerber-multi-plier-600-basic', 'snow-joe-shovelution-18',
+  'nitecore-edc29', 'nitecore-edc37', 'nitecore-hc65-uhe',
 ]);
 const AUDIO_GEAR_IDS = new Set([
   'eton-elite-executive-radio', 'eton-elite-traveler-radio', 'eton-elite-field-radio', 'eton-red-cross-journey-radio', 'midland-t71vp3-xtalker',
+  'midland-gxt1000x3vp4', 'midland-gxt67-pro', 'midland-mxt115p', 'midland-cliptalk', 'midland-er310pro',
+  'cobra-75-allroad', 'cobra-29lx', 'cobra-29ltd', 'cobra-25ltd', 'btech-uv-5x3',
+]);
+const FUN_GEAR_IDS = new Set([
+  'midland-t71vp3-xtalker', 'midland-gxt1000x3vp4', 'midland-gxt67-pro', 'midland-cliptalk',
+]);
+const VEHICLES_GEAR_IDS = new Set([
+  'midland-mxt115p', 'cobra-75-allroad', 'cobra-29lx', 'cobra-29ltd',
 ]);
 
 function extraDirectoryTabs(item: GearInput): string[] {
@@ -188,6 +198,8 @@ function extraDirectoryTabs(item: GearInput): string[] {
   if (item.data.lane === 'vehicle-emergency-kits' || item.data.alsoIn.includes('vehicle-emergency-kits')) extra.push('auto');
   if (TOOLS_GEAR_IDS.has(item.id)) extra.push('tools');
   if (AUDIO_GEAR_IDS.has(item.id)) extra.push('audio');
+  if (FUN_GEAR_IDS.has(item.id)) extra.push('fun');
+  if (VEHICLES_GEAR_IDS.has(item.id)) extra.push('vehicles');
   return extra;
 }
 
