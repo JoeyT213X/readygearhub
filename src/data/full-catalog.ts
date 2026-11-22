@@ -505,6 +505,13 @@ function sceneTile(
   };
 }
 
+/** Home Explore board count: exact catalog size, rounded down to the nearest 50. 419 → "400+", 450–499 → "450+", 500 → "500+". */
+export function shopBoardCountLabel(count: number): string {
+  const n = Math.max(0, Math.floor(Number(count) || 0));
+  const rounded = Math.floor(n / 50) * 50;
+  return rounded > 0 ? `${rounded}+` : String(n);
+}
+
 export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   const byId = new Map(items.map((i) => [i.id, i]));
   const tiles: ShopBoardTile[] = [];

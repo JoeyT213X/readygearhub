@@ -1,12 +1,13 @@
 ---
 import Photo from './Photo.astro';
-import type { ShopBoardTile } from '../data/full-catalog';
+import { shopBoardCountLabel, type ShopBoardTile } from '../data/full-catalog';
 
 interface Props {
   tiles: ShopBoardTile[];
   catalogCount: number;
 }
 const { tiles, catalogCount } = Astro.props;
+const countLabel = shopBoardCountLabel(catalogCount);
 
 function isInternal(href: string) {
   return href.startsWith('/');
@@ -17,7 +18,7 @@ function isInternal(href: string) {
     <div class="shop-board-copy">
       <span class="bento-kicker">Explore</span>
       <a class="shop-board-title" href="/directory/">Shop the Directory</a>
-      <p class="shop-board-text">{catalogCount} listings from partner stores, official shops, gear write-ups, downloads, and free tools.</p>
+      <p class="shop-board-text">{countLabel} listings from partner stores, official shops, gear write-ups, downloads, and free tools.</p>
     </div>
     <div class="shop-board-grid">
       {tiles.map((tile) => {
@@ -42,7 +43,7 @@ function isInternal(href: string) {
       })}
       <a class="shop-board-cell is-count" href="/directory/">
         <span class="shop-board-count-kicker">Directory</span>
-        <span class="shop-board-count-num">{catalogCount}</span>
+        <span class="shop-board-count-num">{countLabel}</span>
         <span class="shop-board-caption">All listings</span>
       </a>
     </div>
