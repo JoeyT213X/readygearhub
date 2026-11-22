@@ -5,7 +5,7 @@ lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-19
 updated: 2026-11-21
-relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40"]
+relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40", "mountain-house-classic-bucket", "readywise-4-week-food-supply", "midland-wr400", "kidde-pro-210"]
 draft: false
 ---
 

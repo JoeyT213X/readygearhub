@@ -175,13 +175,29 @@ function fromPartner(item: ResolvedSourceItem): CatalogItem {
   };
 }
 
+const TOOLS_GEAR_IDS = new Set([
+  'leatherman-wave-plus', 'leatherman-signal', 'leatherman-rebar', 'leatherman-wingman', 'leatherman-skeletool-cx', 'leatherman-raptor-rescue', 'leatherman-arc', 'leatherman-micra',
+  'gerber-multi-plier-600-basic', 'snow-joe-shovelution-18',
+]);
+const AUDIO_GEAR_IDS = new Set([
+  'eton-elite-executive-radio', 'eton-elite-traveler-radio', 'eton-elite-field-radio', 'eton-red-cross-journey-radio', 'midland-t71vp3-xtalker',
+]);
+
+function extraDirectoryTabs(item: GearInput): string[] {
+  const extra: string[] = [];
+  if (item.data.lane === 'vehicle-emergency-kits' || item.data.alsoIn.includes('vehicle-emergency-kits')) extra.push('auto');
+  if (TOOLS_GEAR_IDS.has(item.id)) extra.push('tools');
+  if (AUDIO_GEAR_IDS.has(item.id)) extra.push('audio');
+  return extra;
+}
+
 function fromGear(item: GearInput): CatalogItem {
   const out = resolveItemOutbound(item.id, item.data.officialUrl, item.data.affiliateUrl);
   const programId = out.programId || '';
   const gearCat = categoryForItem(item.id);
   const group = catToGroup(gearCat);
   const detailHref = `/gear/${item.id}/`;
-  const alsoIn = seoAlsoIn(group, gearCat);
+  const alsoIn = [...new Set([...(seoAlsoIn(group, gearCat) ?? []), ...extraDirectoryTabs(item)])];
   return {
     id: item.id,
     title: item.data.name,
@@ -225,7 +241,7 @@ function fromDirectoryEntry(idKnown: Set<string>): CatalogItem[] {
       hideOnPaid: isNoPpcProgram(e.programId) || isNoPpcProgram(e.program) || isNoPpcProgram(e.id),
       programId: e.programId || e.program || '',
       category: e.category,
-      alsoIn: seoAlsoIn(group, e.category),
+      alsoIn: [...new Set([...(seoAlsoIn(group, e.category) ?? []), ...((e as { alsoIn?: string[] }).alsoIn ?? [])])],
       image: undefined,
       priceLabel: isResource ? 'Free' : 'See official site',
       offerLabel: e.offer || e.type,
