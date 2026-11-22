@@ -8,6 +8,7 @@ import { merchantReturnPolicy } from '../lib/shop-schema';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import Analytics from '../components/Analytics.astro';
 import FunnelGuards from '../components/FunnelGuards.astro';
+import VisitorTicker from '../components/VisitorTicker.astro';
 import { getCollection } from 'astro:content';
 interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean }
 const { title, description, image = '/og-default.png', type = 'website', schema, noindex = false } = Astro.props;
@@ -188,6 +189,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
       <li><a href="/refund-policy/">Refund policy</a></li>
       <li><a href="/alerts/">Official NWS alerts</a></li>
     </ul>
+    <VisitorTicker />
     <p class="wrap fine">© {year} {site.name}, operated by {site.legalName}, {site.streetAddress}, {site.addressLocality}, {site.addressRegion} {site.postalCode}. <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>. Product names and trademarks belong to their owners. Always follow manufacturer safety instructions. Photos from Unsplash, <a href="/about/#photo-credits">credits</a>.</p>
   </footer>
   <script is:inline set:html={menuJs}></script>
