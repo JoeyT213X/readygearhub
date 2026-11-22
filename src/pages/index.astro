@@ -3,7 +3,6 @@ import Base from '../layouts/Base.astro';
 import Disclosure from '../components/Disclosure.astro';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import SectionHead from '../components/SectionHead.astro';
-import Photo from '../components/Photo.astro';
 import HeroSpread from '../components/HeroSpread.astro';
 import ShopBoard from '../components/ShopBoard.astro';
 import LiveStatus from '../components/LiveStatus.astro';
@@ -12,9 +11,6 @@ import DirectoryGroupTile from '../components/DirectoryGroupTile.astro';
 import { getGuides, getItems, site } from '../lib/data';
 import { sourceGroups } from '../data/source-directory';
 import { mailerlite } from '../data/mailerlite';
-import { payhipProducts } from '../data/payhip';
-import { photoForGuide } from '../data/images';
-import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
 import { buildFullCatalog, homeShopPicks, countsByCatalogGroup, shopBoardTiles, heroBentoTiles } from '../data/full-catalog';
 
 const guides = await getGuides();
@@ -27,13 +23,6 @@ const shopPicks = homeShopPicks(catalog, 16);
 const boardTiles = shopBoardTiles(catalog);
 const heroTiles = heroBentoTiles();
 const groupCounts = countsByCatalogGroup(catalog);
-const toolTeasers = [...CALCULATORS.slice(0, 2), ...OFFLINE_APPS.slice(0, 2)];
-const localTeasers = [
-  { href: '/local/mississippi/', label: 'Mississippi' },
-  { href: '/local/mississippi/hancock/', label: 'Hancock County' },
-  { href: '/local/mississippi/harrison/', label: 'Harrison County' },
-  { href: '/local/mississippi/jackson/', label: 'Jackson County' },
-];
 
 const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url };
 const navList = {
@@ -61,75 +50,8 @@ const navList = {
   <div class="wrap home-collage">
     <nav class="bento" aria-label="What's on ReadyGearHub">
       <ShopBoard tiles={boardTiles} catalogCount={catalog.length} />
-
-      <a class="bento-tile" href="/guides/">
-        <Photo name="checklist-writing" decorative sizes="(min-width: 900px) 25vw, 50vw" />
-        <span class="bento-thumbs" aria-hidden="true">
-          {featured.slice(0, 4).map((g) => (
-            <span class="bento-thumb">
-              <Photo name={photoForGuide(g.id, g.data.lane)} decorative sizes="120px" />
-            </span>
-          ))}
-        </span>
-        <span class="bento-tile-body">
-          <span class="bento-kicker">Explore</span>
-          <span class="bento-title">Guides</span>
-          <span class="bento-text">Checklists and how-tos in plain English.</span>
-        </span>
-      </a>
-
-      <a class="bento-tile" href="/tools/">
-        <Photo name="lantern-dusk" decorative sizes="(min-width: 900px) 25vw, 50vw" />
-        <span class="bento-tile-body">
-          <span class="bento-kicker">Explore</span>
-          <span class="bento-title">Free tools &amp; apps</span>
-          <span class="bento-text">Calculators and offline tools. No account needed.</span>
-          <span class="bento-mini-list" aria-hidden="true">
-            {toolTeasers.map((t) => <span>{t.icon} {t.name}</span>)}
-          </span>
-        </span>
-      </a>
-
-      <a class="bento-tile" href="/shop/">
-        <Photo name="gear-flatlay" decorative sizes="(min-width: 900px) 25vw, 50vw" />
-        <span class="bento-thumbs is-covers" aria-hidden="true">
-          {payhipProducts.slice(0, 4).map((p) => (
-            <span class="bento-thumb"><img src={p.image} alt="" width="200" height="120" loading="lazy" decoding="async" /></span>
-          ))}
-        </span>
-        <span class="bento-tile-body">
-          <span class="bento-kicker">Explore</span>
-          <span class="bento-title">Our Downloads</span>
-          <span class="bento-text">Print-at-home planners and binders.</span>
-        </span>
-      </a>
-
-      <a class="bento-tile" href="/local/">
-        <Photo name="lightning-road" decorative sizes="(min-width: 900px) 25vw, 50vw" />
-        <span class="bento-tile-body">
-          <span class="bento-kicker">Explore</span>
-          <span class="bento-title">Local &amp; county info</span>
-          <span class="bento-text">Mississippi offices, shelters, and outage maps.</span>
-          <span class="bento-mini-list" aria-hidden="true">
-            {localTeasers.map((l) => <span>{l.label}</span>)}
-          </span>
-        </span>
-      </a>
     </nav>
   </div>
-
-  <LiveStatus compact />
-
-  <section class="wrap section tight" id="directory">
-    <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro={`The full catalog: partner stores, gear listings, downloads, and free tools. ${catalog.length} listings in all.`} href="/directory/" linkLabel="Open the directory" />
-    <Disclosure />
-    <div class="grid five group-grid">{sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}</div>
-    <div class="grid shop-grid source-grid home-shop-grid" style="margin-top:28px">
-      {shopPicks.map((item) => <SourceCard item={item} />)}
-    </div>
-    <p class="fine trend-more"><a href="/directory/#listings">See all {catalog.length} listings in the directory</a></p>
-  </section>
-
 
   <section class="wrap section tight home-band" id="guides">
     <SectionHead kicker="Guides" title="Start with a guide" href="/guides/" linkLabel="All guides" />
@@ -145,4 +67,16 @@ const navList = {
       <MailerLiteSignup variant="home" />
     </section>
   )}
+
+  <LiveStatus compact />
+
+  <section class="wrap section tight" id="directory">
+    <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro={`The full catalog: partner stores, gear listings, downloads, and free tools. ${catalog.length} listings in all.`} href="/directory/" linkLabel="Open the directory" />
+    <Disclosure />
+    <div class="grid five group-grid">{sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}</div>
+    <div class="grid shop-grid source-grid home-shop-grid" style="margin-top:28px">
+      {shopPicks.map((item) => <SourceCard item={item} />)}
+    </div>
+    <p class="fine trend-more"><a href="/directory/#listings">See all {catalog.length} listings in the directory</a></p>
+  </section>
 </Base>

@@ -574,6 +574,16 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   }
 
   for (const scene of scenes) push(scene);
+
+  // Destinations from the former home collage cards, folded into this grid and deduped by href.
+  const hubTiles: ShopBoardTile[] = [
+    sceneTile('hub-guides', 'Guides', '/guides/', 'checklist-writing'),
+    sceneTile('hub-tools', 'Free tools', '/tools/', 'multitools'),
+    sceneTile('hub-downloads', 'Our Downloads', '/shop/', 'gear-flatlay'),
+    sceneTile('hub-local', 'Local & county', '/local/', 'lightning-road'),
+  ];
+  for (const tile of hubTiles) push(tile);
+
   return tiles;
 }
 
