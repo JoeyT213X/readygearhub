@@ -37,6 +37,7 @@ export const photos: Record<string, Photo> = {
   "hero-drone-flight": { key: "hero-drone-flight", alt: "A compact camera drone flying over green mountain slopes under a clear blue sky", author: "Dmitrii Eremin", authorUrl: "https://www.pexels.com/@dimoffire/", sourceUrl: "https://www.pexels.com/photo/a-drone-camera-flying-13076149/" },
   "hero-food-shelves": { key: "hero-food-shelves", alt: "Wooden shelves packed with colorful tins of preserved food", author: "Warren Yip", authorUrl: "https://www.pexels.com/@warren-yip-1081272606/", sourceUrl: "https://www.pexels.com/photo/colorful-display-of-canned-goods-in-store-shelf-32063427/" },
   "hero-water-pour": { key: "hero-water-pour", alt: "Clear water pouring into a glass with bright light and droplets on a dark table", author: "Pixabay", authorUrl: "https://www.pexels.com/@pixabay/", sourceUrl: "https://www.pexels.com/photo/clear-drinking-glasses-with-water-416528/" },
+  "prep-food-storage": { key: "prep-food-storage", alt: "Stacked cans, bagged dry pasta, bottled water, and clear storage totes packed for emergency food stores", author: "Julia M Cameron", authorUrl: "https://www.pexels.com/@julia-m-cameron/", sourceUrl: "https://www.pexels.com/photo/food-in-cans-and-plastic-bags-6994945/" },
 };
 
 

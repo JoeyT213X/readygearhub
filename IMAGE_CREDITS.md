@@ -144,3 +144,12 @@ Added 21 November 2026 (America/Chicago). Downloaded from Pexels, re-encoded as 
 | `hero-drone-flight` | [A Drone Camera Flying](https://www.pexels.com/photo/a-drone-camera-flying-13076149/) | [Dmitrii Eremin](https://www.pexels.com/@dimoffire/) / Pexels | Home hero drones tile |
 | `hero-food-shelves` | [Colorful Display of Canned Goods in Store Shelf](https://www.pexels.com/photo/colorful-display-of-canned-goods-in-store-shelf-32063427/) | [Warren Yip](https://www.pexels.com/@warren-yip-1081272606/) / Pexels | Home hero food & prepper supplies tile |
 | `hero-water-pour` | [Fluid Pouring in Pint Glass](https://www.pexels.com/photo/clear-drinking-glasses-with-water-416528/) | [Pixabay](https://www.pexels.com/@pixabay/) / Pexels | Home hero water storage & filters tile |
+
+## Home Explore board v12 photo (Pexels)
+
+Added 22 November 2026 (America/Chicago). Downloaded from Pexels (original 6000×4000 JPEG), re-encoded as self-hosted WebP at 480, 960, and 1600 px wide, and not hotlinked. Used under the [Pexels License](https://www.pexels.com/license/). This is a generic scene photograph for the Food & pantry tile on the home Explore board; it is not a photo of a specific partner product. The earlier `hero-pantry-cans` and `hero-food-shelves` files remain in use on the directory and the home hero.
+
+| File key | Photo | Photographer / source | Used on |
+|---|---|---|---|
+| `prep-food-storage` | [Food in Cans and Plastic Bags](https://www.pexels.com/photo/food-in-cans-and-plastic-bags-6994945/) | [Julia M Cameron](https://www.pexels.com/@julia-m-cameron/) / Pexels | Home Explore board, Food & pantry tile |
+

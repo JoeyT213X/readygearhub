@@ -12,6 +12,7 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
   let cat = bar.getAttribute('data-current-cat') || 'all';
   let src = 'all';
   let shown = pageSize || Number.POSITIVE_INFINITY;
+  let topicCats: string[] | null = null;
 
   function hashFilter(): string | null {
     if (typeof location === 'undefined') return null;
@@ -21,8 +22,18 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
     return null;
   }
 
+  function catsFromQuery(): string[] | null {
+    if (typeof location === 'undefined') return null;
+    const raw = new URLSearchParams(location.search).get('cats');
+    if (!raw) return null;
+    const list = raw.split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
+    return list.length ? list : null;
+  }
+
   const fromHash = hashFilter();
   if (fromHash) cat = fromHash;
+  topicCats = catsFromQuery();
+  if (topicCats) cat = 'topics';
 
   function apply() {
     let matches = 0;
@@ -36,6 +47,7 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
       const catOk =
         cat === 'all' ||
         (cat === 'trending' && trending) ||
+        (cat === 'topics' && !!topicCats && (topicCats.includes(c) || also.some((a) => topicCats!.includes(a)))) ||
         c === cat ||
         also.includes(cat) ||
         groups.includes(cat);
@@ -48,7 +60,7 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
     }
     for (const sec of sections()) {
       const id = sec.getAttribute('data-dir-section') || '';
-      const catOk = cat === 'all' || cat === 'trending' || id === cat;
+      const catOk = cat === 'all' || cat === 'trending' || cat === 'topics' || id === cat;
       const hasCard = [...sec.querySelectorAll<HTMLElement>('.source-card')].some((el) => !el.hidden);
       const coming = sec.querySelector('.coming-soon-panel');
       const showComing = !!coming && (cat === 'all' || id === cat) && src === 'all';
@@ -58,7 +70,10 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
     catBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute('data-filter-cat') === cat)));
     srcBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute('data-filter-src') === src)));
     if (live) {
-      const catLabel = catBtns.find((b) => b.getAttribute('data-filter-cat') === cat)?.textContent?.trim() || cat;
+      const topicLabel = topicCats?.join(', ').replace(/, ([^,]*)$/, ' & $1');
+      const catLabel = cat === 'topics' && topicLabel
+        ? topicLabel
+        : (catBtns.find((b) => b.getAttribute('data-filter-cat') === cat)?.textContent?.trim() || cat);
       const srcLabel = srcBtns.find((b) => b.getAttribute('data-filter-src') === src)?.textContent?.trim() || src;
       const extra = matches > visible ? ` · showing ${visible}` : '';
       live.textContent = `${matches} ${matches === 1 ? 'listing' : 'listings'} · ${catLabel} · ${srcLabel}${extra}`;
@@ -75,6 +90,7 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
     if (!t || !bar.contains(t)) return;
     if (t.hasAttribute('data-filter-cat')) {
       cat = t.getAttribute('data-filter-cat') || 'all';
+      topicCats = null;
       shown = pageSize || Number.POSITIVE_INFINITY;
     }
     if (t.hasAttribute('data-filter-src')) {
@@ -100,7 +116,7 @@ export function initSourceDirectoryFilters(root: ParentNode = document): void {
   });
 
   apply();
-  if (fromHash) {
+  if (fromHash || topicCats) {
     document.getElementById('listings')?.scrollIntoView({ block: 'start' });
   }
 }

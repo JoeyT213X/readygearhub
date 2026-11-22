@@ -466,6 +466,7 @@ export type ShopBoardTile = {
   hideOnPaid: boolean;
   rel: string;
   affiliate: boolean;
+  variant?: 'photo' | 'count';
 };
 
 /** Prefer an on-site listing page when we have one; otherwise the partner or official link. */
@@ -473,26 +474,53 @@ function listingHref(item: CatalogItem): string {
   return item.detailHref || item.href;
 }
 
+/** Official product shots allowed on the home Explore board. Water filters stay in the directory only. */
 const SHOP_BOARD_PRODUCT_IDS = [
   'bluetti-350w-solar',
-  'aquasana-under-sink',
-  'aquasana-whole-house',
-  'aquasana-shower-chrome',
-  'aquasana-healthshield-ro-matte-black',
-  'waterdrop-shop',
 ];
+
+function isHomeBoardWaterFilter(item: { id?: string; title?: string }): boolean {
+  const hay = `${item.id || ''} ${item.title || ''}`.toLowerCase();
+  return /\b(aquasana|waterdrop|healthshield)\b/.test(hay);
+}
+
+function sceneTile(
+  id: string,
+  label: string,
+  href: string,
+  photoKey: string,
+  extra: Partial<ShopBoardTile> = {},
+): ShopBoardTile {
+  return {
+    id,
+    label,
+    href,
+    image: '',
+    photoKey,
+    fit: 'cover',
+    hideOnPaid: false,
+    rel: '',
+    affiliate: false,
+    ...extra,
+  };
+}
 
 export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   const byId = new Map(items.map((i) => [i.id, i]));
   const tiles: ShopBoardTile[] = [];
-  const usedImages = new Set<string>();
+  const usedHrefs = new Set<string>();
+
+  const push = (tile: ShopBoardTile) => {
+    if (!tile.href || usedHrefs.has(tile.href)) return;
+    usedHrefs.add(tile.href);
+    tiles.push(tile);
+  };
 
   const pushProduct = (item: CatalogItem) => {
     if (isPortablePowerStation(item)) return;
+    if (isHomeBoardWaterFilter(item)) return;
     if (!item.image) return;
-    if (usedImages.has(item.image)) return;
-    usedImages.add(item.image);
-    tiles.push({
+    push({
       id: item.id,
       label: item.title.replace(/\s+official.*$/i, ''),
       href: listingHref(item),
@@ -508,66 +536,39 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
     const item = byId.get(id);
     if (item) pushProduct(item);
   }
-  if (tiles.length < 6) {
-    for (const item of items) {
-      if (isPortablePowerStation(item)) continue;
-      if (item.imageKind === 'photo' && item.image && !item.image.endsWith('.svg')) {
-        pushProduct(item);
-      }
-      if (tiles.length >= 6) break;
-    }
-  }
 
-  const midland = byId.get('midland-wr400') || byId.get('midland-er310-crank-radio');
   const lantern = byId.get('goal-zero-lighthouse-600');
+  const lanternHref = lantern ? listingHref(lantern) : '';
+
   const scenes: ShopBoardTile[] = [
-    { id: 'scene-drone', label: 'Drones', href: '/directory/drones/', image: '', photoKey: 'hero-drone', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    { id: 'scene-utv', label: 'Off-road vehicles', href: '/directory/vehicles/', image: '', photoKey: 'hero-utv-dunes', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    { id: 'scene-bunker', label: 'Shelters', href: '/directory/security/', image: '', photoKey: 'hero-bunker-hatch', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    {
-      id: 'scene-radios',
-      label: 'Radios',
-      href: midland ? listingHref(midland) : '/directory/tech/',
-      image: '',
-      photoKey: 'hero-radios',
-      fit: 'cover',
-      hideOnPaid: midland ? midland.hideOnPaid : false,
-      rel: midland?.rel || '',
-      affiliate: midland?.affiliate || false,
-    },
-    { id: 'scene-food', label: 'Food & pantry', href: '/directory/food/', image: '', photoKey: 'hero-pantry-cans', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    { id: 'scene-tent', label: 'Tents', href: '/directory/outdoor/', image: '', photoKey: 'hero-tent-stars', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    { id: 'scene-binoculars', label: 'Binoculars', href: '/directory/outdoor/', image: '', photoKey: 'hero-binoculars', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    { id: 'scene-camp', label: 'Camp & shelter', href: '/directory/outdoor/', image: '', photoKey: 'hero-campsite', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    { id: 'scene-aid', label: 'First aid', href: '/directory/safety/', image: '', photoKey: 'first-aid-kit-open', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    { id: 'scene-water', label: 'Water stores', href: '/directory/water/', image: '', photoKey: 'water-bottles', fit: 'cover', hideOnPaid: false, rel: '', affiliate: false },
-    {
-      id: 'scene-lantern',
-      label: 'Lanterns',
-      href: lantern ? listingHref(lantern) : '/directory/outdoor/',
-      image: '',
-      photoKey: 'lantern-dusk',
-      fit: 'cover',
-      hideOnPaid: lantern ? lantern.hideOnPaid : false,
-      rel: lantern?.rel || '',
-      affiliate: lantern?.affiliate || false,
-    },
+    sceneTile('scene-power', 'Power', '/directory/power/', 'solar-rooftops'),
+    sceneTile('scene-drone', 'Drones', '/directory/drones/', 'hero-drone'),
+    sceneTile('scene-utv', 'Off-road vehicles', '/directory/vehicles/', 'hero-utv-dunes'),
+    sceneTile('scene-bunker', 'Shelters', '/directory/security/', 'hero-bunker-hatch'),
+    sceneTile(
+      'scene-radios-tents-water',
+      'Radios, tents & water',
+      '/directory/?cats=tech,outdoor,water#listings',
+      'hero-radios',
+    ),
+    sceneTile('scene-food', 'Food & pantry', '/directory/food/', 'prep-food-storage'),
+    sceneTile('scene-outdoor', 'Outdoor', '/directory/outdoor/', 'hero-tent-stars'),
+    sceneTile('scene-aid', 'First aid', '/directory/safety/', 'first-aid-kit-open'),
   ];
 
-  // 12 tiles: keep as many official product shots as we have, then fill with scenes.
-  tiles.push(...scenes.slice(0, Math.max(0, 12 - tiles.length)));
-  return tiles.slice(0, 12);
-}
+  if (lantern && lanternHref && lanternHref !== '/directory/outdoor/' && !isPortablePowerStation(lantern)) {
+    scenes.push(
+      sceneTile('scene-lantern', 'Lanterns', lanternHref, 'lantern-dusk', {
+        hideOnPaid: lantern.hideOnPaid,
+        rel: lantern.rel || '',
+        affiliate: lantern.affiliate || false,
+      }),
+    );
+  }
 
-export const shopCategoryChips: { label: string; href: string }[] = [
-  { label: 'Power', href: '/directory/power/' },
-  { label: 'Water', href: '/directory/water/' },
-  { label: 'Drones', href: '/directory/drones/' },
-  { label: 'Vehicles', href: '/directory/vehicles/' },
-  { label: 'Security', href: '/directory/security/' },
-  { label: 'Food', href: '/directory/food/' },
-  { label: 'Outdoor', href: '/directory/outdoor/' },
-];
+  for (const scene of scenes) push(scene);
+  return tiles;
+}
 
 export type HeroBentoId =
   | 'winter'
