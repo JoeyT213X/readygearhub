@@ -15,7 +15,7 @@ import { mailerlite } from '../data/mailerlite';
 import { payhipProducts } from '../data/payhip';
 import { photoForGuide } from '../data/images';
 import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
-import { buildFullCatalog, homeShopPicks, countsByCatalogGroup, shopBoardTiles, heroCutouts } from '../data/full-catalog';
+import { buildFullCatalog, homeShopPicks, countsByCatalogGroup, shopBoardTiles, heroBentoTiles } from '../data/full-catalog';
 import { prepperLanes, resolvedPrepperPicks, homePrepperSpots } from '../data/prepper-picks';
 import PrepperSpotlight from '../components/PrepperSpotlight.astro';
 
@@ -27,7 +27,7 @@ const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean)];
 const catalog = buildFullCatalog(await getItems());
 const shopPicks = homeShopPicks(catalog, 16);
 const boardTiles = shopBoardTiles(catalog);
-const spread = heroCutouts(catalog);
+const heroTiles = heroBentoTiles();
 const groupCounts = countsByCatalogGroup(catalog);
 const prepperCount = resolvedPrepperPicks().length;
 const prepperSpots = homePrepperSpots(catalog);
@@ -57,9 +57,9 @@ const navList = {
 ---
 <Base title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, plus guides, free tools, and live official alerts." schema={[webSite, navList]}>
   <HeroSpread
-    title={"From Go-Bags\nto Drones."}
-    lead="Every shop. One hub."
-    cutouts={spread}
+    title={"Prepping &\nSurvival Network"}
+    lead="From go-bags to drones. Every shop, one hub."
+    tiles={heroTiles}
   />
 
   <div class="wrap home-collage">
@@ -145,7 +145,7 @@ const navList = {
   </section>
 
 
-  <section class="wrap section tight" id="guides">
+  <section class="wrap section tight home-band" id="guides">
     <SectionHead kicker="Guides" title="Start with a guide" href="/guides/" linkLabel="All guides" />
     <ul class="guide-compact">
       {featured.map((g) => (
@@ -155,7 +155,7 @@ const navList = {
   </section>
 
   {mailerlite.enabled && (
-    <section class="wrap section tight" id="signup">
+    <section class="wrap section tight home-band" id="signup">
       <MailerLiteSignup variant="home" />
     </section>
   )}

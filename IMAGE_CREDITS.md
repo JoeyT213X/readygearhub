@@ -134,3 +134,13 @@ These files were downloaded on 2026-11-21 (America/Chicago), re-encoded as self-
 | `hero-binoculars` | [Person Holding Black Binoculars](https://www.pexels.com/photo/person-holding-black-binoculars-10808050/) | [Maël BALLAND](https://www.pexels.com/@mael-balland/) / Pexels | Home hero and Shop the Directory board (binoculars / outdoor category; not a photo of a specific listing) |
 
 `public/directory/covers/drone.svg`, `vehicle.svg`, `shelter.svg`, and `robot.svg` are original geometric illustrations made for these listings (not photographs, not AI-generated images, and not merchant or brand logos). They are used on official high-ticket cards that do not have a licensed product photo, including Boston Dynamics, Unitree, and Knightscope — those cards never use the Ghost Robotics photograph.
+
+## Home hero v9 photos (Pexels)
+
+Added 21 November 2026 (America/Chicago). Downloaded from Pexels, re-encoded as self-hosted WebP at 480, 960, and 1600 px wide, and not hotlinked. Used under the [Pexels License](https://www.pexels.com/license/). These are generic scene photographs for home-hero category tiles; they are not photos of a specific partner product. The earlier `hero-drone`, `hero-pantry-cans`, and `water-bottles` files remain in use on the directory and other pages.
+
+| File key | Photo | Photographer / source | Used on |
+|---|---|---|---|
+| `hero-drone-flight` | [A Drone Camera Flying](https://www.pexels.com/photo/a-drone-camera-flying-13076149/) | [Dmitrii Eremin](https://www.pexels.com/@dimoffire/) / Pexels | Home hero drones tile |
+| `hero-food-shelves` | [Colorful Display of Canned Goods in Store Shelf](https://www.pexels.com/photo/colorful-display-of-canned-goods-in-store-shelf-32063427/) | [Warren Yip](https://www.pexels.com/@warren-yip-1081272606/) / Pexels | Home hero food & prepper supplies tile |
+| `hero-water-pour` | [Fluid Pouring in Pint Glass](https://www.pexels.com/photo/clear-drinking-glasses-with-water-416528/) | [Pixabay](https://www.pexels.com/@pixabay/) / Pexels | Home hero water storage & filters tile |

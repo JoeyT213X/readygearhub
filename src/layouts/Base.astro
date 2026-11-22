@@ -126,6 +126,15 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
         <span class="menu-label">Menu</span>
       </button>
     </div>
+    <nav class="site-rail" aria-label="Quick links">
+      <div class="wrap site-rail-inner">
+        <a href="/alerts/">Live official alerts</a>
+        <span class="site-rail-dot" aria-hidden="true">·</span>
+        <a href="/prepper-picks/">Prepper’s Picks</a>
+        <span class="site-rail-dot" aria-hidden="true">·</span>
+        <a href="/directory/">Full directory</a>
+      </div>
+    </nav>
   </header>
   <div class="drawer-backdrop" data-menu-close hidden></div>
   <aside id="site-drawer" class="drawer" aria-label="Site menu" hidden>
@@ -150,6 +159,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
       <div class="footer-brand">
         <p class="logo small">Ready<span>Gear</span>Hub</p>
         <p>{site.tagline}</p>
+        <p class="fine">A site of Omega UCO Solutions LLC — Unified Commerce Operations.</p>
         <p class="fine">As an affiliate, ReadyGearHub may earn a commission from qualifying purchases at no extra cost to you. <a href="/affiliate-disclosure/">Learn more</a>.</p>
         <MailerLiteSignup variant="footer" heading="Email tips" intro="Occasional checklists. Unsubscribe anytime." />
       </div>

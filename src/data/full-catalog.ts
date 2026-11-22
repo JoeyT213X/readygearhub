@@ -541,218 +541,42 @@ export const shopCategoryChips: { label: string; href: string }[] = [
   { label: 'Outdoor', href: '/directory/outdoor/' },
 ];
 
-export type HeroPos = {
-  w: string;
-  ar?: string;
-  t?: string;
-  l?: string;
-  r?: string;
-  b?: string;
-  rot: number;
-  z?: number;
-};
+export type HeroBentoId =
+  | 'winter'
+  | 'water'
+  | 'food'
+  | 'vehicle'
+  | 'camping'
+  | 'first-aid'
+  | 'radios'
+  | 'drones'
+  | 'overland'
+  | 'security'
+  | 'prepper'
+  | 'alerts';
 
-export type HeroCutout = {
-  id: string;
+export type HeroBentoTile = {
+  id: HeroBentoId;
   href: string;
   label: string;
-  photoKey?: string;
-  image?: string;
-  fit: 'cover' | 'contain';
-  hideOnPaid: boolean;
-  rel: string;
-  affiliate: boolean;
-  slot: string;
-  depth: number;
+  photoKey: string;
   eager?: boolean;
-  kind?: 'photo' | 'sticker';
-  tone?: 'ink' | 'cream' | 'ember' | 'sky';
-  show: 'always' | 'md' | 'lg';
-  mobile?: HeroPos;
-  desk: HeroPos;
 };
 
-export function heroCutoutStyle(cut: HeroCutout): string {
-  const parts: string[] = [];
-  const add = (pos: HeroPos, pre: 'm' | 'd') => {
-    parts.push(`--${pre}w:${pos.w}`);
-    if (pos.ar) parts.push(`--${pre}ar:${pos.ar}`);
-    if (pos.t) parts.push(`--${pre}t:${pos.t}`);
-    if (pos.l) parts.push(`--${pre}l:${pos.l}`);
-    if (pos.r) parts.push(`--${pre}r:${pos.r}`);
-    if (pos.b) parts.push(`--${pre}b:${pos.b}`);
-    parts.push(`--${pre}rot:${pos.rot}deg`);
-    if (pos.z) parts.push(`--${pre}z:${pos.z}`);
-  };
-  if (cut.mobile) add(cut.mobile, 'm');
-  add(cut.desk, 'd');
-  return parts.join(';');
-}
-
-export const HERO_STICKERS = [
-  { id: 'tag-ready-life', label: 'Everything for the ready life.', tone: 'cream' as const, show: 'lg' as const, desk: { w: '13%', ar: '2.4 / 1', l: '7%', t: '31%', rot: -5, z: 5 } },
-  { id: 'tag-whats-next', label: "Built for whatever's next.", tone: 'ink' as const, show: 'lg' as const, desk: { w: '12.5%', ar: '2.3 / 1', l: '39%', t: '54%', rot: 5, z: 5 } },
-  { id: 'tag-ultimate', label: 'The ultimate gear hub.', tone: 'ember' as const, show: 'always' as const, mobile: { w: '42%', ar: '2.3 / 1', l: '54%', t: '36%', rot: 5, z: 5 }, desk: { w: '12%', ar: '2.2 / 1', l: '55%', t: '2%', rot: 4, z: 5 } },
-  { id: 'tag-off-grid', label: 'Off-grid, on point.', tone: 'sky' as const, show: 'always' as const, mobile: { w: '40%', ar: '2.1 / 1', l: '53%', t: '57%', rot: -6, z: 5 }, desk: { w: '11.5%', ar: '2.1 / 1', l: '74%', t: '31%', rot: -6, z: 5 } },
-  { id: 'tag-hq', label: 'Your all-in-one prep & gear HQ.', tone: 'cream' as const, show: 'lg' as const, desk: { w: '14%', ar: '2.5 / 1', l: '84%', t: '86%', rot: 4, z: 5 } },
-  { id: 'tag-gobags', label: 'Shelter, supplies, and a plan.', tone: 'ink' as const, show: 'always' as const, mobile: { w: '44%', ar: '2.3 / 1', l: '3%', t: '71%', rot: -4, z: 5 }, desk: { w: '13%', ar: '2.3 / 1', l: '9%', t: '68%', rot: 4, z: 5 } },
-  { id: 'tag-stock-up', label: 'Stock up. Head out.', tone: 'ember' as const, show: 'lg' as const, desk: { w: '12%', ar: '2.2 / 1', l: '48%', t: '78%', rot: 3, z: 5 } },
-  { id: 'tag-distance', label: 'Gear that goes the distance.', tone: 'sky' as const, show: 'md' as const, desk: { w: '13.5%', ar: '2.4 / 1', l: '67%', t: '86%', rot: -4, z: 5 } },
-  { id: 'tag-zero', label: 'Zero guesswork.', tone: 'ember' as const, show: 'always' as const, mobile: { w: '38%', ar: '2.1 / 1', l: '3%', t: '7%', rot: 6, z: 5 }, desk: { w: '10.5%', ar: '2 / 1', l: '28%', t: '2%', rot: -5, z: 5 } },
-];
-
-export function heroCutouts(items: CatalogItem[]): HeroCutout[] {
-  const byId = new Map(items.map((i) => [i.id, i]));
-  const product = (
-    id: string,
-    slot: string,
-    depth: number,
-    show: HeroCutout['show'],
-    desk: HeroPos,
-    mobile?: HeroPos,
-    eager = false,
-  ): HeroCutout | null => {
-    const item = byId.get(id);
-    if (!item?.image) return null;
-    if (isPortablePowerStation(item)) return null;
-    return {
-      id: `cut-${id}`,
-      href: listingHref(item),
-      label: item.title.replace(/\s+official.*$/i, ''),
-      image: item.image,
-      fit: 'contain',
-      hideOnPaid: item.hideOnPaid,
-      rel: item.rel,
-      affiliate: item.affiliate,
-      slot,
-      depth,
-      eager,
-      kind: 'photo',
-      show,
-      mobile,
-      desk,
-    };
-  };
-
-  const scene = (
-    id: string,
-    href: string,
-    label: string,
-    photoKey: string,
-    depth: number,
-    show: HeroCutout['show'],
-    desk: HeroPos,
-    mobile?: HeroPos,
-    eager = false,
-    extra?: Partial<HeroCutout>,
-  ): HeroCutout => ({
-    id,
-    href,
-    label,
-    photoKey,
-    fit: 'cover',
-    hideOnPaid: extra?.hideOnPaid ?? false,
-    rel: extra?.rel ?? '',
-    affiliate: extra?.affiliate ?? false,
-    slot: id.replace(/^cut-/, ''),
-    depth,
-    eager,
-    kind: 'photo',
-    show,
-    mobile,
-    desk,
-  });
-
-  const ghost = byId.get('ghost-robotics-official');
-
-  const cuts: Array<HeroCutout | null> = [
-    // ---- Base tessellation: large, nearly edge-to-edge windows ----
-    scene('cut-cruiser', '/directory/vehicles/', 'Overland SUVs', 'hero-overland-cruiser', 0.05, 'md',
-      { w: '33%', ar: '16 / 10', l: '0.22%', t: '0.15%', rot: -1.5, z: 2 }, undefined, true),
-    scene('cut-drone', '/directory/drones/', 'Drones', 'hero-drone', 0.07, 'always',
-      { w: '33%', ar: '1', l: '33.5%', t: '0.15%', rot: -2, z: 3 },
-      { w: '48.65%', ar: '1', l: '50.55%', t: '0.3%', rot: -2, z: 3 }, true),
-    scene('cut-utv', '/directory/vehicles/', 'Off-road UTVs', 'hero-utv-dunes', 0.06, 'always',
-      { w: '33%', ar: '16 / 10', l: '66.78%', t: '0.15%', rot: 2, z: 2 },
-      { w: '48.65%', ar: '16 / 10', l: '0.8%', t: '0.3%', rot: 2, z: 3 }, true),
-    scene('cut-radios', '/directory/tech/', 'Radios', 'hero-radios', 0.05, 'always',
-      { w: '16.36%', ar: '16 / 9', l: '0.22%', t: '38.96%', rot: -2, z: 3 },
-      { w: '48.65%', ar: '3 / 2', l: '50.55%', t: '82.55%', rot: 2, z: 3 }),
-    scene('cut-bunker', '/directory/security/', 'Shelters', 'hero-bunker-hatch', 0.04, 'always',
-      { w: '16.36%', ar: '3 / 4', l: '16.86%', t: '38.96%', rot: -2, z: 3 },
-      { w: '48.65%', ar: '4 / 3', l: '0.8%', t: '16.6%', rot: -2, z: 3 }, true),
-    scene('cut-food', '/directory/food/', 'Food kits', 'hero-pantry-cans', 0.04, 'always',
-      { w: '16.36%', ar: '4 / 3', l: '0.22%', t: '56.5%', rot: 2, z: 3 },
-      { w: '48.65%', ar: '1', l: '0.8%', t: '35.54%', rot: 2, z: 3 }),
-    scene('cut-water', '/directory/water/', 'Water stores', 'water-bottles', 0.03, 'always',
-      { w: '16.36%', ar: '3 / 2', l: '0.22%', t: '79.72%', rot: -2, z: 3 },
-      { w: '48.65%', ar: '4 / 3', l: '0.8%', t: '60.57%', rot: -2, z: 3 }),
-    scene('cut-aid', '/directory/safety/', 'First aid', 'first-aid-kit-open', 0.04, 'always',
-      { w: '16.36%', ar: '3 / 2', l: '16.86%', t: '79.83%', rot: 2, z: 3 },
-      { w: '48.65%', ar: '4 / 3', l: '0.8%', t: '79.51%', rot: 2, z: 3 }),
-    scene('cut-robot', ghost ? listingHref(ghost) : '/directory/security/', 'Security robots', 'hero-security-robot', 0.06, 'always',
-      { w: '16.36%', ar: '4 / 3', l: '33.5%', t: '61.85%', rot: 2, z: 3 },
-      { w: '48.65%', ar: '4 / 3', l: '50.55%', t: '63.61%', rot: 2, z: 3 },
-      false, { rel: ghost?.rel || 'noopener', affiliate: ghost?.affiliate || false }),
-    scene('cut-tent', '/directory/outdoor/', 'Tents', 'hero-tent-stars', 0.05, 'always',
-      { w: '16.36%', ar: '4 / 3', l: '50.14%', t: '61.85%', rot: -2, z: 3 },
-      { w: '48.65%', ar: '4 / 3', l: '50.55%', t: '25.73%', rot: -2, z: 3 }, true),
-    scene('cut-lineworker', '/guides/power-outage-ice-storm-mississippi/', 'Outage response', 'lineworker-repair', 0.03, 'md',
-      { w: '16.36%', ar: '2.05 / 1', l: '33.5%', t: '85.07%', rot: -3, z: 3 }),
-    scene('cut-car', '/directory/vehicles/', 'Vehicle kits', 'car-in-snow', 0.03, 'md',
-      { w: '16.36%', ar: '2.05 / 1', l: '50.14%', t: '85.07%', rot: 3, z: 3 }),
-    scene('cut-truck', '/directory/vehicles/', 'Overland trucks', 'hero-overland-truck', 0.05, 'always',
-      { w: '16.36%', ar: '4 / 3', l: '66.78%', t: '38.96%', rot: -2, z: 3 },
-      { w: '48.65%', ar: '4 / 3', l: '50.55%', t: '44.67%', rot: -2, z: 3 }, true),
-    scene('cut-camp', '/directory/outdoor/', 'Camp & shelter', 'hero-campsite', 0.04, 'md',
-      { w: '16.36%', ar: '4 / 3', l: '83.42%', t: '38.96%', rot: 2, z: 2 }),
-    scene('cut-solar', '/directory/power/', 'Solar', 'solar-rooftops', 0.03, 'md',
-      { w: '16.36%', ar: '16 / 10', l: '66.78%', t: '62.18%', rot: 3, z: 2 }),
-    scene('cut-surf', '/guides/hurricane-prep-guide-gulf-south/', 'Hurricane prep', 'storm-surf-coast', 0.03, 'md',
-      { w: '16.36%', ar: '5 / 3', l: '66.78%', t: '81.62%', rot: -3, z: 2 }),
-    scene('cut-binoculars', '/directory/outdoor/', 'Binoculars', 'hero-binoculars', 0.04, 'md',
-      { w: '16.36%', ar: '16 / 10', l: '83.42%', t: '62.18%', rot: 4, z: 3 }),
-    scene('cut-storm-street', '/guides/winter-storm-power-outage-prep-guide-south/', 'Storm prep', 'winter-storm-street', 0.03, 'md',
-      { w: '16.36%', ar: '5 / 3', l: '83.42%', t: '81.62%', rot: 3, z: 2 }),
-
-    // ---- Smaller close-up overlays (desktop/tablet) ----
-    scene('cut-lantern', '/directory/outdoor/', 'Lanterns', 'lantern-dusk', 0.05, 'md',
-      { w: '9.5%', ar: '1', l: '27%', t: '34%', rot: 7, z: 4 }),
-    scene('cut-tools', '/directory/outdoor/', 'Tools', 'multitools', 0.04, 'lg',
-      { w: '8.5%', ar: '1', l: '45%', t: '49%', rot: -6, z: 4 }),
-    scene('cut-flatlay', '/directory/outdoor/', 'Outdoor kits', 'gear-flatlay', 0.03, 'lg',
-      { w: '9%', ar: '1', l: '21%', t: '49%', rot: -5, z: 4 }),
-    scene('cut-cook', '/directory/food/', 'Cooking', 'cast-iron-fire', 0.03, 'lg',
-      { w: '8.5%', ar: '1', l: '75%', t: '70%', rot: -5, z: 4 }),
-    scene('cut-storm', '/alerts/', 'Live alerts', 'lightning-road', 0.03, 'lg',
-      { w: '11%', ar: '16 / 10', l: '57%', t: '47%', rot: 4, z: 4 }),
-    scene('cut-snowy', '/guides/winter-power-outage-checklist/', 'Winter prep', 'hero-snowy-home', 0.02, 'lg',
-      { w: '10%', ar: '16 / 10', l: '36%', t: '88%', rot: -5, z: 4 }),
-    product('bluetti-350w-solar', 'panel', 0.03, 'lg', { w: '9%', ar: '1', l: '40%', t: '42%', rot: -7, z: 4 }),
-    product('aquasana-under-sink', 'filter-a', 0.04, 'md', { w: '8.5%', ar: '1', l: '13%', t: '63%', rot: -3, z: 4 }),
-    product('aquasana-whole-house', 'filter-c', 0.03, 'lg', { w: '8.5%', ar: '1', l: '60%', t: '72%', rot: 4, z: 4 }),
-
-    // ---- Sticker lines among the photos ----
-    ...HERO_STICKERS.map((s) => ({
-      id: s.id,
-      href: '/directory/',
-      label: s.label,
-      fit: 'cover' as const,
-      hideOnPaid: false,
-      rel: '',
-      affiliate: false,
-      slot: s.id,
-      depth: 0.04,
-      kind: 'sticker' as const,
-      tone: s.tone,
-      show: s.show,
-      mobile: s.mobile,
-      desk: s.desk,
-    })),
+/** Specialty-category tiles for the home hero bento. One tile per lane we specialize in. */
+export function heroBentoTiles(): HeroBentoTile[] {
+  return [
+    { id: 'winter', href: '/guides/winter-storm-power-outage-prep-guide-south/', label: 'Winter storm & outage prep', photoKey: 'winter-storm-street', eager: true },
+    { id: 'water', href: '/directory/water/', label: 'Water storage & filters', photoKey: 'hero-water-pour', eager: true },
+    { id: 'food', href: '/directory/food/', label: 'Food & prepper supplies', photoKey: 'hero-food-shelves', eager: true },
+    { id: 'vehicle', href: '/vehicle-emergency-kits/', label: 'Vehicle emergency kits', photoKey: 'car-in-snow' },
+    { id: 'camping', href: '/directory/outdoor/', label: 'Off-grid & camping', photoKey: 'hero-tent-stars', eager: true },
+    { id: 'first-aid', href: '/first-aid-medical-prep/', label: 'First aid & safety', photoKey: 'first-aid-kit-open' },
+    { id: 'radios', href: '/directory/tech/', label: 'Radios, lights & comms', photoKey: 'hero-radios' },
+    { id: 'drones', href: '/directory/drones/', label: 'Drones', photoKey: 'hero-drone-flight', eager: true },
+    { id: 'overland', href: '/directory/vehicles/', label: 'Overland & off-road', photoKey: 'hero-utv-dunes', eager: true },
+    { id: 'security', href: '/directory/security/', label: 'Security', photoKey: 'hero-security-robot' },
+    { id: 'prepper', href: '/prepper-picks/', label: "Prepper's Picks", photoKey: 'gear-flatlay' },
+    { id: 'alerts', href: '/alerts/', label: 'Live alerts', photoKey: 'lightning-road' },
   ];
-  return cuts.filter((c): c is HeroCutout => Boolean(c)).filter((c) => {
-    if (c.kind === 'sticker') return true;
-    if (c.photoKey === 'power-banks' || c.photoKey === 'portable-generator') return false;
-    return !isPortablePowerStation({ id: c.id, title: c.label, image: c.image || '', label: c.label });
-  });
 }

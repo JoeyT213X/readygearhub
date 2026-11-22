@@ -34,6 +34,9 @@ export const photos: Record<string, Photo> = {
   "hero-tent-stars": { key: "hero-tent-stars", alt: "A lit dome tent glowing under a starry night sky beside a lake", author: "Josh Hild", authorUrl: "https://www.pexels.com/@josh-hild/", sourceUrl: "https://www.pexels.com/photo/photo-of-tent-at-near-trees-2422265/" },
   "hero-campsite": { key: "hero-campsite", alt: "Two camping tents and folding chairs around a fire ring in a wooded campsite", author: "Mac DeStroir", authorUrl: "https://www.pexels.com/@mac-destroir/", sourceUrl: "https://www.pexels.com/photo/2662816/" },
   "hero-binoculars": { key: "hero-binoculars", alt: "Hands holding a pair of black binoculars outdoors near the coast", author: "Maël BALLAND", authorUrl: "https://www.pexels.com/@mael-balland/", sourceUrl: "https://www.pexels.com/photo/person-holding-black-binoculars-10808050/" },
+  "hero-drone-flight": { key: "hero-drone-flight", alt: "A compact camera drone flying over green mountain slopes under a clear blue sky", author: "Dmitrii Eremin", authorUrl: "https://www.pexels.com/@dimoffire/", sourceUrl: "https://www.pexels.com/photo/a-drone-camera-flying-13076149/" },
+  "hero-food-shelves": { key: "hero-food-shelves", alt: "Wooden shelves packed with colorful tins of preserved food", author: "Warren Yip", authorUrl: "https://www.pexels.com/@warren-yip-1081272606/", sourceUrl: "https://www.pexels.com/photo/colorful-display-of-canned-goods-in-store-shelf-32063427/" },
+  "hero-water-pour": { key: "hero-water-pour", alt: "Clear water pouring into a glass with bright light and droplets on a dark table", author: "Pixabay", authorUrl: "https://www.pexels.com/@pixabay/", sourceUrl: "https://www.pexels.com/photo/clear-drinking-glasses-with-water-416528/" },
 };
 
 
