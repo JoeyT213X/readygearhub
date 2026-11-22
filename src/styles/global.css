@@ -461,8 +461,8 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
   .hero-bento-copy .btn{width:auto;max-width:100%;flex:0 0 auto;order:unset}
   .hero-btn-dir,.hero-btn-hub{order:unset}
   .hero-quick{display:flex;flex-direction:column;gap:5px;min-width:0;width:100%;max-width:240px}
-  .hero-quick-left{grid-area:left;justify-self:stretch;align-self:center}
-  .hero-quick-right{grid-area:right;justify-self:stretch;align-self:center}
+  .hero-quick-left{grid-area:left;justify-self:start;align-self:center}
+  .hero-quick-right{grid-area:right;justify-self:end;align-self:center}
   .hero-quick-link{display:flex;align-items:center;justify-content:center;gap:6px;min-height:36px;padding:6px 10px;border-radius:16px;background:rgba(9,25,38,.9);border:1px solid rgba(255,255,255,.22);box-shadow:0 4px 10px rgba(0,0,0,.2);color:#fff;text-decoration:none;box-sizing:border-box;font-weight:600;font-size:13px;line-height:1.2;text-align:center;white-space:nowrap}
   .hero-quick-link:hover,.hero-quick-link:focus-visible{color:#fff;background:#0f2a3d;border-color:#f6b98c}
   .hero-quick-link:focus-visible{outline:3px solid #f2a65a;outline-offset:2px}
