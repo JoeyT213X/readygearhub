@@ -46,12 +46,20 @@ const primaryNav = [
   { href: '/directory/', label: 'Directory' },
   { href: '/shop/', label: 'Shop' },
 ];
+const primaryNavExtra = [
+  { href: '/prepper-picks/', label: "Prepper's Picks", reveal: 'mid' },
+  { href: '/storm-hurricane-prep/', label: 'Storm prep', reveal: 'mid' },
+  { href: '/winter-storm-ready-checklist/', label: 'Checklists', reveal: 'wide' },
+  { href: '/local/', label: 'Local', reveal: 'wide' },
+];
 const menuGroups = [
   { title: 'Start here', links: [
     { href: '/', icon: '🏠', label: 'Home' },
     { href: '/alerts/', icon: '⚠️', label: 'Live weather alerts' },
     { href: '/storm-tracker/', icon: '🌀', label: 'Storm tracker' },
     { href: '/winter-storm-ready-checklist/', icon: '✅', label: 'Winter storm checklist' },
+    { href: '/prepper-picks/', icon: '⭐', label: "Prepper's Picks" },
+    { href: '/storm-hurricane-prep/', icon: '🌀', label: 'Storm prep' },
     { href: '/updates/', icon: '✉️', label: 'Community safety updates' },
   ] },
   { title: 'Gear by lane', links: [
@@ -115,10 +123,14 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="/" class="logo" aria-label={`${site.name} home`}><span class="logo-mark" aria-hidden="true">⛺</span> Ready<span>Gear</span>Hub</a>
+      <div class="brand">
+        <a href="/" class="logo" aria-label={`${site.name} home`}><span class="logo-mark" aria-hidden="true">⛺</span> Ready<span>Gear</span>Hub</a>
+        <a class="brand-tag" href="/about/">Unified Commerce Operations</a>
+      </div>
       <nav class="primary-nav" aria-label="Primary">
         <ul>
           {primaryNav.map((n) => <li><a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
+          {primaryNavExtra.map((n) => <li class={`nav-extra is-${n.reveal}`}><a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
         </ul>
       </nav>
       <button type="button" class="menu-toggle" aria-controls="site-drawer" aria-expanded="false" data-menu-open>
