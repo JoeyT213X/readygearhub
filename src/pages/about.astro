@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import site from '../data/site.json';
+import site from '../data/site';
 import PageHero from '../components/PageHero.astro';
 import Photo from '../components/Photo.astro';
 import { photos } from '../data/images';
@@ -30,7 +30,7 @@ const credits = Object.values(photos);
     <h2>How we make money</h2>
     <p>Some links may be affiliate links, which means we may earn a commission if you buy, at no extra cost to you. See our <a href="/affiliate-disclosure/">Affiliate Disclosure</a>. We also sell our own printable guides and planners as instant PDF downloads through Payhip, listed in the <a href="/shop/">shop</a>.</p>
     <h2>Who runs ReadyGearHub</h2>
-    <p>ReadyGearHub is a site of Omega UCO Solutions LLC (Unified Commerce Operations) — one company running affiliate and content sites like ReadyGearHub, Omega App Studio custom apps, and digital products.</p>
+    <p>ReadyGearHub is a site of {site.legalName} (Unified Commerce Operations) — one company running affiliate and content sites like ReadyGearHub, Omega App Studio custom apps, and digital products.</p>
     <p>Email: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>. The mailing address is on the <a href="/contact/">contact page</a>.</p>
     <h2>Get in touch</h2>
     <p>Questions, corrections, or a product we should look at? <a href="/contact/">Contact us</a>.</p>

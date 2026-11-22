@@ -5,3 +5,7 @@ dist/
 .DS_Store
 home.png
 node_modules
+
+# Shared catalog build output
+packages/catalog/dist/
+

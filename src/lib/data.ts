@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import lanesRaw from '../data/lanes.json';
-import site from '../data/site.json';
+import site from '../data/site';
 import { resolveItemOutbound, programIdForItem } from '../data/affiliates';
 
 export type Lane = (typeof lanesRaw)[number];

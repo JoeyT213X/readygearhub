@@ -8,7 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "check-links": "node scripts/check-links.mjs",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "test:paid-guard": "node packages/catalog/paid-guard.test.mjs",
+    "catalog:build": "esbuild packages/catalog/index.ts --bundle --format=esm --platform=neutral --outfile=packages/catalog/dist/index.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.5",
