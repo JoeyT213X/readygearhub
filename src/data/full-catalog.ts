@@ -566,7 +566,7 @@ export type HeroBentoTile = {
 /** Specialty-category tiles for the home hero bento. One tile per lane we specialize in. */
 export function heroBentoTiles(): HeroBentoTile[] {
   return [
-    { id: 'winter', href: '/guides/winter-storm-power-outage-prep-guide-south/', label: 'Winter storm & outage prep', photoKey: 'winter-storm-street', eager: true },
+    { id: 'winter', href: '/guides/winter-storm-power-outage-prep-guide-south/', label: 'Winter storm & outages', photoKey: 'winter-storm-street', eager: true },
     { id: 'water', href: '/directory/water/', label: 'Water storage & filters', photoKey: 'hero-water-pour', eager: true },
     { id: 'food', href: '/directory/food/', label: 'Food & prepper supplies', photoKey: 'hero-food-shelves', eager: true },
     { id: 'vehicle', href: '/vehicle-emergency-kits/', label: 'Vehicle emergency kits', photoKey: 'car-in-snow' },

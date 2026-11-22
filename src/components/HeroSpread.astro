@@ -8,7 +8,6 @@ interface Props {
   tiles: HeroBentoTile[];
 }
 const { title, lead, tiles } = Astro.props;
-const titleLines = title.split('\n');
 const byId = Object.fromEntries(tiles.map((t) => [t.id, t]));
 const order: HeroBentoTile['id'][] = [
   'winter',
@@ -28,19 +27,19 @@ const order: HeroBentoTile['id'][] = [
 <section class="hero is-bento">
   <div class="hero-bento">
     <div class="hero-bento-copy">
-      <h1>{titleLines.map((line) => <span class="hero-line">{line}</span>)}</h1>
-      <p class="lead">{lead}</p>
-      <div class="hero-actions">
-        <a class="btn" href="/directory/">Shop the Directory</a>
-        <a class="btn ghost light" href="/guides/winter-power-outage-checklist/">Winter outage checklist</a>
+      <a class="btn hero-btn-dir" href="/directory/">Ultimate Directory</a>
+      <div class="hero-bento-copy-text">
+        <h1>{title}</h1>
+        <p class="lead">{lead}</p>
       </div>
+      <a class="btn ghost light hero-btn-hub" href="/alerts/">Outages, Alerts &amp; Checklists</a>
     </div>
     {order.map((id) => {
       const tile = byId[id];
       if (!tile) return null;
       return (
         <a class:list={['hero-bento-tile', `is-${tile.id}`]} href={tile.href}>
-          <Photo name={tile.photoKey} sizes="(max-width: 699px) 100vw, (max-width: 1099px) 50vw, 33vw" eager={tile.eager} decorative />
+          <Photo name={tile.photoKey} sizes="(max-width: 699px) 100vw, (max-width: 1099px) 50vw, 25vw" eager={tile.eager} decorative />
           <span class="hero-bento-chip">
             <span class="hero-bento-chip-label">{tile.label}</span>
             <span class="hero-bento-chip-arrow" aria-hidden="true">→</span>
