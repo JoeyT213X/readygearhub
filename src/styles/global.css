@@ -50,17 +50,20 @@ img{max-width:100%;height:auto}
 @media(min-width:900px){
   .primary-nav{display:block}
   .menu-toggle{margin-left:var(--s2)}
-  .brand-tag{display:inline-block;margin:1px 0 0 1.65em;color:#bfe3f7;text-decoration:none;font-size:.64rem;font-weight:600;letter-spacing:.02em;line-height:1.2;white-space:nowrap}
+  .site-header .logo{font-size:1.3rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+}
+@media(min-width:1024px){
+  .site-header .brand{flex-direction:row;align-items:center;flex-shrink:0;gap:0}
+  .brand-tag{display:inline-flex;align-items:center;margin:0 0 0 .65em;padding:0 0 0 .7em;color:#bfe3f7;text-decoration:none;font-size:.625rem;font-weight:600;letter-spacing:.03em;line-height:1.2;white-space:nowrap;position:relative}
+  .brand-tag::before{content:"";position:absolute;left:0;top:50%;width:1px;height:.95em;transform:translateY(-50%);background:rgba(191,227,247,.5)}
   .brand-tag:hover,.brand-tag:focus-visible{color:#fff;text-decoration:underline;text-underline-offset:2px}
 }
-@media(min-width:1100px){
+@media(min-width:1280px){
+  .site-header .wrap{max-width:1400px;padding:0 16px}
+  .primary-nav a{padding:8px 8px}
   .primary-nav .nav-extra.is-mid{display:list-item}
 }
-@media(min-width:1280px){
-  .primary-nav a{padding:8px 10px}
-}
-@media(min-width:1400px){
-  .site-header .wrap{max-width:1340px}
+@media(min-width:1440px){
   .primary-nav .nav-extra{display:list-item}
 }
 

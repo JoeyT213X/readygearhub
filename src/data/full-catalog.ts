@@ -614,15 +614,15 @@ export function heroBentoTiles(): HeroBentoTile[] {
   return [
     { id: 'winter', href: '/guides/winter-storm-power-outage-prep-guide-south/', label: 'Winter storm & outages', photoKey: 'winter-storm-street', eager: true },
     { id: 'water', href: '/directory/water/', label: 'Water storage & filters', photoKey: 'hero-water-pour', eager: true },
-    { id: 'food', href: '/directory/food/', label: 'Food & prepper supplies', photoKey: 'hero-food-shelves', eager: true },
+    { id: 'food', href: '/directory/food/', label: 'Food & prepper supplies', photoKey: 'hero-food-and-gear', eager: true },
     { id: 'vehicle', href: '/vehicle-emergency-kits/', label: 'Vehicle emergency kits', photoKey: 'car-in-snow' },
     { id: 'camping', href: '/directory/outdoor/', label: 'Off-grid & camping', photoKey: 'hero-tent-stars', eager: true },
-    { id: 'first-aid', href: '/first-aid-medical-prep/', label: 'First aid & safety', photoKey: 'first-aid-kit-open' },
+    { id: 'first-aid', href: '/first-aid-medical-prep/', label: 'First aid & safety', photoKey: 'hero-first-aid-crisp' },
     { id: 'radios', href: '/directory/tech/', label: 'Radios, lights & comms', photoKey: 'hero-radios' },
-    { id: 'drones', href: '/directory/drones/', label: 'Drones', photoKey: 'hero-drone-flight', eager: true },
-    { id: 'overland', href: '/directory/vehicles/', label: 'Overland & off-road', photoKey: 'hero-utv-dunes', eager: true },
-    { id: 'security', href: '/directory/security/', label: 'Security', photoKey: 'hero-security-robot' },
-    { id: 'prepper', href: '/prepper-picks/', label: "Prepper's Picks", photoKey: 'gear-flatlay' },
+    { id: 'drones', href: '/directory/drones/', label: 'Drones', photoKey: 'hero-drones-air', eager: true },
+    { id: 'overland', href: '/directory/vehicles/', label: 'Overland & off-road', photoKey: 'hero-offroad-close', eager: true },
+    { id: 'security', href: '/directory/security/', label: 'Security', photoKey: 'hero-security-mix' },
+    { id: 'prepper', href: '/prepper-picks/', label: "Prepper's Picks", photoKey: 'hero-prepper-collage' },
     { id: 'alerts', href: '/alerts/', label: 'Live alerts', photoKey: 'lightning-road' },
   ];
 }
