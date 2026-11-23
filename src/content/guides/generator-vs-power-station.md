@@ -5,7 +5,7 @@ lane: home-backup-power-solar
 season: ["hurricane", "winter", "all-season"]
 published: 2026-11-15
 updated: 2026-11-23
-relatedItems: ["honda-eu3200i", "generac-iq3500", "honda-eu2200i", "bluetti-ac70", "ecoflow-river-3-plus", "anker-solix-f2000", "ecoflow-delta-3-plus", "ecoflow-400w-portable-solar-panel", "jackery-solarsaga-200", "goal-zero-nomad-50", "anker-solix-ps100", "anker-solix-ps400", "litime-12v-100ah-group24", "litime-24v-230ah"]
+relatedItems: ["honda-eu3200i", "generac-iq3500", "honda-eu2200i", "bluetti-ac70", "ecoflow-river-3-plus", "anker-solix-f2000", "anker-solix-f3800-plus", "ecoflow-delta-3-plus", "ecoflow-400w-portable-solar-panel", "jackery-solarsaga-200", "goal-zero-nomad-50", "anker-solix-ps100", "anker-solix-ps400", "litime-12v-100ah-group24", "litime-24v-230ah"]
 ---
 
 A portable power station is a big rechargeable battery with outlets. An inverter generator is a small gasoline (or sometimes propane) engine that makes clean-enough power for electronics. For a hurricane or other outage, many households end up asking which one to buy. The honest answer is that they do different jobs, and some homes are better served by both.
@@ -18,7 +18,7 @@ This is a buying and safety guide, not a runtime calculator. Appliance draw and 
 
 **An inverter generator** can usually keep running as long as you have fuel, oil, and safe outdoor space. That helps if you need to power a refrigerator, a furnace fan, or other larger loads for more than a few hours. The tradeoff is fuel storage, noise, maintenance, and carbon monoxide risk. It cannot be used indoors.
 
-If you already have a mid-size station such as the [BLUETTI AC70](/gear/bluetti-ac70/), [EcoFlow RIVER 3 Plus](/gear/ecoflow-river-3-plus/), or a larger unit such as the [Anker SOLIX F2000](/gear/anker-solix-f2000/) or [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/), you may only need a generator if those batteries cannot cover the loads or the outage length you actually expect. If you already have a generator, a smaller station is still useful indoors at night, so you are not running the engine just to charge phones.
+If you already have a mid-size station such as the [BLUETTI AC70](/gear/bluetti-ac70/), [EcoFlow RIVER 3 Plus](/gear/ecoflow-river-3-plus/), or a larger unit such as the [Anker SOLIX F2000](/gear/anker-solix-f2000/) (Anker’s current large home-backup listing is the [F3800 Plus](/gear/anker-solix-f3800-plus/)) or [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/), you may only need a generator if those batteries cannot cover the loads or the outage length you actually expect. If you already have a generator, a smaller station is still useful indoors at night, so you are not running the engine just to charge phones.
 
 ## How to size without overbuying
 

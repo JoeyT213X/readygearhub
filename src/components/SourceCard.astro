@@ -1,9 +1,11 @@
 ---
 import type { CatalogItem } from '../data/full-catalog';
 import { stockCoverFor } from '../data/stock-covers';
+import { productPhotoFor } from '../data/product-photos';
 interface Props { item: CatalogItem; heading?: 'h2' | 'h3' }
 const { item, heading = 'h3' } = Astro.props;
-const stock = stockCoverFor(item);
+const product = productPhotoFor(item);
+const stock = product ? undefined : stockCoverFor(item);
 const Tag = heading;
 const titleHref = item.detailHref || item.href;
 const ctaHref = item.href;
@@ -12,8 +14,8 @@ const ctaInternal = ctaHref.startsWith('/');
 const titleRel = titleInternal ? undefined : (item.rel || undefined);
 const ctaRel = ctaInternal ? undefined : (item.rel || undefined);
 const coverClass = [
-  !stock && item.imageKind ? ` is-${item.imageKind}` : '',
-  stock ? ' is-stock' : item.image ? '' : ' is-text',
+  product || item.imageKind === 'photo' ? ' is-photo' : !stock && item.imageKind ? ` is-${item.imageKind}` : '',
+  stock ? ' is-stock' : product || item.image ? '' : ' is-text',
   item.kind === 'tool' ? ' is-free' : '',
 ].join('');
 const sourceFilter = item.kind === 'resource' ? 'official' : item.kind === 'tool' ? 'rgh-tools' : item.programId;
@@ -40,7 +42,9 @@ const badge = item.trending
 >
   <a class="product-cover" href={titleHref} aria-label={item.title} tabindex="-1" target={titleInternal ? undefined : '_blank'} rel={titleRel}>
     {badge && <span class="badge">{badge}</span>}
-    {stock ? (
+    {product ? (
+      <img src={product.src} srcset={product.srcset} sizes="(min-width: 900px) 330px, (min-width: 600px) 45vw, 92vw" alt={product.alt} width="960" height="540" loading="lazy" decoding="async" class="source-fit" />
+    ) : stock ? (
       <>
         <img src={stock.src} srcset={stock.srcset} sizes="(min-width: 900px) 330px, (min-width: 600px) 45vw, 92vw" alt={stock.alt} width="960" height="540" loading="lazy" decoding="async" class="stock-photo" />
         <span class="stock-chip">Representative photo</span>

@@ -20,6 +20,10 @@ export type BrandPage = {
   eyebrow: string;
   photo: string;
   photoNote: string;
+  /** Official wordmark, if we have a sharp licensed logo. */
+  logo?: string;
+  /** Composed official-product hero key in /images/photos/{key}-{w}.webp */
+  heroPhoto?: string;
   summary: string;
   goodFor: string[];
   lessIdeal: string[];
@@ -43,8 +47,10 @@ export const brandPages: BrandPage[] = [
     title: 'Anker SOLIX: portable solar panels, solar kits, and home backup',
     eyebrow: 'Brand spotlight',
     lead: 'Anker SOLIX is the home-energy line from Anker. Here is who it suits, which of its solar panels and power stations are worth a look, and how to choose without overbuying.',
-    photo: 'stock-solar-camp',
-    photoNote: 'Representative photo of solar panels at a campsite, by Eslam Mohammed Abdelmaksoud on Pexels. It is not a photo of an Anker product.',
+    photo: 'hero-anker-solix',
+    heroPhoto: 'hero-anker-solix',
+    logo: '/directory/logos/anker-solix-logo.png',
+    photoNote: 'Official Anker SOLIX product photos (the F3800 Plus, the PS400 panel, and the C2000 Gen 2 + 400W kit) from the Rakuten Anker SOLIX catalog (MID 53552), arranged on a plain background. Downloaded November 23, 2026.',
     summary: 'Anker SOLIX sells portable solar panels, solar-generator kits, and larger power stations for home backup. ReadyGearHub lists four of its current products below, with the price shown on each product page on Nov 23, 2026.',
     goodFor: [
       'Anyone who already owns a portable power station and wants a foldable panel to recharge it when the grid is down (the PS100 and PS400 are panels, not stations).',
@@ -102,8 +108,10 @@ export const brandPages: BrandPage[] = [
     title: 'LiTime: LiFePO4 batteries and DIY solar kits for RV, boat, and off-grid',
     eyebrow: 'Brand spotlight',
     lead: 'LiTime makes lithium batteries and solar gear for RVs, boats, and off-grid setups. Its batteries are components you install in a 12V or 24V system, not plug-and-play power stations. Here is how to tell if that fits you.',
-    photo: 'stock-rv',
-    photoNote: 'Representative photo of a camper trailer, by Kampus Production on Pexels. It is not a photo of a LiTime product.',
+    photo: 'hero-litime',
+    heroPhoto: 'hero-litime',
+    logo: '/directory/logos/litime-logo.png',
+    photoNote: 'Official LiTime product photos (the LiHeat 24V 230Ah and 12V 100Ah Group 24 batteries, and the DIY solar generator kit) from the Awin LiTime product feed (advertiser 71451), arranged on a plain background. Downloaded November 23, 2026.',
     summary: 'LiTime sells LiFePO4 (lithium iron phosphate) batteries and a DIY solar generator kit. ReadyGearHub lists four products below, with the price shown on each product page on Nov 23, 2026.',
     goodFor: [
       'RV and camper owners replacing or upgrading a 12V house battery (the 12V 100Ah Group 24).',
@@ -161,8 +169,9 @@ export const brandPages: BrandPage[] = [
     title: 'BLUETTI: portable power stations, solar panels, and home backup',
     eyebrow: 'Brand spotlight',
     lead: 'BLUETTI is the partner we link most, with the widest range on ReadyGearHub, from compact stations to home backup. Here is who each tier suits and how to choose.',
-    photo: 'hero-campsite',
-    photoNote: 'Representative photo of a campsite, by Mac DeStroir on Pexels. It is not a photo of a BLUETTI product.',
+    photo: 'hero-bluetti-official',
+    heroPhoto: 'hero-bluetti-official',
+    photoNote: 'Official BLUETTI product photos (Elite 200 V2, AC180, and the SP200L 200W panel) from the CJ Affiliate product catalog, arranged on a plain background. Originally downloaded November 21, 2026; this arrangement was made November 23, 2026.',
     summary: 'We chose BLUETTI as the third spotlight because it is an approved partner with the most product coverage on the site: dozens of listings with official product photos, plus the gear pages and guides that already link to it. BLUETTI’s official shop has current prices, so this page does not show any.',
     goodFor: [
       'Households that want a mid-size, solar-ready power station for outage backup, camping, or van life (the AC70, AC180, and Elite 200 V2).',

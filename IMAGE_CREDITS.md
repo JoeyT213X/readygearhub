@@ -171,7 +171,7 @@ Collages use a thin navy gap so they match the home-hero tile frame. No portable
 
 ## Representative photos on directory cards (Pexels, added 23 Nov 2026)
 
-Listings that do not have a licensed official product photo show a generic category photo with a small "Representative photo" label. These photos are not images of the specific product, and their alt text says so. Downloaded from Pexels (Pexels License), cropped to 16:9 from a 2,000 px-wide source, re-encoded as self-hosted WebP at 480, 960, and 1,600 px (always downscaled from the 2,000 px source, never enlarged), and not hotlinked. Existing self-hosted photos listed above (for example `hero-drones-air`, `hero-first-aid-crisp`, `multitools`, `prep-food-storage`) are reused for their categories. Network-provided official product creatives (Rakuten for Anker SOLIX, Awin for LiTime) are not yet downloaded; see the report for the exact assets needed.
+Listings that do not have a licensed official product photo show a generic category photo with a small "Representative photo" label. These photos are not images of the specific product, and their alt text says so. Downloaded from Pexels (Pexels License), cropped to 16:9 from a 2,000 px-wide source, re-encoded as self-hosted WebP at 480, 960, and 1,600 px (always downscaled from the 2,000 px source, never enlarged), and not hotlinked. Existing self-hosted photos listed above (for example `hero-drones-air`, `hero-first-aid-crisp`, `multitools`, `prep-food-storage`) are reused for their categories. Official product photos for Anker SOLIX, LiTime, and Wuben were added on November 23, 2026; see the section below. Listings still without a licensed official photo keep a representative stock photo and the label.
 
 | File key | Photo | Photographer | Used on |
 |---|---|---|---|
@@ -200,3 +200,36 @@ Listings that do not have a licensed official product photo show a generic categ
 | `stock-stove` | [Pexels photo 4909104](https://www.pexels.com/photo/4909104/) | Taryn Elliott / Pexels | Representative photo on directory cards without a licensed product photo |
 | `stock-wood-stove` | [Pexels photo 27669647](https://www.pexels.com/photo/27669647/) | Alexander Mass / Pexels | Representative photo on directory cards without a licensed product photo |
 | `stock-cyber` | [Pexels photo 38482447](https://www.pexels.com/photo/38482447/) | Ann Hannes / Pexels | Representative photo on password-manager and privacy-service cards |
+
+
+## Official network product photos (added 23 Nov 2026, America/New_York)
+
+These files were downloaded from official publisher dashboards and product feeds on November 23, 2026, copied into this repo, validated, and re-encoded as self-hosted WebP (or PNG for logos). Widths are 480 px, 960 px, and — only when the source is large enough — 1,000, 1,200, 1,600 px. Nothing was upscaled (the Anker SOLIX PS400 source is 1,000 px). They are not hotlinked. Credit line for each: image provided by the advertiser via the network named below.
+
+Product card files live in `public/directory/photos/{key}-{width}.webp`. Logos live in `public/directory/logos/`. Composed brand-spotlight heroes (`hero-anker-solix`, `hero-litime`, `hero-bluetti-official`) in `public/images/photos/` arrange those official product photos on a plain light background; they are not stock lifestyle scenes.
+
+| File key | Listing | Advertiser | Network / source | Notes |
+|---|---|---|---|---|
+| `anker-solix-ps400` | Anker SOLIX PS400 bifacial portable solar panel | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 1,000×1,000. Image provided by Anker SOLIX via Rakuten Advertising. |
+| `anker-solix-ps100` | Anker SOLIX PS100 bifacial portable solar panel | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000. |
+| `anker-solix-c2000-gen2-400w-kit` | Anker SOLIX C2000 Gen 2 + 400W solar panel kit | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000. |
+| `anker-solix-f3800-plus` | Anker SOLIX F3800 Plus portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000. |
+| `anker-solix-c1000x` | Anker SOLIX C1000X portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official product photo (`anker-solix-c1000x.png`, 1,200×1,200). The separate `c1000x-gen2` file is a different model and is not used on this listing. |
+| `anker-solix-c2000-gen2` | Used only in the Anker SOLIX brand hero composition as needed; no standalone listing | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo of the C2000 Gen 2 station alone. |
+| `anker-solix-logo` | Anker SOLIX official shop card and brand spotlight | Anker SOLIX | Rakuten Advertising creative / official mark (MID 53552) | Wordmark, native 125×40, not upscaled. Image provided by Anker SOLIX via Rakuten Advertising. |
+| `litime-12v-100ah-group24` | LiTime LiHeat 12V 100Ah Group 24 battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. Image provided by LiTime via Awin. |
+| `litime-24v-230ah` | LiTime LiHeat 24V 230Ah battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `litime-12v-100ah-trolling` | LiTime 12V 100Ah TM trolling-motor battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `litime-diy-solar-generator-kit` | LiTime DIY solar generator complete power kit | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `litime-logo` | LiTime official shop card and brand spotlight | LiTime | Awin creative / official mark, advertiser 71451 | Wordmark with transparency. Image provided by LiTime via Awin. |
+| `wuben-a1` | Wuben A1 20,000-lumen portable spotlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 2,000×2,000. Image provided by Wubenlight via Awin. |
+| `wuben-lightok-x1` | Wuben Lightok X1 12,000-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000. |
+| `wuben-a22` | Wuben A22 4,500-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 1,000×1,000. |
+| `wuben-h1` | Wuben H1 1,200-lumen headlamp | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 900×900 (no 960 px derivative; native 900 px is used instead). |
+| `wuben-e7` | Wuben E7 1,800-lumen headlamp | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 1,000×1,000. |
+| `wuben-lightok-x2` | Wuben Lightok X2 2,500-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (white), source 2,000×2,000. |
+| `wuben-c2` | Wuben C2 2,000-lumen EDC flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 2,000×2,000. |
+| `wuben-logo` | Wuben official shop card | Wubenlight | Awin creative / official mark, advertiser 92053 | Wordmark with transparency. Image provided by Wubenlight via Awin. |
+| `hero-anker-solix` | Anker SOLIX brand spotlight hero and /brands/ tile | Anker SOLIX | Composed from the official Rakuten catalog photos listed above | Arranged on a plain light background, November 23, 2026. |
+| `hero-litime` | LiTime brand spotlight hero and /brands/ tile | LiTime | Composed from the official Awin feed photos listed above | Arranged on a plain light background, November 23, 2026. |
+| `hero-bluetti-official` | BLUETTI brand spotlight hero and /brands/ tile | Bluetti Global | Composed from existing official CJ catalog photos (`bluetti-elite-200-v2`, `bluetti-ac180`, `bluetti-sp200l-200w`) | Those catalog photos were downloaded November 21, 2026; this arrangement was made November 23, 2026. |

@@ -22,9 +22,12 @@ export type CatalogExtra = {
 };
 
 export const catalogExtras: CatalogExtra[] = [
-  // products.csv (Nov 21, 2026) was added as source-directory entries
-  // with self-hosted photos. Use this list later to attach a photo or a
-  // wrapable official URL to an existing card without inventing tracking.
+  {
+    id: 'anker-solix-c1000x',
+    image: '/directory/photos/anker-solix-c1000x-960.webp',
+    imageKind: 'photo',
+    credit: 'Official Anker SOLIX product photo from Rakuten MID 53552, Nov 23, 2026.',
+  },
 ];
 
 export const catalogExtraById: Record<string, CatalogExtra> = Object.fromEntries(

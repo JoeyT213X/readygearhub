@@ -4,8 +4,8 @@ description: "What to keep in your car for winter driving: a practical checklist
 lane: vehicle-emergency-kits
 season: ["winter"]
 published: 2026-11-15
-updated: 2026-11-21
-relatedItems: ["noco-boost-gb40", "snow-joe-telescoping-snow-broom", "sol-emergency-bivvy", "sol-emergency-blanket", "amk-mountain-series-hiker", "zippo-heatbank-9s", "black-diamond-spot-400", "leatherman-wave-plus"]
+updated: 2026-11-23
+relatedItems: ["noco-boost-gb40", "snow-joe-telescoping-snow-broom", "sol-emergency-bivvy", "sol-emergency-blanket", "amk-mountain-series-hiker", "zippo-heatbank-9s", "black-diamond-spot-400", "leatherman-wave-plus", "wuben-c2"]
 ---
 
 Winter is hard on cars and drivers. Cold drains batteries, ice puts cars in ditches, and a closed highway can leave you sitting for hours. A small kit in the trunk makes a big difference. Here's what to pack, in priority order.
@@ -15,7 +15,7 @@ Winter is hard on cars and drivers. Cold drains batteries, ice puts cars in ditc
 - [ ] **Jump starter or jumper cables.** A charged lithium jump starter (like the [NOCO Boost GB40](/gear/noco-boost-gb40/)) lets you start a dead battery without waiting for another car. Recharge it every couple of months, since cold drains it too.
 - [ ] **Snow brush and ice scraper.** A [telescoping snow broom](/gear/snow-joe-telescoping-snow-broom/) reaches across an SUV or truck roof. Clear the whole car, roof included. Snow sliding off your roof can blind you or the driver behind you.
 - [ ] **Phone charger cable and a charged power bank.**
-- [ ] **Flashlight or headlamp** with spare batteries, such as the [Black Diamond Spot 400](/gear/black-diamond-spot-400/). A headlamp keeps both hands free for tire changes.
+- [ ] **Flashlight or headlamp** with spare batteries, such as the [Black Diamond Spot 400](/gear/black-diamond-spot-400/) or the [Wuben C2](/gear/wuben-c2/) flashlight. A headlamp keeps both hands free for tire changes.
 - [ ] **Warm layers:** a blanket or [emergency bivvy](/gear/sol-emergency-bivvy/), plus a hat, gloves, and dry wool socks.
 - [ ] **First aid kit.** See [what to put in a family first aid kit](/guides/storm-first-aid-kit/).
 - [ ] **Water and high-calorie snacks** like granola bars, nuts, or jerky. Bottles can freeze, so leave some room in them.

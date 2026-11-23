@@ -1,0 +1,39 @@
+---
+import type { BrandPage } from '../data/brands';
+interface Crumb { href?: string; label: string }
+interface Props {
+  brand: BrandPage;
+  shopHref: string;
+  shopAffiliate?: boolean;
+  crumbs?: Crumb[];
+}
+const { brand, shopHref, shopAffiliate, crumbs = [] } = Astro.props;
+const hero = brand.heroPhoto;
+const src = hero ? `/images/photos/${hero}-960.webp` : '';
+const srcset = hero ? [480, 960, 1600].map((w) => `/images/photos/${hero}-${w}.webp ${w}w`).join(', ') : '';
+---
+<section class:list={['brand-hero', { 'has-visual': !!hero }]}>
+  {hero && (
+    <div class="brand-hero-media" aria-hidden="true">
+      <img src={src} srcset={srcset} sizes="100vw" alt="" width="1600" height="800" decoding="async" />
+    </div>
+  )}
+  <div class="wrap brand-hero-inner">
+    {crumbs.length > 0 && (
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          {crumbs.map((c) => <li>{c.href ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}</li>)}
+        </ol>
+      </nav>
+    )}
+    {brand.logo && <img class="brand-hero-logo" src={brand.logo} alt="" width="200" height="60" decoding="async" />}
+    {brand.eyebrow && <p class="eyebrow">{brand.eyebrow}</p>}
+    <h1>{brand.name}</h1>
+    {brand.lead && <p class="lead">{brand.lead}</p>}
+    <div class="hero-actions">
+      <a class="btn" href="#picks">See the picks</a>
+      <a class="btn ghost" href={shopHref} target="_blank" rel={shopAffiliate ? 'sponsored nofollow noopener' : 'noopener'} data-program={shopAffiliate ? brand.programId : undefined}>Visit {brand.name} ↗</a>
+    </div>
+  </div>
+</section>

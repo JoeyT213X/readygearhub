@@ -5,7 +5,7 @@ lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-19
 updated: 2026-11-23
-relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "anker-solix-ps100", "anker-solix-ps400", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40", "mountain-house-classic-bucket", "readywise-4-week-food-supply", "midland-wr400", "kidde-pro-210"]
+relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "anker-solix-ps100", "anker-solix-ps400", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40", "mountain-house-classic-bucket", "readywise-4-week-food-supply", "midland-wr400", "kidde-pro-210", "wuben-h1", "wuben-c2"]
 draft: false
 ---
 
@@ -134,7 +134,7 @@ A house that holds heat buys you hours, sometimes days, when the furnace stops. 
 **Inside**
 
 - [ ] Know where your electrical panel, water shut-off, and gas shut-off are, and keep a flashlight near each.
-- [ ] Keep a headlamp per person, like the [Black Diamond Spot 400](/gear/black-diamond-spot-400/), plus a lantern for each main room, like the [Goal Zero Lighthouse 600](/gear/goal-zero-lighthouse-600/). The CDC recommends battery-powered flashlights and lanterns over candles, since candles can start house fires.
+- [ ] Keep a headlamp per person, like the [Black Diamond Spot 400](/gear/black-diamond-spot-400/) or the [Wuben H1](/gear/wuben-h1/), plus a lantern for each main room, like the [Goal Zero Lighthouse 600](/gear/goal-zero-lighthouse-600/). The CDC recommends battery-powered flashlights and lanterns over candles, since candles can start house fires.
 - [ ] Gather blankets, sleeping bags, hats, wool socks, and warm coats for everyone. The CDC lists extra blankets, sleeping bags, and warm coats as a backup heat source.
 
 Renting an apartment or small home with no room for a generator? The [Apartment Outage Kit](/kits/apartment-outage-kit/) is built around light, water, warmth, and battery power, with no fuel-burning heat at all.

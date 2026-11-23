@@ -667,3 +667,35 @@ color:#fff}
 /* Brand spotlight heroes: lighter scrim so the licensed photo stays sharp and visible; copy sits on the left */
 body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:linear-gradient(90deg,rgba(9,25,38,.88) 0%,rgba(9,25,38,.62) 48%,rgba(9,25,38,.12) 100%)}
 @media(max-width:699px){body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:linear-gradient(180deg,rgba(9,25,38,.82) 0%,rgba(9,25,38,.6) 100%)}}
+
+/* Brand spotlight hero: official product composition on a light field, dark text, no navy scrim */
+.brand-hero{position:relative;background:#eef3f7;color:var(--navy);isolation:isolate;overflow:hidden;border-bottom:1px solid rgba(15,42,61,.08)}
+.brand-hero-media{position:absolute;inset:0;z-index:0}
+.brand-hero-media img{width:100%;height:100%;object-fit:cover;object-position:right center;display:block}
+.brand-hero-inner{position:relative;z-index:1;padding:42px 20px 48px;max-width:760px}
+.brand-hero.has-visual .brand-hero-inner{max-width:36rem}
+.brand-hero .crumbs a,.brand-hero .crumbs span{color:var(--navy)}
+.brand-hero .crumbs a{text-decoration-color:rgba(15,42,61,.35)}
+.brand-hero .eyebrow{color:#5b7383;letter-spacing:.08em}
+.brand-hero h1{margin:.15em 0 .3em;color:var(--navy);font-size:clamp(1.85rem,4.6vw,2.7rem);max-width:16ch}
+.brand-hero .lead{color:#243b4a;max-width:38ch}
+.brand-hero-logo{display:block;height:36px;width:auto;max-width:180px;margin:0 0 14px;object-fit:contain;object-position:left center}
+.brand-hero .hero-actions{margin-top:22px}
+.brand-hero .btn.ghost{background:transparent;color:var(--navy);border-color:rgba(15,42,61,.35)}
+.brand-hero .btn.ghost:hover,.brand-hero .btn.ghost:focus-visible{border-color:var(--navy)}
+@media(max-width:699px){
+  .brand-hero.has-visual{display:flex;flex-direction:column}
+  .brand-hero-media{position:relative;aspect-ratio:16/9;min-height:200px}
+  .brand-hero-media img{object-position:70% center}
+  .brand-hero-inner{max-width:none;padding:22px 20px 32px}
+  .brand-hero-logo{height:30px}
+}
+.source-card.is-photo .product-cover{background:#eef2f5}
+.source-card.is-logo .product-cover{background:#f4f7f9}
+.gear-official-photo{margin:0 0 18px;background:#eef2f5;border-radius:10px;overflow:hidden}
+.gear-official-photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#eef2f5}
+.gear-official-photo figcaption{padding:8px 12px 12px;font-size:.82rem;color:var(--muted)}
+.brand-tile .tile-official{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:right center;border-radius:8px}
+
+.item-card-photo{display:block;margin:-18px -18px 14px;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;background:#eef2f5}
+.item-card-photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#eef2f5}

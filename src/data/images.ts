@@ -56,6 +56,13 @@ Object.assign(photos, {
   "stock-rv": { key: "stock-rv", alt: "A camper trailer parked in a field with chairs outside", author: "Kampus Production", authorUrl: "https://www.pexels.com/photo/7967392/", sourceUrl: "https://www.pexels.com/photo/7967392/" },
 });
 
+
+Object.assign(photos, {
+  "hero-anker-solix": { key: "hero-anker-solix", alt: "Official Anker SOLIX products: the F3800 Plus power station, a PS400 solar panel, and a C2000 Gen 2 solar-generator kit", author: "Anker SOLIX", authorUrl: "https://www.ankersolix.com/", sourceUrl: "https://www.ankersolix.com/" },
+  "hero-litime": { key: "hero-litime", alt: "Official LiTime products: LiHeat lithium batteries and a DIY solar generator kit", author: "LiTime", authorUrl: "https://www.litime.com/", sourceUrl: "https://www.litime.com/" },
+  "hero-bluetti-official": { key: "hero-bluetti-official", alt: "Official BLUETTI products: Elite 200 V2 and AC180 power stations and an SP200L solar panel", author: "BLUETTI", authorUrl: "https://www.bluettipower.com/", sourceUrl: "https://www.bluettipower.com/" },
+});
+
 export const photoSrc = (key: string, w: 480 | 960 | 1600 = 960) => `/images/photos/${key}-${w}.webp`;
 export const photoSrcset = (key: string) => [480, 960, 1600].map((w) => `/images/photos/${key}-${w}.webp ${w}w`).join(', ');
 

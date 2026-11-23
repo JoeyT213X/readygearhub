@@ -80,6 +80,7 @@ const SKIP_IDS = new Set([
   'redi',
   'choice-home-warranty',
   'bluetti-apex-300',
+  'anker-solix-f3800',
 ]);
 
 const GEAR_ALIAS: Record<string, string> = {
@@ -416,6 +417,14 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
   'litime-24v-230ah',
   'litime-12v-100ah-trolling',
   'litime-diy-solar-generator-kit',
+  'wuben-official',
+  'wuben-a1',
+  'wuben-lightok-x1',
+  'wuben-a22',
+  'wuben-h1',
+  'wuben-e7',
+  'wuben-lightok-x2',
+  'wuben-c2',
 ]);
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {

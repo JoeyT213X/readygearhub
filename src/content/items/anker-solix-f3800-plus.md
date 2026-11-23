@@ -18,3 +18,5 @@ verified: "2026-11-23"
 ---
 
 Anker lists the SOLIX F3800 Plus as a 3,840Wh portable power station with 6,000W output. Follow Anker’s installation guidance for any home-backup accessories. See the official page for current specifications and price (Anker listed $2,999.99 as of Nov 23, 2026). Do not treat marketing runtime examples as a guarantee for your own appliances.
+
+Anker’s earlier F3800 listing (ankersolix.com/f3800-pps) was not in the Rakuten product catalog we checked on November 23, 2026; the F3800 Plus is the current model in that catalog.

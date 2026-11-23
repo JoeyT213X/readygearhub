@@ -20,7 +20,7 @@ const schema = [
     <div class="grid">
       {brandPages.map((b) => (
         <a class="card brand-tile" href={`/brands/${b.slug}/`}>
-          <Photo name={b.photo} sizes="(min-width: 900px) 30vw, 92vw" alt={`Representative photo for ${b.name}`} />
+          <Photo name={b.photo} sizes="(min-width: 900px) 30vw, 92vw" alt={b.photoNote} />
           <h2>{b.name}</h2>
           <p>{b.summary}</p>
           <span class="btn small">Read the spotlight</span>

@@ -6,6 +6,7 @@ import GuideCard from '../../components/GuideCard.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import { render } from 'astro:content';
 import { getItems, laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides } from '../../lib/data';
+import { productPhotoFor } from '../../data/product-photos';
 export async function getStaticPaths() {
   const items = await getItems();
   return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
@@ -30,6 +31,7 @@ const schema = [
     { '@type': 'ListItem', position: 3, name: d.name, item: url } ] },
 ];
 const program = programIdForItem(item.id);
+const photo = productPhotoFor({ id: item.id });
 const desc = `${d.description} See uses, lanes, and where to check the current price.`.slice(0, 300);
 ---
 <Base title={`${d.name}: Uses & Where to Buy | ReadyGearHub`} description={desc} schema={schema} type="article">
@@ -48,6 +50,12 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
   <section class="wrap section detail">
     <div class="detail-main">
       <Disclosure />
+      {photo && (
+        <figure class="gear-official-photo">
+          <img src={photo.src} srcset={photo.srcset} sizes="(min-width: 800px) 640px, 92vw" alt={photo.alt} width="960" height="540" decoding="async" />
+          <figcaption>Official product photo from the brand’s affiliate-network catalog or product feed.</figcaption>
+        </figure>
+      )}
       {d.uses.length > 0 && (<><h2>Multi-purpose uses</h2><ul class="uses-list">{d.uses.map((u) => <li>{u}</li>)}</ul></>)}
       <h2>Why it's on the list</h2>
       <div class="prose"><Content /></div>

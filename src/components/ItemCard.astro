@@ -1,13 +1,20 @@
 ---
 import { laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides, type Item } from '../lib/data';
 import { isNoPpcProgram } from '../data/affiliates';
+import { productPhotoFor } from '../data/product-photos';
 interface Props { item: Item; showRank?: boolean; showGuide?: boolean }
 const { item, showRank = false, showGuide = true } = Astro.props;
 const guide = showGuide ? (await getGuides()).find((g) => g.data.relatedItems.includes(item.id)) : undefined;
 const lane = laneBySlug(item.data.lane);
 const program = programIdForItem(item.id);
+const photo = productPhotoFor({ id: item.id });
 ---
 <article class="card item-card" data-no-ppc={isNoPpcProgram(program) ? '' : undefined}>
+  {photo && (
+    <a class="item-card-photo" href={`/gear/${item.id}/`} tabindex="-1" aria-hidden="true">
+      <img src={photo.src} srcset={photo.srcset} sizes="(min-width: 900px) 330px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />
+    </a>
+  )}
   <div class="card-top">
     {lane && <a class="pill" href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a>}
     {showRank && item.data.rank > 0 && <span class="pill hot">🔥 Trending</span>}
