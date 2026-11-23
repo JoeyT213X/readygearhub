@@ -425,6 +425,23 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
   'wuben-e7',
   'wuben-lightok-x2',
   'wuben-c2',
+  'anker-solix-c1000x-gen2',
+  'anker-solix-c2000-gen2',
+  'litime-12v-50ah',
+  'litime-12v-200ah-bluetooth',
+  'litime-1000w-12v-inverter',
+  'litime-2000w-12v-inverter-ats',
+  'litime-30a-mppt',
+  'litime-12v-10a-charger',
+  'litime-12v-40a-dc-dc',
+  'wuben-c3',
+  'wuben-e12r',
+  'wuben-f5',
+  'wuben-g5',
+  'wuben-x1-pro',
+  'wuben-x2-pro',
+  'wuben-h4',
+  'wuben-lightok-x0',
 ]);
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {

@@ -51,7 +51,7 @@ export const brandPages: BrandPage[] = [
     heroPhoto: 'hero-anker-solix',
     logo: '/directory/logos/anker-solix-logo.png',
     photoNote: 'Official Anker SOLIX product photos (the F3800 Plus, the PS400 panel, and the C2000 Gen 2 + 400W kit) from the Rakuten Anker SOLIX catalog (MID 53552), arranged on a plain background. Downloaded November 23, 2026.',
-    summary: 'Anker SOLIX sells portable solar panels, solar-generator kits, and larger power stations for home backup. ReadyGearHub lists four of its current products below, with the price shown on each product page on Nov 23, 2026.',
+    summary: 'Anker SOLIX sells portable solar panels, solar-generator kits, and portable power stations for home backup. ReadyGearHub lists current models below. Prices, where shown, are what Anker listed on the product page on Nov 23, 2026.',
     goodFor: [
       'Anyone who already owns a portable power station and wants a foldable panel to recharge it when the grid is down (the PS100 and PS400 are panels, not stations).',
       'Households that want a ready-made solar-generator kit instead of matching a station and panel themselves (the C2000 Gen 2 + 400W kit).',
@@ -68,6 +68,8 @@ export const brandPages: BrandPage[] = [
       { id: 'anker-solix-ps400', why: 'The larger bifacial portable panel. Worth a look if you want to recharge a bigger station faster on a sunny day.', check: 'Your station’s solar input limit, and whether you have the space to set up a larger panel safely outdoors.' },
       { id: 'anker-solix-c2000-gen2-400w-kit', why: 'A kit pairing the C2000 Gen 2 power station with a 400W solar panel, so the pieces are chosen to work together.', check: 'What is in the box and the station’s output on Anker’s page, and whether it covers the appliances you actually plan to run.' },
       { id: 'anker-solix-f3800-plus', why: 'The big one: a 3,840Wh, 6,000W power station for home backup. Anker positions it for longer outages and larger loads.', check: 'Installation guidance for any home-backup accessories, and whether you need this much capacity. A mid-size station is often enough.' },
+      { id: 'anker-solix-c1000x-gen2', why: 'A mid-size station Anker lists as the C1000 Gen 2, at 1,024Wh and 2,000W. A smaller step than the C2000 or F3800 Plus if you mainly need lights, a router, and a few small appliances.', check: 'Current capacity, output, and ports on Anker’s page, and whether this size covers the loads you actually plan to run.' },
+      { id: 'anker-solix-c2000-gen2', why: 'The C2000 Gen 2 station on its own, listed at 2,048Wh and 2,400W, if you already have a panel or do not want the 400W kit.', check: 'What is in the box versus the kit listing, and the station’s current output and solar input on Anker’s page.' },
     ],
     priceNote: 'Prices are what Anker showed on each product page on Nov 23, 2026. They change, sometimes during sales, so confirm the current price on Anker’s page before you buy.',
     choose: [
@@ -111,13 +113,14 @@ export const brandPages: BrandPage[] = [
     photo: 'hero-litime',
     heroPhoto: 'hero-litime',
     logo: '/directory/logos/litime-logo.png',
-    photoNote: 'Official LiTime product photos (the LiHeat 24V 230Ah and 12V 100Ah Group 24 batteries, and the DIY solar generator kit) from the Awin LiTime product feed (advertiser 71451), arranged on a plain background. Downloaded November 23, 2026.',
-    summary: 'LiTime sells LiFePO4 (lithium iron phosphate) batteries and a DIY solar generator kit. ReadyGearHub lists four products below, with the price shown on each product page on Nov 23, 2026.',
+    photoNote: 'Official LiTime product photos (the LiHeat 24V 230Ah and 12V 100Ah Group 24 batteries, and the DIY solar generator kit) from the Awin LiTime product feed (advertiser 71451), arranged on a soft gradient background. Downloaded November 23, 2026.',
+    summary: 'LiTime sells LiFePO4 (lithium iron phosphate) batteries, inverters, chargers, and a DIY solar generator kit. ReadyGearHub lists current products below. Prices, where shown, are from LiTime’s official Awin product feed on Nov 23, 2026, or from the product page on that date.',
     goodFor: [
       'RV and camper owners replacing or upgrading a 12V house battery (the 12V 100Ah Group 24).',
       'Off-grid cabins, vans, and larger RV setups that run on 24V (the 24V 230Ah).',
       'Anglers who want a lithium battery for a trolling motor (the 12V 100Ah TM).',
       'Hands-on people who like building a solar setup from parts and want a starting kit (the DIY solar generator kit).',
+      'People adding an inverter, AC charger, or solar charge controller to a 12V battery bank they already have.',
     ],
     lessIdeal: [
       'If you want something you can plug a lamp into the moment it arrives, a portable power station is simpler. These batteries need a charger, wiring, and often an inverter or charge controller.',
@@ -129,6 +132,9 @@ export const brandPages: BrandPage[] = [
       { id: 'litime-24v-230ah', why: 'A larger 24V 230Ah self-heating battery for RV and off-grid systems that run at 24V.', check: 'That your inverter, charger, and loads are 24V, and the battery’s size and weight against your space.' },
       { id: 'litime-12v-100ah-trolling', why: 'A 12V 100Ah LiFePO4 battery with Bluetooth, listed for marine trolling motors.', check: 'Your trolling motor’s voltage and current draw, and the marine details on LiTime’s page.' },
       { id: 'litime-diy-solar-generator-kit', why: 'A DIY solar generator kit that LiTime lists as a complete power kit for camping, RV, and off-grid living.', check: 'Exactly what is included, and whether you are comfortable assembling and wiring it.' },
+      { id: 'litime-12v-50ah', why: 'A compact 12V 50Ah battery, listed for RV, marine, and fish-finder use, when a 100Ah battery is more than you need.', check: 'Your load and run-time needs, and the pack size you actually want on LiTime’s page.' },
+      { id: 'litime-12v-200ah-bluetooth', why: 'A larger 12V 200Ah Bluetooth battery for RV or marine house power, when you want more capacity than the 100Ah models.', check: 'The battery’s size and weight against your space, and charging details on LiTime’s page.' },
+      { id: 'litime-2000w-12v-inverter-ats', why: 'A 2000W 12V pure sine inverter with a 20ms automatic transfer switch, listed for switching a load to battery power during an outage.', check: 'Installation guidance, your battery bank’s continuous output, and whether you need this much inverter capacity.' },
     ],
     priceNote: 'Prices are the sale prices LiTime showed on each product page on Nov 23, 2026. LiTime runs frequent promotions and prices change, so confirm the current price on its page.',
     choose: [

@@ -230,6 +230,23 @@ Product card files live in `public/directory/photos/{key}-{width}.webp`. Logos l
 | `wuben-lightok-x2` | Wuben Lightok X2 2,500-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (white), source 2,000×2,000. |
 | `wuben-c2` | Wuben C2 2,000-lumen EDC flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 2,000×2,000. |
 | `wuben-logo` | Wuben official shop card | Wubenlight | Awin creative / official mark, advertiser 92053 | Wordmark with transparency. Image provided by Wubenlight via Awin. |
+| `anker-solix-c1000x-gen2` | Anker SOLIX C1000 Gen 2 portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising. |
+| `anker-solix-c2000-gen2` | Anker SOLIX C2000 Gen 2 portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising. Already processed November 23, 2026; listed November 23, 2026. |
+| `litime-12v-50ah` | LiTime 12V 50Ah lithium battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,600×1,600. |
+| `litime-12v-200ah-bluetooth` | LiTime 12V 200Ah Bluetooth lithium battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `litime-1000w-12v-inverter` | LiTime 1000W 12V pure sine wave inverter | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `litime-2000w-12v-inverter-ats` | LiTime 2000W 12V pure sine inverter with ATS | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `litime-30a-mppt` | LiTime 30A MPPT solar charge controller | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `litime-12v-10a-charger` | LiTime 12V 10A LiFePO4 battery charger | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,600×1,600. |
+| `litime-12v-40a-dc-dc` | LiTime 12V 40A DC-to-DC battery charger | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. |
+| `wuben-c3` | Wuben C3 1,200-lumen compact EDC flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000. |
+| `wuben-e12r` | Wuben E12R 1,200-lumen power-bank flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 900×900 (no 960 px derivative; native 900 px is used instead). |
+| `wuben-f5` | Wuben F5 rechargeable camping and tent light | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (gray), source 2,000×2,000. |
+| `wuben-g5` | Wuben G5 400-lumen keychain flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000. |
+| `wuben-x1-pro` | Wuben X1 Pro 12,300-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (white), source 2,000×2,000. |
+| `wuben-x2-pro` | Wuben X2 Pro+ 1,500-lumen magnetic EDC flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000. |
+| `wuben-h4` | Wuben H4 rechargeable headlamp | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000. |
+| `wuben-lightok-x0` | Wuben Lightok X0 1,100-lumen pocket flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 900×900 (no 960 px derivative; native 900 px is used instead). |
 | `hero-anker-solix` | Anker SOLIX brand spotlight hero and /brands/ tile | Anker SOLIX | Composed from the official Rakuten catalog photos listed above | Arranged on a plain light background, November 23, 2026. |
-| `hero-litime` | LiTime brand spotlight hero and /brands/ tile | LiTime | Composed from the official Awin feed photos listed above | Arranged on a plain light background, November 23, 2026. |
+| `hero-litime` | LiTime brand spotlight hero and /brands/ tile | LiTime | Composed from the official Awin feed photos listed above | Arranged on a soft gradient background, November 23, 2026. |
 | `hero-bluetti-official` | BLUETTI brand spotlight hero and /brands/ tile | Bluetti Global | Composed from existing official CJ catalog photos (`bluetti-elite-200-v2`, `bluetti-ac180`, `bluetti-sp200l-200w`) | Those catalog photos were downloaded November 21, 2026; this arrangement was made November 23, 2026. |

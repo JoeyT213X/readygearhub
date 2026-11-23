@@ -253,7 +253,7 @@ export const entries: DirEntry[] = [
 /** Gear listing id -> category. Anything not listed falls into 'more'. */
 const itemCategory: Record<string, CategoryId> = {};
 const put = (cat: CategoryId, ids: string[]) => ids.forEach((i) => (itemCategory[i] = cat));
-put('power', ['anker-prime-power-bank-20k-220w', 'anker-solix-c1000x', 'anker-solix-f2000', 'anker-solix-ps400', 'anker-solix-ps100', 'anker-solix-c2000-gen2-400w-kit', 'anker-solix-f3800-plus', 'litime-12v-100ah-group24', 'litime-24v-230ah', 'litime-12v-100ah-trolling', 'litime-diy-solar-generator-kit', 'bluetti-200w-solar-panel', 'bluetti-ac180', 'bluetti-ac70',
+put('power', ['anker-prime-power-bank-20k-220w', 'anker-solix-c1000x', 'anker-solix-f2000', 'anker-solix-ps400', 'anker-solix-ps100', 'anker-solix-c2000-gen2-400w-kit', 'anker-solix-f3800-plus', 'anker-solix-c1000x-gen2', 'anker-solix-c2000-gen2', 'litime-12v-100ah-group24', 'litime-24v-230ah', 'litime-12v-100ah-trolling', 'litime-diy-solar-generator-kit', 'litime-12v-50ah', 'litime-12v-200ah-bluetooth', 'litime-1000w-12v-inverter', 'litime-2000w-12v-inverter-ats', 'litime-30a-mppt', 'litime-12v-10a-charger', 'litime-12v-40a-dc-dc', 'bluetti-200w-solar-panel', 'bluetti-ac180', 'bluetti-ac70',
   'ecoflow-400w-portable-solar-panel', 'ecoflow-delta-3-plus', 'ecoflow-river-3-plus', 'generac-iq3500', 'goal-zero-nomad-100-plus', 'goal-zero-nomad-50',
   'goal-zero-yeti-1500', 'honda-eu2200i', 'honda-eu3200i', 'jackery-explorer-1000-plus', 'jackery-explorer-300-v2', 'jackery-solarsaga-100-prime',
   'jackery-solarsaga-200', 'renogy-100w-12v-solar-kit']);
@@ -262,7 +262,7 @@ put('water', ['datrex-emergency-water-dx1000w', 'grayl-geopress-24oz', 'grayl-ul
 put('food', ['augason-farms-30-day-1-person', 'augason-farms-3-month-emergency-food', 'augason-farms-lunch-dinner-variety-pail', 'augason-farms-grab-and-go-backpack', 'backpackers-pantry-3-day-meal-kit-meat', 'backpackers-pantry-14-day-emergency-kit-meat', 'mountain-house-classic-bucket', 'mountain-house-beef-stew-pouch', 'mountain-house-breakfast-skillet-pouch', 'mountain-house-macaroni-cheese-2-pack', 'readywise-4-week-food-supply', 'readywise-5-day-survival-backpack', 'readywise-72-hour-food-kit', 'readywise-1-month-two-bucket-bundle', 'readywise-powdered-eggs-144-servings', 'legacy-120-serving-entree-bucket', 'legacy-60-serving-entree-bucket', 'legacy-premium-240-serving-package', 'survival-frog-beef-canned-meat']);
 put('first-aid', ['amk-adventure-first-aid-family', 'amk-adventure-first-aid-2-0', 'amk-mountain-series-explorer', 'amk-mountain-series-hiker', 'amk-trauma-pak-quikclot', 'amk-ultralight-watertight-9',
   'amk-blister-medic-kit', 'amk-sports-first-aid-kit', 'amk-trauma-tourniquet', 'amk-dental-medic-kit', 'first-aid-only-50-person-272', 'mymedic-myfak', 'mymedic-bleeding-control-kit', 'mymedic-everyday-carry', 'mymedic-cat-tourniquet-gen-7', 'philips-heartstart-onsite', 'sam-splint', 'sam-chest-seals', 'leatherman-raptor-rescue']);
-put('lighting', ['biolite-alpenglow-500', 'black-diamond-spot-400', 'eton-blackout-buddy-h2o', 'fenix-hm65r-v2', 'goal-zero-lighthouse-600', 'petzl-actik-core', 'nitecore-edc29', 'nitecore-edc37', 'nitecore-hc65-uhe', 'wuben-a1', 'wuben-lightok-x1', 'wuben-a22', 'wuben-h1', 'wuben-e7', 'wuben-lightok-x2', 'wuben-c2']);
+put('lighting', ['biolite-alpenglow-500', 'black-diamond-spot-400', 'eton-blackout-buddy-h2o', 'fenix-hm65r-v2', 'goal-zero-lighthouse-600', 'petzl-actik-core', 'nitecore-edc29', 'nitecore-edc37', 'nitecore-hc65-uhe', 'wuben-a1', 'wuben-lightok-x1', 'wuben-a22', 'wuben-h1', 'wuben-e7', 'wuben-lightok-x2', 'wuben-c2', 'wuben-c3', 'wuben-e12r', 'wuben-f5', 'wuben-g5', 'wuben-x1-pro', 'wuben-x2-pro', 'wuben-h4', 'wuben-lightok-x0']);
 put('comms', ['eton-red-cross-frx2', 'eton-elite-executive-radio', 'eton-elite-traveler-radio', 'eton-elite-field-radio', 'eton-red-cross-journey-radio', 'garmin-inreach-mini-2', 'midland-er310-crank-radio', 'midland-wr400', 'midland-t71vp3-xtalker', 'midland-gxt1000x3vp4', 'midland-gxt67-pro', 'midland-mxt115p', 'midland-cliptalk', 'midland-er310pro', 'cobra-75-allroad', 'cobra-29lx', 'cobra-29ltd', 'cobra-25ltd', 'btech-uv-5x3']);
 put('home-protection', ['eton-blackout-buddy-co', 'kidde-kn-cob-lp2', 'kidde-pro-210']);
 
@@ -273,7 +273,7 @@ const itemTech: Record<string, TechGroupId> = {};
 const putTech = (group: TechGroupId, ids: string[]) => ids.forEach((i) => (itemTech[i] = group));
 putTech('portable-power', [
   'ecoflow-delta-3-plus', 'ecoflow-river-3-plus', 'ecoflow-400w-portable-solar-panel',
-  'jackery-explorer-1000-plus', 'bluetti-ac180', 'anker-solix-c1000x', 'anker-solix-ps400', 'anker-solix-ps100', 'goal-zero-yeti-1500',
+  'jackery-explorer-1000-plus', 'bluetti-ac180', 'anker-solix-c1000x', 'anker-solix-c1000x-gen2', 'anker-solix-c2000-gen2', 'anker-solix-ps400', 'anker-solix-ps100', 'goal-zero-yeti-1500',
 ]);
 putTech('satcom', ['garmin-inreach-mini-2']);
 putTech('weather-radios', ['midland-wr400', 'midland-er310-crank-radio', 'eton-red-cross-frx2']);
