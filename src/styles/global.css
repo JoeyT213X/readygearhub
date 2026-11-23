@@ -724,6 +724,11 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
   --photo-bg-2:#e6eef4;
   --photo-glow:rgba(242,166,90,.22);
 }
+.backdrop-water, .backdrop-water .photo-stage, .source-card.backdrop-water .product-cover, .item-card-photo.backdrop-water, .gear-official-photo.backdrop-water .photo-stage{
+  --photo-bg-1:#f4fafc;
+  --photo-bg-2:#dceef4;
+  --photo-glow:rgba(90,180,210,.28);
+}
 .photo-stage::before,
 .source-card.is-photo .product-cover::before,
 .item-card-photo::before,

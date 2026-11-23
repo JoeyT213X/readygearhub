@@ -51,7 +51,16 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'wuben-x2-pro': { alt: 'Wuben X2 Pro+ rechargeable magnetic flashlight, listed as 1,500 lumens, in black', widths: [480, 960, 1600] },
   'wuben-h4': { alt: 'Wuben H4 rechargeable headlamp, in black', widths: [480, 960, 1600] },
   'wuben-lightok-x0': { alt: 'Wuben Lightok X0 rechargeable pocket flashlight, listed as 1,100 lumens, in black', widths: [480, 900] },
+  'ispring-rcc7': { alt: 'iSpring RCC7 5-stage under-sink reverse osmosis system with a brushed nickel faucet and storage tank', widths: [480, 960, 1500] },
+  'ispring-rcc7ak': { alt: 'iSpring RCC7AK alkaline 6-stage under-sink reverse osmosis system with a remineralization stage and storage tank', widths: [480, 960, 1500] },
+  'ispring-ro500': { alt: 'iSpring RO500-BN tankless reverse osmosis system with a brushed nickel faucet', widths: [480, 960, 1600] },
+  'ispring-rcd100': { alt: 'iSpring RCD100 5-stage countertop reverse osmosis water dispenser', widths: [480, 960, 1500] },
+  'ispring-wgb21b': { alt: 'iSpring WGB21B 2-stage whole-house water filter with sediment and carbon-block cartridges', widths: [480, 960, 1356] },
+  'ispring-wgb32b': { alt: 'iSpring WGB32B 3-stage whole-house water filter with 20-inch sediment and carbon-block cartridges', widths: [480, 960, 1500] },
+  'ispring-sf2s': { alt: 'iSpring SF2S 33-stage shower filter with a replaceable cartridge', widths: [480, 960, 1493] },
+  'ispring-df1': { alt: 'iSpring DF1 chrome faucet-mount drinking-water filter', widths: [480, 960, 1500] },
 };
+
 
 const BY_ID: Record<string, string> = {
   'anker-solix-ps400': 'anker-solix-ps400',
@@ -93,7 +102,16 @@ const BY_ID: Record<string, string> = {
   'wuben-x2-pro': 'wuben-x2-pro',
   'wuben-h4': 'wuben-h4',
   'wuben-lightok-x0': 'wuben-lightok-x0',
+  'ispring-rcc7': 'ispring-rcc7',
+  'ispring-rcc7ak': 'ispring-rcc7ak',
+  'ispring-ro500': 'ispring-ro500',
+  'ispring-rcd100': 'ispring-rcd100',
+  'ispring-wgb21b': 'ispring-wgb21b',
+  'ispring-wgb32b': 'ispring-wgb32b',
+  'ispring-sf2s': 'ispring-sf2s',
+  'ispring-df1': 'ispring-df1',
 };
+
 
 function build(key: string): ProductPhoto {
   const e = ENTRIES[key];
@@ -134,5 +152,6 @@ export function photoBackdropClass(item: {
   if (/flashlight|headlamp|spotlight|lantern|\blighting\b|wuben/.test(hay)) return 'backdrop-light';
   if (/(?:\bbatter(?:y|ies)\b|litime)/.test(hay) && !/solar|panel|generator kit|power station|inverter|charger|mppt|anker-solix|bluetti/.test(hay)) return 'backdrop-battery';
   if (item.category === 'power' || /power station|solar|anker-solix|bluetti|inverter|charger|mppt/.test(hay)) return 'backdrop-power';
+  if (item.category === 'water' || /ispring|aquasana|waterdrop|\bberkey\b|reverse osmosis|water filter|filtration/.test(hay)) return 'backdrop-water';
   return 'backdrop-default';
 }

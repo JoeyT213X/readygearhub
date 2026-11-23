@@ -448,6 +448,16 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
   'wuben-x2-pro',
   'wuben-h4',
   'wuben-lightok-x0',
+  'ispring-home',
+  'ispring-rcc7',
+  'ispring-rcc7ak',
+  'ispring-ro500',
+  'ispring-rcd100',
+  'ispring-wgb21b',
+  'ispring-wgb32b',
+  'ispring-sf2s',
+  'ispring-df1',
+  'ispring',
 ]);
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {

@@ -129,6 +129,7 @@ export const entries: DirEntry[] = [
   { id: 'aquasana', name: 'Aquasana', category: 'water', type: 'Brand', url: 'https://www.aquasana.com/', desc: 'Home water filtration systems, including whole-house and under-sink filters. Read the official pages for what a system does and does not remove, and for installation guidance.', offer: BRAND, program: 'aquasana', tech: 'water-tech', cta: 'Shop home water filters at Aquasana' },
   { id: 'aquasana-whole-house', name: 'Aquasana whole-house filters', category: 'water', type: 'Product', url: 'https://www.aquasana.com/whole-house-water-filters/', desc: 'Whole-house water filtration systems from Aquasana, installed at the home\'s main water line. Read the official page for what a system does and does not remove, and for installation guidance.', offer: BRAND, program: 'aquasana', tech: 'water-tech', cta: 'Shop whole-house filters at Aquasana' },
   { id: 'aquasana-under-sink', name: 'Aquasana under-sink filters', category: 'water', type: 'Product', url: 'https://www.aquasana.com/under-sink-water-filters/', desc: 'Under-sink water filtration systems from Aquasana, for treating water at a single faucet. Read the official page for what a system does and does not remove, and for installation guidance.', offer: BRAND, program: 'aquasana', tech: 'water-tech', cta: 'Shop under-sink filters at Aquasana' },
+  { id: 'ispring', name: 'iSpring Water Systems', category: 'water', type: 'Brand', url: 'https://www.ispringfilter.com/', desc: 'Home water filtration systems, including under-sink and tankless reverse osmosis, countertop dispensers, whole-house filters, and shower and faucet filters. Read the official pages for what a system does and does not treat, and for installation guidance.', offer: BRAND, program: 'ispring', tech: 'water-tech', cta: 'Shop home water filters at iSpring' },
   { id: 'tap-score', name: 'Tap Score', category: 'water', type: 'Service', url: 'https://www.mytapscore.com/', desc: 'Mail-in home water test kits that analyze a sample you send.', offer: 'Paid test kits', program: 'tap-score' },
   { id: 'ready-water', name: 'Ready.gov: Water', category: 'water', type: 'Free resource', url: 'https://www.ready.gov/water', desc: 'Official guidance on storing and treating emergency drinking water.', offer: GOV },
   { id: 'cdc-water', name: 'CDC: Water Emergencies', category: 'water', type: 'Free resource', url: 'https://www.cdc.gov/water-emergency/index.html', desc: 'CDC information on safe water during and after emergencies.', offer: GOV },
@@ -264,7 +265,8 @@ put('power', ['anker-prime-power-bank-20k-220w', 'anker-solix-c1000x', 'anker-so
   'goal-zero-yeti-1500', 'honda-eu2200i', 'honda-eu3200i', 'jackery-explorer-1000-plus', 'jackery-explorer-300-v2', 'jackery-solarsaga-100-prime',
   'jackery-solarsaga-200', 'renogy-100w-12v-solar-kit']);
 put('water', ['datrex-emergency-water-dx1000w', 'grayl-geopress-24oz', 'grayl-ultrapress-16-9oz', 'katadyn-befree-0-6l', 'lifestraw-family', 'lifestraw-personal',
-  'lifestraw-straw-emergency-pack', 'reliance-aqua-tainer', 'reliance-jumbo-tainer-2', 'sawyer-mini-water-filter', 'sawyer-squeeze-water-filter', 'waterbob']);
+  'lifestraw-straw-emergency-pack', 'reliance-aqua-tainer', 'reliance-jumbo-tainer-2', 'sawyer-mini-water-filter', 'sawyer-squeeze-water-filter', 'waterbob',
+  'ispring-rcc7', 'ispring-rcc7ak', 'ispring-ro500', 'ispring-rcd100', 'ispring-wgb21b', 'ispring-wgb32b', 'ispring-sf2s', 'ispring-df1']);
 put('food', ['augason-farms-30-day-1-person', 'augason-farms-3-month-emergency-food', 'augason-farms-lunch-dinner-variety-pail', 'augason-farms-grab-and-go-backpack', 'backpackers-pantry-3-day-meal-kit-meat', 'backpackers-pantry-14-day-emergency-kit-meat', 'mountain-house-classic-bucket', 'mountain-house-beef-stew-pouch', 'mountain-house-breakfast-skillet-pouch', 'mountain-house-macaroni-cheese-2-pack', 'readywise-4-week-food-supply', 'readywise-5-day-survival-backpack', 'readywise-72-hour-food-kit', 'readywise-1-month-two-bucket-bundle', 'readywise-powdered-eggs-144-servings', 'legacy-120-serving-entree-bucket', 'legacy-60-serving-entree-bucket', 'legacy-premium-240-serving-package', 'survival-frog-beef-canned-meat']);
 put('first-aid', ['amk-adventure-first-aid-family', 'amk-adventure-first-aid-2-0', 'amk-mountain-series-explorer', 'amk-mountain-series-hiker', 'amk-trauma-pak-quikclot', 'amk-ultralight-watertight-9',
   'amk-blister-medic-kit', 'amk-sports-first-aid-kit', 'amk-trauma-tourniquet', 'amk-dental-medic-kit', 'first-aid-only-50-person-272', 'mymedic-myfak', 'mymedic-bleeding-control-kit', 'mymedic-everyday-carry', 'mymedic-cat-tourniquet-gen-7', 'philips-heartstart-onsite', 'sam-splint', 'sam-chest-seals', 'leatherman-raptor-rescue']);
@@ -283,7 +285,8 @@ putTech('portable-power', [
 ]);
 putTech('satcom', ['garmin-inreach-mini-2']);
 putTech('weather-radios', ['midland-wr400', 'midland-er310-crank-radio', 'eton-red-cross-frx2']);
-putTech('water-tech', ['grayl-geopress-24oz', 'lifestraw-family', 'sawyer-mini-water-filter', 'katadyn-befree-0-6l']);
+putTech('water-tech', ['grayl-geopress-24oz', 'lifestraw-family', 'sawyer-mini-water-filter', 'katadyn-befree-0-6l',
+  'ispring-rcc7', 'ispring-rcc7ak', 'ispring-ro500', 'ispring-rcd100', 'ispring-wgb21b', 'ispring-wgb32b', 'ispring-sf2s', 'ispring-df1']);
 
 export const techGroupForItem = (id: string): TechGroupId | undefined => itemTech[id];
 
