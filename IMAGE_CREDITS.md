@@ -168,3 +168,35 @@ Collages use a thin navy gap so they match the home-hero tile frame. No portable
 | `hero-first-aid-crisp` | [First Aid Kit on Gray Background](https://www.pexels.com/photo/first-aid-kit-on-gray-background-5673523/) | Roger Brown / Pexels | Home hero, First aid & safety window |
 | `hero-security-mix` | Collage of the existing `hero-security-robot` dog ([Ghost Robotics Vision 60 at BSDA 2024](https://commons.wikimedia.org/wiki/File:Ghost_Robotics_-_Civitas_Group_Vision_60_robot_dog_at_BSDA_2024.jpg)) with [White CCTV Cameras on a Post](https://www.pexels.com/photo/white-2-cctv-camera-mounted-on-black-post-under-clear-blue-sky-96612/) and [Pole with CCTV Cameras](https://www.pexels.com/photo/pole-with-cctv-cameras-10564672/) | Pfc. Alexcia Rupert, U.S. Army (public domain) via Wikimedia Commons; [AS Photography](https://www.pexels.com/@asphotography/) and Ollie Craig / Pexels | Home hero, Security window. The original `hero-security-robot` file is unchanged on the Ghost Robotics listing. |
 | `hero-prepper-collage` | Four-panel collage: [Khaki Backpack with Survival Kit](https://www.pexels.com/photo/khaki-backpack-with-survival-kit-on-the-ground-6694800/) plus the existing `lantern-dusk`, `hero-radios`, and `multitools` photographs | [Dan Galvani Sommavilla](https://www.pexels.com/photo/khaki-backpack-with-survival-kit-on-the-ground-6694800/), [Vladimir Fedotov](https://unsplash.com/@fedotov_vs), [Grégory Costa](https://www.pexels.com/@gregory-costa/), and [Andrey Matveev](https://unsplash.com/@zelebb/) | Home hero, Prepper's Picks window |
+
+## Representative photos on directory cards (Pexels, added 23 Nov 2026)
+
+Listings that do not have a licensed official product photo show a generic category photo with a small "Representative photo" label. These photos are not images of the specific product, and their alt text says so. Downloaded from Pexels (Pexels License), cropped to 16:9 from a 2,000 px-wide source, re-encoded as self-hosted WebP at 480, 960, and 1,600 px (always downscaled from the 2,000 px source, never enlarged), and not hotlinked. Existing self-hosted photos listed above (for example `hero-drones-air`, `hero-first-aid-crisp`, `multitools`, `prep-food-storage`) are reused for their categories. Network-provided official product creatives (Rakuten for Anker SOLIX, Awin for LiTime) are not yet downloaded; see the report for the exact assets needed.
+
+| File key | Photo | Photographer | Used on |
+|---|---|---|---|
+| `stock-solar-panel` | [Pexels photo 8853509](https://www.pexels.com/photo/8853509/) | Los Muertos Crew / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-solar-camp` | [Pexels photo 28705865](https://www.pexels.com/photo/28705865/) | Eslam Mohammed Abdelmaksoud / Pexels | Representative photo on directory cards without a licensed product photo; brand spotlight hero |
+| `stock-power-station` | [Pexels photo 37489594](https://www.pexels.com/photo/37489594/) | Amar Preciado / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-battery-bank` | [Pexels photo 37929911](https://www.pexels.com/photo/37929911/) | Magda Ehlers / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-rv` | [Pexels photo 7967392](https://www.pexels.com/photo/7967392/) | Kampus Production / Pexels | Representative photo on directory cards without a licensed product photo; brand spotlight hero |
+| `stock-boat` | [Pexels photo 1682688](https://www.pexels.com/photo/1682688/) | Ricky Esquivel / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-flashlight` | [Pexels photo 18678168](https://www.pexels.com/photo/18678168/) | Lucius PK / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-lantern` | [Pexels photo 6271727](https://www.pexels.com/photo/6271727/) | Uriel Mont / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-smart-cam` | [Pexels photo 24503710](https://www.pexels.com/photo/24503710/) | Jakub Zerdzicki / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-cctv` | [Pexels photo 96612](https://www.pexels.com/photo/96612/) | AS Photography / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-alarm` | [Pexels photo 39183052](https://www.pexels.com/photo/39183052/) | Caleb Oquendo / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-laptop` | [Pexels photo 3693732](https://www.pexels.com/photo/3693732/) | Abdullah Bin Mubarak / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-house` | [Pexels photo 4832530](https://www.pexels.com/photo/4832530/) | Curtis Adams / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-insurance` | [Pexels photo 7736031](https://www.pexels.com/photo/7736031/) | Mikhail Nilov / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-pipe` | [Pexels photo 18274115](https://www.pexels.com/photo/18274115/) | aamir dukanwala / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-headphones` | [Pexels photo 210927](https://www.pexels.com/photo/210927/) | Aleksandar Spasojevic / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-speaker` | [Pexels photo 880874](https://www.pexels.com/photo/880874/) | Peter Fazekas / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-books` | [Pexels photo 11317071](https://www.pexels.com/photo/11317071/) | Jonathan Cooper / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-drill` | [Pexels photo 30413428](https://www.pexels.com/photo/30413428/) | Christina & Peter / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-boots` | [Pexels photo 32189248](https://www.pexels.com/photo/32189248/) | John Baker / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-gloves` | [Pexels photo 11584891](https://www.pexels.com/photo/11584891/) | SERHAT TUĞ / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-radio` | [Pexels photo 9629953](https://www.pexels.com/photo/9629953/) | Ivan S / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-stove` | [Pexels photo 4909104](https://www.pexels.com/photo/4909104/) | Taryn Elliott / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-wood-stove` | [Pexels photo 27669647](https://www.pexels.com/photo/27669647/) | Alexander Mass / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-cyber` | [Pexels photo 38482447](https://www.pexels.com/photo/38482447/) | Ann Hannes / Pexels | Representative photo on password-manager and privacy-service cards |

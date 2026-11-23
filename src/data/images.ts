@@ -48,6 +48,14 @@ export const photos: Record<string, Photo> = {
 
 
 
+// Representative Pexels photos (see IMAGE_CREDITS.md)
+Object.assign(photos, {
+  "stock-solar-panel": { key: "stock-solar-panel", alt: "Close-up of a solar panel", author: "Los Muertos Crew", authorUrl: "https://www.pexels.com/photo/8853509/", sourceUrl: "https://www.pexels.com/photo/8853509/" },
+  "stock-solar-camp": { key: "stock-solar-camp", alt: "Solar panels set up beside a camper at sunset", author: "Eslam Mohammed Abdelmaksoud", authorUrl: "https://www.pexels.com/photo/28705865/", sourceUrl: "https://www.pexels.com/photo/28705865/" },
+  "stock-power-station": { key: "stock-power-station", alt: "Portable power equipment with outlets", author: "Amar Preciado", authorUrl: "https://www.pexels.com/photo/37489594/", sourceUrl: "https://www.pexels.com/photo/37489594/" },
+  "stock-rv": { key: "stock-rv", alt: "A camper trailer parked in a field with chairs outside", author: "Kampus Production", authorUrl: "https://www.pexels.com/photo/7967392/", sourceUrl: "https://www.pexels.com/photo/7967392/" },
+});
+
 export const photoSrc = (key: string, w: 480 | 960 | 1600 = 960) => `/images/photos/${key}-${w}.webp`;
 export const photoSrcset = (key: string) => [480, 960, 1600].map((w) => `/images/photos/${key}-${w}.webp ${w}w`).join(', ');
 

@@ -632,3 +632,35 @@ color:#fff}
   .prepper-bento{margin-bottom:4px}
   .bento-tile.is-shop-board.is-wide{grid-column:1 / -1;grid-row:auto;min-height:480px}
 }
+
+/* Representative (stock) photos on cards without a licensed product photo. Same 16:9 cover box as before. */
+.source-card.is-stock .product-cover img.stock-photo{object-fit:cover;background:#dfe6eb}
+.source-card.is-stock .stock-chip{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.68rem;line-height:1;font-weight:600;letter-spacing:.02em;color:#fff;background:rgba(15,42,61,.78);padding:5px 8px;border-radius:999px;pointer-events:none}
+
+/* Brand spotlight pages */
+.brand-intro .brand-photo-note{margin:0 0 12px;font-size:.82rem;color:var(--muted)}
+.brand-summary{font-size:1.05rem;max-width:62ch}
+.brand-fit{display:grid;gap:16px}
+@media(min-width:760px){.brand-fit{grid-template-columns:1fr 1fr}}
+.brand-fit-col h3{margin:0 0 8px}
+.brand-fit-col ul{margin:0;padding-left:1.1rem;display:grid;gap:8px}
+.brand-price-note,.brand-code{max-width:70ch}
+.brand-pick{display:flex;flex-direction:column;gap:10px}
+.brand-pick-note{font-size:.9rem;padding:0 4px}
+.brand-pick-note p{margin:0 0 6px}
+.brand-steps{display:grid;gap:12px;padding-left:1.2rem;max-width:70ch}
+.brand-faq{display:grid;gap:10px;max-width:760px}
+.brand-faq details{padding:12px 16px}
+.brand-faq summary{cursor:pointer;font-weight:600}
+.brand-faq details p{margin:10px 0 0}
+.brand-thanks{max-width:760px;background:linear-gradient(165deg,#f4f8fb,#fff);border-left:4px solid #c9611a}
+.brand-thanks h2{margin:0 0 6px;font-size:1.2rem}
+.brand-thanks p{margin:0}
+.brand-links{display:grid;gap:16px}
+@media(min-width:760px){.brand-links{grid-template-columns:1.4fr 1fr}}
+.brand-links ul{margin:0;padding-left:1.1rem;display:grid;gap:6px}
+.brand-tile{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit}
+.brand-tile img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px}
+.brand-tile h2{margin:0;font-size:1.25rem}
+.brand-tile p{margin:0}
+.brand-spotlight-strip{margin:0 0 14px}

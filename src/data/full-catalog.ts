@@ -10,6 +10,7 @@ import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
 import { catalogExtraById, type CatalogExtra } from './catalog-extras';
 import { newPrepperOnlyPicks, prepperPickToCatalogItem } from './prepper-picks';
 import { highTicketCatalogItems } from './high-ticket';
+import { stockCoverFor } from './stock-covers';
 import {
   sourceGroups,
   resolvedSourceItems,
@@ -418,7 +419,12 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
 ]);
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {
-  const eligible = items.filter((i) => !isPortablePowerStation(i) && !HOME_SHOP_EXCLUDED_IDS.has(i.id));
+  const eligible = items.filter((i) => {
+    if (isPortablePowerStation(i) || HOME_SHOP_EXCLUDED_IDS.has(i.id)) return false;
+    // Keep power-station style stock photos off the home page.
+    const k = stockCoverFor(i)?.key;
+    return k !== 'stock-power-station' && k !== 'stock-battery-bank';
+  });
   const photoTrending = eligible.filter((i) => i.trending && hasProductPhoto(i));
   const photoRest = eligible.filter((i) => !i.trending && hasProductPhoto(i));
   const textTrending = eligible.filter((i) => i.trending && !hasProductPhoto(i));

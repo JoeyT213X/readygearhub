@@ -1,0 +1,112 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import SectionHead from '../../components/SectionHead.astro';
+import SourceCard from '../../components/SourceCard.astro';
+import Disclosure from '../../components/Disclosure.astro';
+import { brandPages } from '../../data/brands';
+import { resolveOutbound } from '../../data/affiliates';
+import { getItems } from '../../lib/data';
+import { buildFullCatalog } from '../../data/full-catalog';
+
+export function getStaticPaths() {
+  return brandPages.map((b) => ({ params: { slug: b.slug }, props: { brand: b } }));
+}
+const { brand } = Astro.props;
+const catalog = buildFullCatalog(await getItems());
+const picks = brand.picks
+  .map((p) => ({ ...p, item: catalog.find((c) => c.id === p.id) }))
+  .filter((p) => p.item);
+const shop = resolveOutbound(brand.programId, brand.officialUrl, brand.shopItemId);
+const url = new URL(`/brands/${brand.slug}/`, Astro.site).href;
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: brand.title, url, description: brand.lead,
+    about: { '@type': 'Brand', name: brand.name, url: brand.officialUrl } },
+  { '@context': 'https://schema.org', '@type': 'ItemList', name: `${brand.name} picks on ReadyGearHub`, numberOfItems: picks.length,
+    itemListElement: picks.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.item!.title, url: `${url}#pick-${p.id}` })) },
+  { '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: brand.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Brand spotlights', item: new URL('/brands/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: brand.name, item: url } ] },
+];
+---
+<Base title={`${brand.title} | ReadyGearHub`} description={brand.summary} schema={schema}>
+  <PageHero title={brand.name} eyebrow={brand.eyebrow} lead={brand.lead} photo={brand.photo}
+    crumbs={[{ href: '/brands/', label: 'Brand spotlights' }, { label: brand.name }]}>
+    <div class="hero-actions">
+      <a class="btn" href="#picks">See the picks</a>
+      <a class="btn ghost light" href={shop.href} target="_blank" rel={shop.affiliate ? 'sponsored nofollow noopener' : 'noopener'} data-program={shop.affiliate ? brand.programId : undefined}>Visit {brand.name} ↗</a>
+    </div>
+  </PageHero>
+
+  <section class="wrap section tight brand-intro">
+    <p class="brand-photo-note">{brand.photoNote}</p>
+    <Disclosure />
+    <p class="brand-summary">{brand.summary}</p>
+  </section>
+
+  <section class="wrap section tight">
+    <SectionHead kicker="Fit" title={`Who ${brand.name} is good for`} />
+    <div class="brand-fit">
+      <div class="card brand-fit-col">
+        <h3>A good fit if you…</h3>
+        <ul>{brand.goodFor.map((t) => <li>{t}</li>)}</ul>
+      </div>
+      <div class="card brand-fit-col">
+        <h3>Think twice if…</h3>
+        <ul>{brand.lessIdeal.map((t) => <li>{t}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="picks">
+    <SectionHead kicker="Our picks" title={`${picks.length} ${brand.name} picks`} intro="Chosen for fit, not payment. Specs come from the maker’s own pages." />
+    <p class="fine brand-price-note">{brand.priceNote}</p>
+    {brand.code && <p class="fine brand-code">{brand.code}</p>}
+    <div class="grid shop-grid source-grid brand-picks">
+      {picks.map((p) => (
+        <div class="brand-pick" id={`pick-${p.id}`}>
+          <SourceCard item={p.item!} />
+          <div class="brand-pick-note">
+            <p><strong>Why we picked it:</strong> {p.why}</p>
+            <p><strong>Check first:</strong> {p.check}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap section tight">
+    <SectionHead kicker="Guide" title={`How to choose a ${brand.name} setup`} />
+    <ol class="brand-steps">
+      {brand.choose.map((s) => <li><strong>{s.title}.</strong> {s.text}</li>)}
+    </ol>
+  </section>
+
+  <section class="wrap section tight">
+    <SectionHead kicker="FAQ" title="Common questions" />
+    <div class="brand-faq">
+      {brand.faq.map((f) => (
+        <details class="card"><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap section tight">
+    <div class="card brand-thanks">
+      <h2>A quick thank-you</h2>
+      <p>{brand.thanks}</p>
+    </div>
+  </section>
+
+  <section class="wrap section tight">
+    <SectionHead kicker="Keep reading" title="Related guides, tools, and directories" />
+    <div class="brand-links">
+      <ul>{brand.related.map((l) => <li><a href={l.href}>{l.label}</a>{l.note && <span> · {l.note}</span>}</li>)}</ul>
+      <ul>{brand.directories.map((l) => <li><a href={l.href}>{l.label}</a></li>)}<li><a href="/brands/">All brand spotlights</a></li></ul>
+    </div>
+    <p class="disclosure"><strong>Affiliate disclosure:</strong> ReadyGearHub is a partner of {brand.name}. If you buy through the links on this page, we may earn a commission at no extra cost to you. Specifications and prices come from the maker’s own pages and can change. <a href="/affiliate-disclosure/">Full disclosure</a></p>
+  </section>
+</Base>

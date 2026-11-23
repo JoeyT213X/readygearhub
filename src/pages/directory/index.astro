@@ -8,6 +8,7 @@ import ComingSoonPartners from '../../components/ComingSoonPartners.astro';
 import { sourceGroups, sourceStores, comingSoonFor } from '../../data/source-directory';
 import { getItems } from '../../lib/data';
 import { buildFullCatalog, countsByCatalogGroup } from '../../data/full-catalog';
+import { brandPages } from '../../data/brands';
 
 const items = buildFullCatalog(await getItems());
 const stores = sourceStores();
@@ -56,6 +57,8 @@ const schema = {
 
   <section class="wrap section" id="listings">
     <SectionHead kicker="Catalog" title="All listings" intro={`Filter by group or source. ${items.length} listings in all; trending items and product photos stay first.`} />
+    <p class="fine brand-spotlight-strip"><strong>Brand spotlights:</strong> {brandPages.map((b, i) => (<>{i > 0 && ' · '}<a href={`/brands/${b.slug}/`}>{b.name}</a></>))}</p>
+
     <div class="dir-filters" data-source-filters data-page-size="60">
       <div class="filter-row">
         <p class="filter-label" id="filter-cat-label">Group</p>
