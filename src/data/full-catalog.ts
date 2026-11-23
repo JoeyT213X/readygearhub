@@ -403,8 +403,22 @@ export function isPortablePowerStation(item: { id?: string; title?: string; imag
 }
 
 /** Home shop section: prefer cards with real photos, then trending text cards. Cap per brand so one filter line does not fill the grid. */
+/** Keep these off the home shop grid so new partner products do not reshuffle the 16-card layout. They stay in the directory and on gear pages. */
+const HOME_SHOP_EXCLUDED_IDS = new Set([
+  'anker-solix',
+  'anker-solix-ps400',
+  'anker-solix-ps100',
+  'anker-solix-c2000-gen2-400w-kit',
+  'anker-solix-f3800-plus',
+  'litime',
+  'litime-12v-100ah-group24',
+  'litime-24v-230ah',
+  'litime-12v-100ah-trolling',
+  'litime-diy-solar-generator-kit',
+]);
+
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {
-  const eligible = items.filter((i) => !isPortablePowerStation(i));
+  const eligible = items.filter((i) => !isPortablePowerStation(i) && !HOME_SHOP_EXCLUDED_IDS.has(i.id));
   const photoTrending = eligible.filter((i) => i.trending && hasProductPhoto(i));
   const photoRest = eligible.filter((i) => !i.trending && hasProductPhoto(i));
   const textTrending = eligible.filter((i) => i.trending && !hasProductPhoto(i));

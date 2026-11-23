@@ -31,7 +31,7 @@ Most photographs in `public/images/photos/` are from [Unsplash](https://unsplash
 
 Category tiles on `/directory/` reuse existing self-hosted Unsplash photos from the table above (`gear-flatlay`, `power-banks`, `solar-rooftops`, `fireplace-living-room`, `water-bottles`, `lantern-dusk`, `multitools`, `car-in-snow`, `first-aid-kit-open`, `checklist-writing`). Our own Payhip cover images in `public/shop/` are used for download cards.
 
-Product-card covers in `public/directory/covers/` are original geometric SVG illustrations made for this catalog (not photographs, not AI-generated images, and not merchant or brand logos). They remain in use on listings without a licensed product or brand creative: ALLPOWERS product and merchant cards, TheBerkey.com, and REDI, plus the Audio & Entertainment and Fun & Gifts category tiles (`cat-audio.svg`, `cat-fun.svg`). `sanitation.svg` and `documents.svg` were added for Prepper’s Picks cards that do not have a licensed product photo.
+Product-card covers in `public/directory/covers/` are original geometric SVG illustrations made for this catalog (not photographs, not AI-generated images, and not merchant or brand logos). They remain in use on listings without a licensed product or brand creative: ALLPOWERS product and merchant cards, Anker SOLIX and LiTime product and merchant cards (`solar-panel.svg`, `solar-kit.svg`, `expandable-power.svg`, `battery.svg`, `store.svg`), TheBerkey.com, and REDI, plus the Audio & Entertainment and Fun & Gifts category tiles (`cat-audio.svg`, `cat-fun.svg`). `sanitation.svg` and `documents.svg` were added for Prepper’s Picks cards that do not have a licensed product photo.
 
 ### Official affiliate creatives (`public/directory/photos/`)
 
