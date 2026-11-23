@@ -30,6 +30,12 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'wuben-c2': { alt: 'Wuben C2 rechargeable everyday-carry flashlight, listed as 2,000 lumens', widths: [480, 960, 1600] },
   'anker-solix-c1000x-gen2': { alt: 'Anker SOLIX C1000 Gen 2 portable power station', widths: [480, 960, 1600] },
   'anker-solix-c2000-gen2': { alt: 'Anker SOLIX C2000 Gen 2 portable power station', widths: [480, 960, 1600] },
+  'anker-solix-ps200': { alt: 'Anker SOLIX PS200 bifacial portable solar panel', widths: [480, 960, 1600, 2000] },
+  'anker-solix-bp3800': { alt: 'Anker SOLIX BP3800 expansion battery, listed as 3,840Wh, for the F3800 series', widths: [480, 960, 1600, 2000] },
+  'anker-solix-bp2000-gen2': { alt: 'Anker SOLIX BP2000 expansion battery (Gen 2), for the C2000 Gen 2', widths: [480, 960, 1600, 2000] },
+  'anker-solix-c300x': { alt: 'Anker SOLIX C300X portable power station, listed as 288Wh and 300W', widths: [480, 960, 1600, 2000] },
+  'anker-solix-c800x-100w-kit': { alt: 'Anker SOLIX C800X portable power station with a 100W solar panel kit', widths: [480, 960, 1600, 2000] },
+  'anker-solix-c300-dc-60w-kit': { alt: 'Anker SOLIX C300 DC solar generator with a 60W solar panel', widths: [480, 960, 1600, 2000] },
   'litime-12v-50ah': { alt: 'LiTime 12V 50Ah lithium battery', widths: [480, 960, 1600] },
   'litime-12v-200ah-bluetooth': { alt: 'LiTime 12V 200Ah Bluetooth lithium battery', widths: [480, 960, 1000] },
   'litime-1000w-12v-inverter': { alt: 'LiTime 1000W 12V pure sine wave inverter', widths: [480, 960, 1000] },
@@ -66,6 +72,12 @@ const BY_ID: Record<string, string> = {
   'wuben-c2': 'wuben-c2',
   'anker-solix-c1000x-gen2': 'anker-solix-c1000x-gen2',
   'anker-solix-c2000-gen2': 'anker-solix-c2000-gen2',
+  'anker-solix-ps200': 'anker-solix-ps200',
+  'anker-solix-bp3800': 'anker-solix-bp3800',
+  'anker-solix-bp2000-gen2': 'anker-solix-bp2000-gen2',
+  'anker-solix-c300x': 'anker-solix-c300x',
+  'anker-solix-c800x-100w-kit': 'anker-solix-c800x-100w-kit',
+  'anker-solix-c300-dc-60w-kit': 'anker-solix-c300-dc-60w-kit',
   'litime-12v-50ah': 'litime-12v-50ah',
   'litime-12v-200ah-bluetooth': 'litime-12v-200ah-bluetooth',
   'litime-1000w-12v-inverter': 'litime-1000w-12v-inverter',
@@ -120,7 +132,7 @@ export function photoBackdropClass(item: {
     item.id, item.title, item.name, item.offerLabel, item.category, item.brand, ...(item.tags ?? []),
   ].filter(Boolean).join(' ').toLowerCase();
   if (/flashlight|headlamp|spotlight|lantern|\blighting\b|wuben/.test(hay)) return 'backdrop-light';
-  if (/(?:\bbatter(?:y|ies)\b|litime)/.test(hay) && !/solar|panel|generator kit|power station|inverter|charger|mppt/.test(hay)) return 'backdrop-battery';
+  if (/(?:\bbatter(?:y|ies)\b|litime)/.test(hay) && !/solar|panel|generator kit|power station|inverter|charger|mppt|anker-solix|bluetti/.test(hay)) return 'backdrop-battery';
   if (item.category === 'power' || /power station|solar|anker-solix|bluetti|inverter|charger|mppt/.test(hay)) return 'backdrop-power';
   return 'backdrop-default';
 }
