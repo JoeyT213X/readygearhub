@@ -669,7 +669,7 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
 @media(max-width:699px){body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:linear-gradient(180deg,rgba(9,25,38,.82) 0%,rgba(9,25,38,.6) 100%)}}
 
 /* Brand spotlight hero: official product composition on a light field, dark text, no navy scrim */
-.brand-hero{position:relative;background:#eef3f7;color:var(--navy);isolation:isolate;overflow:hidden;border-bottom:1px solid rgba(15,42,61,.08)}
+.brand-hero{position:relative;background:radial-gradient(ellipse 70% 60% at 78% 20%, rgba(242,166,90,.14), transparent 55%),radial-gradient(ellipse 90% 80% at 40% 40%, #f4f8fb 0%, #e6eef4 70%);color:var(--navy);isolation:isolate;overflow:hidden;border-bottom:1px solid rgba(15,42,61,.08)}
 .brand-hero-media{position:absolute;inset:0;z-index:0}
 .brand-hero-media img{width:100%;height:100%;object-fit:cover;object-position:right center;display:block}
 /* Horizontal inset comes from .wrap (max-width 1180px, padding 0 20px), same as the sections below. */
@@ -693,13 +693,61 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
   .brand-hero.has-visual .brand-hero-copy{max-width:none;margin-right:0;padding-right:0;background:none}
   .brand-hero-logo{height:30px}
 }
-/* Official product shots: white media area, product fills most of the frame */
+/* Official product shots: on-brand gradient field, white JPEG boxes multiply away */
+.photo-stage{
+  --photo-bg-1:#f7f4ee;
+  --photo-bg-2:#e6eef4;
+  --photo-glow:rgba(242,166,90,.22);
+  position:relative;
+  isolation:isolate;
+  background:
+    radial-gradient(ellipse 70% 55% at 78% 14%, var(--photo-glow), transparent 58%),
+    radial-gradient(ellipse 95% 85% at 48% 42%, var(--photo-bg-1) 0%, var(--photo-bg-2) 72%);
+}
+.backdrop-power, .backdrop-power .photo-stage, .source-card.backdrop-power .product-cover, .item-card-photo.backdrop-power, .gear-official-photo.backdrop-power .photo-stage{
+  --photo-bg-1:#f3f8fb;
+  --photo-bg-2:#dceaf3;
+  --photo-glow:rgba(124,200,242,.3);
+}
+.backdrop-light, .backdrop-light .photo-stage, .source-card.backdrop-light .product-cover, .item-card-photo.backdrop-light, .gear-official-photo.backdrop-light .photo-stage{
+  --photo-bg-1:#fbf6ef;
+  --photo-bg-2:#f1e4d0;
+  --photo-glow:rgba(191,82,16,.16);
+}
+.backdrop-battery, .backdrop-battery .photo-stage, .source-card.backdrop-battery .product-cover, .item-card-photo.backdrop-battery, .gear-official-photo.backdrop-battery .photo-stage{
+  --photo-bg-1:#f3f8f6;
+  --photo-bg-2:#dceee6;
+  --photo-glow:rgba(47,107,79,.14);
+}
+.backdrop-default, .backdrop-default .photo-stage, .source-card.backdrop-default .product-cover, .item-card-photo.backdrop-default, .gear-official-photo.backdrop-default .photo-stage{
+  --photo-bg-1:#f7f4ee;
+  --photo-bg-2:#e6eef4;
+  --photo-glow:rgba(242,166,90,.22);
+}
+.photo-stage::before,
+.source-card.is-photo .product-cover::before,
+.item-card-photo::before,
+.gear-official-photo .photo-stage::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:9%;
+  width:54%;
+  height:20%;
+  transform:translateX(-50%);
+  background:radial-gradient(ellipse, rgba(15,42,61,.18) 0%, rgba(15,42,61,.07) 42%, transparent 72%);
+  pointer-events:none;
+  z-index:0;
+}
 .source-card.is-photo .product-cover{
-  background:#fff;
   aspect-ratio:16/9;
   display:flex;
   align-items:center;
   justify-content:center;
+  isolation:isolate;
+  background:
+    radial-gradient(ellipse 70% 55% at 78% 14%, var(--photo-glow, rgba(242,166,90,.22)), transparent 58%),
+    radial-gradient(ellipse 95% 85% at 48% 42%, var(--photo-bg-1, #f7f4ee) 0%, var(--photo-bg-2, #e6eef4) 72%);
 }
 .source-card.is-photo .product-cover img,
 .source-card.is-photo .product-cover img.source-fit{
@@ -712,12 +760,39 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
   object-position:center center;
   padding:0;
   background:transparent;
+  mix-blend-mode:multiply;
+  position:relative;
+  z-index:1;
 }
 .source-card.is-logo .product-cover{background:#f4f7f9}
-.gear-official-photo{margin:0 0 18px;background:#fff;border-radius:10px;overflow:hidden;aspect-ratio:16/9;display:flex;flex-direction:column}
-.gear-official-photo img{display:block;width:auto;height:90%;max-width:90%;margin:auto;object-fit:contain;background:#fff;aspect-ratio:auto}
-.gear-official-photo figcaption{padding:8px 12px 12px;font-size:.82rem;color:var(--muted)}
+.gear-official-photo{margin:0 0 18px;background:transparent;border-radius:10px;overflow:hidden}
+.gear-official-photo .photo-stage{
+  aspect-ratio:16/9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+}
+.gear-official-photo img{display:block;width:90%;height:90%;max-width:90%;max-height:90%;object-fit:contain;background:transparent;aspect-ratio:auto;mix-blend-mode:multiply;position:relative;z-index:1}
+.gear-official-photo figcaption{padding:8px 4px 0;font-size:.82rem;color:var(--muted)}
 .brand-tile .tile-official{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:right center;border-radius:8px}
 
-.item-card-photo{display:block;margin:-18px -18px 14px;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;background:#fff;aspect-ratio:16/9}
-.item-card-photo img{display:block;width:auto;height:90%;max-width:90%;margin:5% auto;object-fit:contain;background:#fff;aspect-ratio:auto}
+.item-card-photo{display:flex;align-items:center;justify-content:center;margin:-18px -18px 14px;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;aspect-ratio:16/9;isolation:isolate;background:
+    radial-gradient(ellipse 70% 55% at 78% 14%, var(--photo-glow, rgba(242,166,90,.22)), transparent 58%),
+    radial-gradient(ellipse 95% 85% at 48% 42%, var(--photo-bg-1, #f7f4ee) 0%, var(--photo-bg-2, #e6eef4) 72%)}
+.item-card-photo img{display:block;width:90%;height:90%;max-width:90%;max-height:90%;object-fit:contain;background:transparent;aspect-ratio:auto;mix-blend-mode:multiply;position:relative;z-index:1}
+
+@media(max-width:699px){
+  .photo-stage::before,
+  .source-card.is-photo .product-cover::before,
+  .item-card-photo::before,
+  .gear-official-photo .photo-stage::before{width:58%;height:16%;bottom:11%;background:radial-gradient(ellipse, rgba(15,42,61,.14) 0%, rgba(15,42,61,.05) 42%, transparent 72%)}
+}
+@media(prefers-contrast:more){
+  .source-card.is-photo .product-cover,
+  .item-card-photo,
+  .gear-official-photo .photo-stage{background:#fff}
+  .source-card.is-photo .product-cover img,
+  .item-card-photo img,
+  .gear-official-photo img{mix-blend-mode:normal}
+}

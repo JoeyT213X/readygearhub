@@ -71,3 +71,22 @@ export function productPhotoFor(item: { id?: string }): ProductPhoto | undefined
   const key = BY_ID[item.id || ''];
   return key ? productPhotoByKey(key) : undefined;
 }
+
+/** Subtle category tint for official product-photo backdrops. */
+export function photoBackdropClass(item: {
+  id?: string;
+  title?: string;
+  name?: string;
+  offerLabel?: string;
+  category?: string;
+  brand?: string;
+  tags?: string[];
+}): string {
+  const hay = [
+    item.id, item.title, item.name, item.offerLabel, item.category, item.brand, ...(item.tags ?? []),
+  ].filter(Boolean).join(' ').toLowerCase();
+  if (/flashlight|headlamp|spotlight|lantern|\blighting\b|wuben/.test(hay)) return 'backdrop-light';
+  if (/(?:\bbatter(?:y|ies)\b|litime)/.test(hay) && !/solar|panel|generator kit|power station/.test(hay)) return 'backdrop-battery';
+  if (item.category === 'power' || /power station|solar|anker-solix|bluetti/.test(hay)) return 'backdrop-power';
+  return 'backdrop-default';
+}

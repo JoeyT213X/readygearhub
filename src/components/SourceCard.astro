@@ -1,7 +1,7 @@
 ---
 import type { CatalogItem } from '../data/full-catalog';
 import { stockCoverFor } from '../data/stock-covers';
-import { productPhotoFor } from '../data/product-photos';
+import { productPhotoFor, photoBackdropClass } from '../data/product-photos';
 interface Props { item: CatalogItem; heading?: 'h2' | 'h3' }
 const { item, heading = 'h3' } = Astro.props;
 const product = productPhotoFor(item);
@@ -13,10 +13,12 @@ const titleInternal = titleHref.startsWith('/');
 const ctaInternal = ctaHref.startsWith('/');
 const titleRel = titleInternal ? undefined : (item.rel || undefined);
 const ctaRel = ctaInternal ? undefined : (item.rel || undefined);
+const backdrop = (product || item.imageKind === 'photo') ? photoBackdropClass(item) : '';
 const coverClass = [
   product || item.imageKind === 'photo' ? ' is-photo' : !stock && item.imageKind ? ` is-${item.imageKind}` : '',
   stock ? ' is-stock' : product || item.image ? '' : ' is-text',
   item.kind === 'tool' ? ' is-free' : '',
+  backdrop ? ` ${backdrop}` : '',
 ].join('');
 const sourceFilter = item.kind === 'resource' ? 'official' : item.kind === 'tool' ? 'rgh-tools' : item.programId;
 const badge = item.trending
