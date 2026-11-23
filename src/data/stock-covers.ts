@@ -9,7 +9,7 @@ export type StockCover = { key: string; src: string; srcset: string; alt: string
 const ALT: Record<string, string> = {
   'stock-solar-panel': 'Close-up of a solar panel',
   'stock-solar-camp': 'Solar panels set up at a campsite',
-  'stock-power-station': 'Portable power equipment with outlets',
+  'stock-power-station': 'Person carrying a portable power station outdoors',
   'stock-battery-bank': 'A battery bank wired to an inverter',
   'stock-rv': 'A camper trailer parked in a field',
   'stock-boat': 'A boat on calm water',

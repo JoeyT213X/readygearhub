@@ -177,7 +177,7 @@ Listings that do not have a licensed official product photo show a generic categ
 |---|---|---|---|
 | `stock-solar-panel` | [Pexels photo 8853509](https://www.pexels.com/photo/8853509/) | Los Muertos Crew / Pexels | Representative photo on directory cards without a licensed product photo |
 | `stock-solar-camp` | [Pexels photo 28705865](https://www.pexels.com/photo/28705865/) | Eslam Mohammed Abdelmaksoud / Pexels | Representative photo on directory cards without a licensed product photo; brand spotlight hero |
-| `stock-power-station` | [Pexels photo 37489594](https://www.pexels.com/photo/37489594/) | Amar Preciado / Pexels | Representative photo on directory cards without a licensed product photo |
+| `stock-power-station` | [Pexels photo 37489595](https://www.pexels.com/photo/37489595/) | Amar Preciado / Pexels | Representative photo on directory cards without a licensed product photo |
 | `stock-battery-bank` | [Pexels photo 37929911](https://www.pexels.com/photo/37929911/) | Magda Ehlers / Pexels | Representative photo on directory cards without a licensed product photo |
 | `stock-rv` | [Pexels photo 7967392](https://www.pexels.com/photo/7967392/) | Kampus Production / Pexels | Representative photo on directory cards without a licensed product photo; brand spotlight hero |
 | `stock-boat` | [Pexels photo 1682688](https://www.pexels.com/photo/1682688/) | Ricky Esquivel / Pexels | Representative photo on directory cards without a licensed product photo |

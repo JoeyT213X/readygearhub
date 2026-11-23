@@ -664,3 +664,6 @@ color:#fff}
 .brand-tile h2{margin:0;font-size:1.25rem}
 .brand-tile p{margin:0}
 .brand-spotlight-strip{margin:0 0 14px}
+/* Brand spotlight heroes: lighter scrim so the licensed photo stays sharp and visible; copy sits on the left */
+body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:linear-gradient(90deg,rgba(9,25,38,.88) 0%,rgba(9,25,38,.62) 48%,rgba(9,25,38,.12) 100%)}
+@media(max-width:699px){body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:linear-gradient(180deg,rgba(9,25,38,.82) 0%,rgba(9,25,38,.6) 100%)}}
