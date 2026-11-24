@@ -43,7 +43,7 @@ const navList = {
     { '@type': 'ListItem', position: 2, url: new URL('/guides/', Astro.site).href, name: 'Guides' },
     { '@type': 'ListItem', position: 3, url: new URL('/tools/', Astro.site).href, name: 'Free tools' },
     { '@type': 'ListItem', position: 4, url: new URL('/alerts/', Astro.site).href, name: 'Live official alerts' },
-    { '@type': 'ListItem', position: 5, url: new URL('/shop/', Astro.site).href, name: 'Our Downloads' },
+    { '@type': 'ListItem', position: 5, url: new URL('/winter-storm-ready-checklist/', Astro.site).href, name: 'Free checklists' },
     { '@type': 'ListItem', position: 6, url: new URL('/local/', Astro.site).href, name: 'Local and county info' },
     { '@type': 'ListItem', position: 7, url: new URL('/prepper-picks/', Astro.site).href, name: 'Prepper’s Picks' },
   ],
@@ -80,9 +80,9 @@ const navList = {
   <LiveStatus compact />
 
   <section class="wrap section tight" id="directory">
-    <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro={`The full catalog: partner stores, gear listings, downloads, and free tools. ${catalog.length} listings in all.`} href="/directory/" linkLabel="Open the directory" />
+    <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro={`The full catalog: partner stores, gear listings, and free tools. ${catalog.length} listings in all.`} href="/directory/" linkLabel="Open the directory" />
     <Disclosure />
-    <div class="grid five group-grid">{sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}</div>
+    <div class="grid four group-grid">{sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}</div>
     <div class="grid shop-grid source-grid home-shop-grid" style="margin-top:28px">
       {shopPicks.map((item) => <SourceCard item={item} />)}
     </div>

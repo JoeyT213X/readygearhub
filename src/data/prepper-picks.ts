@@ -519,18 +519,17 @@ export const prepperPicks: PrepperPick[] = [
 
   // ---- Documents & cash ----
   {
-    id: 'pick-family-binder',
-    title: 'Family Emergency Binder',
-    blurb: 'ReadyGearHub’s print-at-home binder for contacts, medicines, insurance, and shut-offs — the paper copies you want when the power is out.',
+    id: 'pick-emergency-contacts-sheet',
+    title: 'Emergency Contacts & Shut-Offs Sheet',
+    blurb: 'A free two-page fillable sheet for household numbers and utility shut-offs — the paper copies you want when the power is out.',
     lane: 'documents',
-    sourceName: 'ReadyGearHub shop',
+    sourceName: 'ReadyGearHub',
     affiliateUrl: null,
-    fallbackUrl: '/shop/family-emergency-binder/',
-    programId: 'payhip',
-    catalogId: 'payhip-family-emergency-binder',
-    image: '/shop/family-emergency-binder.png',
-    offerLabel: 'Instant PDF',
-    cta: 'Details',
+    fallbackUrl: '/downloads/emergency-contacts-shutoffs-sheet.pdf',
+    image: '/directory/covers/documents.svg',
+    imageKind: 'icon',
+    offerLabel: 'Free PDF',
+    cta: 'Download',
     featured: true,
   },
   {

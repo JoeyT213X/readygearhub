@@ -15,7 +15,6 @@ import {
   isNoPpcProgram,
   type Program,
 } from './affiliates';
-import { payhipProducts } from './payhip';
 
 export type SourceCategoryId =
   | 'tech'
@@ -28,7 +27,6 @@ export type SourceCategoryId =
   | 'auto'
   | 'fun'
   | 'safety'
-  | 'downloads'
   | 'drones'
   | 'vehicles'
   | 'security'
@@ -57,7 +55,6 @@ export const sourceCategories: SourceCategory[] = [
   { id: 'auto', slug: 'auto', name: 'Auto & Travel', short: 'Auto', blurb: 'Vehicle and travel electronics once pending auto partners are approved.', photo: 'car-in-snow' },
   { id: 'fun', slug: 'fun', name: 'Fun & Gifts', short: 'Fun', blurb: 'A place for gifts and just-for-fun finds as more partner stores come online.', image: '/directory/covers/cat-fun.svg' },
   { id: 'safety', slug: 'safety', name: 'Safety & Prep', short: 'Safety', blurb: 'Ready kits and paid home plans from approved partners, described plainly.', photo: 'first-aid-kit-open' },
-  { id: 'downloads', slug: 'downloads', name: 'Our Downloads', short: 'Downloads', blurb: 'ReadyGearHub’s own print-at-home guides, sold as instant PDFs through Payhip.', photo: 'checklist-writing' },
   { id: 'drones', slug: 'drones', name: 'Drones', short: 'Drones', blurb: 'Official drone manufacturer shops. Models, rules, and prices are on the official site. We don’t have partner programs for these brands yet.', photo: 'hero-drone' },
   { id: 'vehicles', slug: 'vehicles', name: 'Vehicles & overland', short: 'Vehicles', blurb: 'Official pages for overland, off-road, and armored-style vehicles. Configuration and pricing are on the official site. We don’t have partner programs for these brands yet.', photo: 'hero-overland-truck' },
   { id: 'security', slug: 'security', name: 'Security & shelters', short: 'Security', blurb: 'Official shelter and security-robotics pages. Specifications and how to inquire are on the official site. We don’t have partner programs for these brands yet.', photo: 'hero-bunker-hatch' },
@@ -65,7 +62,7 @@ export const sourceCategories: SourceCategory[] = [
 ];
 
 /** Broader home/directory groupings. Per-category pages stay at /directory/{slug}/. */
-export type SourceGroupId = 'power-tech' | 'home-water' | 'outdoor-auto' | 'safety-prep' | 'downloads';
+export type SourceGroupId = 'power-tech' | 'home-water' | 'outdoor-auto' | 'safety-prep';
 
 export type SourceGroup = {
   id: SourceGroupId;
@@ -82,7 +79,6 @@ export const sourceGroups: SourceGroup[] = [
   { id: 'home-water', name: 'Home & Water', short: 'Home & Water', blurb: 'Drinking-water filters and home setups from approved partners.', categories: ['home', 'water'], photo: 'water-bottles' },
   { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus official vehicle shops.', categories: ['outdoor', 'auto', 'tools', 'vehicles'], photo: 'lantern-dusk' },
   { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits, food stores, shelters, and official security pages, described plainly.', categories: ['safety', 'fun', 'security', 'food'], photo: 'first-aid-kit-open' },
-  { id: 'downloads', name: 'Our Downloads', short: 'Downloads', blurb: 'ReadyGearHub print-at-home guides, sold as instant PDFs.', categories: ['downloads'], photo: 'checklist-writing' },
 ];
 
 export type ComingSoonPartner = {
@@ -132,32 +128,6 @@ export type SourceItem = {
   /** Verified price already in the repo (Payhip only today). */
   price?: string;
 };
-
-function payhipItems(): SourceItem[] {
-  const blurbs: Record<string, string> = {
-    'complete-prep-bundle': 'The three ReadyGearHub print-at-home guides together, plus both free quick-reference sheets, in one instant ZIP.',
-    'family-emergency-binder': 'A fill-in household plan you can print and keep on paper: contacts, medicines, and utility shut-offs.',
-    'winter-storm-prep-planner': 'A seven-day countdown and supply lists for the week before ice or a winter storm.',
-    'homestead-prep-starter-guide': 'A starter plan for a farm, cabin, or house on a well: water, power, and what to write down.',
-  };
-  const ranks: Record<string, number> = { 'complete-prep-bundle': 7 };
-  return payhipProducts.map((p) => ({
-    id: `payhip-${p.slug}`,
-    title: p.title,
-    blurb: blurbs[p.slug] ?? p.summary,
-    category: 'downloads' as const,
-    programId: 'payhip',
-    sourceName: 'ReadyGearHub shop',
-    linkLevel: 'own' as const,
-    image: p.image,
-    internalHref: `/shop/${p.slug}/`,
-    price: p.price,
-    offerLabel: 'Instant PDF',
-    cta: 'Details',
-    trending: p.slug === 'complete-prep-bundle',
-    trendingRank: ranks[p.slug],
-  }));
-}
 
 export const sourceItems: SourceItem[] = [
   // ---- Power: BLUETTI product deep links via the existing {url} template ----
@@ -2070,7 +2040,6 @@ export const sourceItems: SourceItem[] = [
     price: '$327.00 as of Nov 23, 2026',
     cta: 'See price at TheBerkey.com',
   },
-  ...payhipItems(),
 ];
 
 export type SourceStore = {
@@ -2088,7 +2057,7 @@ export function sourceStores(): SourceStore[] {
         id: item.programId,
         name: item.sourceName,
         programId: item.programId,
-        hideOnPaid: item.programId !== 'payhip' && isNoPpcProgram(item.programId),
+        hideOnPaid: isNoPpcProgram(item.programId),
       });
     }
   }
@@ -2109,7 +2078,7 @@ export type ResolvedSourceItem = SourceItem & {
 };
 
 export function resolveSourceItem(item: SourceItem): ResolvedSourceItem {
-  const hideOnPaid = item.programId !== 'payhip' && isNoPpcProgram(item.programId);
+  const hideOnPaid = isNoPpcProgram(item.programId);
   const priceLabel = item.price || 'See price';
   const defaultCta = item.linkLevel === 'own'
     ? 'Details'
@@ -2117,11 +2086,6 @@ export function resolveSourceItem(item: SourceItem): ResolvedSourceItem {
       ? `Shop at ${item.sourceName}`
       : 'See price';
   const ctaLabel = item.cta || defaultCta;
-
-  if (item.programId === 'payhip') {
-    const href = item.internalHref || '/shop/';
-    return { ...item, href, affiliate: false, hideOnPaid: false, rel: '', priceLabel, ctaLabel };
-  }
 
   const p = programById(item.programId);
   if (!p || !isProgramLive(item.programId)) {

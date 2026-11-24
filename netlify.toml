@@ -14,6 +14,47 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Paid template/PDF shop taken down. Keep these 301s so old links still land somewhere useful.
+[[redirects]]
+  from = "/shop/winter-storm-prep-planner"
+  to = "/winter-storm-ready-checklist/"
+  status = 301
+
+[[redirects]]
+  from = "/shop/winter-storm-prep-planner/"
+  to = "/winter-storm-ready-checklist/"
+  status = 301
+
+[[redirects]]
+  from = "/shop/family-emergency-binder"
+  to = "/apps/all-accounted/"
+  status = 301
+
+[[redirects]]
+  from = "/shop/family-emergency-binder/"
+  to = "/apps/all-accounted/"
+  status = 301
+
+[[redirects]]
+  from = "/shop/*"
+  to = "/guides/"
+  status = 301
+
+[[redirects]]
+  from = "/directory/downloads"
+  to = "/guides/"
+  status = 301
+
+[[redirects]]
+  from = "/directory/downloads/"
+  to = "/guides/"
+  status = 301
+
+[[redirects]]
+  from = "/directory/downloads/*"
+  to = "/guides/"
+  status = 301
+
 # Same-origin proxy for the official NHC CurrentStorms.json feed (no CORS on nhc.noaa.gov).
 [[redirects]]
   from = "/feeds/nhc-current-storms.json"

@@ -108,7 +108,7 @@ You don't need to do everything on this page the day before. Spread it out.
 - [ ] Set your plan for checking in with family. The free [All Accounted](/apps/all-accounted/) app is a household check-in board that works offline and shares a text snapshot.
 - [ ] Get off the roads before the ice starts.
 
-For a tighter, hour-by-hour version of this countdown, use [How to Prepare for an Ice Storm in the South: 48-Hour Checklist](/guides/ice-storm-prep-checklist-south/), or the printable [Winter Storm Prep Planner](/shop/winter-storm-prep-planner/) in our shop if you want a seven-day paper version.
+For a tighter, hour-by-hour version of this countdown, use [How to Prepare for an Ice Storm in the South: 48-Hour Checklist](/guides/ice-storm-prep-checklist-south/), or the free printable [Winter Storm Ready Checklist](/winter-storm-ready-checklist/).
 
 ## Get the house ready
 
@@ -458,7 +458,7 @@ Everything below is free to use in your browser unless noted.
 **Printables**
 
 - [Free Winter Storm Ready Checklist](/winter-storm-ready-checklist/): a free 6-page printable
-- From our shop (paid PDFs): the [Winter Storm Prep Planner](/shop/winter-storm-prep-planner/), the [Family Emergency Binder](/shop/family-emergency-binder/), and the [Homestead Prep Starter Guide](/shop/homestead-prep-starter-guide/)
+- Free printables: the [Winter Storm Ready Checklist](/winter-storm-ready-checklist/) and the [Emergency Contacts & Shut-Offs Quick Sheet](/downloads/emergency-contacts-shutoffs-sheet.pdf)
 
 **Curated kits** ([all kits](/kits/))
 

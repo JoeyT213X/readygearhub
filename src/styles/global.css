@@ -553,6 +553,8 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
 /* Five-group directory tiles + trending carousel */
 @media(min-width:640px){.grid.five{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:980px){.grid.five{grid-template-columns:repeat(5,1fr)}}
+@media(min-width:640px){.grid.four{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid.four{grid-template-columns:repeat(4,1fr)}}
 .group-grid{margin-top:8px}
 .trend-block{margin-top:28px}
 .trend-label{margin:0 0 12px;font-size:1.05rem}

@@ -2,9 +2,7 @@
 import Base from '../layouts/Base.astro';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import { mailerlite } from '../data/mailerlite';
-import { productBySlug } from '../data/payhip';
 import WinterDealsCallout from '../components/WinterDealsCallout.astro';
-const planner = productBySlug('winter-storm-prep-planner');
 ---
 <Base title="Free Winter Storm Ready Checklist (Printable PDF) | ReadyGearHub" description="A free 6-page printable winter storm checklist: before the storm, kit checklist, during an outage, after the storm, and an emergency contacts page.">
   <section class="page-hero"><div class="wrap"><h1>Free Winter Storm Ready Checklist</h1><p class="lead">Six printable pages to get your home, car, and family ready before the ice hits. Yours to keep, as a small thank-you for stopping by.</p></div></section>
@@ -37,7 +35,7 @@ const planner = productBySlug('winter-storm-prep-planner');
     </ul>
     <p>Every item follows published guidance from Ready.gov, the CDC, and FoodSafety.gov. For a household-sized list, try the free <a href="/tools/kit-builder/">kit builder</a>; to time the fridge and freezer during an outage, use the <a href="/tools/outage-timer/">outage timer</a>.</p>
     <WinterDealsCallout compact />
-    <p>Want a seven-day countdown you can print and keep with the kit? See the <a href="/shop/winter-storm-prep-planner/">Winter Storm Prep Planner</a>{planner && <> ({planner.price})</>}. For kit ideas, start with the <a href="/kits/">storm kits</a> or the <a href="/tools/kit-builder/">kit builder</a>.</p>
+    <p>For kit ideas, start with the <a href="/kits/">storm kits</a> or the <a href="/tools/kit-builder/">kit builder</a>.</p>
     {mailerlite.enabled && <p class="fine">Prefer to skip email? That's fine too: <a href="/downloads/winter-storm-ready-checklist.pdf" rel="nofollow" download>open the checklist directly</a>.</p>}
   </section>
 </Base>

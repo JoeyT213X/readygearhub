@@ -1,12 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { analytics } from '../data/analytics';
-import { productBySlug, PAYHIP_GUIDE_PRICE, PAYHIP_BUNDLE_PRICE } from '../data/payhip';
 
-const planner = productBySlug('winter-storm-prep-planner');
-const binder = productBySlug('family-emergency-binder');
-const homestead = productBySlug('homestead-prep-starter-guide');
-const bundle = productBySlug('complete-prep-bundle');
 
 // Fires only when the reader arrived here from a real MailerLite signup on
 // this site (sessionStorage.rgh_signup_pending, set by FunnelGuards). Direct
@@ -59,14 +54,7 @@ const thanksJs = `(function(){var src='';try{src=sessionStorage.getItem('rgh_sig
     </div>
 
     <h2>If you'd like to go further</h2>
-    <p>Everything above is yours to keep. If you'd like something more complete to print, these are here whenever you want them — no pressure at all. Each guide is {PAYHIP_GUIDE_PRICE}, or you can get all three together for {PAYHIP_BUNDLE_PRICE}:</p>
-    <ul>
-      {planner && <li><a href="/shop/winter-storm-prep-planner/">{planner.title}</a> ({planner.price}): a seven-day countdown for the week before the ice.</li>}
-      {binder && <li><a href="/shop/family-emergency-binder/">{binder.title}</a> ({binder.price}): 12 fillable pages for your household's people, numbers, medicines, and meeting places.</li>}
-      {homestead && <li><a href="/shop/homestead-prep-starter-guide/">{homestead.title}</a> ({homestead.price}): a practical starter for a farm, a cabin, or a house on a well.</li>}
-      {bundle && <li><a href="/shop/complete-prep-bundle/">{bundle.title}</a> ({bundle.price}): the three guides above, together as one download.</li>}
-    </ul>
-    <p>Or keep exploring the free tools: <a href="/tools/kit-builder/">kit builder</a>, <a href="/tools/water-calculator/">water calculator</a>, and the <a href="/apps/">offline apps</a>.</p>
+    <p>Everything above is yours to keep. You can also use the free <a href="/tools/kit-builder/">kit builder</a>, <a href="/tools/water-calculator/">water calculator</a>, and the <a href="/apps/">offline apps</a>.</p>
     <p class="fine">You can unsubscribe from any email with one click. We never sell or share your address. <a href="/privacy/">Privacy</a></p>
   </section>
 </Base>

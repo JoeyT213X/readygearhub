@@ -111,8 +111,8 @@ if (issues.length) {
   for (const i of issues) console.error(' -', i.rel, i.error);
   process.exit(1);
 }
-if (shopProducts.length < 4) {
-  console.error('Expected at least 4 shop Product pages');
+if (shopProducts.length !== 0) {
+  console.error('Shop Product pages should be gone; found', shopProducts.map((p) => p.rel).join(', '));
   process.exit(1);
 }
-console.log('Schema checks passed: shop Products have 0-USD digital shippingDetails, defective-only return policy, no review/rating markup, no Offers on affiliate pages.');
+console.log('Schema checks passed: no shop Product pages, no invented ratings, no Offers on affiliate pages.');

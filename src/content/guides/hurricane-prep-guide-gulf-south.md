@@ -138,7 +138,7 @@ If you live in an evacuation zone, [Ready.gov](https://www.ready.gov/hurricanes)
 - Check with neighbors who may need a ride.
 - Afterward, check with local officials both where you are staying and back home before you return. Avoid downed lines; they may be live.
 
-Put the household plan, contacts, medicines, and meeting places in one folder you can grab. The paid [Family Emergency Binder](/shop/family-emergency-binder/) is built for that, or you can use a simple envelope and our [Emergency Kit Builder](/tools/kit-builder/). For a stay-at-home outage, the [Apartment Outage Kit](/kits/apartment-outage-kit/) is a useful starting list even if you do not live in an apartment.
+Put the household plan, contacts, medicines, and meeting places in one folder you can grab. You can use a simple envelope, our free [Emergency Contacts & Shut-Offs Quick Sheet](/downloads/emergency-contacts-shutoffs-sheet.pdf), and the [Emergency Kit Builder](/tools/kit-builder/). For a stay-at-home outage, the [Apartment Outage Kit](/kits/apartment-outage-kit/) is a useful starting list even if you do not live in an apartment.
 
 ## Get the house ready
 
@@ -362,7 +362,7 @@ Everything below is free to use in your browser unless noted. You can also get o
 **Printables and plans**
 
 - [Emergency Kit Builder](/tools/kit-builder/): free, printable, sized to your household
-- From our shop (paid PDFs): the [Family Emergency Binder](/shop/family-emergency-binder/), and, for winter weather later in the year, the [Winter Storm Prep Planner](/shop/winter-storm-prep-planner/) and the [Homestead Prep Starter Guide](/shop/homestead-prep-starter-guide/)
+- Free printables: the [Winter Storm Ready Checklist](/winter-storm-ready-checklist/) and the [Emergency Contacts & Shut-Offs Quick Sheet](/downloads/emergency-contacts-shutoffs-sheet.pdf)
 - [Free Winter Storm Ready Checklist](/winter-storm-ready-checklist/): a free 6-page printable for ice and winter outages
 
 **Curated kits** ([all kits](/kits/))

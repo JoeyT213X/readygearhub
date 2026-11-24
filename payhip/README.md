@@ -1,3 +1,5 @@
+> Taken down from ReadyGearHub on November 23, 2026. Unpublish these four listings in the Payhip dashboard; this repo does not change the Payhip account.
+
 # ReadyGearHub Payhip pack
 
 Four listings for the ReadyGearHub Payhip store. The three individual guides are $5 each. The Complete Storm & Family Prep Bundle is $10 on Payhip as a guest-checkout digital ZIP (`complete-prep-bundle.zip`, product ID `kRx6L`, https://payhip.com/b/kRx6L). It includes all three guides plus both free quick-reference sheets (the 1-page Fridge & Freezer Outage Food-Safety Chart and the 2-page Emergency Contacts & Shut-Offs Quick Sheet), which are also available free at `/downloads/` and `/thank-you/`.

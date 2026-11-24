@@ -3,8 +3,6 @@ import '../styles/global.css';
 import site from '../data/site';
 import lanesRaw from '../data/lanes.json';
 import { mailerlite } from '../data/mailerlite';
-import { anyPayhipReady } from '../data/payhip';
-import { merchantReturnPolicy } from '../lib/shop-schema';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import Analytics from '../components/Analytics.astro';
 import FunnelGuards from '../components/FunnelGuards.astro';
@@ -33,7 +31,6 @@ const orgSchema = {
     postalCode: site.postalCode,
     addressCountry: site.addressCountry,
   },
-  hasMerchantReturnPolicy: merchantReturnPolicy(),
 };
 const year = new Date().getFullYear();
 const path = Astro.url.pathname;
@@ -46,7 +43,6 @@ const primaryNav = [
   { href: '/tools/', label: 'Tools' },
   { href: '/alerts/', label: 'Alerts' },
   { href: '/directory/', label: 'Directory' },
-  { href: '/shop/', label: 'Shop' },
 ];
 const primaryNavExtra = [
   { href: '/prepper-picks/', label: "Prepper's Picks", reveal: 'mid' },
@@ -76,7 +72,6 @@ const menuGroups = [
     { href: '/apps/', icon: '📱', label: 'Offline apps' },
     { href: '/local/', icon: '📍', label: 'Local resources' },
     { href: '/directory/', icon: '🛍️', label: 'Full Source Directory' },
-    { href: '/shop/', icon: '🛒', label: 'Printable guides shop' },
   ] },
   { title: 'About', links: [
     { href: '/about/', icon: 'ℹ️', label: 'About ReadyGearHub' },
@@ -115,9 +110,6 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
   <slot name="head" />
   {mailerlite.enabled && (
     <script is:inline set:html={`(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');ml('account','${mailerlite.account}');`} />
-  )}
-  {anyPayhipReady() && (
-    <script is:inline defer src="https://payhip.com/payhip.js"></script>
   )}
   <Analytics />
 </head>
@@ -194,7 +186,6 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
           <li><a href="/apps/">Apps</a></li>
           <li><a href="/widgets/">Widgets</a></li>
           <li><a href="/directory/">Full Source Directory</a></li>
-          <li><a href="/shop/">Shop</a></li>
           <li><a href="/kits/">Storm kits</a></li>
           <li><a href="/local/">Local resources</a></li>
           <li><a href="/updates/">Local & community safety updates</a></li>
@@ -207,9 +198,8 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
         </ul>
       </div>
     </div>
-    <ul class="wrap footer-trust" aria-label="Shop and source notes">
-      <li>Instant PDF downloads</li>
-      <li>Checkout via Payhip</li>
+    <ul class="wrap footer-trust" aria-label="Source notes">
+      <li><a href="/winter-storm-ready-checklist/">Free printable checklists</a></li>
       <li><a href="/refund-policy/">Refund policy</a></li>
       <li><a href="/alerts/">Official NWS alerts</a></li>
     </ul>

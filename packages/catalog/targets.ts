@@ -72,7 +72,7 @@ export const categoryTargets: Record<string, CategoryTarget> = {
     id: 'documents',
     label: 'Documents',
     links: [
-      { path: '/shop/complete-prep-bundle/', content: 'bundle', label: 'Complete prep bundle, $10' },
+      { path: '/winter-storm-ready-checklist/', content: 'checklist', label: 'Free winter storm checklist' },
       { path: '/guides/', content: 'guides', label: 'Free guides' },
     ],
   },
@@ -89,6 +89,6 @@ export const workbenchToolsPath = '/tools/';
 export const workbenchFallbacks = {
   tools: { path: '/tools/', content: 'tools', label: 'free tools' },
   guides: { path: '/guides/', content: 'guides', label: 'guides' },
-  bundle: { path: '/shop/complete-prep-bundle/', content: 'bundle', label: 'See the $10 bundle' },
+  checklist: { path: '/winter-storm-ready-checklist/', content: 'checklist', label: 'Free winter storm checklist' },
 } as const;
 

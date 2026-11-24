@@ -698,7 +698,7 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   const hubTiles: ShopBoardTile[] = [
     sceneTile('hub-guides', 'Guides', '/guides/', 'checklist-writing'),
     sceneTile('hub-tools', 'Free tools', '/tools/', 'multitools'),
-    sceneTile('hub-downloads', 'Our Downloads', '/shop/', 'gear-flatlay'),
+    sceneTile('hub-checklists', 'Free checklists', '/winter-storm-ready-checklist/', 'gear-flatlay'),
     sceneTile('hub-local', 'Local & county', '/local/', 'lightning-road'),
   ];
   for (const tile of hubTiles) push(tile);

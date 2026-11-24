@@ -1,4 +1,16 @@
 /**
+ * TAKEN DOWN from the public site (November 23, 2026). Do not re-add shop
+ * pages or catalog cards until Joseph asks. These Payhip listings should be
+ * unpublished in the Payhip dashboard (this repo does not touch the account):
+ *
+ *   family-emergency-binder        ZwvsR   $5   https://payhip.com/b/ZwvsR
+ *   winter-storm-prep-planner      x7iZ2   $5   https://payhip.com/b/x7iZ2
+ *   homestead-prep-starter-guide   wc9Ez   $5   https://payhip.com/b/wc9Ez
+ *   complete-prep-bundle           kRx6L  $10   https://payhip.com/b/kRx6L
+ *
+ */
+
+/**
  * ReadyGearHub digital products sold through Payhip.
  *
  * 1-LINE SWAPS live in the constants below. Pages under /shop/, /thank-you/,
