@@ -24,7 +24,16 @@ const boardTiles = shopBoardTiles(catalog);
 const heroTiles = heroBentoTiles();
 const groupCounts = countsByCatalogGroup(catalog);
 
-const webSite = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url };
+const webSite = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': new URL('/#website', Astro.site).href,
+  name: site.name,
+  url: site.url,
+  description: 'A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, plus guides, free tools, and live official alerts.',
+  inLanguage: 'en-US',
+  publisher: { '@id': new URL('/#organization', Astro.site).href },
+};
 const navList = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',

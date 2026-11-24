@@ -177,20 +177,9 @@ export const highTicketItems: HighTicketItem[] = [
     offerLabel: 'Official site',
     cta: 'Visit official site',
   },
-  {
-    id: 'rising-s-bunkers-official',
-    title: 'Rising S Bunkers official site',
-    blurb: 'Official Rising S Bunkers site for current shelter models. Specifications, lead times, and pricing are on the official site. We don’t have a partner program with this brand yet.',
-    sourceName: 'Rising S Bunkers',
-    category: 'security',
-    alsoIn: ['safety'],
-    groups: ['safety-prep'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://risingsbunkers.com/',
-    image: '/directory/covers/shelter.svg',
-    offerLabel: 'Official site',
-    cta: 'Visit official site',
-  },
+  // Rising S Bunkers (risingsbunkers.com) omitted: official site returned HTTP 502
+  // from multiple fetchers on 23 Nov 2026 (America/Chicago). Add the listing back
+  // once a working official URL is confirmed.
   {
     id: 'terra-vivos-official',
     title: 'Terra Vivos official site',

@@ -16,9 +16,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(image, Astro.site).href;
 const navLanes = [...lanesRaw].filter((l) => l.active !== false).sort((a, b) => a.order - b.order);
 const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const orgId = new URL('/#organization', Astro.site).href;
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': orgId,
   name: site.name,
   legalName: site.legalName,
   url: site.url,
@@ -200,6 +202,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
           <li><a href="/get-featured/">List your business</a></li>
           <li><a href="/contact/">Contact</a></li>
           <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+          <li><a href="/terms/">Terms of Use</a></li>
           <li><a href="/refund-policy/">Refund Policy</a></li>
           <li><a href="/privacy/">Privacy</a></li>
         </ul>
