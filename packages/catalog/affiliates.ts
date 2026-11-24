@@ -203,6 +203,12 @@ export const programs: Program[] = [
   { id: 'berkey', name: 'TheBerkey.com', network: 'Refersion', status: 'approved', kind: 'product',
     officialUrl: 'https://theberkey.com/',
     link: 'https://theberkey.com/?rfsn=9422720.32fae8',
+    items: ['berkey-shop', 'berkey-big-berkey', 'berkey-travel-berkey'],
+    itemLinks: {
+      'berkey-shop': 'https://theberkey.com/?rfsn=9422720.32fae8',
+      'berkey-big-berkey': 'https://theberkey.com/products/big-berkey-water-filter?rfsn=9422720.32fae8',
+      'berkey-travel-berkey': 'https://theberkey.com/products/travel-berkey-water-filter?rfsn=9422720.32fae8',
+    },
     note: 'Refersion 15%, 365-day cookie. Official retailer TheBerkey.com. Linked from /gear/ (water) and /gear/tech/ (water filters).' },
   { id: 'waterdrop', name: 'Waterdrop Filter', network: 'Rakuten', status: 'approved', kind: 'product', ppcAllowed: false,
     officialUrl: 'https://www.waterdropfilter.com/',
@@ -211,7 +217,25 @@ export const programs: Program[] = [
   { id: 'redi', name: 'REDI', network: 'GoAffPro', status: 'approved', kind: 'product', ppcAllowed: false,
     officialUrl: 'https://getredi.com/',
     link: 'https://getredi.com/?ref=JOSEPHTINDIGLIA',
+    items: ['redi-shop', 'redi-the-roadie', 'redi-roadie-plus', 'redi-roadie-pro', 'redi-trauma-pack'],
+    itemLinks: {
+      'redi-shop': 'https://getredi.com/?ref=JOSEPHTINDIGLIA',
+      'redi-the-roadie': 'https://getredi.com/products/the-roadie?ref=JOSEPHTINDIGLIA',
+      'redi-roadie-plus': 'https://getredi.com/products/roadie-plus?ref=JOSEPHTINDIGLIA',
+      'redi-roadie-pro': 'https://getredi.com/products/roadie-pro?ref=JOSEPHTINDIGLIA',
+      'redi-trauma-pack': 'https://getredi.com/products/trauma-kit?ref=JOSEPHTINDIGLIA',
+    },
     note: 'GoAffPro 10%, 30-day cookie. Emergency and readiness kits. Linked from /gear/ (kits).' },
+
+  { id: 'aquatru', name: 'AquaTru', network: 'TBD', status: 'none', kind: 'product', ppcAllowed: false,
+    officialUrl: 'https://aquatruwater.com/',
+    items: ['aquatru-carafe'],
+    note: 'No approved partner program yet. Official links stay plain. No brand-term paid search.' },
+  { id: 'harvest-right', name: 'Harvest Right', network: 'TBD', status: 'none', kind: 'product', ppcAllowed: false,
+    officialUrl: 'https://harvestright.com/',
+    items: ['harvest-right-countertop-360'],
+    note: 'No approved partner program yet. Official links stay plain. No brand-term paid search.' },
+
 
   // ---- Programs with no listing slot yet (use in new listings/guides later) ----
   { id: 'hunter-boots', name: 'Hunter Boots', network: 'CJ', status: 'pending', kind: 'text', cjAid: '' },
@@ -513,7 +537,7 @@ export const programs: Program[] = [
   { id: 'backpackers-pantry', name: "Backpacker's Pantry", network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.backpackerspantry.com/',
     items: ['backpackers-pantry-3-day-meal-kit-meat', 'backpackers-pantry-14-day-emergency-kit-meat'] },
   { id: 'byrna', name: 'Byrna', network: 'Impact', status: 'none', kind: 'product', officialUrl: 'https://byrna.com/', items: ['byrna-sd-launcher', 'byrna-le-launcher', 'byrna-compact-launcher', 'byrna-tcr', 'byrna-clxl-launcher', 'byrna-duo', 'byrna-mission-4-kit', 'byrna-banshee-alarm'], note: 'Impact marketplace application for account 8245345 was declined (confirmed Nov 21, 2026). The Byrna brand link did not open an apply form. Parked: reapply to Impact in 4–8 weeks with more traffic, and contact Byrna’s affiliate team directly after the site is done. Do not open a second Impact account. Official links stay plain.' },
-  { id: 'dji', name: 'DJI', network: 'Direct', status: 'pending', kind: 'product', officialUrl: 'https://www.dji.com/', items: ['dji-official', 'dji-mini-4-pro', 'dji-air-3s', 'dji-neo', 'dji-avata-2', 'dji-mini-3', 'dji-mavic-3-pro', 'dji-flip', 'dji-mini-4k', 'dji-air-3', 'dji-mavic-3-classic', 'dji-avata', 'dji-inspire-3'], note: 'Account created, email verified, and affiliate application submitted Nov 21, 2026, about 6:06 PM America/Chicago. Awaiting review. Official 2% drones / 5% handhelds, 30-day cookie. No SEM or DJI-keyword ads. Separate from DJI USA on Impact. Tracking stays off until approved.' },
+  { id: 'dji', name: 'DJI', network: 'Direct', status: 'pending', kind: 'product', ppcAllowed: false, officialUrl: 'https://www.dji.com/', items: ['dji-official', 'dji-mini-4-pro', 'dji-air-3s', 'dji-neo', 'dji-avata-2', 'dji-mini-3', 'dji-mavic-3-pro', 'dji-flip', 'dji-mini-4k', 'dji-air-3', 'dji-mavic-3-classic', 'dji-avata', 'dji-inspire-3', 'dji-matrice-5t', 'dji-matrice-4-series', 'dji-mavic-3-enterprise'], note: 'Account created, email verified, and affiliate application submitted Nov 21, 2026, about 6:06 PM America/Chicago. Awaiting review. Official 2% drones / 5% handhelds, 30-day cookie. No SEM or DJI-keyword ads. Separate from DJI USA on Impact. Tracking stays off until approved.' },
   { id: 'autel-robotics', name: 'Autel Robotics', network: 'Direct', status: 'none', kind: 'product', officialUrl: 'https://www.autelrobotics.com/', items: ['autel-robotics-official', 'autel-evo-lite-enterprise', 'autel-evo-max-4t', 'autel-evo-nano-series'], note: 'Not accepting registrations as of Nov 21, 2026. Official listings stay plain.' },
   { id: 'hoverair', name: 'HOVERAir', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://hoverair.com/', items: ['hoverair-x1', 'hoverair-x1-pro-promax', 'hoverair-versa'], note: 'No confirmed public program yet. Official links stay plain; record the items so a tracking URL can swap in later if a program is approved.' },
   { id: 'skydio', name: 'Skydio', network: 'TBD', status: 'none', kind: 'product', officialUrl: 'https://www.skydio.com/', items: ['skydio-official', 'skydio-x10'], note: 'No confirmed public program yet. Official links stay plain.' },

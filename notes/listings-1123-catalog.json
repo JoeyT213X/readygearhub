@@ -1,0 +1,1141 @@
+[
+  {
+    "id": "redi-the-roadie",
+    "earn": true,
+    "program": "redi",
+    "category": "safety",
+    "alsoIn": [
+      "auto"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "REDI",
+    "title": "REDI The Roadie car emergency kit",
+    "blurb": "A car emergency kit listed on REDI\u2019s official shop as The Roadie. See the official page for what\u2019s included and the current price.",
+    "url": "https://getredi.com/products/the-roadie",
+    "price": "$143.10 as of Nov 23, 2026",
+    "offer": "Ready kit",
+    "cta": "See price at REDI",
+    "img": "https://cdn.shopify.com/s/files/1/0620/8952/7462/files/the-roadie-car-emergency-kit-readiness-kit.png",
+    "alt": "REDI The Roadie car emergency kit",
+    "credit": "Official product photo from getredi.com (Shopify CDN files/the-roadie-car-emergency-kit-readiness-kit.png), first image on The Roadie product page, downloaded November 23, 2026. Image provided by REDI."
+  },
+  {
+    "id": "redi-roadie-plus",
+    "earn": true,
+    "program": "redi",
+    "category": "safety",
+    "alsoIn": [
+      "auto"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "REDI",
+    "title": "REDI The Roadie PLUS car emergency kit",
+    "blurb": "A larger car emergency kit listed on REDI\u2019s official shop as The Roadie PLUS, which includes a trauma pack. See the official page for what\u2019s included and the current price.",
+    "url": "https://getredi.com/products/roadie-plus",
+    "price": "$179.10 as of Nov 23, 2026",
+    "offer": "Ready kit",
+    "cta": "See price at REDI",
+    "img": "https://cdn.shopify.com/s/files/1/0620/8952/7462/files/the-roadie-plus-car-emergency-kit-trauma-pack-primary.jpg",
+    "alt": "REDI The Roadie PLUS car emergency kit",
+    "credit": "Official product photo from getredi.com (Shopify CDN files/the-roadie-plus-car-emergency-kit-trauma-pack-primary.jpg), first image on The Roadie PLUS product page, downloaded November 23, 2026. Image provided by REDI."
+  },
+  {
+    "id": "redi-roadie-pro",
+    "earn": true,
+    "program": "redi",
+    "category": "safety",
+    "alsoIn": [
+      "auto"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "REDI",
+    "title": "REDI The Roadie PRO roadside emergency kit",
+    "blurb": "A hard-case roadside emergency kit listed on REDI\u2019s official shop as The Roadie PRO. See the official page for what\u2019s included and the current price.",
+    "url": "https://getredi.com/products/roadie-pro",
+    "price": "$449.10 as of Nov 23, 2026",
+    "offer": "Ready kit",
+    "cta": "See price at REDI",
+    "img": "https://cdn.shopify.com/s/files/1/0620/8952/7462/files/the-roadie-pro-roadside-emergency-kit-hard-case.png",
+    "alt": "REDI The Roadie PRO hard-case roadside emergency kit",
+    "credit": "Official product photo from getredi.com (Shopify CDN files/the-roadie-pro-roadside-emergency-kit-hard-case.png), first image on The Roadie PRO product page, downloaded November 23, 2026. Image provided by REDI."
+  },
+  {
+    "id": "redi-trauma-pack",
+    "earn": true,
+    "program": "redi",
+    "category": "safety",
+    "alsoIn": [],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "REDI",
+    "title": "REDI The Trauma Pack",
+    "blurb": "A trauma-focused first-aid kit listed on REDI\u2019s official shop as The Trauma Pack. See the official page for what\u2019s included and the current price.",
+    "url": "https://getredi.com/products/trauma-kit",
+    "price": "$71.10 as of Nov 23, 2026",
+    "offer": "Ready kit",
+    "cta": "See price at REDI",
+    "img": "https://cdn.shopify.com/s/files/1/0620/8952/7462/files/Redi-Trauma-Main.jpg",
+    "alt": "REDI The Trauma Pack first-aid kit",
+    "credit": "Official product photo from getredi.com (Shopify CDN files/Redi-Trauma-Main.jpg), first image on The Trauma Pack product page, downloaded November 23, 2026. Image provided by REDI."
+  },
+  {
+    "id": "berkey-big-berkey",
+    "earn": true,
+    "program": "berkey",
+    "category": "water",
+    "alsoIn": [
+      "home"
+    ],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "TheBerkey.com",
+    "title": "Big Berkey gravity-fed water filter",
+    "blurb": "A gravity-fed drinking-water filter listed on TheBerkey.com as the Big Berkey, a 2.25-gallon system. Read the official page for what it does and does not treat, and for the current price.",
+    "url": "https://theberkey.com/products/big-berkey-water-filter",
+    "price": "$367.00 as of Nov 23, 2026",
+    "offer": "Gravity filter",
+    "cta": "See price at TheBerkey.com",
+    "img": "https://cdn.shopify.com/s/files/1/1172/5864/products/BigBerkey-Water-Filter.jpg",
+    "alt": "Big Berkey gravity-fed water filter",
+    "credit": "Official product photo from theberkey.com (Shopify CDN products/BigBerkey-Water-Filter.jpg), first image on the Big Berkey product page, downloaded November 23, 2026. Image provided by TheBerkey.com."
+  },
+  {
+    "id": "berkey-travel-berkey",
+    "earn": true,
+    "program": "berkey",
+    "category": "water",
+    "alsoIn": [
+      "home",
+      "outdoor"
+    ],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "TheBerkey.com",
+    "title": "Travel Berkey gravity-fed water filter",
+    "blurb": "A smaller gravity-fed drinking-water filter listed on TheBerkey.com as the Travel Berkey, a 1.5-gallon system. Read the official page for what it does and does not treat, and for the current price.",
+    "url": "https://theberkey.com/products/travel-berkey-water-filter",
+    "price": "$327.00 as of Nov 23, 2026",
+    "offer": "Gravity filter",
+    "cta": "See price at TheBerkey.com",
+    "img": "https://cdn.shopify.com/s/files/1/1172/5864/products/Travel-Berkey-Water-Filte.jpg",
+    "alt": "Travel Berkey gravity-fed water filter",
+    "credit": "Official product photo from theberkey.com (Shopify CDN products/Travel-Berkey-Water-Filte.jpg), first image on the Travel Berkey product page, downloaded November 23, 2026. Image provided by TheBerkey.com."
+  },
+  {
+    "id": "aquatru-carafe",
+    "earn": false,
+    "program": "aquatru",
+    "category": "water",
+    "alsoIn": [
+      "home"
+    ],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "AquaTru",
+    "title": "AquaTru Carafe countertop reverse osmosis system",
+    "blurb": "A countertop reverse osmosis system listed on AquaTru\u2019s official shop as the AquaTru Carafe. Read the official page for what it does and does not treat, and for the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://aquatruwater.com/products/carafe-countertop",
+    "price": "$375.00 as of Nov 23, 2026",
+    "offer": "Countertop RO",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0758/4550/1142/files/Carafe_2000x2000_a889b1f8-02b0-47d4-9d07-291b989ce27d.png",
+    "alt": "AquaTru Carafe countertop reverse osmosis system",
+    "credit": "Official product photo from aquatruwater.com (Shopify CDN files/Carafe_2000x2000_a889b1f8-02b0-47d4-9d07-291b989ce27d.png), first image on the AquaTru Carafe product page, downloaded November 23, 2026. Image provided by AquaTru."
+  },
+  {
+    "id": "clearly-filtered-pitcher",
+    "earn": false,
+    "program": null,
+    "category": "water",
+    "alsoIn": [
+      "home"
+    ],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "Clearly Filtered",
+    "title": "Clearly Filtered Water Pitcher",
+    "blurb": "A filtered water pitcher listed on Clearly Filtered\u2019s official shop. Read the official page for filter life, what it does and does not treat, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://clearlyfiltered.com/products/clean-water-pitcher",
+    "price": "$110.00 as of Nov 23, 2026",
+    "offer": "Filter pitcher",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/1011/0318/files/NSF_Pitcher_6d406ff4-1622-448d-bcff-55fbd7da4eb8.png",
+    "alt": "Clearly Filtered Water Pitcher",
+    "credit": "Official product photo from clearlyfiltered.com (Shopify CDN files/NSF_Pitcher_6d406ff4-1622-448d-bcff-55fbd7da4eb8.png), first image on the Filtered Water Pitcher product page, downloaded November 23, 2026. Image provided by Clearly Filtered."
+  },
+  {
+    "id": "jackery-explorer-2000-v2",
+    "program": "jackery",
+    "category": "power",
+    "alsoIn": [
+      "outdoor"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Jackery",
+    "title": "Jackery Explorer 2000 v2 portable power station",
+    "blurb": "A portable power station listed on Jackery\u2019s official shop as the Explorer 2000 v2. See the official page for capacity, output, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.jackery.com/products/explorer-2000-v2-portable-power-station",
+    "price": "$999.00 as of Nov 23, 2026",
+    "offer": "Portable power station",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0970/9262/files/explorer-2000-v2-portable-power-station-8979684.webp",
+    "alt": "Jackery Explorer 2000 v2 portable power station",
+    "credit": "Official product photo from jackery.com (Shopify CDN files/explorer-2000-v2-portable-power-station-8979684.webp), first image on the Explorer 2000 v2 product page, downloaded November 23, 2026. Image provided by Jackery.",
+    "earn": false
+  },
+  {
+    "id": "ecoflow-delta-2-max",
+    "program": "ecoflow",
+    "category": "power",
+    "alsoIn": [
+      "outdoor"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "EcoFlow",
+    "title": "EcoFlow DELTA 2 Max portable power station",
+    "blurb": "A portable power station listed on EcoFlow\u2019s official US shop as the DELTA 2 Max. See the official page for capacity, output, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://us.ecoflow.com/products/delta-2-max-portable-power-station",
+    "price": "$1,459.00 as of Nov 23, 2026",
+    "offer": "Portable power station",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/1996/9707/files/ecoflow-us-ecoflow-delta-2-max-portable-power-station-delta-2-max-30402652930121.png",
+    "alt": "EcoFlow DELTA 2 Max portable power station",
+    "credit": "Official product photo from us.ecoflow.com (Shopify CDN files/ecoflow-us-ecoflow-delta-2-max-portable-power-station-delta-2-max-30402652930121.png), first image on the DELTA 2 Max product page, downloaded November 23, 2026. Image provided by EcoFlow.",
+    "earn": false
+  },
+  {
+    "id": "goal-zero-yeti-500",
+    "program": "goal-zero",
+    "category": "power",
+    "alsoIn": [
+      "outdoor"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Goal Zero",
+    "title": "Goal Zero Yeti 500 portable power station",
+    "blurb": "A portable power station listed on Goal Zero\u2019s official shop as the Yeti 500. See the official page for capacity, output, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.goalzero.com/products/yeti-500-portable-power-station-lfp-battery",
+    "price": "$499.95 as of Nov 23, 2026",
+    "offer": "Portable power station",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0520/1156/5225/files/Yeti500_ProductHero.jpg",
+    "alt": "Goal Zero Yeti 500 portable power station",
+    "credit": "Official product photo from goalzero.com (Shopify CDN files/Yeti500_ProductHero.jpg), first image on the Yeti 500 product page, downloaded November 23, 2026. Image provided by Goal Zero.",
+    "earn": false
+  },
+  {
+    "id": "goal-zero-yeti-700",
+    "program": "goal-zero",
+    "category": "power",
+    "alsoIn": [
+      "outdoor"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Goal Zero",
+    "title": "Goal Zero Yeti 700 portable power station",
+    "blurb": "A portable power station listed on Goal Zero\u2019s official shop as the Yeti 700. See the official page for capacity, output, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.goalzero.com/products/yeti-700-portable-power-station-lfp-batteries",
+    "price": "$699.95 as of Nov 23, 2026",
+    "offer": "Portable power station",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0520/1156/5225/files/Yeti700_ProductHero.jpg",
+    "alt": "Goal Zero Yeti 700 portable power station",
+    "credit": "Official product photo from goalzero.com (Shopify CDN files/Yeti700_ProductHero.jpg), first image on the Yeti 700 product page, downloaded November 23, 2026. Image provided by Goal Zero.",
+    "earn": false
+  },
+  {
+    "id": "instant-pot-duo-6qt",
+    "category": "home",
+    "alsoIn": [],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "Instant Pot",
+    "title": "Instant Pot Duo 6QT Multi-Use Pressure Cooker",
+    "blurb": "A 6-quart multi-use pressure cooker listed on Instant Pot\u2019s official shop as the Duo 6QT. See the official page for modes, included parts, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://instantpot.com/products/instant-pot-duo-6qt-multi-use-pressure-cooker",
+    "price": "$109.99 as of Nov 23, 2026",
+    "offer": "Kitchen appliance",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0850/1690/3989/files/112-0170-01_Duo_6_Qt_Silo_01_ATF.png",
+    "alt": "Instant Pot Duo 6QT Multi-Use Pressure Cooker",
+    "credit": "Official product photo from instantpot.com (Shopify CDN files/112-0170-01_Duo_6_Qt_Silo_01_ATF.png), first image on the Duo 6QT product page, downloaded November 23, 2026. Image provided by Instant Brands.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "instant-pot-vortex-plus-6qt",
+    "category": "home",
+    "alsoIn": [],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "Instant Pot",
+    "title": "Instant Pot Vortex Plus 6QT ClearCook Air Fryer",
+    "blurb": "A 6-quart air fryer listed on Instant Pot\u2019s official shop as the Vortex Plus 6QT ClearCook. See the official page for features and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://instantpot.com/products/instant-pot-vortex-plus-6qt-clearcook-air-fryer",
+    "price": "$139.99 as of Nov 23, 2026",
+    "offer": "Kitchen appliance",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0850/1690/3989/files/IB_Quiet-Mark_Silos_ATF_Square_140-3088-01_Vortex-Plus-ClearCook_6QT.png",
+    "alt": "Instant Pot Vortex Plus 6QT ClearCook Air Fryer",
+    "credit": "Official product photo from instantpot.com (Shopify CDN files/IB_Quiet-Mark_Silos_ATF_Square_140-3088-01_Vortex-Plus-ClearCook_6QT.png), first image on the Vortex Plus 6QT ClearCook product page, downloaded November 23, 2026. Image provided by Instant Brands.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "instant-pot-duo-plus-6qt",
+    "category": "home",
+    "alsoIn": [],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "Instant Pot",
+    "title": "Instant Pot Duo Plus 6QT Multi-Use Pressure Cooker",
+    "blurb": "A 6-quart multi-use pressure cooker listed on Instant Pot\u2019s official shop as the Duo Plus 6QT. See the official page for modes and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://instantpot.com/products/instant-pot-duo-plus-6qt-multi-use-pressure-cooker-whisper-quiet",
+    "price": "$139.99 as of Nov 23, 2026",
+    "offer": "Kitchen appliance",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0850/1690/3989/files/112-0169-01Silo.png",
+    "alt": "Instant Pot Duo Plus 6QT Multi-Use Pressure Cooker",
+    "credit": "Official product photo from instantpot.com (Shopify CDN files/112-0169-01Silo.png), first image on the Duo Plus 6QT product page, downloaded November 23, 2026. Image provided by Instant Brands.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "harvest-right-countertop-360",
+    "program": "harvest-right",
+    "category": "home",
+    "alsoIn": [
+      "food"
+    ],
+    "groups": [
+      "home-water"
+    ],
+    "sourceName": "Harvest Right",
+    "title": "Harvest Right Countertop 360 freeze dryer",
+    "blurb": "A home freeze dryer listed on Harvest Right\u2019s official shop as the Countertop 360. See the official page for capacity, requirements, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://harvestright.com/products/countertop-freeze-dryer",
+    "price": "$1,295.00 as of Nov 23, 2026",
+    "offer": "Home freeze dryer",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/1321/6367/files/countertop-freeze-dryer-black-right_9f651329-22aa-4c6d-8c6d-62f24185943e.jpg",
+    "alt": "Harvest Right Countertop 360 freeze dryer",
+    "credit": "Official product photo from harvestright.com (Shopify CDN files/countertop-freeze-dryer-black-right_9f651329-22aa-4c6d-8c6d-62f24185943e.jpg), first image on the Countertop 360 product page, downloaded November 23, 2026. Image provided by Harvest Right.",
+    "earn": false
+  },
+  {
+    "id": "owala-freesip-24",
+    "category": "outdoor",
+    "alsoIn": [],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Owala",
+    "title": "Owala FreeSip 24 oz water bottle",
+    "blurb": "A 24-ounce stainless steel bottle listed on Owala\u2019s official shop as the FreeSip. See the official page for colors, lid style, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.owalalife.com/products/freesip",
+    "price": "$34.99 as of Nov 23, 2026",
+    "offer": "Water bottle",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0439/2537/3087/products/2023_24oz_Water_In_The_Desert_SC-1080x1080-f521e30.png",
+    "alt": "Owala FreeSip 24 oz water bottle",
+    "credit": "Official product photo from owalalife.com (Shopify CDN products/2023_24oz_Water_In_The_Desert_SC-1080x1080-f521e30.png), first image on the FreeSip product page, downloaded November 23, 2026. Image provided by Owala.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "hydro-flask-32-wide",
+    "category": "outdoor",
+    "alsoIn": [],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Hydro Flask",
+    "title": "Hydro Flask 32 oz Wide Mouth water bottle",
+    "blurb": "A 32-ounce wide-mouth insulated bottle listed on Hydro Flask\u2019s official site. See the official page for colors, caps, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.hydroflask.com/32-oz-wide-mouth",
+    "price": "$33.75 as of Nov 23, 2026",
+    "offer": "Water bottle",
+    "cta": "Visit official site",
+    "img": "https://www.hydroflask.com/media/catalog/product/cache/94b0175a6caa1be035fa7b19e7ad3303/w/3/w32cts114_32ozwideflexcap_oat_straighton_1_1.jpg",
+    "alt": "Hydro Flask 32 oz Wide Mouth water bottle",
+    "credit": "Official product photo from hydroflask.com (media/catalog/product ... w32cts114_32ozwideflexcap_oat_straighton_1_1.jpg), Open Graph image on the 32 oz Wide Mouth product page, downloaded November 23, 2026. Image provided by Hydro Flask.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "hydro-flask-40-wide",
+    "category": "outdoor",
+    "alsoIn": [],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Hydro Flask",
+    "title": "Hydro Flask 40 oz Wide Mouth water bottle",
+    "blurb": "A 40-ounce wide-mouth insulated bottle listed on Hydro Flask\u2019s official site. See the official page for colors, caps, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.hydroflask.com/40-oz-wide-mouth",
+    "price": "$37.50 as of Nov 23, 2026",
+    "offer": "Water bottle",
+    "cta": "Visit official site",
+    "img": "https://www.hydroflask.com/media/catalog/product/cache/94b0175a6caa1be035fa7b19e7ad3303/w/4/w40cts001-40-oz-wide-mouth-with-flex-cap-black-straight_1.jpg",
+    "alt": "Hydro Flask 40 oz Wide Mouth water bottle",
+    "credit": "Official product photo from hydroflask.com (media/catalog/product ... w40cts001-40-oz-wide-mouth-with-flex-cap-black-straight_1.jpg), Open Graph image on the 40 oz Wide Mouth product page, downloaded November 23, 2026. Image provided by Hydro Flask.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "yeti-rambler-16-travel",
+    "program": "yeti",
+    "category": "outdoor",
+    "alsoIn": [],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "YETI",
+    "title": "YETI Rambler 16 oz Travel Bottle",
+    "blurb": "A 16-ounce insulated travel bottle listed on YETI\u2019s official site as the Rambler Travel Bottle with a Commuter Cap. See the official page for colors and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.yeti.com/drinkware/bottles/travel-bottle-16oz.html",
+    "price": "$25.90 as of Nov 23, 2026",
+    "offer": "Travel bottle",
+    "cta": "Visit official site",
+    "img": "https://yeti-webmedia.imgix.net/asset/cf3db9fb-cbb4-4db3-a6e3-f4a6c8a08d0d/W/YETI_Rambler_Travel_Bottle_16oz_Riverhead_Green_Front_140_B.png?bg=0fff&auto=format,compress&w=1200&h=1200",
+    "alt": "YETI Rambler 16 oz Travel Bottle in Riverhead Green",
+    "credit": "Official product photo from yeti.com (yeti-webmedia.imgix.net ... YETI_Rambler_Travel_Bottle_16oz_Riverhead_Green_Front_140_B.png), page image on the Rambler 16 oz Travel Bottle product page, downloaded November 23, 2026. Image provided by YETI.",
+    "earn": false
+  },
+  {
+    "id": "peak-refuel-homestyle-chicken-rice",
+    "category": "food",
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Peak Refuel",
+    "title": "Peak Refuel Homestyle Chicken & Rice",
+    "blurb": "A freeze-dried meal pouch listed on Peak Refuel\u2019s official shop as Homestyle Chicken & Rice. See the official page for ingredients, servings, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.peakrefuel.com/products/homestyle-chicken-rice",
+    "price": "$13.99 as of Nov 23, 2026",
+    "offer": "Freeze-dried meal",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0083/7363/3084/files/Homestyle_Chicken_Ricel-Front.png",
+    "alt": "Peak Refuel Homestyle Chicken & Rice freeze-dried meal pouch",
+    "credit": "Official product photo from peakrefuel.com (Shopify CDN files/Homestyle_Chicken_Ricel-Front.png), first image on the Homestyle Chicken & Rice product page, downloaded November 23, 2026. Image provided by Peak Refuel.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "peak-refuel-biscuits-sausage-gravy",
+    "category": "food",
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Peak Refuel",
+    "title": "Peak Refuel Biscuits & Sausage Gravy",
+    "blurb": "A freeze-dried meal pouch listed on Peak Refuel\u2019s official shop as Biscuits & Sausage Gravy. See the official page for ingredients, servings, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.peakrefuel.com/products/biscuits-sausage-gravy",
+    "price": "$14.99 as of Nov 23, 2026",
+    "offer": "Freeze-dried meal",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0083/7363/3084/files/Biscuits_Sausage_Gravy-Front.png",
+    "alt": "Peak Refuel Biscuits & Sausage Gravy freeze-dried meal pouch",
+    "credit": "Official product photo from peakrefuel.com (Shopify CDN files/Biscuits_Sausage_Gravy-Front.png), first image on the Biscuits & Sausage Gravy product page, downloaded November 23, 2026. Image provided by Peak Refuel.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "peak-refuel-entree-essentials-bucket-2",
+    "category": "food",
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Peak Refuel",
+    "title": "Peak Refuel Entree Essentials Bucket 2.0",
+    "blurb": "A bucket of freeze-dried entr\u00e9es listed on Peak Refuel\u2019s official shop as the Entree Essentials Bucket 2.0. See the official page for what\u2019s included and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.peakrefuel.com/products/entree-essentials-bucket-2-0",
+    "price": "$169.99 as of Nov 23, 2026",
+    "offer": "Food kit",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0083/7363/3084/files/2_8f07f7c9-7b4b-4c46-8fc3-6b23baead93a.png",
+    "alt": "Peak Refuel Entree Essentials Bucket 2.0",
+    "credit": "Official product photo from peakrefuel.com (Shopify CDN files/2_8f07f7c9-7b4b-4c46-8fc3-6b23baead93a.png), first image on the Entree Essentials Bucket 2.0 product page, downloaded November 23, 2026. Image provided by Peak Refuel.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "mountain-house-best-sellers-kit",
+    "program": "mountain-house",
+    "category": "food",
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Mountain House",
+    "title": "Mountain House Best Sellers Kit",
+    "blurb": "A kit of freeze-dried meals listed on Mountain House\u2019s official shop as the Best Sellers Kit. See the official page for what\u2019s included, servings, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://mountainhouse.com/products/best-sellers-kit",
+    "price": "$69.99 as of Nov 23, 2026",
+    "offer": "Food kit",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0085/1171/7440/files/best-sellers-kit-main_df0eca95-5c25-471d-bdc6-b473bd2b712a.jpg",
+    "alt": "Mountain House Best Sellers Kit",
+    "credit": "Official product photo from mountainhouse.com (Shopify CDN files/best-sellers-kit-main_df0eca95-5c25-471d-bdc6-b473bd2b712a.jpg), first image on the Best Sellers Kit product page, downloaded November 23, 2026. Image provided by Mountain House.",
+    "alsoIn": [],
+    "earn": false
+  },
+  {
+    "id": "sony-wh-1000xm6",
+    "category": "audio",
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Sony",
+    "title": "Sony WH-1000XM6 wireless headphones",
+    "blurb": "Sony\u2019s WH-1000XM6 wireless noise-cancelling headphones, listed on Sony\u2019s official US electronics site. See the official page for features, colors, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-b",
+    "price": "$348.00 as of Nov 23, 2026",
+    "offer": "Headphones",
+    "cta": "Visit official site",
+    "img": "https://d1ncau8tqf99kp.cloudfront.net/converted/152005_original_local_1200x1050_v3_converted.webp",
+    "alt": "Sony WH-1000XM6 wireless headphones in black",
+    "credit": "Official product photo from electronics.sony.com (d1ncau8tqf99kp.cloudfront.net converted/152005_original_local_1200x1050_v3_converted.webp), page image on the WH-1000XM6 Black product page, downloaded November 23, 2026. Image provided by Sony.",
+    "alsoIn": [
+      "tech"
+    ],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "apple-airpods-pro-3",
+    "program": "apple-services",
+    "category": "audio",
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Apple",
+    "title": "Apple AirPods Pro 3",
+    "blurb": "Apple\u2019s AirPods Pro 3, listed on Apple\u2019s official site. See the official page for features, compatibility, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.apple.com/airpods-pro/",
+    "price": "See price",
+    "offer": "Earbuds",
+    "cta": "Visit official site",
+    "img": "https://www.apple.com/v/airpods-pro/t/images/meta/og__c0ceegchesom_overview.png",
+    "alt": "Apple AirPods Pro 3",
+    "credit": "Official marketing photo from apple.com (v/airpods-pro/t/images/meta/og__c0ceegchesom_overview.png), Open Graph image on the AirPods Pro 3 page, downloaded November 23, 2026. Image provided by Apple.",
+    "alsoIn": [
+      "tech"
+    ],
+    "earn": false
+  },
+  {
+    "id": "apple-airpods-5",
+    "program": "apple-services",
+    "category": "audio",
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Apple",
+    "title": "Apple AirPods 5",
+    "blurb": "Apple\u2019s AirPods 5, listed on Apple\u2019s official site. See the official page for features, compatibility, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.apple.com/airpods-5/",
+    "price": "See price",
+    "offer": "Earbuds",
+    "cta": "Visit official site",
+    "img": "https://www.apple.com/v/airpods-5/b/images/meta/airpods-5__bwo9ith0md42_og.png",
+    "alt": "Apple AirPods 5",
+    "credit": "Official marketing photo from apple.com (v/airpods-5/b/images/meta/airpods-5__bwo9ith0md42_og.png), Open Graph image on the AirPods 5 page, downloaded November 23, 2026. Image provided by Apple.",
+    "alsoIn": [
+      "tech"
+    ],
+    "earn": false
+  },
+  {
+    "id": "apple-airpods-max-2",
+    "program": "apple-services",
+    "category": "audio",
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Apple",
+    "title": "Apple AirPods Max 2",
+    "blurb": "Apple\u2019s AirPods Max 2 over-ear headphones, listed on Apple\u2019s official site. See the official page for features, colors, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.apple.com/airpods-max/",
+    "price": "See price",
+    "offer": "Headphones",
+    "cta": "Visit official site",
+    "img": "https://www.apple.com/v/airpods-max/l/images/meta/airpods-max_overview__c2mz40a3bugm_og.png",
+    "alt": "Apple AirPods Max 2",
+    "credit": "Official marketing photo from apple.com (v/airpods-max/l/images/meta/airpods-max_overview__c2mz40a3bugm_og.png), Open Graph image on the AirPods Max 2 page, downloaded November 23, 2026. Image provided by Apple.",
+    "alsoIn": [
+      "tech"
+    ],
+    "earn": false
+  },
+  {
+    "id": "1password-password-manager",
+    "program": "1password",
+    "category": "tech",
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "1Password",
+    "title": "1Password password manager",
+    "blurb": "A paid password-manager subscription listed on 1Password\u2019s official site. See the official page for plans, features, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://1password.com/",
+    "price": "See price",
+    "offer": "Paid subscription",
+    "cta": "Visit official site",
+    "img": "https://images.ctfassets.net/2h488pz7kgfv/4JAm44Htcrinu0sTomaEGi/1f7be85af3138e1d38bb31fe5ad6425b/open-graph-1password-business.jpg",
+    "alt": "1Password",
+    "credit": "Official marketing image from 1password.com (Contentful CDN open-graph-1password-business.jpg), Open Graph image on the 1Password homepage, downloaded November 23, 2026. Image provided by 1Password.",
+    "alsoIn": [],
+    "earn": false
+  },
+  {
+    "id": "apple-airtag",
+    "program": "apple-services",
+    "category": "tech",
+    "alsoIn": [],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Apple",
+    "title": "Apple AirTag",
+    "blurb": "Apple\u2019s AirTag item tracker, listed on Apple\u2019s official site and sold individually or in a 4-pack. See the official page for features and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.apple.com/airtag/",
+    "price": "See price",
+    "offer": "Item tracker",
+    "cta": "Visit official site",
+    "img": "https://www.apple.com/v/airtag/g/images/meta/og__ck3n0k1jl6j6.png",
+    "alt": "Apple AirTag",
+    "credit": "Official marketing photo from apple.com (v/airtag/g/images/meta/og__ck3n0k1jl6j6.png), Open Graph image on the AirTag page, downloaded November 23, 2026. Image provided by Apple.",
+    "earn": false
+  },
+  {
+    "id": "dewalt-dcd771c2",
+    "category": "tools",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "DEWALT",
+    "title": "DEWALT 20V MAX Compact Drill/Driver Kit (DCD771C2)",
+    "blurb": "A 20V MAX compact drill/driver kit listed on DEWALT\u2019s official site as the DCD771C2, including two batteries. See the official page for what\u2019s in the kit and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.dewalt.com/en-us/product/dcd771c2/20v-max-compact-drilldriver-kit-2-batteries",
+    "price": "See price",
+    "offer": "Drill kit",
+    "cta": "Visit official site",
+    "img": "https://assets.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/WHITEBG/DCD771C2_K1.jpg",
+    "alt": "DEWALT 20V MAX Compact Drill/Driver Kit DCD771C2",
+    "credit": "Official product photo from dewalt.com (assets.dewalt.com NAG/PRODUCT/IMAGES/HIRES/WHITEBG/DCD771C2_K1.jpg), Open Graph image on the DCD771C2 product page, downloaded November 23, 2026. Image provided by DEWALT.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "milwaukee-2904-20",
+    "category": "tools",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Milwaukee Tool",
+    "title": "Milwaukee M18 FUEL 1/2-inch Hammer Drill/Driver (2904-20)",
+    "blurb": "An M18 FUEL 1/2-inch hammer drill/driver listed on Milwaukee Tool\u2019s official site as the 2904-20. See the official page for specs, kit options, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.milwaukeetool.com/products/details/m18-fuel-1-2-hammer-drill-driver-cordless-power-tool/2904-20",
+    "price": "See price",
+    "offer": "Drill",
+    "cta": "Visit official site",
+    "img": "https://www.milwaukeetool.com/--/web-images/sc/92189d4f48274ce79371584b87e05759?hash=8c18f40f97a0cf739200b816abc1c00e&lang=en",
+    "alt": "Milwaukee M18 FUEL 1/2-inch Hammer Drill/Driver 2904-20",
+    "credit": "Official product photo from milwaukeetool.com (web-images/sc/92189d4f48274ce79371584b87e05759), Open Graph image on the 2904-20 product page, downloaded November 23, 2026. Image provided by Milwaukee Tool.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "milwaukee-2853-20",
+    "category": "tools",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Milwaukee Tool",
+    "title": "Milwaukee M18 FUEL 1/4-inch Hex Impact Driver (2853-20)",
+    "blurb": "An M18 FUEL 1/4-inch hex impact driver listed on Milwaukee Tool\u2019s official site as the 2853-20 (tool only). See the official page for specs, kit options, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.milwaukeetool.com/products/details/m18-fuel-1-4-hex-impact-driver-tool-only/2853-20",
+    "price": "See price",
+    "offer": "Impact driver",
+    "cta": "Visit official site",
+    "img": "https://www.milwaukeetool.com/--/web-images/sc/197405b4ab01432cae35b1702454501d?hash=7a5e07d5f9fb20f2941ebbdfa3b4460f&lang=en",
+    "alt": "Milwaukee M18 FUEL 1/4-inch Hex Impact Driver 2853-20",
+    "credit": "Official product photo from milwaukeetool.com (web-images/sc/197405b4ab01432cae35b1702454501d), Open Graph image on the 2853-20 product page, downloaded November 23, 2026. Image provided by Milwaukee Tool.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "milwaukee-2960-20",
+    "category": "tools",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Milwaukee Tool",
+    "title": "Milwaukee M18 FUEL 3/8-inch Mid-Torque Impact Wrench (2960-20)",
+    "blurb": "An M18 FUEL mid-torque impact wrench listed on Milwaukee Tool\u2019s official site as the 2960-20. See the official page for specs, kit options, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.milwaukeetool.com/products/details/m18-fuel-3-8-mid-torque-impact-wrench-w-friction-ring/2960-20",
+    "price": "See price",
+    "offer": "Impact wrench",
+    "cta": "Visit official site",
+    "img": "https://www.milwaukeetool.com/--/web-images/sc/72db1d4f9c4b424f8f068c7cf0752665?hash=66c969f4314fe97cc553ee87098a176e&lang=en",
+    "alt": "Milwaukee M18 FUEL 3/8-inch Mid-Torque Impact Wrench 2960-20",
+    "credit": "Official product photo from milwaukeetool.com (web-images/sc/72db1d4f9c4b424f8f068c7cf0752665), Open Graph image on the 2960-20 product page, downloaded November 23, 2026. Image provided by Milwaukee Tool.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "noco-gb70",
+    "program": "noco",
+    "category": "auto",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "NOCO",
+    "title": "NOCO Boost HD GB70 2000A jump starter",
+    "blurb": "A portable lithium jump starter listed on NOCO\u2019s official site as the Boost HD GB70, a 2000A 12V unit. See the official page for vehicle coverage and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://no.co/gb70",
+    "price": "$199.95 as of Nov 23, 2026",
+    "offer": "Jump starter",
+    "cta": "Visit official site",
+    "img": "https://no.co/media/catalog/product/g/b/gb70.png",
+    "alt": "NOCO Boost HD GB70 jump starter",
+    "credit": "Official product photo from no.co (media/catalog/product/g/b/gb70.png), product image on the GB70 page, downloaded November 23, 2026. Image provided by NOCO.",
+    "alsoIn": [],
+    "earn": false
+  },
+  {
+    "id": "noco-boost-air",
+    "program": "noco",
+    "category": "auto",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "NOCO",
+    "title": "NOCO Boost Air jump starter and air compressor",
+    "blurb": "A portable jump starter with a built-in air compressor listed on NOCO\u2019s official site as Boost Air. See the official page for features and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://no.co/boost/boost-air",
+    "price": "$299.95 as of Nov 23, 2026",
+    "offer": "Jump starter and inflator",
+    "cta": "Visit official site",
+    "img": "https://no.co/media/catalog/product/a/x/ax65-front_1.png",
+    "alt": "NOCO Boost Air jump starter and air compressor",
+    "credit": "Official product photo from no.co (media/catalog/product/a/x/ax65-front_1.png), product image on the Boost Air page, downloaded November 23, 2026. Image provided by NOCO.",
+    "alsoIn": [],
+    "earn": false
+  },
+  {
+    "id": "garmin-dash-cam-mini-3",
+    "program": "garmin",
+    "category": "auto",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Garmin",
+    "title": "Garmin Dash Cam Mini 3",
+    "blurb": "An ultra-compact dash camera listed on Garmin\u2019s official site as the Dash Cam Mini 3. See the official page for features and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.garmin.com/en-US/p/1223369/",
+    "price": "$149.99 as of Nov 23, 2026",
+    "offer": "Dash cam",
+    "cta": "Visit official site",
+    "img": "https://res.garmin.com/en/products/010-02899-00/v/cf-lg.jpg",
+    "alt": "Garmin Dash Cam Mini 3",
+    "credit": "Official product photo from garmin.com (res.garmin.com/en/products/010-02899-00/v/cf-lg.jpg), Open Graph image on the Dash Cam Mini 3 product page, downloaded November 23, 2026. Image provided by Garmin.",
+    "alsoIn": [],
+    "earn": false
+  },
+  {
+    "id": "noco-air20",
+    "program": "noco",
+    "category": "auto",
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "NOCO",
+    "title": "NOCO AIR20 portable air compressor",
+    "blurb": "A portable 12V air compressor listed on NOCO\u2019s official site as the AIR20, a 20A, 100 PSI inflator. See the official page for features and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://no.co/air20",
+    "price": "$159.95 as of Nov 23, 2026",
+    "offer": "Tire inflator",
+    "cta": "Visit official site",
+    "img": "https://no.co/media/catalog/product/a/i/air20.png",
+    "alt": "NOCO AIR20 portable air compressor",
+    "credit": "Official product photo from no.co (media/catalog/product/a/i/air20.png), product image on the AIR20 page, downloaded November 23, 2026. Image provided by NOCO.",
+    "alsoIn": [],
+    "earn": false
+  },
+  {
+    "id": "catan-base-game",
+    "category": "fun",
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "CATAN",
+    "title": "CATAN base game",
+    "blurb": "The CATAN base board game, listed on CATAN\u2019s official site. See the official page for editions, player count, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.catan.com/catan",
+    "price": "See price",
+    "offer": "Board game",
+    "cta": "Visit official site",
+    "img": "https://www.catan.com/sites/default/files/2025-04/3DBox_CATAN_BaseGame_NE.png",
+    "alt": "CATAN base game box",
+    "credit": "Official box art from catan.com (sites/default/files/2025-04/3DBox_CATAN_BaseGame_NE.png), page image on the CATAN base-game page, downloaded November 23, 2026. Image provided by CATAN GmbH.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "wingspan-board-game",
+    "category": "fun",
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Stonemaier Games",
+    "title": "Wingspan board game",
+    "blurb": "The Wingspan board game, listed on Stonemaier Games\u2019 official site. See the official page for editions and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://stonemaiergames.com/games/wingspan/",
+    "price": "See price",
+    "offer": "Board game",
+    "cta": "Visit official site",
+    "img": "https://stonemaiergames.com/wp-content/uploads/2026/04/3d-wingspan.webp",
+    "alt": "Wingspan board game box",
+    "credit": "Official box art from stonemaiergames.com (wp-content/uploads/2026/04/3d-wingspan.webp), Open Graph image on the Wingspan page, downloaded November 23, 2026. Image provided by Stonemaier Games.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "nintendo-switch-2",
+    "category": "fun",
+    "alsoIn": [
+      "tech"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Nintendo",
+    "title": "Nintendo Switch 2",
+    "blurb": "The Nintendo Switch 2 system, listed on Nintendo\u2019s official US store hardware page. See the official page for bundles, accessories, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.nintendo.com/us/store/hardware/",
+    "price": "See price",
+    "offer": "Game system",
+    "cta": "Visit official site",
+    "img": "https://assets.nintendo.com/image/upload/v1743547392/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/Global%20Nav/Explore/Nintendo-Switch-2.png",
+    "alt": "Nintendo Switch 2",
+    "credit": "Official product image from nintendo.com (assets.nintendo.com ... /Global Nav/Explore/Nintendo-Switch-2.png), used on Nintendo\u2019s official US site, downloaded November 23, 2026. Image provided by Nintendo.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "mario-kart-world",
+    "category": "fun",
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Nintendo",
+    "title": "Mario Kart World",
+    "blurb": "Mario Kart World, a Nintendo Switch 2 game listed on Nintendo\u2019s official US store. See the official page for editions and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/",
+    "price": "See price",
+    "offer": "Game",
+    "cta": "Visit official site",
+    "img": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000095431/0485f410193ca12f92a2f615ea608bb437540f321bd05e464593c33fefa09bf2",
+    "alt": "Mario Kart World for Nintendo Switch 2",
+    "credit": "Official product image from nintendo.com (assets.nintendo.com store/software/switch2/70010000095431/...), used on the official Mario Kart World store page, downloaded November 23, 2026. Image provided by Nintendo.",
+    "alsoIn": [],
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "dji-matrice-5t",
+    "program": "dji",
+    "category": "drones",
+    "alsoIn": [
+      "tech"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "DJI",
+    "title": "DJI Matrice 5T",
+    "blurb": "DJI\u2019s Matrice 5T enterprise drone, listed on DJI Enterprise\u2019s official site. See the official page for specs, availability, and how to inquire. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://enterprise.dji.com/matrice-5t",
+    "price": "See price",
+    "offer": "Enterprise drone",
+    "cta": "Visit official site",
+    "img": "https://www-cdn.djiits.com/cms/uploads/a7e99d6569424ed49afc9db2f20e5049@374*374.png",
+    "alt": "DJI Matrice 5T",
+    "credit": "Official product photo from enterprise.dji.com (www-cdn.djiits.com cms/uploads/a7e99d6569424ed49afc9db2f20e5049@374*374.png), Open Graph image on the Matrice 5T page, downloaded November 23, 2026. Image provided by DJI.",
+    "earn": false
+  },
+  {
+    "id": "dji-matrice-4-series",
+    "program": "dji",
+    "category": "drones",
+    "alsoIn": [
+      "tech"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "DJI",
+    "title": "DJI Matrice 4 Series",
+    "blurb": "DJI\u2019s Matrice 4 Series enterprise drones, listed on DJI Enterprise\u2019s official site. See the official page for models, specs, and how to inquire. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://enterprise.dji.com/matrice-4-series",
+    "price": "See price",
+    "offer": "Enterprise drone",
+    "cta": "Visit official site",
+    "img": "https://www-cdn.djiits.com/cms/uploads/5a6ef3ed6f35e3719453a78ff0e67af4@374*374.png",
+    "alt": "DJI Matrice 4 Series",
+    "credit": "Official product photo from enterprise.dji.com (www-cdn.djiits.com cms/uploads/5a6ef3ed6f35e3719453a78ff0e67af4@374*374.png), Open Graph image on the Matrice 4 Series page, downloaded November 23, 2026. Image provided by DJI.",
+    "earn": false
+  },
+  {
+    "id": "dji-mavic-3-enterprise",
+    "program": "dji",
+    "category": "drones",
+    "alsoIn": [
+      "tech"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "DJI",
+    "title": "DJI Mavic 3 Enterprise Series",
+    "blurb": "DJI\u2019s Mavic 3 Enterprise Series, listed on DJI Enterprise\u2019s official site for mapping and inspection drones. See the official page for models and how to inquire. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://enterprise.dji.com/mavic-3-enterprise",
+    "price": "See price",
+    "offer": "Enterprise drone",
+    "cta": "Visit official site",
+    "img": "https://www-cdn.djiits.com/cms/uploads/782504dd2755d6067e4a82fda5ca147d@374*374.png",
+    "alt": "DJI Mavic 3 Enterprise Series",
+    "credit": "Official product photo from enterprise.dji.com (www-cdn.djiits.com cms/uploads/782504dd2755d6067e4a82fda5ca147d@374*374.png), Open Graph image on the Mavic 3 Enterprise Series page, downloaded November 23, 2026. Image provided by DJI.",
+    "earn": false
+  },
+  {
+    "id": "skydio-x10",
+    "program": "skydio",
+    "category": "drones",
+    "alsoIn": [
+      "tech"
+    ],
+    "groups": [
+      "power-tech"
+    ],
+    "sourceName": "Skydio",
+    "title": "Skydio X10",
+    "blurb": "Skydio\u2019s X10 autonomous drone, listed on Skydio\u2019s official site. See the official page for specs, programs, and how to inquire. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.skydio.com/x10",
+    "price": "See price",
+    "offer": "Autonomous drone",
+    "cta": "Visit official site",
+    "img": "https://cdn.sanity.io/images/mgxz50fq/production-v3-red/6a6fef86c5dad572083363430f9a27971cc62a1a-2400x1300.png?w=1600&fit=max&auto=format",
+    "alt": "Skydio X10",
+    "credit": "Official product photo from skydio.com (cdn.sanity.io ... 6a6fef86c5dad572083363430f9a27971cc62a1a-2400x1300.png), Open Graph image on the Skydio X10 page, downloaded November 23, 2026. Image provided by Skydio.",
+    "earn": false
+  },
+  {
+    "id": "ford-f150-2027",
+    "category": "vehicles",
+    "alsoIn": [
+      "auto"
+    ],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Ford",
+    "title": "2027 Ford F-150",
+    "blurb": "The current Ford F-150 pickup, listed on Ford\u2019s official US site as the 2027 F-150. Configuration, trims, and pricing are on the official site. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.ford.com/trucks/f150/",
+    "price": "See price",
+    "offer": "Pickup truck",
+    "cta": "Visit official site",
+    "img": "https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/brand/Ford_OG_1200x630.jpg",
+    "alt": "Ford official site image for the 2027 F-150",
+    "credit": "Official image from ford.com (acslibs/content/dam/na/ford/en_us/images/brand/Ford_OG_1200x630.jpg), Open Graph image on the 2027 F-150 page, downloaded November 23, 2026. Image provided by Ford Motor Company. This is the official page share image, not a studio trim-specific photograph.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "rivian-r1s",
+    "category": "vehicles",
+    "alsoIn": [
+      "auto"
+    ],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Rivian",
+    "title": "Rivian R1S",
+    "blurb": "Rivian\u2019s R1S electric SUV, listed on Rivian\u2019s official site. Configuration and pricing are on the official site. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://rivian.com/r1s",
+    "price": "See price",
+    "offer": "Electric SUV",
+    "cta": "Visit official site",
+    "img": "https://images.ctfassets.net/2md5qhoeajym/2pmoThbEsIuxUFlBzOH05w/4851c5bc1fc26c0e0b4a42d9c50b18e6/250908_ADEWALE-AGBOOLA-CAMERACAR-SEATTLE-528_jjedit-Final_Cropped.jpg",
+    "alt": "Rivian R1S",
+    "credit": "Official photograph from rivian.com (Contentful CDN 250908_ADEWALE-AGBOOLA-CAMERACAR-SEATTLE-528_jjedit-Final_Cropped.jpg), Open Graph image on the R1S page, downloaded November 23, 2026. Image provided by Rivian.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "rivian-r1t",
+    "category": "vehicles",
+    "alsoIn": [
+      "auto"
+    ],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Rivian",
+    "title": "Rivian R1T",
+    "blurb": "Rivian\u2019s R1T electric truck, listed on Rivian\u2019s official site. Configuration and pricing are on the official site. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://rivian.com/r1t",
+    "price": "See price",
+    "offer": "Electric truck",
+    "cta": "Visit official site",
+    "img": "https://images.ctfassets.net/2md5qhoeajym/7amTVJoqSqPIrLtQw0IiMm/c7ff405f9f8e411486b11054f799992d/20250513-Trevor-Gavin-AlabamaHills-A0000138-Final_Cropped.jpg",
+    "alt": "Rivian R1T",
+    "credit": "Official photograph from rivian.com (Contentful CDN 20250513-Trevor-Gavin-AlabamaHills-A0000138-Final_Cropped.jpg), Open Graph image on the R1T page, downloaded November 23, 2026. Image provided by Rivian.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "ring-battery-doorbell-4k-pro",
+    "program": "ring",
+    "category": "security",
+    "alsoIn": [
+      "home"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Ring",
+    "title": "Ring Battery Doorbell 4K Pro",
+    "blurb": "A battery video doorbell listed on Ring\u2019s official site as the Battery Doorbell 4K Pro (2nd generation). See the official page for features, subscription notes, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://ring.com/products/battery-doorbell-pro-2nd-gen",
+    "price": "See price",
+    "offer": "Video doorbell",
+    "cta": "Visit official site",
+    "img": "https://images.ctfassets.net/a3peezndovsu/10us7nknuEwrEaNtmw3ScP/a455d50d94c094558f268b51734b4ee2/ring_battery_doorbell_pro_gen2_product_dark_silver_1500x1500.jpg",
+    "alt": "Ring Battery Doorbell 4K Pro",
+    "credit": "Official product photo from ring.com (Contentful CDN ring_battery_doorbell_pro_gen2_product_dark_silver_1500x1500.jpg), Open Graph image on the Battery Doorbell 4K Pro page, downloaded November 23, 2026. Image provided by Ring.",
+    "earn": false
+  },
+  {
+    "id": "eufy-solocam-s340",
+    "program": "eufy",
+    "category": "security",
+    "alsoIn": [
+      "home"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "eufy",
+    "title": "eufy SoloCam S340",
+    "blurb": "A wireless outdoor security camera listed on eufy\u2019s official US shop as the SoloCam S340. See the official page for features, power options, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.eufy.com/products/t81701w1",
+    "price": "$219.99 as of Nov 23, 2026",
+    "offer": "Security camera",
+    "cta": "Visit official site",
+    "img": "https://cdn.shopify.com/s/files/1/0504/7094/4954/files/1500_1500.png",
+    "alt": "eufy SoloCam S340 outdoor security camera",
+    "credit": "Official product photo from eufy.com (Shopify CDN files/1500_1500.png), Open Graph image on the SoloCam S340 product page, downloaded November 23, 2026. Image provided by eufy.",
+    "earn": false
+  },
+  {
+    "id": "google-nest-cam-indoor-wired-3rd-gen",
+    "category": "security",
+    "alsoIn": [
+      "home"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Google",
+    "title": "Google Nest Cam Indoor (wired, 3rd gen)",
+    "blurb": "A wired indoor security camera listed on the Google Store as the Nest Cam Indoor (wired, 3rd gen). See the official page for features, subscription notes, and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://store.google.com/us/product/nest_cam_indoor_wired_3rd_gen",
+    "price": "See price",
+    "offer": "Security camera",
+    "cta": "Visit official site",
+    "img": "https://lh3.googleusercontent.com/81sZCY_pEVkXlUS3Hi3PsJVZ3oIG1hhPPe5kdGAvJlFQwvOz1PYAg4IgUDyulpUlMs2iakQOmYFkIqIubLx-cqtH_VIyqZUk8A=rj-sc0xffffffff",
+    "alt": "Google Nest Cam Indoor wired 3rd generation",
+    "credit": "Official product photo from store.google.com (lh3.googleusercontent.com ...), Open Graph image on the Nest Cam Indoor (wired, 3rd gen) page, downloaded November 23, 2026. Image provided by Google.",
+    "earn": false,
+    "program": null
+  },
+  {
+    "id": "ford-bronco-2026",
+    "earn": false,
+    "program": null,
+    "category": "vehicles",
+    "alsoIn": [
+      "auto"
+    ],
+    "groups": [
+      "outdoor-auto"
+    ],
+    "sourceName": "Ford",
+    "title": "2026 Ford Bronco",
+    "blurb": "The current Ford Bronco, listed on Ford\u2019s official US site as the 2026 Bronco. Configuration, trims, and pricing are on the official site. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://www.ford.com/suvs/bronco/",
+    "price": "See price",
+    "offer": "SUV",
+    "cta": "Visit official site",
+    "img": "https://www.ford.com/acslibs/content/dam/na/ford/en_us/images/brand/Ford_OG_1200x630.jpg",
+    "alt": "Ford official site image for the 2026 Bronco",
+    "credit": "Official image from ford.com (acslibs/content/dam/na/ford/en_us/images/brand/Ford_OG_1200x630.jpg), used as the official Ford share image because the Bronco page did not expose a downloadable trim photo to this catalog pass, downloaded November 23, 2026. Image provided by Ford Motor Company. This is the official brand share image, not a studio trim-specific photograph."
+  },
+  {
+    "id": "reolink-trackmix-wifi",
+    "earn": false,
+    "program": "reolink",
+    "category": "security",
+    "alsoIn": [
+      "home"
+    ],
+    "groups": [
+      "safety-prep"
+    ],
+    "sourceName": "Reolink",
+    "title": "Reolink TrackMix WiFi",
+    "blurb": "A 4K PTZ security camera with auto-tracking, listed on Reolink\u2019s official site as the TrackMix WiFi. See the official page for features and the current price. We don\u2019t have a partner program with this brand yet.",
+    "url": "https://reolink.com/product/reolink-trackmix-wifi/",
+    "price": "See price",
+    "offer": "Security camera",
+    "cta": "Visit official site",
+    "img": "https://home-cdn.reolink.us/wp-content/uploads/2024/12/090149081733708948.8663.jpg",
+    "alt": "Reolink TrackMix WiFi PTZ security camera",
+    "credit": "Official product photo from reolink.com (home-cdn.reolink.us wp-content/uploads/2024/12/090149081733708948.8663.jpg), image from the official TrackMix WiFi product page, downloaded November 23, 2026. Image provided by Reolink."
+  }
+]
