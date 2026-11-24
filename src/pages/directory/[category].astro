@@ -10,6 +10,8 @@ import {
   comingSoonFor,
   categoryBySlug,
 } from '../../data/source-directory';
+import WinterDealsCallout from '../../components/WinterDealsCallout.astro';
+import { isWinterDealDirectoryCategory } from '../../data/winter-deals';
 import { getItems } from '../../lib/data';
 import { buildFullCatalog } from '../../data/full-catalog';
 import { brandPages } from '../../data/brands';
@@ -63,6 +65,10 @@ const schema = {
 
   <section class="wrap section">
     <p class="disclosure"><strong>Affiliate disclosure:</strong> Many links on this page are affiliate links. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. We don’t invent prices or ratings. <a href="/affiliate-disclosure/">Full disclosure</a></p>
+
+    {isWinterDealDirectoryCategory(category.id) && (
+      <WinterDealsCallout />
+    )}
 
     {spotlights.length > 0 && (
       <p class="fine brand-spotlight-strip"><strong>Brand spotlights:</strong> {spotlights.map((b, i) => (<>{i > 0 && ' · '}<a href={`/brands/${b.slug}/`}>{b.name}</a></>))} · <a href="/brands/">All spotlights</a></p>

@@ -59,6 +59,7 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'ispring-wgb32b': { alt: 'iSpring WGB32B 3-stage whole-house water filter with 20-inch sediment and carbon-block cartridges', widths: [480, 960, 1500] },
   'ispring-sf2s': { alt: 'iSpring SF2S 33-stage shower filter with a replaceable cartridge', widths: [480, 960, 1493] },
   'ispring-df1': { alt: 'iSpring DF1 chrome faucet-mount drinking-water filter', widths: [480, 960, 1500] },
+  'bluetti-ac180': { alt: 'BLUETTI AC180 portable power station, listed as 1,152Wh and 1,800W', widths: [480, 960, 1200] },
 };
 
 

@@ -41,6 +41,7 @@ These files were downloaded from official publisher dashboards on 2026-11-21 (Am
 |---|---|---|---|---|
 | `bluetti-elite-200-v2.webp` | BLUETTI Elite 200 V2 product card; also the BLUETTI portable power stations merchant card | Bluetti Global | CJ Affiliate (Campaigns > Products catalog) | Official 120×90 logo creative is too small for a card, so the merchant card uses this catalog product photo instead. |
 | `bluetti-ac180.webp` | BLUETTI AC180 product card | Bluetti Global | CJ Affiliate product catalog | |
+| `bluetti-ac180-480.webp`, `bluetti-ac180-960.webp`, `bluetti-ac180-1200.webp` | Resized official AC180 catalog photo for product cards on /winter-deals/ and gear listings | Bluetti Global | Derived from `bluetti-ac180.webp` (CJ Affiliate product catalog) | Created November 23, 2026 (America/Chicago). No upscaling past the 1,200×1,200 source. |
 | `bluetti-ac200l.webp` | BLUETTI AC200L product card | Bluetti Global | CJ Affiliate product catalog | |
 | `bluetti-ac2a.webp` | BLUETTI AC2A product card | Bluetti Global | CJ Affiliate product catalog | |
 | `bluetti-elite-100-v2.webp` | BLUETTI Elite 100 V2 product card | Bluetti Global | CJ Affiliate product catalog | |

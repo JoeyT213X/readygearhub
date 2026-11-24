@@ -1,0 +1,71 @@
+---
+import { outUrl, isAffiliate, programIdForItem, type Item } from '../lib/data';
+import { productPhotoFor, photoBackdropClass } from '../data/product-photos';
+import type { WinterDeal } from '../data/winter-deals';
+import { PRICE_CHECKED_LABEL } from '../data/winter-deals';
+
+interface Props {
+  item: Item;
+  deal: WinterDeal;
+}
+const { item, deal } = Astro.props;
+if (!isAffiliate(item)) {
+  throw new Error(`Winter deal ${item.id} is not a live affiliate listing and cannot appear on /winter-deals/.`);
+}
+const program = programIdForItem(item.id);
+const photo = productPhotoFor({ id: item.id });
+const backdrop = photo ? photoBackdropClass({ id: item.id, name: item.data.name, brand: item.data.brand, tags: item.data.tags }) : '';
+const href = outUrl(item);
+---
+<article class="card item-card winter-deal-card">
+  {photo && (
+    <a class={`item-card-photo ${backdrop}`} href={`/gear/${item.id}/`} tabindex="-1" aria-hidden="true">
+      <img src={photo.src} srcset={photo.srcset} sizes="(min-width: 900px) 330px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />
+    </a>
+  )}
+  <p class="brand">{item.data.brand}</p>
+  <h3><a href={`/gear/${item.id}/`}>{item.data.name}</a></h3>
+  <p class="winter-deal-price">
+    {deal.compareAt && deal.priceLabel !== 'See price' ? (
+      <><span class="wd-was">Listed at {deal.compareAt}</span> <span class="wd-now">{deal.priceLabel}</span></>
+    ) : (
+      <span class="wd-now">{deal.priceLabel}</span>
+    )}
+    <span class="wd-checked">Checked {PRICE_CHECKED_LABEL} on the official store.</span>
+  </p>
+  {deal.stockNote && <p class="fine wd-stock">{deal.stockNote}</p>}
+  <p>{deal.why}</p>
+  <div class="card-actions">
+    <a class="btn small ghost" href={`/gear/${item.id}/`}>Details</a>
+    <a
+      class="btn small"
+      href={href}
+      target="_blank"
+      rel="sponsored nofollow noopener"
+      data-program={program || undefined}
+    >Check current price ↗</a>
+  </div>
+</article>
+
+<style>
+  .winter-deal-price {
+    margin: 0.35rem 0 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.55rem;
+    align-items: baseline;
+  }
+  .wd-now {
+    font-weight: 650;
+    font-size: 1.05rem;
+  }
+  .wd-was {
+    color: var(--muted, #5c6570);
+    text-decoration: none;
+  }
+  .wd-checked,
+  .wd-stock {
+    flex-basis: 100%;
+    margin: 0;
+  }
+</style>

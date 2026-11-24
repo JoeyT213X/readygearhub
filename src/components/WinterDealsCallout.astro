@@ -1,0 +1,35 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+<aside class:list={['card', 'winter-deals-callout', { compact }]}>
+  <p class="wdc-kicker">This week</p>
+  <p class="wdc-title"><a href="/winter-deals/">Winter prep picks</a></p>
+  <p class="fine">Lights, backup power, and a few other winter-ready items from partner programs we can actually earn on. Prices checked November 23, 2026.</p>
+  <p class="wdc-action"><a class="btn small" href="/winter-deals/">See this week’s picks</a></p>
+</aside>
+
+<style>
+  .winter-deals-callout {
+    margin: 0 0 1.4rem;
+  }
+  .winter-deals-callout.compact {
+    margin: 1.2rem 0 0;
+  }
+  .wdc-kicker {
+    margin: 0 0 0.25rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted, #5c6570);
+  }
+  .wdc-title {
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+  }
+  .wdc-action {
+    margin: 0.7rem 0 0;
+  }
+</style>

@@ -11,6 +11,7 @@ import { render } from 'astro:content';
 import { getGuides, getItems, laneBySlug, site } from '../../lib/data';
 import { photoForGuide, photos } from '../../data/images';
 import { CALCULATORS } from '../../lib/app-config';
+import WinterDealsCallout from '../../components/WinterDealsCallout.astro';
 export async function getStaticPaths() {
   const guides = await getGuides();
   return guides.map((g) => ({ params: { slug: g.id }, props: { guide: g } }));
@@ -89,6 +90,7 @@ const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month:
       <SectionHead kicker="Keep going" title="Related guides" href="/guides/" linkLabel="All guides" />
       <div class="grid">{relatedGuides.map((g) => <GuideCard guide={g} laneName={g.data.lane ? laneBySlug(g.data.lane)?.name : undefined} />)}</div>
       <h3 style="margin-top:28px">Next steps</h3>
+      {d.season.includes('winter') && <WinterDealsCallout compact />}
       <div class="next-steps">
         <a class="card next-step" href="/alerts/"><span class="ns-icon" aria-hidden="true">⚠️</span><span><strong>Check live alerts</strong><span>Official NWS watches and warnings for your area.</span></span></a>
         <a class="card next-step" href="/tools/kit-builder/"><span class="ns-icon" aria-hidden="true">📋</span><span><strong>Build your kit list</strong><span>A printable Ready.gov checklist sized to your household.</span></span></a>

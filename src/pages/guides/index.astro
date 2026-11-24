@@ -4,6 +4,7 @@ import PageHero from '../../components/PageHero.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import { getGuides, lanes, laneBySlug } from '../../lib/data';
+import WinterDealsCallout from '../../components/WinterDealsCallout.astro';
 const guides = await getGuides();
 const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'ReadyGearHub guides',
   itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`/guides/${g.id}/`, Astro.site).href, name: g.data.title })) };
@@ -15,6 +16,9 @@ const latest = guides.slice(0, 3);
   <PageHero title="📘 Guides & checklists" lead="Checklists and buying help written to be useful, not to upsell. Each guide links to the official sources behind it and the gear it mentions." photo="gear-flatlay" crumbs={[{ label: 'Guides' }]}>
     <nav aria-label="Guide topics"><ul class="hero-quick">{groups.map((g) => <li><a href={`#${g.lane.slug}`}>{g.lane.icon} {g.lane.name} ({g.guides.length})</a></li>)}</ul></nav>
   </PageHero>
+  <section class="wrap section tight">
+    <WinterDealsCallout />
+  </section>
   <section class="wrap section">
     <SectionHead kicker="Newest" title="Latest guides" />
     <div class="grid">{latest.map((g, i) => <GuideCard guide={g} laneName={g.data.lane ? laneBySlug(g.data.lane)?.name : undefined} />)}</div>
