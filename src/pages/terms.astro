@@ -1,0 +1,39 @@
+---
+import RelatedLinks from '../components/RelatedLinks.astro';
+import Base from '../layouts/Base.astro';
+import site from '../data/site';
+---
+<Base title="Terms of Use | ReadyGearHub" description="Terms of use for ReadyGearHub, operated by OMEGA UCO SOLUTIONS, LLC, including how affiliate links work on this site.">
+  <section class="page-hero"><div class="wrap"><h1>Terms of Use</h1><p class="fine light">Last updated November 23, 2026</p></div></section>
+  <section class="wrap section prose">
+    <p>ReadyGearHub is operated by {site.legalName}, {site.addressLocality}, {site.addressRegion}. These terms apply to this website. If you have questions, email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> or use our <a href="/contact/">contact page</a>.</p>
+    <h2>Using this site</h2>
+    <p>By using ReadyGearHub, you agree to these terms and to our <a href="/privacy/">Privacy Policy</a>. If you do not agree, please do not use the site.</p>
+    <p>The guides, tools, checklists, and directory listings on ReadyGearHub are general information for everyday preparedness. They are not emergency, medical, legal, or professional advice, and they are not a substitute for official instructions or manufacturer safety guidance. In an emergency, call 911 or your local emergency number.</p>
+    <h2>Affiliate links</h2>
+    <p>Some links on ReadyGearHub are affiliate links. If you click one and make a purchase, {site.legalName} may earn a commission. This does not cost you anything extra, and it does not change which products we list or how we describe them. Affiliate links are marked with <code>rel="sponsored"</code> in the page code, and pages that may contain them include a short disclosure. See our <a href="/affiliate-disclosure/">Affiliate Disclosure</a> for the full explanation.</p>
+    <h2>Our own digital products</h2>
+    <p>ReadyGearHub also sells its own printable guides and planners as instant downloads. Checkout is handled by Payhip. Sales of those files are covered by our <a href="/refund-policy/">Refund Policy</a>.</p>
+    <h2>Other sites</h2>
+    <p>Links to brands, retailers, government agencies, and other websites take you off ReadyGearHub. Those sites have their own terms and privacy practices. We are not responsible for their content or for purchases you make there.</p>
+    <h2>Intellectual property</h2>
+    <p>The ReadyGearHub name, site design, and original writing on this site belong to {site.legalName}. Product names, logos, and trademarks belong to their owners. Photographs are credited on the <a href="/about/#photo-credits">About page</a> and in the site’s image-credits file. You may not copy the site or our digital products for resale or republication without permission.</p>
+    <h2>Messages you send us</h2>
+    <p>If you use the contact form or email us, you grant us permission to use the information you send so we can reply and, when relevant, evaluate a listing request. Please do not send confidential or sensitive information through the form.</p>
+    <h2>No warranties</h2>
+    <p>The site is provided as is. We work to keep listings, links, and guides accurate and current, but product details, availability, and third-party sites can change. Always check the official product page and follow the manufacturer’s safety instructions.</p>
+    <h2>Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, {site.legalName} is not liable for any loss or damage that arises from your use of this site, from reliance on the information here, or from products or services you buy from third parties we link to.</p>
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of the State of Mississippi, United States, without regard to conflict-of-law rules.</p>
+    <h2>Changes</h2>
+    <p>We may update these terms. The date at the top shows when they last changed.</p>
+  </section>
+  <RelatedLinks links={[
+    { href: "/affiliate-disclosure/", icon: "🏷️", title: "Affiliate disclosure", text: "How affiliate links work on this site." },
+    { href: "/privacy/", icon: "🔒", title: "Privacy policy", text: "What we collect and your choices." },
+    { href: "/refund-policy/", icon: "↩️", title: "Refund policy", text: "Final sale for digital downloads, with a refund if a file is broken." },
+    { href: "/contact/", icon: "💬", title: "Contact us", text: "Questions, corrections, or product suggestions." },
+    { href: "/about/", icon: "ℹ️", title: "About ReadyGearHub", text: "How we choose listings and stay independent." },
+  ]} />
+</Base>

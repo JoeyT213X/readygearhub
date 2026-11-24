@@ -30,6 +30,7 @@ docs which mention the current legal name in prose.
 - `src/pages/privacy.astro` — uses `site.legalName`
 - `src/pages/contact.astro` — uses `site.legalName`
 - `src/pages/refund-policy.astro` — uses `site.legalName`
+- `src/pages/terms.astro` — uses `site.legalName`
 
 `src/data/site.json` no longer stores `legalName`.
 
