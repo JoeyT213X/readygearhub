@@ -19,7 +19,7 @@
  * lead boxes stay hidden — no sponsored label, no tracking, no invented affiliate URLs.
  *
  * ppcAllowed: set `ppcAllowed: false` for partners that bar paid-search promotion
- * (currently Choice Home Warranty, REDI, and Waterdrop Filter). FunnelGuards hides
+ * (currently Choice Home Warranty, REDI, Waterdrop Filter, and TideWe). FunnelGuards hides
  * those cards and links during an rgh_paid_search session; they stay visible on
  * ordinary organic visits. Omit the field or set it true when paid search is allowed
  * under the site Paid Advertising Policy. Use isPpcAllowed(id) and isProgramLive(id).
@@ -388,6 +388,44 @@ export const programs: Program[] = [
       'ispring-df1': 'https://www.ispringfilter.com/products/ispring-df1-faucet-mount-water-filter-150-contaminants-removal-500gal-filter-life-15gpm-filtration-rate?ref=JOSEPHTINDIGLIA',
     },
     note: 'GoAffPro, 8% commission, 40-day hold, approved Nov 23, 2026. Shop and product links append ?ref=JOSEPHTINDIGLIA. Program code REFISPRING for 10% off a new customer’s first filtration system at ispringfilter.com (one use, not combinable); present plainly, no urgency. Coupon codes are allowed only because they come through the program. No brand-term search bidding information was provided; do not bid on iSpring brand terms until we have written permission. Linked from /gear/ (water), /gear/tech/ (water filters), and the Full Source Directory water and home tabs.' },
+  { id: 'epic-water-filters', name: 'Epic Water Filters', network: 'Direct', status: 'approved', kind: 'product',
+    officialUrl: 'https://www.epicwaterfilters.com/',
+    link: 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
+    items: [
+      'epic-pure-xp-pitcher',
+      'epic-nano-xp-pitcher',
+      'epic-smart-shield',
+      'epic-smart-shield-max',
+      'epic-og-ultimate-travel-bottle',
+    ],
+    itemLinks: {
+      'epic-pure-xp-pitcher': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
+      'epic-nano-xp-pitcher': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
+      'epic-smart-shield': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
+      'epic-smart-shield-max': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
+      'epic-og-ultimate-travel-bottle': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
+    },
+    note: 'PMX affiliate platform, 15% commission, 60-day cookie, approved Nov 24, 2026. Public PMX docs did not confirm a per-product redirect parameter, so every card uses the issued affiliate link (https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO) rather than an invented deep-link query. Official product URLs stay on the write-ups for reference. Linked from /gear/ (water), /gear/tech/ (water filters), and the Full Source Directory water and home tabs.' },
+  { id: 'tidewe', name: 'TideWe', network: 'Awin', status: 'approved', kind: 'product', ppcAllowed: false,
+    officialUrl: 'https://www.tidewe.com/',
+    link: 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued={url}',
+    items: [
+      'tidewe-inferno-heated-jacket',
+      'tidewe-silentrace-heated-jacket',
+      'tidewe-thermcore-heated-vest',
+      'tidewe-thermshift-heated-vest',
+      'tidewe-torridseeker-heated-waders',
+      'tidewe-aquawade-pro-waders',
+    ],
+    itemLinks: {
+      'tidewe-inferno-heated-jacket': 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued=https%3A%2F%2Fwww.tidewe.com%2Fproducts%2Finferno-mens-camo-heated-hunting-jacket-with-battery-pack',
+      'tidewe-silentrace-heated-jacket': 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued=https%3A%2F%2Fwww.tidewe.com%2Fproducts%2Fsilentrace-heated-hunting-jacket',
+      'tidewe-thermcore-heated-vest': 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued=https%3A%2F%2Fwww.tidewe.com%2Fproducts%2Fheated-vest-double-sided-polar-fleece-hunting-vest-all-gender',
+      'tidewe-thermshift-heated-vest': 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued=https%3A%2F%2Fwww.tidewe.com%2Fproducts%2Ftidewe-heated-vest-with-battery-pack-lightweight-and-washable-vest',
+      'tidewe-torridseeker-heated-waders': 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued=https%3A%2F%2Fwww.tidewe.com%2Fproducts%2Ftidewe-hunting-chest-waders-heated-with-800g-insulation-neoprene-duck-wader-for-men-realtree-max5-camo-waterproof-fishing-waders-size-7-14',
+      'tidewe-aquawade-pro-waders': 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued=https%3A%2F%2Fwww.tidewe.com%2Fproducts%2Ftidewe-breathable-insulated-chest-waders-1600g-waterproof-bootfoot-duck-hunting-waders-with-steel-shank-boots',
+    },
+    note: 'Awin advertiser 78182, publisher 3160581, 10% commission, 30-day cookie, joined Nov 24, 2026. TideWe bans all PPC, including Google, Bing, and paid social, plus brand/TM+ bidding. Keep TideWe permanently off all paid-search landing pages and paid-ad sessions, alongside Choice Home Warranty, REDI, and Waterdrop. Only coupons issued through the affiliate program may be used. Linked from /winter-deals/, /gear/ (Warmth, Vehicle, Tools & Retailers), and the Full Source Directory outdoor tab.' },
   { id: 'amazon', name: 'Amazon Associates', network: 'Amazon', status: 'pending', kind: 'product', retailerUrls: {},
     note: 'Catch-all retailer for listings without a brand program. Official page: up to 10% depending on category. Paid ~60 days after month end.' },
   { id: 'mailerlite-referral', name: 'MailerLite', network: 'Direct', status: 'pending', kind: 'text',
@@ -675,7 +713,7 @@ export function buildLink(p: Program, destination: string): string {
  * Prefer setting `ppcAllowed: false` on the program as well; isPpcAllowed()
  * and noPpcProgramIds() honor both this list and the per-program flag.
  */
-export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop'] as const;
+export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe'] as const;
 
 /** Paid-search allowed for this program? Default true unless listed or ppcAllowed is false. */
 export function isPpcAllowed(programId: string | undefined | null): boolean {

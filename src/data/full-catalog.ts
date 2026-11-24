@@ -515,6 +515,17 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
   'milwaukee-2719-20',
   'toyota-rav4-2027',
   'toyota-tundra-2027',
+  'epic-pure-xp-pitcher',
+  'epic-nano-xp-pitcher',
+  'epic-smart-shield',
+  'epic-smart-shield-max',
+  'epic-og-ultimate-travel-bottle',
+  'tidewe-inferno-heated-jacket',
+  'tidewe-silentrace-heated-jacket',
+  'tidewe-thermcore-heated-vest',
+  'tidewe-thermshift-heated-vest',
+  'tidewe-torridseeker-heated-waders',
+  'tidewe-aquawade-pro-waders',
 ]);
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {

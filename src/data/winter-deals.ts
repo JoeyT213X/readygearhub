@@ -1,14 +1,14 @@
 /**
  * Winter prep picks for Black Friday / Cyber Monday week 2026.
  * Only items from approved programs with live tracking links.
- * Prices were read from official brand stores on November 23, 2026
+ * Prices were read from official brand stores on November 23–24, 2026
  * (America/Chicago). If a price could not be confirmed, the card says
  * "See price".
  */
-export const PRICE_CHECKED = '2026-11-23';
-export const PRICE_CHECKED_LABEL = 'November 23, 2026';
+export const PRICE_CHECKED = '2026-11-24';
+export const PRICE_CHECKED_LABEL = 'November 23–24, 2026';
 
-export type WinterDealSection = 'lights' | 'power' | 'cold' | 'water';
+export type WinterDealSection = 'lights' | 'power' | 'cold' | 'water' | 'apparel';
 
 export type WinterDeal = {
   itemId: string;
@@ -44,6 +44,12 @@ export const winterDealSections: { id: WinterDealSection; title: string; intro: 
     title: 'Drinking water if pipes or supply are a problem',
     intro:
       'A countertop iSpring dispenser does not require under-sink plumbing, which can matter if a freeze has you thinking about water at home. We could not confirm a live price on November 23, 2026, so this card says “See price.”',
+  },
+  {
+    id: 'apparel',
+    title: 'Heated apparel and insulated waders',
+    intro:
+      'Heated jackets, heated vests, and insulated bootfoot waders from TideWe, an approved partner. Official-store prices were read on November 24, 2026. When a product has more than one price by size, color, or whether a battery is included, we show the starting price. TideWe’s 16-inch rubber hunting boots were not in stock, so we listed insulated bootfoot waders instead.',
   },
 ];
 
@@ -121,6 +127,51 @@ export const winterDeals: WinterDeal[] = [
     priceLabel: 'See price',
     why: 'A plug-in countertop reverse-osmosis dispenser, according to iSpring. It is here as a water option, not because it appeared on this week’s winter best-seller lists.',
   },
+  {
+    itemId: 'tidewe-inferno-heated-jacket',
+    section: 'apparel',
+    priceLabel: 'From $144.99',
+    compareAt: '$379.99',
+    stockNote: 'All listed sizes were in stock on TideWe when checked. The official price varied by size.',
+    why: 'A waterproof heated hunting jacket TideWe sells with a battery pack. Useful as a winter outer layer when you want heat you can adjust.',
+  },
+  {
+    itemId: 'tidewe-silentrace-heated-jacket',
+    section: 'apparel',
+    priceLabel: '$159.99',
+    compareAt: '$399.99',
+    stockNote: 'In stock on TideWe when checked.',
+    why: 'A two-piece heated jacket set, with a camo outer layer and a heated mid layer, according to TideWe. A way to layer heat without buying the pieces separately.',
+  },
+  {
+    itemId: 'tidewe-thermcore-heated-vest',
+    section: 'apparel',
+    priceLabel: 'From $99.99',
+    stockNote: 'Men’s sizes were in stock on TideWe when checked; women’s Realtree Edge sizes were not. The official price varied by color.',
+    why: 'A fleece heated vest TideWe positions as a mid layer. A lower-cost way to add core heat under a shell you already own.',
+  },
+  {
+    itemId: 'tidewe-thermshift-heated-vest',
+    section: 'apparel',
+    priceLabel: 'From $108.00',
+    stockNote: 'Most sizes were in stock on TideWe when checked. The official price varied by gender, color, and size.',
+    why: 'A heated vest TideWe sells for men and women, with a battery pack. Another mid-layer option if the ThermCore color or fit is not right.',
+  },
+  {
+    itemId: 'tidewe-torridseeker-heated-waders',
+    section: 'apparel',
+    priceLabel: 'From $149.99',
+    stockNote: 'All listed sizes were in stock on TideWe when checked. The official price varied by size and by whether a battery is included.',
+    why: 'Heated chest waders with an insulated rubber bootfoot, according to TideWe. A fit for cold, wet work when a standalone boot was not in stock.',
+  },
+  {
+    itemId: 'tidewe-aquawade-pro-waders',
+    section: 'apparel',
+    priceLabel: 'From $239.99',
+    compareAt: '$299.99',
+    stockNote: 'Several sizes were in stock on TideWe when checked; some sizes and one camo pattern were not. The official price varied by camo pattern.',
+    why: 'Insulated breathable chest waders with a waterproof bootfoot TideWe describes as 1,600-gram insulated. A non-heated option if you want more boot insulation and do not need the heated system.',
+  },
 ];
 
 export const winterDealSources: { title: string; href: string; note: string }[] = [
@@ -174,6 +225,36 @@ export const winterDealSources: { title: string; href: string; note: string }[] 
     href: 'https://www.wubenlight.com/',
     note: 'C3, H4, F5, C2, and E12R sale prices above were read from each product’s official page on November 23, 2026.',
   },
+  {
+    title: 'TideWe official Inferno product page',
+    href: 'https://www.tidewe.com/products/inferno-mens-camo-heated-hunting-jacket-with-battery-pack',
+    note: 'Official store starting price $144.99, all listed sizes in stock, read November 24, 2026.',
+  },
+  {
+    title: 'TideWe official SilenTrace product page',
+    href: 'https://www.tidewe.com/products/silentrace-heated-hunting-jacket',
+    note: 'Official store price $159.99, in stock, read November 24, 2026.',
+  },
+  {
+    title: 'TideWe official ThermCore product page',
+    href: 'https://www.tidewe.com/products/heated-vest-double-sided-polar-fleece-hunting-vest-all-gender',
+    note: 'Official store starting price $99.99, men’s sizes in stock, read November 24, 2026.',
+  },
+  {
+    title: 'TideWe official ThermShift product page',
+    href: 'https://www.tidewe.com/products/tidewe-heated-vest-with-battery-pack-lightweight-and-washable-vest',
+    note: 'Official store starting price $108.00, most sizes in stock, read November 24, 2026.',
+  },
+  {
+    title: 'TideWe official TorridSeeker product page',
+    href: 'https://www.tidewe.com/products/tidewe-hunting-chest-waders-heated-with-800g-insulation-neoprene-duck-wader-for-men-realtree-max5-camo-waterproof-fishing-waders-size-7-14',
+    note: 'Official store starting price $149.99, all listed sizes in stock, read November 24, 2026.',
+  },
+  {
+    title: 'TideWe official AquaWade Pro product page',
+    href: 'https://www.tidewe.com/products/tidewe-breathable-insulated-chest-waders-1600g-waterproof-bootfoot-duck-hunting-waders-with-steel-shank-boots',
+    note: 'Official store starting price $239.99, some sizes in stock, read November 24, 2026.',
+  },
 ];
 
 export const winterDealGaps: { category: string; leaders: string; status: string }[] = [
@@ -193,9 +274,9 @@ export const winterDealGaps: { category: string; leaders: string; status: string
     status: 'No approved affiliate program. We have a HotHands write-up with a plain official link only.',
   },
   {
-    category: 'Heated apparel',
+    category: 'Heated apparel from Amazon-bestseller brands',
     leaders: 'Retail Black Friday coverage on November 22, 2026 listed Soaccks, Beamsks, and ORORO heated vests among live Amazon deals.',
-    status: 'No approved affiliate program. Bearskin and similar outdoor-clothing programs have not been added yet.',
+    status: 'No approved program for those brands. We now list TideWe heated jackets, vests, and insulated bootfoot waders from the official TideWe store.',
   },
   {
     category: 'Snow tools and ice scrapers',

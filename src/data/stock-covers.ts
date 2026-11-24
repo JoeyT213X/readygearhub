@@ -102,13 +102,13 @@ const RULES: Rule[] = [
   ['prep-food-storage', /mountain house|readywise|augason|legacy|backpacker|survival frog|food|pantry|bucket|meal|datrex|rations/],
   ['gear-flatlay', /\bredi\b|carhartt/],
   ['water-bottles', /aqua-tainer|jumbo-tainer|jug/],
-  ['hero-water-pour', /lifestraw|grayl|sawyer|katadyn|water|filter|berkey|tap score|aquasana|waterdrop/],
+  ['hero-water-pour', /lifestraw|grayl|sawyer|katadyn|water|filter|berkey|tap score|aquasana|waterdrop|epic/],
   // Camp, heat, cold
   ['stock-wood-stove', /mr\.? heater|heater|zippo|heatbank|vornado|hothands|hand warmer|fireplace/],
   ['cast-iron-fire', /lodge|skillet|cast iron/],
   ['stock-stove', /stove|cook|coleman|jetboil/],
   ['car-in-snow', /snow joe|snow-|shovel|broom|snow/],
-  ['stock-boots', /yaktrax|kahtoola|darn tough|hunter boots|boots/],
+  ['stock-boots', /yaktrax|kahtoola|darn tough|hunter boots|boots|waders|tidewe/],
   ['stock-gloves', /glove|magid/],
   // Insurance, services, tools
   ['stock-insurance', /insurance|warranty|american home shield|hiscox|liberty mutual|axa|travel/],

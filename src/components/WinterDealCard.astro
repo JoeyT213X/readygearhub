@@ -1,5 +1,6 @@
 ---
 import { outUrl, isAffiliate, programIdForItem, type Item } from '../lib/data';
+import { isNoPpcProgram } from '../data/affiliates';
 import { productPhotoFor, photoBackdropClass } from '../data/product-photos';
 import type { WinterDeal } from '../data/winter-deals';
 import { PRICE_CHECKED_LABEL } from '../data/winter-deals';
@@ -17,7 +18,7 @@ const photo = productPhotoFor({ id: item.id });
 const backdrop = photo ? photoBackdropClass({ id: item.id, name: item.data.name, brand: item.data.brand, tags: item.data.tags }) : '';
 const href = outUrl(item);
 ---
-<article class="card item-card winter-deal-card">
+<article class="card item-card winter-deal-card" data-no-ppc={isNoPpcProgram(program) ? '' : undefined} data-program={isNoPpcProgram(program) ? program : undefined}>
   {photo && (
     <a class={`item-card-photo ${backdrop}`} href={`/gear/${item.id}/`} tabindex="-1" aria-hidden="true">
       <img src={photo.src} srcset={photo.srcset} sizes="(min-width: 900px) 330px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />

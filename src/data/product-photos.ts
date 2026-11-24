@@ -114,6 +114,17 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'milwaukee-2719-20': { alt: 'Milwaukee M18 FUEL Hackzall 2719-20', widths: [480, 960, 1600, 4000] },
   'toyota-rav4-2027': { alt: '2027 Toyota RAV4 Hybrid Limited AWD', widths: [480, 960, 1600, 2048] },
   'toyota-tundra-2027': { alt: '2027 Toyota Tundra SR5', widths: [480, 960, 1600, 2048] },
+  'tidewe-inferno-heated-jacket': { alt: 'TideWe Inferno heated camo hunting jacket, front and back, with a heat-zone overlay on the official product photo', widths: [480, 800] },
+  'tidewe-silentrace-heated-jacket': { alt: 'TideWe SilenTrace two-piece heated hunting jacket set, a camo outer jacket and a tan mid-layer', widths: [480, 800] },
+  'tidewe-thermcore-heated-vest': { alt: 'TideWe ThermCore camo heated hunting vest, front and back, with a heat-zone overlay on the official product photo', widths: [480, 960, 1600] },
+  'tidewe-thermshift-heated-vest': { alt: 'TideWe ThermShift camo heated vest, front and back, shown with a battery pack and stuff sack in the official product photo', widths: [480, 960, 1200] },
+  'tidewe-torridseeker-heated-waders': { alt: 'TideWe TorridSeeker heated chest waders with an insulated rubber bootfoot, shown with a heat-zone overlay on the official product photo', widths: [480, 960, 1600] },
+  'tidewe-aquawade-pro-waders': { alt: 'TideWe AquaWade Pro insulated chest waders with a waterproof rubber bootfoot', widths: [480, 800] },
+  'epic-pure-xp-pitcher': { alt: 'Epic Pure XP water filter pitcher with a bamboo handle', widths: [480, 960, 1600] },
+  'epic-nano-xp-pitcher': { alt: 'Epic Nano XP water filter pitcher with a bamboo handle and a dark reservoir', widths: [480, 960, 1600] },
+  'epic-smart-shield': { alt: 'Epic Smart Shield under-sink water filter system with bracket, cartridge, and tubing', widths: [480, 960, 1600] },
+  'epic-smart-shield-max': { alt: 'Epic Smart Shield Max under-sink water filter with a replacement cartridge', widths: [480, 960, 1600] },
+  'epic-og-ultimate-travel-bottle': { alt: 'Epic OG Ultimate Travel Bottle, a Nalgene bottle shown with a replaceable Epic filter', widths: [480, 600] },
 };
 
 
@@ -220,6 +231,18 @@ const BY_ID: Record<string, string> = {
   'toyota-rav4-2027': 'toyota-rav4-2027',
   'toyota-tundra-2027': 'toyota-tundra-2027',
   'bluetti-ac180': 'bluetti-ac180',
+  'tidewe-inferno-heated-jacket': 'tidewe-inferno-heated-jacket',
+  'tidewe-silentrace-heated-jacket': 'tidewe-silentrace-heated-jacket',
+  'tidewe-thermcore-heated-vest': 'tidewe-thermcore-heated-vest',
+  'tidewe-thermshift-heated-vest': 'tidewe-thermshift-heated-vest',
+  'tidewe-torridseeker-heated-waders': 'tidewe-torridseeker-heated-waders',
+  'tidewe-aquawade-pro-waders': 'tidewe-aquawade-pro-waders',
+  'epic-pure-xp-pitcher': 'epic-pure-xp-pitcher',
+  'epic-nano-xp-pitcher': 'epic-nano-xp-pitcher',
+  'epic-smart-shield': 'epic-smart-shield',
+  'epic-smart-shield-max': 'epic-smart-shield-max',
+  'epic-og-ultimate-travel-bottle': 'epic-og-ultimate-travel-bottle',
+
 };
 
 
@@ -262,6 +285,6 @@ export function photoBackdropClass(item: {
   if (/flashlight|headlamp|spotlight|lantern|\blighting\b|wuben/.test(hay)) return 'backdrop-light';
   if (/(?:\bbatter(?:y|ies)\b|litime)/.test(hay) && !/solar|panel|generator kit|power station|inverter|charger|mppt|anker-solix|bluetti/.test(hay)) return 'backdrop-battery';
   if (item.category === 'power' || /power station|solar|anker-solix|bluetti|inverter|charger|mppt/.test(hay)) return 'backdrop-power';
-  if (item.category === 'water' || /ispring|aquasana|waterdrop|\bberkey\b|aquatru|clearly filtered|reverse osmosis|water filter|filtration/.test(hay)) return 'backdrop-water';
+  if (item.category === 'water' || /ispring|aquasana|waterdrop|\bberkey\b|aquatru|clearly filtered|epic|reverse osmosis|water filter|filtration/.test(hay)) return 'backdrop-water';
   return 'backdrop-default';
 }
