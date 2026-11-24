@@ -49,7 +49,8 @@ img{max-width:100%;height:auto}
 .menu-icon span{display:block;height:2px;background:currentColor;border-radius:2px}
 @media(min-width:900px){
   .primary-nav{display:block}
-  .menu-toggle{margin-left:var(--s2)}
+  .menu-toggle{margin-left:var(--s2);padding:8px 12px;min-width:44px;justify-content:center}
+  .menu-toggle .menu-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   .site-header .logo{font-size:1.3rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
 }
 @media(min-width:1024px){
@@ -278,6 +279,8 @@ html.menu-open body{position:fixed;left:0;right:0;overflow:hidden;width:100%}
 
 .product-card .product-cover{display:block;margin:-18px -18px 14px;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;background:#eef2f5}
 .product-card .product-cover img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.product-card:not(.source-card) .product-cover{aspect-ratio:4/5;background:#e8efe8;display:flex;align-items:center;justify-content:center}
+.product-card:not(.source-card) .product-cover img{width:100%;height:100%;aspect-ratio:auto;object-fit:contain;object-position:center top;background:#f4f1ea}
 .product-price{font-weight:700;color:var(--ink);margin:.15em 0 .4em}
 .hero-price{font-size:1.35rem;margin:8px 0 0}
 .btn.coming-soon{background:transparent;color:var(--muted);border:1.5px solid var(--line);cursor:default;font-weight:700}
@@ -359,7 +362,7 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
 .btn:active{transform:none}
 .btn.small{min-height:40px}
 
-.footer-trust{list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 auto 16px;padding:16px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#c7d6e0;font-size:.9rem}
+.footer-trust{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin:0 auto 16px;padding:16px 20px 0;border-top:1px solid rgba(255,255,255,.1);color:#c7d6e0;font-size:.9rem}
 .footer-trust li{position:relative}
 .footer-trust li+li::before{content:"·";position:absolute;left:-12px;color:#7f96a6}
 .footer-trust a{color:#a9dcf7;text-decoration:none}
@@ -462,7 +465,7 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
 .hero-btn-hub{order:2}
 .hero-bento-copy-text{order:0}
 .hero-bento-actions{display:contents}
-.hero-quick{display:none}
+.hero.is-bento .hero-quick{display:none}
 .hero-bento-tile{position:relative;display:block;overflow:hidden;border-radius:14px;background:#0b1c28;min-height:132px;text-decoration:none;color:#fff;isolation:isolate}
 .hero-bento-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:saturate(1.08) contrast(1.06);transform:scale(1.04);transition:transform .25s ease}
 .hero-bento-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,25,38,.08) 30%,rgba(9,25,38,.42) 100%);pointer-events:none;z-index:1}
@@ -481,7 +484,7 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.situation:hove
   .hero-bento-actions{display:flex;grid-area:actions;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px}
   .hero-bento-copy .btn{width:auto;max-width:100%;flex:0 0 auto;order:unset}
   .hero-btn-dir,.hero-btn-hub{order:unset}
-  .hero-quick{display:flex;flex-direction:column;gap:5px;min-width:0;width:100%;max-width:240px}
+  .hero.is-bento .hero-quick{display:flex;flex-direction:column;gap:5px;min-width:0;width:100%;max-width:240px}
   .hero-quick-left{grid-area:left;justify-self:start;align-self:center}
   .hero-quick-right{grid-area:right;justify-self:end;align-self:center}
   .hero-quick-link{display:flex;align-items:center;justify-content:center;gap:6px;min-height:36px;padding:6px 10px;border-radius:16px;background:rgba(9,25,38,.9);border:1px solid rgba(255,255,255,.22);box-shadow:0 4px 10px rgba(0,0,0,.2);color:#fff;text-decoration:none;box-sizing:border-box;font-weight:600;font-size:13px;line-height:1.2;text-align:center;white-space:nowrap}
@@ -765,7 +768,7 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
   object-position:center center;
   padding:0;
   background:transparent;
-  mix-blend-mode:multiply;
+  mix-blend-mode:normal;
   position:relative;
   z-index:1;
 }
@@ -778,14 +781,14 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
   justify-content:center;
   border-radius:10px;
 }
-.gear-official-photo img{display:block;width:90%;height:90%;max-width:90%;max-height:90%;object-fit:contain;background:transparent;aspect-ratio:auto;mix-blend-mode:multiply;position:relative;z-index:1}
+.gear-official-photo img{display:block;width:90%;height:90%;max-width:90%;max-height:90%;object-fit:contain;background:transparent;aspect-ratio:auto;mix-blend-mode:normal;position:relative;z-index:1}
 .gear-official-photo figcaption{padding:8px 4px 0;font-size:.82rem;color:var(--muted)}
 .brand-tile .tile-official{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:right center;border-radius:8px}
 
 .item-card-photo{display:flex;align-items:center;justify-content:center;margin:-18px -18px 14px;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;aspect-ratio:16/9;isolation:isolate;background:
     radial-gradient(ellipse 70% 55% at 78% 14%, var(--photo-glow, rgba(242,166,90,.22)), transparent 58%),
     radial-gradient(ellipse 95% 85% at 48% 42%, var(--photo-bg-1, #f7f4ee) 0%, var(--photo-bg-2, #e6eef4) 72%)}
-.item-card-photo img{display:block;width:90%;height:90%;max-width:90%;max-height:90%;object-fit:contain;background:transparent;aspect-ratio:auto;mix-blend-mode:multiply;position:relative;z-index:1}
+.item-card-photo img{display:block;width:90%;height:90%;max-width:90%;max-height:90%;object-fit:contain;background:transparent;aspect-ratio:auto;mix-blend-mode:normal;position:relative;z-index:1}
 
 @media(max-width:699px){
   .photo-stage::before,
@@ -801,3 +804,16 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
   .item-card-photo img,
   .gear-official-photo img{mix-blend-mode:normal}
 }
+
+/* Guide topic chips sit under the hero, not over the photo. */
+.guide-topics{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 1.4rem;padding:0}
+.guide-topics a{display:inline-flex;align-items:center;gap:6px;color:var(--ink);text-decoration:none;background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-size:.92rem;font-weight:600}
+.guide-topics a:hover{border-color:var(--line-2);box-shadow:var(--shadow);color:var(--ink)}
+.kit-card{overflow:hidden;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;padding:0}
+.kit-card .kit-card-img{display:block;aspect-ratio:16/9;overflow:hidden;background:var(--ice)}
+.kit-card .kit-card-img img{width:100%;height:100%;object-fit:cover;display:block}
+.kit-card .kit-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+.kit-card h3{margin:0}
+.kit-card p{margin:0;color:var(--muted);font-size:.93rem}
+.kit-card .count{margin-top:auto}
+.kit-card:hover{border-color:var(--ice-2);box-shadow:var(--shadow-lg);color:var(--ink)}

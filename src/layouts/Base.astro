@@ -135,7 +135,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
           {primaryNavExtra.map((n) => <li class={`nav-extra is-${n.reveal}`}><a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
         </ul>
       </nav>
-      <button type="button" class="menu-toggle" aria-controls="site-drawer" aria-expanded="false" data-menu-open>
+      <button type="button" class="menu-toggle" aria-controls="site-drawer" aria-expanded="false" aria-label="Open the menu" data-menu-open>
         <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="menu-label">Menu</span>
       </button>
