@@ -9,8 +9,6 @@ relatedItems: ["reliance-jumbo-tainer-2", "reliance-aqua-tainer", "datrex-emerge
 
 Clean drinking water may be hard to get after a hurricane. Power outages can stop pumps and treatment plants, flooding can contaminate wells, and a boil-water notice can last after the winds die down. The most reliable plan is to store water *before* the storm, then have a way to treat more if you need it.
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links, and one section links to a sponsored home-filter retailer. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 ## How much water to store
 
 [Ready.gov](https://www.ready.gov/water) recommends storing **at least one gallon of water per person per day for several days**, for drinking and sanitation. A normally active person needs about three-quarters of a gallon of fluid a day, but needs vary with age, health, activity, and climate. Ready.gov notes that children, nursing mothers, and sick people may need more, a medical emergency may require more, and in very hot weather water needs can double.

@@ -12,8 +12,6 @@ When the power goes out, people reach for backup heat and backup power. Some of 
 
 This guide is general preparedness information, **not medical advice**. If you think someone is being poisoned by carbon monoxide, get everyone into fresh air and call **911**. You can also call Poison Help at **1-800-222-1222**, which connects you to your local poison center ([HRSA Poison Help: Carbon Monoxide](https://poisonhelp.hrsa.gov/faq/carbon-monoxide)).
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 ## What carbon monoxide is
 
 The CDC describes carbon monoxide as an odorless, colorless gas that can cause sudden illness and death if inhaled. It comes from fumes produced whenever you burn fuel in cars or trucks, small engines, stoves, lanterns, grills, fireplaces, gas ranges, or furnaces. CO can build up indoors and poison people and animals who breathe it ([CDC: Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)).

@@ -9,8 +9,6 @@ relatedItems: ["black-diamond-spot-400", "fenix-hm65r-v2", "leatherman-wave-plus
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 In much of the Deep South, hard freezes don't come often enough for most of us to have a routine. Then a cold snap arrives and everyone's asking the same thing: *do I need to drip my faucets tonight?* This guide covers what to do before a freeze, the night it hits, and if a pipe freezes anyway. It's based on the American Red Cross's frozen-pipe guidance.
 
 > **Free: Winter Storm Ready Checklist.** Pipes, power, heat, and food in one printable checklist. [Get the checklist](/winter-storm-ready-checklist/)

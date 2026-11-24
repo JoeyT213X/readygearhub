@@ -9,8 +9,6 @@ relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-cran
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links, and some go to sponsored partners (a home warranty plan, a password manager, and a VPN, all paid services). If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 Most winters in the South bring a few cold mornings and nothing more. Then every few years a storm drops freezing rain on trees and power lines, the roads glaze over, and a lot of us find out at the same time that our houses, cars, and plans were built for heat, not ice. This guide pulls everything together in one place: what to do before the storm, how to keep the house and the people in it safe while the power is out, and what to check once it's over.
 
 It's long on purpose. Use the contents below to jump to what you need right now, and print the [free Winter Storm Ready Checklist](/winter-storm-ready-checklist/) if you'd rather work from paper. Every safety number on this page comes from the National Weather Service (NWS), Ready.gov, the CDC, or FoodSafety.gov, with a link so you can check it yourself. Advice on copies of important documents and on public Wi-Fi comes from Ready.gov and CISA.

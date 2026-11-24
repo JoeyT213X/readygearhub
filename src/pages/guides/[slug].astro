@@ -55,6 +55,7 @@ const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month:
         <Photo name={photoKey} eager sizes="(min-width: 1024px) 760px, 100vw" />
         <figcaption>Photo: <a href={photos[photoKey].sourceUrl} rel="noopener" target="_blank">{photos[photoKey].author} on Unsplash</a></figcaption>
       </figure>
+      <Disclosure />
       <div class="prose guide"><Content /></div>
     </article>
     <aside class="guide-aside" aria-label="Guide navigation">

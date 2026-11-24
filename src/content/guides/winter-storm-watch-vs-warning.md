@@ -9,8 +9,6 @@ relatedItems: ["midland-er310-crank-radio", "eton-red-cross-frx2", "black-diamon
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 Your phone buzzes: **Winter Storm Watch.** A day later it says **Warning.** Then there's an **Advisory** for the next county over. These words mean different things, and knowing the difference tells you how much time you have and what to do with it. Here's a plain-English guide based on National Weather Service (NWS) and Ready.gov definitions.
 
 > **Free: Winter Storm Ready Checklist.** Know what to do the moment a watch is issued. [Get the checklist](/winter-storm-ready-checklist/)

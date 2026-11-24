@@ -4,6 +4,7 @@ import PageHero from '../../components/PageHero.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SourceCard from '../../components/SourceCard.astro';
 import ComingSoonPartners from '../../components/ComingSoonPartners.astro';
+import Disclosure from '../../components/Disclosure.astro';
 import {
   sourceCategories,
   sourceStores,
@@ -62,7 +63,7 @@ const schema = {
   />
 
   <section class="wrap section">
-    <p class="disclosure"><strong>Affiliate disclosure:</strong> Many links on this page are affiliate links. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. We don’t invent prices or ratings. <a href="/affiliate-disclosure/">Full disclosure</a></p>
+    <Disclosure />
 
     {spotlights.length > 0 && (
       <p class="fine brand-spotlight-strip"><strong>Brand spotlights:</strong> {spotlights.map((b, i) => (<>{i > 0 && ' · '}<a href={`/brands/${b.slug}/`}>{b.name}</a></>))} · <a href="/brands/">All spotlights</a></p>

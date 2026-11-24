@@ -1,5 +1,6 @@
 ---
 import type { BrandPage } from '../data/brands';
+import Disclosure from './Disclosure.astro';
 interface Crumb { href?: string; label: string }
 interface Props {
   brand: BrandPage;
@@ -32,6 +33,7 @@ const srcset = hero ? [480, 960, 1600].map((w) => `/images/photos/${hero}-${w}.w
       {brand.eyebrow && <p class="eyebrow">{brand.eyebrow}</p>}
       <h1>{brand.name}</h1>
       {brand.lead && <p class="lead">{brand.lead}</p>}
+      <Disclosure />
       <div class="hero-actions">
         <a class="btn" href="#picks">See the picks</a>
         <a class="btn ghost" href={shopHref} target="_blank" rel={shopAffiliate ? 'sponsored nofollow noopener' : 'noopener'} data-program={shopAffiliate ? brand.programId : undefined}>Visit {brand.name} ↗</a>

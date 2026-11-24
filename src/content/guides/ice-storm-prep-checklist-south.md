@@ -9,8 +9,6 @@ relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "goal-zero
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 In Mississippi and across the Deep South, ice is often a bigger problem than snow. The National Weather Service explains that heavy ice can bring down trees and topple utility poles, cutting power and communications for days. Even a thin glaze makes roads and steps dangerous. The good news is that you usually get a day or two of warning. Here's how to use it, hour by hour.
 
 > **Want this on paper?** Get the free **Winter Storm Ready Checklist** and keep it on the fridge. [Get the checklist](/winter-storm-ready-checklist/)

@@ -12,8 +12,6 @@ A tornado watch and a tornado warning are not the same thing, and in Mississippi
 
 Night storms are harder to see. That is why a practiced safe place and a way to get alerts that does not depend only on a glance out the window matter here.
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 ## The short version
 
 | Alert | NWS shorthand | What it means | What to do |

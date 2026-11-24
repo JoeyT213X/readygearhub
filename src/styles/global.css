@@ -237,7 +237,11 @@ html.menu-open body{position:fixed;left:0;right:0;overflow:hidden;width:100%}
 .guide-aside .card+.card{margin-top:16px}
 .meta-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:.9rem;color:#c3d6e3;margin-top:8px}
 
-.disclosure{font-size:.85rem;color:var(--muted);background:#fff;border:1px dashed var(--line-2);border-radius:var(--radius-sm);padding:10px 12px;margin:0 0 16px}
+.disclosure{font-size:.82rem;line-height:1.45;font-weight:400;color:var(--muted);background:none;border:0;border-radius:0;padding:0;margin:0 0 12px}
+.disclosure a{color:#0a5f91}
+.disclosure.is-on-dark{color:#c5d4de;margin:0 0 14px}
+.disclosure.is-on-dark a{color:#d7effb}
+
 .cta-band{background:var(--ice);border-radius:var(--radius);text-align:center;margin:20px auto 40px;max-width:1140px}
 .cta-band h2{margin-top:0}
 .chip-list{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}

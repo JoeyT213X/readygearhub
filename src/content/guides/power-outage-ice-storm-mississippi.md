@@ -9,8 +9,6 @@ relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "black-dia
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 Ice storms don't hit Mississippi every winter, but when one does, it can take out power across a wide area. The National Weather Service explains why: heavy ice can bring down trees and topple utility poles, and it can disrupt power and communications for days while crews repair the damage. Here's what to do, in order, once the lights go out.
 
 > **Get the free Winter Storm Ready Checklist.** A printable checklist to stick on the fridge before the next storm. [Get the checklist](/winter-storm-ready-checklist/)

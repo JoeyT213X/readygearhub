@@ -10,8 +10,6 @@ draft: false
 
 Food and water plans belong together. After a hurricane or a long ice-storm outage, stores may be closed, roads may be blocked, and the refrigerator will not stay cold forever. The simplest plan is to store food *before* the storm that your household will actually eat, that does not need a fridge, and that you can prepare with the water and heat you will have on hand. For how much water to store and when a filter helps, use our [guide to emergency water storage](/guides/emergency-water-storage/) or the [water calculator](/tools/water-calculator/).
 
-*Heads up: some links on this page lead to gear listings, which go to official pages until a program is approved. If you later buy through an affiliate link, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 *This page is general official guidance, not a determination that any specific food is safe, and not a substitute for local health-department or physician instructions.*
 
 ## How much food to store

@@ -3,7 +3,6 @@ import Base from '../../layouts/Base.astro';
 import BrandHero from '../../components/BrandHero.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SourceCard from '../../components/SourceCard.astro';
-import Disclosure from '../../components/Disclosure.astro';
 import { brandPages } from '../../data/brands';
 import { resolveOutbound } from '../../data/affiliates';
 import { getItems } from '../../lib/data';
@@ -38,7 +37,6 @@ const schema = [
 
   <section class="wrap section tight brand-intro">
     <p class="brand-photo-note">{brand.photoNote}</p>
-    <Disclosure />
     <p class="brand-summary">{brand.summary}</p>
   </section>
 
@@ -102,6 +100,5 @@ const schema = [
       <ul>{brand.related.map((l) => <li><a href={l.href}>{l.label}</a>{l.note && <span> · {l.note}</span>}</li>)}</ul>
       <ul>{brand.directories.map((l) => <li><a href={l.href}>{l.label}</a></li>)}<li><a href="/brands/">All brand spotlights</a></li></ul>
     </div>
-    <p class="disclosure"><strong>Affiliate disclosure:</strong> ReadyGearHub is a partner of {brand.name}. If you buy through the links on this page, we may earn a commission at no extra cost to you. Specifications and prices come from the maker’s own pages and can change. <a href="/affiliate-disclosure/">Full disclosure</a></p>
   </section>
 </Base>

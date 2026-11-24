@@ -5,6 +5,7 @@ import PageHero from '../../components/PageHero.astro';
 import LaneCard from '../../components/LaneCard.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import SectionHead from '../../components/SectionHead.astro';
+import Disclosure from '../../components/Disclosure.astro';
 import { lanes, getGuides } from '../../lib/data';
 import { getItems } from '../../lib/data';
 import { categories, entries, categoryForItem, resolveEntry } from '../../data/directory';
@@ -38,7 +39,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
   </section>
   <section class="wrap section" id="categories">
     <SectionHead kicker="Directory" title="Browse by category" />
-    <p class="disclosure"><strong>Affiliate disclosure:</strong> Some links in this directory are affiliate links, marked with an "Affiliate link" tag. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. Affiliate relationships do not change what we list or how we describe it. Entries without that tag are plain links to the official site. Each card says what the offer is (for example, a paid plan or a free public resource). We do not show prices or ratings. <a href="/affiliate-disclosure/">Full disclosure</a></p>
+    <Disclosure />
     <nav class="dir-nav" aria-label="Directory categories">
       {groups.map((g) => <a class="pill" href={`#${g.id}`}>{g.icon} {g.name} ({g.items.length + g.entries.length})</a>)}
     </nav>

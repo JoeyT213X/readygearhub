@@ -8,8 +8,6 @@ relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-cran
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links, and some go to sponsored partners (a home warranty plan, a password manager, a VPN, and battery power stations, all paid products or services). If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 Hurricane season on the Gulf Coast is a regular part of life from the Mississippi Coast through coastal Alabama and Louisiana, and it is not only a beach problem. A storm that comes ashore near Biloxi, Mobile, or New Orleans can also flood roads, drop trees, and cut power far inland — in places like Hattiesburg, Jackson, Birmingham, Montgomery, Baton Rouge, and Lafayette. This guide pulls the prep into one place: how to read the alerts, when to leave, how to get the house and the people in it ready, and what to check once the wind dies down.
 
 It's long on purpose. Use the contents below to jump to what you need right now. Every safety number on this page comes from the National Hurricane Center (NHC), the National Weather Service (NWS), Ready.gov (FEMA's preparedness site), the CDC, FoodSafety.gov, or CISA, with a link so you can check it yourself.

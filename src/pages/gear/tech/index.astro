@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import ItemCard from '../../../components/ItemCard.astro';
+import Disclosure from '../../../components/Disclosure.astro';
 import { getItems } from '../../../lib/data';
 import { techGroups, entries, resolveEntry, techGroupForItem } from '../../../data/directory';
 import { isNoPpcProgram } from '../../../data/affiliates';
@@ -30,7 +31,7 @@ const schema = {
     <p class="lead">Newer prep gear is less about gadgets for their own sake and more about keeping power, water, alerts, and a way to call for help when a storm or outage knocks out the usual systems. This section gathers current portable power stations and solar, home backup batteries, satellite messengers, NOAA weather radios, water filters and purifiers, and smart leak, freeze, and smoke/CO sensors.</p>
   </div></section>
   <section class="wrap section">
-    <p class="disclosure"><strong>Affiliate disclosure:</strong> Some links in this directory are affiliate links, marked with an "Affiliate link" tag. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. Affiliate relationships do not change what we list or how we describe it. Entries without that tag are plain links to the official site. Each card says what the offer is (for example, a paid plan or a free public resource). We do not show prices or ratings. <a href="/affiliate-disclosure/">Full disclosure</a></p>
+    <Disclosure />
     <nav class="dir-nav" aria-label="Newest tech groups">
       {groups.map((g) => <a class="pill" href={`#${g.id}`}>{g.icon} {g.name} ({g.items.length + g.entries.length})</a>)}
     </nav>

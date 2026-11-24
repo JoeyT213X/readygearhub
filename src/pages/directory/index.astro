@@ -5,6 +5,7 @@ import SectionHead from '../../components/SectionHead.astro';
 import SourceCard from '../../components/SourceCard.astro';
 import DirectoryGroupTile from '../../components/DirectoryGroupTile.astro';
 import ComingSoonPartners from '../../components/ComingSoonPartners.astro';
+import Disclosure from '../../components/Disclosure.astro';
 import { sourceGroups, sourceStores, comingSoonFor } from '../../data/source-directory';
 import { getItems } from '../../lib/data';
 import { buildFullCatalog, countsByCatalogGroup } from '../../data/full-catalog';
@@ -45,7 +46,7 @@ const schema = {
   />
 
   <section class="wrap section tight">
-    <p class="disclosure"><strong>Affiliate disclosure:</strong> Many links on this page are affiliate links. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. We only use tracking links from programs we’re already approved for. We don’t invent prices or ratings; if we don’t already have a verified price, the card says “See price.” Paid plans and warranties are labeled as such. Some cards are official public resources or our own free tools, and those are marked that way. <a href="/affiliate-disclosure/">Full disclosure</a></p>
+    <Disclosure />
   </section>
 
   <section class="wrap section tight" id="categories">

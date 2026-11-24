@@ -42,6 +42,7 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
       <h1>{d.name}</h1>
       <p class="brand light">by {d.brand}</p>
       <p class="lead">{d.description}</p>
+      <Disclosure onDark />
       <div class="hero-actions">
         {guides[0] && <a class="btn ghost light" href={`/guides/${guides[0].id}/`}>Read the guide first</a>}
         <a class="btn" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>Check current price at {isAffiliate(item) ? 'retailer' : d.brand} ↗</a>
@@ -50,7 +51,6 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
   </section>
   <section class="wrap section detail">
     <div class="detail-main">
-      <Disclosure />
       {photo && (
         <figure class={`gear-official-photo ${backdrop}`}>
           <div class="photo-stage">

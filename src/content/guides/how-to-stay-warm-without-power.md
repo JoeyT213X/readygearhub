@@ -9,8 +9,6 @@ relatedItems: ["eton-blackout-buddy-co", "mr-heater-portable-buddy", "mr-heater-
 draft: false
 ---
 
-*Heads up: some links on this page lead to gear listings that may have affiliate links. If you buy through them, we may earn a commission at no extra cost to you. [Read our disclosure](/affiliate-disclosure/).*
-
 When a winter storm knocks out the power, most homes lose heat too. Even gas furnaces usually need electricity for the blower and controls. The good news is that you can stay reasonably warm for a long time without any heater at all, if you focus on keeping *people* warm instead of the whole house. Here's how to do it without creating a bigger emergency.
 
 > **Free: Winter Storm Ready Checklist.** A one-page printable for heat, light, food, water, and safety. [Get the checklist](/winter-storm-ready-checklist/)

@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SourceCard from '../../components/SourceCard.astro';
+import Disclosure from '../../components/Disclosure.astro';
 import { prepperLanes, resolvedPrepperPicks, prepperPickToCatalogItem } from '../../data/prepper-picks';
 
 const picks = resolvedPrepperPicks();
@@ -28,7 +29,7 @@ const schema = {
   />
 
   <section class="wrap section tight">
-    <p class="disclosure"><strong>Affiliate disclosure:</strong> Some links on this page are affiliate links. If you buy or sign up through one, ReadyGearHub may earn a commission at no extra cost to you. We only use tracking links from programs we’re already approved for. Cards without a partner program go to the official product, category, or government page, with no tracking. We don’t invent prices or ratings; if we don’t already have a verified price, the card says “See price.” <a href="/affiliate-disclosure/">Full disclosure</a></p>
+    <Disclosure />
   </section>
 
   <section class="wrap section tight">
