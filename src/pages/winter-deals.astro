@@ -1,0 +1,151 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import SectionHead from '../components/SectionHead.astro';
+import Disclosure from '../components/Disclosure.astro';
+import MailerLiteSignup from '../components/MailerLiteSignup.astro';
+import WinterDealCard from '../components/WinterDealCard.astro';
+import { getItems, getGuides, site } from '../lib/data';
+import { isAffiliate } from '../lib/data';
+import {
+  winterDeals,
+  winterDealSections,
+  winterDealSources,
+  winterDealGaps,
+  PRICE_CHECKED_LABEL,
+} from '../data/winter-deals';
+
+const all = await getItems();
+const byId = new Map(all.map((i) => [i.id, i]));
+const picks = winterDeals.map((deal) => {
+  const item = byId.get(deal.itemId);
+  if (!item) throw new Error(`Winter deal is missing catalog item: ${deal.itemId}`);
+  if (!isAffiliate(item)) throw new Error(`Winter deal is not a live affiliate listing: ${deal.itemId}`);
+  return { deal, item };
+});
+const sections = winterDealSections.map((section) => ({
+  ...section,
+  picks: picks.filter((p) => p.deal.section === section.id),
+}));
+
+const guides = (await getGuides()).filter((g) => g.data.season.includes('winter')).slice(0, 8);
+const url = new URL('/winter-deals/', Astro.site).href;
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Winter prep picks this week',
+    description: 'Winter-ready lights, backup power, and related gear from ReadyGearHub partner programs, with prices checked November 23, 2026.',
+    url,
+    isPartOf: site.url,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Winter prep picks this week',
+    numberOfItems: picks.length,
+    itemListElement: picks.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: p.item.data.name,
+      url: new URL(`/gear/${p.item.id}/`, Astro.site).href,
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: 'Winter prep picks', item: url },
+    ],
+  },
+];
+---
+<Base
+  title="Winter prep picks this week | ReadyGearHub"
+  description="Lights, backup power, and other winter-ready gear from partner programs we can actually earn on. Prices checked November 23, 2026. We don’t list heaters, blankets, or snow tools we can’t earn on."
+  schema={schema}
+>
+  <PageHero
+    title="Winter prep picks this week"
+    eyebrow="Black Friday and Cyber Monday week"
+    lead="A short list of winter-ready gear from partner programs we already have, with prices checked on official stores. We left off this week’s best-selling heaters, blankets, hand warmers, and snow tools because we don’t have a way to earn on them yet."
+    photo="winter-storm-street"
+    crumbs={[{ label: 'Winter prep picks' }]}
+  >
+    <p class="meta-row">Prices checked {PRICE_CHECKED_LABEL} (America/Chicago). Stock and prices change, so confirm on the official page.</p>
+  </PageHero>
+
+  <section class="wrap section tight prose">
+    <Disclosure />
+    <h2>What is selling this week, and what we can actually list</h2>
+    <p>
+      On {PRICE_CHECKED_LABEL}, Amazon’s best-seller lists were led by portable space heaters (DREO, GiveBest, Amazon Basics, Lasko),
+      HotHands hand warmers, Bedsure heated throws, and an AstroAI snow brush. Retail Black Friday coverage also highlighted heated vests
+      from brands such as ORORO. Those are useful categories. We do not have approved affiliate programs for them, Amazon Associates is still
+      pending, and this site does not use Sovrn, so we are not adding buy links for those products.
+    </p>
+    <p>
+      Our own ReadyGearHub analytics from November 18 through {PRICE_CHECKED_LABEL} show only seven clicks on product links,
+      each a single click, and none clustered on heaters, blankets, or snow tools. The list below is limited to winter-relevant items from
+      approved programs with working tracking links: Wuben, Anker SOLIX, BLUETTI, LiTime, and iSpring.
+    </p>
+  </section>
+
+  {sections.map((section) => (
+    <section class="wrap section" id={section.id}>
+      <SectionHead kicker="Partner picks" title={section.title} intro={section.intro} />
+      <div class="grid">
+        {section.picks.map((p) => <WinterDealCard item={p.item} deal={p.deal} />)}
+      </div>
+    </section>
+  ))}
+
+  <section class="band" id="alerts">
+    <div class="wrap section">
+      <MailerLiteSignup
+        variant="card"
+        form="stormReminders"
+        heading="Winter deal alerts"
+        intro="If you want a note when an approved partner runs a real winter sale, you can join the same ReadyGearHub list we already use for storm-readiness reminders. A few calm emails a season, not a daily deal blast."
+        perks={[
+          'An occasional note when a partner we already work with has a real winter sale',
+          'The same list as our storm-readiness reminders',
+          'Unsubscribe anytime',
+        ]}
+        note="We won’t email you about brands we can’t earn on, and we won’t invent discounts."
+      />
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <SectionHead kicker="Keep going" title="Winter guides and directories" intro="These pages are the rest of the funnel: how to stay warm, what to pack in the car, and the full partner catalogs." href="/guides/" linkLabel="All guides" />
+    <ul class="chip-list">
+      {guides.map((g) => <li><a class="pill" href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}
+      <li><a class="pill" href="/winter-storm-ready-checklist/">Free winter storm checklist</a></li>
+      <li><a class="pill" href="/directory/power/">Power directory</a></li>
+      <li><a class="pill" href="/directory/outdoor/">Outdoor directory</a></li>
+      <li><a class="pill" href="/directory/auto/">Auto directory</a></li>
+      <li><a class="pill" href="/directory/home/">Home directory</a></li>
+      <li><a class="pill" href="/directory/water/">Water directory</a></li>
+      <li><a class="pill" href="/directory/safety/">Safety directory</a></li>
+    </ul>
+  </section>
+
+  <section class="wrap section tight prose" id="gaps">
+    <h2>Categories that still lack an earning program</h2>
+    <p>We are not going to invent a way to sell these this week. They are listed so the gaps stay visible.</p>
+    <ul>
+      {winterDealGaps.map((g) => (
+        <li><strong>{g.category}.</strong> {g.leaders} {g.status}</li>
+      ))}
+    </ul>
+    <h2>Sources</h2>
+    <ul>
+      {winterDealSources.map((s) => (
+        <li><a href={s.href} rel="noopener" target="_blank">{s.title}</a> — {s.note}</li>
+      ))}
+      <li>ReadyGearHub GA4 property 565093262, <code>affiliate_click</code> events from November 18, 2026 through {PRICE_CHECKED_LABEL}.</li>
+    </ul>
+  </section>
+</Base>

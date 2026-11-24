@@ -11,6 +11,8 @@ import {
   comingSoonFor,
   categoryBySlug,
 } from '../../data/source-directory';
+import WinterDealsCallout from '../../components/WinterDealsCallout.astro';
+import { isWinterDealDirectoryCategory } from '../../data/winter-deals';
 import { getItems } from '../../lib/data';
 import { buildFullCatalog } from '../../data/full-catalog';
 import { brandPages } from '../../data/brands';
@@ -64,6 +66,10 @@ const schema = {
 
   <section class="wrap section">
     <Disclosure />
+
+    {isWinterDealDirectoryCategory(category.id) && (
+      <WinterDealsCallout />
+    )}
 
     {spotlights.length > 0 && (
       <p class="fine brand-spotlight-strip"><strong>Brand spotlights:</strong> {spotlights.map((b, i) => (<>{i > 0 && ' · '}<a href={`/brands/${b.slug}/`}>{b.name}</a></>))} · <a href="/brands/">All spotlights</a></p>

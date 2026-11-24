@@ -9,6 +9,8 @@ import SectionHead from '../components/SectionHead.astro';
 import { lanes, getItems, getItemsForLane, getGuides } from '../lib/data';
 import { photoForLane } from '../data/images';
 import { CALCULATORS } from '../lib/app-config';
+import WinterDealsCallout from '../components/WinterDealsCallout.astro';
+import { isWinterDealLane } from '../data/winter-deals';
 export async function getStaticPaths() {
   return lanes.map((lane) => ({ params: { lane: lane.slug }, props: { lane } }));
 }
@@ -55,6 +57,11 @@ const schema = [
       {guides[0] && <a class="btn ghost light" href={`/guides/${guides[0].id}/`}>Read: {guides[0].data.title.replace(/\s*[:(].*$/, '')}</a>}
     </div>
   </PageHero>
+  {isWinterDealLane(lane.slug) && (
+    <section class="wrap section tight">
+      <WinterDealsCallout />
+    </section>
+  )}
   {guides.length > 0 && (
     <section class="band">
       <div class="wrap section tight">

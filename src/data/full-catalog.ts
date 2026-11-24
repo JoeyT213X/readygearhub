@@ -91,7 +91,10 @@ const GEAR_ALIAS: Record<string, string> = {
 function seoAlsoIn(group: SourceGroupId, originCat: string): string[] | undefined {
   const extra: string[] = [];
   if (group === 'safety-prep' && originCat !== 'safety') extra.push('safety');
-  if (group === 'home-water' && originCat !== 'water' && originCat !== 'home') extra.push('home', 'water');
+  if (group === 'home-water') {
+    if (originCat === 'home-protection' || originCat === 'insurance') extra.push('home');
+    else if (originCat !== 'water' && originCat !== 'home') extra.push('home', 'water');
+  }
   if (group === 'power-tech' && originCat !== 'power' && originCat !== 'tech') extra.push('tech');
   if (group === 'outdoor-auto' && originCat !== 'outdoor') extra.push('outdoor');
   return extra.length ? extra : undefined;
