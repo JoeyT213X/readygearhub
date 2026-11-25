@@ -44,6 +44,8 @@ export type CatalogItem = {
   groups: SourceGroupId[];
   kind: CatalogKind;
   origin: 'source-directory' | 'gear' | 'directory' | 'tools' | 'apps' | 'payhip' | 'prepper';
+  /** Low-key filler cards: after US/allied listings, not featured, not on the home page. */
+  filler?: boolean;
 };
 
 export type GearInput = {
@@ -316,6 +318,9 @@ function fromTools(): CatalogItem[] {
 
 export function sortFullCatalog(items: CatalogItem[]): CatalogItem[] {
   return [...items].sort((a, b) => {
+    const af = a.filler ? 1 : 0;
+    const bf = b.filler ? 1 : 0;
+    if (af !== bf) return af - bf;
     const ar = a.trending ? (a.trendingRank ?? 50) : a.image ? 200 : 800;
     const br = b.trending ? (b.trendingRank ?? 50) : b.image ? 200 : 800;
     if (ar !== br) return ar - br;

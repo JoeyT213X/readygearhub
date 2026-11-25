@@ -9,7 +9,8 @@
   "label": "Quadruped robot",
   "price": "$1,990 on Robots International as of Nov 25, 2026",
   "cta": "See price at Robots International",
-  "group": "robots"
+  "group": "robots",
+  "filler": false
  },
  {
   "id": "ri-fx-aegis-ultra-w-wheel-legged-robot-dog",
@@ -21,7 +22,8 @@
   "label": "Wheeled quadruped robot",
   "price": "$12,990 on Robots International as of Nov 25, 2026",
   "cta": "See price at Robots International",
-  "group": "robots"
+  "group": "robots",
+  "filler": false
  },
  {
   "id": "ri-fx-aegis-ultra-w-plus",
@@ -33,7 +35,8 @@
   "label": "Wheeled quadruped robot",
   "price": "$24,990 on Robots International as of Nov 25, 2026",
   "cta": "See price at Robots International",
-  "group": "robots"
+  "group": "robots",
+  "filler": false
  },
  {
   "id": "ri-fx-aegis-ultra-plus",
@@ -45,7 +48,8 @@
   "label": "Quadruped robot",
   "price": "$22,990 on Robots International as of Nov 25, 2026",
   "cta": "See price at Robots International",
-  "group": "robots"
+  "group": "robots",
+  "filler": false
  },
  {
   "id": "ri-fx-aegis-ultra",
@@ -57,7 +61,8 @@
   "label": "Quadruped robot",
   "price": "$12,990 on Robots International as of Nov 25, 2026",
   "cta": "See price at Robots International",
-  "group": "robots"
+  "group": "robots",
+  "filler": false
  },
  {
   "id": "ri-fx-aegis-pro",
@@ -69,7 +74,8 @@
   "label": "Quadruped robot",
   "price": "$4,490 on Robots International as of Nov 25, 2026",
   "cta": "See price at Robots International",
-  "group": "robots"
+  "group": "robots",
+  "filler": false
  },
  {
   "id": "ri-fx-aegis-quadruped-robot-dog",
@@ -81,7 +87,138 @@
   "label": "Quadruped robot",
   "price": "$2,490 on Robots International as of Nov 25, 2026",
   "cta": "See price at Robots International",
-  "group": "robots"
+  "group": "robots",
+  "filler": false
+ },
+ {
+  "id": "ri-galileo-c1",
+  "title": "Galileo C1 Small Quadruped Robot Dog",
+  "blurb": "Galileo C1 Small Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+  "sourceName": "Robots International",
+  "programId": "robots-international",
+  "url": "https://www.robotsinternational.com/GALILEO-C1.htm",
+  "label": "Quadruped robot",
+  "price": "$10,000 on Robots International as of Nov 25, 2026",
+  "cta": "See price at Robots International",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "ri-galileo-c1-w",
+  "title": "Galileo C1-W Wheeled Quadruped Robot Dog",
+  "blurb": "Galileo C1-W Wheeled Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+  "sourceName": "Robots International",
+  "programId": "robots-international",
+  "url": "https://www.robotsinternational.com/GALILEO-C1-W.htm",
+  "label": "Wheeled quadruped robot",
+  "price": "$11,995 on Robots International as of Nov 25, 2026",
+  "cta": "See price at Robots International",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "ri-pudu-d5-w-wheeled-quadruped-robot",
+  "title": "PUDU D5-W Wheeled Quadruped Robot Dog",
+  "blurb": "PUDU D5-W Wheeled Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+  "sourceName": "Robots International",
+  "programId": "robots-international",
+  "url": "https://www.robotsinternational.com/PUDU-D5-W-Wheeled-Quadruped-Robot.htm",
+  "label": "Wheeled quadruped robot",
+  "price": "$83,995 on Robots International as of Nov 25, 2026",
+  "cta": "See price at Robots International",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "ri-pudu-d5-quadruped-robot",
+  "title": "PUDU D5 Quadruped Robot Dog",
+  "blurb": "PUDU D5 Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+  "sourceName": "Robots International",
+  "programId": "robots-international",
+  "url": "https://www.robotsinternational.com/PUDU-D5-Quadruped-Robot.htm",
+  "label": "Quadruped robot",
+  "price": "$69,995 on Robots International as of Nov 25, 2026",
+  "cta": "See price at Robots International",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "ri-magiclab-magicdog-quadruped-robot",
+  "title": "MagicLab MagicDog Quadruped Robot",
+  "blurb": "MagicLab MagicDog Quadruped Robot, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+  "sourceName": "Robots International",
+  "programId": "robots-international",
+  "url": "https://www.robotsinternational.com/MagicLab-MagicDog-Quadruped-Robot.htm",
+  "label": "Quadruped robot",
+  "price": "$12,500 on Robots International as of Nov 25, 2026",
+  "cta": "See price at Robots International",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "ri-mirrorme-bpx-pro",
+  "title": "MirrorMe BPX Pro Quadruped Robot",
+  "blurb": "MirrorMe BPX Pro Quadruped Robot, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+  "sourceName": "Robots International",
+  "programId": "robots-international",
+  "url": "https://www.robotsinternational.com/MirrorMe-BPX-Pro.htm",
+  "label": "Quadruped robot",
+  "price": "$7,995 on Robots International as of Nov 25, 2026",
+  "cta": "See price at Robots International",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "rs-deep-robotics-lite3-basic-quadruped-robot",
+  "title": "Deep Robotics Lite3 Basic Quadruped Robot",
+  "blurb": "Deep Robotics Lite3 Basic, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+  "sourceName": "RobotShop",
+  "programId": "robotshop",
+  "url": "https://www.robotshop.com/products/deep-robotics-lite3-basic-quadruped-robot",
+  "label": "Quadruped robot",
+  "price": "$6,600 on RobotShop as of Nov 25, 2026",
+  "cta": "See price at RobotShop",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "rs-deep-robotics-lite3-venture-quadruped-robot",
+  "title": "Deep Robotics Lite3 Venture Quadruped Robot",
+  "blurb": "Deep Robotics Lite3 Venture, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+  "sourceName": "RobotShop",
+  "programId": "robotshop",
+  "url": "https://www.robotshop.com/products/deep-robotics-lite3-venture-quadruped-robot",
+  "label": "Quadruped robot",
+  "price": "$7,986 on RobotShop as of Nov 25, 2026",
+  "cta": "See price at RobotShop",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "rs-deep-robotics-lite3-pro-quadruped-robot",
+  "title": "Deep Robotics Lite3 Pro Quadruped Robot",
+  "blurb": "Deep Robotics Lite3 Pro, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+  "sourceName": "RobotShop",
+  "programId": "robotshop",
+  "url": "https://www.robotshop.com/products/deep-robotics-lite3-pro-quadruped-robot",
+  "label": "Quadruped robot",
+  "price": "$15,290 on RobotShop as of Nov 25, 2026",
+  "cta": "See price at RobotShop",
+  "group": "robots",
+  "filler": true
+ },
+ {
+  "id": "rs-deep-robotics-lite3-lidar-quadruped-robot",
+  "title": "Deep Robotics Lite3 Lidar Quadruped Robot",
+  "blurb": "Deep Robotics Lite3 Lidar, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+  "sourceName": "RobotShop",
+  "programId": "robotshop",
+  "url": "https://www.robotshop.com/products/deep-robotics-lite3-lidar-quadruped-robot",
+  "label": "Quadruped robot",
+  "price": "$22,990 on RobotShop as of Nov 25, 2026",
+  "cta": "See price at RobotShop",
+  "group": "robots",
+  "filler": true
  },
  {
   "id": "hoverair-x1-pro-promax",

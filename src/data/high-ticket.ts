@@ -32,6 +32,8 @@ export type HighTicketItem = {
   cta?: string;
   /** Verified official price, already dated, or 'See price'. */
   price?: string;
+  /** Low-key filler: sort after US/allied listings, bottom group only, never featured or on the home page. */
+  filler?: boolean;
 };
 
 export const highTicketItems: HighTicketItem[] = [
@@ -1819,6 +1821,7 @@ export function highTicketToCatalogItem(item: HighTicketItem): CatalogItem {
     groups: item.groups,
     kind: 'brand',
     origin: 'directory',
+    filler: item.filler,
   };
 }
 

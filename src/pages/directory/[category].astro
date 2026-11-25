@@ -28,6 +28,8 @@ if (!category) throw new Error(`Unknown directory category: ${slug}`);
 
 const all = buildFullCatalog(await getItems());
 const items = all.filter((i) => i.category === category.id || (i.alsoIn ?? []).includes(category.id));
+const primaryItems = items.filter((i) => !i.filler);
+const fillerItems = items.filter((i) => i.filler);
 const pending = comingSoonFor(category.id);
 const spotlightCats = new Set(['power', 'outdoor', 'auto']);
 const spotlights = spotlightCats.has(category.id) ? brandPages.filter((b) => category.id !== 'auto' || b.slug === 'litime') : [];
@@ -72,7 +74,7 @@ const schema = {
 
     {category.id === 'drones-robotics' && (
       <div class="prose" style="margin:1rem 0">
-        <p class="fine"><strong>Before you shop.</strong> These are listings from stores we have applied to, with plain links to each store’s own product page. Prices and stock change often, so confirm them on the store. Robot listings here are Faraday Future (FF EAI Robotics, California) quadrupeds sold through Robots International. Drone listings are HOVERAir self-flying cameras. Drone rules: since Dec 22, 2025, new foreign-made drone models can’t get FCC authorization for sale in the US. Models authorized before then can still be sold and flown, so what a store offers can change. Follow FAA and local rules wherever you fly.</p>
+        <p class="fine"><strong>Before you shop.</strong> These are listings from stores we have applied to, with plain links to each store’s own product page. Prices and stock change often, so confirm them on the store. The main robot listings here are Faraday Future (FF EAI Robotics, California) quadrupeds sold through Robots International. Drone listings are HOVERAir self-flying cameras. Additional robot-dog models from other makers are listed at the bottom of this page. Drone rules: since Dec 22, 2025, new foreign-made drone models can’t get FCC authorization for sale in the US. Models authorized before then can still be sold and flown, so what a store offers can change. Follow FAA and local rules wherever you fly.</p>
       </div>
     )}
 
@@ -102,12 +104,21 @@ const schema = {
     </div>
 
     <section class="dir-section" data-dir-section={category.id}>
-      {items.length > 0 ? (
+      {primaryItems.length > 0 ? (
         <div class="grid shop-grid source-grid">
-          {items.map((item) => <SourceCard item={item} />)}
+          {primaryItems.map((item) => <SourceCard item={item} />)}
         </div>
-      ) : (
+      ) : items.length === 0 ? (
         <p>No listings in this category yet. Partners still on the way are listed below.</p>
+      ) : null}
+      {fillerItems.length > 0 && (
+        <div class="filler-block" style="margin-top:2.5rem">
+          <h2 class="section-title" style="font-size:1.15rem;margin:0 0 0.75rem">More robot dogs</h2>
+          <p class="fine" style="margin:0 0 1rem">Additional four-legged robots from other makers, listed for reference. Prices and stock are on each store’s page.</p>
+          <div class="grid shop-grid source-grid">
+            {fillerItems.map((item) => <SourceCard item={item} />)}
+          </div>
+        </div>
       )}
       <ComingSoonPartners partners={pending} />
     </section>
