@@ -274,7 +274,7 @@ put('first-aid', ['amk-adventure-first-aid-family', 'amk-adventure-first-aid-2-0
 put('lighting', ['biolite-alpenglow-500', 'black-diamond-spot-400', 'eton-blackout-buddy-h2o', 'fenix-hm65r-v2', 'goal-zero-lighthouse-600', 'petzl-actik-core', 'nitecore-edc29', 'nitecore-edc37', 'nitecore-hc65-uhe', 'wuben-a1', 'wuben-lightok-x1', 'wuben-a22', 'wuben-h1', 'wuben-e7', 'wuben-lightok-x2', 'wuben-c2', 'wuben-c3', 'wuben-e12r', 'wuben-f5', 'wuben-g5', 'wuben-x1-pro', 'wuben-x2-pro', 'wuben-h4', 'wuben-lightok-x0']);
 put('comms', ['eton-red-cross-frx2', 'eton-elite-executive-radio', 'eton-elite-traveler-radio', 'eton-elite-field-radio', 'eton-red-cross-journey-radio', 'garmin-inreach-mini-2', 'midland-er310-crank-radio', 'midland-wr400', 'midland-t71vp3-xtalker', 'midland-gxt1000x3vp4', 'midland-gxt67-pro', 'midland-mxt115p', 'midland-cliptalk', 'midland-er310pro', 'cobra-75-allroad', 'cobra-29lx', 'cobra-29ltd', 'cobra-25ltd', 'btech-uv-5x3']);
 put('home-protection', ['eton-blackout-buddy-co', 'kidde-kn-cob-lp2', 'kidde-pro-210']);
-put('more', ['tidewe-inferno-heated-jacket', 'tidewe-silentrace-heated-jacket', 'tidewe-thermcore-heated-vest', 'tidewe-thermshift-heated-vest', 'tidewe-torridseeker-heated-waders', 'tidewe-aquawade-pro-waders']);
+put('more', ['tidewe-inferno-heated-jacket', 'tidewe-silentrace-heated-jacket', 'tidewe-thermcore-heated-vest', 'tidewe-thermshift-heated-vest', 'tidewe-torridseeker-heated-waders', 'tidewe-aquawade-pro-waders', 'bogs-bozeman-ii-tall', 'bogs-bozeman-ii-vibram-arctic-grip', 'bogs-arcata-ii-lace', 'bogs-arcata-ii-plaid', 'bogs-arcata-urban-ii-leather', 'bogs-arcata-ii-dash-kids', 'bogs-snow-shell-cosmic-forest']);
 
 export const categoryForItem = (id: string): CategoryId => itemCategory[id] ?? 'more';
 

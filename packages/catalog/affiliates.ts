@@ -19,7 +19,7 @@
  * lead boxes stay hidden — no sponsored label, no tracking, no invented affiliate URLs.
  *
  * ppcAllowed: set `ppcAllowed: false` for partners that bar paid-search promotion
- * (currently Choice Home Warranty, REDI, Waterdrop Filter, and TideWe). FunnelGuards hides
+ * (currently Choice Home Warranty, REDI, Waterdrop Filter, TideWe, and Bogs). FunnelGuards hides
  * those cards and links during an rgh_paid_search session; they stay visible on
  * ordinary organic visits. Omit the field or set it true when paid search is allowed
  * under the site Paid Advertising Policy. Use isPpcAllowed(id) and isProgramLive(id).
@@ -426,6 +426,29 @@ export const programs: Program[] = [
       'tidewe-aquawade-pro-waders': 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued=https%3A%2F%2Fwww.tidewe.com%2Fproducts%2Ftidewe-breathable-insulated-chest-waders-1600g-waterproof-bootfoot-duck-hunting-waders-with-steel-shank-boots',
     },
     note: 'Awin advertiser 78182, publisher 3160581, 10% commission, 30-day cookie, joined Nov 24, 2026. TideWe bans all PPC, including Google, Bing, and paid social, plus brand/TM+ bidding. Keep TideWe permanently off all paid-search landing pages and paid-ad sessions, alongside Choice Home Warranty, REDI, and Waterdrop. Only coupons issued through the affiliate program may be used. Linked from /winter-deals/, /gear/ (Warmth, Vehicle, Tools & Retailers), and the Full Source Directory outdoor tab.' },
+
+  { id: 'bogs', name: 'Bogs Footwear', network: 'Rakuten', status: 'approved', kind: 'product', ppcAllowed: false,
+    officialUrl: 'https://www.bogsfootwear.com/',
+    link: 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl={url}',
+    items: [
+      'bogs-bozeman-ii-tall',
+      'bogs-bozeman-ii-vibram-arctic-grip',
+      'bogs-arcata-ii-lace',
+      'bogs-arcata-ii-plaid',
+      'bogs-arcata-urban-ii-leather',
+      'bogs-arcata-ii-dash-kids',
+      'bogs-snow-shell-cosmic-forest',
+    ],
+    itemLinks: {
+      'bogs-bozeman-ii-tall': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73452-001.html',
+      'bogs-bozeman-ii-vibram-arctic-grip': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73421-001.html',
+      'bogs-arcata-ii-lace': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73589-001.html',
+      'bogs-arcata-ii-plaid': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73597-302.html',
+      'bogs-arcata-urban-ii-leather': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73592-009.html',
+      'bogs-arcata-ii-dash-kids': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73118-001.html',
+      'bogs-snow-shell-cosmic-forest': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73377-409.html',
+    },
+    note: 'Rakuten MID 37142, publisher SID 4780263, 2% last-click commission, approved by Joseph Nov 25, 2026. PPC, coupon, and image terms could not be confirmed because the terms document would not open, so Bogs stays off all paid-search landing pages and paid-ad sessions, alongside Choice Home Warranty, REDI, Waterdrop, and TideWe. Do not show promo codes or sale prices. No official product photos are used because image terms were not confirmed. Linked from /winter-deals/, /cold-weather-gear/, /gear/ (Warmth, Vehicle, Tools & Retailers), and the Full Source Directory outdoor tab.' },
   { id: 'amazon', name: 'Amazon Associates', network: 'Amazon', status: 'pending', kind: 'product', retailerUrls: {},
     note: 'Catch-all retailer for listings without a brand program. Official page: up to 10% depending on category. Paid ~60 days after month end.' },
   { id: 'mailerlite-referral', name: 'MailerLite', network: 'Direct', status: 'pending', kind: 'text',
@@ -713,7 +736,7 @@ export function buildLink(p: Program, destination: string): string {
  * Prefer setting `ppcAllowed: false` on the program as well; isPpcAllowed()
  * and noPpcProgramIds() honor both this list and the per-program flag.
  */
-export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe'] as const;
+export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe', 'bogs'] as const;
 
 /** Paid-search allowed for this program? Default true unless listed or ppcAllowed is false. */
 export function isPpcAllowed(programId: string | undefined | null): boolean {

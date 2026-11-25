@@ -10,6 +10,6 @@ The home-page section and `/prepper-picks/` are driven by `src/data/prepper-pick
 4. If `affiliateUrl` is null but `programId` is a live approved program (for example BLUETTI’s existing CJ `{url}` template), `resolvePrepperPick()` will wrap `fallbackUrl` with that existing method. Do not invent tracking URLs or Rakuten/CJ patterns that are not already in `affiliates.ts`.
 5. Do not invent prices or ratings. Cards say “See price” unless a verified in-repo price already exists (Payhip only today).
 6. Use a self-hosted official photo when we have one (`imageKind: 'photo'`). Otherwise use a geometric SVG in `public/directory/covers/`. Never hotlink or use an unlicensed image.
-7. Waterdrop, REDI, Choice Home Warranty, and TideWe cards must keep a matching `programId` so the paid-session guard still hides them.
+7. Waterdrop, REDI, Choice Home Warranty, TideWe, and Bogs cards must keep a matching `programId` so the paid-session guard still hides them.
 
 The TypeScript file header repeats these rules next to the types.

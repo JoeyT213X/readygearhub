@@ -526,6 +526,13 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
   'tidewe-thermshift-heated-vest',
   'tidewe-torridseeker-heated-waders',
   'tidewe-aquawade-pro-waders',
+  'bogs-bozeman-ii-tall',
+  'bogs-bozeman-ii-vibram-arctic-grip',
+  'bogs-arcata-ii-lace',
+  'bogs-arcata-ii-plaid',
+  'bogs-arcata-urban-ii-leather',
+  'bogs-arcata-ii-dash-kids',
+  'bogs-snow-shell-cosmic-forest',
 ]);
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {

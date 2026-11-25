@@ -6,7 +6,7 @@
  *    If a visit lands with a Google Ads click ID (gclid / gbraid / wbraid) or
  *    utm_medium=cpc|ppc|paid..., sessionStorage.rgh_paid_search = '1' is set.
  *    For the rest of that browser session, every no-PPC program element
- *    (Choice Home Warranty, REDI, Waterdrop Filter, and TideWe — via data-program,
+ *    (Choice Home Warranty, REDI, Waterdrop Filter, TideWe, and Bogs — via data-program,
  *    data-no-ppc, data-chw, or a matching official / tracking URL) is hidden
  *    by CSS immediately and then removed together with its wrapper (lead box,
  *    directory card, list item, or paragraph) so no empty box is left behind.
@@ -33,6 +33,8 @@ const NO_PPC_LINK_MARKERS = [
   'offerid=1888875',
   'tidewe.com',
   'awinmid=78182',
+  'bogsfootwear.com',
+  'mid=37142',
 ];
 
 const noPpcSel = ['[data-no-ppc]', '[data-chw]', '[data-chw-wrap]', ...NO_PPC_PROGRAM_IDS.map((id) => `[data-program="${id}"]`)].join(',');

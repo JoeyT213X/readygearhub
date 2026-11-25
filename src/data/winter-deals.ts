@@ -1,14 +1,14 @@
 /**
  * Winter prep picks for Black Friday / Cyber Monday week 2026.
  * Only items from approved programs with live tracking links.
- * Prices were read from official brand stores on November 23–24, 2026
+ * Prices were read from official brand stores on November 23–25, 2026
  * (America/Chicago). If a price could not be confirmed, the card says
  * "See price".
  */
-export const PRICE_CHECKED = '2026-11-24';
-export const PRICE_CHECKED_LABEL = 'November 23–24, 2026';
+export const PRICE_CHECKED = '2026-11-25';
+export const PRICE_CHECKED_LABEL = 'November 23–25, 2026';
 
-export type WinterDealSection = 'lights' | 'power' | 'cold' | 'water' | 'apparel';
+export type WinterDealSection = 'lights' | 'power' | 'cold' | 'water' | 'apparel' | 'boots';
 
 export type WinterDeal = {
   itemId: string;
@@ -50,6 +50,12 @@ export const winterDealSections: { id: WinterDealSection; title: string; intro: 
     title: 'Heated apparel and insulated waders',
     intro:
       'Heated jackets, heated vests, and insulated bootfoot waders from TideWe, an approved partner. Official-store prices were read on November 24, 2026. When a product has more than one price by size, color, or whether a battery is included, we show the starting price. TideWe’s 16-inch rubber hunting boots were not in stock, so we listed insulated bootfoot waders instead.',
+  },
+  {
+    id: 'boots',
+    title: 'Winter boots for snow, ice, and wet cold',
+    intro:
+      'Winter boots from Bogs, an approved partner. The prices below are the regular list prices on Bogs’ official store as of November 25, 2026. We are not listing sale prices or promo codes.',
   },
 ];
 
@@ -171,6 +177,47 @@ export const winterDeals: WinterDeal[] = [
     compareAt: '$299.99',
     stockNote: 'Several sizes were in stock on TideWe when checked; some sizes and one camo pattern were not. The official price varied by camo pattern.',
     why: 'Insulated breathable chest waders with a waterproof bootfoot TideWe describes as 1,600-gram insulated. A non-heated option if you want more boot insulation and do not need the heated system.',
+  },  {
+    itemId: 'bogs-bozeman-ii-tall',
+    section: 'boots',
+    priceLabel: '$185',
+    why: 'A tall men’s winter boot listed on Bogs’ official shop as the Bozeman II Tall. Useful when you want a taller shaft for snow or wet cold.',
+  },
+  {
+    itemId: 'bogs-bozeman-ii-vibram-arctic-grip',
+    section: 'boots',
+    priceLabel: '$220',
+    why: 'A men’s snow boot listed on Bogs’ official shop as the Bozeman II Vibram Arctic Grip. A fit when you want the ice-oriented outsole named on the official page.',
+  },
+  {
+    itemId: 'bogs-arcata-ii-lace',
+    section: 'boots',
+    priceLabel: '$180',
+    why: 'A lace-up men’s winter boot listed on Bogs’ official shop as the Arcata II Lace. An everyday winter boot for snow, slush, or wet cold.',
+  },
+  {
+    itemId: 'bogs-arcata-ii-plaid',
+    section: 'boots',
+    priceLabel: '$185',
+    why: 'A women’s winter boot listed on Bogs’ official shop as the Arcata II Plaid. An everyday winter boot for snow, slush, or wet cold.',
+  },
+  {
+    itemId: 'bogs-arcata-urban-ii-leather',
+    section: 'boots',
+    priceLabel: '$165',
+    why: 'A women’s winter boot listed on Bogs’ official shop as the Arcata Urban II Leather. A leather winter boot for everyday cold-weather wear.',
+  },
+  {
+    itemId: 'bogs-arcata-ii-dash-kids',
+    section: 'boots',
+    priceLabel: '$125',
+    why: 'A kid’s winter boot listed on Bogs’ official shop as the Arcata II Dash. A boot to keep by the door for a cold or icy day.',
+  },
+  {
+    itemId: 'bogs-snow-shell-cosmic-forest',
+    section: 'boots',
+    priceLabel: '$75',
+    why: 'A kid’s winter boot listed on Bogs’ official shop as the Snow Shell Boot in Cosmic Forest. A kids’ winter boot for everyday cold-weather wear.',
   },
 ];
 
@@ -254,6 +301,40 @@ export const winterDealSources: { title: string; href: string; note: string }[] 
     title: 'TideWe official AquaWade Pro product page',
     href: 'https://www.tidewe.com/products/tidewe-breathable-insulated-chest-waders-1600g-waterproof-bootfoot-duck-hunting-waders-with-steel-shank-boots',
     note: 'Official store starting price $239.99, some sizes in stock, read November 24, 2026.',
+  },  {
+    title: 'Bogs official Bozeman II Tall product page',
+    href: 'https://www.bogsfootwear.com/shop/style/73452-001.html',
+    note: 'Regular list price $185, read from the official page on November 25, 2026.',
+  },
+  {
+    title: 'Bogs official Bozeman II Vibram Arctic Grip product page',
+    href: 'https://www.bogsfootwear.com/shop/style/73421-001.html',
+    note: 'Regular list price $220, read from the official page on November 25, 2026.',
+  },
+  {
+    title: 'Bogs official Arcata II Lace product page',
+    href: 'https://www.bogsfootwear.com/shop/style/73589-001.html',
+    note: 'Regular list price $180, read from the official page on November 25, 2026.',
+  },
+  {
+    title: 'Bogs official Arcata II Plaid product page',
+    href: 'https://www.bogsfootwear.com/shop/style/73597-302.html',
+    note: 'Regular list price $185, read from the official page on November 25, 2026.',
+  },
+  {
+    title: 'Bogs official Arcata Urban II Leather product page',
+    href: 'https://www.bogsfootwear.com/shop/style/73592-009.html',
+    note: 'Regular list price $165, read from the official page on November 25, 2026.',
+  },
+  {
+    title: 'Bogs official Arcata II Dash product page',
+    href: 'https://www.bogsfootwear.com/shop/style/73118-001.html',
+    note: 'Regular list price $125, read from the official page on November 25, 2026.',
+  },
+  {
+    title: 'Bogs official Snow Shell Boot (Cosmic Forest) product page',
+    href: 'https://www.bogsfootwear.com/shop/style/73377-409.html',
+    note: 'Regular list price $75, read from the official page on November 25, 2026.',
   },
 ];
 

@@ -108,7 +108,7 @@ const RULES: Rule[] = [
   ['cast-iron-fire', /lodge|skillet|cast iron/],
   ['stock-stove', /stove|cook|coleman|jetboil/],
   ['car-in-snow', /snow joe|snow-|shovel|broom|snow/],
-  ['stock-boots', /yaktrax|kahtoola|darn tough|hunter boots|boots|waders|tidewe/],
+  ['stock-boots', /yaktrax|kahtoola|darn tough|hunter boots|\bboots?\b|waders|tidewe|\bbogs\b/],
   ['stock-gloves', /glove|magid/],
   // Insurance, services, tools
   ['stock-insurance', /insurance|warranty|american home shield|hiscox|liberty mutual|axa|travel/],

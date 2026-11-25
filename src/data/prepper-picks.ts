@@ -27,7 +27,7 @@
  * - Never invent tracking links, prices, or ratings.
  * - Catalog/CSV prices are omitted; cards say “See price” unless a
  *   verified in-repo price already exists (Payhip downloads only).
- * - Waterdrop, REDI, Choice Home Warranty, and TideWe stay behind the paid-session
+ * - Waterdrop, REDI, Choice Home Warranty, TideWe, and Bogs stay behind the paid-session
  *   guard when `programId` matches those programs.
  * - Official photos are self-hosted. Items without a licensed photo use a
  *   geometric SVG cover in /directory/covers/, never a hotlinked or
