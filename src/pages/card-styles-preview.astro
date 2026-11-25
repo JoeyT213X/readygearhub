@@ -1,0 +1,300 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Card style examples (preview only) | ReadyGearHub"
+  description="Private before-and-after examples of ReadyGearHub product cards. This page is not in the sitemap or navigation."
+  noindex
+>
+  <section class="page-hero">
+    <div class="wrap page-hero-inner">
+      <p class="eyebrow">Internal preview</p>
+      <h1>Proposed card styles</h1>
+      <p class="lead">These examples show every product-card type that still appears as a text-only window, and a fuller treatment we can roll out if you like them. Nothing on this page is live on the rest of the site yet.</p>
+    </div>
+  </section>
+
+  <section class="wrap section tight cs-intro prose">
+    <p>The types we found: gear listing cards, winter-deal cards, directory “title panel” cards (a navy block with the name instead of a photo), and official-page cards for items we deliberately do not show a product or stock photo for (self-defense and similar). Kit pages use the same gear listing cards, not a separate row layout.</p>
+    <p class="fine">Affiliate links on this page are disabled. Photos used here are already self-hosted: a Wuben official catalog photo, and a Pexels representative boot photo labeled as such.</p>
+  </section>
+
+  <!-- 1. Gear listing, with a representative photo available -->
+  <section class="wrap section cs-type">
+    <header class="section-head">
+      <div>
+        <p class="kicker">Type 1</p>
+        <h2>Gear listing card, when a photo exists</h2>
+        <p>Used on category pages, kit pages, and “more in this lane” blocks. The left card is the old text-only window. The right card adds a picture on top, a little more depth, and a shorter Shop button.</p>
+      </div>
+    </header>
+    <div class="cs-compare">
+      <figure class="cs-col">
+        <figcaption>Before</figcaption>
+        <article class="card item-card">
+          <div class="card-top">
+            <span class="pill">🧤 Cold-Weather Gear</span>
+          </div>
+          <h3><a href="/gear/bogs-arcata-ii-lace/">Bogs Arcata II Lace men's winter boots</a></h3>
+          <p class="brand">Bogs</p>
+          <p>A lace-up men’s winter boot listed on Bogs’ official shop as the Arcata II Lace.</p>
+          <p class="uses"><strong>Also good for:</strong> A men’s winter boot for snow, slush, or wet cold · A lace-up boot for everyday winter wear</p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="/gear/bogs-arcata-ii-lace/">Details</a>
+            <a class="btn small" href="#example">Check current price ↗</a>
+          </div>
+        </article>
+      </figure>
+      <figure class="cs-col">
+        <figcaption>Proposed</figcaption>
+        <article class="card item-card cs-card">
+          <a class="item-card-photo is-stock" href="/gear/bogs-arcata-ii-lace/" tabindex="-1" aria-hidden="true">
+            <img src="/images/photos/stock-winter-boots-960.webp" srcset="/images/photos/stock-winter-boots-480.webp 480w, /images/photos/stock-winter-boots-960.webp 960w, /images/photos/stock-winter-boots-1600.webp 1600w" sizes="(min-width: 900px) 360px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />
+            <span class="stock-chip">Representative photo</span>
+          </a>
+          <div class="card-top">
+            <span class="pill">🧤 Cold-Weather Gear</span>
+          </div>
+          <h3><a href="/gear/bogs-arcata-ii-lace/">Bogs Arcata II Lace men's winter boots</a></h3>
+          <p class="brand">Bogs</p>
+          <p>A lace-up men’s winter boot listed on Bogs’ official shop as the Arcata II Lace.</p>
+          <p class="uses"><strong>Also good for:</strong> A men’s winter boot for snow, slush, or wet cold · A lace-up boot for everyday winter wear</p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="/gear/bogs-arcata-ii-lace/">Details</a>
+            <a class="btn small" href="#example">Shop</a>
+          </div>
+        </article>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Gear listing, no honest photo -->
+  <section class="wrap section band-stone cs-type">
+    <header class="section-head">
+      <div>
+        <p class="kicker">Type 2</p>
+        <h2>Gear listing card, when no photo is available</h2>
+        <p>We leave self-defense items and a few similar listings without a product or stock photo, on purpose. The proposed card uses a designed category panel instead of a fake picture, and a simple Shop button.</p>
+      </div>
+    </header>
+    <div class="cs-compare">
+      <figure class="cs-col">
+        <figcaption>Before</figcaption>
+        <article class="card item-card">
+          <div class="card-top">
+            <span class="pill">Product</span>
+          </div>
+          <h3>Byrna SD launcher</h3>
+          <p>A compact less-lethal launcher listed on Byrna’s official shop. Confirm current models, legal restrictions, and safety instructions on the official page.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#example">Check current price ↗</a>
+          </div>
+        </article>
+      </figure>
+      <figure class="cs-col">
+        <figcaption>Proposed</figcaption>
+        <article class="card item-card cs-card">
+          <a class="cs-panel cs-panel-safety" href="#example" tabindex="-1" aria-hidden="true">
+            <span class="cs-panel-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none"><path d="M24 6 10 12v12c0 9.5 6.2 18.1 14 20.8 7.8-2.7 14-11.3 14-20.8V12L24 6Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="m17.5 24.5 4.2 4.2 8.8-9.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="cs-panel-label">Safety &amp; defense</span>
+          </a>
+          <div class="card-top">
+            <span class="pill">Product</span>
+          </div>
+          <h3>Byrna SD launcher</h3>
+          <p>A compact less-lethal launcher listed on Byrna’s official shop. Confirm current models, legal restrictions, and safety instructions on the official page.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#example">Shop</a>
+          </div>
+        </article>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. Winter deal card -->
+  <section class="wrap section cs-type">
+    <header class="section-head">
+      <div>
+        <p class="kicker">Type 3</p>
+        <h2>Winter deal card</h2>
+        <p>Used on the winter prep picks page. The old version often had a small product cutout or, for some listings, no picture. The proposed card uses a full-width official photo when we have one, with the same price lines and a Shop button.</p>
+      </div>
+    </header>
+    <div class="cs-compare">
+      <figure class="cs-col">
+        <figcaption>Before</figcaption>
+        <article class="card item-card winter-deal-card">
+          <p class="brand">Wuben</p>
+          <h3><a href="/gear/wuben-c3/">Wuben C3 1,200-lumen compact EDC flashlight</a></h3>
+          <p class="winter-deal-price">
+            <span class="wd-was">Listed at $49.99</span>
+            <span class="wd-now">$24.22</span>
+            <span class="wd-checked">Checked November 23–25, 2026 on the official store.</span>
+          </p>
+          <p>A compact everyday flashlight. Useful in a kit or a coat pocket when the lights go out.</p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="/gear/wuben-c3/">Details</a>
+            <a class="btn small" href="#example">Check current price ↗</a>
+          </div>
+        </article>
+      </figure>
+      <figure class="cs-col">
+        <figcaption>Proposed</figcaption>
+        <article class="card item-card winter-deal-card cs-card">
+          <a class="item-card-photo backdrop-light" href="/gear/wuben-c3/" tabindex="-1" aria-hidden="true">
+            <img src="/directory/photos/wuben-c3-960.webp" srcset="/directory/photos/wuben-c3-480.webp 480w, /directory/photos/wuben-c3-960.webp 960w, /directory/photos/wuben-c3-1600.webp 1600w" sizes="(min-width: 900px) 360px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />
+          </a>
+          <p class="brand">Wuben</p>
+          <h3><a href="/gear/wuben-c3/">Wuben C3 1,200-lumen compact EDC flashlight</a></h3>
+          <p class="winter-deal-price">
+            <span class="wd-was">Listed at $49.99</span>
+            <span class="wd-now">$24.22</span>
+            <span class="wd-checked">Checked November 23–25, 2026 on the official store.</span>
+          </p>
+          <p>A compact everyday flashlight. Useful in a kit or a coat pocket when the lights go out.</p>
+          <div class="card-actions">
+            <a class="btn small ghost" href="/gear/wuben-c3/">Details</a>
+            <a class="btn small" href="#example">Shop</a>
+          </div>
+        </article>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. Directory title-panel card -->
+  <section class="wrap section band-stone cs-type">
+    <header class="section-head">
+      <div>
+        <p class="kicker">Type 4</p>
+        <h2>Directory title-panel card</h2>
+        <p>Used in the Full Source Directory when a listing has no licensed photo. Today the “picture” is a navy block with the name on it. The proposed version is a richer gradient panel with a category mark, and a Shop button.</p>
+      </div>
+    </header>
+    <div class="cs-compare">
+      <figure class="cs-col">
+        <figcaption>Before</figcaption>
+        <article class="card item-card product-card source-card is-text">
+          <a class="product-cover" href="#example" tabindex="-1" aria-hidden="true">
+            <span class="source-cover-label">
+              <span class="source-cover-kicker">SABRE</span>
+              <span class="source-cover-title">SABRE Mighty Discreet pepper spray</span>
+            </span>
+          </a>
+          <p class="product-meta">SABRE · Official shop</p>
+          <h3>SABRE Mighty Discreet pepper spray</h3>
+          <p class="product-price">See price</p>
+          <p>A compact pepper spray listed on SABRE’s official shop. Confirm current models and local rules on the official page.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#example">Check current price ↗</a>
+          </div>
+        </article>
+      </figure>
+      <figure class="cs-col">
+        <figcaption>Proposed</figcaption>
+        <article class="card item-card product-card source-card cs-card">
+          <a class="cs-panel cs-panel-safety" href="#example" tabindex="-1" aria-hidden="true">
+            <span class="cs-panel-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none"><path d="M24 6 10 12v12c0 9.5 6.2 18.1 14 20.8 7.8-2.7 14-11.3 14-20.8V12L24 6Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="m17.5 24.5 4.2 4.2 8.8-9.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="cs-panel-kicker">SABRE</span>
+            <span class="cs-panel-label">Safety &amp; defense</span>
+          </a>
+          <p class="product-meta">SABRE · Official shop</p>
+          <h3>SABRE Mighty Discreet pepper spray</h3>
+          <p class="product-price">See price</p>
+          <p>A compact pepper spray listed on SABRE’s official shop. Confirm current models and local rules on the official page.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#example">Shop</a>
+          </div>
+        </article>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5. Official-page / free tool card with no photo -->
+  <section class="wrap section cs-type">
+    <header class="section-head">
+      <div>
+        <p class="kicker">Type 5</p>
+        <h2>Official-page and free-tool cards</h2>
+        <p>Brand, service, and free-tool listings on /gear/ and /gear/tech/ sometimes have no picture. Free tools would use an “Open” button; shop listings would use Shop. Here is a free tool example.</p>
+      </div>
+    </header>
+    <div class="cs-compare">
+      <figure class="cs-col">
+        <figcaption>Before</figcaption>
+        <article class="card item-card">
+          <div class="card-top">
+            <span class="pill">Free resource</span>
+          </div>
+          <h3>Emergency kit builder</h3>
+          <p>A printable Ready.gov checklist sized to your household, with links to existing listings.</p>
+          <p class="uses"><strong>Offer:</strong> Free ReadyGearHub tool</p>
+          <div class="card-actions">
+            <a class="btn small" href="/tools/kit-builder/">Visit official page ↗</a>
+          </div>
+        </article>
+      </figure>
+      <figure class="cs-col">
+        <figcaption>Proposed</figcaption>
+        <article class="card item-card cs-card">
+          <a class="cs-panel cs-panel-tools" href="/tools/kit-builder/" tabindex="-1" aria-hidden="true">
+            <span class="cs-panel-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="48" height="48" fill="none"><rect x="8" y="14" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2.2"/><path d="M16 14v-2a8 8 0 0 1 16 0v2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M18 26h12M18 31h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </span>
+            <span class="cs-panel-label">Free tools</span>
+          </a>
+          <div class="card-top">
+            <span class="pill">Free resource</span>
+          </div>
+          <h3>Emergency kit builder</h3>
+          <p>A printable Ready.gov checklist sized to your household, with links to existing listings.</p>
+          <p class="uses"><strong>Offer:</strong> Free ReadyGearHub tool</p>
+          <div class="card-actions">
+            <a class="btn small" href="/tools/kit-builder/">Open</a>
+          </div>
+        </article>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap section tight">
+    <p class="fine">If these look right, we can apply the proposed style across the site on a new preview. Nothing here has been changed on the live cards yet.</p>
+  </section>
+</Base>
+
+<style>
+  .cs-intro{max-width:760px}
+  .cs-compare{display:grid;gap:22px;grid-template-columns:1fr;align-items:start}
+  @media(min-width:860px){.cs-compare{grid-template-columns:1fr 1fr;gap:28px}}
+  .cs-col{margin:0}
+  .cs-col > figcaption{
+    margin:0 0 10px;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-d);
+  }
+  .cs-col:first-child > figcaption{color:var(--muted)}
+  .cs-card .card-actions .btn:not(.ghost){flex:1 1 auto}
+
+  .cs-panel{
+    display:flex;flex-direction:column;justify-content:flex-end;gap:6px;
+    margin:-18px -18px 14px;aspect-ratio:16/10;padding:18px 20px 16px;
+    border-radius:var(--radius) var(--radius) 0 0;color:#fff;text-decoration:none;
+    isolation:isolate;overflow:hidden;position:relative;
+  }
+  .cs-panel-icon{color:#fff;filter:drop-shadow(0 2px 8px rgba(0,0,0,.25));margin-bottom:auto}
+  .cs-panel-kicker{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#f6b98c}
+  .cs-panel-label{font-size:1.2rem;font-weight:800;letter-spacing:-.02em;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+  .cs-panel-safety{
+    background:
+      radial-gradient(70% 90% at 100% 0%,rgba(245,158,11,.32),transparent 65%),
+      repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,transparent 2px 16px),
+      linear-gradient(160deg,#3a1d22 0%,#1a1014 55%,#0e0b0c 100%);
+  }
+  .cs-panel-tools{
+    background:
+      radial-gradient(70% 90% at 100% 0%,rgba(245,158,11,.26),transparent 65%),
+      repeating-linear-gradient(135deg,rgba(255,255,255,.04) 0 2px,transparent 2px 16px),
+      linear-gradient(160deg,#1d5a46 0%,#12362c 100%);
+  }
+</style>

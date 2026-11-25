@@ -203,3 +203,65 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
 .kicker{align-self:flex-start}
 :is(.band,.band-storm) .card .kicker{color:var(--accent-d);background:var(--accent-soft);border-color:#f6c9a6}
 .site-footer .logo.small span{color:var(--sky)}
+
+/* ---------- Home: Shop the Directory is the hero, category windows sit below ---------- */
+.home-shop-hero{
+  position:relative;
+  isolation:isolate;
+  background:
+    linear-gradient(rgba(255,247,232,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,247,232,.04) 1px, transparent 1px),
+    radial-gradient(820px 420px at 8% -8%, rgba(198,140,80,.22), transparent 52%),
+    radial-gradient(720px 420px at 100% 110%, rgba(22,58,46,.55), transparent 58%),
+    #12261f;
+  background-size:28px 28px,28px 28px,auto,auto,auto;
+  padding:18px 0 28px;
+}
+.home-shop-hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--bar-warm);z-index:1;pointer-events:none}
+.home-shop-hero .bento-tile.is-shop-board{
+  background:none;
+  box-shadow:none;
+  border-radius:0;
+  min-height:0;
+}
+.home-shop-hero .shop-board{padding:8px 0 4px;gap:14px}
+.home-shop-hero .shop-board-heading{margin:0}
+.home-shop-hero .shop-board-title{
+  font-size:clamp(2rem,5.4vw,3.15rem);
+  font-weight:800;
+  letter-spacing:-.035em;
+  line-height:1.05;
+  color:#fff;
+  text-shadow:0 2px 16px rgba(0,0,0,.35);
+}
+.home-shop-hero .shop-board-title:hover{color:#fff;text-decoration:underline;text-underline-offset:6px}
+.home-shop-hero .shop-board-text{font-size:1.05rem;max-width:52ch;color:#e8f0e8}
+.home-shop-hero .shop-board-grid{gap:10px}
+.home-shop-hero .shop-board-cell{border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.38)}
+@media(min-width:720px){
+  .home-shop-hero{padding:22px 0 36px}
+  .home-shop-hero .bento-tile.is-shop-board.is-wide{min-height:0}
+  .home-shop-hero .shop-board-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+}
+@media(min-width:1100px){
+  .home-shop-hero .wrap{max-width:1320px}
+  .home-shop-hero .shop-board-cell{aspect-ratio:1}
+}
+
+/* Category windows + Prepping & Survival Network: secondary, not a full-viewport hero */
+.hero.is-bento{height:auto;max-height:none;padding:16px 12px 22px;background:var(--glow-amber),var(--texture-lines),var(--grad-storm)}
+.hero.is-bento .hero-spread-title,
+.hero.is-bento h2.hero-spread-title{
+  max-width:none;margin:0 0 .28em;line-height:1.08;letter-spacing:-.035em;
+  font-size:clamp(1.45rem,4.2vw,2rem);font-weight:800;color:#fff;text-wrap:balance;
+}
+@media(min-width:720px){
+  .hero.is-bento{height:auto;max-height:none;padding:18px 16px 26px}
+  .hero-bento{height:auto;grid-template-rows:repeat(3,minmax(110px,160px)) auto}
+  .hero.is-bento .hero-spread-title,
+  .hero.is-bento h2.hero-spread-title{font-size:clamp(1.25rem,1.3vw + .5rem,1.7rem);white-space:nowrap}
+}
+@media(min-width:720px) and (max-width:899px){
+  .hero.is-bento .hero-spread-title,
+  .hero.is-bento h2.hero-spread-title{white-space:normal}
+}

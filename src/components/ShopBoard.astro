@@ -5,19 +5,20 @@ import { shopBoardCountLabel, type ShopBoardTile } from '../data/full-catalog';
 interface Props {
   tiles: ShopBoardTile[];
   catalogCount: number;
+  hero?: boolean;
 }
-const { tiles, catalogCount } = Astro.props;
+const { tiles, catalogCount, hero = false } = Astro.props;
 const countLabel = shopBoardCountLabel(catalogCount);
 
 function isInternal(href: string) {
   return href.startsWith('/');
 }
 ---
-<div class="bento-tile is-shop-board is-wide">
+<div class:list={["bento-tile", "is-shop-board", "is-wide", { "is-hero": hero }]}>
   <div class="shop-board">
     <div class="shop-board-copy">
       <span class="bento-kicker">Explore</span>
-      <a class="shop-board-title" href="/directory/">Shop the Directory</a>
+      {hero ? <h1 class="shop-board-heading"><a class="shop-board-title" href="/directory/">Shop the Directory</a></h1> : <a class="shop-board-title" href="/directory/">Shop the Directory</a>}
       <p class="shop-board-text">{countLabel} listings from partner stores, official shops, gear write-ups, downloads, and free tools.</p>
     </div>
     <div class="shop-board-grid">

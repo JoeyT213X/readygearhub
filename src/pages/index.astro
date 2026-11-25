@@ -51,17 +51,17 @@ const navList = {
 };
 ---
 <Base title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, plus guides, free tools, and live official alerts." schema={[webSite, navList]}>
+  <section class="home-shop-hero" aria-label="Shop the Directory">
+    <div class="wrap">
+      <ShopBoard hero tiles={boardTiles} catalogCount={catalog.length} />
+    </div>
+  </section>
+
   <HeroSpread
     title="Prepping & Survival Network"
     lead="From go-bags to drones. Every shop, one hub."
     tiles={heroTiles}
   />
-
-  <div class="wrap home-collage">
-    <nav class="bento" aria-label="What's on ReadyGearHub">
-      <ShopBoard tiles={boardTiles} catalogCount={catalog.length} />
-    </nav>
-  </div>
 
   <section class="wrap section band-stone" id="guides">
     <SectionHead kicker="Guides" title="Start with a guide" href="/guides/" linkLabel="All guides" />

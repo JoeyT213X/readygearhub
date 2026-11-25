@@ -611,10 +611,11 @@ function listingHref(item: CatalogItem): string {
   return item.detailHref || item.href;
 }
 
-/** Official product shots allowed on the home Explore board. Water filters stay in the directory only. */
-const SHOP_BOARD_PRODUCT_IDS = [
-  'bluetti-350w-solar',
-];
+// Do not lead the home Shop the Directory board with a product photo of a
+// portable solar kit or power station. Those read as "big power gear" in the
+// first cell. Category scenes (a snowy house, rooftop solar in a neighborhood)
+// stay; portable power stations are also filtered out in pushProduct().
+const SHOP_BOARD_PRODUCT_IDS: string[] = [];
 
 function isHomeBoardWaterFilter(item: { id?: string; title?: string }): boolean {
   const hay = `${item.id || ''} ${item.title || ''}`.toLowerCase();
@@ -685,6 +686,7 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   const lanternHref = lantern ? listingHref(lantern) : '';
 
   const scenes: ShopBoardTile[] = [
+    sceneTile('scene-lead', 'Winter storm prep', '/winter-storm-prep/', 'hero-snowy-home'),
     sceneTile('scene-power', 'Power', '/directory/power/', 'solar-rooftops'),
     sceneTile('scene-drone', 'Drones', '/directory/drones/', 'hero-drone'),
     sceneTile('scene-utv', 'Off-road vehicles', '/directory/vehicles/', 'hero-utv-dunes'),
