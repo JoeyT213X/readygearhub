@@ -130,17 +130,5 @@
   "price": "See price",
   "cta": "See price at HOVERAir",
   "group": "drones"
- },
- {
-  "id": "hoverair-versa",
-  "title": "HOVERAir Versa",
-  "blurb": "A pocket camera that can also fly, aimed at vlogging. Check the official page for specs and local flying rules.",
-  "sourceName": "HOVERAir",
-  "programId": "hoverair",
-  "url": "https://hoverair.com/pages/versa",
-  "label": "Camera drone",
-  "price": "See price",
-  "cta": "See price at HOVERAir",
-  "group": "drones"
  }
 ]

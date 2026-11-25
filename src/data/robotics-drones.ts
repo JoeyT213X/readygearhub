@@ -160,20 +160,6 @@ export const roboticsDronesItems: HighTicketItem[] = [
     cta: "See price at HOVERAir",
     price: "See price",
   },
-  {
-    id: "hoverair-versa",
-    title: "HOVERAir Versa",
-    blurb: "A pocket camera that can also fly, aimed at vlogging. Check the official page for specs and local flying rules.",
-    sourceName: "HOVERAir",
-    category: 'drones-robotics',
-    alsoIn: ['drones'],
-    groups: ['power-tech', 'safety-prep'],
-    affiliateUrl: '', // TODO(affiliate): tracked URL once approved
-    fallbackUrl: "https://hoverair.com/pages/versa",
-    offerLabel: "Camera drone",
-    cta: "See price at HOVERAir",
-    price: "See price",
-  },
 ];
 
 /** Ids per store, used by the catalog guard in full-catalog.ts to keep these off the home page. */

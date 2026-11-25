@@ -20,5 +20,4 @@ HOVER=[
  ('hoverair-aqua','HOVERAir AQUA','https://hoverair.com/pages/aqua','HOVERAir describes the AQUA as a waterproof self-flying camera for water sports. Check the official page for the waterproof rating and limits before relying on it near water.'),
  ('hoverair-x1-smart','HOVERAir X1 Smart','https://hoverair.com/pages/x1-smart','A 99 g self-flying camera, per HOVERAir. A very light pocket option for casual aerial shots.'),
  ('hoverair-x1','HOVERAir X1','https://hoverair.com/pages/x1','The original pocket-size self-flying camera for hands-free shots. Check the official page for current availability.'),
- ('hoverair-versa','HOVERAir Versa','https://hoverair.com/pages/versa','A pocket camera that can also fly, aimed at vlogging. Check the official page for specs and local flying rules.'),
 ]
