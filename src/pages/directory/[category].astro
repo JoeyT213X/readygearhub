@@ -70,7 +70,7 @@ const schema = {
     <CategoryShort path={`/directory/${category.slug}/`} />
   </PageHero>
 
-  <section class="wrap section">
+  <section class="wrap section dir-listings">
     {isWinterDealDirectoryCategory(category.id) && (
       <WinterDealsCallout />
     )}
@@ -79,24 +79,27 @@ const schema = {
       <p class="fine brand-spotlight-strip"><strong>Brand spotlights:</strong> {spotlights.map((b, i) => (<>{i > 0 && ' · '}<a href={`/brands/${b.slug}/`}>{b.name}</a></>))} · <a href="/brands/">All spotlights</a></p>
     )}
 
-    <div class="dir-filters" data-source-filters data-current-cat={category.id}>
+    <div data-source-filters data-current-cat={category.id}>
       {storesInCat.length > 1 && (
-        <div class="filter-row">
-          <p class="filter-label" id="filter-src-label">Store</p>
-          <div class="filter-pills" role="toolbar" aria-labelledby="filter-src-label">
-            <button type="button" class="pill" data-filter-src="all" aria-pressed="true">All stores</button>
-            {storesInCat.map((s) => (
-              <button type="button" class="pill" data-filter-src={s.id} aria-pressed="false" data-program={s.programId !== 'payhip' ? s.programId : undefined} data-no-ppc={s.hideOnPaid ? '' : undefined}>{s.name}</button>
-            ))}
+        <div class="dir-filters">
+          <div class="filter-row">
+            <p class="filter-label" id="filter-src-label">Store</p>
+            <div class="filter-pills" role="toolbar" aria-labelledby="filter-src-label">
+              <button type="button" class="pill" data-filter-src="all" aria-pressed="true">All stores</button>
+              {storesInCat.map((s) => (
+                <button type="button" class="pill" data-filter-src={s.id} aria-pressed="false" data-program={s.programId !== 'payhip' ? s.programId : undefined} data-no-ppc={s.hideOnPaid ? '' : undefined}>{s.name}</button>
+              ))}
+            </div>
           </div>
         </div>
       )}
-      {items.length > 0 && (
-        <p class="fine" data-filter-status>{items.length} {items.length === 1 ? 'listing' : 'listings'}</p>
-      )}
+      <div class="dir-meta">
+        {items.length > 0 && (
+          <p class="dir-meta-count" data-filter-status>{items.length} {items.length === 1 ? 'listing' : 'listings'}</p>
+        )}
+        <Disclosure />
+      </div>
     </div>
-
-    <Disclosure />
 
     <section class="dir-section" data-dir-section={category.id}>
       {primaryItems.length > 0 ? (

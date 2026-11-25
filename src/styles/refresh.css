@@ -562,3 +562,19 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
 .listing-notes p{margin:.4rem 0 0;max-width:70ch;line-height:1.5}
 body.dir-drones-robotics .listing-notes,
 body.dir-drones-robotics .listing-notes summary{color:var(--muted)}
+
+/* Category directory pages: products start promptly after the hero.
+   Listing count and the one-line commission note share a compact row. */
+.dir-listings.section{padding-top:16px;padding-bottom:48px}
+.dir-listings .dir-filters{margin:0 0 10px}
+.dir-listings .brand-spotlight-strip,
+.dir-listings .winter-deals-callout{margin:0 0 12px}
+.dir-meta{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 18px;margin:0 0 12px}
+.dir-meta .dir-meta-count,
+.dir-meta .disclosure{margin:0;font-size:.8rem;line-height:1.35;color:var(--muted)}
+.dir-meta .disclosure{flex:1 1 auto;text-align:right}
+@media (max-width:699px){
+  .dir-meta .disclosure{text-align:left}
+}
+body.dir-drones-robotics .dir-meta .dir-meta-count,
+body.dir-drones-robotics .dir-meta .disclosure{color:var(--muted)}
