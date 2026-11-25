@@ -21,6 +21,8 @@ function isInternal(href: string) {
       {hero ? <h1 class="shop-board-heading"><a class="shop-board-title" href="/directory/">Shop the Directory</a></h1> : <a class="shop-board-title" href="/directory/">Shop the Directory</a>}
       <p class="shop-board-text">{countLabel} listings from partner stores, official shops, gear write-ups, downloads, and free tools.</p>
     </div>
+    <!-- Optional desktop heading-row preview; us-first-badge only edits shop-board-copy above. -->
+    <slot name="aside" />
     <div class="shop-board-grid">
       {tiles.map((tile) => {
         const internal = isInternal(tile.href);

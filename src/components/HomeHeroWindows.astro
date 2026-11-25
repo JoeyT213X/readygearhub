@@ -1,60 +1,48 @@
 ---
 /**
- * Desktop-only compact category windows in a horizontal strip of 4 at a
- * time, above Shop the Directory on the home page. Hidden below 1024px so
- * mobile home stays unchanged. Internal directory links only (no paid-
- * traffic risk). No portable power stations, no badges or invented stats.
- * Compatible with the us-first-badge branch, which edits ShopBoard, not
- * this strip.
+ * Desktop-only compact preview in the empty space to the right of the
+ * Shop the Directory heading (same row as the heading, above the tile
+ * grid). Hidden below 1024px so mobile home stays unchanged. One window
+ * crossfades through four internal directory previews. No portable power
+ * stations, no badges or invented stats. ShopBoard copy is not edited
+ * (us-first-badge adds .shop-board-topline there).
  */
 import Photo from './Photo.astro';
 
 type HeroWindow = { href: string; title: string; blurb: string; photo: string };
 
-const pages: HeroWindow[][] = [
-  [
-    { href: '/prepper-picks/', title: 'Weather radios', blurb: 'NOAA and hand-crank radios for when the power and phone network are down.', photo: 'hero-radios' },
-    { href: '/directory/water/', title: 'Water filtration', blurb: 'Drinking-water filters and related gear from official partner shops.', photo: 'water-bottles' },
-    { href: '/directory/safety/', title: 'First aid', blurb: 'Ready kits and first-aid supplies, described plainly, with official shop links.', photo: 'first-aid-kit-open' },
-    { href: '/directory/drones-robotics/', title: 'Drones & Robotics', blurb: 'Self-flying cameras and robot dogs in the Full Source Directory.', photo: 'hero-drone' },
-  ],
-  [
-    { href: '/directory/food/', title: 'Food & pantry', blurb: 'Shelf-stable kits and pantry supplies. Check servings, storage life, and price on the official page.', photo: 'hero-pantry-cans' },
-    { href: '/directory/outdoor/', title: 'Outdoor & camping', blurb: 'Camp and trail gear from the directory. Lanterns, kits, and outdoor shops.', photo: 'lantern-dusk' },
-    { href: '/directory/tools/', title: 'Tools & DIY', blurb: 'Tools and workshop supplies from official shops in the directory.', photo: 'multitools' },
-    { href: '/directory/auto/', title: 'Auto & travel', blurb: 'Vehicle and travel gear for winter roads and longer trips.', photo: 'car-in-snow' },
-  ],
+const previews: HeroWindow[] = [
+  { href: '/prepper-picks/', title: 'Weather radios', blurb: 'NOAA and hand-crank radios.', photo: 'hero-radios' },
+  { href: '/directory/water/', title: 'Water filtration', blurb: 'Filters from official shops.', photo: 'water-bottles' },
+  { href: '/directory/safety/', title: 'First aid', blurb: 'Ready first-aid kits.', photo: 'first-aid-kit-open' },
+  { href: '/directory/drones-robotics/', title: 'Drones & Robotics', blurb: 'Cameras and robot dogs.', photo: 'hero-drone' },
 ];
 ---
 <aside class="home-hero-windows" aria-label="Featured from the directory">
   <div class="home-hero-windows-stage">
-    {pages.map((page, pageIndex) => (
-      <div class:list={['home-hero-windows-page', { 'is-active': pageIndex === 0 }]} data-page={pageIndex}>
-        {page.map((tile) => (
-          <a class="home-hero-window card" href={tile.href}>
-            <span class="home-hero-window-cover">
-              <Photo name={tile.photo} sizes="(min-width: 1024px) 200px, 0px" alt={tile.title} />
-            </span>
-            <span class="home-hero-window-body">
-              <span class="home-hero-window-title">{tile.title}</span>
-              <span class="home-hero-window-blurb">{tile.blurb}</span>
-            </span>
-          </a>
-        ))}
-      </div>
+    {previews.map((tile, index) => (
+      <a class:list={['home-hero-window', { 'is-active': index === 0 }]} href={tile.href}>
+        <span class="home-hero-window-cover">
+          <Photo name={tile.photo} sizes="(min-width: 1024px) 160px, 0px" alt={tile.title} />
+        </span>
+        <span class="home-hero-window-body">
+          <span class="home-hero-window-title">{tile.title}</span>
+          <span class="home-hero-window-blurb">{tile.blurb}</span>
+        </span>
+      </a>
     ))}
   </div>
 </aside>
 <script>
   const root = document.querySelector('.home-hero-windows');
   if (root) {
-    const pages = Array.from(root.querySelectorAll('.home-hero-windows-page'));
+    const slides = Array.from(root.querySelectorAll('.home-hero-window'));
     const desktop = window.matchMedia('(min-width: 1024px)');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
     let index = 0;
     let timer = 0;
     const show = (n: number) => {
-      pages.forEach((page, i) => page.classList.toggle('is-active', i === n));
+      slides.forEach((slide, i) => slide.classList.toggle('is-active', i === n));
     };
     const stop = () => {
       if (timer) {
@@ -64,11 +52,11 @@ const pages: HeroWindow[][] = [
     };
     const start = () => {
       stop();
-      if (!desktop.matches || reduce.matches || pages.length < 2) return;
+      if (!desktop.matches || reduce.matches || slides.length < 2) return;
       timer = window.setInterval(() => {
-        index = (index + 1) % pages.length;
+        index = (index + 1) % slides.length;
         show(index);
-      }, 5000);
+      }, 4500);
     };
     root.addEventListener('mouseenter', stop);
     root.addEventListener('mouseleave', start);
