@@ -186,20 +186,6 @@ export const highTicketItems: HighTicketItem[] = [
 
   // ---- Robots ----
   {
-    id: 'unitree-official',
-    title: 'Unitree official site',
-    blurb: 'Official Unitree site for current robotics platforms. See the official page for models and how to inquire. The cover on this card is an original illustration, not a product photograph. We don’t have a partner program with this brand yet.',
-    sourceName: 'Unitree',
-    category: 'security',
-    alsoIn: ['tech'],
-    groups: ['safety-prep', 'power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://www.unitree.com/',
-    image: '/directory/covers/robot.svg',
-    offerLabel: 'Official site',
-    cta: 'Visit official site',
-  },
-  {
     id: 'boston-dynamics-official',
     title: 'Boston Dynamics official site',
     blurb: 'Official Boston Dynamics site for current robotics platforms. See the official page for products and how to inquire. The cover on this card is an original illustration, not a product photograph. We don’t have a partner program with this company yet.',
