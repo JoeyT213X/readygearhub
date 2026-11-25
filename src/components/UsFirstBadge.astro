@@ -1,0 +1,88 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+const label = 'Supporting U.S. Companies First';
+const note = 'We feature U.S.-based brands first and only partner abroad with companies from allied countries.';
+---
+<a
+  class:list={['us-first-badge', { compact }]}
+  href="/about/#us-companies"
+  title={note}
+>
+  <svg class="us-first-mark" viewBox="0 0 16 12" width="16" height="12" aria-hidden="true" focusable="false">
+    <rect width="16" height="12" rx="1.2" fill="#b22234"/>
+    <rect y="2.4" width="16" height="2.4" fill="#f7f3ea"/>
+    <rect y="7.2" width="16" height="2.4" fill="#f7f3ea"/>
+    <rect width="7.2" height="6.4" fill="#1f3a5f"/>
+    <path fill="#f7f3ea" d="M3.60 1.65 3.96 2.70 5.07 2.72 4.19 3.39 4.51 4.45 3.60 3.82 2.69 4.45 3.01 3.39 2.13 2.72 3.24 2.70Z"/>
+  </svg>
+  <span class="us-first-text">{label}</span>
+</a>
+
+<style>
+  .us-first-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    max-width:100%;
+    box-sizing:border-box;
+    padding:4px 10px 4px 7px;
+    border-radius:999px;
+    background:#1f3a5f;
+    color:#f7f3ea;
+    border:1px solid rgba(247,243,234,.28);
+    box-shadow:0 1px 2px rgba(0,0,0,.22);
+    text-decoration:none;
+    line-height:1.2;
+    vertical-align:middle;
+  }
+  .us-first-badge.compact{
+    padding:3px 9px 3px 6px;
+    gap:6px;
+  }
+  .us-first-mark{
+    flex:none;
+    display:block;
+    width:16px;
+    height:12px;
+    border-radius:1px;
+    box-shadow:0 0 0 1px rgba(0,0,0,.2);
+  }
+  .us-first-badge.compact .us-first-mark{
+    width:14px;
+    height:10.5px;
+  }
+  .us-first-text{
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.02em;
+    color:#f7f3ea;
+    white-space:nowrap;
+  }
+  .us-first-badge.compact .us-first-text{
+    font-size:.68rem;
+    letter-spacing:.015em;
+  }
+  .us-first-badge:hover,
+  .us-first-badge:focus-visible{
+    background:#25466f;
+    color:#fff;
+    text-decoration:none;
+  }
+  .us-first-badge:hover .us-first-text,
+  .us-first-badge:focus-visible .us-first-text{color:#fff}
+  .us-first-badge:focus-visible{
+    outline:2px solid #f7f3ea;
+    outline-offset:2px;
+  }
+  @media (max-width:420px){
+    .us-first-text,
+    .us-first-badge.compact .us-first-text{
+      white-space:normal;
+      text-wrap:balance;
+      line-height:1.25;
+    }
+  }
+</style>
