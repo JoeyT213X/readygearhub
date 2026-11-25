@@ -1,6 +1,7 @@
 ---
 import Photo from './Photo.astro';
 import type { HeroBentoTile } from '../data/full-catalog';
+import { shortById } from '../data/shorts';
 
 interface Props {
   title: string;
@@ -49,9 +50,11 @@ const order: HeroBentoTile['id'][] = [
     {order.map((id) => {
       const tile = byId[id];
       if (!tile) return null;
+      const short = shortById(tile.id);
       return (
-        <a class:list={['hero-bento-tile', `is-${tile.id}`]} href={tile.href}>
+        <a class:list={['hero-bento-tile', `is-${tile.id}`, { 'has-short': !!short }]} href={tile.href}>
           <Photo name={tile.photoKey} sizes="(max-width: 699px) 100vw, (max-width: 1099px) 50vw, 25vw" eager={tile.eager} decorative />
+          {short && <video class="hero-bento-video" data-loop={short.loop} muted playsinline loop preload="none" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>}
           <span class="hero-bento-chip">
             <span class="hero-bento-chip-label">{tile.label}</span>
             <span class="hero-bento-chip-arrow" aria-hidden="true">→</span>
@@ -61,3 +64,58 @@ const order: HeroBentoTile['id'][] = [
     })}
   </div>
 </section>
+<script>
+  // Category tile loops: the photo stays as the still. Only the hovered tile (desktop) or the
+  // tile nearest the middle of the screen (touch) loads and plays its small muted loop.
+  // Nothing loads until after the page has finished loading. Reduced motion / Save-Data: stills only.
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData === true;
+  const tiles = Array.from(document.querySelectorAll<HTMLAnchorElement>('.hero-bento-tile.has-short'));
+  if (!reduce && !saveData && tiles.length) {
+    const arm = () => {
+      let current: HTMLAnchorElement | null = null;
+      const vid = (t: HTMLAnchorElement) => t.querySelector<HTMLVideoElement>('video.hero-bento-video')!;
+      const play = (t: HTMLAnchorElement) => {
+        if (current && current !== t) stop(current);
+        current = t;
+        const v = vid(t);
+        if (!v.src) v.src = v.dataset.loop!;
+        v.play().then(() => t.classList.add('is-playing')).catch(() => {});
+      };
+      const stop = (t: HTMLAnchorElement) => {
+        const v = vid(t);
+        v.pause();
+        t.classList.remove('is-playing');
+        if (current === t) current = null;
+      };
+      const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      if (canHover) {
+        for (const t of tiles) {
+          t.addEventListener('mouseenter', () => play(t));
+          t.addEventListener('mouseleave', () => stop(t));
+          t.addEventListener('focus', () => play(t));
+          t.addEventListener('blur', () => stop(t));
+        }
+      } else {
+        const seen = new Map<Element, number>();
+        const io = new IntersectionObserver((entries) => {
+          for (const e of entries) seen.set(e.target, e.isIntersecting ? e.intersectionRatio : 0);
+          let best: HTMLAnchorElement | null = null;
+          let bestRatio = 0;
+          for (const [el, r] of seen) if (r > bestRatio) { bestRatio = r; best = el as HTMLAnchorElement; }
+          if (best && bestRatio > 0.3) { if (best !== current) play(best); }
+          else if (current) stop(current);
+        }, { rootMargin: '-35% 0px -35% 0px', threshold: [0, 0.3, 0.6, 1] });
+        tiles.forEach((t) => io.observe(t));
+      }
+      document.addEventListener('visibilitychange', () => { if (document.hidden && current) stop(current); });
+    };
+    const later = () => ('requestIdleCallback' in window ? (window as any).requestIdleCallback(arm, { timeout: 2000 }) : setTimeout(arm, 600));
+    if (document.readyState === 'complete') later(); else window.addEventListener('load', later, { once: true });
+  }
+</script>
+<style is:global>
+  .hero-bento-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;display:block;opacity:0;transition:opacity .35s ease;pointer-events:none;z-index:0}
+  .hero-bento-tile.is-playing .hero-bento-video{opacity:1}
+  @media (prefers-reduced-motion: reduce){.hero-bento-video{display:none}}
+</style>

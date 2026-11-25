@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import ItemCard from '../components/ItemCard.astro';
 import Disclosure from '../components/Disclosure.astro';
 import PageHero from '../components/PageHero.astro';
+import CategoryShort from '../components/CategoryShort.astro';
 import GuideCard from '../components/GuideCard.astro';
 import LaneCard from '../components/LaneCard.astro';
 import SectionHead from '../components/SectionHead.astro';
@@ -56,6 +57,7 @@ const schema = [
       <a class="btn" href="#picks">See {items.length} picks</a>
       {guides[0] && <a class="btn ghost light" href={`/guides/${guides[0].id}/`}>Read: {guides[0].data.title.replace(/\s*[:(].*$/, '')}</a>}
     </div>
+    <CategoryShort path={`/${lane.slug}/`} />
   </PageHero>
   {isWinterDealLane(lane.slug) && (
     <section class="wrap section tight">

@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import { categoryShorts } from '../data/shorts';
+---
+<Base
+  title="Category Shorts (preview only) | ReadyGearHub"
+  description="Private review page for ReadyGearHub category Shorts. Not in the sitemap or navigation."
+  noindex
+>
+  <section class="page-hero">
+    <div class="wrap page-hero-inner">
+      <p class="eyebrow">Internal preview</p>
+      <h1>Category Shorts</h1>
+      <p class="lead">One short vertical video per category, {categoryShorts.length} in all. Nothing loads until you press play.</p>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <p class="fine">Stock footage and music licensed through InVideo and exported without an InVideo watermark. No prices, stats or brand logos. Each card links to the page where the Short now appears.</p>
+    <ul class="sp-grid">
+      {categoryShorts.map((s) => (
+        <li class="sp-card">
+          <video src={s.src} poster={s.poster} controls playsinline preload="none" width="432" height="768"></video>
+          <div class="sp-meta">
+            <p class="sp-cat">{s.label}</p>
+            <p class="sp-title">{s.title}</p>
+            <p class="fine">{s.seconds}s · shown on {s.pages.map((p, i) => (<>{i > 0 && ', '}<a href={p}>{p}</a></>))}{s.id !== 'cold' && <> · home tile loop</>}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+<style>
+  .sp-grid{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+  .sp-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(9,25,38,.12)}
+  .sp-card video{display:block;width:100%;height:auto;aspect-ratio:9/16;background:#0b1c28}
+  .sp-meta{padding:12px 14px 14px}
+  .sp-cat{margin:0;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#b4572a}
+  .sp-title{margin:2px 0 6px;font-weight:700;line-height:1.25}
+</style>

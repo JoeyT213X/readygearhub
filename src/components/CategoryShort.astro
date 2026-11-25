@@ -1,0 +1,102 @@
+---
+/**
+ * Small side video box for a category page. Shows the category Short's poster, plays the
+ * small muted loop (<1 MB) only while it is on screen, and loads the full Short with sound
+ * only after someone taps "Play with sound". Reduced motion: poster only until tapped.
+ * Sits inside the page header and reserves its own space, so it never covers text or buttons.
+ */
+import { shortForPath, shortById, type CategoryShort } from '../data/shorts';
+interface Props { id?: string; path?: string }
+const { id, path = Astro.url.pathname } = Astro.props;
+const short: CategoryShort | undefined = id ? shortById(id) : shortForPath(path);
+---
+{short && (
+  <aside class="cat-short" data-cat-short data-full={short.src} data-loop={short.loop} aria-label={`${short.seconds}-second video: ${short.title}`}>
+    <div class="cat-short-frame">
+      <video class="cat-short-video" muted playsinline loop preload="none" poster={short.poster} width="432" height="768" aria-hidden="true"></video>
+      <button type="button" class="cat-short-close" data-cat-short-close aria-label="Close video">×</button>
+    </div>
+    <div class="cat-short-body">
+      <p class="cat-short-kicker">{Math.round(short.seconds)}-second guide</p>
+      <p class="cat-short-title">{short.title}</p>
+      <button type="button" class="cat-short-sound" data-cat-short-sound aria-pressed="false">▶ Play with sound</button>
+    </div>
+  </aside>
+)}
+<script>
+  const boxes = document.querySelectorAll<HTMLElement>('[data-cat-short]');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData === true;
+  boxes.forEach((box) => {
+    if (sessionStorage.getItem('rgh-cat-short-closed') === '1') { box.hidden = true; return; }
+    const video = box.querySelector<HTMLVideoElement>('video')!;
+    const soundBtn = box.querySelector<HTMLButtonElement>('[data-cat-short-sound]')!;
+    const closeBtn = box.querySelector<HTMLButtonElement>('[data-cat-short-close]')!;
+    let mode: 'idle' | 'loop' | 'full' = 'idle';
+    let visible = false;
+    const startLoop = () => {
+      if (reduce || saveData || mode !== 'idle') return;
+      mode = 'loop';
+      video.src = box.dataset.loop!;
+      video.play().catch(() => {});
+    };
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        visible = e.isIntersecting;
+        if (visible) {
+          if (mode === 'idle') startLoop();
+          else video.play().catch(() => {});
+        } else if (!video.paused) {
+          video.pause();
+        }
+      }
+    }, { threshold: 0.35 });
+    const arm = () => io.observe(box);
+    if (document.readyState === 'complete') arm(); else window.addEventListener('load', arm, { once: true });
+    soundBtn.addEventListener('click', () => {
+      if (mode !== 'full') {
+        mode = 'full';
+        video.loop = false;
+        video.src = box.dataset.full!;
+        video.preload = 'auto';
+        video.muted = false;
+        video.controls = true;
+        video.removeAttribute('aria-hidden');
+        video.play().catch(() => {});
+        soundBtn.textContent = 'Mute';
+        soundBtn.setAttribute('aria-pressed', 'true');
+        return;
+      }
+      video.muted = !video.muted;
+      if (!video.muted && video.paused) video.play().catch(() => {});
+      soundBtn.textContent = video.muted ? 'Sound on' : 'Mute';
+      soundBtn.setAttribute('aria-pressed', String(!video.muted));
+    });
+    closeBtn.addEventListener('click', () => {
+      video.pause();
+      video.removeAttribute('src');
+      video.load();
+      io.disconnect();
+      box.hidden = true;
+      sessionStorage.setItem('rgh-cat-short-closed', '1');
+    });
+  });
+</script>
+<style is:global>
+  .cat-short{display:flex;gap:12px;align-items:center;margin:18px 0 0;padding:10px;max-width:420px;border-radius:14px;background:rgba(9,25,38,.72);border:1px solid rgba(255,255,255,.18);box-shadow:0 8px 22px rgba(0,0,0,.28);color:#fff}
+  .cat-short[hidden]{display:none}
+  .cat-short-frame{position:relative;flex:none;width:108px;aspect-ratio:9/16;border-radius:10px;overflow:hidden;background:#0b1c28}
+  .cat-short-video{display:block;width:100%;height:100%;object-fit:cover}
+  .cat-short-close{position:absolute;top:4px;right:4px;width:28px;height:28px;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(9,25,38,.78);color:#fff;font-size:18px;line-height:1;cursor:pointer}
+  .cat-short-body{min-width:0}
+  .cat-short-kicker{margin:0 0 2px;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#f6b98c}
+  .cat-short-title{margin:0 0 10px;font-weight:700;line-height:1.25;color:#fff}
+  .cat-short-sound{min-height:40px;padding:8px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.35);background:#0f2a3d;color:#fff;font-weight:600;font-size:.92rem;cursor:pointer}
+  .cat-short-sound:hover,.cat-short-sound:focus-visible,.cat-short-close:hover,.cat-short-close:focus-visible{border-color:#f6b98c}
+  .cat-short-sound:focus-visible,.cat-short-close:focus-visible{outline:3px solid #f2a65a;outline-offset:2px}
+  @media (min-width: 960px){
+    .page-hero:has(.cat-short) .page-hero-inner{position:relative;padding-right:380px;min-height:240px;box-sizing:border-box}
+    .page-hero .cat-short{position:absolute;top:50%;right:20px;transform:translateY(-50%);width:340px;margin:0}
+    .page-hero .cat-short-frame{width:104px}
+  }
+</style>
