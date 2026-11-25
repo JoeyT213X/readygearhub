@@ -58,6 +58,7 @@ const schema = {
   title={`${category.name} · Full Source Directory | ReadyGearHub`}
   description={category.blurb}
   schema={schema}
+  pageClass={category.id === 'drones-robotics' ? 'dir-drones-robotics' : undefined}
 >
   <PageHero
     title={category.name}

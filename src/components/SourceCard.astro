@@ -2,8 +2,10 @@
 import type { CatalogItem } from '../data/full-catalog';
 import { stockCoverFor } from '../data/stock-covers';
 import { productPhotoFor, photoBackdropClass } from '../data/product-photos';
+import { listingAction } from '../data/listing-actions';
 interface Props { item: CatalogItem; heading?: 'h2' | 'h3' }
 const { item, heading = 'h3' } = Astro.props;
+const action = listingAction(item);
 const product = productPhotoFor(item);
 const stock = product ? undefined : stockCoverFor(item);
 const Tag = heading;
@@ -71,6 +73,7 @@ const badge = item.trending
       target={ctaInternal ? undefined : '_blank'}
       rel={ctaRel}
       data-program={item.affiliate && item.programId ? item.programId : undefined}
-    >{item.ctaLabel}{ctaInternal ? '' : ' ↗'}</a>
+    >{action.label}{ctaInternal ? '' : ' ↗'}</a>
+    {action.code && <p class="listing-code">Code: <strong>{action.code}</strong></p>}
   </div>
 </article>

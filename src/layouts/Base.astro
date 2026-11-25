@@ -9,8 +9,8 @@ import Analytics from '../components/Analytics.astro';
 import FunnelGuards from '../components/FunnelGuards.astro';
 import VisitorTicker from '../components/VisitorTicker.astro';
 import { getCollection } from 'astro:content';
-interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean }
-const { title, description, image = '/og-default.png', type = 'website', schema, noindex = false } = Astro.props;
+interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean; pageClass?: string }
+const { title, description, image = '/og-default.png', type = 'website', schema, noindex = false, pageClass } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(image, Astro.site).href;
 const navLanes = [...lanesRaw].filter((l) => l.active !== false).sort((a, b) => a.order - b.order);
@@ -114,7 +114,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
   )}
   <Analytics />
 </head>
-<body>
+<body class={pageClass}>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">

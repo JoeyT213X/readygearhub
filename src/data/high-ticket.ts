@@ -30,6 +30,8 @@ export type HighTicketItem = {
   imageKind?: 'photo' | 'banner' | 'logo';
   offerLabel?: string;
   cta?: string;
+  /** Directional CTA kind. Omit for a normal retail listing (Check listing). */
+  ctaKind?: 'listing' | 'inquire' | 'discount' | 'details';
   /** Verified official price, already dated, or 'See price'. */
   price?: string;
   /** Low-key filler: sort after US/allied listings, bottom group only, never featured or on the home page. */
@@ -1817,7 +1819,8 @@ export function highTicketToCatalogItem(item: HighTicketItem): CatalogItem {
     imageKind: item.imageKind,
     priceLabel: item.price || 'See official site',
     offerLabel: item.offerLabel || 'Official site',
-    ctaLabel: item.cta || 'Visit official site',
+    ctaLabel: item.cta || 'Check listing',
+    ctaKind: item.ctaKind,
     groups: item.groups,
     kind: 'brand',
     origin: 'directory',

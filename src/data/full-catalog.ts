@@ -40,6 +40,10 @@ export type CatalogItem = {
   priceLabel: string;
   offerLabel?: string;
   ctaLabel: string;
+  /** Directional CTA kind. SourceCard maps this; do not put a seller name in the button. */
+  ctaKind?: 'listing' | 'inquire' | 'discount' | 'details';
+  /** Optional override of the program coupon shown next to a discount CTA. */
+  couponCode?: string;
   trending?: boolean;
   trendingRank?: number;
   groups: SourceGroupId[];

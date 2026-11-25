@@ -29,7 +29,7 @@ def add_ri(i, filler=False):
     x=RI[i]; url=x['url']
     items.append(dict(id='ri-'+slug(url.split('.com/')[1].replace('.htm',''))[:70], title=x['name'].strip(), blurb=ri_blurb(x['name'],x['avail'] or '',x['price']),
       sourceName='Robots International', programId='robots-international', url=url, label=ri_label(x['name']),
-      price=f"{usd(x['price'])} on Robots International as of {ASOF}", cta='See price at Robots International', group='robots', filler=filler))
+      price=f"{usd(x['price'])} on Robots International as of {ASOF}", cta='Check listing', group='robots', filler=filler))
 for i in RI_SEL:
     add_ri(i, False)
 for i in RI_FILLER:
@@ -39,7 +39,7 @@ def add_rs(h,t,p,av,b, filler=False):
     fire='fire' in t.lower()
     items.append(dict(id='rs-'+h.replace('-us','') if h.endswith('-us') else 'rs-'+h, title=t, blurb=b+f' {av} on RobotShop.', sourceName='RobotShop', programId='robotshop',
       url=f'https://www.robotshop.com/products/{h}', label='Firefighting robot' if fire else 'Quadruped robot',
-      price=f'{usd(p)} on RobotShop as of {ASOF}', cta='See price at RobotShop', group='robots', filler=filler))
+      price=f'{usd(p)} on RobotShop as of {ASOF}', cta='Check listing', group='robots', filler=filler))
 for h,t,p,av,b in ROBOTSHOP:
     add_rs(h,t,p,av,b, False)
 for h,t,p,av,b in ROBOTSHOP_FILLER:
@@ -65,10 +65,10 @@ for p in AUTEL:
     lo=min(prices); multi=len(set(prices))>1 or len(p['variants'])>1
     items.append(dict(id='autel-'+slug(p['handle'].replace('-copy','').replace('drones-','')), title=('Autel '+p['title']) if not p['title'].startswith('Autel') else p['title'],
       blurb=AB[p['handle']]+' Availability and local rules vary; see the store.', sourceName='Autel Robotics', programId='autel-robotics',
-      url=f"https://shop.autelrobotics.com/products/{p['handle']}", label='Drone', price=(('From ' if multi and len(set(prices))>1 else '')+usd(lo)+f' on Autel Robotics’ shop as of {ASOF}'), cta='See price at Autel Robotics', group='drones'))
+      url=f"https://shop.autelrobotics.com/products/{p['handle']}", label='Drone', price=(('From ' if multi and len(set(prices))>1 else '')+usd(lo)+f' on Autel Robotics’ shop as of {ASOF}'), cta='Check listing', group='drones'))
 # ---- HOVERAir
 for iid,t,u,b in HOVER:
-    items.append(dict(id=iid,title=t,blurb=b,sourceName='HOVERAir',programId='hoverair',url=u,label='Camera drone',price='See price',cta='See price at HOVERAir',group='drones'))
+    items.append(dict(id=iid,title=t,blurb=b,sourceName='HOVERAir',programId='hoverair',url=u,label='Camera drone',price='See price',cta='Check listing',group='drones'))
 # de-dup ids
 seen=set()
 for it in items:

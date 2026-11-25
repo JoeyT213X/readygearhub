@@ -8,10 +8,12 @@
  * so every card uses a plain official product link (rel=noopener, no tracking) and an empty `affiliateUrl` placeholder.
  * TODO(affiliate): when a program is approved, flip its status in packages/catalog/affiliates.ts and paste the verified
  * tracked URL into `affiliateUrl` on that store's items. Never invent tracking links.
- * Pending programs are ppcAllowed:false (hidden in paid-search sessions). No weaponized robots, no counter-drone gear,
- * no parts/accessories/education kits. Representative stock photos only; robot cards stay text-only.
+ * Pending programs are ppcAllowed:false (hidden in paid-search sessions). No weaponized robots and no counter-drone gear.
+ * One pending Elephant Robotics official-shop card may appear among the primary listings (civilian arms, cobots,
+ * and education kits; not a robot-dog filler and not on the home page). No full Elephant lineup.
  */
 import type { HighTicketItem } from './high-ticket';
+import { ELEPHANT_ROBOTICS_SHOP_URL } from './partner-codes';
 
 export const roboticsDronesItems: HighTicketItem[] = [
   {
@@ -24,7 +26,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/fx-navi-embodied-ai-quadruped-robot.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$1,990 on Robots International as of Nov 25, 2026",
   },
   {
@@ -37,7 +39,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/fx-aegis-ultra-w-wheel-legged-robot-dog.htm",
     offerLabel: "Wheeled quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$12,990 on Robots International as of Nov 25, 2026",
   },
   {
@@ -50,7 +52,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Ultra-W-Plus.htm",
     offerLabel: "Wheeled quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$24,990 on Robots International as of Nov 25, 2026",
   },
   {
@@ -63,7 +65,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Ultra-Plus.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$22,990 on Robots International as of Nov 25, 2026",
   },
   {
@@ -76,7 +78,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Ultra.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$12,990 on Robots International as of Nov 25, 2026",
   },
   {
@@ -89,7 +91,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Pro.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$4,490 on Robots International as of Nov 25, 2026",
   },
   {
@@ -102,7 +104,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/fx-aegis-quadruped-robot-dog.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$2,490 on Robots International as of Nov 25, 2026",
   },
   {
@@ -115,7 +117,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/GALILEO-C1.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$10,000 on Robots International as of Nov 25, 2026",
     filler: true,
   },
@@ -129,7 +131,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/GALILEO-C1-W.htm",
     offerLabel: "Wheeled quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$11,995 on Robots International as of Nov 25, 2026",
     filler: true,
   },
@@ -143,7 +145,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/PUDU-D5-W-Wheeled-Quadruped-Robot.htm",
     offerLabel: "Wheeled quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$83,995 on Robots International as of Nov 25, 2026",
     filler: true,
   },
@@ -157,7 +159,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/PUDU-D5-Quadruped-Robot.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$69,995 on Robots International as of Nov 25, 2026",
     filler: true,
   },
@@ -171,7 +173,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/MagicLab-MagicDog-Quadruped-Robot.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$12,500 on Robots International as of Nov 25, 2026",
     filler: true,
   },
@@ -185,7 +187,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotsinternational.com/MirrorMe-BPX-Pro.htm",
     offerLabel: "Quadruped robot",
-    cta: "See price at Robots International",
+    cta: "Check listing",
     price: "$7,995 on Robots International as of Nov 25, 2026",
     filler: true,
   },
@@ -199,7 +201,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotshop.com/products/deep-robotics-lite3-basic-quadruped-robot",
     offerLabel: "Quadruped robot",
-    cta: "See price at RobotShop",
+    cta: "Check listing",
     price: "$6,600 on RobotShop as of Nov 25, 2026",
     filler: true,
   },
@@ -213,7 +215,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotshop.com/products/deep-robotics-lite3-venture-quadruped-robot",
     offerLabel: "Quadruped robot",
-    cta: "See price at RobotShop",
+    cta: "Check listing",
     price: "$7,986 on RobotShop as of Nov 25, 2026",
     filler: true,
   },
@@ -227,7 +229,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotshop.com/products/deep-robotics-lite3-pro-quadruped-robot",
     offerLabel: "Quadruped robot",
-    cta: "See price at RobotShop",
+    cta: "Check listing",
     price: "$15,290 on RobotShop as of Nov 25, 2026",
     filler: true,
   },
@@ -241,7 +243,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://www.robotshop.com/products/deep-robotics-lite3-lidar-quadruped-robot",
     offerLabel: "Quadruped robot",
-    cta: "See price at RobotShop",
+    cta: "Check listing",
     price: "$22,990 on RobotShop as of Nov 25, 2026",
     filler: true,
   },
@@ -256,7 +258,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/x1-pro-and-promax",
     offerLabel: "Camera drone",
-    cta: "See price at HOVERAir",
+    cta: "Check listing",
     price: "See price",
   },
   {
@@ -270,7 +272,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/aqua",
     offerLabel: "Camera drone",
-    cta: "See price at HOVERAir",
+    cta: "Check listing",
     price: "See price",
   },
   {
@@ -284,7 +286,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/x1-smart",
     offerLabel: "Camera drone",
-    cta: "See price at HOVERAir",
+    cta: "Check listing",
     price: "See price",
   },
   {
@@ -298,8 +300,22 @@ export const roboticsDronesItems: HighTicketItem[] = [
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/x1",
     offerLabel: "Camera drone",
-    cta: "See price at HOVERAir",
+    cta: "Check listing",
     price: "See price",
+  },
+  {
+    id: "elephant-robotics-official-shop",
+    title: "Elephant Robotics official shop",
+    blurb: "Desktop robotic arms, cobots, and education kits from Elephant Robotics’ official shop. Civilian tools for learning and light automation — not a robot-dog lineup. Use the checkout code shown on the card.",
+    sourceName: "Elephant Robotics",
+    category: 'drones-robotics',
+    groups: ['safety-prep'],
+    affiliateUrl: '', // TODO(affiliate): tracked URL once approved
+    fallbackUrl: ELEPHANT_ROBOTICS_SHOP_URL,
+    offerLabel: "Official shop",
+    cta: "Buy with discount code",
+    ctaKind: 'discount',
+    price: "See official site",
   },
 ];
 
