@@ -12,6 +12,7 @@
  * image and is used only on that listing.
  */
 import type { CatalogItem } from './full-catalog';
+import { isStoreFront } from './listing-actions';
 import type { SourceCategoryId, SourceGroupId } from './source-directory';
 import { isNoPpcProgram, programIdForItem, resolveOutbound } from './affiliates';
 import { roboticsDronesItems } from './robotics-drones';
@@ -1825,6 +1826,7 @@ export function highTicketToCatalogItem(item: HighTicketItem): CatalogItem {
     kind: 'brand',
     origin: 'directory',
     filler: item.filler,
+    storeLevel: isStoreFront(official) || undefined,
   };
 }
 

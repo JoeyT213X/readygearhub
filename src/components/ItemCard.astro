@@ -2,6 +2,7 @@
 import { laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides, type Item } from '../lib/data';
 import { isNoPpcProgram } from '../data/affiliates';
 import { cardImageFor } from '../data/card-image';
+import { retailLabel } from '../data/listing-actions';
 interface Props { item: Item; showRank?: boolean; showGuide?: boolean }
 const { item, showRank = false, showGuide = true } = Astro.props;
 const guide = showGuide ? (await getGuides()).find((g) => g.data.relatedItems.includes(item.id)) : undefined;
@@ -28,6 +29,6 @@ const photo = cardImageFor(item);
   {guide && <p class="card-guide-link">📘 How it fits: <a href={`/guides/${guide.id}/`}>{guide.data.title}</a></p>}
   <div class="card-actions">
     <a class="btn small ghost" href={`/gear/${item.id}/`}>Details</a>
-    <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>Check current price ↗</a>
+    <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>{retailLabel(item.id, false)} ↗</a>
   </div>
 </article>

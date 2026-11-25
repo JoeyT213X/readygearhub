@@ -101,13 +101,6 @@ export const winterDeals: WinterDeal[] = [
     why: 'A flashlight that can also act as a power bank, according to Wuben. The official page showed a lower price on the red model.',
   },
   {
-    itemId: 'anker-solix-c1000x',
-    section: 'power',
-    priceLabel: '$499.99',
-    stockNote: 'In stock on the official Anker SOLIX store when checked.',
-    why: 'A mid-size station for phones, lights, and small appliances during a winter outage. This is the official-store price, not a claimed discount.',
-  },
-  {
     itemId: 'bluetti-ac180',
     section: 'power',
     priceLabel: '$549.00',
@@ -251,11 +244,6 @@ export const winterDealSources: { title: string; href: string; note: string }[] 
     title: 'Black Friday Heated Clothing Deals 2026',
     href: 'https://blackfridayishere.com/black-friday-heated-clothing-deals/',
     note: 'Prices on that page were dated November 22, 2026. Live Amazon picks included Soaccks, Beamsks, and ORORO heated vests.',
-  },
-  {
-    title: 'Anker SOLIX official C1000X product page',
-    href: 'https://www.ankersolix.com/products/a1761111',
-    note: 'Official store price $499.99, in stock, read November 23, 2026.',
   },
   {
     title: 'Anker SOLIX official C2000 Gen 2 product page',

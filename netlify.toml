@@ -61,3 +61,125 @@
   to = "https://www.nhc.noaa.gov/CurrentStorms.json"
   status = 200
   force = true
+
+# Shorts traffic: /go/<slug> short links to each Short's landing page with UTMs (302, so a destination can be swapped later).
+
+[[redirects]]
+  from = "/go/big-berkey-gravity-filter"
+  to = "/directory/water/?utm_source=youtube&utm_medium=shorts&utm_campaign=big-berkey-gravity-filter"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/big-berkey-gravity-filter/"
+  to = "/directory/water/?utm_source=youtube&utm_medium=shorts&utm_campaign=big-berkey-gravity-filter"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/epic-og-travel-bottle"
+  to = "/gear/epic-og-ultimate-travel-bottle/?utm_source=youtube&utm_medium=shorts&utm_campaign=epic-og-travel-bottle"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/epic-og-travel-bottle/"
+  to = "/gear/epic-og-ultimate-travel-bottle/?utm_source=youtube&utm_medium=shorts&utm_campaign=epic-og-travel-bottle"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/tidewe-aquawade-pro-waders"
+  to = "/gear/tidewe-aquawade-pro-waders/?utm_source=youtube&utm_medium=shorts&utm_campaign=tidewe-aquawade-pro-waders"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/tidewe-aquawade-pro-waders/"
+  to = "/gear/tidewe-aquawade-pro-waders/?utm_source=youtube&utm_medium=shorts&utm_campaign=tidewe-aquawade-pro-waders"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/ispring-rcc7-under-sink-ro"
+  to = "/gear/ispring-rcc7/?utm_source=youtube&utm_medium=shorts&utm_campaign=ispring-rcc7-under-sink-ro"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/ispring-rcc7-under-sink-ro/"
+  to = "/gear/ispring-rcc7/?utm_source=youtube&utm_medium=shorts&utm_campaign=ispring-rcc7-under-sink-ro"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/redi-roadie-car-kit"
+  to = "/directory/safety/?utm_source=youtube&utm_medium=shorts&utm_campaign=redi-roadie-car-kit"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/redi-roadie-car-kit/"
+  to = "/directory/safety/?utm_source=youtube&utm_medium=shorts&utm_campaign=redi-roadie-car-kit"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/wuben-f5-camping-light"
+  to = "/gear/wuben-f5/?utm_source=youtube&utm_medium=shorts&utm_campaign=wuben-f5-camping-light"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/wuben-f5-camping-light/"
+  to = "/gear/wuben-f5/?utm_source=youtube&utm_medium=shorts&utm_campaign=wuben-f5-camping-light"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/winter-storm-watch-vs-warning"
+  to = "/guides/winter-storm-watch-vs-warning/?utm_source=youtube&utm_medium=shorts&utm_campaign=winter-storm-watch-vs-warning"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/winter-storm-watch-vs-warning/"
+  to = "/guides/winter-storm-watch-vs-warning/?utm_source=youtube&utm_medium=shorts&utm_campaign=winter-storm-watch-vs-warning"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/weather-radio-power-out"
+  to = "/winter-storm-prep/?utm_source=youtube&utm_medium=shorts&utm_campaign=weather-radio-power-out"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/weather-radio-power-out/"
+  to = "/winter-storm-prep/?utm_source=youtube&utm_medium=shorts&utm_campaign=weather-radio-power-out"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/storm-first-aid-kit"
+  to = "/guides/storm-first-aid-kit/?utm_source=youtube&utm_medium=shorts&utm_campaign=storm-first-aid-kit"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/storm-first-aid-kit/"
+  to = "/guides/storm-first-aid-kit/?utm_source=youtube&utm_medium=shorts&utm_campaign=storm-first-aid-kit"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/winter-car-emergency-kit"
+  to = "/guides/winter-car-emergency-kit/?utm_source=youtube&utm_medium=shorts&utm_campaign=winter-car-emergency-kit"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/winter-car-emergency-kit/"
+  to = "/guides/winter-car-emergency-kit/?utm_source=youtube&utm_medium=shorts&utm_campaign=winter-car-emergency-kit"
+  status = 302
+  force = true

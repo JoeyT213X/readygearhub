@@ -2,6 +2,7 @@
 import { outUrl, isAffiliate, programIdForItem, type Item } from '../lib/data';
 import { isNoPpcProgram } from '../data/affiliates';
 import { cardImageFor } from '../data/card-image';
+import { retailLabel } from '../data/listing-actions';
 import type { WinterDeal } from '../data/winter-deals';
 import { PRICE_CHECKED_LABEL } from '../data/winter-deals';
 
@@ -44,7 +45,7 @@ const href = outUrl(item);
       target="_blank"
       rel="sponsored nofollow noopener"
       data-program={program || undefined}
-    >Check current price ↗</a>
+    >{retailLabel(item.id, /\$\s?\d/.test(deal.priceLabel))} ↗</a>
   </div>
 </article>
 

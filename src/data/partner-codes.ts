@@ -7,7 +7,7 @@ export const PARTNER_REF_CODE = 'JOSEPHTINDIGLIA';
 export const PARTNER_REF_CODE_PENDING = 'JOEYT213X';
 
 /** Official Elephant Robotics shop with the provided referral parameter. */
-export const ELEPHANT_ROBOTICS_SHOP_URL = 'https://shop.elephantrobotics.com/?ref=joeyt213x';
+export const ELEPHANT_ROBOTICS_SHOP_URL = 'https://shop.elephantrobotics.com/collections/all?ref=joeyt213x';
 
 /**
  * Customer-facing checkout codes, only for programs that allow a coupon.

@@ -12,6 +12,7 @@ import { catalogExtraById, type CatalogExtra } from './catalog-extras';
 import { newPrepperOnlyPicks, prepperPickToCatalogItem } from './prepper-picks';
 import { highTicketCatalogItems } from './high-ticket';
 import { stockCoverFor } from './stock-covers';
+import { isStoreFront } from './listing-actions';
 import { productPhotoFor } from './product-photos';
 import {
   sourceGroups,
@@ -52,7 +53,10 @@ export type CatalogItem = {
   origin: 'source-directory' | 'gear' | 'directory' | 'tools' | 'apps' | 'payhip' | 'prepper';
   /** Low-key filler cards: always last (not featured, not on the home page). */
   filler?: boolean;
+  /** The link opens a store or brand front page (or a whole collection), not one product page. The button says so. */
+  storeLevel?: boolean;
 };
+
 
 export type GearInput = {
   id: string;
@@ -185,6 +189,7 @@ function fromPartner(item: ResolvedSourceItem): CatalogItem {
     groups: partnerGroups(item),
     kind,
     origin,
+    storeLevel: item.linkLevel === 'merchant' || undefined,
   };
 }
 
@@ -274,6 +279,7 @@ function fromDirectoryEntry(idKnown: Set<string>): CatalogItem[] {
       groups: groupsFor([group]),
       kind: isResource ? 'resource' : 'brand',
       origin: 'directory',
+      storeLevel: (!isResource && isStoreFront(e.url)) || undefined,
     });
   }
   return out;

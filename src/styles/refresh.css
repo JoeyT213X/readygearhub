@@ -554,3 +554,11 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
 @media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
   .home-hero-window{transition:none}
 }
+
+/* Collapsed "About these listings" notes, placed below the grid so long disclaimers are never the first thing seen. */
+.listing-notes{margin:2rem 0 0;font-size:.85rem;color:var(--muted)}
+.listing-notes summary{cursor:pointer;color:var(--muted);font-weight:600;padding:.35rem 0;width:max-content;max-width:100%}
+.listing-notes summary:hover{color:var(--link)}
+.listing-notes p{margin:.4rem 0 0;max-width:70ch;line-height:1.5}
+body.dir-drones-robotics .listing-notes,
+body.dir-drones-robotics .listing-notes summary{color:var(--muted)}

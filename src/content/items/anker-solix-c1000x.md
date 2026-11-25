@@ -10,7 +10,7 @@ uses:
   - "Recharge quickly between outages"
   - "Camping and RV power"
   - "Remote work power"
-officialUrl: "https://www.ankersolix.com/products/a1761111"
+officialUrl: "https://www.ankersolix.com/c1000-camping-portable-power-station-pps"
 affiliateUrl: ""
 rank: 0
 featured: false

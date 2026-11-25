@@ -105,12 +105,12 @@ export const programs: Program[] = [
       'anker-solix-c300-dc-60w-kit',
     ],
     itemLinks: {
-      'anker-solix': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2F',
+      'anker-solix': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fcollections%2Fpower-stations',
       'anker-solix-ps400': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fproducts%2Fps400-bifacial-portable-solar-panel',
       'anker-solix-ps100': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fproducts%2F100w-bifacial-portable-solar-panel',
       'anker-solix-c2000-gen2-400w-kit': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fproducts%2Fc2000-gen2-400w-solar-panel',
       'anker-solix-f3800-plus': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fproducts%2Ff3800-plus',
-      'anker-solix-c1000x': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fproducts%2Fa1761111',
+      'anker-solix-c1000x': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fc1000-camping-portable-power-station-pps',
       'anker-solix-c1000x-gen2': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fc1000-gen2',
       'anker-solix-c2000-gen2': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=53552&murl=https%3A%2F%2Fwww.ankersolix.com%2Fproducts%2Fc2000-gen2',
       'anker-solix-ps200': 'https://click.linksynergy.com/link?id=j8aaZmp7txc&offerid=2103603.535528351762683891401722&type=2&murl=https%3a%2f%2fwww.ankersolix.com%2fproducts%2fps200-bifacial-portable-solar-panel%3fvariant%3d61840797991242',
@@ -139,7 +139,7 @@ export const programs: Program[] = [
       'litime-12v-40a-dc-dc',
     ],
     itemLinks: {
-      'litime': 'https://www.awin1.com/cread.php?awinmid=71451&awinaffid=3160581',
+      'litime': 'https://www.awin1.com/cread.php?awinmid=71451&awinaffid=3160581&ued=https%3A%2F%2Fwww.litime.com%2Fcollections%2Fall',
       'litime-12v-100ah-group24': 'https://www.awin1.com/cread.php?awinmid=71451&awinaffid=3160581&ued=https%3A%2F%2Fwww.litime.com%2Fproducts%2F12v-100ah-group-24-bluetooth-self-heating-battery',
       'litime-24v-230ah': 'https://www.awin1.com/cread.php?awinmid=71451&awinaffid=3160581&ued=https%3A%2F%2Fwww.litime.com%2Fproducts%2F24v-230ah-smart-self-heating-lithium-battery',
       'litime-12v-100ah-trolling': 'https://www.awin1.com/cread.php?awinmid=71451&awinaffid=3160581&ued=https%3A%2F%2Fwww.litime.com%2Fproducts%2F12v-100ah-lithium-trolling-motor-battery-with-bluetooth',
@@ -205,7 +205,7 @@ export const programs: Program[] = [
     link: 'https://theberkey.com/?rfsn=9422720.32fae8',
     items: ['berkey-shop', 'berkey-big-berkey', 'berkey-travel-berkey'],
     itemLinks: {
-      'berkey-shop': 'https://theberkey.com/?rfsn=9422720.32fae8',
+      'berkey-shop': 'https://theberkey.com/collections/all?rfsn=9422720.32fae8',
       'berkey-big-berkey': 'https://theberkey.com/products/big-berkey-water-filter?rfsn=9422720.32fae8',
       'berkey-travel-berkey': 'https://theberkey.com/products/travel-berkey-water-filter?rfsn=9422720.32fae8',
     },
@@ -219,7 +219,7 @@ export const programs: Program[] = [
     link: 'https://getredi.com/?ref=JOSEPHTINDIGLIA',
     items: ['redi-shop', 'redi-the-roadie', 'redi-roadie-plus', 'redi-roadie-pro', 'redi-trauma-pack'],
     itemLinks: {
-      'redi-shop': 'https://getredi.com/?ref=JOSEPHTINDIGLIA',
+      'redi-shop': 'https://getredi.com/collections/all?ref=JOSEPHTINDIGLIA',
       'redi-the-roadie': 'https://getredi.com/products/the-roadie?ref=JOSEPHTINDIGLIA',
       'redi-roadie-plus': 'https://getredi.com/products/roadie-plus?ref=JOSEPHTINDIGLIA',
       'redi-roadie-pro': 'https://getredi.com/products/roadie-pro?ref=JOSEPHTINDIGLIA',
@@ -377,7 +377,7 @@ export const programs: Program[] = [
       'ispring-df1',
     ],
     itemLinks: {
-      'ispring-home': 'https://www.ispringfilter.com/?ref=JOSEPHTINDIGLIA',
+      'ispring-home': 'https://www.ispringfilter.com/collections/all?ref=JOSEPHTINDIGLIA',
       'ispring-rcc7': 'https://www.ispringfilter.com/products/5-stage-essence-ro-water-filtration-system-ispring-rcc7-5-stage-residential-under-sink-reverse-osmosis-water-filter-system-wqa-certified-75-gpd?ref=JOSEPHTINDIGLIA',
       'ispring-rcc7ak': 'https://www.ispringfilter.com/products/ispring-6-stage-75-gpd-high-capacity-under-sink-reverse-osmosis-drinking-water-filter-system-with-alkaline-remineralization?ref=JOSEPHTINDIGLIA',
       'ispring-ro500': 'https://www.ispringfilter.com/products/ispring-ro500-bn-tankless-ro-reverse-osmosis-water-filtration-system-500-gpd-fast-flow-brushed-nickel-faucet-21-pure-to-drain-ratio-white-nsf-certified?ref=JOSEPHTINDIGLIA',
@@ -399,13 +399,13 @@ export const programs: Program[] = [
       'epic-og-ultimate-travel-bottle',
     ],
     itemLinks: {
-      'epic-pure-xp-pitcher': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
-      'epic-nano-xp-pitcher': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
-      'epic-smart-shield': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
-      'epic-smart-shield-max': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
-      'epic-og-ultimate-travel-bottle': 'https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO',
+      'epic-pure-xp-pitcher': 'https://www.epicwaterfilters.com/products/pure-xp-water-filter-pitcher?ref=XJZEKTWOCV',
+      'epic-nano-xp-pitcher': 'https://www.epicwaterfilters.com/products/epic-nano-water-filter-pitcher?ref=XJZEKTWOCV',
+      'epic-smart-shield': 'https://www.epicwaterfilters.com/products/epic-smart-shield-under-sink-water-filter-system?ref=XJZEKTWOCV',
+      'epic-smart-shield-max': 'https://www.epicwaterfilters.com/products/epic-smart-shield-max?ref=XJZEKTWOCV',
+      'epic-og-ultimate-travel-bottle': 'https://www.epicwaterfilters.com/products/ultimate-travel-bottle-og?ref=XJZEKTWOCV',
     },
-    note: 'PMX affiliate platform, 15% commission, 60-day cookie, approved Nov 24, 2026. Public PMX docs did not confirm a per-product redirect parameter, so every card uses the issued affiliate link (https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO) rather than an invented deep-link query. Official product URLs stay on the write-ups for reference. Linked from /gear/ (water), /gear/tech/ (water filters), and the Full Source Directory water and home tabs.' },
+    note: 'LINK AUDIT Nov 25, 2026: product cards now deep-link to the exact Epic product page with the program-issued ref=XJZEKTWOCV (the same ref PMX appends when its issued link https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO redirects to the Epic home page); the issued PMX link alone only lands on the home page. CONFIRM in the PMX dashboard that a deep-link click or test order is credited; revert itemLinks to the PMX link if not. PMX affiliate platform, 15% commission, 60-day cookie, approved Nov 24, 2026. Public PMX docs did not confirm a per-product redirect parameter, so every card uses the issued affiliate link (https://pmx-production.herokuapp.com/affiliate-link/AMLTBUQYRO) rather than an invented deep-link query. Official product URLs stay on the write-ups for reference. Linked from /gear/ (water), /gear/tech/ (water filters), and the Full Source Directory water and home tabs.' },
   { id: 'tidewe', name: 'TideWe', network: 'Awin', status: 'approved', kind: 'product', ppcAllowed: false,
     officialUrl: 'https://www.tidewe.com/',
     link: 'https://www.awin1.com/cread.php?awinmid=78182&awinaffid=3160581&ued={url}',
@@ -712,8 +712,14 @@ function trackingTemplate(p: Program): string {
 }
 
 /** CJ deep link. With an AID uses click-PID-AID?url=; otherwise CJ's deep-link generator. */
+/**
+ * CJ advertisers whose `click-<pid>-<aid>?url=` links drop the deep link and land on the homepage
+ * (verified Nov 25, 2026: ALLPOWERS). They keep the destination with CJ's `/links/<pid>/type/dlg/<url>` form.
+ */
+const CJ_DLG_ONLY_AIDS = new Set(['17227114']);
+
 export function cjLink(productUrl: string, aid = ''): string {
-  return aid
+  return aid && !CJ_DLG_ONLY_AIDS.has(aid)
     ? `https://www.anrdoezrs.net/click-${CJ_PID}-${aid}?url=${encodeURIComponent(productUrl)}`
     : `https://www.anrdoezrs.net/links/${CJ_PID}/type/dlg/${productUrl}`;
 }
