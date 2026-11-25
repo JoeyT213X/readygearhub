@@ -226,6 +226,11 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
 }
 .home-shop-hero .shop-board{padding:8px 0 4px;gap:14px}
 .home-shop-hero .shop-board-heading{margin:0}
+.shop-board-topline{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-bottom:4px}
+.shop-board-topline .bento-kicker{margin-bottom:0}
+.hero-bento-copy-text{display:flex;flex-direction:column;align-items:center}
+.hero-bento-copy-text .us-first-badge{margin:0 0 .45em}
+
 .home-shop-hero .shop-board-title{
   font-size:clamp(2rem,5.4vw,3.15rem);
   font-weight:800;

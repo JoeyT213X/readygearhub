@@ -1,5 +1,6 @@
 ---
 import Photo from './Photo.astro';
+import UsFirstBadge from './UsFirstBadge.astro';
 import { shopBoardCountLabel, type ShopBoardTile } from '../data/full-catalog';
 
 interface Props {
@@ -17,7 +18,10 @@ function isInternal(href: string) {
 <div class:list={["bento-tile", "is-shop-board", "is-wide", { "is-hero": hero }]}>
   <div class="shop-board">
     <div class="shop-board-copy">
-      <span class="bento-kicker">Explore</span>
+      <div class="shop-board-topline">
+        <span class="bento-kicker">Explore</span>
+        {hero && <UsFirstBadge />}
+      </div>
       {hero ? <h1 class="shop-board-heading"><a class="shop-board-title" href="/directory/">Shop the Directory</a></h1> : <a class="shop-board-title" href="/directory/">Shop the Directory</a>}
       <p class="shop-board-text">{countLabel} listings from partner stores, official shops, gear write-ups, downloads, and free tools.</p>
     </div>

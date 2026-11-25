@@ -1,5 +1,6 @@
 ---
 import Photo from './Photo.astro';
+import UsFirstBadge from './UsFirstBadge.astro';
 import type { HeroBentoTile } from '../data/full-catalog';
 import { shortById } from '../data/shorts';
 
@@ -33,6 +34,7 @@ const order: HeroBentoTile['id'][] = [
         <a class="btn ghost light hero-btn-hub" href="/alerts/">Outages, Alerts &amp; Checklists</a>
       </div>
       <div class="hero-bento-copy-text">
+        <UsFirstBadge compact />
         <h2 class="hero-spread-title">{title}</h2>
         <p class="lead">{lead}</p>
       </div>
