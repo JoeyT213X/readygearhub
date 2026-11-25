@@ -12,6 +12,7 @@ import { catalogExtraById, type CatalogExtra } from './catalog-extras';
 import { newPrepperOnlyPicks, prepperPickToCatalogItem } from './prepper-picks';
 import { highTicketCatalogItems } from './high-ticket';
 import { stockCoverFor } from './stock-covers';
+import { productPhotoFor } from './product-photos';
 import {
   sourceGroups,
   resolvedSourceItems,
@@ -611,6 +612,86 @@ export type ShopBoardTile = {
 function listingHref(item: CatalogItem): string {
   return item.detailHref || item.href;
 }
+
+const HEADING_PRODUCT_LIMIT = 24;
+const HEADING_MAX_PER_BRAND = 2;
+const HEADING_MAX_PER_CATEGORY = 3;
+
+/** On-site product card or gear page, never a raw seller URL. */
+export function headingProductHref(item: CatalogItem): string {
+  if (item.detailHref && item.detailHref.startsWith('/')) return item.detailHref;
+  return `/directory/${item.category}/#${item.id}`;
+}
+
+export function shortProductName(title: string): string {
+  const cleaned = title.replace(/\s*\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+  let out = cleaned;
+  if (out.length > 36) {
+    const cut = out.slice(0, 36);
+    const sp = cut.lastIndexOf(' ');
+    out = (sp > 18 ? cut.slice(0, sp) : cut).trim();
+  }
+  return out.replace(/-/g, '\u2011');
+}
+
+/**
+ * Products for the desktop heading-row preview windows: official self-hosted
+ * photos only, no portable power stations, no robot-dog fillers, and the
+ * Drones & Robotics category stays off the home page. Brand and category
+ * caps keep the rotation mixed across the catalog.
+ */
+function isHeadingPowerGear(item: CatalogItem): boolean {
+  if (isPortablePowerStation(item)) return true;
+  const hay = `${item.id} ${item.title}`.toLowerCase();
+  if (/\bpower[\s-]?station\b/.test(hay) || /\bsolar generator\b/.test(hay)) return true;
+  // Anker SOLIX C/F stations and expansion batteries; PS series panels may stay.
+  if (/anker-solix-[cf]\d|anker-solix-bp/.test(item.id)) return true;
+  return false;
+}
+
+export function homeHeadingProducts(items: CatalogItem[], limit = HEADING_PRODUCT_LIMIT): CatalogItem[] {
+  const eligible = items.filter((i) => {
+    if (i.filler) return false;
+    if (i.category === 'drones-robotics') return false;
+    if (i.kind === 'tool' || i.kind === 'resource') return false;
+    if (isHeadingPowerGear(i)) return false;
+    if (/^1password/.test(i.id) || /password manager/i.test(i.title)) return false;
+    return Boolean(productPhotoFor(i));
+  });
+
+  const brandKey = (item: CatalogItem) => (item.sourceName || item.title.split(/\s+/)[0] || item.id).toLowerCase();
+  const brandCounts = new Map<string, number>();
+  const byCategory = new Map<string, CatalogItem[]>();
+
+  for (const item of eligible) {
+    const brand = brandKey(item);
+    if ((brandCounts.get(brand) || 0) >= HEADING_MAX_PER_BRAND) continue;
+    const cat = item.category || 'other';
+    const list = byCategory.get(cat) ?? [];
+    if (list.length >= HEADING_MAX_PER_CATEGORY) continue;
+    list.push(item);
+    byCategory.set(cat, list);
+    brandCounts.set(brand, (brandCounts.get(brand) || 0) + 1);
+  }
+
+  const buckets = [...byCategory.values()];
+  const picked: CatalogItem[] = [];
+  let index = 0;
+  while (picked.length < limit) {
+    let added = false;
+    for (const bucket of buckets) {
+      if (index < bucket.length) {
+        picked.push(bucket[index]);
+        added = true;
+        if (picked.length >= limit) break;
+      }
+    }
+    if (!added) break;
+    index += 1;
+  }
+  return picked;
+}
+
 
 // Do not lead the home Shop the Directory board with a product photo of a
 // portable solar kit or power station. Those read as "big power gear" in the

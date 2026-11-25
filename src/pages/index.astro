@@ -13,7 +13,7 @@ import DirectoryGroupTile from '../components/DirectoryGroupTile.astro';
 import { getGuides, getItems, site } from '../lib/data';
 import { sourceGroups } from '../data/source-directory';
 import { mailerlite } from '../data/mailerlite';
-import { buildFullCatalog, homeShopPicks, countsByCatalogGroup, shopBoardTiles, heroBentoTiles } from '../data/full-catalog';
+import { buildFullCatalog, homeShopPicks, homeHeadingProducts, countsByCatalogGroup, shopBoardTiles, heroBentoTiles } from '../data/full-catalog';
 
 const guides = await getGuides();
 const guideById = Object.fromEntries(guides.map((g) => [g.id, g]));
@@ -23,6 +23,7 @@ const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean)];
 // Drones & Robotics lives on /directory/ only; keep it off the home page and out of its counts.
 const catalog = buildFullCatalog(await getItems()).filter((i) => i.category !== 'drones-robotics');
 const shopPicks = homeShopPicks(catalog, 16);
+const headingProducts = homeHeadingProducts(catalog);
 const boardTiles = shopBoardTiles(catalog);
 const heroTiles = heroBentoTiles();
 const groupCounts = countsByCatalogGroup(catalog);
@@ -56,7 +57,7 @@ const navList = {
   <section class="home-shop-hero" aria-label="Shop the Directory">
     <div class="wrap">
       <ShopBoard hero tiles={boardTiles} catalogCount={catalog.length}>
-        <HomeHeroWindows slot="aside" />
+        <HomeHeroWindows slot="aside" products={headingProducts} />
       </ShopBoard>
     </div>
   </section>
