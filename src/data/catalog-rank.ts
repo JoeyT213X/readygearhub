@@ -70,7 +70,6 @@ export const PROGRAM_PAYOUT_PERCENT: Record<string, number> = {
   robotshop: 5,
   'robots-international': 2, // official range 2–5%; sort uses the confirmed low end
   hoverair: 5, // official range 5–8%; sort uses the confirmed low end
-  dji: 2, // official 2% drones / 5% handhelds
   imalent: 10,
   xtar: 10,
   nilight: 12,

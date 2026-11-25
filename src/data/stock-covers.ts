@@ -89,7 +89,7 @@ const RULES: Rule[] = [
   ['hero-radios', /radio|midland|cobra|\beton\b|acurite|weather|crank|wr400/],
   ['hero-tent-stars', /\bteton\b|tent\b|\bsol\b|bivvy|survive outdoors|therm-a-rest/],
   // Drones and vehicles
-  ['hero-drones-air', /drone|dji|autel|skydio|hoverair|mavic/],
+  ['hero-drones-air', /drone|autel|skydio|hoverair|mavic/],
   ['hero-utv-dunes', /polaris|can-am|utv|side-by-side/],
   ['hero-overland-truck', /toyota|jeep|land rover|ineos|inkas|rezvani|sportsmobile|storyteller|earthroamer|overland|defender|wrangler|gladiator|grenadier|vevor|vehicle/],
   ['hero-bunker-hatch', /bunker|shelter|rising s|atlas survival|terra vivos|safe room|vivos/],
@@ -120,11 +120,11 @@ const RULES: Rule[] = [
   ['stock-insurance', /insurance|warranty|american home shield|hiscox|liberty mutual|axa|travel/],
   ['stock-drill', /dewalt|milwaukee|stanley|klein|mro supreme|tool/],
   // Digital, audio, fun
-  ['stock-headphones', /crutchfield|headphone|apple music|audible|skullcandy|music|audio/],
+  ['stock-headphones', /headphone|apple music|audible|skullcandy|music|audio/],
   ['stock-speaker', /jbl|sonos|speaker/],
   ['stock-cyber', /nordpass|1password|roboform|proton|incogni|deleteme|password|private internet|identitytheft|cisa|monarch|surfshark/],
   ['stock-laptop', /vpn|nord|surfshark|express|cyberghost|private internet|proton|incogni|deleteme|1password|roboform|password|digital|cisa|identitytheft|monarch/],
-  ['stock-books', /comic|marvel|dc shop|graphic|card|pok|magic: the|tcgplayer|ebay|hasbro|theory11|bicycle|playing|books|games/],
+  ['stock-books', /comic|dc shop|graphic|card|pok|magic: the|tcgplayer|ebay|hasbro|theory11|bicycle|playing|books|games/],
   // Retail
   ['gear-flatlay', /amazon|walmart|target|academy|bass pro|cabela|dick|sportsman|retailer|marketplace/],
 ];

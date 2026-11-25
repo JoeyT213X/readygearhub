@@ -98,7 +98,6 @@ export const comingSoonPartners: ComingSoonPartner[] = [
   { id: 'eastern-mountain-sports', name: 'Eastern Mountain Sports', network: 'Rakuten', catalogId: '53845', categories: ['outdoor'] },
   { id: 'cobra-electronics', name: 'Cobra Electronics', network: 'Rakuten', catalogId: '53731', categories: ['auto'] },
   { id: 'vevor', name: 'Vevor', network: 'Rakuten', catalogId: '53191', categories: ['tools'] },
-  { id: 'crutchfield', name: 'Crutchfield', network: 'Rakuten', catalogId: '54321', categories: ['audio'] },
   { id: 'harman', name: 'Harman', network: 'CJ', catalogId: '3805502', categories: ['audio'] },
 ];
 
