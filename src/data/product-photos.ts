@@ -125,6 +125,20 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'epic-smart-shield': { alt: 'Epic Smart Shield under-sink water filter system with bracket, cartridge, and tubing', widths: [480, 960, 1600] },
   'epic-smart-shield-max': { alt: 'Epic Smart Shield Max under-sink water filter with a replacement cartridge', widths: [480, 960, 1600] },
   'epic-og-ultimate-travel-bottle': { alt: 'Epic OG Ultimate Travel Bottle, a Nalgene bottle shown with a replaceable Epic filter', widths: [480, 600] },
+  'hoverair-x1': { alt: 'HOVERAir X1 self-flying camera in black, official product photo', widths: [480, 960, 1600] },
+  'hoverair-x1-pro-promax': { alt: 'HOVERAir X1 PROMAX self-flying camera, official product photo', widths: [480, 960, 1600] },
+  'hoverair-aqua': { alt: 'HOVERAir AQUA waterproof self-flying camera in orange, official product photo', widths: [480, 960, 1600] },
+  'hoverair-x1-smart': { alt: 'HOVERAir X1 Smart self-flying camera, official product photo', widths: [480, 960, 1600, 1800] },
+  'ri-fx-navi-embodied-ai-quadruped-robot': { alt: 'FX Navi embodied AI quadruped robot from Faraday Future, official product photo', widths: [480, 960, 1600, 1800] },
+  'ri-fx-aegis-quadruped-robot-dog': { alt: 'FX Aegis quadruped robot dog from Faraday Future, official product photo', widths: [480, 960, 1600, 1800] },
+  'ri-fx-aegis-ultra': { alt: 'FX Aegis Ultra quadruped robot dog from Faraday Future, official product photo', widths: [480, 960, 1600, 1800] },
+  'ri-fx-aegis-ultra-w-wheel-legged-robot-dog': { alt: 'FX Aegis Ultra-W wheel-legged robot dog from Faraday Future, official product photo', widths: [480, 960, 1056] },
+  'ri-galileo-c1': { alt: 'Galileo C1 small quadruped robot dog, official product photo', widths: [480, 500] },
+  'ri-galileo-c1-w': { alt: 'Galileo C1-W wheeled quadruped robot dog, official product photo', widths: [480, 500] },
+  'ri-pudu-d5-quadruped-robot': { alt: 'PUDU D5 quadruped robot dog, official product photo', widths: [480, 800] },
+  'ri-pudu-d5-w-wheeled-quadruped-robot': { alt: 'PUDU D5-W wheeled quadruped robot dog, official product photo', widths: [480, 500] },
+  'ri-magiclab-magicdog-quadruped-robot': { alt: 'MagicLab MagicDog quadruped robot, official product photo', widths: [480, 960, 1200] },
+  'ri-mirrorme-bpx-pro': { alt: 'MirrorMe BPX Pro quadruped robot, official product photo', widths: [480, 960, 1200] },
 };
 
 
@@ -243,6 +257,20 @@ const BY_ID: Record<string, string> = {
   'epic-smart-shield-max': 'epic-smart-shield-max',
   'epic-og-ultimate-travel-bottle': 'epic-og-ultimate-travel-bottle',
 
+  'hoverair-x1': 'hoverair-x1',
+  'hoverair-x1-pro-promax': 'hoverair-x1-pro-promax',
+  'hoverair-aqua': 'hoverair-aqua',
+  'hoverair-x1-smart': 'hoverair-x1-smart',
+  'ri-fx-navi-embodied-ai-quadruped-robot': 'ri-fx-navi-embodied-ai-quadruped-robot',
+  'ri-fx-aegis-quadruped-robot-dog': 'ri-fx-aegis-quadruped-robot-dog',
+  'ri-fx-aegis-ultra': 'ri-fx-aegis-ultra',
+  'ri-fx-aegis-ultra-w-wheel-legged-robot-dog': 'ri-fx-aegis-ultra-w-wheel-legged-robot-dog',
+  'ri-galileo-c1': 'ri-galileo-c1',
+  'ri-galileo-c1-w': 'ri-galileo-c1-w',
+  'ri-pudu-d5-quadruped-robot': 'ri-pudu-d5-quadruped-robot',
+  'ri-pudu-d5-w-wheeled-quadruped-robot': 'ri-pudu-d5-w-wheeled-quadruped-robot',
+  'ri-magiclab-magicdog-quadruped-robot': 'ri-magiclab-magicdog-quadruped-robot',
+  'ri-mirrorme-bpx-pro': 'ri-mirrorme-bpx-pro',
 };
 
 

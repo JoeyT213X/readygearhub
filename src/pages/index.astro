@@ -5,6 +5,7 @@ import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import SectionHead from '../components/SectionHead.astro';
 import HeroSpread from '../components/HeroSpread.astro';
 import ShopBoard from '../components/ShopBoard.astro';
+import HomeHeroWindows from '../components/HomeHeroWindows.astro';
 import LiveStatus from '../components/LiveStatus.astro';
 import SourceCard from '../components/SourceCard.astro';
 import GuideCard from '../components/GuideCard.astro';
@@ -53,8 +54,9 @@ const navList = {
 ---
 <Base title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, plus guides, free tools, and live official alerts." schema={[webSite, navList]}>
   <section class="home-shop-hero" aria-label="Shop the Directory">
-    <div class="wrap">
+    <div class="wrap home-shop-hero-inner">
       <ShopBoard hero tiles={boardTiles} catalogCount={catalog.length} />
+      <HomeHeroWindows />
     </div>
   </section>
 

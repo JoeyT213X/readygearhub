@@ -265,3 +265,160 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
   .hero.is-bento .hero-spread-title,
   .hero.is-bento h2.hero-spread-title{white-space:normal}
 }
+
+/* =====================================================================
+   Desktop-only typography, hero windows, and robotics filler chrome.
+   All of this is gated to min-width: 1024px (or hidden below it).
+   Mobile layout and type must stay as they were on November 25, 2026.
+   Compatible with branch us-first-badge, which adds .shop-board-topline
+   inside ShopBoard; this file only wraps ShopBoard in a desktop grid.
+   ===================================================================== */
+
+/* Filler block: default (mobile) values match the previous inline styles. */
+.filler-block{margin-top:2.5rem}
+.filler-block .section-title{font-size:1.15rem;margin:0 0 .75rem}
+.filler-block .fine{margin:0 0 1rem}
+
+/* Hero right-side windows: hidden on mobile so the home hero is unchanged. */
+.home-hero-windows{display:none}
+
+@media (min-width: 1024px) {
+  /* ~20% type bump inside card / window components only. */
+  .item-card h3,
+  .source-card h3,
+  .product-card h3,
+  .guide-card h3,
+  .tool-card h3,
+  .media-card-body h3{font-size:1.34rem} /* was 1.12 */
+  .media-card.size-large .media-card-body h3{font-size:1.7rem} /* was 1.45 at 980px */
+  .item-card p,
+  .source-card p,
+  .product-card p{font-size:1.14rem} /* was .95 */
+  .guide-card p,
+  .tool-card p{font-size:1.12rem} /* was .93 */
+  .media-card-body p{font-size:1.14rem} /* was .95 */
+  .product-price{font-size:1.22rem} /* was 1.02 */
+  .product-meta{font-size:.98rem} /* was .82 */
+  .source-cover-title{font-size:1.26rem} /* was 1.05 */
+  .lane-title{font-size:1.26rem} /* was 1.05–1.08 */
+  .lane-summary{font-size:1.1rem} /* was .92 */
+  .item-card .btn.small,
+  .source-card .btn.small,
+  .product-card .btn.small,
+  .guide-card .btn.small,
+  .tool-card .btn.small,
+  .media-card .btn.small,
+  .lane-card .btn.small{font-size:1.08rem;min-height:44px;padding:9px 16px} /* was .9 / 40 / 8x14 */
+
+  /* Shop the Directory on the left; compact rotating windows on the right.
+     Markup lives in index.astro + HomeHeroWindows.astro, not inside ShopBoard. */
+  .home-shop-hero-inner{
+    display:grid;
+    grid-template-columns:minmax(0,1.55fr) minmax(280px,22rem);
+    gap:24px 28px;
+    align-items:stretch;
+  }
+  /* ShopBoard uses is-wide { grid-column: 1 / -1 } elsewhere; keep it in the first column here. */
+  .home-shop-hero-inner > .bento-tile.is-shop-board.is-wide{
+    grid-column:auto;
+    min-height:0;
+  }
+  .home-hero-windows{
+    display:block;
+    min-width:0;
+  }
+  .home-hero-windows-stage{
+    display:grid;
+    height:100%;
+  }
+  .home-hero-windows-page{
+    grid-area:1 / 1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    align-content:stretch;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .45s ease;
+  }
+  .home-hero-windows-page.is-active{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    z-index:1;
+  }
+  .home-hero-window{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    text-decoration:none;
+    color:var(--ink);
+    min-height:0;
+    background:#fff;
+  }
+  .home-hero-window-cover{
+    display:block;
+    aspect-ratio:16 / 10;
+    overflow:hidden;
+    background:#dfe6eb;
+  }
+  .home-hero-window-cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .home-hero-window-body{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    padding:10px 12px 12px;
+  }
+  .home-hero-window-title{
+    font-size:1.02rem;
+    font-weight:800;
+    letter-spacing:-.01em;
+    line-height:1.2;
+  }
+  .home-hero-window-blurb{
+    font-size:.86rem;
+    line-height:1.35;
+    color:var(--muted);
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .home-hero-window:hover,
+  .home-hero-window:focus-visible{
+    color:var(--ink);
+  }
+
+  /* Robotics filler group: same visual family, a little smaller and plainer, no badges. */
+  .filler-block{
+    margin-top:3rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--line, rgba(15,42,61,.12));
+  }
+  .filler-block .section-title{
+    font-size:1.4rem;
+    font-weight:800;
+    letter-spacing:-.02em;
+    margin:0 0 .5rem;
+  }
+  .filler-block .source-card.is-filler{
+    box-shadow:var(--shadow);
+  }
+  .filler-block .source-card.is-filler h3{font-size:1.18rem}
+  .filler-block .source-card.is-filler p{font-size:1.02rem}
+  .filler-block .source-card.is-filler .product-price{font-size:1.08rem}
+  .filler-block .source-card.is-filler .product-meta{font-size:.9rem}
+  .filler-block .source-card.is-filler .btn.small{font-size:1rem;min-height:42px}
+}
+
+@media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
+  .home-hero-windows-page{transition:none}
+}

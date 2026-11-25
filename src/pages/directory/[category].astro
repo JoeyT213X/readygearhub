@@ -112,10 +112,10 @@ const schema = {
         <p>No listings in this category yet. Partners still on the way are listed below.</p>
       ) : null}
       {fillerItems.length > 0 && (
-        <div class="filler-block" style="margin-top:2.5rem">
-          <h2 class="section-title" style="font-size:1.15rem;margin:0 0 0.75rem">More robot dogs</h2>
-          <p class="fine" style="margin:0 0 1rem">Additional four-legged robots from other makers, listed for reference. Prices and stock are on each store’s page.</p>
-          <div class="grid shop-grid source-grid">
+        <div class="filler-block">
+          <h2 class="section-title">More robot dogs</h2>
+          <p class="fine">Additional four-legged robots from other makers, listed for reference. Prices and stock are on each store’s page.</p>
+          <div class="grid shop-grid source-grid is-filler-grid">
             {fillerItems.map((item) => <SourceCard item={item} />)}
           </div>
         </div>

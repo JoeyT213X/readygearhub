@@ -14,3 +14,9 @@
 - Fillers (bottom of /directory/drones-robotics/ only, `filler: true`): Deep Robotics Lite3 (RobotShop), Galileo C1 and C1-W, PUDU D5 and D5-W, MagicLab MagicDog, MirrorMe BPX Pro. Not on 1260H or the Entity List as of Nov 25, 2026. Not featured, not on the home page, no badges, paid-search hidden. Unitree, Autel, Guo Xing, Topsky, Rotunbot, and Dagu stay off.
 
 Raw source pulls kept beside this file are historical. Selection is the source of truth for what is on the site.
+
+## Official photos, sort, and desktop layout (Nov 25, 2026)
+
+- Official self-hosted product photos (WebP, no hotlinking, no upscaling) are registered in `src/data/product-photos.ts` and credited in `IMAGE_CREDITS.md`. Deep Robotics Lite3 fillers stay text-only because only a 300 px store thumbnail was available. FX Aegis Pro, Ultra+, and Ultra-W+ stay text-only because their official store heroes were the same packshot as a related trim.
+- Directory listings sort by quality and documented payout, not country. Fillers still sort last. See `src/data/catalog-rank.ts`.
+- Card typography, the home-hero rotating windows, and the “More robot dogs” section chrome are desktop-only (`min-width: 1024px`). Mobile is unchanged.

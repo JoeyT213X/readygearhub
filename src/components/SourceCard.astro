@@ -32,7 +32,7 @@ const badge = item.trending
         : undefined;
 ---
 <article
-  class={`card item-card product-card source-card${coverClass}`}
+  class={`card item-card product-card source-card${coverClass}${item.filler ? ' is-filler' : ''}`}
   data-program={item.affiliate && item.programId ? item.programId : undefined}
   data-no-ppc={item.hideOnPaid ? '' : undefined}
   data-category={item.category}

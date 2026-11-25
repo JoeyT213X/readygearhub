@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-25T16:27:51.062Z",
+  "generated": "2026-11-25T19:49:47.531Z",
   "note": "Self-hosted images only; nothing is hotlinked. Representative stock photos are labeled \"Representative photo\" on cards. Human-readable credits: IMAGE_CREDITS.md.",
   "counts": {
-    "keys": 246,
-    "officialProductOrBrand": 175,
+    "keys": 260,
+    "officialProductOrBrand": 189,
     "representativeStock": 28,
     "editorialStock": 43,
     "missingCredit": 0
@@ -1798,6 +1798,55 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "hoverair-aqua",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hoverair-aqua-1600.webp",
+        "/directory/photos/hoverair-aqua-480.webp",
+        "/directory/photos/hoverair-aqua-960.webp"
+      ],
+      "source": "HOVERAir AQUA | Official press-kit product image `Product Imagery/HOVERAir AQUA/HOVERAirAQUA_Right.png`, from the same HOVERAir press kit, downloaded November 25, 2026 | Official catalog photo, source 4,350×4,350, 1,600 px large srcset step, no upscaling. Image provided by HOVERAir / Zero Zero Robotics.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "hoverair-x1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hoverair-x1-1600.webp",
+        "/directory/photos/hoverair-x1-480.webp",
+        "/directory/photos/hoverair-x1-960.webp"
+      ],
+      "source": "HOVERAir X1 | Official press-kit product image `Product Imagery/HOVERAIR X1/X1-black-45°left.png`, from [HOVERAir Press Kit](https://hoverair.com/pages/press-kit) (“Download Product Images” Dropbox folder), downloaded November 25, 2026 | Official catalog photo, source 4,000×2,857, 1,600 px used as the large srcset step, no upscaling. Image provided by HOVERAir / Zero Zero Robotics.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "hoverair-x1-pro-promax",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hoverair-x1-pro-promax-1600.webp",
+        "/directory/photos/hoverair-x1-pro-promax-480.webp",
+        "/directory/photos/hoverair-x1-pro-promax-960.webp"
+      ],
+      "source": "HOVERAir X1 PROMAX (photo used on the combined X1 PRO and PROMAX listing) | Official press-kit product image `Product Imagery/HOVERAir X1 PRO PROMAX/PROMAX-45°front-left.png`, from the same HOVERAir press kit, downloaded November 25, 2026 | Official catalog photo of the X1 PROMAX, source 4,000×2,856, 1,600 px large srcset step, no upscaling. Image provided by HOVERAir / Zero Zero Robotics. Alt text names PROMAX, not PRO.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "hoverair-x1-smart",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hoverair-x1-smart-1600.webp",
+        "/directory/photos/hoverair-x1-smart-1800.webp",
+        "/directory/photos/hoverair-x1-smart-480.webp",
+        "/directory/photos/hoverair-x1-smart-960.webp"
+      ],
+      "source": "HOVERAir X1 Smart | Official product photo from [jp.hoverair.com/products/hoverair-x1-smart](https://jp.hoverair.com/products/hoverair-x1-smart) (Shopify CDN `hoverair-x1-smart-b.jpg`), first image on the official HOVERAir X1 Smart product page. The US press-kit product folders did not include a standalone X1 Smart packshot. Downloaded November 25, 2026 | Official catalog photo, source 1,800×1,800, native 1,800 px used as the large srcset step, no upscaling. Image provided by HOVERAir / Zero Zero Robotics.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
       "key": "hydro-flask-32-wide",
       "kind": "official-product-or-brand",
       "files": [
@@ -2372,6 +2421,125 @@
       "source": "Reolink TrackMix WiFi | Reolink | Official product photo from reolink.com (home-cdn.reolink.us wp-content/uploads/2024/12/090149081733708948.8663.jpg), image from the official TrackMix WiFi product page, downloaded November 23, 2026. Image provided by Reolink. | Official catalog photo, flattened onto white for the card backdrop (native 1340 px used as the large srcset step, no upscaling). Image provided by Reolink.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ri-fx-aegis-quadruped-robot-dog",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-fx-aegis-quadruped-robot-dog-1600.webp",
+        "/directory/photos/ri-fx-aegis-quadruped-robot-dog-1800.webp",
+        "/directory/photos/ri-fx-aegis-quadruped-robot-dog-480.webp",
+        "/directory/photos/ri-fx-aegis-quadruped-robot-dog-960.webp"
+      ],
+      "source": "FX Aegis Quadruped Robot Dog | Official product photo from robotsinternational.com (`fx-aeg-stan-1.jpg`), first image on the FX Aegis product page, downloaded November 25, 2026 | Official catalog photo, source 1,800×1,800. The FX Aegis Pro product page uses the same packshot, so that listing is left without a photo rather than repeating this image. Image provided by Robots International / Faraday Future.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-fx-aegis-ultra",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-fx-aegis-ultra-1600.webp",
+        "/directory/photos/ri-fx-aegis-ultra-1800.webp",
+        "/directory/photos/ri-fx-aegis-ultra-480.webp",
+        "/directory/photos/ri-fx-aegis-ultra-960.webp"
+      ],
+      "source": "FX Aegis Ultra Quadruped Robot Dog | Official product photo from robotsinternational.com (`fx-aeg-ultra-1.jpg`), first image on the FX Aegis Ultra product page, downloaded November 25, 2026 | Official catalog photo, source 1,800×1,800. The Ultra+ page uses the same packshot, so Ultra+ is left without a photo. Image provided by Robots International / Faraday Future.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-fx-aegis-ultra-w-wheel-legged-robot-dog",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-fx-aegis-ultra-w-wheel-legged-robot-dog-1056.webp",
+        "/directory/photos/ri-fx-aegis-ultra-w-wheel-legged-robot-dog-480.webp",
+        "/directory/photos/ri-fx-aegis-ultra-w-wheel-legged-robot-dog-960.webp"
+      ],
+      "source": "FX Aegis Ultra-W Wheel-Legged Robot Dog | Official product photo from robotsinternational.com (`fx-ags-ultra-w-1.jpg`), first image on the FX Aegis Ultra-W product page, downloaded November 25, 2026 | Official catalog photo, source 1,056×1,056. The Ultra-W+ page uses the same packshot, so Ultra-W+ is left without a photo. Image provided by Robots International / Faraday Future.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-fx-navi-embodied-ai-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-fx-navi-embodied-ai-quadruped-robot-1600.webp",
+        "/directory/photos/ri-fx-navi-embodied-ai-quadruped-robot-1800.webp",
+        "/directory/photos/ri-fx-navi-embodied-ai-quadruped-robot-480.webp",
+        "/directory/photos/ri-fx-navi-embodied-ai-quadruped-robot-960.webp"
+      ],
+      "source": "FX Navi Embodied AI Quadruped Robot | Official product photo from robotsinternational.com (`pub/media/catalog/product/f/x/fx-navi-2.jpg`), first image on the FX Navi product page, downloaded November 25, 2026 | Official catalog photo, source 1,800×1,800. Image provided by Robots International / Faraday Future.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-galileo-c1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-galileo-c1-480.webp",
+        "/directory/photos/ri-galileo-c1-500.webp"
+      ],
+      "source": "Galileo C1 Small Quadruped Robot Dog | Official product photo from robotsinternational.com (`galileo-c1-small-quadruped-robot-dog.jpg`), downloaded November 25, 2026 | Official catalog photo, source 500×500 (native used as the large srcset step, no upscaling). Image provided by Robots International.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-galileo-c1-w",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-galileo-c1-w-480.webp",
+        "/directory/photos/ri-galileo-c1-w-500.webp"
+      ],
+      "source": "Galileo C1-W Wheeled Quadruped Robot Dog | Official product photo from robotsinternational.com (`galileo-c1-w-wheeled-quadruped-robot-dog.jpg`), downloaded November 25, 2026 | Official catalog photo, source 500×500, no upscaling. Image provided by Robots International.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-magiclab-magicdog-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-magiclab-magicdog-quadruped-robot-1200.webp",
+        "/directory/photos/ri-magiclab-magicdog-quadruped-robot-480.webp",
+        "/directory/photos/ri-magiclab-magicdog-quadruped-robot-960.webp"
+      ],
+      "source": "MagicLab MagicDog Quadruped Robot | Official product photo from robotsinternational.com (`magiclab-magicdog-1.jpg`), downloaded November 25, 2026 | Official catalog photo, source 1,200×1,200, no upscaling. Image provided by Robots International.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-mirrorme-bpx-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-mirrorme-bpx-pro-1200.webp",
+        "/directory/photos/ri-mirrorme-bpx-pro-480.webp",
+        "/directory/photos/ri-mirrorme-bpx-pro-960.webp"
+      ],
+      "source": "MirrorMe BPX Pro Quadruped Robot | Official product photo from robotsinternational.com (`mirrorme-bpxpro-quadruped-robot.jpg`), downloaded November 25, 2026 | Official catalog photo, source 1,200×1,200, no upscaling. Image provided by Robots International.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-pudu-d5-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-pudu-d5-quadruped-robot-480.webp",
+        "/directory/photos/ri-pudu-d5-quadruped-robot-800.webp"
+      ],
+      "source": "PUDU D5 Quadruped Robot Dog | Official product photo from robotsinternational.com (`pudu-d5.jpg`), downloaded November 25, 2026 | Official catalog photo, source 800×800, no upscaling. Image provided by Robots International.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-pudu-d5-w-wheeled-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-pudu-d5-w-wheeled-quadruped-robot-480.webp",
+        "/directory/photos/ri-pudu-d5-w-wheeled-quadruped-robot-500.webp"
+      ],
+      "source": "PUDU D5-W Wheeled Quadruped Robot Dog | Official product photo from robotsinternational.com (`pudu_d5_quadruped_robot_dog_1.jpg`), downloaded November 25, 2026 | Official catalog photo, source 500×500, no upscaling. Image provided by Robots International.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
     },
     {
       "key": "ring-battery-doorbell-4k-pro",
