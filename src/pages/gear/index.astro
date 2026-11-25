@@ -1,4 +1,5 @@
 ---
+import { entryImageFor } from '../../data/card-image';
 import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import PageHero from '../../components/PageHero.astro';
@@ -60,6 +61,12 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
           <div class="grid">
             {g.entries.map((e) => (
               <article class="card item-card" data-chw={(e.programId === 'choice-home-warranty' || e.id === 'choice-home-warranty') ? '' : undefined} data-no-ppc={(isNoPpcProgram(e.programId) || isNoPpcProgram(e.id) || isNoPpcProgram(e.program)) ? '' : undefined}>
+                {(() => { const img = entryImageFor(e); return img && (
+                  <span class="item-card-photo is-stock" aria-hidden="true">
+                    <img src={img.src} srcset={img.srcset} sizes="(min-width: 900px) 360px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />
+                    <span class="stock-chip">Representative photo</span>
+                  </span>
+                ); })()}
                 <div class="card-top">
                   <span class="pill">{e.type}</span>
                   {e.affiliate && <span class="pill feat">Affiliate link</span>}

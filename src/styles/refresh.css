@@ -1,0 +1,205 @@
+/*
+ * ReadyGearHub visual refresh (2026-11-25). Loaded after global.css on every page (Base.astro).
+ * Colors, depth and textures come only from tokens.css.
+ * Rhythm: warm stone page -> storm-navy bands (.band, .band-storm) -> deeper stone bands (.band-stone).
+ * White cards with real elevation sit on both. Calm: no animation beyond a small hover lift.
+ */
+
+/* ---------- Page canvas ---------- */
+html,body{overflow-x:clip}
+body{
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(900px 520px at 0% 0%,rgba(245,158,11,.09),transparent 62%),
+    radial-gradient(900px 520px at 100% 30%,rgba(31,69,95,.10),transparent 62%),
+    var(--texture-dots);
+  background-size:auto,auto,22px 22px;
+}
+a{color:var(--link)}
+a:hover{color:var(--link-hover)}
+.text-link,.count,.disclosure a{color:var(--link)}
+h1,h2,h3,h4{color:var(--ink)}
+.brand,.uses,.fine,.product-meta,.disclosure,.section-head p{color:var(--muted)}
+
+/* ---------- Full-bleed bands (work on full-width sections and on .wrap sections) ---------- */
+.band,.band-storm,.band-stone{position:relative;isolation:isolate;background:none;border:0}
+.band::before,.band-storm::before,.band-stone::before{
+  content:"";position:absolute;top:0;bottom:0;left:calc(50% - 50vw);right:calc(50% - 50vw);z-index:-1;pointer-events:none;
+}
+.band::before,.band-storm::before{background:var(--glow-amber),var(--glow-sky),var(--texture-lines),var(--grad-storm)}
+.band::after,.band-storm::after{
+  content:"";position:absolute;top:0;height:3px;left:calc(50% - 50vw);right:calc(50% - 50vw);z-index:-1;background:var(--bar-warm);opacity:.9;pointer-events:none;
+}
+.band-stone::before{
+  background:
+    radial-gradient(70% 90% at 100% 0%,rgba(245,158,11,.10),transparent 70%),
+    var(--texture-dots) 0 0/22px 22px,
+    linear-gradient(180deg,var(--bg-2) 0%,#d8cdb8 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(19,33,44,.06);
+}
+
+/* Dark bands re-point the text tokens; light islands inside restore them. */
+.band,.band-storm,.band-dark{
+  --ink:#ffffff;--muted:var(--on-dark-muted);--link:var(--link-on-dark);--link-hover:#ffffff;
+  color:var(--on-dark);
+}
+:is(.band,.band-storm,.band-dark) :is(.card,.live-card,.signup-split,.alert-callout,.coming-soon-panel,.prose table){
+  --ink:var(--c-ink);--muted:var(--c-muted);--link:var(--c-link);--link-hover:var(--c-link-hover);
+  color:var(--ink);
+}
+:is(.band,.band-storm) .kicker{color:var(--amber-on-dark);background:rgba(245,158,11,.14);border-color:rgba(245,158,11,.35)}
+:is(.band,.band-storm) .section-link{color:var(--amber-on-dark)}
+:is(.band,.band-storm) .section-link:hover{color:#fff}
+:is(.band,.band-storm) :is(.chip-list,.dir-nav) .pill{background:rgba(255,255,255,.10);color:#fff;border:1px solid rgba(255,255,255,.22)}
+:is(.band,.band-storm) :is(.chip-list,.dir-nav) .pill:hover{background:rgba(255,255,255,.2);color:#fff}
+:is(.band,.band-storm) .disclosure a{color:var(--link-on-dark)}
+:is(.band,.band-storm) .card .disclosure a{color:var(--c-link)}
+:is(.band,.band-storm) .card{border-color:rgba(255,255,255,.08);box-shadow:var(--shadow-on-dark)}
+:is(.band,.band-storm) .btn.ghost:not(.light){color:#fff;border-color:rgba(255,255,255,.55)}
+:is(.band,.band-storm) .card .btn.ghost:not(.light){color:var(--c-ink);border-color:var(--line-2)}
+
+/* ---------- Section heads ---------- */
+.section{padding-top:56px;padding-bottom:56px}
+.section.tight{padding-top:36px;padding-bottom:36px}
+.section-head{border-bottom:0;padding-bottom:0;margin-bottom:26px}
+.section-head h2{font-weight:800;letter-spacing:-.02em}
+.section-head h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:var(--bar-warm);margin-top:12px}
+.kicker{display:inline-block;background:var(--accent-soft);color:var(--accent-d);border:1px solid #f6c9a6;padding:3px 10px;border-radius:999px;font-size:.72rem;letter-spacing:.09em;margin-bottom:8px}
+.section-link{color:var(--accent-d);font-weight:800}
+.section-link:hover{color:var(--accent)}
+
+/* ---------- Heroes ---------- */
+.page-hero{background:var(--glow-amber),var(--glow-sky),var(--texture-lines),var(--grad-storm)}
+.page-hero::after,.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--bar-warm);z-index:1;pointer-events:none}
+.page-hero.has-photo .page-hero-media::after{
+  background:
+    radial-gradient(55% 90% at 0% 100%,rgba(245,158,11,.24),transparent 70%),
+    linear-gradient(90deg,rgba(7,21,32,.93) 0%,rgba(10,27,40,.80) 45%,rgba(10,27,40,.42) 100%);
+}
+.page-hero-inner,.page-hero>.wrap:not(.page-hero-inner){padding-top:52px;padding-bottom:58px}
+.page-hero.has-photo .page-hero-inner{padding-top:72px;padding-bottom:80px}
+@media(max-width:699px){
+  .page-hero.has-photo .page-hero-inner{padding-top:44px;padding-bottom:52px}
+  .page-hero-inner,.page-hero>.wrap:not(.page-hero-inner){padding-top:36px;padding-bottom:42px}
+}
+.page-hero h1{font-size:clamp(1.9rem,4.8vw,2.9rem);font-weight:800;letter-spacing:-.03em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.page-hero .lead{color:#e6f1f8;text-shadow:0 1px 10px rgba(0,0,0,.3)}
+.page-hero .eyebrow{display:inline-block;color:var(--amber-on-dark);background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.38);padding:4px 10px;border-radius:999px}
+.page-hero .crumbs a{color:#d5ecf9}
+
+/* ---------- Buttons ---------- */
+.btn{background:linear-gradient(180deg,#c84510 0%,var(--accent) 100%);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 2px 0 var(--accent-d),0 8px 18px rgba(194,65,12,.26);font-weight:750;letter-spacing:.005em}
+.btn:hover{background:linear-gradient(180deg,var(--accent) 0%,var(--accent-d) 100%);box-shadow:0 2px 0 #7c2d12,0 12px 24px rgba(194,65,12,.32)}
+.btn.ghost{background:rgba(255,255,255,.7);color:var(--ink);border:1.5px solid var(--line-2);box-shadow:none}
+.btn.ghost:hover{background:#fff;color:var(--ink);border-color:var(--ink)}
+.btn.ghost.light{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.6)}
+.btn.ghost.light:hover{background:rgba(255,255,255,.16)}
+
+/* ---------- Cards ---------- */
+.card{background:var(--card);border:1px solid rgba(19,33,44,.07);border-radius:var(--radius);box-shadow:var(--shadow)}
+.card,.lane-card,.media-card,.item-card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hover,.next-step:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(245,158,11,.45)}
+.item-card{overflow:hidden;position:relative}
+.item-card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--bar-warm);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.item-card:hover::after{transform:scaleX(1)}
+.item-card h3{font-size:1.12rem;font-weight:800;letter-spacing:-.01em}
+.card-actions .btn:not(.ghost){flex:1 1 auto}
+
+/* Card pictures: product photos sit on a soft tinted stage; representative photos fill the frame. */
+.item-card-photo{position:relative;flex-shrink:0;aspect-ratio:16/10}
+.item-card-photo img{transition:transform .35s ease}
+.item-card:hover .item-card-photo img{transform:scale(1.04)}
+.item-card-photo.is-stock{background:#cfd9e0}
+.item-card-photo.is-stock::before{display:none}
+.item-card-photo.is-stock::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(180deg,transparent,rgba(7,21,32,.45));z-index:1;pointer-events:none}
+.item-card-photo.is-stock img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover}
+.item-card-photo .stock-chip,.gear-official-photo .stock-chip{position:absolute;left:10px;bottom:10px;z-index:2;font-size:.68rem;line-height:1;font-weight:600;letter-spacing:.02em;color:#fff;background:rgba(15,42,61,.82);padding:5px 8px;border-radius:999px;pointer-events:none}
+.gear-official-photo.is-stock .photo-stage{background:#cfd9e0;overflow:hidden}
+.gear-official-photo.is-stock .photo-stage::before{display:none}
+.gear-official-photo.is-stock img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover}
+.gear-official-photo{border-radius:var(--radius);box-shadow:var(--shadow)}
+.gear-official-photo figcaption{background:var(--card);padding:10px 14px}
+
+/* Catalog (source) cards */
+.product-card .product-cover{margin:-18px -18px 14px;border-radius:var(--radius) var(--radius) 0 0}
+.source-card.is-stock .product-cover::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(180deg,transparent,rgba(7,21,32,.45));z-index:1;pointer-events:none}
+.source-card.is-text .product-cover{
+  background:
+    radial-gradient(70% 90% at 100% 0%,rgba(245,158,11,.30),transparent 65%),
+    var(--texture-lines),
+    var(--grad-storm);
+}
+.source-card.is-free .product-cover{background:radial-gradient(70% 90% at 100% 0%,rgba(245,158,11,.26),transparent 65%),var(--texture-lines),linear-gradient(160deg,#1d5a46 0%,#12362c 100%)}
+.source-cover-title{font-size:1.2rem;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+.product-card .badge,.badge{background:var(--amber);color:#1c1204;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.product-price{font-size:1.02rem}
+
+/* Guide, lane and tool cards */
+.media-card-img,.lane-card-img{position:relative;aspect-ratio:16/10}
+.media-card-img::after,.lane-card-img::after{content:"";position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(180deg,transparent,rgba(7,21,32,.35));pointer-events:none}
+.lane-card:hover .lane-card-img img,.media-card:hover .media-card-img img{transform:scale(1.05)}
+.lane-card-img img{transition:transform .35s ease}
+.lane-title{font-size:1.08rem}
+.next-step{border-left:4px solid var(--amber)}
+.tool-card{border-top:4px solid var(--amber)}
+
+/* Pills */
+.pill{background:var(--ice);color:#0b4d75;border:1px solid var(--ice-2)}
+.pill.hot{background:var(--accent-soft);color:var(--accent-d);border-color:#f6c9a6}
+
+/* Callouts and panels */
+.winter-deals-callout{border-left:5px solid var(--amber);background:linear-gradient(100deg,#fff 0%,#fff 60%,#fff3dc 100%)}
+.alert-callout{background:linear-gradient(100deg,#fff6ec,#fde4d0);border-color:#f3c39c;box-shadow:var(--shadow)}
+.signup-card{border-left:5px solid var(--amber)}
+
+/* Live status strip: cool ice band instead of near-white */
+.live-dash{background:var(--texture-dots) 0 0/22px 22px,linear-gradient(180deg,#cfe2ee 0%,#dbe7ed 100%);border-top:0;border-bottom:0}
+.live-dash.is-compact{background:var(--texture-dots) 0 0/22px 22px,linear-gradient(180deg,#cfe2ee 0%,#dbe7ed 100%)}
+.live-card{border:1px solid rgba(19,33,44,.07);box-shadow:var(--shadow)}
+
+/* Prose pages keep a readable light panel */
+.prose table{background:#fff}
+.prose blockquote{background:#fff;border-left-color:var(--amber);box-shadow:var(--shadow)}
+.detail-side.card{border-top:4px solid var(--amber)}
+
+/* Home: guide list as tidy chips on stone */
+.guide-compact a{color:var(--link)}
+
+/* Footer */
+.site-footer{position:relative;background:var(--glow-amber),var(--texture-lines),linear-gradient(180deg,#0b1f2d 0%,var(--storm-950) 100%);margin-top:0}
+.site-footer::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--bar-warm)}
+
+/* Gear tech and directory headings on stone */
+.dir-section h2{font-weight:800}
+.dir-section>h2::after{content:"";display:block;width:48px;height:4px;border-radius:4px;background:var(--bar-warm);margin-top:10px}
+
+@media(prefers-reduced-motion:reduce){
+  .item-card::after,.item-card-photo img,.lane-card-img img{transition:none}
+  .item-card:hover .item-card-photo img,.lane-card:hover .lane-card-img img,.media-card:hover .media-card-img img{transform:none}
+  a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hover,.next-step:hover{transform:none}
+}
+@media(prefers-contrast:more){
+  body{background-image:none}
+  .band::before,.band-storm::before{background:var(--storm-900)}
+}
+
+/* ---------- Home ---------- */
+.home-guides .guide-card.size-large .media-card-img{aspect-ratio:auto}
+@media(min-width:980px){.home-guides .media-card.size-large .media-card-img{min-height:320px}}
+.home-signup-grid{display:grid;gap:28px;align-items:center}
+@media(min-width:900px){.home-signup-grid{grid-template-columns:1.1fr 1fr}}
+.home-signup-copy h2{font-size:var(--fs-h2);margin:.1em 0 .3em}
+.home-signup-copy p{color:var(--on-dark-muted);max-width:46ch}
+.home-signup .check-list li::before{background:rgba(245,158,11,.2);color:var(--amber-on-dark)}
+.home-signup .signup-home{max-width:30rem;width:100%;justify-self:center}
+.home-signup .ml-embedded{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-on-dark)}
+
+/* Official product photos with white backgrounds blend into the tinted stage. */
+.item-card-photo:not(.is-stock) img,
+.source-card.is-photo .product-cover img,
+.gear-official-photo:not(.is-stock) img{mix-blend-mode:multiply}
+
+/* Kickers inside light cards keep the light-surface colors, and never stretch in flex columns. */
+.kicker{align-self:flex-start}
+:is(.band,.band-storm) .card .kicker{color:var(--accent-d);background:var(--accent-soft);border-color:#f6c9a6}
+.site-footer .logo.small span{color:var(--sky)}

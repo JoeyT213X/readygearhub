@@ -92,8 +92,8 @@ const schema = [
     </p>
   </section>
 
-  {sections.map((section) => (
-    <section class="wrap section" id={section.id}>
+  {sections.map((section, i) => (
+    <section class:list={['wrap', 'section', i % 2 === 0 ? 'band-storm' : 'band-stone']} id={section.id}>
       <SectionHead kicker="Partner picks" title={section.title} intro={section.intro} />
       <div class="grid">
         {section.picks.map((p) => <WinterDealCard item={p.item} deal={p.deal} />)}

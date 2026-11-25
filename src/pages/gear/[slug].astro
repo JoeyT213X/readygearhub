@@ -6,7 +6,9 @@ import GuideCard from '../../components/GuideCard.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import { render } from 'astro:content';
 import { getItems, laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides } from '../../lib/data';
-import { productPhotoFor, photoBackdropClass } from '../../data/product-photos';
+import { cardImageFor } from '../../data/card-image';
+import Photo from '../../components/Photo.astro';
+import { photoForLane } from '../../data/images';
 export async function getStaticPaths() {
   const items = await getItems();
   return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
@@ -31,13 +33,13 @@ const schema = [
     { '@type': 'ListItem', position: 3, name: d.name, item: url } ] },
 ];
 const program = programIdForItem(item.id);
-const photo = productPhotoFor({ id: item.id });
-const backdrop = photo ? photoBackdropClass({ id: item.id, name: d.name, brand: d.brand, tags: d.tags }) : '';
+const photo = cardImageFor(item);
 const desc = `${d.description} See uses, lanes, and where to check the current price.`.slice(0, 300);
 ---
 <Base title={`${d.name}: Uses & Where to Buy | ReadyGearHub`} description={desc} schema={schema} type="article">
-  <section class="page-hero">
-    <div class="wrap">
+  <section class="page-hero has-photo">
+    <div class="page-hero-media" aria-hidden="true"><Photo name={photoForLane(lane.slug)} sizes="(max-width: 699px) 250px, 100vw" eager decorative /></div>
+    <div class="wrap page-hero-inner">
       <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/gear/">Gear</a></li><li><a href={`/${lane.slug}/`}>{lane.name}</a></li><li><span aria-current="page">{d.name}</span></li></ol></nav>
       <h1>{d.name}</h1>
       <p class="brand light">by {d.brand}</p>
@@ -52,11 +54,12 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
   <section class="wrap section detail">
     <div class="detail-main">
       {photo && (
-        <figure class={`gear-official-photo ${backdrop}`}>
+        <figure class:list={['gear-official-photo', photo.representative ? 'is-stock' : photo.backdrop]}>
           <div class="photo-stage">
             <img src={photo.src} srcset={photo.srcset} sizes="(min-width: 800px) 640px, 92vw" alt={photo.alt} width="960" height="540" decoding="async" />
+            {photo.representative && <span class="stock-chip">Representative photo</span>}
           </div>
-          <figcaption>Official product photo from the brand’s affiliate-network catalog or product feed.</figcaption>
+          <figcaption>{photo.representative ? `Representative photo, not the exact ${d.brand} product. See the official page for real product images.` : 'Official product photo from the brand’s affiliate-network catalog or product feed.'}</figcaption>
         </figure>
       )}
       {d.uses.length > 0 && (<><h2>Multi-purpose uses</h2><ul class="uses-list">{d.uses.map((u) => <li>{u}</li>)}</ul></>)}

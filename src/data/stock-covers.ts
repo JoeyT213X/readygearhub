@@ -28,6 +28,9 @@ const ALT: Record<string, string> = {
   'stock-books': 'Shelves of books and records',
   'stock-drill': 'A power drill on a workbench',
   'stock-boots': 'A hiker’s boots on a trail log',
+  'stock-winter-boots': 'Winter boots walking through fresh snow',
+  'stock-winter-boots-2': 'Close-up of laced winter boots in fresh snow',
+  'stock-snow-shovel': 'Someone shoveling snow from a driveway',
   'stock-gloves': 'A hand in a winter glove',
   'stock-radio': 'A person using a two-way radio',
   'stock-stove': 'A camp stove outdoors',
@@ -52,7 +55,7 @@ const ALT: Record<string, string> = {
   'hero-binoculars': 'A person holding binoculars',
 };
 
-function cover(key: string): StockCover {
+export function cover(key: string): StockCover {
   const base = `/images/photos/${key}`;
   return {
     key,
@@ -68,6 +71,9 @@ type Rule = [key: string, re: RegExp];
 const RULES: Rule[] = [
   // Official resources first (free government / nonprofit pages)
   ['checklist-writing', /ready\.gov|cdc[: ]|fema|\bmema\b|insurance department|\bnaic\b|floodsmart|usda|american red cross: |national weather service/],
+  // Winter footwear and snow tools (before broader snow/boot rules)
+  ['stock-winter-boots', /\bbogs\b|winter boots?|snow boots?/],
+  ['stock-snow-shovel', /snow shovel|shovelution|shovel/],
   // Specific LiTime picks
   ['stock-rv', /litime-12v-100ah-group24/],
   ['stock-boat', /litime-12v-100ah-trolling|trolling/],

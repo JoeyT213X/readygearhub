@@ -1,7 +1,7 @@
 ---
 import { outUrl, isAffiliate, programIdForItem, type Item } from '../lib/data';
 import { isNoPpcProgram } from '../data/affiliates';
-import { productPhotoFor, photoBackdropClass } from '../data/product-photos';
+import { cardImageFor } from '../data/card-image';
 import type { WinterDeal } from '../data/winter-deals';
 import { PRICE_CHECKED_LABEL } from '../data/winter-deals';
 
@@ -14,14 +14,14 @@ if (!isAffiliate(item)) {
   throw new Error(`Winter deal ${item.id} is not a live affiliate listing and cannot appear on /winter-deals/.`);
 }
 const program = programIdForItem(item.id);
-const photo = productPhotoFor({ id: item.id });
-const backdrop = photo ? photoBackdropClass({ id: item.id, name: item.data.name, brand: item.data.brand, tags: item.data.tags }) : '';
+const photo = cardImageFor(item);
 const href = outUrl(item);
 ---
 <article class="card item-card winter-deal-card" data-no-ppc={isNoPpcProgram(program) ? '' : undefined} data-program={isNoPpcProgram(program) ? program : undefined}>
   {photo && (
-    <a class={`item-card-photo ${backdrop}`} href={`/gear/${item.id}/`} tabindex="-1" aria-hidden="true">
-      <img src={photo.src} srcset={photo.srcset} sizes="(min-width: 900px) 330px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />
+    <a class:list={['item-card-photo', photo.representative ? 'is-stock' : photo.backdrop]} href={`/gear/${item.id}/`} tabindex="-1" aria-hidden="true">
+      <img src={photo.src} srcset={photo.srcset} sizes="(min-width: 900px) 360px, 92vw" alt="" width="960" height="540" loading="lazy" decoding="async" />
+      {photo.representative && <span class="stock-chip">Representative photo</span>}
     </a>
   )}
   <p class="brand">{item.data.brand}</p>

@@ -1,0 +1,2861 @@
+{
+  "generated": "2026-11-25T16:27:51.062Z",
+  "note": "Self-hosted images only; nothing is hotlinked. Representative stock photos are labeled \"Representative photo\" on cards. Human-readable credits: IMAGE_CREDITS.md.",
+  "counts": {
+    "keys": 246,
+    "officialProductOrBrand": 175,
+    "representativeStock": 28,
+    "editorialStock": 43,
+    "missingCredit": 0
+  },
+  "missingCredit": [],
+  "images": [
+    {
+      "key": "car-in-snow",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/car-in-snow-1600.webp",
+        "/images/photos/car-in-snow-480.webp",
+        "/images/photos/car-in-snow-960.webp"
+      ],
+      "source": "[A car covered in snow on a snowy street](https://unsplash.com/photos/a-car-covered-in-snow-on-a-snowy-street-rzzsBN4GPI0) | [Oleg Bilyk](https://unsplash.com/@olegbilykpro) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "cast-iron-fire",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/cast-iron-fire-1600.webp",
+        "/images/photos/cast-iron-fire-480.webp",
+        "/images/photos/cast-iron-fire-960.webp"
+      ],
+      "source": "[A cast iron skillet sitting on top of a fire pit](https://unsplash.com/photos/a-cast-iron-skillet-sitting-on-top-of-a-fire-pit-xV7y6lQ90FM) | [Anshu A](https://unsplash.com/@anshu18) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "checklist-writing",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/checklist-writing-1600.webp",
+        "/images/photos/checklist-writing-480.webp",
+        "/images/photos/checklist-writing-960.webp"
+      ],
+      "source": "[Someone is checking items off a checklist](https://unsplash.com/photos/someone-is-checking-items-off-a-checklist-weJ7qyjHYwk) | [Jakub Żerdzicki](https://unsplash.com/@jakubzerdzicki) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "fireplace-living-room",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/fireplace-living-room-1600.webp",
+        "/images/photos/fireplace-living-room-480.webp",
+        "/images/photos/fireplace-living-room-960.webp"
+      ],
+      "source": "[A living room filled with furniture and a fire place](https://unsplash.com/photos/a-living-room-filled-with-furniture-and-a-fire-place--_Rvjx9D7QY) | [Clay Banks](https://unsplash.com/@claybanks) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "first-aid-kit-open",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/first-aid-kit-open-1600.webp",
+        "/images/photos/first-aid-kit-open-480.webp",
+        "/images/photos/first-aid-kit-open-960.webp"
+      ],
+      "source": "[An open red medical bag filled with various supplies on a grey surface](https://unsplash.com/photos/open-red-medical-bag-with-supplies-MaKsx8JNbiI) | [Mat Napo](https://unsplash.com/@matnapo) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "gear-flatlay",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/gear-flatlay-1600.webp",
+        "/images/photos/gear-flatlay-480.webp",
+        "/images/photos/gear-flatlay-960.webp"
+      ],
+      "source": "[Pair of brown leather boots](https://unsplash.com/photos/pair-of-brown-leather-boots-jIaJM8sTs04) | [Haupes](https://unsplash.com/@haupes) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "hero-anker-solix",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/images/photos/hero-anker-solix-1600.webp",
+        "/images/photos/hero-anker-solix-480.webp",
+        "/images/photos/hero-anker-solix-960.webp"
+      ],
+      "source": "Anker SOLIX brand spotlight hero and /brands/ tile | Anker SOLIX | Composed from the official Rakuten catalog photos listed above | Arranged on a plain light background, November 23, 2026.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "hero-binoculars",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-binoculars-1600.webp",
+        "/images/photos/hero-binoculars-480.webp",
+        "/images/photos/hero-binoculars-960.webp"
+      ],
+      "source": "[Person Holding Black Binoculars](https://www.pexels.com/photo/person-holding-black-binoculars-10808050/) | [Maël BALLAND](https://www.pexels.com/@toulouse/) / Pexels | Home hero and Shop the Directory board (binoculars / outdoor category; not a photo of a specific listing)",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-bluetti-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/images/photos/hero-bluetti-official-1600.webp",
+        "/images/photos/hero-bluetti-official-480.webp",
+        "/images/photos/hero-bluetti-official-960.webp"
+      ],
+      "source": "BLUETTI brand spotlight hero and /brands/ tile | Bluetti Global | Composed from existing official CJ catalog photos (`bluetti-elite-200-v2`, `bluetti-ac180`, `bluetti-sp200l-200w`) | Those catalog photos were downloaded November 21, 2026; this arrangement was made November 23, 2026.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "hero-bunker-hatch",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-bunker-hatch-1600.webp",
+        "/images/photos/hero-bunker-hatch-480.webp",
+        "/images/photos/hero-bunker-hatch-960.webp"
+      ],
+      "source": "[Round Bunker Entrance and Bushes](https://www.pexels.com/photo/round-bunker-entrance-and-bushes-8518186/) | [Erik Mclean](https://www.pexels.com/@introspectivedsgn/) / Pexels | Home hero and Shop the Directory board, `/directory/security/`",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-campsite",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-campsite-1600.webp",
+        "/images/photos/hero-campsite-480.webp",
+        "/images/photos/hero-campsite-960.webp"
+      ],
+      "source": "[Camping tents and chairs around a fire ring](https://www.pexels.com/photo/2662816/) | [Mac DeStroir](https://www.pexels.com/@mac-destroir/) / Pexels | Home hero and Shop the Directory board (camp & shelter category; not a photo of a specific listing)",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-drone",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-drone-1600.webp",
+        "/images/photos/hero-drone-480.webp",
+        "/images/photos/hero-drone-960.webp"
+      ],
+      "source": "[Low Angle Shot of Drone Flying in the Sky](https://www.pexels.com/photo/low-angle-shot-of-drone-flying-in-the-sky-3722737/) | [Daniel Reche](https://www.pexels.com/@daniel-reche-718241/) / Pexels | Home hero, `/directory/drones/`",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-drone-flight",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-drone-flight-1600.webp",
+        "/images/photos/hero-drone-flight-480.webp",
+        "/images/photos/hero-drone-flight-960.webp"
+      ],
+      "source": "[A Drone Camera Flying](https://www.pexels.com/photo/a-drone-camera-flying-13076149/) | [Dmitrii Eremin](https://www.pexels.com/@dmitrii-eremin-67499966/) / Pexels | Home hero drones tile",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero v9 photos (Pexels)"
+    },
+    {
+      "key": "hero-drones-air",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-drones-air-1600.webp",
+        "/images/photos/hero-drones-air-480.webp",
+        "/images/photos/hero-drones-air-960.webp"
+      ],
+      "source": "[Drones Flying Over Grass Field](https://www.pexels.com/photo/drones-flying-over-grass-field-5014708/) | [ArtHouse Studio](https://www.pexels.com/@arthousestudio/) / Pexels | Home hero, Drones window",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero window photos (header-v2)"
+    },
+    {
+      "key": "hero-first-aid-crisp",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-first-aid-crisp-1600.webp",
+        "/images/photos/hero-first-aid-crisp-480.webp",
+        "/images/photos/hero-first-aid-crisp-960.webp"
+      ],
+      "source": "[First Aid Kit on Gray Background](https://www.pexels.com/photo/first-aid-kit-on-gray-background-5673523/) | Roger Brown / Pexels | Home hero, First aid & safety window",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero window photos (header-v2)"
+    },
+    {
+      "key": "hero-food-and-gear",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-food-and-gear-1600.webp",
+        "/images/photos/hero-food-and-gear-480.webp",
+        "/images/photos/hero-food-and-gear-960.webp"
+      ],
+      "source": "Two-panel collage: [Food in Cans and Plastic Bags](https://www.pexels.com/photo/food-in-cans-and-plastic-bags-6994945/) (already self-hosted as `prep-food-storage`) and [First Aid and Survival Kits](https://www.pexels.com/photo/first-aid-and-surival-kits-5125690/) | [Julia M Cameron](https://www.pexels.com/@julia-m-cameron/) and Roger Brown / Pexels | Home hero, Food & prepper supplies window",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero window photos (header-v2)"
+    },
+    {
+      "key": "hero-food-shelves",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-food-shelves-1600.webp",
+        "/images/photos/hero-food-shelves-480.webp",
+        "/images/photos/hero-food-shelves-960.webp"
+      ],
+      "source": "[Colorful Display of Canned Goods in Store Shelf](https://www.pexels.com/photo/colorful-display-of-canned-goods-in-store-shelf-32063427/) | [Warren Yip](https://www.pexels.com/@warren-yip-1081272606/) / Pexels | Home hero food & prepper supplies tile",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero v9 photos (Pexels)"
+    },
+    {
+      "key": "hero-litime",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/images/photos/hero-litime-1600.webp",
+        "/images/photos/hero-litime-480.webp",
+        "/images/photos/hero-litime-960.webp"
+      ],
+      "source": "LiTime brand spotlight hero and /brands/ tile | LiTime | Composed from the official Awin feed photos listed above | Arranged on a soft gradient background, November 23, 2026.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "hero-offroad-close",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-offroad-close-1600.webp",
+        "/images/photos/hero-offroad-close-480.webp",
+        "/images/photos/hero-offroad-close-960.webp"
+      ],
+      "source": "Four-panel close-up collage: [Can-Am Maverick on Dirt Road During Race](https://www.pexels.com/photo/can-am-maverick-on-dirt-road-during-race-23325251/), [A Row of Polaris Quad Bikes](https://www.pexels.com/photo/a-row-of-polaris-quad-bikes-19133792/), [Front of an Off-Road Car Equipped with a Tow Rope](https://www.pexels.com/photo/front-of-an-off-road-car-equipped-with-a-tow-rope-16805264/), and the existing `hero-overland-cruiser` ([Man Driving a Land Cruiser on the Desert](https://www.pexels.com/photo/man-driving-a-land-cruiser-on-the-desert-4781950/)) | [Joaquin Delgado](https://www.pexels.com/@joaquin-delgado-497073239/), [Amar Preciado](https://www.pexels.com/@amar/), Egor Komarov, and [Denys Gromov](https://www.pexels.com/@jdgromov/) / Pexels | Home hero, Overland & off-road window",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero window photos (header-v2)"
+    },
+    {
+      "key": "hero-overland-cruiser",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-overland-cruiser-1600.webp",
+        "/images/photos/hero-overland-cruiser-480.webp",
+        "/images/photos/hero-overland-cruiser-960.webp"
+      ],
+      "source": "[Man Driving a Land Cruiser on the Desert](https://www.pexels.com/photo/man-driving-a-land-cruiser-on-the-desert-4781950/) | [Denys Gromov](https://www.pexels.com/@jdgromov/) / Pexels | Home hero (category tile only; not used as a brand product photo)",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-overland-truck",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-overland-truck-1600.webp",
+        "/images/photos/hero-overland-truck-480.webp",
+        "/images/photos/hero-overland-truck-960.webp"
+      ],
+      "source": "[Camper Pickup on Brown Sand](https://www.pexels.com/photo/camper-pickup-on-brown-sand-7287112/) | [ArtHouse Studio](https://www.pexels.com/@arthousestudio/) / Pexels | Home hero, `/directory/vehicles/`",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-pantry-cans",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-pantry-cans-1600.webp",
+        "/images/photos/hero-pantry-cans-480.webp",
+        "/images/photos/hero-pantry-cans-960.webp"
+      ],
+      "source": "[Top View of Cans](https://www.pexels.com/photo/top-view-of-cans-19723918/) | [Michaela St](https://www.pexels.com/@michaela-st-3448542/) / Pexels | Home hero, `/directory/food/`",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-prepper-collage",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-prepper-collage-1600.webp",
+        "/images/photos/hero-prepper-collage-480.webp",
+        "/images/photos/hero-prepper-collage-960.webp"
+      ],
+      "source": "Four-panel collage: [Khaki Backpack with Survival Kit](https://www.pexels.com/photo/khaki-backpack-with-survival-kit-on-the-ground-6694800/) plus the existing `lantern-dusk`, `hero-radios`, and `multitools` photographs | [Dan Galvani Sommavilla](https://www.pexels.com/photo/khaki-backpack-with-survival-kit-on-the-ground-6694800/), [Vladimir Fedotov](https://unsplash.com/@fedotov_vs), [Grégory Costa](https://www.pexels.com/@gregory-costa/), and [Andrey Matveev](https://unsplash.com/@zelebb/) | Home hero, Prepper's Picks window",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero window photos (header-v2)"
+    },
+    {
+      "key": "hero-radios",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-radios-1600.webp",
+        "/images/photos/hero-radios-480.webp",
+        "/images/photos/hero-radios-960.webp"
+      ],
+      "source": "[Close Up Shot of Walkie Talkies](https://www.pexels.com/photo/close-up-shot-of-walkie-talkies-5733665/) | [Grégory Costa](https://www.pexels.com/@gregory-costa/) / Pexels | Home hero and Shop the Directory board (radios category / Midland listing link; not a photo of that listing’s product)",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-security-mix",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-security-mix-1600.webp",
+        "/images/photos/hero-security-mix-480.webp",
+        "/images/photos/hero-security-mix-960.webp"
+      ],
+      "source": "Collage of the existing `hero-security-robot` dog ([Ghost Robotics Vision 60 at BSDA 2024](https://commons.wikimedia.org/wiki/File:Ghost_Robotics_-_Civitas_Group_Vision_60_robot_dog_at_BSDA_2024.jpg)) with [White CCTV Cameras on a Post](https://www.pexels.com/photo/white-2-cctv-camera-mounted-on-black-post-under-clear-blue-sky-96612/) and [Pole with CCTV Cameras](https://www.pexels.com/photo/pole-with-cctv-cameras-10564672/) | Pfc. Alexcia Rupert, U.S. Army (public domain) via Wikimedia Commons; [AS Photography](https://www.pexels.com/@asphotography/) and Ollie Craig / Pexels | Home hero, Security window. The original `hero-security-robot` file is unchanged on the Ghost Robotics listing.",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero window photos (header-v2)"
+    },
+    {
+      "key": "hero-security-robot",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-security-robot-1600.webp",
+        "/images/photos/hero-security-robot-480.webp",
+        "/images/photos/hero-security-robot-960.webp"
+      ],
+      "source": "[Ghost Robotics Vision 60 at BSDA 2024](https://commons.wikimedia.org/wiki/File:Ghost_Robotics_-_Civitas_Group_Vision_60_robot_dog_at_BSDA_2024.jpg) | Pfc. Alexcia Rupert, U.S. Army (public domain) via Wikimedia Commons | Ghost Robotics official listing and the home-hero tile that links to it",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-snowy-home",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-snowy-home-1600.webp",
+        "/images/photos/hero-snowy-home-480.webp",
+        "/images/photos/hero-snowy-home-960.webp"
+      ],
+      "source": "[Brown house covered with snow near trees during daytime](https://unsplash.com/photos/brown-house-covered-with-snow-near-trees-during-daytime-wMT5I7SRve0) | [Matthieu Joannon](https://unsplash.com/@matt_j) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "hero-tent-stars",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-tent-stars-1600.webp",
+        "/images/photos/hero-tent-stars-480.webp",
+        "/images/photos/hero-tent-stars-960.webp"
+      ],
+      "source": "[Photo of Tent at Near Trees](https://www.pexels.com/photo/photo-of-tent-at-near-trees-2422265/) | [Josh Hild](https://www.pexels.com/@josh-hild-1270765/) / Pexels | Home hero and Shop the Directory board (tents / outdoor category; not a photo of a specific listing)",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-utv-dunes",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-utv-dunes-1600.webp",
+        "/images/photos/hero-utv-dunes-480.webp",
+        "/images/photos/hero-utv-dunes-960.webp"
+      ],
+      "source": "[Driving All Terrain Vehicles in the Desert](https://www.pexels.com/photo/driving-all-terrain-vehicles-in-the-desert-13252297/) | [Denys Gromov](https://www.pexels.com/@jdgromov/) / Pexels | Home hero and Shop the Directory board, `/directory/vehicles/`",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero collage (Pexels & Wikimedia)"
+    },
+    {
+      "key": "hero-water-pour",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/hero-water-pour-1600.webp",
+        "/images/photos/hero-water-pour-480.webp",
+        "/images/photos/hero-water-pour-960.webp"
+      ],
+      "source": "[Fluid Pouring in Pint Glass](https://www.pexels.com/photo/clear-drinking-glasses-with-water-416528/) | [Pixabay](https://www.pexels.com/@pixabay/) / Pexels | Home hero water storage & filters tile",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home hero v9 photos (Pexels)"
+    },
+    {
+      "key": "lantern-dusk",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/lantern-dusk-1600.webp",
+        "/images/photos/lantern-dusk-480.webp",
+        "/images/photos/lantern-dusk-960.webp"
+      ],
+      "source": "[Lighted kerosene lantern -](https://unsplash.com/photos/lighted-kerosene-lantern-aPdUKy65qWE) | [Vladimir Fedotov](https://unsplash.com/@fedotov_vs) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "lightning-road",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/lightning-road-1600.webp",
+        "/images/photos/lightning-road-480.webp",
+        "/images/photos/lightning-road-960.webp"
+      ],
+      "source": "[Lightning strikes across a dark, stormy sky over a street](https://unsplash.com/photos/lightning-strikes-across-a-dark-stormy-sky-over-a-street-aEHnZMAEPcY) | [Gleive Marcio Rodrigues de Souza](https://unsplash.com/@gleive) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "lineworker-repair",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/lineworker-repair-1600.webp",
+        "/images/photos/lineworker-repair-480.webp",
+        "/images/photos/lineworker-repair-960.webp"
+      ],
+      "source": "[A utility worker in a hard hat and harness repairing overhead power li](https://unsplash.com/photos/utility-worker-repairing-overhead-power-lines-Q3WVbAfdOoY) | [Антон Дмитриев](https://unsplash.com/@ehmitrich) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "multitools",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/multitools-1600.webp",
+        "/images/photos/multitools-480.webp",
+        "/images/photos/multitools-960.webp"
+      ],
+      "source": "[A group of knives](https://unsplash.com/photos/a-group-of-knives-UcpTs9Sbwec) | [Andrey Matveev](https://unsplash.com/@zelebb) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "outage-candle",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/outage-candle-1600.webp",
+        "/images/photos/outage-candle-480.webp",
+        "/images/photos/outage-candle-960.webp"
+      ],
+      "source": "[A candle that is sitting on a table](https://unsplash.com/photos/a-candle-that-is-sitting-on-a-table-n4sjEVninD4) | [Alice Kotlyarenko](https://unsplash.com/@onegrandtrip) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "portable-generator",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/portable-generator-1600.webp",
+        "/images/photos/portable-generator-480.webp",
+        "/images/photos/portable-generator-960.webp"
+      ],
+      "source": "[A car is parked in a parking lot](https://unsplash.com/photos/a-car-is-parked-in-a-parking-lot-8gXzLPWPu7E) | [Dima Solomin](https://unsplash.com/@solomin_d) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "power-banks",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/power-banks-1600.webp",
+        "/images/photos/power-banks-480.webp",
+        "/images/photos/power-banks-960.webp"
+      ],
+      "source": "[A couple of electronic devices sitting on top of a bed](https://unsplash.com/photos/a-couple-of-electronic-devices-sitting-on-top-of-a-bed-8q8icoKEJIY) | [Konstantinos Papadopoulos](https://unsplash.com/@kosti_2) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "prep-food-storage",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/prep-food-storage-1600.webp",
+        "/images/photos/prep-food-storage-480.webp",
+        "/images/photos/prep-food-storage-960.webp"
+      ],
+      "source": "[Food in Cans and Plastic Bags](https://www.pexels.com/photo/food-in-cans-and-plastic-bags-6994945/) | [Julia M Cameron](https://www.pexels.com/@julia-m-cameron/) / Pexels | Home Explore board, Food & pantry tile",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Home Explore board v12 photo (Pexels)"
+    },
+    {
+      "key": "snowy-trees-road",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/snowy-trees-road-1600.webp",
+        "/images/photos/snowy-trees-road-480.webp",
+        "/images/photos/snowy-trees-road-960.webp"
+      ],
+      "source": "[Empty roadway between trees covered by snow](https://unsplash.com/photos/empty-roadway-between-trees-covered-by-snow-Oww-awml8ek) | [Aaron Burden](https://unsplash.com/@aaronburden) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "solar-rooftops",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/solar-rooftops-1600.webp",
+        "/images/photos/solar-rooftops-480.webp",
+        "/images/photos/solar-rooftops-960.webp"
+      ],
+      "source": "[Rainbow over a suburban neighborhood with solar panels](https://unsplash.com/photos/rainbow-over-a-suburban-neighborhood-with-solar-panels-VNIjztzKF_U) | [Lara John](https://unsplash.com/@lara_j) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "stock-alarm",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-alarm-1600.webp",
+        "/images/photos/stock-alarm-480.webp",
+        "/images/photos/stock-alarm-960.webp"
+      ],
+      "source": "[Pexels photo 39183052](https://www.pexels.com/photo/39183052/) | Caleb Oquendo / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-battery-bank",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-battery-bank-1600.webp",
+        "/images/photos/stock-battery-bank-480.webp",
+        "/images/photos/stock-battery-bank-960.webp"
+      ],
+      "source": "[Pexels photo 37929911](https://www.pexels.com/photo/37929911/) | Magda Ehlers / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-boat",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-boat-1600.webp",
+        "/images/photos/stock-boat-480.webp",
+        "/images/photos/stock-boat-960.webp"
+      ],
+      "source": "[Pexels photo 1682688](https://www.pexels.com/photo/1682688/) | Ricky Esquivel / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-books",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-books-1600.webp",
+        "/images/photos/stock-books-480.webp",
+        "/images/photos/stock-books-960.webp"
+      ],
+      "source": "[Pexels photo 11317071](https://www.pexels.com/photo/11317071/) | Jonathan Cooper / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-boots",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-boots-1600.webp",
+        "/images/photos/stock-boots-480.webp",
+        "/images/photos/stock-boots-960.webp"
+      ],
+      "source": "[Pexels photo 32189248](https://www.pexels.com/photo/32189248/) | John Baker / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-cctv",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-cctv-1600.webp",
+        "/images/photos/stock-cctv-480.webp",
+        "/images/photos/stock-cctv-960.webp"
+      ],
+      "source": "[Pexels photo 96612](https://www.pexels.com/photo/96612/) | AS Photography / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-cyber",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-cyber-1600.webp",
+        "/images/photos/stock-cyber-480.webp",
+        "/images/photos/stock-cyber-960.webp"
+      ],
+      "source": "[Pexels photo 38482447](https://www.pexels.com/photo/38482447/) | Ann Hannes / Pexels | Representative photo on password-manager and privacy-service cards",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-drill",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-drill-1600.webp",
+        "/images/photos/stock-drill-480.webp",
+        "/images/photos/stock-drill-960.webp"
+      ],
+      "source": "[Pexels photo 30413428](https://www.pexels.com/photo/30413428/) | Christina & Peter / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-flashlight",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-flashlight-1600.webp",
+        "/images/photos/stock-flashlight-480.webp",
+        "/images/photos/stock-flashlight-960.webp"
+      ],
+      "source": "[Pexels photo 18678168](https://www.pexels.com/photo/18678168/) | Lucius PK / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-gloves",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-gloves-1600.webp",
+        "/images/photos/stock-gloves-480.webp",
+        "/images/photos/stock-gloves-960.webp"
+      ],
+      "source": "[Pexels photo 11584891](https://www.pexels.com/photo/11584891/) | SERHAT TUĞ / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-headphones",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-headphones-1600.webp",
+        "/images/photos/stock-headphones-480.webp",
+        "/images/photos/stock-headphones-960.webp"
+      ],
+      "source": "[Pexels photo 210927](https://www.pexels.com/photo/210927/) | Aleksandar Spasojevic / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-house",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-house-1600.webp",
+        "/images/photos/stock-house-480.webp",
+        "/images/photos/stock-house-960.webp"
+      ],
+      "source": "[Pexels photo 4832530](https://www.pexels.com/photo/4832530/) | Curtis Adams / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-insurance",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-insurance-1600.webp",
+        "/images/photos/stock-insurance-480.webp",
+        "/images/photos/stock-insurance-960.webp"
+      ],
+      "source": "[Pexels photo 7736031](https://www.pexels.com/photo/7736031/) | Mikhail Nilov / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-lantern",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-lantern-1600.webp",
+        "/images/photos/stock-lantern-480.webp",
+        "/images/photos/stock-lantern-960.webp"
+      ],
+      "source": "[Pexels photo 6271727](https://www.pexels.com/photo/6271727/) | Uriel Mont / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-laptop",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-laptop-1600.webp",
+        "/images/photos/stock-laptop-480.webp",
+        "/images/photos/stock-laptop-960.webp"
+      ],
+      "source": "[Pexels photo 3693732](https://www.pexels.com/photo/3693732/) | Abdullah Bin Mubarak / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-pipe",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-pipe-1600.webp",
+        "/images/photos/stock-pipe-480.webp",
+        "/images/photos/stock-pipe-960.webp"
+      ],
+      "source": "[Pexels photo 18274115](https://www.pexels.com/photo/18274115/) | aamir dukanwala / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-power-station",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-power-station-1600.webp",
+        "/images/photos/stock-power-station-480.webp",
+        "/images/photos/stock-power-station-960.webp"
+      ],
+      "source": "[Pexels photo 37489595](https://www.pexels.com/photo/37489595/) | Amar Preciado / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-radio",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-radio-1600.webp",
+        "/images/photos/stock-radio-480.webp",
+        "/images/photos/stock-radio-960.webp"
+      ],
+      "source": "[Pexels photo 9629953](https://www.pexels.com/photo/9629953/) | Ivan S / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-rv",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-rv-1600.webp",
+        "/images/photos/stock-rv-480.webp",
+        "/images/photos/stock-rv-960.webp"
+      ],
+      "source": "[Pexels photo 7967392](https://www.pexels.com/photo/7967392/) | Kampus Production / Pexels | Representative photo on directory cards without a licensed product photo; brand spotlight hero",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-smart-cam",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-smart-cam-1600.webp",
+        "/images/photos/stock-smart-cam-480.webp",
+        "/images/photos/stock-smart-cam-960.webp"
+      ],
+      "source": "[Pexels photo 24503710](https://www.pexels.com/photo/24503710/) | Jakub Zerdzicki / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-snow-shovel",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-snow-shovel-1600.webp",
+        "/images/photos/stock-snow-shovel-480.webp",
+        "/images/photos/stock-snow-shovel-960.webp"
+      ],
+      "source": "[Pexels photo 6952503](https://www.pexels.com/photo/man-clearing-snow-in-winter-outdoors-6952503/) | Kaboompics / Pexels | Representative photo for snow-shovel listings. Added Nov 25, 2026; Pexels License; self-hosted, cropped 16:9.",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-solar-camp",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-solar-camp-1600.webp",
+        "/images/photos/stock-solar-camp-480.webp",
+        "/images/photos/stock-solar-camp-960.webp"
+      ],
+      "source": "[Pexels photo 28705865](https://www.pexels.com/photo/28705865/) | Eslam Mohammed Abdelmaksoud / Pexels | Representative photo on directory cards without a licensed product photo; brand spotlight hero",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-solar-panel",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-solar-panel-1600.webp",
+        "/images/photos/stock-solar-panel-480.webp",
+        "/images/photos/stock-solar-panel-960.webp"
+      ],
+      "source": "[Pexels photo 8853509](https://www.pexels.com/photo/8853509/) | Los Muertos Crew / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-speaker",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-speaker-1600.webp",
+        "/images/photos/stock-speaker-480.webp",
+        "/images/photos/stock-speaker-960.webp"
+      ],
+      "source": "[Pexels photo 880874](https://www.pexels.com/photo/880874/) | Peter Fazekas / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-stove",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-stove-1600.webp",
+        "/images/photos/stock-stove-480.webp",
+        "/images/photos/stock-stove-960.webp"
+      ],
+      "source": "[Pexels photo 4909104](https://www.pexels.com/photo/4909104/) | Taryn Elliott / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-winter-boots",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-winter-boots-1600.webp",
+        "/images/photos/stock-winter-boots-480.webp",
+        "/images/photos/stock-winter-boots-960.webp"
+      ],
+      "source": "[Pexels photo 29505010](https://www.pexels.com/photo/winter-boots-walking-through-fresh-snow-29505010/) | iddea photo / Pexels | Representative photo for Bogs and other winter-boot listings (gear cards, gear pages, directory cards). Added Nov 25, 2026; Pexels License; self-hosted, cropped 16:9.",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-winter-boots-2",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-winter-boots-2-1600.webp",
+        "/images/photos/stock-winter-boots-2-480.webp",
+        "/images/photos/stock-winter-boots-2-960.webp"
+      ],
+      "source": "[Pexels photo 6609913](https://www.pexels.com/photo/black-footwear-on-snow-6609913/) | Kaboompics / Pexels | Alternate representative winter-boot photo so a row of Bogs cards is not one repeated picture. Added Nov 25, 2026; Pexels License; self-hosted, cropped 16:9.",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-wood-stove",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-wood-stove-1600.webp",
+        "/images/photos/stock-wood-stove-480.webp",
+        "/images/photos/stock-wood-stove-960.webp"
+      ],
+      "source": "[Pexels photo 27669647](https://www.pexels.com/photo/27669647/) | Alexander Mass / Pexels | Representative photo on directory cards without a licensed product photo",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "storm-barn",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/storm-barn-1600.webp",
+        "/images/photos/storm-barn-480.webp",
+        "/images/photos/storm-barn-960.webp"
+      ],
+      "source": "[Dilapidated schoolhouse under dark, ominous storm clouds in a field](https://unsplash.com/photos/dilapidated-schoolhouse-under-dark-ominous-storm-clouds-in-a-field-Q2FsOFmBy_M) | [Steve Gribble](https://unsplash.com/@steve_g_) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "storm-over-sea",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/storm-over-sea-1600.webp",
+        "/images/photos/storm-over-sea-480.webp",
+        "/images/photos/storm-over-sea-960.webp"
+      ],
+      "source": "[A large storm moving across the sky over a body of water](https://unsplash.com/photos/a-large-storm-moving-across-the-sky-over-a-body-of-water-GBkssTODNT0) | [Daniel Lerman](https://unsplash.com/@dlerman6) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "storm-surf-coast",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/storm-surf-coast-1600.webp",
+        "/images/photos/storm-surf-coast-480.webp",
+        "/images/photos/storm-surf-coast-960.webp"
+      ],
+      "source": "[Ocean waves near city buildings during daytime](https://unsplash.com/photos/ocean-waves-near-city-buildings-during-daytime-mqZ9UC6w2kA) | [Craig Cameron](https://unsplash.com/@craigcpcb) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "water-bottles",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/water-bottles-1600.webp",
+        "/images/photos/water-bottles-480.webp",
+        "/images/photos/water-bottles-960.webp"
+      ],
+      "source": "[Rows of blue plastic water cooler jugs](https://unsplash.com/photos/rows-of-blue-plastic-water-cooler-jugs-s07YyIaOkDU) | [Thilina Alagiyawanna](https://unsplash.com/@thilinaalagiyawanna) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "winter-storm-street",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/winter-storm-street-1600.webp",
+        "/images/photos/winter-storm-street-480.webp",
+        "/images/photos/winter-storm-street-960.webp"
+      ],
+      "source": "[Black car on snow covered road during daytime](https://unsplash.com/photos/black-car-on-snow-covered-road-during-daytime-auKUoQcwQfs) | [Colin Lloyd](https://unsplash.com/@onthesearchforpineapples) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "wool-socks-snow",
+      "kind": "editorial-stock",
+      "files": [
+        "/images/photos/wool-socks-snow-1600.webp",
+        "/images/photos/wool-socks-snow-480.webp",
+        "/images/photos/wool-socks-snow-960.webp"
+      ],
+      "source": "[Yellow shoes](https://unsplash.com/photos/yellow-shoes-ffr3v3cXeoY) | [Åsmund Arup Seip](https://unsplash.com/@aaseip) | see `src/data/images.ts`",
+      "license": "Unsplash License (free to use, self-hosted)",
+      "creditSection": "Image credits"
+    },
+    {
+      "key": "1password-password-manager",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/1password-password-manager-1200.webp",
+        "/directory/photos/1password-password-manager-480.webp",
+        "/directory/photos/1password-password-manager-960.webp"
+      ],
+      "source": "1Password password manager | 1Password | Official marketing image from 1password.com (Contentful CDN open-graph-1password-business.jpg), Open Graph image on the 1Password homepage, downloaded November 23, 2026. Image provided by 1Password. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by 1Password.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-bp2000-gen2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-bp2000-gen2-1600.webp",
+        "/directory/photos/anker-solix-bp2000-gen2-2000.webp",
+        "/directory/photos/anker-solix-bp2000-gen2-480.webp",
+        "/directory/photos/anker-solix-bp2000-gen2-960.webp"
+      ],
+      "source": "Anker SOLIX BP2000 expansion battery (Gen 2), for the C2000 Gen 2 | Anker SOLIX | Rakuten Advertising product links (MID 53552), collected November 23, 2026 | Official catalog photo, source 2,000×2,001, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-bp3800",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-bp3800-1600.webp",
+        "/directory/photos/anker-solix-bp3800-2000.webp",
+        "/directory/photos/anker-solix-bp3800-480.webp",
+        "/directory/photos/anker-solix-bp3800-960.webp"
+      ],
+      "source": "Anker SOLIX BP3800 expansion battery (3,840Wh, F3800 series) | Anker SOLIX | Rakuten Advertising product links (MID 53552), collected November 23, 2026 | Official catalog photo, source 3,000×3,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-c1000x",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-c1000x-1200.webp",
+        "/directory/photos/anker-solix-c1000x-480.webp",
+        "/directory/photos/anker-solix-c1000x-960.webp"
+      ],
+      "source": "Anker SOLIX C1000X portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official product photo (`anker-solix-c1000x.png`, 1,200×1,200). The separate `c1000x-gen2` file is a different model and is not used on this listing.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-c1000x-gen2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-c1000x-gen2-1600.webp",
+        "/directory/photos/anker-solix-c1000x-gen2-2000.webp",
+        "/directory/photos/anker-solix-c1000x-gen2-480.webp",
+        "/directory/photos/anker-solix-c1000x-gen2-960.webp"
+      ],
+      "source": "Anker SOLIX C1000 Gen 2 portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-c2000-gen2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-c2000-gen2-1600.webp",
+        "/directory/photos/anker-solix-c2000-gen2-480.webp",
+        "/directory/photos/anker-solix-c2000-gen2-960.webp"
+      ],
+      "source": "Anker SOLIX C2000 Gen 2 portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising. Already processed November 23, 2026; listed November 23, 2026.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-c2000-gen2-400w-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-c2000-gen2-400w-kit-1600.webp",
+        "/directory/photos/anker-solix-c2000-gen2-400w-kit-480.webp",
+        "/directory/photos/anker-solix-c2000-gen2-400w-kit-960.webp"
+      ],
+      "source": "Anker SOLIX C2000 Gen 2 + 400W solar panel kit | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-c300-dc-60w-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-c300-dc-60w-kit-1600.webp",
+        "/directory/photos/anker-solix-c300-dc-60w-kit-2000.webp",
+        "/directory/photos/anker-solix-c300-dc-60w-kit-480.webp",
+        "/directory/photos/anker-solix-c300-dc-60w-kit-960.webp"
+      ],
+      "source": "Anker SOLIX C300 DC solar generator + 60W solar panel | Anker SOLIX | Rakuten Advertising product links (MID 53552), collected November 23, 2026 | Official catalog photo, source 2,307×2,307, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-c300x",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-c300x-1600.webp",
+        "/directory/photos/anker-solix-c300x-2000.webp",
+        "/directory/photos/anker-solix-c300x-480.webp",
+        "/directory/photos/anker-solix-c300x-960.webp"
+      ],
+      "source": "Anker SOLIX C300X portable power station (288Wh, 300W) | Anker SOLIX | Rakuten Advertising product links (MID 53552), collected November 23, 2026 | Official catalog photo, source 3,000×3,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-c800x-100w-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-c800x-100w-kit-1600.webp",
+        "/directory/photos/anker-solix-c800x-100w-kit-2000.webp",
+        "/directory/photos/anker-solix-c800x-100w-kit-480.webp",
+        "/directory/photos/anker-solix-c800x-100w-kit-960.webp"
+      ],
+      "source": "Anker SOLIX C800X + 100W solar panel kit | Anker SOLIX | Rakuten Advertising product links (MID 53552), collected November 23, 2026 | Official catalog photo, source 4,000×4,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-f3800-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-f3800-plus-1600.webp",
+        "/directory/photos/anker-solix-f3800-plus-480.webp",
+        "/directory/photos/anker-solix-f3800-plus-960.webp"
+      ],
+      "source": "Anker SOLIX F3800 Plus portable power station | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-ps100",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-ps100-1600.webp",
+        "/directory/photos/anker-solix-ps100-480.webp",
+        "/directory/photos/anker-solix-ps100-960.webp"
+      ],
+      "source": "Anker SOLIX PS100 bifacial portable solar panel | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-ps200",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-ps200-1600.webp",
+        "/directory/photos/anker-solix-ps200-2000.webp",
+        "/directory/photos/anker-solix-ps200-480.webp",
+        "/directory/photos/anker-solix-ps200-960.webp"
+      ],
+      "source": "Anker SOLIX PS200 bifacial portable solar panel | Anker SOLIX | Rakuten Advertising product links (MID 53552), collected November 23, 2026 | Official catalog photo, source 2,000×2,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-ps400",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-ps400-1000.webp",
+        "/directory/photos/anker-solix-ps400-480.webp",
+        "/directory/photos/anker-solix-ps400-960.webp"
+      ],
+      "source": "Anker SOLIX PS400 bifacial portable solar panel | Anker SOLIX | Rakuten Advertising product links (MID 53552) | Official catalog photo, source 1,000×1,000. Image provided by Anker SOLIX via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "apple-airpods-5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/apple-airpods-5-1200.webp",
+        "/directory/photos/apple-airpods-5-480.webp",
+        "/directory/photos/apple-airpods-5-960.webp"
+      ],
+      "source": "Apple AirPods 5 | Apple | Official marketing photo from apple.com (v/airpods-5/b/images/meta/airpods-5__bwo9ith0md42_og.png), Open Graph image on the AirPods 5 page, downloaded November 23, 2026. Image provided by Apple. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Apple.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "apple-airpods-max-2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/apple-airpods-max-2-1200.webp",
+        "/directory/photos/apple-airpods-max-2-480.webp",
+        "/directory/photos/apple-airpods-max-2-960.webp"
+      ],
+      "source": "Apple AirPods Max 2 | Apple | Official marketing photo from apple.com (v/airpods-max/l/images/meta/airpods-max_overview__c2mz40a3bugm_og.png), Open Graph image on the AirPods Max 2 page, downloaded November 23, 2026. Image provided by Apple. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Apple.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "apple-airpods-pro-3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/apple-airpods-pro-3-1200.webp",
+        "/directory/photos/apple-airpods-pro-3-480.webp",
+        "/directory/photos/apple-airpods-pro-3-960.webp"
+      ],
+      "source": "Apple AirPods Pro 3 | Apple | Official marketing photo from apple.com (v/airpods-pro/t/images/meta/og__c0ceegchesom_overview.png), Open Graph image on the AirPods Pro 3 page, downloaded November 23, 2026. Image provided by Apple. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Apple.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "apple-airtag",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/apple-airtag-1200.webp",
+        "/directory/photos/apple-airtag-480.webp",
+        "/directory/photos/apple-airtag-960.webp"
+      ],
+      "source": "Apple AirTag | Apple | Official marketing photo from apple.com (v/airtag/g/images/meta/og__ck3n0k1jl6j6.png), Open Graph image on the AirTag page, downloaded November 23, 2026. Image provided by Apple. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Apple.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "aquasana-brand-300x250",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-brand-300x250.webp"
+      ],
+      "source": "Aquasana water filters merchant card | Aquasana | Rakuten Advertising (creative 36667_1359) | First frame of the official 300×250 brand GIF, saved as a still WebP. Image provided by Aquasana via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-claryum-2stage-chrome",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-claryum-2stage-chrome.webp"
+      ],
+      "source": "Aquasana Claryum 2-Stage under-sink filter, chrome product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-claryum-2stage-matte-black",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-claryum-2stage-matte-black.webp"
+      ],
+      "source": "Aquasana Claryum 2-Stage under-sink filter, matte black product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-claryum-3stage-maxflow-chrome",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-claryum-3stage-maxflow-chrome.webp"
+      ],
+      "source": "Aquasana Claryum 3-Stage Max Flow under-sink filter, chrome product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-claryum-direct-connect",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-claryum-direct-connect.webp"
+      ],
+      "source": "Aquasana Claryum Direct Connect under-sink filter product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-clean-water-machine-black",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-clean-water-machine-black.webp"
+      ],
+      "source": "Aquasana Clean Water Machine countertop filter, black product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-healthshield-ro-matte-black",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-healthshield-ro-matte-black.webp"
+      ],
+      "source": "Aquasana HealthShield reverse osmosis system, matte black product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-healthshield-whole-house",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-healthshield-whole-house.webp"
+      ],
+      "source": "Aquasana HealthShield whole-house water filter product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-rhino-whole-house",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-rhino-whole-house.webp"
+      ],
+      "source": "Aquasana whole-house filters product card | Aquasana | Rakuten Advertising | Photo of the Rhino Whole House Water Filter System (SKU WH-1000). Image provided by Aquasana via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-salt-free-conditioner",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-salt-free-conditioner.webp"
+      ],
+      "source": "Aquasana salt-free water conditioner product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-sediment-prefilter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-sediment-prefilter.webp"
+      ],
+      "source": "Aquasana high sediment pre-filter for countertop diverter product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-shower-chrome",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-shower-chrome.webp"
+      ],
+      "source": "Aquasana shower filter with chrome handheld wand product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-under-sink-claryum-3stage",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-under-sink-claryum-3stage.webp"
+      ],
+      "source": "Aquasana under-sink filters product card | Aquasana | Rakuten Advertising | Photo of the Claryum 3-Stage Under Sink Water Filter, Matte Black (SKU AQ-6300-MB). Image provided by Aquasana via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquatru-carafe",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquatru-carafe-1600.webp",
+        "/directory/photos/aquatru-carafe-2000.webp",
+        "/directory/photos/aquatru-carafe-480.webp",
+        "/directory/photos/aquatru-carafe-960.webp"
+      ],
+      "source": "AquaTru Carafe countertop reverse osmosis system | AquaTru | Official product photo from aquatruwater.com (Shopify CDN files/Carafe_2000x2000_a889b1f8-02b0-47d4-9d07-291b989ce27d.png), first image on the AquaTru Carafe product page, downloaded November 23, 2026. Image provided by AquaTru. | Official catalog photo, flattened onto white for the card backdrop (native 2000 px used as the large srcset step, no upscaling). Image provided by AquaTru.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "berkey-big-berkey",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/berkey-big-berkey-390.webp"
+      ],
+      "source": "Big Berkey gravity-fed water filter | TheBerkey.com | Official product photo from theberkey.com (Shopify CDN products/BigBerkey-Water-Filter.jpg), first image on the Big Berkey product page, downloaded November 23, 2026. Image provided by TheBerkey.com. | Official catalog photo, flattened onto white for the card backdrop (native 390 px used as the large srcset step, no upscaling). Image provided by TheBerkey.com.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "berkey-travel-berkey",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/berkey-travel-berkey-390.webp"
+      ],
+      "source": "Travel Berkey gravity-fed water filter | TheBerkey.com | Official product photo from theberkey.com (Shopify CDN products/Travel-Berkey-Water-Filte.jpg), first image on the Travel Berkey product page, downloaded November 23, 2026. Image provided by TheBerkey.com. | Official catalog photo, flattened onto white for the card backdrop (native 390 px used as the large srcset step, no upscaling). Image provided by TheBerkey.com.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "bluetti-350w-solar",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-350w-solar.webp"
+      ],
+      "source": "BLUETTI 350W solar panel product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-ac180",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-ac180-1200.webp",
+        "/directory/photos/bluetti-ac180-480.webp",
+        "/directory/photos/bluetti-ac180-960.webp",
+        "/directory/photos/bluetti-ac180.webp"
+      ],
+      "source": "BLUETTI AC180 product card | Bluetti Global | CJ Affiliate product catalog | ",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-ac180p",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-ac180p.webp"
+      ],
+      "source": "BLUETTI AC180P portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-ac200l",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-ac200l.webp"
+      ],
+      "source": "BLUETTI AC200L product card | Bluetti Global | CJ Affiliate product catalog | ",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-ac200p-l",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-ac200p-l.webp"
+      ],
+      "source": "BLUETTI AC200P L portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-ac2a",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-ac2a.webp"
+      ],
+      "source": "BLUETTI AC2A product card | Bluetti Global | CJ Affiliate product catalog | ",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-ac50b",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-ac50b.webp"
+      ],
+      "source": "BLUETTI AC50B portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-ac70",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-ac70.webp"
+      ],
+      "source": "BLUETTI AC70 product card | Bluetti Global | CJ Affiliate product catalog | ",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-apex",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-apex-200.webp",
+        "/directory/photos/bluetti-apex-300.webp"
+      ],
+      "source": "BLUETTI Apex 300 versatile power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-b1210",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-b1210.webp"
+      ],
+      "source": "BLUETTI B1210 LiFePO4 battery product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-b210",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-b210.webp"
+      ],
+      "source": "BLUETTI B210 expansion battery product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-b300k",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-b300k.webp"
+      ],
+      "source": "BLUETTI B300K expansion battery product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-b4810",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-b4810.webp"
+      ],
+      "source": "BLUETTI B4810 LiFePO4 battery product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-bc200",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-bc200.webp"
+      ],
+      "source": "BLUETTI BC200 battery product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-charger",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-charger-1.webp",
+        "/directory/photos/bluetti-charger-2.webp"
+      ],
+      "source": "BLUETTI Charger 1 product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-elite",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-elite-300.webp",
+        "/directory/photos/bluetti-elite-400.webp"
+      ],
+      "source": "BLUETTI Elite 300 product card | Bluetti Global | CJ Affiliate product catalog | ",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-elite-10-mini",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-elite-10-mini.webp"
+      ],
+      "source": "BLUETTI Elite 10 Mini power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-elite-100-mini",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-elite-100-mini.webp"
+      ],
+      "source": "BLUETTI Elite 100 mini portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-elite-100-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-elite-100-v2.webp"
+      ],
+      "source": "BLUETTI Elite 100 V2 product card | Bluetti Global | CJ Affiliate product catalog | ",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-elite-200-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-elite-200-v2.webp"
+      ],
+      "source": "BLUETTI Elite 200 V2 product card; also the BLUETTI portable power stations merchant card | Bluetti Global | CJ Affiliate (Campaigns > Products catalog) | Official 120×90 logo creative is too small for a card, so the merchant card uses this catalog product photo instead.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-elite-30-mini",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-elite-30-mini.webp"
+      ],
+      "source": "BLUETTI Elite 30 mini portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-elite-30-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-elite-30-v2.webp"
+      ],
+      "source": "BLUETTI Elite 30 V2 portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-fridgepower",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-fridgepower.webp"
+      ],
+      "source": "BLUETTI FridgePower product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-pioneer-na",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-pioneer-na.webp"
+      ],
+      "source": "BLUETTI Pioneer Na portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-premium-100-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-premium-100-v2.webp"
+      ],
+      "source": "BLUETTI Premium 100 V2 portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-premium-200-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-premium-200-v2.webp"
+      ],
+      "source": "BLUETTI Premium 200 V2 portable power station product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-sora",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-sora-60.webp"
+      ],
+      "source": "BLUETTI SORA 60 solar panel product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-sp100l",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-sp100l.webp"
+      ],
+      "source": "BLUETTI SP100L solar panel product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-sp200l-200w",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-sp200l-200w.webp"
+      ],
+      "source": "BLUETTI SP200L 200W solar panel product card | Bluetti Global | CJ Affiliate product catalog | Catalog asset filename SP200L; listing also says PV200.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "bluetti-x20",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluetti-x20.webp"
+      ],
+      "source": "BLUETTI X20 power bank product card | Bluetti Global | CJ Affiliate product catalog | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Bluetti Global via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "catan-base-game",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/catan-base-game-480.webp",
+        "/directory/photos/catan-base-game-800.webp"
+      ],
+      "source": "CATAN base game | CATAN | Official box art from catan.com (sites/default/files/2025-04/3DBox_CATAN_BaseGame_NE.png), page image on the CATAN base-game page, downloaded November 23, 2026. Image provided by CATAN GmbH. | Official catalog photo, flattened onto white for the card backdrop (native 800 px used as the large srcset step, no upscaling). Image provided by CATAN.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "choice-home-warranty",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/choice-home-warranty-250.webp"
+      ],
+      "source": "Choice Home Warranty merchant card | Choice Home Warranty | CJ Affiliate (link 12469543, 250×250 logo) | Image provided by Choice Home Warranty via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "clearly-filtered-pitcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/clearly-filtered-pitcher-1200.webp",
+        "/directory/photos/clearly-filtered-pitcher-480.webp",
+        "/directory/photos/clearly-filtered-pitcher-960.webp"
+      ],
+      "source": "Clearly Filtered Water Pitcher | Clearly Filtered | Official product photo from clearlyfiltered.com (Shopify CDN files/NSF_Pitcher_6d406ff4-1622-448d-bcff-55fbd7da4eb8.png), first image on the Filtered Water Pitcher product page, downloaded November 23, 2026. Image provided by Clearly Filtered. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Clearly Filtered.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "dji-matrice-4-series",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/dji-matrice-4-series-374.webp"
+      ],
+      "source": "DJI Matrice 4 Series | DJI | Official product photo from enterprise.dji.com (www-cdn.djiits.com cms/uploads/5a6ef3ed6f35e3719453a78ff0e67af4@374*374.png), Open Graph image on the Matrice 4 Series page, downloaded November 23, 2026. Image provided by DJI. | Official catalog photo, flattened onto white for the card backdrop (native 374 px used as the large srcset step, no upscaling). Image provided by DJI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "dji-matrice-5t",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/dji-matrice-5t-374.webp"
+      ],
+      "source": "DJI Matrice 5T | DJI | Official product photo from enterprise.dji.com (www-cdn.djiits.com cms/uploads/a7e99d6569424ed49afc9db2f20e5049@374*374.png), Open Graph image on the Matrice 5T page, downloaded November 23, 2026. Image provided by DJI. | Official catalog photo, flattened onto white for the card backdrop (native 374 px used as the large srcset step, no upscaling). Image provided by DJI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "dji-mavic-3-enterprise",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/dji-mavic-3-enterprise-374.webp"
+      ],
+      "source": "DJI Mavic 3 Enterprise Series | DJI | Official product photo from enterprise.dji.com (www-cdn.djiits.com cms/uploads/782504dd2755d6067e4a82fda5ca147d@374*374.png), Open Graph image on the Mavic 3 Enterprise Series page, downloaded November 23, 2026. Image provided by DJI. | Official catalog photo, flattened onto white for the card backdrop (native 374 px used as the large srcset step, no upscaling). Image provided by DJI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ecoflow-delta-2-max",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ecoflow-delta-2-max-1500.webp",
+        "/directory/photos/ecoflow-delta-2-max-480.webp",
+        "/directory/photos/ecoflow-delta-2-max-960.webp"
+      ],
+      "source": "EcoFlow DELTA 2 Max portable power station | EcoFlow | Official product photo from us.ecoflow.com (Shopify CDN files/ecoflow-us-ecoflow-delta-2-max-portable-power-station-delta-2-max-30402652930121.png), first image on the DELTA 2 Max product page, downloaded November 23, 2026. Image provided by EcoFlow. | Official catalog photo, flattened onto white for the card backdrop (native 1500 px used as the large srcset step, no upscaling). Image provided by EcoFlow.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "epic-nano-xp-pitcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/epic-nano-xp-pitcher-1600.webp",
+        "/directory/photos/epic-nano-xp-pitcher-480.webp",
+        "/directory/photos/epic-nano-xp-pitcher-960.webp"
+      ],
+      "source": "Epic Nano XP water filter pitcher | Epic Water Filters | Official product photo from epicwaterfilters.com (Shopify CDN `files/NXPBLK2PTCH2-24-26HeroImg.png?v=1783609681`), first image on the Nano XP pitcher page, downloaded November 24, 2026 | Official catalog photo, source 2,000×2,000, flattened onto a light card backdrop (1,600 px used as the large srcset step, no upscaling). Image provided by Epic Water Filters.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "epic-og-ultimate-travel-bottle",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/epic-og-ultimate-travel-bottle-480.webp",
+        "/directory/photos/epic-og-ultimate-travel-bottle-600.webp"
+      ],
+      "source": "Epic OG Ultimate Travel Bottle | Epic Water Filters | Official product photo from epicwaterfilters.com (Shopify CDN `files/OG-Ultimate-Travel-Bottle-Epic-Water-Filters-USA-9673.png?v=1773169159`), first image on the OG Ultimate Travel Bottle page, downloaded November 24, 2026 | Official catalog photo, source 600×600, flattened onto a light card backdrop (native 600 px used as the large srcset step, no upscaling). Image provided by Epic Water Filters.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "epic-pure-xp-pitcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/epic-pure-xp-pitcher-1600.webp",
+        "/directory/photos/epic-pure-xp-pitcher-480.webp",
+        "/directory/photos/epic-pure-xp-pitcher-960.webp"
+      ],
+      "source": "Epic Pure XP water filter pitcher | Epic Water Filters | Official product photo from epicwaterfilters.com (Shopify CDN `files/PXPWHT2PTCH2-24-26HeroImg-01.png?v=1783611974`), first image on the Pure XP pitcher page, downloaded November 24, 2026 | Official catalog photo, source 2,000×2,000, flattened onto a light card backdrop (1,600 px used as the large srcset step, no upscaling). Image provided by Epic Water Filters.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "epic-smart-shield",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/epic-smart-shield-1600.webp",
+        "/directory/photos/epic-smart-shield-480.webp",
+        "/directory/photos/epic-smart-shield-960.webp"
+      ],
+      "source": "Epic Smart Shield under-sink water filter | Epic Water Filters | Official product photo from epicwaterfilters.com (Shopify CDN `files/epic-smart-shield-under-sink-filter-system.png?v=1790686034`), first image on the Smart Shield product page, downloaded November 24, 2026 | Official catalog photo, source 2,000×2,000, flattened onto a light card backdrop (1,600 px used as the large srcset step, no upscaling). Image provided by Epic Water Filters.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "epic-smart-shield-max",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/epic-smart-shield-max-1600.webp",
+        "/directory/photos/epic-smart-shield-max-480.webp",
+        "/directory/photos/epic-smart-shield-max-960.webp"
+      ],
+      "source": "Epic Smart Shield Max under-sink water filter | Epic Water Filters | Official product photo from epicwaterfilters.com (Shopify CDN `files/SS_MAX_CE_HERO_IMG_no_bg_-R3_Assembled_in_USA.png?v=1795025072`), first image on the Smart Shield Max product page, downloaded November 24, 2026 | Official catalog photo, source 2,000×2,000, flattened onto a light card backdrop (1,600 px used as the large srcset step, no upscaling). Image provided by Epic Water Filters.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "eufy-solocam-s340",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eufy-solocam-s340-1500.webp",
+        "/directory/photos/eufy-solocam-s340-480.webp",
+        "/directory/photos/eufy-solocam-s340-960.webp"
+      ],
+      "source": "eufy SoloCam S340 | eufy | Official product photo from eufy.com (Shopify CDN files/1500_1500.png), Open Graph image on the SoloCam S340 product page, downloaded November 23, 2026. Image provided by eufy. | Official catalog photo, flattened onto white for the card backdrop (native 1500 px used as the large srcset step, no upscaling). Image provided by eufy.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "garmin-dash-cam-mini-3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/garmin-dash-cam-mini-3-480.webp",
+        "/directory/photos/garmin-dash-cam-mini-3-600.webp"
+      ],
+      "source": "Garmin Dash Cam Mini 3 | Garmin | Official product photo from garmin.com (res.garmin.com/en/products/010-02899-00/v/cf-lg.jpg), Open Graph image on the Dash Cam Mini 3 product page, downloaded November 23, 2026. Image provided by Garmin. | Official catalog photo, flattened onto white for the card backdrop (native 600 px used as the large srcset step, no upscaling). Image provided by Garmin.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "goal-zero-yeti-500",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/goal-zero-yeti-500-1600.webp",
+        "/directory/photos/goal-zero-yeti-500-2100.webp",
+        "/directory/photos/goal-zero-yeti-500-480.webp",
+        "/directory/photos/goal-zero-yeti-500-960.webp"
+      ],
+      "source": "Goal Zero Yeti 500 portable power station | Goal Zero | Official product photo from goalzero.com (Shopify CDN files/Yeti500_ProductHero.jpg), first image on the Yeti 500 product page, downloaded November 23, 2026. Image provided by Goal Zero. | Official catalog photo, flattened onto white for the card backdrop (native 2100 px used as the large srcset step, no upscaling). Image provided by Goal Zero.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "goal-zero-yeti-700",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/goal-zero-yeti-700-1600.webp",
+        "/directory/photos/goal-zero-yeti-700-2100.webp",
+        "/directory/photos/goal-zero-yeti-700-480.webp",
+        "/directory/photos/goal-zero-yeti-700-960.webp"
+      ],
+      "source": "Goal Zero Yeti 700 portable power station | Goal Zero | Official product photo from goalzero.com (Shopify CDN files/Yeti700_ProductHero.jpg), first image on the Yeti 700 product page, downloaded November 23, 2026. Image provided by Goal Zero. | Official catalog photo, flattened onto white for the card backdrop (native 2100 px used as the large srcset step, no upscaling). Image provided by Goal Zero.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "google-nest-cam-indoor-wired-3rd-gen",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/google-nest-cam-indoor-wired-3rd-gen-480.webp",
+        "/directory/photos/google-nest-cam-indoor-wired-3rd-gen-512.webp"
+      ],
+      "source": "Google Nest Cam Indoor (wired, 3rd gen) | Google | Official product photo from store.google.com (lh3.googleusercontent.com ...), Open Graph image on the Nest Cam Indoor (wired, 3rd gen) page, downloaded November 23, 2026. Image provided by Google. | Official catalog photo, flattened onto white for the card backdrop (native 512 px used as the large srcset step, no upscaling). Image provided by Google.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "harvest-right-countertop-360",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/harvest-right-countertop-360-1600.webp",
+        "/directory/photos/harvest-right-countertop-360-4052.webp",
+        "/directory/photos/harvest-right-countertop-360-480.webp",
+        "/directory/photos/harvest-right-countertop-360-960.webp"
+      ],
+      "source": "Harvest Right Countertop 360 freeze dryer | Harvest Right | Official product photo from harvestright.com (Shopify CDN files/countertop-freeze-dryer-black-right_9f651329-22aa-4c6d-8c6d-62f24185943e.jpg, store 1/0882/1030/9367), first image on the Countertop 360 product page, downloaded November 23, 2026. Image provided by Harvest Right. | Official catalog photo, flattened onto white for the card backdrop (native 4052 px used as the large srcset step, no upscaling). Image provided by Harvest Right.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "hydro-flask-32-wide",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hydro-flask-32-wide-1200.webp",
+        "/directory/photos/hydro-flask-32-wide-480.webp",
+        "/directory/photos/hydro-flask-32-wide-960.webp"
+      ],
+      "source": "Hydro Flask 32 oz Wide Mouth water bottle | Hydro Flask | Official product photo from hydroflask.com (media/catalog/product ... w32cts114_32ozwideflexcap_oat_straighton_1_1.jpg), Open Graph image on the 32 oz Wide Mouth product page, downloaded November 23, 2026. Image provided by Hydro Flask. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Hydro Flask.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "hydro-flask-40-wide",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hydro-flask-40-wide-1200.webp",
+        "/directory/photos/hydro-flask-40-wide-480.webp",
+        "/directory/photos/hydro-flask-40-wide-960.webp"
+      ],
+      "source": "Hydro Flask 40 oz Wide Mouth water bottle | Hydro Flask | Official product photo from hydroflask.com (media/catalog/product ... w40cts001-40-oz-wide-mouth-with-flex-cap-black-straight_1.jpg), Open Graph image on the 40 oz Wide Mouth product page, downloaded November 23, 2026. Image provided by Hydro Flask. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Hydro Flask.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "instant-pot-duo-6qt",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/instant-pot-duo-6qt-480.webp",
+        "/directory/photos/instant-pot-duo-6qt-766.webp"
+      ],
+      "source": "Instant Pot Duo 6QT Multi-Use Pressure Cooker | Instant Pot | Official product photo from instantpot.com (Shopify CDN files/112-0170-01_Duo_6_Qt_Silo_01_ATF.png), first image on the Duo 6QT product page, downloaded November 23, 2026. Image provided by Instant Brands. | Official catalog photo, flattened onto white for the card backdrop (native 766 px used as the large srcset step, no upscaling). Image provided by Instant Pot.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "instant-pot-duo-plus-6qt",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/instant-pot-duo-plus-6qt-1600.webp",
+        "/directory/photos/instant-pot-duo-plus-6qt-1982.webp",
+        "/directory/photos/instant-pot-duo-plus-6qt-480.webp",
+        "/directory/photos/instant-pot-duo-plus-6qt-960.webp"
+      ],
+      "source": "Instant Pot Duo Plus 6QT Multi-Use Pressure Cooker | Instant Pot | Official product photo from instantpot.com (Shopify CDN files/112-0169-01Silo.png), first image on the Duo Plus 6QT product page, downloaded November 23, 2026. Image provided by Instant Brands. | Official catalog photo, flattened onto white for the card backdrop (native 1982 px used as the large srcset step, no upscaling). Image provided by Instant Pot.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "instant-pot-vortex-plus-6qt",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/instant-pot-vortex-plus-6qt-480.webp",
+        "/directory/photos/instant-pot-vortex-plus-6qt-798.webp"
+      ],
+      "source": "Instant Pot Vortex Plus 6QT ClearCook Air Fryer | Instant Pot | Official product photo from instantpot.com (Shopify CDN files/IB_Quiet-Mark_Silos_ATF_Square_140-3088-01_Vortex-Plus-ClearCook_6QT.png), first image on the Vortex Plus 6QT ClearCook product page, downloaded November 23, 2026. Image provided by Instant Brands. | Official catalog photo, flattened onto white for the card backdrop (native 798 px used as the large srcset step, no upscaling). Image provided by Instant Pot.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-df1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-df1-1500.webp",
+        "/directory/photos/ispring-df1-480.webp",
+        "/directory/photos/ispring-df1-960.webp"
+      ],
+      "source": "iSpring DF1 faucet-mount water filter | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/2_2db85b78-fb28-4e4d-ad19-e7198b7a82c3.jpg?v=1785981580`), first image on the DF1 product page, downloaded November 23, 2026 | Official catalog photo, source 1,500×1,500, flattened onto white for the card backdrop. Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-logo",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-logo.webp"
+      ],
+      "source": "iSpring official shop card | iSpring Water Systems | Official header wordmark from ispringfilter.com (Shopify CDN file `5c1c18adb65c7850c0e95c123d529df6.png`), downloaded November 23, 2026 | Transparent official wordmark, also flattened onto white with padding for the shop banner. Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-logo-banner",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-logo-banner.webp"
+      ],
+      "source": "iSpring official shop card | iSpring Water Systems | Official header wordmark from ispringfilter.com (Shopify CDN file `5c1c18adb65c7850c0e95c123d529df6.png`), downloaded November 23, 2026 | Transparent official wordmark, also flattened onto white with padding for the shop banner. Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-rcc7",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-rcc7-1500.webp",
+        "/directory/photos/ispring-rcc7-480.webp",
+        "/directory/photos/ispring-rcc7-960.webp"
+      ],
+      "source": "iSpring RCC7 5-stage under-sink reverse osmosis system | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/1.jpg?v=1780992054`), first image on the RCC7 product page, downloaded November 23, 2026 | Official catalog photo, source 1,500×1,500, flattened onto white for the card backdrop. Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-rcc7ak",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-rcc7ak-1500.webp",
+        "/directory/photos/ispring-rcc7ak-480.webp",
+        "/directory/photos/ispring-rcc7ak-960.webp"
+      ],
+      "source": "iSpring RCC7AK alkaline 6-stage under-sink reverse osmosis system | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/RCC7AK.jpg?v=1784182416`), first image on the RCC7AK product page, downloaded November 23, 2026 | Official catalog photo, source 1,500×1,500, flattened onto white for the card backdrop. Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-rcd100",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-rcd100-1500.webp",
+        "/directory/photos/ispring-rcd100-480.webp",
+        "/directory/photos/ispring-rcd100-960.webp"
+      ],
+      "source": "iSpring RCD100 countertop reverse osmosis dispenser | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/c_92195703-3ded-4d65-8891-007efd4ad061.jpg?v=1784881779`), first image on the RCD100 product page, downloaded November 23, 2026 | Official catalog photo, source 1,500×1,500, flattened onto white for the card backdrop. Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-ro500",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-ro500-1600.webp",
+        "/directory/photos/ispring-ro500-480.webp",
+        "/directory/photos/ispring-ro500-960.webp"
+      ],
+      "source": "iSpring RO500-BN tankless reverse osmosis system | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/RO500-BN.jpg?v=1789725680`), first image on the RO500-BN product page, downloaded November 23, 2026 | Official catalog photo, source 2,000×2,000, flattened onto white for the card backdrop (1,600 px used as the large srcset step, no upscaling). Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-sf2s",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-sf2s-1493.webp",
+        "/directory/photos/ispring-sf2s-480.webp",
+        "/directory/photos/ispring-sf2s-960.webp"
+      ],
+      "source": "iSpring SF2S 33-stage shower filter | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/5_dd777b4e-7a66-457b-9651-d005b4e26907.jpg?v=1785221942`), first image on the SF2S product page, downloaded November 23, 2026 | Official catalog photo, source 1,493×1,500, flattened onto white for the card backdrop (native 1,493 px used as the large srcset step, no upscaling). Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-wgb21b",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-wgb21b-1356.webp",
+        "/directory/photos/ispring-wgb21b-480.webp",
+        "/directory/photos/ispring-wgb21b-960.webp"
+      ],
+      "source": "iSpring WGB21B 2-stage whole-house water filter | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/a_f258934b-3374-47fa-a1e9-396263c611eb.jpg?v=1785467558`), first image on the WGB21B product page, downloaded November 23, 2026 | Official catalog photo, source 1,356×1,391, flattened onto white for the card backdrop (native 1,356 px used as the large srcset step, no upscaling). Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ispring-wgb32b",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ispring-wgb32b-1500.webp",
+        "/directory/photos/ispring-wgb32b-480.webp",
+        "/directory/photos/ispring-wgb32b-960.webp"
+      ],
+      "source": "iSpring WGB32B 3-stage whole-house water filter | iSpring Water Systems | Official product photo from ispringfilter.com (Shopify CDN `files/e_a2d5453f-4068-4886-afbc-f3e9130e2d2e.jpg?v=1785741403`), first image on the WGB32B product page, downloaded November 23, 2026 | Official catalog photo, source 1,500×1,500, flattened onto white for the card backdrop. Image provided by iSpring Water Systems.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "jackery-explorer-2000-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jackery-explorer-2000-v2-1600.webp",
+        "/directory/photos/jackery-explorer-2000-v2-480.webp",
+        "/directory/photos/jackery-explorer-2000-v2-960.webp"
+      ],
+      "source": "Jackery Explorer 2000 v2 portable power station | Jackery | Official product photo from jackery.com (Shopify CDN files/explorer-2000-v2-portable-power-station-8979684.webp), first image on the Explorer 2000 v2 product page, downloaded November 23, 2026. Image provided by Jackery. | Official catalog photo, flattened onto white for the card backdrop (native 1600 px used as the large srcset step, no upscaling). Image provided by Jackery.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-1000w-12v-inverter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-1000w-12v-inverter-1000.webp",
+        "/directory/photos/litime-1000w-12v-inverter-480.webp",
+        "/directory/photos/litime-1000w-12v-inverter-960.webp"
+      ],
+      "source": "LiTime 1000W 12V pure sine wave inverter | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-12v-100ah-group24",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-12v-100ah-group24-1000.webp",
+        "/directory/photos/litime-12v-100ah-group24-480.webp",
+        "/directory/photos/litime-12v-100ah-group24-960.webp"
+      ],
+      "source": "LiTime LiHeat 12V 100Ah Group 24 battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000. Image provided by LiTime via Awin.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-12v-100ah-trolling",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-12v-100ah-trolling-1000.webp",
+        "/directory/photos/litime-12v-100ah-trolling-480.webp",
+        "/directory/photos/litime-12v-100ah-trolling-960.webp"
+      ],
+      "source": "LiTime 12V 100Ah TM trolling-motor battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-12v-10a-charger",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-12v-10a-charger-1600.webp",
+        "/directory/photos/litime-12v-10a-charger-480.webp",
+        "/directory/photos/litime-12v-10a-charger-960.webp"
+      ],
+      "source": "LiTime 12V 10A LiFePO4 battery charger | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,600×1,600.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-12v-200ah-bluetooth",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-12v-200ah-bluetooth-1000.webp",
+        "/directory/photos/litime-12v-200ah-bluetooth-480.webp",
+        "/directory/photos/litime-12v-200ah-bluetooth-960.webp"
+      ],
+      "source": "LiTime 12V 200Ah Bluetooth lithium battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-12v-40a-dc-dc",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-12v-40a-dc-dc-1000.webp",
+        "/directory/photos/litime-12v-40a-dc-dc-480.webp",
+        "/directory/photos/litime-12v-40a-dc-dc-960.webp"
+      ],
+      "source": "LiTime 12V 40A DC-to-DC battery charger | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-12v-50ah",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-12v-50ah-1600.webp",
+        "/directory/photos/litime-12v-50ah-480.webp",
+        "/directory/photos/litime-12v-50ah-960.webp"
+      ],
+      "source": "LiTime 12V 50Ah lithium battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,600×1,600.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-2000w-12v-inverter-ats",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-2000w-12v-inverter-ats-1000.webp",
+        "/directory/photos/litime-2000w-12v-inverter-ats-480.webp",
+        "/directory/photos/litime-2000w-12v-inverter-ats-960.webp"
+      ],
+      "source": "LiTime 2000W 12V pure sine inverter with ATS | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-24v-230ah",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-24v-230ah-1000.webp",
+        "/directory/photos/litime-24v-230ah-480.webp",
+        "/directory/photos/litime-24v-230ah-960.webp"
+      ],
+      "source": "LiTime LiHeat 24V 230Ah battery | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-30a-mppt",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-30a-mppt-1000.webp",
+        "/directory/photos/litime-30a-mppt-480.webp",
+        "/directory/photos/litime-30a-mppt-960.webp"
+      ],
+      "source": "LiTime 30A MPPT solar charge controller | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "litime-diy-solar-generator-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/litime-diy-solar-generator-kit-1000.webp",
+        "/directory/photos/litime-diy-solar-generator-kit-480.webp",
+        "/directory/photos/litime-diy-solar-generator-kit-960.webp"
+      ],
+      "source": "LiTime DIY solar generator complete power kit | LiTime | Awin product feed, advertiser 71451 (feed F1388) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "mario-kart-world",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mario-kart-world-1600.webp",
+        "/directory/photos/mario-kart-world-1920.webp",
+        "/directory/photos/mario-kart-world-480.webp",
+        "/directory/photos/mario-kart-world-960.webp"
+      ],
+      "source": "Mario Kart World | Nintendo | Official product image from nintendo.com (assets.nintendo.com store/software/switch2/70010000095431/...), used on the official Mario Kart World store page, downloaded November 23, 2026. Image provided by Nintendo. | Official catalog photo, flattened onto white for the card backdrop (native 1920 px used as the large srcset step, no upscaling). Image provided by Nintendo.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "milwaukee-2719-20",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/milwaukee-2719-20-1600.webp",
+        "/directory/photos/milwaukee-2719-20-4000.webp",
+        "/directory/photos/milwaukee-2719-20-480.webp",
+        "/directory/photos/milwaukee-2719-20-960.webp"
+      ],
+      "source": "Milwaukee M18 FUEL Hackzall (2719-20) | Milwaukee Tool | Official product photo from milwaukeetool.com (web-images/sc/1445526b274c4070bc5a18f734330b97), Open Graph image on the 2719-20 product page, downloaded November 23, 2026. Image provided by Milwaukee Tool. | Official catalog photo, flattened onto white for the card backdrop (native 4000 px used as the large srcset step, no upscaling). Image provided by Milwaukee Tool.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "milwaukee-2853-20",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/milwaukee-2853-20-1600.webp",
+        "/directory/photos/milwaukee-2853-20-2000.webp",
+        "/directory/photos/milwaukee-2853-20-480.webp",
+        "/directory/photos/milwaukee-2853-20-960.webp"
+      ],
+      "source": "Milwaukee M18 FUEL 1/4-inch Hex Impact Driver (2853-20) | Milwaukee Tool | Official product photo from milwaukeetool.com (web-images/sc/197405b4ab01432cae35b1702454501d), Open Graph image on the 2853-20 product page, downloaded November 23, 2026. Image provided by Milwaukee Tool. | Official catalog photo, flattened onto white for the card backdrop (native 2000 px used as the large srcset step, no upscaling). Image provided by Milwaukee Tool.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "milwaukee-2904-20",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/milwaukee-2904-20-1600.webp",
+        "/directory/photos/milwaukee-2904-20-4000.webp",
+        "/directory/photos/milwaukee-2904-20-480.webp",
+        "/directory/photos/milwaukee-2904-20-960.webp"
+      ],
+      "source": "Milwaukee M18 FUEL 1/2-inch Hammer Drill/Driver (2904-20) | Milwaukee Tool | Official product photo from milwaukeetool.com (web-images/sc/92189d4f48274ce79371584b87e05759), Open Graph image on the 2904-20 product page, downloaded November 23, 2026. Image provided by Milwaukee Tool. | Official catalog photo, flattened onto white for the card backdrop (native 4000 px used as the large srcset step, no upscaling). Image provided by Milwaukee Tool.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "milwaukee-2960-20",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/milwaukee-2960-20-1600.webp",
+        "/directory/photos/milwaukee-2960-20-2000.webp",
+        "/directory/photos/milwaukee-2960-20-480.webp",
+        "/directory/photos/milwaukee-2960-20-960.webp"
+      ],
+      "source": "Milwaukee M18 FUEL 3/8-inch Mid-Torque Impact Wrench (2960-20) | Milwaukee Tool | Official product photo from milwaukeetool.com (web-images/sc/72db1d4f9c4b424f8f068c7cf0752665), Open Graph image on the 2960-20 product page, downloaded November 23, 2026. Image provided by Milwaukee Tool. | Official catalog photo, flattened onto white for the card backdrop (native 2000 px used as the large srcset step, no upscaling). Image provided by Milwaukee Tool.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "mountain-house-best-sellers-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mountain-house-best-sellers-kit-1600.webp",
+        "/directory/photos/mountain-house-best-sellers-kit-2048.webp",
+        "/directory/photos/mountain-house-best-sellers-kit-480.webp",
+        "/directory/photos/mountain-house-best-sellers-kit-960.webp"
+      ],
+      "source": "Mountain House Best Sellers Kit | Mountain House | Official product photo from mountainhouse.com (Shopify CDN files/best-sellers-kit-main_df0eca95-5c25-471d-bdc6-b473bd2b712a.jpg), first image on the Best Sellers Kit product page, downloaded November 23, 2026. Image provided by Mountain House. | Official catalog photo, flattened onto white for the card backdrop (native 2048 px used as the large srcset step, no upscaling). Image provided by Mountain House.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "nintendo-switch-2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nintendo-switch-2-480.webp",
+        "/directory/photos/nintendo-switch-2-616.webp"
+      ],
+      "source": "Nintendo Switch 2 | Nintendo | Official product image from nintendo.com (assets.nintendo.com ... /Global Nav/Explore/Nintendo-Switch-2.png), used on Nintendo’s official US site, downloaded November 23, 2026. Image provided by Nintendo. | Official catalog photo, flattened onto white for the card backdrop (native 616 px used as the large srcset step, no upscaling). Image provided by Nintendo.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "noco-air20",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/noco-air20-1200.webp",
+        "/directory/photos/noco-air20-480.webp",
+        "/directory/photos/noco-air20-960.webp"
+      ],
+      "source": "NOCO AIR20 portable air compressor | NOCO | Official product photo from no.co (media/catalog/product/a/i/air20.png), product image on the AIR20 page, downloaded November 23, 2026. Image provided by NOCO. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by NOCO.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "noco-boost-air",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/noco-boost-air-1200.webp",
+        "/directory/photos/noco-boost-air-480.webp",
+        "/directory/photos/noco-boost-air-960.webp"
+      ],
+      "source": "NOCO Boost Air jump starter and air compressor | NOCO | Official product photo from no.co (media/catalog/product/a/x/ax65-front_1.png), product image on the Boost Air page, downloaded November 23, 2026. Image provided by NOCO. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by NOCO.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "noco-gb70",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/noco-gb70-1600.webp",
+        "/directory/photos/noco-gb70-480.webp",
+        "/directory/photos/noco-gb70-5000.webp",
+        "/directory/photos/noco-gb70-960.webp"
+      ],
+      "source": "NOCO Boost HD GB70 2000A jump starter | NOCO | Official product photo from no.co (media/catalog/product/g/b/gb70.png), product image on the GB70 page, downloaded November 23, 2026. Image provided by NOCO. | Official catalog photo, flattened onto white for the card backdrop (native 5000 px used as the large srcset step, no upscaling). Image provided by NOCO.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "nordpass-logo",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nordpass-logo-512.webp"
+      ],
+      "source": "NordPass merchant card | NordPass | CJ Affiliate (link 15111945, “Logo 512x512”) | Image provided by NordPass via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "nordvpn-faster-300x250",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nordvpn-faster-300x250.webp"
+      ],
+      "source": "NordVPN merchant card | NordVPN | CJ Affiliate (link 15640650, “faster-than-ever-300x250”) | Image provided by NordVPN via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "owala-freesip-24",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/owala-freesip-24-1080.webp",
+        "/directory/photos/owala-freesip-24-480.webp",
+        "/directory/photos/owala-freesip-24-960.webp"
+      ],
+      "source": "Owala FreeSip 24 oz water bottle | Owala | Official product photo from owalalife.com (Shopify CDN products/2023_24oz_Water_In_The_Desert_SC-1080x1080-f521e30.png), first image on the FreeSip product page, downloaded November 23, 2026. Image provided by Owala. | Official catalog photo, flattened onto white for the card backdrop (native 1080 px used as the large srcset step, no upscaling). Image provided by Owala.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "peak-refuel-biscuits-sausage-gravy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/peak-refuel-biscuits-sausage-gravy-1000.webp",
+        "/directory/photos/peak-refuel-biscuits-sausage-gravy-480.webp",
+        "/directory/photos/peak-refuel-biscuits-sausage-gravy-960.webp"
+      ],
+      "source": "Peak Refuel Biscuits & Sausage Gravy | Peak Refuel | Official product photo from peakrefuel.com (Shopify CDN files/Biscuits_Sausage_Gravy-Front.png), first image on the Biscuits & Sausage Gravy product page, downloaded November 23, 2026. Image provided by Peak Refuel. | Official catalog photo, flattened onto white for the card backdrop (native 1000 px used as the large srcset step, no upscaling). Image provided by Peak Refuel.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "peak-refuel-entree-essentials-bucket-2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/peak-refuel-entree-essentials-bucket-2-1600.webp",
+        "/directory/photos/peak-refuel-entree-essentials-bucket-2-1950.webp",
+        "/directory/photos/peak-refuel-entree-essentials-bucket-2-480.webp",
+        "/directory/photos/peak-refuel-entree-essentials-bucket-2-960.webp"
+      ],
+      "source": "Peak Refuel Entree Essentials Bucket 2.0 | Peak Refuel | Official product photo from peakrefuel.com (Shopify CDN files/2_8f07f7c9-7b4b-4c46-8fc3-6b23baead93a.png), first image on the Entree Essentials Bucket 2.0 product page, downloaded November 23, 2026. Image provided by Peak Refuel. | Official catalog photo, flattened onto white for the card backdrop (native 1950 px used as the large srcset step, no upscaling). Image provided by Peak Refuel.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "peak-refuel-homestyle-chicken-rice",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/peak-refuel-homestyle-chicken-rice-1000.webp",
+        "/directory/photos/peak-refuel-homestyle-chicken-rice-480.webp",
+        "/directory/photos/peak-refuel-homestyle-chicken-rice-960.webp"
+      ],
+      "source": "Peak Refuel Homestyle Chicken & Rice | Peak Refuel | Official product photo from peakrefuel.com (Shopify CDN files/Homestyle_Chicken_Ricel-Front.png), first image on the Homestyle Chicken & Rice product page, downloaded November 23, 2026. Image provided by Peak Refuel. | Official catalog photo, flattened onto white for the card backdrop (native 1000 px used as the large srcset step, no upscaling). Image provided by Peak Refuel.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "redi-roadie-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/redi-roadie-plus-1200.webp",
+        "/directory/photos/redi-roadie-plus-480.webp",
+        "/directory/photos/redi-roadie-plus-960.webp"
+      ],
+      "source": "REDI The Roadie PLUS car emergency kit | REDI | Official product photo from getredi.com (Shopify CDN files/the-roadie-plus-car-emergency-kit-trauma-pack-primary.jpg), first image on The Roadie PLUS product page, downloaded November 23, 2026. Image provided by REDI. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by REDI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "redi-roadie-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/redi-roadie-pro-1600.webp",
+        "/directory/photos/redi-roadie-pro-3000.webp",
+        "/directory/photos/redi-roadie-pro-480.webp",
+        "/directory/photos/redi-roadie-pro-960.webp"
+      ],
+      "source": "REDI The Roadie PRO roadside emergency kit | REDI | Official product photo from getredi.com (Shopify CDN files/the-roadie-pro-roadside-emergency-kit-hard-case.png), first image on The Roadie PRO product page, downloaded November 23, 2026. Image provided by REDI. | Official catalog photo, flattened onto white for the card backdrop (native 3000 px used as the large srcset step, no upscaling). Image provided by REDI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "redi-the-roadie",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/redi-the-roadie-1600.webp",
+        "/directory/photos/redi-the-roadie-3000.webp",
+        "/directory/photos/redi-the-roadie-480.webp",
+        "/directory/photos/redi-the-roadie-960.webp"
+      ],
+      "source": "REDI The Roadie car emergency kit | REDI | Official product photo from getredi.com (Shopify CDN files/the-roadie-car-emergency-kit-readiness-kit.png), first image on The Roadie product page, downloaded November 23, 2026. Image provided by REDI. | Official catalog photo, flattened onto white for the card backdrop (native 3000 px used as the large srcset step, no upscaling). Image provided by REDI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "redi-trauma-pack",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/redi-trauma-pack-1500.webp",
+        "/directory/photos/redi-trauma-pack-480.webp",
+        "/directory/photos/redi-trauma-pack-960.webp"
+      ],
+      "source": "REDI The Trauma Pack | REDI | Official product photo from getredi.com (Shopify CDN files/Redi-Trauma-Main.jpg), first image on The Trauma Pack product page, downloaded November 23, 2026. Image provided by REDI. | Official catalog photo, flattened onto white for the card backdrop (native 1500 px used as the large srcset step, no upscaling). Image provided by REDI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "reolink-trackmix-wifi",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/reolink-trackmix-wifi-1340.webp",
+        "/directory/photos/reolink-trackmix-wifi-480.webp",
+        "/directory/photos/reolink-trackmix-wifi-960.webp"
+      ],
+      "source": "Reolink TrackMix WiFi | Reolink | Official product photo from reolink.com (home-cdn.reolink.us wp-content/uploads/2024/12/090149081733708948.8663.jpg), image from the official TrackMix WiFi product page, downloaded November 23, 2026. Image provided by Reolink. | Official catalog photo, flattened onto white for the card backdrop (native 1340 px used as the large srcset step, no upscaling). Image provided by Reolink.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ring-battery-doorbell-4k-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ring-battery-doorbell-4k-pro-1500.webp",
+        "/directory/photos/ring-battery-doorbell-4k-pro-480.webp",
+        "/directory/photos/ring-battery-doorbell-4k-pro-960.webp"
+      ],
+      "source": "Ring Battery Doorbell 4K Pro | Ring | Official product photo from ring.com (Contentful CDN ring_battery_doorbell_pro_gen2_product_dark_silver_1500x1500.jpg), Open Graph image on the Battery Doorbell 4K Pro page, downloaded November 23, 2026. Image provided by Ring. | Official catalog photo, flattened onto white for the card backdrop (native 1500 px used as the large srcset step, no upscaling). Image provided by Ring.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "rivian-r1s",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rivian-r1s-1600.webp",
+        "/directory/photos/rivian-r1s-3000.webp",
+        "/directory/photos/rivian-r1s-480.webp",
+        "/directory/photos/rivian-r1s-960.webp"
+      ],
+      "source": "Rivian R1S | Rivian | Official photograph from rivian.com (Contentful CDN 250908_ADEWALE-AGBOOLA-CAMERACAR-SEATTLE-528_jjedit-Final_Cropped.jpg), Open Graph image on the R1S page, downloaded November 23, 2026. Image provided by Rivian. | Official catalog photo, flattened onto white for the card backdrop (native 3000 px used as the large srcset step, no upscaling). Image provided by Rivian.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "rivian-r1t",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rivian-r1t-1600.webp",
+        "/directory/photos/rivian-r1t-3000.webp",
+        "/directory/photos/rivian-r1t-480.webp",
+        "/directory/photos/rivian-r1t-960.webp"
+      ],
+      "source": "Rivian R1T | Rivian | Official photograph from rivian.com (Contentful CDN 20250513-Trevor-Gavin-AlabamaHills-A0000138-Final_Cropped.jpg), Open Graph image on the R1T page, downloaded November 23, 2026. Image provided by Rivian. | Official catalog photo, flattened onto white for the card backdrop (native 3000 px used as the large srcset step, no upscaling). Image provided by Rivian.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "skydio-x10",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/skydio-x10-1600.webp",
+        "/directory/photos/skydio-x10-480.webp",
+        "/directory/photos/skydio-x10-960.webp"
+      ],
+      "source": "Skydio X10 | Skydio | Official product photo from skydio.com (cdn.sanity.io ... 6a6fef86c5dad572083363430f9a27971cc62a1a-2400x1300.png), Open Graph image on the Skydio X10 page, downloaded November 23, 2026. Image provided by Skydio. | Official catalog photo, flattened onto white for the card backdrop (native 1600 px used as the large srcset step, no upscaling). Image provided by Skydio.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "sony-wh-1000xm6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sony-wh-1000xm6-1200.webp",
+        "/directory/photos/sony-wh-1000xm6-480.webp",
+        "/directory/photos/sony-wh-1000xm6-960.webp"
+      ],
+      "source": "Sony WH-1000XM6 wireless headphones | Sony | Official product photo from electronics.sony.com (d1ncau8tqf99kp.cloudfront.net converted/152005_original_local_1200x1050_v3_converted.webp), page image on the WH-1000XM6 Black product page, downloaded November 23, 2026. Image provided by Sony. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Sony.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "surfshark-privacy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/surfshark-privacy.webp"
+      ],
+      "source": "Surfshark merchant card | Surfshark | CJ Affiliate (link 15554631) | Image provided by Surfshark via CJ Affiliate.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "tidewe-aquawade-pro-waders",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tidewe-aquawade-pro-waders-480.webp",
+        "/directory/photos/tidewe-aquawade-pro-waders-800.webp"
+      ],
+      "source": "TideWe AquaWade Pro insulated waders | TideWe | Official product photo from tidewe.com (Shopify CDN `files/WD012-N-07.png?v=1753847077`), first image on the AquaWade Pro product page, downloaded November 24, 2026 | Official catalog photo, source 800×800, flattened onto a light card backdrop. Image provided by TideWe.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "tidewe-inferno-heated-jacket",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tidewe-inferno-heated-jacket-480.webp",
+        "/directory/photos/tidewe-inferno-heated-jacket-800.webp"
+      ],
+      "source": "TideWe Inferno heated camo jacket | TideWe | Official product photo from tidewe.com (Shopify CDN `files/9_HJ008-NGS-TE.png?v=1754010913`), a jacket-only catalog photo on the Inferno product page, downloaded November 24, 2026 | Official catalog photo, source 800×800, flattened onto a light card backdrop. Image provided by TideWe.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "tidewe-silentrace-heated-jacket",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tidewe-silentrace-heated-jacket-480.webp",
+        "/directory/photos/tidewe-silentrace-heated-jacket-800.webp"
+      ],
+      "source": "TideWe SilenTrace heated hunting jacket (2-piece set) | TideWe | Official product photo from tidewe.com (Shopify CDN `files/1_HJ010-NGM-V2-TE.png?v=1757065309`), first image on the SilenTrace product page, downloaded November 24, 2026 | Official catalog photo, source 800×800, flattened onto a light card backdrop. Image provided by TideWe.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "tidewe-thermcore-heated-vest",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tidewe-thermcore-heated-vest-1600.webp",
+        "/directory/photos/tidewe-thermcore-heated-vest-480.webp",
+        "/directory/photos/tidewe-thermcore-heated-vest-960.webp"
+      ],
+      "source": "TideWe ThermCore heated hunting vest | TideWe | Official product photo from tidewe.com (Shopify CDN `files/2_5ff2dd2b-18f0-4e0e-8134-40fb23bfd135.png?v=1789624902`), first image on the ThermCore product page, downloaded November 24, 2026 | Official catalog photo, source 1,600×1,600, flattened onto a light card backdrop. Image provided by TideWe.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "tidewe-thermshift-heated-vest",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tidewe-thermshift-heated-vest-1200.webp",
+        "/directory/photos/tidewe-thermshift-heated-vest-480.webp",
+        "/directory/photos/tidewe-thermshift-heated-vest-960.webp"
+      ],
+      "source": "TideWe ThermShift heated vest | TideWe | Official product photo from tidewe.com (Shopify CDN `files/653fa1ae66350f17911133f298d04761.png?v=1790070720`), first image on the ThermShift product page, downloaded November 24, 2026 | Official catalog photo, source 1,200×1,200, flattened onto a light card backdrop. Image provided by TideWe.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "tidewe-torridseeker-heated-waders",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tidewe-torridseeker-heated-waders-1600.webp",
+        "/directory/photos/tidewe-torridseeker-heated-waders-480.webp",
+        "/directory/photos/tidewe-torridseeker-heated-waders-960.webp"
+      ],
+      "source": "TideWe TorridSeeker heated waders | TideWe | Official product photo from tidewe.com (Shopify CDN `files/WD015-NIybpgnNBkDNBkCwV_A6KZ6fQs8Iph4UQIdBAA_1600_1600.png?v=1758074793`), first image on the TorridSeeker product page, downloaded November 24, 2026 | Official catalog photo, source 1,600×1,600, flattened onto a light card backdrop. Image provided by TideWe.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "toyota-rav4-2027",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/toyota-rav4-2027-1600.webp",
+        "/directory/photos/toyota-rav4-2027-2048.webp",
+        "/directory/photos/toyota-rav4-2027-480.webp",
+        "/directory/photos/toyota-rav4-2027-960.webp"
+      ],
+      "source": "2027 Toyota RAV4 | Toyota | Official product photo from toyota.com (delivery.tcom.assetscs.toyota.com ... MY27_RAV4-Hybrid_US_Limited-AWD_4534_01L6_03_6K.png), Open Graph image on the 2027 RAV4 page, downloaded November 23, 2026. Image provided by Toyota. | Official catalog photo, flattened onto white for the card backdrop (native 2048 px used as the large srcset step, no upscaling). Image provided by Toyota.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "toyota-tundra-2027",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/toyota-tundra-2027-1600.webp",
+        "/directory/photos/toyota-tundra-2027-2048.webp",
+        "/directory/photos/toyota-tundra-2027-480.webp",
+        "/directory/photos/toyota-tundra-2027-960.webp"
+      ],
+      "source": "2027 Toyota Tundra | Toyota | Official product photo from toyota.com (delivery.tcom.assetscs.toyota.com ... MY27_Tundra_US_SR5-Gas-4WD-CM-5ft_TH_8361_01G3_03_6K.png), Open Graph image on the 2027 Tundra page, downloaded November 23, 2026. Image provided by Toyota. | Official catalog photo, flattened onto white for the card backdrop (native 2048 px used as the large srcset step, no upscaling). Image provided by Toyota.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "waterdrop-as13",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-as13.webp"
+      ],
+      "source": "Waterdrop AS13 stainless steel direct connect under-sink filter product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-elfin-pitcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-elfin-pitcher.webp"
+      ],
+      "source": "Waterdrop Elfin pitcher water filter PT-05 product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-g3p600",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-g3p600.webp"
+      ],
+      "source": "Waterdrop Filter merchant card | Waterdrop Filter | Rakuten Advertising | No brand banner was in the media library; this is the official G3P600 product photo, used only as the shop-card visual. The card remains a merchant-level shop link, not a G3P600 product listing. Image provided by Waterdrop Filter via Rakuten Advertising.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-g3p600-replacement-filters",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-g3p600-replacement-filters.webp"
+      ],
+      "source": "Waterdrop G3P600 RO system replacement filters product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-g3p800-black",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-g3p800-black.webp"
+      ],
+      "source": "Waterdrop G3P800 undersink tankless reverse osmosis system, black faucet product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-g3p800-replacement-filters",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-g3p800-replacement-filters.webp"
+      ],
+      "source": "Waterdrop G3P800 RO system replacement filters product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-g5p800a",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-g5p800a.webp"
+      ],
+      "source": "Waterdrop G5P800A alkaline reverse osmosis system product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-n1-replacement-filters",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-n1-replacement-filters.webp"
+      ],
+      "source": "Waterdrop N1 countertop RO replacement filters product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-tsb-alk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-tsb-alk.webp"
+      ],
+      "source": "Waterdrop TSB-ALK 3-stage under-sink water filter product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-undersink-direct-connect",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-undersink-direct-connect.webp"
+      ],
+      "source": "Waterdrop under-sink direct connect filtration system product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "waterdrop-whf21-pg",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterdrop-whf21-pg.webp"
+      ],
+      "source": "Waterdrop WHF21-PG 5 micron 2-stage whole-house water filter product card | Waterdrop Filter | Rakuten Advertising product catalog (MID 53950) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Waterdrop Filter via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link. Paid-session guard still applies.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "wingspan-board-game",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wingspan-board-game-1345.webp",
+        "/directory/photos/wingspan-board-game-480.webp",
+        "/directory/photos/wingspan-board-game-960.webp"
+      ],
+      "source": "Wingspan board game | Stonemaier Games | Official box art from stonemaiergames.com (wp-content/uploads/2026/04/3d-wingspan.webp), Open Graph image on the Wingspan page, downloaded November 23, 2026. Image provided by Stonemaier Games. | Official catalog photo, flattened onto white for the card backdrop (native 1345 px used as the large srcset step, no upscaling). Image provided by Stonemaier Games.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-a1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-a1-1600.webp",
+        "/directory/photos/wuben-a1-480.webp",
+        "/directory/photos/wuben-a1-960.webp"
+      ],
+      "source": "Wuben A1 20,000-lumen portable spotlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 2,000×2,000. Image provided by Wubenlight via Awin.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-a22",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-a22-1000.webp",
+        "/directory/photos/wuben-a22-480.webp",
+        "/directory/photos/wuben-a22-960.webp"
+      ],
+      "source": "Wuben A22 4,500-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-c2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-c2-1600.webp",
+        "/directory/photos/wuben-c2-480.webp",
+        "/directory/photos/wuben-c2-960.webp"
+      ],
+      "source": "Wuben C2 2,000-lumen EDC flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-c3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-c3-1600.webp",
+        "/directory/photos/wuben-c3-2000.webp",
+        "/directory/photos/wuben-c3-480.webp",
+        "/directory/photos/wuben-c3-960.webp"
+      ],
+      "source": "Wuben C3 1,200-lumen compact EDC flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-e12r",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-e12r-480.webp",
+        "/directory/photos/wuben-e12r-900.webp"
+      ],
+      "source": "Wuben E12R 1,200-lumen power-bank flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 900×900 (no 960 px derivative; native 900 px is used instead).",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-e7",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-e7-1000.webp",
+        "/directory/photos/wuben-e7-480.webp",
+        "/directory/photos/wuben-e7-960.webp"
+      ],
+      "source": "Wuben E7 1,800-lumen headlamp | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 1,000×1,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-f5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-f5-1600.webp",
+        "/directory/photos/wuben-f5-2000.webp",
+        "/directory/photos/wuben-f5-480.webp",
+        "/directory/photos/wuben-f5-960.webp"
+      ],
+      "source": "Wuben F5 rechargeable camping and tent light | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (gray), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-g5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-g5-1600.webp",
+        "/directory/photos/wuben-g5-2000.webp",
+        "/directory/photos/wuben-g5-480.webp",
+        "/directory/photos/wuben-g5-960.webp"
+      ],
+      "source": "Wuben G5 400-lumen keychain flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-h1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-h1-480.webp",
+        "/directory/photos/wuben-h1-900.webp"
+      ],
+      "source": "Wuben H1 1,200-lumen headlamp | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo, source 900×900 (no 960 px derivative; native 900 px is used instead).",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-h4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-h4-1600.webp",
+        "/directory/photos/wuben-h4-2000.webp",
+        "/directory/photos/wuben-h4-480.webp",
+        "/directory/photos/wuben-h4-960.webp"
+      ],
+      "source": "Wuben H4 rechargeable headlamp | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-lightok-x0",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-lightok-x0-480.webp",
+        "/directory/photos/wuben-lightok-x0-900.webp"
+      ],
+      "source": "Wuben Lightok X0 1,100-lumen pocket flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 900×900 (no 960 px derivative; native 900 px is used instead).",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-lightok-x1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-lightok-x1-1600.webp",
+        "/directory/photos/wuben-lightok-x1-480.webp",
+        "/directory/photos/wuben-lightok-x1-960.webp"
+      ],
+      "source": "Wuben Lightok X1 12,000-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-lightok-x2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-lightok-x2-1600.webp",
+        "/directory/photos/wuben-lightok-x2-480.webp",
+        "/directory/photos/wuben-lightok-x2-960.webp"
+      ],
+      "source": "Wuben Lightok X2 2,500-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (white), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-x1-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-x1-pro-1600.webp",
+        "/directory/photos/wuben-x1-pro-2000.webp",
+        "/directory/photos/wuben-x1-pro-480.webp",
+        "/directory/photos/wuben-x1-pro-960.webp"
+      ],
+      "source": "Wuben X1 Pro 12,300-lumen flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (white), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "wuben-x2-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/wuben-x2-pro-1600.webp",
+        "/directory/photos/wuben-x2-pro-2000.webp",
+        "/directory/photos/wuben-x2-pro-480.webp",
+        "/directory/photos/wuben-x2-pro-960.webp"
+      ],
+      "source": "Wuben X2 Pro+ 1,500-lumen magnetic EDC flashlight | Wubenlight | Awin product feed, advertiser 92053 (feed F3678) | Official feed photo (black), source 2,000×2,000.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "yeti-rambler-16-travel",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/yeti-rambler-16-travel-1200.webp",
+        "/directory/photos/yeti-rambler-16-travel-480.webp",
+        "/directory/photos/yeti-rambler-16-travel-960.webp"
+      ],
+      "source": "YETI Rambler 16 oz Travel Bottle | YETI | Official product photo from yeti.com (yeti-webmedia.imgix.net ... YETI_Rambler_Travel_Bottle_16oz_Riverhead_Green_Front_140_B.png), page image on the Rambler 16 oz Travel Bottle product page, downloaded November 23, 2026. Image provided by YETI. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by YETI.",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    }
+  ]
+}

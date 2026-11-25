@@ -71,7 +71,7 @@ const schema = [
       </div>
     </section>
   )}
-  <section class="wrap section">
+  <section class="wrap section band-stone">
     <SectionHead id="picks" kicker="Gear picks" title={`${items.length} ${lane.name.toLowerCase()} picks`} intro="Ranked by timeliness, not payment. Details pages explain uses and safety notes; price links go to the retailer or maker." />
     <Disclosure />
     {items.length ? <div class="grid">{items.map((item) => <ItemCard item={item} showRank />)}</div> : <p>New picks coming soon.</p>}

@@ -1,0 +1,72 @@
+/*
+ * ReadyGearHub design tokens. The ONE place for color, depth, radius, spacing and type.
+ * Every stylesheet (global.css, refresh.css, interactive.css, component styles) reads these vars.
+ * 2026-11 visual refresh: richer storm-navy + warm stone palette with amber / safety-orange accents.
+ * Contrast notes (WCAG AA): --ink, --muted and --link pass 4.5:1 on --bg, --paper and --card;
+ * white passes on --accent, --navy and every --storm-* step; --on-dark and --on-dark-muted pass on --storm-800.
+ */
+:root{
+  /* Text. Base values (--c-*) never change; --ink/--muted/--link are re-pointed inside dark bands
+     and restored inside light "islands" such as cards (see refresh.css). */
+  --c-ink:#13212c;
+  --c-muted:#4b5b68;
+  --c-link:#0a5f91;
+  --c-link-hover:#074a72;
+  --ink:var(--c-ink);
+  --muted:var(--c-muted);
+  --link:var(--c-link);
+  --link-hover:var(--c-link-hover);
+
+  /* Light surfaces: warm stone, never plain white-on-white */
+  --bg:#e7dfcf;          /* page background */
+  --bg-2:#dcd2bf;        /* deeper stone for alternating light bands */
+  --paper:#f3ede2;       /* soft raised panels */
+  --card:#ffffff;        /* cards stay crisp white so they pop off the stone */
+  --line:#d6cbb7;
+  --line-2:#c2b59d;
+
+  /* Storm palette (dark bands, heroes, footer) */
+  --navy:#0f2a3d;
+  --navy-2:#163a54;
+  --storm-950:#071520;
+  --storm-900:#0a1b28;
+  --storm-800:#0e2333;
+  --storm-700:#153246;
+  --storm-600:#1f455f;
+  --on-dark:#e6eff5;
+  --on-dark-muted:#b9cbd8;
+  --link-on-dark:#a6dcf8;
+  --sky:#7cc8f2;
+  --ice:#d9eaf5;
+  --ice-2:#bfd9ea;
+
+  /* Warm accents */
+  --accent:#c2410c;      /* safety orange: CTA buttons (white text 5.2:1) */
+  --accent-d:#9a3412;
+  --accent-soft:#fde4d0;
+  --amber:#f59e0b;       /* decorative only (bars, glows, borders), never body text on light */
+  --amber-soft:#fde9b8;
+  --amber-on-dark:#fbbf5a; /* amber text on storm backgrounds */
+  --green:#2f6b4f;
+  --green-soft:#dcebe1;
+
+  /* Depth */
+  --radius:18px;
+  --radius-sm:12px;
+  --shadow:0 1px 2px rgba(10,26,38,.08),0 6px 18px rgba(10,26,38,.10);
+  --shadow-lg:0 6px 14px rgba(10,26,38,.12),0 24px 48px rgba(10,26,38,.22);
+  --shadow-on-dark:0 2px 6px rgba(0,0,0,.28),0 16px 36px rgba(0,0,0,.38);
+
+  /* Backgrounds */
+  --grad-storm:linear-gradient(160deg,#12304a 0%,#0e2333 48%,#0a1b28 100%);
+  --glow-amber:radial-gradient(60% 70% at 0% 100%,rgba(245,158,11,.18),transparent 70%);
+  --glow-sky:radial-gradient(55% 65% at 100% 0%,rgba(124,200,242,.16),transparent 70%);
+  --texture-lines:repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 2px,transparent 2px 16px);
+  --texture-dots:radial-gradient(rgba(19,33,44,.07) 1px,transparent 1.3px);
+  --bar-warm:linear-gradient(90deg,var(--amber) 0%,var(--accent) 45%,var(--sky) 100%);
+
+  /* Spacing and type */
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:72px;
+  --fs-sm:.875rem;--fs-base:1.0625rem;--fs-lg:1.2rem;--fs-h3:1.15rem;--fs-h2:clamp(1.55rem,3.4vw,2.15rem);--fs-h1:clamp(2.1rem,5.8vw,3.4rem);
+  --header-h:98px;
+}

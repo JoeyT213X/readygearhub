@@ -7,6 +7,7 @@ import HeroSpread from '../components/HeroSpread.astro';
 import ShopBoard from '../components/ShopBoard.astro';
 import LiveStatus from '../components/LiveStatus.astro';
 import SourceCard from '../components/SourceCard.astro';
+import GuideCard from '../components/GuideCard.astro';
 import DirectoryGroupTile from '../components/DirectoryGroupTile.astro';
 import { getGuides, getItems, site } from '../lib/data';
 import { sourceGroups } from '../data/source-directory';
@@ -62,24 +63,34 @@ const navList = {
     </nav>
   </div>
 
-  <section class="wrap section tight home-band" id="guides">
+  <section class="wrap section band-stone" id="guides">
     <SectionHead kicker="Guides" title="Start with a guide" href="/guides/" linkLabel="All guides" />
-    <ul class="guide-compact">
-      {featured.map((g) => (
-        <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>
-      ))}
-    </ul>
+    <div class="grid home-guides">
+      {featured.map((g, i) => <GuideCard guide={g} size={i === 0 ? 'large' : 'normal'} />)}
+    </div>
   </section>
 
   {mailerlite.enabled && (
-    <section class="wrap section tight home-band" id="signup">
-      <MailerLiteSignup variant="home" />
+    <section class="wrap section band-storm home-signup" id="signup">
+      <div class="home-signup-grid">
+        <div class="home-signup-copy">
+          <p class="kicker">Free email</p>
+          <h2>Get storm-ready tips by email</h2>
+          <p>Occasional checklists and seasonal reminders. Unsubscribe anytime.</p>
+          <ul class="check-list">
+            <li><a href="/updates/">Local and community safety updates</a></li>
+            <li><a href="/winter-storm-ready-checklist/">Free winter storm checklist</a></li>
+            <li><a href="/alerts/">Live official weather alerts</a></li>
+          </ul>
+        </div>
+        <MailerLiteSignup variant="home" heading="" intro="" />
+      </div>
     </section>
   )}
 
   <LiveStatus compact />
 
-  <section class="wrap section tight" id="directory">
+  <section class="wrap section band-storm" id="directory">
     <SectionHead kicker="Shop" title="Shop the Full Source Directory" intro={`The full catalog: partner stores, gear listings, and free tools. ${catalog.length} listings in all.`} href="/directory/" linkLabel="Open the directory" />
     <Disclosure />
     <div class="grid four group-grid">{sourceGroups.map((g) => <DirectoryGroupTile group={g} count={groupCounts[g.id]} />)}</div>
