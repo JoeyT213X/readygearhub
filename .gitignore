@@ -9,3 +9,4 @@ node_modules
 # Shared catalog build output
 packages/catalog/dist/
 
+__pycache__/
