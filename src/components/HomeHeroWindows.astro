@@ -1,12 +1,10 @@
 ---
 /**
- * Desktop-only product previews in the empty space to the right of the
- * Shop the Directory heading (same row, above the tile grid). Four small
- * windows fill that row and independently rotate through real catalog
- * products with official self-hosted photos. Hidden below 1024px.
- * No portable power stations, no robot-dog fillers, no badges or invented
- * stats. ShopBoard copy is not edited (us-first-badge adds .shop-board-topline
- * there).
+ * Product previews beside the Shop the Directory heading on desktop
+ * (four small windows in that row, each rotating independently).
+ * On narrower screens the same four windows become one panel at a time,
+ * auto-rotating, with swipe and dots. No portable power stations, no
+ * robot-dog fillers, no badges or invented stats.
  */
 import { productPhotoFor } from '../data/product-photos';
 import { headingProductHref, shortProductName, type CatalogItem } from '../data/full-catalog';
@@ -18,11 +16,13 @@ const lanes: CatalogItem[][] = [[], [], [], []];
 for (const [index, item] of products.entries()) {
   lanes[index % 4].push(item);
 }
+const filledLanes = lanes.filter((lane) => lane.some((item) => productPhotoFor(item)));
+const laneCount = filledLanes.length;
 ---
-<aside class="home-hero-windows" aria-label="Featured products from the directory">
-  <div class="home-hero-windows-stage">
-    {lanes.map((lane, laneIndex) => (
-      <div class="home-hero-slot" data-lane={laneIndex}>
+<aside class="home-hero-windows" aria-label="Featured products from the directory" data-hero-windows>
+  <div class="home-hero-windows-stage" data-hero-stage>
+    {filledLanes.map((lane, laneIndex) => (
+      <div class:list={['home-hero-slot', { 'is-active': laneIndex === 0 }]} data-lane={laneIndex}>
         {lane.map((item, index) => {
           const photo = productPhotoFor(item);
           if (!photo) return null;
@@ -37,11 +37,11 @@ for (const [index, item] of products.entries()) {
                 <img
                   src={photo.src}
                   srcset={photo.srcset}
-                  sizes="(min-width: 1024px) 160px, 0px"
+                  sizes="(min-width: 1024px) 160px, 80vw"
                   alt={photo.alt}
                   width="160"
                   height="160"
-                  loading="lazy"
+                  loading={laneIndex === 0 && index === 0 ? 'eager' : 'lazy'}
                   decoding="async"
                 />
               </span>
@@ -52,59 +52,205 @@ for (const [index, item] of products.entries()) {
       </div>
     ))}
   </div>
+  {laneCount > 1 && (
+    <div class="home-hero-dots" role="tablist" aria-label="Featured product panels">
+      {Array.from({ length: laneCount }, (_, i) => (
+        <button
+          type="button"
+          class:list={['home-hero-dot', { 'is-active': i === 0 }]}
+          data-hero-dot={i}
+          aria-label={`Show featured product ${i + 1} of ${laneCount}`}
+          aria-selected={i === 0 ? 'true' : 'false'}
+        />
+      ))}
+    </div>
+  )}
 </aside>
 <script>
-  const desktop = window.matchMedia('(min-width: 1024px)');
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const INTERVAL = 4500;
-  const STAGGER = 1100;
+  const root = document.querySelector<HTMLElement>('[data-hero-windows]');
+  if (root) {
+    const desktop = window.matchMedia('(min-width: 1024px)');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const stage = root.querySelector<HTMLElement>('[data-hero-stage]')!;
+    const slots = Array.from(root.querySelectorAll<HTMLElement>('.home-hero-slot'));
+    const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-hero-dot]'));
+    const DESKTOP_INTERVAL = 4500;
+    const MOBILE_INTERVAL = 4000;
+    const STAGGER = 1100;
 
-  document.querySelectorAll('.home-hero-slot').forEach((slot, lane) => {
-    const slides = Array.from(slot.querySelectorAll('.home-hero-window'));
-    if (!slides.length) return;
-    let index = 0;
-    let timer = 0;
-    let delay = 0;
-    const show = (n: number) => {
-      slides.forEach((slide, i) => slide.classList.toggle('is-active', i === n));
+    const slotTimers: { timer: number; delay: number; index: number }[] = slots.map(() => ({
+      timer: 0,
+      delay: 0,
+      index: 0,
+    }));
+    let mobileIndex = 0;
+    let mobileTimer = 0;
+    let holding = false;
+
+    const showWindow = (slot: HTMLElement, n: number) => {
+      slot.querySelectorAll('.home-hero-window').forEach((slide, i) => {
+        slide.classList.toggle('is-active', i === n);
+      });
     };
-    const stop = () => {
-      if (delay) {
-        window.clearTimeout(delay);
-        delay = 0;
+    const showSlot = (n: number) => {
+      const count = slots.length;
+      if (!count) return;
+      mobileIndex = ((n % count) + count) % count;
+      slots.forEach((slot, i) => slot.classList.toggle('is-active', i === mobileIndex));
+      dots.forEach((dot, i) => {
+        const on = i === mobileIndex;
+        dot.classList.toggle('is-active', on);
+        dot.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+    };
+
+    const stopDesktop = () => {
+      for (const state of slotTimers) {
+        if (state.delay) {
+          window.clearTimeout(state.delay);
+          state.delay = 0;
+        }
+        if (state.timer) {
+          window.clearInterval(state.timer);
+          state.timer = 0;
+        }
       }
-      if (timer) {
-        window.clearInterval(timer);
-        timer = 0;
+    };
+    const stopMobile = () => {
+      if (mobileTimer) {
+        window.clearInterval(mobileTimer);
+        mobileTimer = 0;
       }
     };
-    const start = () => {
-      stop();
-      if (!desktop.matches || reduce.matches || slides.length < 2) return;
-      delay = window.setTimeout(() => {
-        timer = window.setInterval(() => {
-          index = (index + 1) % slides.length;
-          show(index);
-        }, INTERVAL);
-      }, lane * STAGGER);
+    const startDesktop = () => {
+      stopDesktop();
+      if (!desktop.matches || reduce.matches) return;
+      slots.forEach((slot, lane) => {
+        const slides = slot.querySelectorAll('.home-hero-window');
+        if (slides.length < 2) return;
+        const state = slotTimers[lane];
+        state.delay = window.setTimeout(() => {
+          state.timer = window.setInterval(() => {
+            state.index = (state.index + 1) % slides.length;
+            showWindow(slot, state.index);
+          }, DESKTOP_INTERVAL);
+        }, lane * STAGGER);
+      });
     };
-    slot.addEventListener('mouseenter', stop);
-    slot.addEventListener('mouseleave', start);
-    slot.addEventListener('focusin', stop);
-    slot.addEventListener('focusout', (event) => {
-      if (!slot.contains((event as FocusEvent).relatedTarget as Node | null)) start();
+    const startMobile = () => {
+      stopMobile();
+      if (desktop.matches || reduce.matches || slots.length < 2 || holding) return;
+      mobileTimer = window.setInterval(() => showSlot(mobileIndex + 1), MOBILE_INTERVAL);
+    };
+    const resetDesktopWindows = () => {
+      slots.forEach((slot, lane) => {
+        slotTimers[lane].index = 0;
+        showWindow(slot, 0);
+      });
+    };
+    const sync = () => {
+      stopDesktop();
+      stopMobile();
+      if (desktop.matches) {
+        showSlot(0);
+        resetDesktopWindows();
+        startDesktop();
+      } else {
+        resetDesktopWindows();
+        showSlot(mobileIndex);
+        startMobile();
+      }
+    };
+
+    slots.forEach((slot, lane) => {
+      slot.addEventListener('mouseenter', () => {
+        if (!desktop.matches) return;
+        const state = slotTimers[lane];
+        if (state.delay) {
+          window.clearTimeout(state.delay);
+          state.delay = 0;
+        }
+        if (state.timer) {
+          window.clearInterval(state.timer);
+          state.timer = 0;
+        }
+      });
+      slot.addEventListener('mouseleave', () => {
+        if (desktop.matches) startDesktop();
+      });
+      slot.addEventListener('focusin', () => {
+        if (!desktop.matches) return;
+        const state = slotTimers[lane];
+        if (state.delay) {
+          window.clearTimeout(state.delay);
+          state.delay = 0;
+        }
+        if (state.timer) {
+          window.clearInterval(state.timer);
+          state.timer = 0;
+        }
+      });
+      slot.addEventListener('focusout', (event) => {
+        if (!desktop.matches) return;
+        if (!slot.contains((event as FocusEvent).relatedTarget as Node | null)) startDesktop();
+      });
     });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        if (desktop.matches) return;
+        showSlot(i);
+        startMobile();
+      });
+    });
+
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+    let swiped = false;
+    const onDown = (event: PointerEvent) => {
+      if (desktop.matches || event.pointerType === 'mouse' && event.button !== 0) return;
+      tracking = true;
+      swiped = false;
+      startX = event.clientX;
+      startY = event.clientY;
+      holding = true;
+      stopMobile();
+    };
+    const onUp = (event: PointerEvent) => {
+      if (!tracking) return;
+      tracking = false;
+      holding = false;
+      const dx = event.clientX - startX;
+      const dy = event.clientY - startY;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+        swiped = true;
+        showSlot(mobileIndex + (dx < 0 ? 1 : -1));
+      }
+      startMobile();
+    };
+    stage.addEventListener('pointerdown', onDown);
+    window.addEventListener('pointerup', onUp);
+    window.addEventListener('pointercancel', onUp);
+    stage.addEventListener('click', (event) => {
+      if (swiped) {
+        event.preventDefault();
+        event.stopPropagation();
+        swiped = false;
+      }
+    }, true);
+
     desktop.addEventListener('change', () => {
-      index = 0;
-      show(0);
-      start();
+      mobileIndex = 0;
+      holding = false;
+      sync();
     });
     reduce.addEventListener('change', () => {
-      index = 0;
-      show(0);
-      start();
+      mobileIndex = 0;
+      holding = false;
+      sync();
     });
-    show(0);
-    start();
-  });
+    root.classList.add('is-ready');
+    sync();
+  }
 </script>
