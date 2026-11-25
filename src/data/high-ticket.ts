@@ -14,6 +14,7 @@
 import type { CatalogItem } from './full-catalog';
 import type { SourceCategoryId, SourceGroupId } from './source-directory';
 import { isNoPpcProgram, programIdForItem, resolveOutbound } from './affiliates';
+import { roboticsDronesItems } from './robotics-drones';
 
 export type HighTicketItem = {
   id: string;
@@ -48,20 +49,6 @@ export const highTicketItems: HighTicketItem[] = [
     image: '/directory/covers/drone.svg',
     offerLabel: 'Official shop',
     cta: 'Visit official site',
-  },
-  {
-    id: 'autel-robotics-official',
-    title: 'Autel Robotics official shop',
-    blurb: 'Official Autel Robotics shop for current drone models and accessories. See the official page for specs, availability, and price. We don’t have a partner program with this brand yet.',
-    sourceName: 'Autel Robotics',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://shop.autelrobotics.com/',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official shop',
-    cta: 'Visit official shop',
   },
   {
     id: 'skydio-official',
@@ -351,48 +338,6 @@ export const highTicketItems: HighTicketItem[] = [
     groups: ['power-tech'],
     affiliateUrl: null,
     fallbackUrl: 'https://www.dji.com/flip',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official product page',
-    cta: 'Visit official page',
-  },
-  {
-    id: 'hoverair-x1',
-    title: 'HOVERAir X1',
-    blurb: 'Official HOVERAir page for the X1 self-flying camera. See the official page for current specs, local rules, and pricing. We don’t have a partner program with this brand yet.',
-    sourceName: 'HOVERAir',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://hoverair.com/pages/x1',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official product page',
-    cta: 'Visit official page',
-  },
-  {
-    id: 'autel-evo-lite-enterprise',
-    title: 'Autel EVO Lite Enterprise Series',
-    blurb: 'Official Autel Robotics page for the EVO Lite Enterprise series. See the official page for current models, specs, and how to inquire. We don’t have a partner program with this brand yet.',
-    sourceName: 'Autel Robotics',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://www.autelrobotics.com/productdetail/evo-lite-enterprise-series/',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official product page',
-    cta: 'Visit official page',
-  },
-  {
-    id: 'autel-evo-max-4t',
-    title: 'Autel EVO Max 4T',
-    blurb: 'Official Autel Robotics page for the EVO Max 4T. See the official page for current specs and how to inquire. We don’t have a partner program with this brand yet.',
-    sourceName: 'Autel Robotics',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://www.autelrobotics.com/productdetail/evo-max-4t/',
     image: '/directory/covers/drone.svg',
     offerLabel: 'Official product page',
     cta: 'Visit official page',
@@ -839,48 +784,6 @@ export const highTicketItems: HighTicketItem[] = [
     groups: ['power-tech'],
     affiliateUrl: null,
     fallbackUrl: 'https://www.dji.com/inspire-3',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official product page',
-    cta: 'Visit official page',
-  },
-  {
-    id: 'autel-evo-nano-series',
-    title: 'Autel EVO Nano series',
-    blurb: 'Official Autel Robotics page for the EVO Nano series. Check the official page for current models, specs, and pricing. Until a partner program is approved, this card uses the official page.',
-    sourceName: 'Autel Robotics',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://www.autelrobotics.com/productdetail/evo-nano-series-drones/',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official product page',
-    cta: 'Visit official page',
-  },
-  {
-    id: 'hoverair-x1-pro-promax',
-    title: 'HOVERAir X1 PRO and PROMAX',
-    blurb: 'Official HOVERAir page for the X1 PRO and PROMAX self-flying cameras. Check the official page for specs, local flying rules, and pricing. Until a partner program is approved, this card uses the official page.',
-    sourceName: 'HOVERAir',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://hoverair.com/pages/x1-pro-and-promax',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official product page',
-    cta: 'Visit official page',
-  },
-  {
-    id: 'hoverair-versa',
-    title: 'HOVERAir Versa',
-    blurb: 'Official HOVERAir page for the Versa self-flying camera. Check the official page for specs, local flying rules, and pricing. Until a partner program is approved, this card uses the official page.',
-    sourceName: 'HOVERAir',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://hoverair.com/pages/versa',
     image: '/directory/covers/drone.svg',
     offerLabel: 'Official product page',
     cta: 'Visit official page',
@@ -1899,6 +1802,9 @@ export const highTicketItems: HighTicketItem[] = [
     price: 'See price',
   },
 ];
+
+// Drones & Robotics lineups (RobotShop, Robots International, Autel Robotics, HOVERAir). Pending programs, plain links.
+highTicketItems.push(...roboticsDronesItems);
 
 export function highTicketToCatalogItem(item: HighTicketItem): CatalogItem {
   const official = item.fallbackUrl;

@@ -537,7 +537,7 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {
   const eligible = items.filter((i) => {
-    if (isPortablePowerStation(i) || HOME_SHOP_EXCLUDED_IDS.has(i.id)) return false;
+    if (isPortablePowerStation(i) || HOME_SHOP_EXCLUDED_IDS.has(i.id) || i.category === 'drones-robotics') return false;
     // Keep power-station style stock photos off the home page.
     const k = stockCoverFor(i)?.key;
     return k !== 'stock-power-station' && k !== 'stock-battery-bank';

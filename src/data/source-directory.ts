@@ -28,6 +28,7 @@ export type SourceCategoryId =
   | 'fun'
   | 'safety'
   | 'drones'
+  | 'drones-robotics'
   | 'vehicles'
   | 'security'
   | 'food';
@@ -56,6 +57,7 @@ export const sourceCategories: SourceCategory[] = [
   { id: 'fun', slug: 'fun', name: 'Fun & Gifts', short: 'Fun', blurb: 'A place for gifts and just-for-fun finds as more partner stores come online.', image: '/directory/covers/cat-fun.svg' },
   { id: 'safety', slug: 'safety', name: 'Safety & Prep', short: 'Safety', blurb: 'Ready kits and paid home plans from approved partners, described plainly.', photo: 'first-aid-kit-open' },
   { id: 'drones', slug: 'drones', name: 'Drones', short: 'Drones', blurb: 'Official drone manufacturer shops. Models, rules, and prices are on the official site. We don’t have partner programs for these brands yet.', photo: 'hero-drone' },
+  { id: 'drones-robotics', slug: 'drones-robotics', name: 'Drones & Robotics', short: 'Drones & Robotics', blurb: 'Robot dogs, patrol and inspection robots, firefighting robots, and drones from four stores we have applied to. Store pages hold specs, prices, and local rules; the stores’ partner programs are still pending.', photo: 'hero-drone' },
   { id: 'vehicles', slug: 'vehicles', name: 'Vehicles & overland', short: 'Vehicles', blurb: 'Official pages for overland, off-road, and armored-style vehicles. Configuration and pricing are on the official site. We don’t have partner programs for these brands yet.', photo: 'hero-overland-truck' },
   { id: 'security', slug: 'security', name: 'Security & shelters', short: 'Security', blurb: 'Official shelter and security-robotics pages. Specifications and how to inquire are on the official site. We don’t have partner programs for these brands yet.', photo: 'hero-bunker-hatch' },
   { id: 'food', slug: 'food', name: 'Food & pantry', short: 'Food', blurb: 'Shelf-stable kits and pantry supplies from brands we already list, plus official shops. Check the official page for servings, storage life, and price.', photo: 'hero-pantry-cans' },
@@ -78,7 +80,7 @@ export const sourceGroups: SourceGroup[] = [
   { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar, everyday tech, and official drone shops.', categories: ['power', 'tech', 'audio', 'drones'], photo: 'solar-rooftops' },
   { id: 'home-water', name: 'Home & Water', short: 'Home & Water', blurb: 'Drinking-water filters and home setups from approved partners.', categories: ['home', 'water'], photo: 'water-bottles' },
   { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus official vehicle shops.', categories: ['outdoor', 'auto', 'tools', 'vehicles'], photo: 'lantern-dusk' },
-  { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits, food stores, shelters, and official security pages, described plainly.', categories: ['safety', 'fun', 'security', 'food'], photo: 'first-aid-kit-open' },
+  { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits, food stores, shelters, and official security pages, described plainly.', categories: ['safety', 'fun', 'security', 'food', 'drones-robotics'], photo: 'first-aid-kit-open' },
 ];
 
 export type ComingSoonPartner = {

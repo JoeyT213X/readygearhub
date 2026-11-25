@@ -19,7 +19,8 @@ const guideById = Object.fromEntries(guides.map((g) => [g.id, g]));
 const featuredIds = ['winter-storm-power-outage-prep-guide-south', 'winter-power-outage-checklist', 'emergency-water-storage', 'storm-first-aid-kit', 'how-to-stay-warm-without-power'];
 const featured = [...featuredIds.map((id) => guideById[id]).filter(Boolean)];
 
-const catalog = buildFullCatalog(await getItems());
+// Drones & Robotics lives on /directory/ only; keep it off the home page and out of its counts.
+const catalog = buildFullCatalog(await getItems()).filter((i) => i.category !== 'drones-robotics');
 const shopPicks = homeShopPicks(catalog, 16);
 const boardTiles = shopBoardTiles(catalog);
 const heroTiles = heroBentoTiles();

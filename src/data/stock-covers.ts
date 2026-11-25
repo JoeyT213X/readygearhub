@@ -143,6 +143,8 @@ export function stockCoverFor(item: Cardish): StockCover | undefined {
   if (item.image && !item.image.endsWith('.svg') && !tinyCreative) return undefined;
   const hay = `${item.id} ${item.title} ${item.sourceName || ''} ${item.category || ''}`.toLowerCase().replace(/&#39;/g, "'");
   if (LEAVE_TEXT.test(hay)) return undefined;
+  // Drones & Robotics: only drones get a (labeled) representative drone photo. Robot cards stay text-only.
+  if (item.category === 'drones-robotics' && !/\bdrone\b|autel|hoverair/.test(hay)) return undefined;
   for (const [key, re] of RULES) {
     if (re.test(hay)) return cover(key);
   }

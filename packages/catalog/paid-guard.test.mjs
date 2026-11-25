@@ -1,5 +1,6 @@
 /**
- * Paid-search guard: Choice Home Warranty, REDI, Waterdrop, TideWe, and Bogs must never
+ * Paid-search guard: Choice Home Warranty, REDI, Waterdrop, TideWe, Bogs, and the pending robotics/drone programs (RobotShop,
+ * Robots International, Autel Robotics, HOVERAir) must never
  * be allowed on paid landers or ad sessions. The shared catalog is the
  * source of truth for this rule.
  */
@@ -9,7 +10,7 @@ import { dirname, join } from 'node:path';
 import { mkdirSync, writeFileSync } from 'node:fs';
 
 const root = dirname(fileURLToPath(import.meta.url));
-const required = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe', 'bogs'];
+const required = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe', 'bogs', 'robotshop', 'robots-international', 'autel-robotics', 'hoverair'];
 const outfile = join(root, 'dist', 'test-entry.mjs');
 mkdirSync(join(root, 'dist'), { recursive: true });
 

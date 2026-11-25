@@ -1,0 +1,4522 @@
+[
+ {
+  "url": "https://www.robotsinternational.com/MagicLab-MagicDog-W-Wheeled-Quadruped-Robot.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "MagicLab MagicDog-W Wheeled Quadruped Robot Dog",
+  "sku": "MagicLab-MagicDog-W",
+  "desc": "M",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/a/magiclab-magicdog-w-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/a/magiclab-magicdog-w-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/a/magiclab-magicdog-w-3.jpg"
+  ],
+  "price": 12500,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MAGICLAB",
+  "bc": [
+   "Home",
+   "MagicLab MagicDog-W Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/AiMOGA-Argos-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "AiMOGA Argos Quadruped Robot Dog",
+  "sku": "AiMOGA-Argos",
+  "desc": "A",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/i/aimoga-argos.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/i/aimoga-argos-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/i/aimoga-argos-3.jpg"
+  ],
+  "price": 4800,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "AIMOGA",
+  "bc": [
+   "Home",
+   "AiMOGA Argos Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-W-Standard-Wheeled-Robot-Dog-Go2-W-U1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Wheeled-Quadrupeds",
+   "Unitree-Go2",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Standard Wheeled Quadruped Robot Dog (Go2-W-U1)",
+  "sku": "Unitree-Go2-W-U1",
+  "desc": "Forty per cent less energy than a walking Go2 on flat ground, at the lowest price in the Go2-W range. The U1 Standard is the entry point to the wheel-leg platform, and for teaching and demonstration work it is frequently all that is needed.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-w-main_1.jpg"
+  ],
+  "price": 13000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Standard Wheeled Quadruped Robot Dog (Go2-W-U1)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Air-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Air Quadruped Robot Dog (GO2-AIR)",
+  "sku": "Unitree-GO2-AIR",
+  "desc": "Introduction and OverviewIn modern robotics procurement, the hard question is rarely whether a robot can move, it is whether the exact configuration fits the job.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_5.jpg"
+  ],
+  "price": 2365,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Air Quadruped Robot Dog (GO2-AIR)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-PRO-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 PRO Quadruped Robot Dog",
+  "sku": "Unitree-GO2-PRO",
+  "desc": "Three and a half metres per second, eight kilograms of payload and 4D LiDAR perception, on a fifteen-kilogram robot one person can carry to site.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_3_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_5_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_2_2.jpg"
+  ],
+  "price": 3790,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 PRO Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-W-Wheeled-Quadruped-Robot-Dog-Smart-Package-Go2-W-U3.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Wheeled-Quadrupeds",
+   "Unitree-Go2",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Wheeled Quadruped Robot Dog Smart Package (Go2-W-U3)",
+  "sku": "Unitree-Go2-W-U3",
+  "desc": "One hundred TOPS and a Livox MID-360 3D LiDAR with navigation algorithms.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_wheeled_robot_dog_smart_package_go2-w-u3_.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_inspection_wheeled_robotic_dog_1.jpg"
+  ],
+  "price": 20000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Wheeled Quadruped Robot Dog Smart Package (Go2-W-U3)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Edu-Standard.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Edu Standard Quadruped Robot",
+  "sku": "Unitree-Go2-Edu-Standard",
+  "desc": "Introduction and OverviewIn modern robotics procurement, the hard question is rarely whether a robot can move, it is whether the exact configuration fits the job.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_2_6.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_7.jpg"
+  ],
+  "price": 13205,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Edu Standard Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Edu-Plus.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Edu Plus AI Quadruped Robot Dog",
+  "sku": "Unitree-Go2-Edu-Plus",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_2_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_3_3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_5_3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_2_4.jpg"
+  ],
+  "price": 15900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Edu Plus AI Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Edu-Plus-Mid-360.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Edu Plus Mid 360 Quadruped Robot",
+  "sku": "Unitree-Go2-Edu-Plus-Mid-360",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_2_1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-edu-plus-mid-360-quadruped-robot.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_4_1.jpg"
+  ],
+  "price": 18900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Edu Plus Mid 360 Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Edu-Plus-Hesai-XT16.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Edu Plus Hesai XT16 Quadruped Robot",
+  "sku": "Unitree-Go2-Edu-Plus-Hesai-XT16",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_2_1_1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-edu-plus-hesai-xt16-quadruped-robot.jpg"
+  ],
+  "price": 18795,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Edu Plus Hesai XT16 Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/PrimeBOT-T1-Pro.htm",
+  "cats": [
+   "Quadruped-Robots"
+  ],
+  "name": "PrimeBOT T1 Pro Transformable Robot",
+  "sku": "PrimeBOT-T1-Pro",
+  "desc": "PrimeBOT T1 Pro Transformable Personal Robot, Wheeled Humanoid and Quadruped\r\nWheels are quiet and efficient on a living room floor but stop at the edge of the lawn. Legs handle grass, gravel and slopes but are noisy and slow indoors.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/r/primebot_t1-pro-transformable-robot.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "PRIMEBOT",
+  "bc": [
+   "Home",
+   "PrimeBOT T1 Pro Transformable Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/DaxAI-Qiji-XS-17197.htm",
+  "cats": [
+   "Quadruped-Robots"
+  ],
+  "name": "DaxAI Qiji XS Wheel-Legged Robot Horse",
+  "sku": "DaxAI-Qiji-XS",
+  "desc": "DaxAI Qiji XS is a wheel-legged robot horse presented as a rideable robotic mobility platform. Contact us to confirm the exact configuration, specifications, pricing and supplier availability.",
+  "image": "https://www.robotsinternational.com/pub/media/catalog/product",
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "DAXAI",
+  "bc": [
+   "Home",
+   "DaxAI Qiji XS Wheel-Legged Robot Horse"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/PrimeBOT-T1.htm",
+  "cats": [
+   "Quadruped-Robots"
+  ],
+  "name": "PrimeBOT Prime T1 Transformable Personal Robot",
+  "sku": "PrimeBOT-T1",
+  "desc": "PrimeBOT Prime T1 Transformable Personal Robot\r\nPrimeBOT Prime T1 is a transformable personal robot designed to move between a wheeled humanoid form for indoor mobility and a quadruped form for outdoor traversal.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/r/primebot-prime-t1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/r/primebot-prime-t1-transformable-personal-robot.jpg"
+  ],
+  "price": 6950,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "PRIMEBOT",
+  "bc": [
+   "Home",
+   "PrimeBOT Prime T1 Transformable Personal Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/fx-navi-embodied-ai-quadruped-robot.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Navi Embodied AI Quadruped Robot",
+  "sku": "FX-NAVI",
+  "desc": "FX Navi Embodied-AI Learning Quadruped Robot\r\nMost robot dogs for sale are finished products: you unbox them, run the demos and look for the next trick. FX Navi works the other way around. It's a robot dog you learn with.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-5.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-6.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-7.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-navi-8.jpg"
+  ],
+  "price": 1990,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Navi Embodied AI Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/fx-aegis-ultra-w-wheel-legged-robot-dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Aegis Ultra-W Wheel-Legged Robot Dog",
+  "sku": "FX-AGS-ULTRA-W",
+  "desc": "FX Aegis Ultra-W Wheel-Legged Robot Dog\r\nAsk anyone who runs patrols what they need from a robot and the answer is rarely \"more agility.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-w-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-w-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-w-3.jpg"
+  ],
+  "price": 12990,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Aegis Ultra-W Wheel-Legged Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/FX-Aegis-Ultra-W-Plus.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Aegis Ultra-W+ Wheel-Legged Robot Dog",
+  "sku": "FX-AEGIS-ULTRA-W-PLUS",
+  "desc": "FX Aegis Ultra-W+ Wheel-Legged Robot Dog\r\nA robot dog on legs can go almost anywhere, but it pays for that in speed, noise and battery on every flat meter. A wheeled robot covers ground efficiently, but stops at the first curb.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-w-plus-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-w-plus-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-w-plus-3.jpg"
+  ],
+  "price": 24990,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Aegis Ultra-W+ Wheel-Legged Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/FX-Aegis-Ultra-Plus.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Aegis Ultra+ Quadruped Robot Dog",
+  "sku": "FX-AEGIS-ULTRA-PLUS",
+  "desc": "FX Aegis Ultra+ Quadruped Robot Dog\r\nSome sites are made of corridors and car parks. Others are made of gravel yards, grass verges, loading docks, stairwells and broken ground.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-plus-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-plus-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-plus-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-ags-ultra-plus-4.jpg"
+  ],
+  "price": 22990,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Aegis Ultra+ Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/FX-Aegis-Ultra.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Aegis Ultra Quadruped Robot Dog",
+  "sku": "FX-AEGIS-ULTRA",
+  "desc": "FX Aegis Ultra Quadruped Robot Dog\r\nMost entry-level robot dogs depend on a phone, a remote or a cloud connection to do anything smart, and they're happiest indoors.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-ultra-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-ultra-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-ultra-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-ultra-4.jpg"
+  ],
+  "price": 12990,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Aegis Ultra Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/fx-aegis-edu-quadruped-robot-dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Aegis Edu Quadruped Robot Dog",
+  "sku": "FX-AEGIS-EDU",
+  "desc": "FX Aegis Edu Quadruped Robot Dog\r\nTeaching robotics with a robot students can't program is like teaching driving from the passenger seat. FX Aegis Edu hands over the controls.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-edu-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-edu-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-edu-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-edu-4.jpg"
+  ],
+  "price": 9990,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Aegis Edu Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/FX-Aegis-Pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Aegis Pro Quadruped Robot Dog",
+  "sku": "FX-AEGIS-PRO",
+  "desc": "FX Aegis Pro Quadruped Robot Dog\r\nAt a trade show, a store opening or a brand event, the hardest job is getting people to stop and look. FX Aegis Pro does that job for you.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-pro-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-pro-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-pro-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-pro-4.jpg"
+  ],
+  "price": 4490,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Aegis Pro Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/fx-aegis-quadruped-robot-dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Robot-Dogs",
+   "Security-Robots",
+   "FF-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "FX Aegis Quadruped Robot Dog",
+  "sku": "FX-AEGIS-STAN",
+  "desc": "FX Aegis Quadruped Robot Dog\r\nProfessional robot dogs have usually belonged to industrial sites, utilities and research labs.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-stan-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-stan-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-stan-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/f/x/fx-aeg-stan-4.jpg"
+  ],
+  "price": 2490,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "FARADAY FUTURE",
+  "bc": [
+   "Home",
+   "FX Aegis Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-X.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Galileo X Ground Mobility Platform Quadruped Robots Dog",
+  "sku": "GALILEO-X",
+  "desc": "Galileo X Ground Mobility Platform\r\nGalileo X is a next-generation general-purpose ground mobility platform introduced by Galileo Robotics at the 2026 World Robot Conference in Beijing.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-x.jpg"
+  ],
+  "price": 49970,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo X Ground Mobility Platform Quadruped Robots Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Kawasaki-Corleo.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Kawasaki CORLEO Off-Road Personal Mobility Vehicle",
+  "sku": "Kawasaki-Corleo",
+  "desc": "Kawasaki CORLEO Off-Road Personal Mobility Vehicle\r\nThe Kawasaki CORLEO is a futuristic four-legged off-road personal mobility vehicle developed by Kawasaki Heavy Industries as a 2050 concept model.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/k/a/kawasaki-corleo-off-road-personal-mobility-vehicle.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/k/a/kawasaki-corleo.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "KAWASAKI",
+  "bc": [
+   "Home",
+   "Kawasaki CORLEO Off-Road Personal Mobility Vehicle"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/DaxAI-Qiji-X1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Inspection-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "DaxAI Qiji X1 Cyber Horse Quadruped Robot",
+  "sku": "DaxAI-Qiji-X1",
+  "desc": "\u00a0\r\nDaxAI Qiji X1\r\nTrail vehicles have always made one trade: wheels are fast and efficient until the ground gets soft, broken or steep, and then they dig in, slip or stop. The DaxAI Qiji X1 is built around a different answer.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/a/daxai-qiji-x1.jpg"
+  ],
+  "price": 77380,
+  "cur": "USD",
+  "avail": "http://schema.org/BackOrder",
+  "brand": "DAXAI",
+  "bc": [
+   "Home",
+   "DaxAI Qiji X1 Cyber Horse Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/arkshel-mx01.htm",
+  "cats": [
+   "Quadruped-Robots"
+  ],
+  "name": "ARKSHEL MX01 Flying Transformable Humanoid Robot",
+  "sku": "ARKSHEL-MX01",
+  "desc": "\u00a0\r\n\r\nEvery robot ever built has had to choose a body \u2014 legs or wheels, two limbs or four, ground or air \u2014 and live with the compromise. The Arkshel MX01 is the machine that refuses to choose.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/r/arkshel-mx01-1.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/r/arkshel.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "ARKSHEL ROBOTICS",
+  "bc": [
+   "Home",
+   "ARKSHEL MX01 Flying Transformable Humanoid Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-W-EDU.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree As2-W EDU Wheeled Quadruped Robot Dog",
+  "sku": "Unitree-AS2-W-EDU",
+  "desc": "The wheel-leg platform with the development tier's access: roll on flat ground, walk over everything else, carry up to about 150 kilograms standing &mdash; and control every part of it through the SDK.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-extra-10.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-6.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-7.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-8.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-extra-13.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-edu-5.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree As2-W EDU Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-W-X.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree As2-W X Wheeled Quadruped Robot Dog",
+  "sku": "Unitree-AS2-W-X",
+  "desc": "Driven wheels for speed and efficiency, legs for everything wheels cannot do &mdash; and a standing payload of up to about 150 kilograms, more than double the legged AS2. The W X is the operational configuration of the wheel-leg platform.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-extra-10.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-6.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-7.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-8.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-extra-13.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-as2-w-x-5.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree As2-W X Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-EDU-U4.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree As2 EDU Ultimate Robot Dog",
+  "sku": "Unitree-AS2-EDU-U4",
+  "desc": "Three depth cameras and a MID-360 3D LiDAR &mdash; full environmental awareness, and the top of the AS2 EDU range.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/U/n/UnitreeAs2EDUSmartRobotDog.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/s/as2-edu-laser-smart-edition_1_-_fondo_blanco.png"
+  ],
+  "price": 19900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree As2 EDU Ultimate Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-EDU-U3.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree As2 EDU Smart Robot Dog",
+  "sku": "Unitree-AS2-EDU-U3",
+  "desc": "The Smart adds depth sensing to the Plus configuration's compute and 3D LiDAR. LiDAR gives you the shape of a space; a depth camera gives you dense close-range geometry.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/A/s/As2EduLaserSmartEdition.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/s/as2-edu-laser-smart-edition_2_.jpg"
+  ],
+  "price": 17900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree As2 EDU Smart Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-EDU-U2.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree AS2 EDU Plus Robot Dog",
+  "sku": "Unitree-AS2-EDU-U2",
+  "desc": "The Plus is the step that matters most in the EDU ladder, because it changes two things at once: compute rises from 40 to 100 TOPS and a Livox MID-360 3D LiDAR is added.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/A/s/As2EDUStandard.png"
+  ],
+  "price": 13900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree AS2 EDU Plus Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-X.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree As2 X Robot Dog",
+  "sku": "Unitree-AS2-X",
+  "desc": "A 20-kilogram robot dog that climbs 40-degree slopes, takes 25-centimetre stairs and runs at several metres per second &mdash; at the lowest price in the AS2 range.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/A/s/As2air_As2pro_As2X.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/s/as2air_as2pro_as2x.jpg"
+  ],
+  "price": 9500,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree As2 X Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-auxiliary-reconnaissance-quadruped-robot-dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Topsky Auxiliary Reconnaissance Quadruped Robot Dog",
+  "sku": "Topsky-Auxiliary-Reconnaissance-Quadruped-Robot-Dog",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-auxiliary-reconnaissance.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Auxiliary Reconnaissance Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-firefighting-quadruped-robot-dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Topsky Assistive Firefighting Quadruped Robot Dog",
+  "sku": "Topsky-Firefighting-Quadruped-Robot-Dog",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-assistive-firefighting-quadruped-robot-dog.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Assistive Firefighting Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-auxiliary-transport-quadruped-robot-dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Topsky Auxiliary Transportation Quadruped Robot Dog",
+  "sku": "Topsky-Auxiliary-Transport-Quadruped-Robot-Dog",
+  "desc": "Topsky Auxiliary Transportation Quadruped Robot DogA quadruped built to carry material across ground that wheels and tracks cannot cross.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/u/auxiliary-transportation-quadruped-robot-dog.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Auxiliary Transportation Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-high-speed-fan-firefighting-robot-dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Topsky High-speed fan firefighting quadruped robot dog",
+  "sku": "Topsky-High-Speed-Fan-Firefighting-Robot-Dog",
+  "desc": "Overview Forest wildfires Grassland fires Underground space rescue Chemical park fire Key Features and Specifications  I.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-high-speed_1.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky High-speed fan firefighting quadruped robot dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-EX-1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo EX-1 Intelligent Bionic Explosion-Proof Quadruped Robot",
+  "sku": "GALILEO-EX-1",
+  "desc": "\u00a0\r\nGalileo EX-1 Explosion-Proof Quadruped Robot\r\nWherever flammable gas can collect, ordinary electronics are a liability. A single spark or a hot surface can be enough.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-ex-1-intelligent-bionic-explosion-3.jpg"
+  ],
+  "price": 24995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo EX-1 Intelligent Bionic Explosion-Proof Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-S1-W.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Galileo S1-W Large Industrial Grade Wheeled Quadruped Robot Dog",
+  "sku": "GALILEO-S1-W",
+  "desc": "\u00a0\r\nGalileo S1-W Wheel-Legged Industrial Quadruped Robot\r\nLarge industrial sites are mostly flat, with the hard parts scattered in between. A refinery has kilometres of paved access road and then a staircase up to a pipe rack.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-s1-w-galileo-time.jpg"
+  ],
+  "price": 59995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo S1-W Large Industrial Grade Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-S1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo S1 Large Industrial Grade Quadruped Robot Dog",
+  "sku": "GALILEO-S1",
+  "desc": "\u00a0\r\nGalileo S1 Large Industrial Quadruped Robot\r\nMost legged robots are built to look around. The Galileo S1 is built to carry.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-s1-large-industrial-grade-quadruped-robot-dog.jpg"
+  ],
+  "price": 49995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo S1 Large Industrial Grade Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-EDU.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree As2 EDU Standard Quadruped Robot Dog",
+  "sku": "Unitree-AS2-EDU",
+  "desc": "The EDU Standard is where development access begins on the AS2: the full industrial body, the 65-kilogram standing payload and SDK-level control, with 40 TOPS of onboard compute and the built-in industrial LiDAR.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/U/n/UnitreeAs2EDUStandardRobotDog.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/6/e6a8c27345324a69b5cb3c72b402bf9d_1401x742_4b5e9bca-4941-47f5-a7bc-493e3c1d1fb4_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/2/e217d693e06b46ed9464341ce87cdaec_1401x742_7a964de0-9959-463c-9b7f-d9f11da57538_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean2_1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/8/0/80eca04e0de94eeb8a86b20f3f280770_3840x2143_ab01ae9d-2e6f-44ec-a3c8-5aef7338c997_1.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean1_1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/A/s/As2_1.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean3_1_1.jpg"
+  ],
+  "price": 11900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree As2 EDU Standard Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-XF2-B.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Firefighting-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-B)",
+  "sku": "Unitree-B2-XF2-B",
+  "desc": "A sixty-kilogram, IP67-sealed quadruped that climbs stairs, crosses broken ground and carries over forty kilograms \u2014 configured for fire and rescue duty. What it carries for that duty is the part we will confirm in writing rather than guess at.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2-xf2-a_1.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-B)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-XF2-C.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Firefighting-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-C)",
+  "sku": "Unitree-B2-XF2-C",
+  "desc": "A sixty-kilogram, IP67-sealed quadruped that climbs stairs, crosses broken ground and carries over forty kilograms \u2014 configured for fire and rescue duty. What it carries for that duty is the part we will confirm in writing rather than guess at.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2-xf2-a_1_1.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-C)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-XF2-D.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Firefighting-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-D)",
+  "sku": "Unitree-B2-XF2-D",
+  "desc": "A sixty-kilogram, IP67-sealed quadruped that climbs stairs, crosses broken ground and carries over forty kilograms \u2014 configured for fire and rescue duty. What it carries for that duty is the part we will confirm in writing rather than guess at.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2-xf2-a_2.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-D)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-E1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo E1 Quadruped Robot Dog",
+  "sku": "GALILEO-E1",
+  "desc": "The Galileo E1 Series is a heavy-duty quadruped robot dog platform designed for industrial inspection, security patrol, emergency response, and multi-industry equipment integration.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-e1-quadruped-robot-dog.jpg"
+  ],
+  "price": 45000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo E1 Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-E1-W.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Galileo E1-W Wheeled Quadruped Robot Dog",
+  "sku": "GALILEO-E1-W",
+  "desc": "The Galileo E1 Series is a heavy-duty quadruped robot dog platform designed for industrial inspection, security patrol, emergency response, and multi-industry equipment integration.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-e1-w-wheeled-quadruped-robot-dog.jpg"
+  ],
+  "price": 49995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo E1-W Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-C1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Inspection-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo C1 Small Quadruped Robot Dog",
+  "sku": "GALILEO-C1",
+  "desc": "Introduction / Overview\nThe Galileo C1 is a compact quadruped robot in the Galileo C1 Series, designed for organizations that need a mobile robotic platform capable of moving through environments that are difficult for conventional wheeled equipment.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-c1-small-quadruped-robot-dog.jpg"
+  ],
+  "price": 9999.99,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo C1 Small Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-C1-W.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Inspection-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Galileo C1-W Wheeled Quadruped Robot Dog",
+  "sku": "GALILEO-C1-W",
+  "desc": "I",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-c1-w-wheeled-quadruped-robot-dog.jpg"
+  ],
+  "price": 11995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo C1-W Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Aliengo.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-AlienGo-Quadruped"
+  ],
+  "name": "Unitree Aliengo Quadruped Robot",
+  "sku": "Unitree-Aliengo",
+  "desc": "Introduction and OverviewRobotics buyers increasingly compare platforms by configuration, support and integration risk rather than by headline videos alone.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-aliengo.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_aliengo_quadruped_robot2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_aliengo_quadruped_robot3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_aliengo_quadruped_robot4.jpg"
+  ],
+  "price": 49999.99,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Aliengo Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-Quadruped-Robot-with-Navigations-Kit-Package.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Quadruped Robot With Navigation Kit Package",
+  "sku": "Unitree-B2-Navigation",
+  "desc": "Introduction and OverviewRobotics buyers increasingly compare platforms by configuration, support and integration risk rather than by headline videos alone.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b2_3_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b2_2_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b2_4_1.jpg"
+  ],
+  "price": 100000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Quadruped Robot With Navigation Kit Package"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Quadruped Robot",
+  "sku": "Unitree-B2",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b2_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b2_3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b2_4.jpg"
+  ],
+  "price": 100000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-W.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Unitree B2-W Wheeled Quadruped Robot",
+  "sku": "Unitree-B2-W",
+  "desc": "Twenty-five kilometres carrying forty kilograms. That single figure is the argument for the wheeled B2 \u2014 the legged version manages about fifteen kilometres carrying half as much, because rolling is simply more efficient than walking.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2-w.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b2_3_2.jpg"
+  ],
+  "price": 88900,
+  "cur": "USD",
+  "avail": "http://schema.org/BackOrder",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2-W Wheeled Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-Pro-Industrial-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree AS2 Pro Industrial Quadruped Robot Dog",
+  "sku": "Unitree-AS2-Pro",
+  "desc": "IP54, industrial 64-to-128-line LiDAR and a standing payload of 55 kilograms on a 20-kilogram robot. The Pro is the AS2 specified for work outdoors, in dust and in rain, which is where most quadrupeds actually earn their keep.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean2_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean3_1.jpg"
+  ],
+  "price": 99999.99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree AS2 Pro Industrial Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-AS2-Air-Industrial-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree AS2 Air Industrial Quadruped Robot Dog",
+  "sku": "Unitree-AS2-Air",
+  "desc": "The Air is the lightest-duty member of the AS2 line, and it still stands under 45 kilograms &mdash; more than twice its own weight. If your work is mobility and sensing rather than hauling, this is where the industrial AS2 range starts.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_as2_clean3.jpg"
+  ],
+  "price": 99999.99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree AS2 Air Industrial Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Inspection-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B1 Quadruped Robot",
+  "sku": "Unitree-B1",
+  "desc": "Introduction and OverviewRobotics buyers increasingly compare platforms by configuration, support and integration risk rather than by headline videos alone.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_b1_quadruped_robot.jpg"
+  ],
+  "price": 99999.99,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B1 Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/MagicLab-MagicDog-Quadruped-Robot.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "MagicLab MagicDog Quadruped Robot",
+  "sku": "MagicLab-MagicDog",
+  "desc": "MagicLab MagicDog Quadruped Robot\r\nMagicDog sits within a family of MagicLab \u201cMagicDog\u201d products that includes the standard legged MagicDog, the wheeled MagicDog-W, and the larger MagicDog Y1.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/a/magiclab-magicdog-1.jpg"
+  ],
+  "price": 12500,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MAGICLAB",
+  "bc": [
+   "Home",
+   "MagicLab MagicDog Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/MagicLab-MagicDog-Y1-Quadruped-Robot.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "MagicLab MagicDog Y1 Quadruped Robot Dog",
+  "sku": "MagicLab-MagicDog-Y1",
+  "desc": "M",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/a/magiclab-magicdog-y1.jpg"
+  ],
+  "price": 69950,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MAGICLAB",
+  "bc": [
+   "Home",
+   "MagicLab MagicDog Y1 Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Galileo-EX-2.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo EX-2 Explosion-Proof Quadruped Robot",
+  "sku": "GALILEO-EX-2",
+  "desc": "Galileo EX-2 Explosion-Proof Quadruped Robot for Petrochemical Inspection\r\nRoutine rounds in a refinery or gas plant are long, repetitive and often take people into areas where a flammable atmosphere is possible.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-ex-2-explosion-proof-quadruped-robot.jpg"
+  ],
+  "price": 109995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo EX-2 Explosion-Proof Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-S1-W-Standard.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Galileo S1-W Standard Edition Wheeled Quadruped Robot Dog",
+  "sku": "GALILEO-S1-W-Standard",
+  "desc": "Galileo S1-W Standard Edition Wheel-Leg Quadruped Robot for Heavy, Fast Site Logistics\r\nOn a large plant, warehouse yard or campus, the problem is often distance as much as terrain.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-s1-w-standard-edition-wheeled_.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-s1-w-standard-edition-wheeled-quadruped_.jpg"
+  ],
+  "price": 79995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo S1-W Standard Edition Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/galileo-s1-standard.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo S1 Standard Edition Quadruped Robot",
+  "sku": "GALILEO-S1-Standard",
+  "desc": "Galileo S1-W Standard Edition Wheel-Leg Quadruped Robot for Heavy, Fast Site Logistics\r\nOn a large plant, warehouse yard or campus, the problem is often distance as much as terrain.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-s1-standard-edition-quadruped-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-s1-standard-edition-quadruped-robot_1.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo S1 Standard Edition Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/galileo-x-smart.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo X Smart Edition Quadruped Robot",
+  "sku": "GALILEO-X-Smart",
+  "desc": "G",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-smart-q.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo X Smart Edition Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/galileo-e1-w-standard.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Galileo E1-W Standard Edition Wheeled Quadruped Robot",
+  "sku": "GALILEO-E1-W-Standard",
+  "desc": "G",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-e1-w-standar-dedition-wheeled-quadruped.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-e1-w-standard-edition-wheeled.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo E1-W Standard Edition Wheeled Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/galileo-e1-standard.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo E1 Standard Edition Quadruped Robot",
+  "sku": "GALILEO-E1-Standard",
+  "desc": "Galileo E1 Standard Edition Quadruped Robot with Autonomous Navigation for Plant Inspection Rounds\r\nInside a plant, the inspection route rarely stays flat.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-e1-standard-edition-quadruped-robot.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo E1 Standard Edition Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/galileo-c1-w-flagship.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Galileo C1-W Flagship Edition Wheeled Quadruped Robot",
+  "sku": "GALILEO-C1-W-Flagship",
+  "desc": "G",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-c1-w-flagship-edition-wheeled-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-c1-w-flagship-edition-wheeled_.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo C1-W Flagship Edition Wheeled Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/galileo-c1-smart.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Galileo C1 Smart Edition Quadruped Robot",
+  "sku": "GALILEO-C1-Smart",
+  "desc": "Galileo C1 Smart Edition Compact Quadruped Robot with 3D LiDAR and Autonomous Navigation\r\nFor many teams, the first goal with a legged robot is simple: get it to see its surroundings, build a map and walk a route without a joystick.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-c1-smart-edition-quadruped-robot.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo C1 Smart Edition Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/MirrorMe-Black-Panther-II.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "MirrorMe Black Panther II Quadruped Robot",
+  "sku": "MirrorMe-Black-Panther-II",
+  "desc": "\u00a0\r\nMirrorMe Black Panther II\r\nFew machines have reset expectations for legged robots as quickly as the MirrorMe Black Panther II. The 38-kilogram, 0.63-metre quadruped hit 10.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/i/mirrorme-black-panther-ii-quadruped-robot-2.jpg"
+  ],
+  "price": 125000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MIRRORME",
+  "bc": [
+   "Home",
+   "MirrorMe Black Panther II Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/MirrorMe-Apollo.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "MirrorMe Apollo Quadruped Robot",
+  "sku": "MirrorMe-Apollo",
+  "desc": "\u00a0\r\nMirrorMe Apollo\r\nThe MirrorMe Apollo is an industrial-grade quadruped robot built for the environments that stop wheeled machines: long continuous staircases, rubble, rock fields and power infrastructure in extreme cold.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/i/mirrorme-apollo-quadruped-robot-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/i/mirrorme-apollo-quadruped-robot.jpg"
+  ],
+  "price": 55998,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MIRRORME",
+  "bc": [
+   "Home",
+   "MirrorMe Apollo Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/MirrorMe-BAOBAO.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "MirrorMe BAOBAO Wheeled Quadruped Robot",
+  "sku": "MirrorMe-BAOBAO",
+  "desc": "\u00a0\r\nMirrorMe BAOBAO\r\nThe MirrorMe BAOBAO is a consumer home robot that changes shape to suit the moment.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/i/mirrorme-baobao-wheeled-quadruped-robot.jpg"
+  ],
+  "price": 11698,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MIRRORME",
+  "bc": [
+   "Home",
+   "MirrorMe BAOBAO Wheeled Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/MirrorMe-BPX-Pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "MirrorMe BPX Pro Quadruped Robot",
+  "sku": "MirrorMe-BPX-Pro",
+  "desc": "\u00a0\r\nMirrorMe BPX Pro\r\nThe MirrorMe BPX Pro is the high-performance edition of the Black Panther X, an open modular quadruped that ships as more than 500 industrial-grade components for the user to assemble, program and extend.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/i/mirrorme-bpxpro-quadruped-robot.jpg"
+  ],
+  "price": 7995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MIRRORME",
+  "bc": [
+   "Home",
+   "MirrorMe BPX Pro Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/genisom-m1-pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Genisom M1 Pro Quadruped Robot",
+  "sku": "Genisom-M1-Pro",
+  "desc": "Genisom M1 Pro Industrial Quadruped Robot\r\nMost robot dogs on patrol can see. Far fewer can speak, listen and follow a specific person through a crowd. The Genisom M1 Pro adds exactly those abilities to GENISOM AI's rugged M1 platform.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-m1-pro-quadruped-robot.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-m1-pro-quadruped-robot-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-m-_pro-quadruped-robot-4.jpg"
+  ],
+  "price": 59999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom M1 Pro Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/genisom-m1-roamerx-pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Genisom M1 RoamerX Pro Quadruped Robot",
+  "sku": "Genisom-M1-RoamerX-Pro",
+  "desc": "Genisom M1 RoamerX Pro Autonomous Quadruped Robot\r\nAn industrial robot dog earns its keep on the routes nobody wants to walk: the 2 a.m. substation round, the long fence line in the rain, the plant corridor checked every hour.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-m1-roamerx-pro-quadruped-robot-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/o/robot_cuadr_pedo_de_inspecci_n_futurista.png"
+  ],
+  "price": 55999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom M1 RoamerX Pro Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/genisom-l1-w-edu-roamerx-pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Genisom L1-W EDU RoamerX Pro Wheeled Quadruped Robot",
+  "sku": "Genisom-L1-W-EDU-RoamerX-Pro",
+  "desc": "Genisom L1-W EDU RoamerX Pro Wheeled Quadruped Robot\r\nFor most robotics labs, the hardest part of an autonomy project is not the robot.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-l1-edu-quadruped-robot.jpg"
+  ],
+  "price": 18999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom L1-W EDU RoamerX Pro Wheeled Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/genisom-l1-edu-roamerx-pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Genisom L1 EDU RoamerX Pro Quadruped Robot",
+  "sku": "Genisom-L1-EDU-RoamerX-Pro",
+  "desc": "Genisom L1 EDU RoamerX Pro Quadruped Robot\r\nWheels are efficient on smooth floors, but sand, rubble, loose gravel and broken ground still belong to legs.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-l1-edu-roamerx_.jpg"
+  ],
+  "price": 17499,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom L1 EDU RoamerX Pro Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/genisom-l1-w-edu.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Genisom L1-W EDU Wheeled Quadruped Robot",
+  "sku": "Genisom-L1-W-EDU",
+  "desc": "Genisom L1-W EDU Wheeled Quadruped Robot\r\nMany research teams do not want a finished navigation product.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-l1-edu-roamerx-pro-quadruped-robot-2_1.jpg"
+  ],
+  "price": 12999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom L1-W EDU Wheeled Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/genisom-l1-edu.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Genisom L1 EDU Quadruped Robot",
+  "sku": "Genisom-L1-EDU",
+  "desc": "Genisom L1 EDU Legged Quadruped Robot for Research and Education\r\nA robotics course or lab only teaches as much as its hardware allows.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-l1-edu-roamerx__1.jpg"
+  ],
+  "price": 11499,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom L1 EDU Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/MirrorMe-Black-Panther-X.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "MirrorMe Black Panther X Open Industrial-Grade Quadruped Robot",
+  "sku": "MirrorMe-Black-Panther-X",
+  "desc": "MirrorMe BPX Quadruped RobotMirrorMe BPX Quadruped Robot offers a listed 8 kg effective payload, speeds up to 4 m/s, and 1.5 hours of battery life. Request a quotation for configuration, availability, and delivery details.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/i/mirrorme-black-panther-x-main.jpg"
+  ],
+  "price": 149900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "MIRRORME",
+  "bc": [
+   "Home",
+   "MirrorMe Black Panther X Open Industrial-Grade Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-GO2-PRO-30204-DEMO.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 PRO Robot Dog DEMO",
+  "sku": "Unitree-GO2-PRO-30204-DEMO",
+  "desc": "A Go2 Pro that has been used for demonstrations, offered below the price of a new one. If you can accept a robot that has already been out of its box, this is the least expensive route to the Pro tier we offer.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/U/n/Unitree-GO2-PRO-30204-DEMO.png"
+  ],
+  "price": 3375,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 PRO Robot Dog DEMO"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-W-ROBOT-KIT.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Unitree B2-W Industry Grade Quadruped Robot Dog With Wheels Basic B2-W Kit With Battery, Navigation Kit",
+  "sku": "Unitree-B2-W-ROBOT-KIT",
+  "desc": "The B2-W supplied as a working kit rather than a bare robot: battery and navigation kit included, so the platform arrives ready to commission instead of ready to specify.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/U/n/Unitree-B2-W-ROBOT-KIT.jpg"
+  ],
+  "price": 94600,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2-W Industry Grade Quadruped Robot Dog With Wheels Basic B2-W Kit With Battery, Navigation Kit"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-GO2-X.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 X Robot Dog",
+  "sku": "Unitree-GO2-X",
+  "desc": "Three point seven metres per second, bursts to around five, and a maximum payload of twelve kilograms. The X sits above the Pro in the Go2 range, and if you are going to load this robot or run it hard, that is where the difference shows.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/U/n/Unitree-GO2-X.jpg"
+  ],
+  "price": 5990,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 X Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-ARM-D1.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Servo Robotic Arm D1",
+  "sku": "Unitree-ARM-D1",
+  "desc": "A quadruped that can only look at things is a sensor on legs. Fit the D1 arm and it becomes a mobile manipulator \u2014 able to open, fetch, press and carry rather than merely arrive.The D1 is a servo-driven robotic arm supplied for the Unitree Go2.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/U/n/Unitree-ARM-D1.jpg"
+  ],
+  "price": 4800,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Servo Robotic Arm D1"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/PUDU-D5-W-Wheeled-Quadruped-Robot.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "PUDU D5-W Wheeled Quadruped Robot Dog",
+  "sku": "PUDU-D5-W",
+  "desc": "P",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/u/pudu_d5_quadruped_robot_dog_1.jpg"
+  ],
+  "price": 83995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "PUDU ROBOTICS",
+  "bc": [
+   "Home",
+   "PUDU D5-W Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/PUDU-D5-Quadruped-Robot.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "PUDU D5 Quadruped Robot Dog",
+  "sku": "PUDU-D5",
+  "desc": "P",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/u/pudu-d5.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/u/pudu-d5-2.jpg"
+  ],
+  "price": 69995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "PUDU ROBOTICS",
+  "bc": [
+   "Home",
+   "PUDU D5 Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Genisom-M1-Light-Weight-High-Payload-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Genisom M1 Light Weight High Payload Quadruped Robot Dog",
+  "sku": "Genisom-M1",
+  "desc": "G",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-ai-m1-j.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-ai-m1-h.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-ai-m1-l.jpg"
+  ],
+  "price": 49999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom M1 Light Weight High Payload Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Dobot-Rover-X1-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Dobot Rover X1 Quadruped Robot Dog",
+  "sku": "Dobot-Rover-X1",
+  "desc": "Dobot Rover X1 Quadruped Robot Dog\r\nDesign and Features\r\nConsumer-Oriented Quadruped Design\r\nRover X1 is presented first as a home and lifestyle robot dog.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/o/dobot-rover-x1jpg.jpg"
+  ],
+  "price": 2300,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "DOBOT",
+  "bc": [
+   "Home",
+   "Dobot Rover X1 Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Engineai-JS01-JS01-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "EngineAI JS01 Heavy-Duty Quadruped Robot Dog",
+  "sku": "EngineAI-JS01",
+  "desc": "EngineAI JS01 Heavy-Duty Robotic HoundThe EngineAI JS01 is a heavy-duty quadruped robotic hound, described by EngineAI as its first-of-its-kind \u201cLeopard\u201d platform.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/n/u/nuevo.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "ENGINE AI",
+  "bc": [
+   "Home",
+   "EngineAI JS01 Heavy-Duty Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Genisom-L1-W-Ultra-Compact-Industrial-Grade-Wheeled-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds"
+  ],
+  "name": "Genisom L1-W Ultra Compact Industrial Grade Wheeled Quadruped Robot Dog",
+  "sku": "Genisom-L1-W",
+  "desc": "Genisom L1-W Ultra Compact Industrial Grade Wheeled Quadruped Robot Dog\u00a0\r\nn practice, wheeled-quadruped designs aim to blend two locomotion modes: wheel efficiency on smooth surfaces and legged adaptability on uneven terrain or obstacles.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-ai-l1-wheeled.jpg"
+  ],
+  "price": 8250,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "Genisom L1-W Ultra Compact Industrial Grade Wheeled Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Genisom-L1-Ultra-Compact-Industrial-Grade-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Security-Robots",
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "GENISOM AI GangBeng L1 Series Bionic Quadruped Robot",
+  "sku": "Genisom-L1",
+  "desc": "GENISOM AI GangBeng L1 Series Bionic Quadruped Robot\r\nThe GENISOM AI GangBeng L1 is a compact, industry-grade bionic quadruped robot designed for mobile inspection, security patrol, education, research, and light industrial automation.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-l1-ultra.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/e/genisom-l1-ultra-2.jpg"
+  ],
+  "price": 6600,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GENISOM",
+  "bc": [
+   "Home",
+   "GENISOM AI GangBeng L1 Series Bionic Quadruped Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Dobot-Hexplorer.htm",
+  "cats": [
+   "Quadruped-Robots"
+  ],
+  "name": "Dobot Hexplorer Six-Legged Bionic Robot",
+  "sku": "Dobot-Hexplorer",
+  "desc": "\u00a0\r\n\r\nFour-legged robots spend their lives solving a problem six-legged ones never have: staying upright.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/o/dobot-hexplorer-6.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/o/dobot-hexplorer-7.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/o/dobot-hexplorer-8.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/o/dobot-hexplorer-5.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/o/dobot-hexplorer-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/d/o/dobot-hexplorer-2.jpg"
+  ],
+  "price": 14000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "DOBOT",
+  "bc": [
+   "Home",
+   "Dobot Hexplorer Six-Legged Bionic Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-XF2-F-B2-Xf2-F.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Firefighting-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-F)",
+  "sku": "Unitree-B2-XF2-F",
+  "desc": "A sixty-kilogram, IP67-sealed quadruped that climbs stairs, crosses broken ground and carries over forty kilograms \u2014 configured for fire and rescue duty. What it carries for that duty is the part we will confirm in writing rather than guess at.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2-xf2-a_2_2.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-F)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-XF2-E-B2-Xf2-E.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Firefighting-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-E)",
+  "sku": "Unitree-B2-XF2-E",
+  "desc": "A sixty-kilogram, IP67-sealed quadruped that climbs stairs, crosses broken ground and carries over forty kilograms \u2014 configured for fire and rescue duty. What it carries for that duty is the part we will confirm in writing rather than guess at.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2-xf2-a_2_1.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-E)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-B2-XF2-A.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Firefighting-Robots",
+   "Government-Robots",
+   "Standard-Quadrupeds"
+  ],
+  "name": "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-A)",
+  "sku": "Unitree-B2-XF2-A",
+  "desc": "A sixty-kilogram, IP67-sealed quadruped that climbs stairs, crosses broken ground and carries over forty kilograms \u2014 configured for fire and rescue duty. What it carries for that duty is the part we will confirm in writing rather than guess at.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-b2-xf2-a.jpg"
+  ],
+  "price": 115000,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree B2 Fire Rescue Quadruped Robot Dog (B2-XF2-A)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-GO2-ENT-Go2-Ent.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Ent Quadruped Robot (GO2-ENT)",
+  "sku": "Unitree-GO2-ENT",
+  "desc": "\u00a0\r\nUnitree Go2 Ent Quadruped Robot (GO2-ENT)\r\nMost quadruped robots are judged on how they move. The Unitree Go2 Ent is judged on what it sends back. Unitree's enterprise version of the Go2 keeps the agile, 15 kg legged body of the series.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-ent-quadruped-robot.jpg"
+  ],
+  "price": 13205,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Ent Quadruped Robot (GO2-ENT)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-A2-W-Pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds",
+   "Unitree-A2"
+  ],
+  "name": "Unitree A2-W Pro Wheeled Quadruped Robot Dog (A2W-PRO)",
+  "sku": "Unitree-A2W-PRO",
+  "desc": "The most capable configuration in the A2 range: driven wheels for efficient distance, front and rear industrial LiDAR so nothing is behind the robot unseen, IP67 sealing on main components, and GPS, 4G and tracking included as standard.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-w.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_a2_pro_quadruped_robot_dog_a2-pro__1_2.jpg"
+  ],
+  "price": 46900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree A2-W Pro Wheeled Quadruped Robot Dog (A2W-PRO)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-A2-W-Standard.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Wheeled-Quadrupeds",
+   "Unitree-A2"
+  ],
+  "name": "Unitree A2-W Standard Wheeled Quadruped Robot Dog (A2W-STANDARD)",
+  "sku": "Unitree-A2W-STANDARD",
+  "desc": "Driven wheels on an industrial quadruped: roll efficiently where the ground allows, walk over what it does not. The A2-W Standard is the entry point to the wheeled version, carrying 25 kg on the move and standing under 100.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-w_1.jpg"
+  ],
+  "price": 36900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree A2-W Standard Wheeled Quadruped Robot Dog (A2W-STANDARD)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-A2-Pro.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-A2"
+  ],
+  "name": "Unitree A2 Pro Quadruped Robot Dog",
+  "sku": "Unitree-A2-PRO",
+  "desc": "Two industrial LiDAR units, front and rear, so the robot sees behind itself.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-a2_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_a2_pro_quadruped_robot_dog_a2-pro__1_1.jpg"
+  ],
+  "price": 38950,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree A2 Pro Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-W-U4-Go2-W-Ultimate-Package.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Wheeled-Quadrupeds",
+   "Unitree-Go2",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Wheeled Quadruped Robot Dog Ultimate Package (Go2-W-U4)",
+  "sku": "Unitree-Go2-W-U4",
+  "desc": "The Ultimate package sits above the Smart in the Go2-W range.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_ultimate_package_go2-w-u4_.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_2_8.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_inspection_wheeled_robotic_dog_3.jpg"
+  ],
+  "price": 20999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Wheeled Quadruped Robot Dog Ultimate Package (Go2-W-U4)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Went-U5-Go2-W-Ent-Mtptz.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Unitree-Quadruped-Robots",
+   "Wheeled-Quadrupeds",
+   "Unitree-Go2",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Ent- Mtptz Wheeled Quadruped Robot Dog (Go2-W Ent-U5)",
+  "sku": "Unitree-Go2-W-Ent-U5",
+  "desc": "A pan-tilt-zoom camera on a robot that rolls efficiently and walks when it has to.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-w-ent-u5.jpg"
+  ],
+  "price": 22799,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Ent- Mtptz Wheeled Quadruped Robot Dog (Go2-W Ent-U5)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-A2-Standard-Robot-Dog.htm",
+  "cats": [
+   "Quadruped-Robots",
+   "Standard-Quadrupeds",
+   "Unitree-A2"
+  ],
+  "name": "Unitree A2 Standard Quadruped Robot Dog (Coming Q4 2026)",
+  "sku": "Unitree-A2-STANDARD",
+  "desc": "Thirty-seven kilograms of robot that will stand under a hundred, walk twenty kilometres on a charge and swap its own batteries without shutting down.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-a2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_a2_pro_quadruped_robot_dog_a2-pro__1.jpg"
+  ],
+  "price": 29995,
+  "cur": "USD",
+  "avail": "http://schema.org/PreOrder",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree A2 Standard Quadruped Robot Dog (Coming Q4 2026)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Alpha-T1-Security-Patrol.htm",
+  "cats": [
+   "Security-Robots",
+   "Inspection-Robots",
+   "Government-Robots"
+  ],
+  "name": "Alpha Robotics Special Forces T1 Security Patrol Robot",
+  "sku": "Alpha-T1-Security-Patrol",
+  "desc": "A",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/l/alpha-t1-security-patrol.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "ALPHA ROBOT",
+  "bc": [
+   "Home",
+   "Alpha Robotics Special Forces T1 Security Patrol Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Alpha-CatCop.htm",
+  "cats": [
+   "Security-Robots",
+   "Inspection-Robots",
+   "Government-Robots"
+  ],
+  "name": "Alpha Robotics CatCop Security Patrol Robot",
+  "sku": "Alpha-CatCop",
+  "desc": "A",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/a/l/alpha-robot-catcop.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "ALPHA ROBOT",
+  "bc": [
+   "Home",
+   "Alpha Robotics CatCop Security Patrol Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Rotunbot-RT-G.htm",
+  "cats": [
+   "Security-Robots",
+   "Inspection-Robots",
+   "Government-Robots"
+  ],
+  "name": "Rotunbot RT-G Spherical Amphibious Patrol Robot",
+  "sku": "Rotunbot-RT-G",
+  "desc": "Rotunbot RT-G Spherical Amphibious Patrol Robot\r\nThe Rotunbot RT-G is an intelligent spherical robot developed by Rotunbot, also known as Logic/Logon Technology, for professional patrol, inspection, detection, and security applications.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/R/o/Rotunbot-RT-G-1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/o/rotunbot-rt-g-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/o/rotunbot-rt-g-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/o/rotunbot-rt-g-3.jpg"
+  ],
+  "price": 107412.34,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "ROTUNBOT",
+  "bc": [
+   "Home",
+   "Rotunbot RT-G Spherical Amphibious Patrol Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M40D-880T-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Firefighting Robot (RXR-M40D-880T)",
+  "sku": "Guo-Xing-RXR-M40D-880T",
+  "desc": "G",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-m40d-880t_1.jpg"
+  ],
+  "price": 35895,
+  "cur": "USD",
+  "avail": "http://schema.org/BackOrder",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Firefighting Robot (RXR-M40D-880T)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-C6BD-Explosion-Proof-Inspection-Patrol-Rescue-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Explosion Proof Inspection Patrol Rescue Robot (RXR-C6BD)",
+  "sku": "Guo-Xing-RXR-C6BD",
+  "desc": "Guo Xing Explosion Proof Inspection Patrol Rescue Robot (RXR-C6BD)\r\nDesigned and produced according to\u00a0GB3836-2010 explosion-proof standard.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-c6bd.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Explosion Proof Inspection Patrol Rescue Robot (RXR-C6BD)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-YM100000D-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Firefighting Robot + Free Delivery (RXR-YM100000D)",
+  "sku": "Guo-Xing-RXR-YM100000D",
+  "desc": "Guo Xing Firefighting Robot + Free Delivery (RXR-YM100000D)\r\nWithin Guoxing\u2019s product lineup, the RXR-YM100000D sits in the category of\u00a0high-reach multifunction firefighting robots.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo-xing-rxr-ym100000d.jpg"
+  ],
+  "price": 119995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Firefighting Robot + Free Delivery (RXR-YM100000D)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M80D-15KT-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Firefighting Robot (RXR-M80D-15KT)",
+  "sku": "Guo-Xing-RXR-M80D-15KT",
+  "desc": "Guo Xing Firefighting Robot (RXR-M80D-15KT)\r\nThe RXR-M80D-15KT belongs to Guoxing\u2019s broader firefighting robot family, which is built for industrial, municipal, and emergency-response use rather than consumer or light commercial applications.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-m80d-15kt.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Firefighting Robot (RXR-M80D-15KT)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-MC80BD-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Explosion-Proof Fire Extinguishing Reconnaissance Robot (RXR-MC80BD)",
+  "sku": "Guo-Xing-RXR-MC80BD",
+  "desc": "Guo Xing Explosion-proof Fire Extinguishing Reconnaissance Robot (RXR-MC80BD)\r\nAs its name suggests, the RXR-MC80BD combines two core functions:\u00a0fire extinguishing and reconnaissance.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo-xing-rxr-mc80bd.jpg"
+  ],
+  "price": 85000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Explosion-Proof Fire Extinguishing Reconnaissance Robot (RXR-MC80BD)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-MC100BGD-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Electric-Driven Explosion Proof 4WD Firefighting Robot (RXR-MC100BGD)",
+  "sku": "Guo-Xing-RXR-MC100BGD",
+  "desc": "G",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo-xing-rxr-mc100bgd.jpg"
+  ],
+  "price": 149950,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Electric-Driven Explosion Proof 4WD Firefighting Robot (RXR-MC100BGD)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M150GD-4Wd-Diesel-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing 4WD Diesel Firefighting Robot (RXR-M150GD)",
+  "sku": "Guo-Xing-RXR-M150GD",
+  "desc": "The Guo Xing RXR-M150GD is a four-wheel-drive diesel firefighting robot, the largest in the range. Wheeled 4WD drive favours speed and range across open ground over the tracked models' grip on broken terrain.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-m150gd.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing 4WD Diesel Firefighting Robot (RXR-M150GD)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-dry-powder-extinguishing-robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky Fire-Fighting Dry Powder Extinguishing Robot",
+  "sku": "Topsky-Dry-Powder-Extinguishing-Robot",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-fire-fighting-dry-powder_.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Fire-Fighting Dry Powder Extinguishing Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-rxr-m80lgd.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky All-Terrain Fire Fighting Robot",
+  "sku": "Topsky-RXR-M80LGD",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-all-terrain-fire.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky All-Terrain Fire Fighting Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-explosion-proof-fire-smoke-robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky Explosion Proof Fire Extinguishing And Smoke Exhaust Robot",
+  "sku": "Topsky-Explosion-Proof-Fire-Smoke-Robot",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-explosion-proof-fire-extinguishing.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Explosion Proof Fire Extinguishing And Smoke Exhaust Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-rxr-mc80bgd.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky Firefighting Smoke Exhaust And Fire Extinguishing Robot",
+  "sku": "Topsky-RXR-MC80BGD",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky_firefighting-smoke-exhaust.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Firefighting Smoke Exhaust And Fire Extinguishing Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-firefighting-reconnaissance-modeling-robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky Firefighting Reconnaissance Modeling Robot",
+  "sku": "Topsky-Firefighting-Reconnaissance-Modeling-Robot",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-firefighting-reconnaissance.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Firefighting Reconnaissance Modeling Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-rxr-c10d.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky Small Fire Reconnaissance Robot",
+  "sku": "Topsky-RXR-C10D",
+  "desc": "Overview 2 .",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-c10d-2_.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-c10d-3.jpg"
+  ],
+  "price": 18999.95,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Small Fire Reconnaissance Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/topsky-rxr-m30lg.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky Portable Electric Wheel Four-Wheel Drive Fire Fighting Robot",
+  "sku": "Topsky-RXR-M30LG",
+  "desc": "Overview Overall performance parameter Fire extinguishing system parameter Key Features and Specifications  1.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-logo_1_2.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Portable Electric Wheel Four-Wheel Drive Fire Fighting Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M80D-13KT-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Firefighting Robot (RXR-M80D-13KT)",
+  "sku": "Guo-Xing-RXR-M80D-13KT",
+  "desc": "The Guo Xing RXR-M80D-13KT is a tracked firefighting robot in the larger end of the RXR range, intended for incidents needing more capability than the compact models deliver.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-m80d-13kt.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Firefighting Robot (RXR-M80D-13KT)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-B3B3RXR-M40D-11KT-Fire-Fighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Fire Extinguishing Robot (B3B3RXR-M40D-11KT)",
+  "sku": "Guo-Xing-B3B3RXR-M40D-11KT",
+  "desc": "Fire Fighting Robot (B3B3RXR-M40D-11KT )\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nCompact tracked firefighting platform\r\nA defining feature of the RXR-M40D-11KT is its compact, low-profile design.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo-xing-rxr-m40d-11kt.jpg"
+  ],
+  "price": 31325,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Fire Extinguishing Robot (B3B3RXR-M40D-11KT)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M40D-11KT-Firefighting-Robot-17202.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Firefighting Robot (RXR-M40D-11KT)",
+  "sku": "Guo-Xing-RXR-M40D-11KT",
+  "desc": "Overview\nThe Guo Xing Firefighting Robot RXR-M40D-11KT is a tracked, remote-operated firefighting platform designed to carry a fire monitor into hazardous incident zones while its operator controls the machine from a separate position.",
+  "image": "https://www.robotsinternational.com/pub/media/catalog/product",
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Firefighting Robot (RXR-M40D-11KT)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Topsky-Tianlong-Conquest-D5-RXR-MC80BD.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Topsky Tianlong Conquest D5 Explosion-Proof Fire Fighting Robot (RXR-MC80BD)",
+  "sku": "Topsky-D5-RXR-MC80BD",
+  "desc": "T",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-rxr-mc80bd-3.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-rxr-mc80bd-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-rxr-mc80bd-4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/t/o/topsky-rxr-mc80bd-main.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "TOPSKY",
+  "bc": [
+   "Home",
+   "Topsky Tianlong Conquest D5 Explosion-Proof Fire Fighting Robot (RXR-MC80BD)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-DAMS-Disinfectant-Atomizing-Mist-Spraying-Disinfection-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Disinfectant Atomizing Mist Spraying Disinfection Robot (DAMS)",
+  "sku": "Guo-Xing-DAMS",
+  "desc": "The Guo Xing DAMS is a disinfection robot that applies disinfectant as an atomised mist, covering surfaces and the air volume of a space more evenly than manual spraying and without placing staff in the treated area.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_9.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Disinfectant Atomizing Mist Spraying Disinfection Robot (DAMS)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-KT200-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Robot Chassis (KT200)",
+  "sku": "Guo-Xing-KT200",
+  "desc": "The Guo Xing KT200 is a compact tracked robot chassis supplied as a bare mobility platform.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_12.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Robot Chassis (KT200)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-Safari-138T-Mini-Crawler-Tracked-Tank-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Mini Crawler Tracked Tank Robot Chassis (Safari-138T)",
+  "sku": "Guo-Xing-Safari-138T",
+  "desc": "The Guo Xing Safari 138T is a mini crawler tracked chassis. The tracked drive gives it footing on loose, uneven and sloped ground that defeats wheeled platforms of a similar size, while keeping the overall footprint small enough for confined work.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_13.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Mini Crawler Tracked Tank Robot Chassis (Safari-138T)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-PS800-All-Terrain-Robot-Arm-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing All Terrain Robot Arm Chassis (PS800)",
+  "sku": "Guo-Xing-PS800",
+  "desc": "The Guo Xing PS800 is an all-terrain chassis prepared for a robot arm, supplied as the mobile base for a manipulator rather than as a transport-only platform.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_14.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing All Terrain Robot Arm Chassis (PS800)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-PKT1100-Explosion-Proof-Tracked-Tank-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Explosion-Proof Tracked Tank Robot Chassis (PKT1100)",
+  "sku": "Guo-Xing-PKT1100",
+  "desc": "The Guo Xing PKT1100 is an explosion-proof tracked robot chassis, built for atmospheres where ignition risk rules out standard electrical equipment.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/k/pkt1100.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Explosion-Proof Tracked Tank Robot Chassis (PKT1100)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-LKT2000-Heavy-Load-Large-Big-Tracked-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Heavy Load Large Big Tracked Robot Chassis (LKT2000)",
+  "sku": "Guo-Xing-LKT2000",
+  "desc": "The Guo Xing LKT2000 is the heavy-load build in the large tracked chassis range, intended where the payload rather than the terrain is the limiting factor.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/l/k/lkt2000.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Heavy Load Large Big Tracked Robot Chassis (LKT2000)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-880Tenhanced-Heavy-Duty-Tracked-Robot-Chassis-Safari.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Heavy Duty Tracked Robot Chassis Safari (880T Enhanced)",
+  "sku": "Guo Xing-880T-Enhanced",
+  "desc": "The Guo Xing Safari 880T Enhanced is the heavy-duty build of the 880T tracked chassis, specified where the standard platform is working at the limit of its duty \u2014 heavier payloads, longer shifts or harsher ground.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_15.png"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Heavy Duty Tracked Robot Chassis Safari (880T Enhanced)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-LKT1500-Heavy-Duty-Large-Off-Road-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Heavy Duty Large Off Road Robot Chassis (LKT1500)",
+  "sku": "Guo-Xing-LKT1500",
+  "desc": "The Guo Xing LKT1500 is a heavy-duty off-road robot chassis. It is built for open ground and site work rather than indoor use, and is supplied as a mobility base for integrators to build onto.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_16.png"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Heavy Duty Large Off Road Robot Chassis (LKT1500)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-Safari-600T-RC-Mobile-Tank-All-Terrain-Tracked-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing RC Mobile Tank All Terrain Tracked Robot Chassis (Safari - 600T)",
+  "sku": "Guo-Xing-Safari---600T",
+  "desc": "The Guo Xing Safari 600T is a remote-control tracked robot chassis built for all-terrain work. It sits in the middle of the Safari range, balancing carrying capacity against a platform size that remains manageable to transport.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_17.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing RC Mobile Tank All Terrain Tracked Robot Chassis (Safari - 600T)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-AT-2000-Amphibious-Tracked-Crawler-Tank-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Amphibious Tracked Crawler Tank Robot Chassis (AT-2000)",
+  "sku": "Guo-Xing-AT-2000",
+  "desc": "The Guo Xing AT-2000 is an amphibious tracked crawler chassis, able to operate across ground and water rather than being confined to dry land.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_18.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Amphibious Tracked Crawler Tank Robot Chassis (AT-2000)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-00Tmini-Remote-Control-Smart-Custom-Lightweight-Robot-Chasiss-6.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Remote Control Smart Custom Lightweight Robot Chasiss 6 (00Tmini)",
+  "sku": "Guo-Xing-00T-mini",
+  "desc": "The Guo Xing 00T mini is a lightweight remote-control robot chassis built for custom integration. It is the smallest platform in the Guo Xing tracked range and is intended for payloads where size and weight matter more than carrying capacity.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_19.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Remote Control Smart Custom Lightweight Robot Chasiss 6 (00Tmini)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-Safari-900T-Stair-Climbing-Big-Tracked-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Stair Climbing Big Tracked Robot Chassis (Safari - 900T)",
+  "sku": "Guo-Xing-Safari-900T",
+  "desc": "The Guo Xing Safari 900T is a large tracked robot chassis with stair-climbing capability, built for environments designed around people \u2014 stairwells, kerbs and thresholds \u2014 as well as open rough ground.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_20.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Stair Climbing Big Tracked Robot Chassis (Safari - 900T)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M60D-Multifunctional-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Multifunctional Fire Fighting Robot (RXR-M60D)",
+  "sku": "Guo-Xing-RXR-M60D",
+  "desc": "The Guo Xing RXR-M60D is a multifunctional firefighting robot \u2014 a tracked, remotely operated machine that carries a water or foam monitor into fires that crews cannot safely approach.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_21.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Multifunctional Fire Fighting Robot (RXR-M60D)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-PKT1300-Large-Explosionproof-Fire-Fighting-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Large Explosionproof Firefighting Robot Chassis (PKT1300)",
+  "sku": "Guo-Xing-PKT1300",
+  "desc": "The Guo Xing PKT1300 is a large explosion-proof chassis configured for firefighting duty, combining hazardous-area construction with the size needed to carry fire equipment.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/_/k/_kt1300.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Large Explosionproof Firefighting Robot Chassis (PKT1300)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-Safari-900T-Enhanced-Mobile-Rubber-Tracked-Mobile-Robot-Platform-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Mobile Rubber Tracked Mobile Robot Platform Chassis (Safari - 900T Enhanced)",
+  "sku": "Guo-Xing-Safari-900T-Enhanced",
+  "desc": "The Guo Xing Safari 900T Enhanced is a rubber-tracked mobile robot platform, the uprated build of the 900T. Rubber tracks spread load and protect finished floors while retaining grip on loose ground outdoors.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_22.png"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Mobile Rubber Tracked Mobile Robot Platform Chassis (Safari - 900T Enhanced)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-DRCWE-Disinfection-Robot-Chassis-With-Electric.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Disinfection Robot Chassis With Electric",
+  "sku": "Guo-Xing-DRCWE",
+  "desc": "The Guo Xing DRCWE is an electric disinfection robot chassis \u2014 the mobile base and drive for a disinfection payload, supplied for integrators building or adapting their own system.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_24.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Disinfection Robot Chassis With Electric"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-GXBOX510-EOD-Robot-GX-BOX510.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing EOD Robot GX BOX510",
+  "sku": "Guo-Xing-GX-BOX510",
+  "desc": "The Guo Xing GX BOX510 is an EOD robot \u2014 explosive ordnance disposal \u2014 operated remotely so that suspect devices can be approached, inspected and handled without putting an operator at the scene.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_23.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing EOD Robot GX BOX510"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-Safari-880T-Steering-Climbing-All-Terrain-Tracked-Robot-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Steering Climbing All Terrain Tracked Robot Chassis (Safari - 880T)",
+  "sku": "Guo-Xing-Safari-880T",
+  "desc": "The Guo Xing Safari 880T is an all-terrain tracked chassis with steering and climbing capability, intended for ground that includes gradients and obstacles rather than flat, prepared surfaces.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_26.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Steering Climbing All Terrain Tracked Robot Chassis (Safari - 880T)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M120D-Diesel-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Diesel Firefighting Robot (RXR-M120D)",
+  "sku": "Guo-Xing-RXR-M120D",
+  "desc": "The Guo Xing RXR-M120D is a diesel-powered firefighting robot. Diesel drive gives it endurance independent of battery charge, which matters on long incidents and at sites without ready charging.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/x/rxr-m120d.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Diesel Firefighting Robot (RXR-M120D)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-RXR-M60L-15M-High-Firefighting-Robot.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing 15M High Firefighting Robot (RXR-M60L)",
+  "sku": "Guo-Xing-RXR-M60L",
+  "desc": "The Guo Xing RXR-M60L is a firefighting robot with an elevating monitor, designated 15M in the model name for its working height.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_25.png"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing 15M High Firefighting Robot (RXR-M60L)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-KT500-Guoxing-RC-Forest-Terrain-Slope-Mower.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Guoxing RC Forest Terrain Slope Mower (KT500)",
+  "sku": "Guo-Xing-KT500",
+  "desc": "The Guo Xing KT500 is a remote-control slope mower built for forest and rough terrain. It is driven from outside the cutting area, which removes the rollover risk that makes steep-ground mowing dangerous with ride-on machines.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/u/guo_27.png"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Guoxing RC Forest Terrain Slope Mower (KT500)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-PLT1000-Waterproof-Crawler-Robot-Tank-Chassis.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Waterproof Crawler Robot Tank Chassis (PLT1000)",
+  "sku": "Guo-Xing-PLT1000",
+  "desc": "G",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/l/plt1000.jpg"
+  ],
+  "price": 12500,
+  "cur": "USD",
+  "avail": "http://schema.org/BackOrder",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Waterproof Crawler Robot Tank Chassis (PLT1000)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-SAFARI-600T-Tracked-Robot-Chassis-Platform.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo-Xing Tracked Robot Chassis Platform (SAFARI-600T)",
+  "sku": "Guo-Xing-SAFARI-600T",
+  "desc": "A universal crawler robot chassis, the whole vehicle adopts Christie independent suspension design, better to achieve the shock absorber. High torque DC brushless motor is installed inside to provide strong power for the chassis.",
+  "image": "https://www.robotsinternational.com/pub/media/catalog/productno_selection",
+  "price": 9995,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo-Xing Tracked Robot Chassis Platform (SAFARI-600T)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Guo-Xing-PS1000-Tracked-Robot-Chassis-Platform.htm",
+  "cats": [
+   "Firefighting-Robots",
+   "Government-Robots"
+  ],
+  "name": "Guo Xing Tracked Robot Chassis Platform (PS1000)",
+  "sku": "Guo-Xing-PS1000",
+  "desc": "The double swing arm robot chassis should have the ability to efficiently cross obstacles and ditches for non-structural road conditions, and can swing part of the arm separately to complete climbing and crossing.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/s/ps1000.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GUO XING",
+  "bc": [
+   "Home",
+   "Guo Xing Tracked Robot Chassis Platform (PS1000)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-GD01.htm",
+  "cats": [
+   "Emergency-Response-Robots",
+   "Inspection-Robots",
+   "Government-Robots"
+  ],
+  "name": "Unitree GD01 Manned Transformable Mecha Robot",
+  "sku": "Unitree-GD01",
+  "desc": "Every robot ever sold had one thing in common: you stood next to it. The Unitree GD01 is the machine that ends that era \u2014 the world's first production-ready manned transformable mecha, a robot with a driver's seat.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_gd01_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_gd01_1.jpg"
+  ],
+  "price": 650000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree GD01 Manned Transformable Mecha Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/BMR-Measuring-Robot.htm",
+  "cats": [
+   "Inspection-Robots"
+  ],
+  "name": "BMR Construction Measuring Robot",
+  "sku": "BMR-Measuring-Robot",
+  "desc": "Every trade on a building site produces something; one discipline decides whether it counts.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/b/m/bmr-measuring-robot_1.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "BMR",
+  "bc": [
+   "Home",
+   "BMR Construction Measuring Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-G4D-LH120.htm",
+  "cats": [
+   "Inspection-Robots"
+  ],
+  "name": "Galileo G4D-LH120 4D Millimeter Wave Radar",
+  "sku": "GALILEO-G4D-LH120",
+  "desc": "Galileo G4D-LH120 4D Millimeter Wave Radar is a GalileoTime 4D Millimeter Wave Radar product configured for professional robotics and technical procurement workflows.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-g4d-lh120-4d-millimeter-wave-radar.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo G4D-LH120 4D Millimeter Wave Radar"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-GAS200.htm",
+  "cats": [
+   "Inspection-Robots"
+  ],
+  "name": "Galileo GAS200 4D Millimeter Wave Radar",
+  "sku": "GALILEO-GAS200",
+  "desc": "Galileo GAS200 4D Millimeter Wave Radar is a GalileoTime 4D Millimeter Wave Radar product configured for professional robotics and technical procurement workflows.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-gas200-4d-millimeter-wave-radar-1.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo GAS200 4D Millimeter Wave Radar"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-PX2-05.htm",
+  "cats": [
+   "Inspection-Robots"
+  ],
+  "name": "Galileo PX2-05 X-Band 2D Phased Array Radar",
+  "sku": "GALILEO-PX2-05",
+  "desc": "Galileo PX2-05 X-band 2D Phased Array Radar is a GalileoTime X-band 2D Phased Array Radar product configured for professional robotics and technical procurement workflows.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-px2-05-x-band-2d-phased-array-radar.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo PX2-05 X-Band 2D Phased Array Radar"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/GALILEO-PX2-10.htm",
+  "cats": [
+   "Inspection-Robots"
+  ],
+  "name": "Galileo PX2-10 X-Band 2D Phased Array Radar",
+  "sku": "GALILEO-PX2-10",
+  "desc": "Galileo PX2-10 X-band 2D Phased Array Radar is a GalileoTime X-band 2D Phased Array Radar product configured for professional robotics and technical procurement workflows.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/a/galileo-px2-10-x-band-2d-phased-array-radar.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "GALILEO",
+  "bc": [
+   "Home",
+   "Galileo PX2-10 X-Band 2D Phased Array Radar"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-W-U5-Go2-W-Inspection-Package.htm",
+  "cats": [
+   "Inspection-Robots",
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Inspection Package (Go2-W-U5)",
+  "sku": "Unitree-Go2-W-U5",
+  "desc": "The Inspection package is the most expensive configuration in the Go2-W range by a wide margin, which tells you it carries substantially more than compute.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_inspection_wheeled_robotic_dog.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_ent-plus_go2-w_ent-u2__2.jpg"
+  ],
+  "price": 32299,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Inspection Package (Go2-W-U5)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-P150-Ultimate-14KW-6B4C-P150-Ultimate-14KW-6B4C-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P150 Ultimate Agricultural Drone 14KW 6B4C Kit",
+  "sku": "XAG-P150-Ultimate-14KW-6B4C",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/1/p150-max.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p100_pro_60l_premium_8b3c_kit_xag-p100-pro-standard__1_1.jpg"
+  ],
+  "price": 40630,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P150 Ultimate Agricultural Drone 14KW 6B4C Kit"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-05-002-02640-4-Nozzle-Upgrade-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG 4-Nozzle Upgrade Kit (05-002-02640)",
+  "sku": "XAG-05-002-02640",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_4-nozzle_upgrade_kit_05-002-02640_.jpg"
+  ],
+  "price": 545,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG 4-Nozzle Upgrade Kit (05-002-02640)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-09-027-00003-90W-LED-Headlight.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG 90W LED Headlight (09-027-00003)",
+  "sku": "XAG-09-027-00003",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_90w_led_headlight_09-027-00003_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_90w_led_headlight_09-027-00003_2.jpg"
+  ],
+  "price": 320,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG 90W LED Headlight (09-027-00003)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-05-002-02683-Landing-Gear-For-Revosling.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG Landing Gear For Revosling (05-002-02683)",
+  "sku": "XAG-05-002-02683",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_landing_gear_for_revosling_05-002-02683_.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_landing_gear_for_revosling_05-002-02683_2.jpg"
+  ],
+  "price": 299,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG Landing Gear For Revosling (05-002-02683)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-05-002-02682-Revosling.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG Revosling (05-002-02682)",
+  "sku": "XAG-05-002-02682",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_revosling_05-002-02682_.jpg"
+  ],
+  "price": 430,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG Revosling (05-002-02682)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-09-023-00146-P150-Max-Revocast-5-With-Screw-Feeder-M.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P150 Max Revocast 5 With Screw Feeder M (09-023-00146)",
+  "sku": "XAG-09-023-00146",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p150_max_revocast_5_with_screw_feeder_m_09-023-00146_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p150_max_revocast_5_with_screw_feeder_m_09-023-00146_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p150_max_revocast_5_with_screw_feeder_m_09-023-00146_3.jpg"
+  ],
+  "price": 2420,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P150 Max Revocast 5 With Screw Feeder M (09-023-00146)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-05-002-02311-6Kw-Parallel-Charging-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG 6Kw Parallel Charging Kit (05-002-02311)",
+  "sku": "XAG-05-002-02311",
+  "desc": "XAG 6Kw Parallel Charging Kit (05-002-02311)\r\nRetail and manufacturer-facing descriptions commonly associate the kit with\u00a0up to ~6.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_6kw_parallel_charging_kit_05-002-02311_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_6kw_parallel_charging_kit_05-002-02311_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_6kw_parallel_charging_kit_05-002-02311_3.jpg"
+  ],
+  "price": 299,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG 6Kw Parallel Charging Kit (05-002-02311)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-09-016-00083-XRTK7-Mobile-Station.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG XRTK7 Mobile Station (09-016-00083)",
+  "sku": "XAG-09-016-00083",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_xrtk7_mobile_station_09-016-00083_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_xrtk7_mobile_station_09-016-00083_2.jpg"
+  ],
+  "price": 990,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG XRTK7 Mobile Station (09-016-00083)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-09-017-00065-2024-Battery-Cooling-Tower.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG 2024 Battery Cooling Tower (09-017-00065)",
+  "sku": "XAG-09-017-00065",
+  "desc": "XAG 2024 Battery Cooling Tower (09-017-00065)\r\nIn some retail channels it is also marketed as an\u00a0\u201cXAG Mist-Cooling Charging Station\u201d, reflecting its core approach: using fine water mist and evaporative cooling to remove heat efficiently.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_2024_battery_cooling_tower_09-017-00065_.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_2024_battery_cooling_tower_09-017-00065_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_2024_battery_cooling_tower_09-017-00065_3.jpg"
+  ],
+  "price": 199,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG 2024 Battery Cooling Tower (09-017-00065)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-09-017-00083-B141050-Smart-Super-Charge-Battery.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG B141050 Smart Super Charge Battery (09-017-00083)",
+  "sku": "XAG-09-017-00083",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag-logo_2.jpg"
+  ],
+  "price": 1690,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG B141050 Smart Super Charge Battery (09-017-00083)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-09-016-00085-SRC5-Smart-Remote-Controller.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG SRC5 Smart Remote Controller (09-016-00085)",
+  "sku": "XAG-09-016-00085",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_src5_smart_remote_controller_09-016-00085_1_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_src5_smart_remote_controller_09-016-00085_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_src5_smart_remote_controller_09-016-00085__1.jpg"
+  ],
+  "price": 1990,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG SRC5 Smart Remote Controller (09-016-00085)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-09-007-00158-P150-Max-Agricultural-Drone-With-Revospray-5.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P150 Max Agricultural Drone With Revospray 5 (09-007-00158)",
+  "sku": "XAG-09-007-00158",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p150_max_agricultural_drone_with_revospray_5_09-007-00158_.jpg"
+  ],
+  "price": 19990,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P150 Max Agricultural Drone With Revospray 5 (09-007-00158)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-XAG-P100-Pro-Premium-P100-Pro-60L-Premium-8B3C-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P100 Pro 60L Premium (8B3C) Kit (XAG-P100-Pro-Premium)",
+  "sku": "XAG-XAG-P100-Pro-Premium",
+  "desc": "XAG P100 Pro 60L Premium (8B3C) Kit (XAG-P100-Pro-Premium)\r\nThe P100 Pro platform is positioned by XAG as a heavy-duty, foldable quadcopter optimized for precision field operations and modular payload swaps.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p100_pro_60l_premium_8b3c_kit_xag-p100-pro-standard__1.jpg"
+  ],
+  "price": 34900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P100 Pro 60L Premium (8B3C) Kit (XAG-P100-Pro-Premium)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-XAG-P100-Pro-Standard-P100-Pro-60L-Premium-8B3C-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P100 Pro 60L Premium (8B3C) Kit (XAG-P100-Pro-Standard)",
+  "sku": "XAG-XAG-P100-Pro-Standard",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p100_pro_60l_premium_8b3c_kit_xag-p100-pro-premium__1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p100_pro_60l_premium_8b3c_kit_xag-p100-pro-standard_.jpg"
+  ],
+  "price": 29999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P100 Pro 60L Premium (8B3C) Kit (XAG-P100-Pro-Standard)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-XAG-P100-Pro-Lite-P100-Pro-60L-Standard-6B2C-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P100 Pro 60L Standard (6B2C) Kit (XAG-P100-Pro-Lite)",
+  "sku": "XAG-XAG-P100-Pro-Lite",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p100_pro_60l_premium_8b3c_kit_xag-p100-pro-standard__1_2.jpg"
+  ],
+  "price": 27999,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P100 Pro 60L Standard (6B2C) Kit (XAG-P100-Pro-Lite)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-XAG-P150-Swarm-28KW-8B8C-P150-Swarm-28KW-8B8C-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P150 Swarm 28KW 8B8C Kit (XAG-P150-Swarm-28KW-8B8C)",
+  "sku": "XAG-XAG-P150-Swarm-28KW-8B8C",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag_p150_swarm_28kw_8b8c_kit.jpg"
+  ],
+  "price": 69660,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P150 Swarm 28KW 8B8C Kit (XAG-P150-Swarm-28KW-8B8C)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-P150-Standard-7KW-6B2C.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P150 Standard 7KW 6B2C Kit",
+  "sku": "XAG-P150-Standard-7KW-6B2C",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag-p150_3.jpg"
+  ],
+  "price": 35590,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P150 Standard 7KW 6B2C Kit"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-P150-Standard-14KW-4B4C.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P150 Standard Agricultural Drone 14KW 4B4C Kit",
+  "sku": "XAG-P150-Standard-14KW-4B4C",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag-p150_2.jpg"
+  ],
+  "price": 34830,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P150 Standard Agricultural Drone 14KW 4B4C Kit"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/XAG-P150-Max-Starter-7KW-2B2C-Kit.htm",
+  "cats": [
+   "Drones"
+  ],
+  "name": "XAG P150 Max Agricultural Drone Starter 7KW 2B2C Kit",
+  "sku": "XAG-P150-Max-Starter-7KW-2B2C-Kit",
+  "desc": "X",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/x/a/xag-p150_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/p/1/p150-max_1.jpg"
+  ],
+  "price": 28900,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "XAG",
+  "bc": [
+   "Home",
+   "XAG P150 Max Agricultural Drone Starter 7KW 2B2C Kit"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/EngineAI-T800-Pro.htm",
+  "cats": [
+   "Government-Robots"
+  ],
+  "name": "EngineAI T800 Pro Edition Humanoid Robot",
+  "sku": "EngineAI-T800-Pro",
+  "desc": "EngineAI T800 Pro Edition\r\nThe EngineAI T800 is a full-size high-dynamic general-purpose humanoid robot designed for heavy-load, high-mobility, and complex real-world scenarios.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/n/engineai-t800_4.jpg"
+  ],
+  "price": 63000,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "ENGINE AI",
+  "bc": [
+   "Home",
+   "EngineAI T800 Pro Edition Humanoid Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/UBTECH-Cruzr-Intelligent-Commercial-Service-Robot.htm",
+  "cats": [
+   "Government-Robots"
+  ],
+  "name": "UBTECH Cruzr 1S Intelligent Commercial Service Wheeled Humanoid Robot",
+  "sku": "UBTECH-Cruzr",
+  "desc": "U",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/c/r/cruzr-3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-7.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-11.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-1s.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-1s-1.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech_cruzr_1s-3.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/b/ubtech-cruzr-1s-2.png"
+  ],
+  "price": 15999.99,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UBTECH",
+  "bc": [
+   "Home",
+   "UBTECH Cruzr 1S Intelligent Commercial Service Wheeled Humanoid Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/EngineAI-T800-Open-Source.htm",
+  "cats": [
+   "Government-Robots"
+  ],
+  "name": "EngineAI T800 EDU Open Source Edition Humanoid Robot",
+  "sku": "EngineAI-T800-Open-Source",
+  "desc": "EngineAI T800 Open Source Edition Humanoid Robot\r\nMost full-size humanoids ask you to choose between raw athletic performance and the freedom to program it. The EngineAI T800 Open Source Edition gives you both.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/n/engineai-t800_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/n/engineai-t800-edu-open-source-2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/n/engineai-t800-edu-open-source_.jpg"
+  ],
+  "price": 49771,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "ENGINE AI",
+  "bc": [
+   "Home",
+   "EngineAI T800 EDU Open Source Edition Humanoid Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/EngineAI-T800-Full-Size-General-Purpose-Humanoid-Robot.htm",
+  "cats": [
+   "Government-Robots"
+  ],
+  "name": "EngineAI T800 Basic Full-Size General-Purpose Humanoid Robot",
+  "sku": "EngineAI-T800",
+  "desc": "The EngineAI T800 Full-Size General-Purpose Humanoid Robot is a full-scale bipedal platform developed by EngineAI Robotics and positioned by the company as part of its general humanoid line, distinct from its earlier, smaller models.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/n/engineai-t800.jpg"
+  ],
+  "price": 41500,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "ENGINE AI",
+  "bc": [
+   "Home",
+   "EngineAI T800 Basic Full-Size General-Purpose Humanoid Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/EngineAI-T800-Police.htm",
+  "cats": [
+   "Government-Robots"
+  ],
+  "name": "EngineAI T800 Police Edition Humanoid Robot",
+  "sku": "EngineAI-T800-Police",
+  "desc": "E",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/r/o/robot-engineeai-1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/n/engineai-t800-police-edition.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "ENGINE AI",
+  "bc": [
+   "Home",
+   "EngineAI T800 Police Edition Humanoid Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/EngineAI-T800-Max.htm",
+  "cats": [
+   "Government-Robots"
+  ],
+  "name": "EngineAI T800 Max Edition Humanoid Robot",
+  "sku": "EngineAI-T800-Max",
+  "desc": "EngineAI T800 Max Edition Humanoid Robot\r\nMost humanoid robots are built to be careful. The EngineAI T800 is built to be strong. At 1.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/e/n/engineai-t800_3.jpg"
+  ],
+  "price": 80800,
+  "cur": "USD",
+  "avail": "http://schema.org/BackOrder",
+  "brand": "ENGINE AI",
+  "bc": [
+   "Home",
+   "EngineAI T800 Max Edition Humanoid Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/SIASUN-MGA-Truss-Robot.htm",
+  "cats": [
+   "SIASUN-Special-Robots"
+  ],
+  "name": "SIASUN MGA Truss Robot",
+  "sku": "SIASUN-MGA-Truss-Robot",
+  "desc": "SIASUN MGA Truss Robot: Modular Gantry for Machine Loading and Handling\r\nPicture a row of CNC lathes, each needing a raw part loaded and a finished part removed every few minutes. An articulated robot can serve one or two of them.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/s/i/siasun-mga-truss-robot-square-1.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/s/i/siasun-mga-truss-robot-square-2.png",
+   "https://www.robotsinternational.com/pub/media/catalog/product/s/i/siasun-mga-truss-robot-square-3.png"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "SIASUN",
+  "bc": [
+   "Home",
+   "SIASUN MGA Truss Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/SIASUN-Trussrobot-Truss-Robot.htm",
+  "cats": [
+   "SIASUN-Special-Robots"
+  ],
+  "name": "SIASUN Truss Robot",
+  "sku": "SIASUN-Truss-Robot",
+  "desc": "Cartesian robots with a horizontal beam supported at both ends are often described as gantry robots.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/s/i/siasun-logo_1_36.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "SIASUN",
+  "bc": [
+   "Home",
+   "SIASUN Truss Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/SIASUN-Modulartrussrobotmseries-Modular-Truss-Robot-M-Series.htm",
+  "cats": [
+   "SIASUN-Special-Robots"
+  ],
+  "name": "SIASUN Modular Truss Robot (M Series) (Modular Truss Robot (M Series))",
+  "sku": "SIASUN-Modular-Truss-Robot-(M-Series)",
+  "desc": "In SIASUN\u2019s positioning, the M Series targets applications where manufacturers need long travel strokes, repeatable positioning, and scalable payload capability while keeping the mechanical architecture configurable for different line layouts (e.g.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/s/i/siasun-logo_1_41.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "SIASUN",
+  "bc": [
+   "Home",
+   "SIASUN Modular Truss Robot (M Series) (Modular Truss Robot (M Series))"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/SIASUN-Mghtrussrobot-MGH-Truss-Robot.htm",
+  "cats": [
+   "SIASUN-Special-Robots"
+  ],
+  "name": "SIASUN MGH Truss Robot",
+  "sku": "SIASUN-MGH-Truss-Robot",
+  "desc": "Truss robots such as the MGH typically operate on linear axes (commonly X/Y/Z and optional additional axes) and are often selected when factories require long travel distances, high payload capacity, and predictable cycle times.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/s/i/siasun-logo_1_42.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "SIASUN",
+  "bc": [
+   "Home",
+   "SIASUN MGH Truss Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/SIASUN-Mgitrussrobot-MGI-Truss-Robot.htm",
+  "cats": [
+   "SIASUN-Special-Robots"
+  ],
+  "name": "SIASUN MGI Truss Robot",
+  "sku": "SIASUN-MGI-Truss-Robot",
+  "desc": "This architecture is widely used for high-throughput pick-and-place, machine tending, pallet handling, and in-line transfer tasks where repeatability, predictable motion, and integration with conveyors or workstations are priorities.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/m/g/mga.jpg"
+  ],
+  "price": 0,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "SIASUN",
+  "bc": [
+   "Home",
+   "SIASUN MGI Truss Robot"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/SIASUN-Mseries-SIASUN-Modular-Truss-Robot.htm",
+  "cats": [
+   "SIASUN-Special-Robots"
+  ],
+  "name": "SIASUN Modular Truss Robot (M Series)",
+  "sku": "SIASUN-M-Series",
+  "desc": "Within SIASUN\u2019s automation portfolio, the M Series is positioned as a modular, standardized truss-robot platform intended for flexible integration into machining cells and multi-process production lines.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/s/i/siasun-logo_2_17.jpg"
+  ],
+  "price": 99,
+  "cur": "USD",
+  "avail": "http://schema.org/OutOfStock",
+  "brand": "SIASUN",
+  "bc": [
+   "Home",
+   "SIASUN Modular Truss Robot (M Series)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-W-Plus-Wheeled-Robot-Dog-Go2-W-U2.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Plus Wheeled Robot Dog (Go2-W-U2)",
+  "sku": "Unitree-Go2-W-U2",
+  "desc": "The U2 Plus is the same robot as the U1 with two and a half times the onboard compute. If anything is going to run on the robot rather than on your desk, this is where the Go2-W range actually starts.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-w-main.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_2_7.jpg"
+  ],
+  "price": 15199,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Plus Wheeled Robot Dog (Go2-W-U2)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Charging-Board.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots"
+  ],
+  "name": "Unitree Go2 Self-Charging Board (GO2-SCHARGB)",
+  "sku": "Unitree-Go2-Charging-Board",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-charging-board.jpg"
+  ],
+  "price": 1195,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Self-Charging Board (GO2-SCHARGB)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Servo-Robotic-Arm.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots"
+  ],
+  "name": "Unitree Go2 Servo Robotic Arm",
+  "sku": "Unitree-Go2-Servo-Robotic-Arm",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-servo-robotic-arm.jpg"
+  ],
+  "price": 3995,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Servo Robotic Arm"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Protective-Bracket.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots"
+  ],
+  "name": "Unitree Go2 Protective Bracket - Optional For Go2 EDU (GO2-PBRACKET)",
+  "sku": "Unitree-Go2-Protective-Bracket",
+  "desc": "The cheapest insurance available for a Go2. A quadruped under development falls, and a bracket is what stops each fall becoming a repair.A protective bracket for the Go2, offered as an option for the Go2 EDU.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-protective-bracket.jpg"
+  ],
+  "price": 495,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Protective Bracket - Optional For Go2 EDU (GO2-PBRACKET)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-R3-Controller.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree R3 Controller \u2013 Wireless Remote For Go2, Go2-W, B2 Robot Dogs & G1, H1 Humanoids (R3CONTR)",
+  "sku": "Unitree-R3CONTR",
+  "desc": "The R3 is Unitree's wireless remote controller, and the useful thing about it is its reach across the range: it drives the Go2 and Go2-W quadrupeds, the B2, and the G1 and H1 humanoids.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_r3_controller_wireless_remote_for_robot_dogs_go2_go2-w_b2_and_humanoids_g1_h1_.jpg"
+  ],
+  "price": 560,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree R3 Controller \\u2013 Wireless Remote For Go2, Go2-W, B2 Robot Dogs & G1, H1 Humanoids (R3CONTR)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Xt16lidar-Go2-W-Lidar.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Lidar (XT16 LiDAR)",
+  "sku": "Unitree-XT16-LiDAR",
+  "desc": "Sixteen-line 3D LiDAR for the Go2-W. Where a depth camera sees detail in front of the robot, LiDAR sees the shape of the whole space \u2014 which is what navigation and mapping actually need.The XT16 is a sixteen-line 3D LiDAR supplied for the Go2-W.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-lidar.jpg"
+  ],
+  "price": 5600,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Lidar (XT16 LiDAR)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-W-Docking-Station-With-Orin-Nx-100Tops.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Docking Station (With Orin Nx 100Tops) ",
+  "sku": "Unitree-Go2-W-Docking-Station",
+  "desc": "This is not simply a charger. The Go2-W docking station carries an NVIDIA Orin NX at 100 TOPS, which makes it a compute resource as much as a parking space.A docking station for the Go2-W with an NVIDIA Orin NX module rated at 100 TOPS built in.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_docking_station_with_orin_nx_100tops_.jpg"
+  ],
+  "price": 3700,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Docking Station (With Orin Nx 100Tops) "
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Went-U2-Go2-W-Ent-Plus.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2-W Ent-Plus (Go2-W Ent-U2)",
+  "sku": "Unitree-Go2-W-Ent-U2",
+  "desc": "The Ent-Plus is the enterprise counterpart to the U2 Plus.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_ent-plus_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_inspection_wheeled_robotic_dog_2.jpg"
+  ],
+  "price": 17000,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2-W Ent-Plus (Go2-W Ent-U2)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-GO2-ENTP-Go2-Ent-Plus.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Ent-Plus (GO2-ENTP)",
+  "sku": "Unitree-GO2-ENTP",
+  "desc": "Introduction and OverviewRobotics buyers increasingly compare platforms by configuration, support and integration risk rather than by headline videos alone.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_ent-plus.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_5_5.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_6.jpg"
+  ],
+  "price": 17005,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Ent-Plus (GO2-ENTP)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-ENT-MTPTZ-RC-Go2-Ent-Mtptz.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Ent-Mtptz (Go2-ENT-MTPTZ-RC)",
+  "sku": "Unitree-Go2-ENT-MTPTZ-RC",
+  "desc": "Introduction and OverviewRobotics buyers increasingly compare platforms by configuration, support and integration risk rather than by headline videos alone.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2-w_wheeled_robot_dog_smart_package_go2-w-u3__1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_4_2.jpg"
+  ],
+  "price": 22705,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Ent-Mtptz (Go2-ENT-MTPTZ-RC)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-GO2-ENT-GAS-Go2-Ent-Gas.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2"
+  ],
+  "name": "Unitree Go2 Ent-Gas (GO2-ENT-GAS)",
+  "sku": "Unitree-GO2-ENT-GAS",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_5_4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go2_2_3.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/g/o/go2_ent_gas_1.jpg"
+  ],
+  "price": 11305,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Ent-Gas (GO2-ENT-GAS)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Docking-Station-100Tops.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots"
+  ],
+  "name": "Unitree Go2 Docking Station 100 Tops",
+  "sku": "Unitree-Go2-Docking-Station-100Tops",
+  "desc": "Introduction and OverviewA Unitree product page needs to separate confirmed engineering context from marketplace noise.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-logo_12.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-docking-station-100-tops.jpg"
+  ],
+  "price": 4400,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Docking Station 100 Tops"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Standard-Version-Battery-8000Mah-Fast-Charging-296V.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2 Standard Version Battery 8000Mah Fast Charging 29.6V (GO2-BATTERY)",
+  "sku": "Unitree-GO2-BATTERY",
+  "desc": "One battery is a session; two is a working day. At this price a spare is the cheapest capability upgrade available for a Go2.The standard 8,000 mAh fast-charging battery pack for the Go2 family, at 29.6 V.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-battery.jpg"
+  ],
+  "price": 560,
+  "cur": "USD",
+  "avail": "http://schema.org/LimitedAvailability",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Standard Version Battery 8000Mah Fast Charging 29.6V (GO2-BATTERY)"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go1-Quadruped-Robot-Dog.htm",
+  "cats": [
+   "Unitree-Quadruped-Robots",
+   "Unitree-Go1"
+  ],
+  "name": "DISCONTINUED - Unitree Go1 Quadruped Robot Dog",
+  "sku": "Unitree-Go1",
+  "desc": "Introduction and OverviewIn modern robotics procurement, the hard question is rarely whether a robot can move, it is whether the exact configuration fits the job.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go1_1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go1_2.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go1.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go1_4.jpg",
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree_go15.jpg"
+  ],
+  "price": 4250,
+  "cur": "USD",
+  "avail": "http://schema.org/Discontinued",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "DISCONTINUED - Unitree Go1 Quadruped Robot Dog"
+  ],
+  "err": ""
+ },
+ {
+  "url": "https://www.robotsinternational.com/Unitree-Go2-Long-Range-15000Mah-Fast-Charge-28V-Battery-GO2-LBATTERY.htm",
+  "cats": [
+   "Unitree-Go2-W"
+  ],
+  "name": "Unitree Go2 Long Range 15000Mah Fast Charge 28.8V Battery (BT2-06)",
+  "sku": "Unitree-GO2-LBATTERY",
+  "desc": "Nearly twice the capacity of the standard pack for a little over a third more money. If you are buying one battery for a Go2, this is usually the one to buy.The long-range 15,000 mAh fast-charging pack, model BT2-06, at 28.8 V.",
+  "image": [
+   "https://www.robotsinternational.com/pub/media/catalog/product/u/n/unitree-go2-battery_1.jpg"
+  ],
+  "price": 750,
+  "cur": "USD",
+  "avail": "http://schema.org/InStock",
+  "brand": "UNITREE ROBOTICS",
+  "bc": [
+   "Home",
+   "Unitree Go2 Long Range 15000Mah Fast Charge 28.8V Battery (BT2-06)"
+  ],
+  "err": ""
+ }
+]
