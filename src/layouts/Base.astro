@@ -46,6 +46,7 @@ const primaryNav = [
   { href: '/directory/', label: 'Directory' },
 ];
 const primaryNavExtra = [
+  { href: '/doomsday-prepper/', label: 'Doomsday Prepper', reveal: 'mid' },
   { href: '/prepper-picks/', label: "Prepper's Picks", reveal: 'mid' },
   { href: '/storm-hurricane-prep/', label: 'Storm prep', reveal: 'mid' },
   { href: '/winter-storm-ready-checklist/', label: 'Checklists', reveal: 'wide' },
@@ -58,6 +59,7 @@ const menuGroups = [
     { href: '/storm-tracker/', icon: '🌀', label: 'Storm tracker' },
     { href: '/winter-storm-ready-checklist/', icon: '✅', label: 'Winter storm checklist' },
     { href: '/prepper-picks/', icon: '⭐', label: "Prepper's Picks" },
+    { href: '/doomsday-prepper/', icon: '🛡️', label: 'Doomsday Prepper' },
     { href: '/storm-hurricane-prep/', icon: '🌀', label: 'Storm prep' },
     { href: '/updates/', icon: '✉️', label: 'Community safety updates' },
   ] },
@@ -172,7 +174,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
       </div>
       <div>
         <p class="foot-h">Gear by lane</p>
-        <ul>{navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.name}</a></li>)}<li><a href="/gear/">Gear directory</a></li><li><a href="/gear/tech/">Newest tech</a></li><li><a href="/directory/">Full Source Directory</a></li><li><a href="/brands/">Brand spotlights</a></li></ul>
+        <ul>{navLanes.map((l) => <li><a href={`/${l.slug}/`}>{l.name}</a></li>)}<li><a href="/gear/">Gear directory</a></li><li><a href="/gear/tech/">Newest tech</a></li><li><a href="/directory/">Full Source Directory</a></li><li><a href="/doomsday-prepper/">Doomsday Prepper</a></li><li><a href="/brands/">Brand spotlights</a></li></ul>
       </div>
       <div>
         <p class="foot-h">Popular guides</p>

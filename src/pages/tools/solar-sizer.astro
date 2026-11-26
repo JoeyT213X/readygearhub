@@ -5,11 +5,11 @@ import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 import '../../styles/interactive.css';
 import appliances from '../../data/appliances.json';
 ---
-<Base title="Solar & Power Station Sizer | ReadyGearHub" description="Estimate panel watts and battery watt-hours from your daily appliance load and the peak sun hours you enter from NREL. Typical appliance watts from Honda Power Equipment.">
+<Base title="Solar & Energy Reserve Sizer | ReadyGearHub" description="Estimate panel watts and battery watt-hours from your daily appliance load and the peak sun hours you enter from NREL. Typical appliance watts from Honda Power Equipment.">
   <section class="page-hero">
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Solar sizer</p>
-      <h1>Solar &amp; power-station sizer</h1>
+      <h1>Solar &amp; energy-reserve sizer</h1>
       <p class="lead">Turn a daily watt-hour load into a panel and battery size using peak sun hours you look up for your location. This is a planning estimate, not a site survey or a substitute for NREL PVWatts or a qualified installer.</p>
     </div>
   </section>
@@ -30,10 +30,10 @@ import appliances from '../../data/appliances.json';
       <label>Usable share of battery rating, percent (your estimate)
         <input type="number" id="usable-pct" min="1" max="100" step="1" value="100" />
       </label>
-      <label>Battery or power-station capacity you already have, watt-hours (optional)
+      <label>Battery or energy-reserve capacity you already have, watt-hours (optional)
         <input type="number" id="capacity-wh" min="0" step="1" value="" placeholder="optional" />
       </label>
-      <p class="fine" style="align-self:end;margin:0">Hours/day are how long you expect to run each load in a day. See <a href="/off-grid-power/">Off-Grid Power</a>, <a href="/power-outage-kits/">Power Outage Kits</a>, and <a href="/guides/how-to-pick-a-portable-power-station/">how to pick a portable power station</a>. The <a href="/tools/power-sizer/">generator &amp; power-station sizer</a> uses the same appliance list without solar inputs.</p>
+      <p class="fine" style="align-self:end;margin:0">Hours/day are how long you expect to run each load in a day. See <a href="/off-grid-power/">Off-Grid Power</a>, <a href="/power-outage-kits/">Power Outage Kits</a>, and <a href="/guides/how-to-pick-an-energy-reserve/">how to pick a portable energy reserve</a>. The <a href="/tools/power-sizer/">generator &amp; energy-reserve sizer</a> uses the same appliance list without solar inputs.</p>
     </form>
     <div id="sizer-results" class="results-panel" style="margin-bottom:20px"></div>
     <div id="appliance-list"></div>

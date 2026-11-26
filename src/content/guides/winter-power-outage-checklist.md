@@ -16,7 +16,7 @@ Ice storms and blizzards are some of the most common causes of long power outage
 
 - [ ] At least one **headlamp or flashlight per person** (a headlamp such as the [Wuben H1](/gear/wuben-h1/) keeps both hands free), plus a **lantern** for each main room (the [Goal Zero Lighthouse 600](/gear/goal-zero-lighthouse-600/) also charges a phone). Skip candles if you can, since they're a leading cause of fires during outages.
 - [ ] A **battery or hand-crank weather radio**, like the [Midland ER310](/gear/midland-er310-crank-radio/), so you can hear alerts if cell service goes down.
-- [ ] Phones, power banks, and any **portable power station** fully charged. Not sure what size you need? See [how to pick a portable power station](/guides/how-to-pick-a-portable-power-station/) or try the [generator & power-station sizer](/tools/power-sizer/).
+- [ ] Phones, power banks, and any **portable energy reserve** fully charged. Not sure what size you need? See [how to pick a portable energy reserve](/guides/how-to-pick-an-energy-reserve/) or try the [generator & energy-reserve sizer](/tools/power-sizer/).
 - [ ] A written list of important phone numbers, in case your phone dies.
 
 **Heat and safety**
@@ -46,7 +46,7 @@ Ice storms and blizzards are some of the most common causes of long power outage
 3. **Never use a generator, grill, camp stove, or charcoal indoors**, in a garage, or near open windows. The CDC says to keep generators at least 20 feet from the home. Carbon monoxide is odorless and can kill quickly. See [carbon monoxide safety during a power outage](/guides/carbon-monoxide-safety-during-an-outage/).
 4. **Keep the fridge and freezer closed.** According to FoodSafety.gov, a closed refrigerator keeps food safe for about 4 hours, and a full closed freezer for about 48 hours (about 24 if half full). Start the [fridge & freezer outage timer](/tools/outage-timer/) when the power goes out.
 5. **Drip faucets** on outside walls to help prevent frozen pipes, if you still have water pressure.
-6. **Use a power station wisely.** Prioritize phones, a radio, lights, medical devices, and your internet router. Don't try to run space heaters off a battery, since they drain it very fast.
+6. **Use an energy reserve wisely.** Prioritize phones, a radio, lights, medical devices, and your internet router. Don't try to run space heaters off a battery, since they drain it very fast.
 7. **Check on neighbors**, especially older adults, people with medical needs, and families with infants.
 8. **Watch for signs of hypothermia**: shivering, confusion, slurred speech, and drowsiness. Get medical help if needed. Warming centers often open during big outages, so listen to local alerts, check the [What's happening now](/#live-status) board or [live NWS alerts](/alerts/), and use your [county resource page](/local/mississippi/) for official local contacts. More ideas: [how to stay warm without power](/guides/how-to-stay-warm-without-power/).
 

@@ -12,7 +12,7 @@ const groups = lanes.map((l) => ({ lane: l, guides: guides.filter((g) => g.data.
 const unlaned = guides.filter((g) => !g.data.lane || !laneBySlug(g.data.lane));
 const latest = guides.slice(0, 3);
 ---
-<Base title="Preparedness Guides & Checklists | ReadyGearHub" description="Plain-English preparedness guides: winter power outage checklist, what to keep in your car for winter, how to pick a portable power station, and more." schema={schema}>
+<Base title="Preparedness Guides & Checklists | ReadyGearHub" description="Plain-English preparedness guides: winter power outage checklist, what to keep in your car for winter, how to pick a portable energy reserve, and more." schema={schema}>
   <PageHero title="Guides & checklists" lead="Checklists and buying help written to be useful, not to upsell. Each guide links to the official sources behind it and the gear it mentions." photo="gear-flatlay" crumbs={[{ label: 'Guides' }]} />
   <section class="wrap section tight">
     <nav aria-label="Guide topics"><ul class="guide-topics">{groups.map((g) => <li><a href={`#${g.lane.slug}`}>{g.lane.icon} {g.lane.name} ({g.guides.length})</a></li>)}</ul></nav>

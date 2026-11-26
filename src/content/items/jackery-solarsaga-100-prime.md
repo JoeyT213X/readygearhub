@@ -4,7 +4,7 @@ brand: "Jackery"
 lane: off-grid-power
 alsoIn: ["storm-hurricane-prep", "home-backup-power-solar"]
 tags: ["solar panel", "portable"]
-description: "A portable solar panel from Jackery designed to pair with Jackery power stations."
+description: "A portable solar panel from Jackery designed to pair with Jackery energy reserves."
 uses:
   - "Recharge a Jackery during outages"
   - "Camping and RV trips"

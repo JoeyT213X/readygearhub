@@ -18,4 +18,4 @@ season: ["hurricane", "summer", "all-season"]
 verified: "2026-11-15"
 ---
 
-Pair with a power station or vehicle power to keep essentials cold. See EcoFlow's page for sizes and power draw.
+Pair with an energy reserve or vehicle power to keep essentials cold. See EcoFlow's page for sizes and power draw.

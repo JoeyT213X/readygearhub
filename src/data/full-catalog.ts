@@ -10,6 +10,7 @@ import { entries, resolveEntry, categoryForItem, type CategoryId } from './direc
 import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
 import { catalogExtraById, type CatalogExtra } from './catalog-extras';
 import { newPrepperOnlyPicks, prepperPickToCatalogItem } from './prepper-picks';
+import { doomsdayCrossList, doomsdayUsCrossIds } from './doomsday-prepper';
 import { highTicketCatalogItems } from './high-ticket';
 import { stockCoverFor } from './stock-covers';
 import { isStoreFront } from './listing-actions';
@@ -55,6 +56,8 @@ export type CatalogItem = {
   filler?: boolean;
   /** The link opens a store or brand front page (or a whole collection), not one product page. The button says so. */
   storeLevel?: boolean;
+  /** Small U.S. chip on the card (U.S.-based maker). */
+  usBadge?: boolean;
 };
 
 
@@ -372,7 +375,25 @@ export function buildFullCatalog(gearItems: GearInput[]): CatalogItem[] {
     used.add(item.id);
   }
 
-  return sortFullCatalog(items);
+  return sortFullCatalog(applyDoomsdayCrossList(items));
+}
+
+/**
+ * Cross-list: tag existing items with the Doomsday Prepper category via `alsoIn`. Never changes `category`,
+ * never removes an item, so every other category keeps its full count.
+ */
+function applyDoomsdayCrossList(items: CatalogItem[]): CatalogItem[] {
+  const ids = new Set<string>();
+  for (const list of Object.values(doomsdayCrossList)) for (const id of list) ids.add(id);
+  return items.map((item) => {
+    if (item.category === 'doomsday-prepper') return item;
+    if (!ids.has(item.id)) return item;
+    return {
+      ...item,
+      alsoIn: [...new Set([...(item.alsoIn ?? []), 'doomsday-prepper'])],
+      usBadge: item.usBadge || doomsdayUsCrossIds.has(item.id) || undefined,
+    };
+  });
 }
 
 export function countsByCatalogGroup(items: CatalogItem[]): Record<SourceGroupId, number> {
@@ -396,7 +417,7 @@ function hasProductPhoto(item: CatalogItem): boolean {
 }
 
 /**
- * Portable power stations (BLUETTI Apex/AC180/Elite, Jackery, EcoFlow, etc.)
+ * Energy reserves (BLUETTI Apex/AC180/Elite, Jackery, EcoFlow, etc.)
  * must not be featured on the home page. Solar panels and PV kits are allowed.
  * See docs/home-design-notes.md.
  */
@@ -408,8 +429,8 @@ export function isPortablePowerStation(item: { id?: string; title?: string; imag
   const isSolar =
     /\b(solar|solarsaga|nomad|renogy|pv\b|sp200|sp100|sp120|350w-solar|solar-kit|solar-panel)\b/.test(hay) ||
     /panel/.test(id);
-  if (isSolar && !/power[\s-]?station/.test(title)) return false;
-  if (/power[\s-]?station/.test(title) || /power[\s-]?station/.test(id)) return true;
+  if (isSolar && !/(?:power[\s-]?station|energy[\s-]?reserve)/.test(title)) return false;
+  if (/(?:power[\s-]?station|energy[\s-]?reserve)/.test(title) || /(?:power[\s-]?station|energy[\s-]?reserve)/.test(id)) return true;
   if (/\b(jackery|ecoflow|anker-solix|goal-zero-yeti)\b/.test(hay)) return true;
   if (/bluetti/.test(hay) && !isSolar) return true;
   return false;
@@ -543,7 +564,7 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {
   const eligible = items.filter((i) => {
     if (isPortablePowerStation(i) || HOME_SHOP_EXCLUDED_IDS.has(i.id) || i.category === 'drones-robotics') return false;
-    // Keep power-station style stock photos off the home page.
+    // Keep energy-reserve style stock photos off the home page.
     const k = stockCoverFor(i)?.key;
     return k !== 'stock-power-station' && k !== 'stock-battery-bank';
   });
@@ -639,15 +660,15 @@ export function shortProductName(title: string): string {
 
 /**
  * Products for the desktop heading-row preview windows: official self-hosted
- * photos only, no portable power stations, no robot-dog fillers, and the
+ * photos only, no portable energy reserves, no robot-dog fillers, and the
  * Drones & Robotics category stays off the home page. Brand and category
  * caps keep the rotation mixed across the catalog.
  */
 function isHeadingPowerGear(item: CatalogItem): boolean {
   if (isPortablePowerStation(item)) return true;
   const hay = `${item.id} ${item.title}`.toLowerCase();
-  if (/\bpower[\s-]?station\b/.test(hay) || /\bsolar generator\b/.test(hay)) return true;
-  // Anker SOLIX C/F stations and expansion batteries; PS series panels may stay.
+  if (/\b(?:power[\s-]?station|energy[\s-]?reserve)\b/.test(hay) || /\bsolar generator\b/.test(hay)) return true;
+  // Anker SOLIX C/F units and expansion batteries; PS series panels may stay.
   if (/anker-solix-[cf]\d|anker-solix-bp/.test(item.id)) return true;
   return false;
 }
@@ -697,9 +718,9 @@ export function homeHeadingProducts(items: CatalogItem[], limit = HEADING_PRODUC
 
 
 // Do not lead the home Shop the Directory board with a product photo of a
-// portable solar kit or power station. Those read as "big power gear" in the
+// portable solar kit or energy reserve. Those read as "big power gear" in the
 // first cell. Category scenes (a snowy house, rooftop solar in a neighborhood)
-// stay; portable power stations are also filtered out in pushProduct().
+// stay; portable energy reserves are also filtered out in pushProduct().
 const SHOP_BOARD_PRODUCT_IDS: string[] = [];
 
 function isHomeBoardWaterFilter(item: { id?: string; title?: string }): boolean {

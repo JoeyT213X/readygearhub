@@ -164,7 +164,7 @@
       "runningWatts": 600,
       "startingWatts": 1000,
       "requires240V": true,
-      "note": "Honda marks this as often requiring 240 V. Many portable generators and power stations cannot run 240 V loads.",
+      "note": "Honda marks this as often requiring 240 V. Many portable generators and energy reserves cannot run 240 V loads.",
       "defaultOn": false
     },
     {
@@ -174,7 +174,7 @@
       "runningWatts": 800,
       "startingWatts": 1300,
       "requires240V": true,
-      "note": "Honda marks this as often requiring 240 V. Many portable generators and power stations cannot run 240 V loads.",
+      "note": "Honda marks this as often requiring 240 V. Many portable generators and energy reserves cannot run 240 V loads.",
       "defaultOn": false
     },
     {
@@ -211,7 +211,7 @@
       "runningWatts": 5400,
       "startingWatts": 6750,
       "requires240V": true,
-      "note": "Honda marks this as often requiring 240 V. Most portable generators and power stations cannot run this load.",
+      "note": "Honda marks this as often requiring 240 V. Most portable generators and energy reserves cannot run this load.",
       "defaultOn": false
     },
     {
@@ -221,7 +221,7 @@
       "runningWatts": 2100,
       "startingWatts": 2100,
       "requires240V": true,
-      "note": "Honda marks this as often requiring 240 V. Many portable generators and power stations cannot run 240 V loads.",
+      "note": "Honda marks this as often requiring 240 V. Many portable generators and energy reserves cannot run 240 V loads.",
       "defaultOn": false
     },
     {
@@ -231,7 +231,7 @@
       "runningWatts": 4500,
       "startingWatts": 4500,
       "requires240V": true,
-      "note": "Honda marks this as often requiring 240 V. Most portable generators and power stations cannot run this load.",
+      "note": "Honda marks this as often requiring 240 V. Most portable generators and energy reserves cannot run this load.",
       "defaultOn": false
     }
   ]

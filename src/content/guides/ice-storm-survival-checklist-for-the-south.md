@@ -25,7 +25,7 @@ Pay attention to National Weather Service products: a **Winter Storm Watch** mea
 - [ ] Test [smoke alarms and carbon monoxide alarms](/gear/kidde-kn-cob-lp2/) with battery backup on every level, especially near bedrooms. Ready.gov lists this as basic winter prep.
 - [ ] Cut drafts you can reach. Close storm windows, put towels at door gaps, and consider an [indoor window insulator kit](/gear/3m-indoor-window-insulator-kit/) on the leakiest panes.
 - [ ] Know where the main water shut-off is. Open cabinet doors under sinks so warm air can reach pipes, and disconnect outdoor hoses.
-- [ ] Charge phones, power banks, and any portable power station. Gather flashlights or headlamps and extra batteries. Use battery lanterns rather than candles if you can; the [CDC](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html) notes that candles can lead to house fires.
+- [ ] Charge phones, power banks, and any portable energy reserve. Gather flashlights or headlamps and extra batteries. Use battery lanterns rather than candles if you can; the [CDC](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html) notes that candles can lead to house fires.
 - [ ] Bring in pets, patio plants you care about, and any loose yard items that ice or wind could turn into debris.
 
 **Car and travel**

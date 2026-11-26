@@ -64,9 +64,9 @@ If you have a fuel-burning heater (propane, kerosene, or similar), ReadyGearHub'
 
 **Fireplaces:** a wood fireplace or stove can help if it's in good working order. The CDC recommends having your chimney checked or cleaned every year, because a blocked chimney can let CO build up inside.
 
-## What about a portable power station?
+## What about a portable energy reserve?
 
-A battery power station is safe to use indoors because it makes no fumes. It's great for lights, phones, a router, and medical devices. It's **not** a good way to run a space heater. Space heaters often draw 750–1,500 watts, which drains most portable batteries fast. A low-wattage electric blanket or heated pad is a better match. Check the watts on its label and compare that with the station's capacity. Our [power station guide](/guides/how-to-pick-a-portable-power-station/) explains the math, and the [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/) is one of the options listed.
+A battery energy reserve is safe to use indoors because it makes no fumes. It's great for lights, phones, a router, and medical devices. It's **not** a good way to run a space heater. Space heaters often draw 750–1,500 watts, which drains most portable batteries fast. A low-wattage electric blanket or heated pad is a better match. Check the watts on its label and compare that with the energy reserve's capacity. Our [energy reserve guide](/guides/how-to-pick-an-energy-reserve/) explains the math, and the [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/) is one of the options listed.
 
 ## Watch for cold-weather illness
 

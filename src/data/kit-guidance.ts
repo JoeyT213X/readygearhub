@@ -164,7 +164,7 @@ export const KIT_LINES: KitLine[] = [
     section: 'basic',
     relatedLanes: ['power-outage-kits', 'off-grid-power'],
     relatedItems: ['anker-prime-power-bank-20k-220w', 'jackery-explorer-300-v2', 'anker-solix-c1000x'],
-    relatedGuides: ['how-to-pick-a-portable-power-station'],
+    relatedGuides: ['how-to-pick-an-energy-reserve'],
   },
   {
     id: 'soap',

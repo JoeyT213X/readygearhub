@@ -43,7 +43,7 @@ Watch for hypothermia: shivering, exhaustion, confusion, fumbling hands, memory 
 
 ## If you still have household power: electric space heaters
 
-An electric space heater, such as the [Vornado AVH10](/gear/vornado-avh10/), can warm one room **only if the outlet still has power** (or if a properly installed, outdoor generator can support the heater's draw). A typical portable power station cannot run a 750–1,500 watt heater for long, which is why our [power-station guide](/guides/how-to-pick-a-portable-power-station/) advises against it.
+An electric space heater, such as the [Vornado AVH10](/gear/vornado-avh10/), can warm one room **only if the outlet still has power** (or if a properly installed, outdoor generator can support the heater's draw). A typical portable energy reserve cannot run a 750–1,500 watt heater for long, which is why our [energy-reserve guide](/guides/how-to-pick-an-energy-reserve/) advises against it.
 
 If you do use a space heater, follow the manufacturer and the CDC:
 

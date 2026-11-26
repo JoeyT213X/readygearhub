@@ -64,7 +64,7 @@ export function initSolarSizer(data: ApplianceData) {
       ${haveBattery > 0 ? `<p class="fine">The battery capacity you entered (${haveBattery.toLocaleString()} Wh) would take about ${recharge} to refill from the recommended array at the sun hours and losses you entered. That is a planning estimate, not a measurement.</p>` : ''}
       ${missingHours && items.length ? '<p class="fine">Enter hours/day for each selected appliance. Items with 0 hours do not add to the daily load.</p>' : ''}
       ${!(sun > 0) ? '<p class="fine">Enter peak sun hours for your location (from NREL PVWatts or the NREL solar resource maps) to size the array. This tool does not fill in a regional average.</p>' : ''}
-      ${has240 ? '<p class="warn-240">One or more selected appliances is marked by Honda as often requiring 240 V. Many portable power stations cannot run 240 V loads — confirm your equipment and the appliance nameplate.</p>' : ''}
+      ${has240 ? '<p class="warn-240">One or more selected appliances is marked by Honda as often requiring 240 V. Many portable energy reserves cannot run 240 V loads — confirm your equipment and the appliance nameplate.</p>' : ''}
     `;
   }
 

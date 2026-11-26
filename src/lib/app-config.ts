@@ -135,14 +135,14 @@ export const CALCULATORS = [
   },
   {
     href: '/tools/power-sizer/',
-    name: 'Generator & power-station sizer',
+    name: 'Generator & energy-reserve sizer',
     icon: '🔋',
     blurb: 'Add typical appliance watts, see running and starting totals, and estimate battery hours.',
     cta: 'Open sizer →',
   },
   {
     href: '/tools/solar-sizer/',
-    name: 'Solar & power-station sizer',
+    name: 'Solar & energy-reserve sizer',
     icon: '☀️',
     blurb: 'Estimate panel watts and battery watt-hours from your daily load and peak sun hours you look up at NREL.',
     cta: 'Open solar sizer →',

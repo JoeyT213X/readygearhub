@@ -1,10 +1,10 @@
 ---
-name: "Jackery Explorer 1000 Plus Portable Power Station"
+name: "Jackery Explorer 1000 Plus"
 brand: "Jackery"
 lane: power-outage-kits
 alsoIn: ["off-grid-power", "home-backup-power-solar"]
-tags: ["power station", "battery backup", "expandable"]
-description: "An expandable portable power station from Jackery, aimed at home emergencies, camping, and off-road travel."
+tags: ["energy reserve", "battery backup", "expandable"]
+description: "An expandable portable energy reserve from Jackery, aimed at home emergencies, camping, and off-road travel."
 uses:
   - "Outage backup for essentials"
   - "Expand capacity with add-on batteries"
@@ -18,4 +18,4 @@ season: ["winter", "hurricane", "all-season"]
 verified: "2026-11-15"
 ---
 
-Jackery is one of the best-known power station brands. Check Jackery's page for current capacity, output, and expansion options.
+Jackery is one of the best-known energy reserve brands. Check Jackery's page for current capacity, output, and expansion options.

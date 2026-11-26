@@ -14,9 +14,9 @@ export type ProductPhoto = {
 const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'anker-solix-ps400': { alt: 'Anker SOLIX PS400 bifacial portable solar panel', widths: [480, 960, 1000] },
   'anker-solix-ps100': { alt: 'Anker SOLIX PS100 bifacial portable solar panel', widths: [480, 960, 1600] },
-  'anker-solix-c2000-gen2-400w-kit': { alt: 'Anker SOLIX C2000 Gen 2 portable power station with a 400W solar panel kit', widths: [480, 960, 1600] },
-  'anker-solix-f3800-plus': { alt: 'Anker SOLIX F3800 Plus portable power station', widths: [480, 960, 1600] },
-  'anker-solix-c1000x': { alt: 'Anker SOLIX C1000 portable power station', widths: [480, 960, 1200] },
+  'anker-solix-c2000-gen2-400w-kit': { alt: 'Anker SOLIX C2000 Gen 2 portable energy reserve with a 400W solar panel kit', widths: [480, 960, 1600] },
+  'anker-solix-f3800-plus': { alt: 'Anker SOLIX F3800 Plus portable energy reserve', widths: [480, 960, 1600] },
+  'anker-solix-c1000x': { alt: 'Anker SOLIX C1000 portable energy reserve', widths: [480, 960, 1200] },
   'litime-12v-100ah-group24': { alt: 'LiTime LiHeat 12V 100Ah Group 24 self-heating lithium battery', widths: [480, 960, 1000] },
   'litime-24v-230ah': { alt: 'LiTime LiHeat 24V 230Ah self-heating lithium battery', widths: [480, 960, 1000] },
   'litime-12v-100ah-trolling': { alt: 'LiTime 12V 100Ah TM lithium marine trolling-motor battery', widths: [480, 960, 1000] },
@@ -28,13 +28,13 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'wuben-e7': { alt: 'Wuben E7 rechargeable headlamp, listed as 1,800 lumens, in black', widths: [480, 960, 1000] },
   'wuben-lightok-x2': { alt: 'Wuben Lightok X2 rechargeable flashlight, listed as 2,500 lumens, in white', widths: [480, 960, 1600] },
   'wuben-c2': { alt: 'Wuben C2 rechargeable everyday-carry flashlight, listed as 2,000 lumens', widths: [480, 960, 1600] },
-  'anker-solix-c1000x-gen2': { alt: 'Anker SOLIX C1000 Gen 2 portable power station', widths: [480, 960, 1600] },
-  'anker-solix-c2000-gen2': { alt: 'Anker SOLIX C2000 Gen 2 portable power station', widths: [480, 960, 1600] },
+  'anker-solix-c1000x-gen2': { alt: 'Anker SOLIX C1000 Gen 2 portable energy reserve', widths: [480, 960, 1600] },
+  'anker-solix-c2000-gen2': { alt: 'Anker SOLIX C2000 Gen 2 portable energy reserve', widths: [480, 960, 1600] },
   'anker-solix-ps200': { alt: 'Anker SOLIX PS200 bifacial portable solar panel', widths: [480, 960, 1600, 2000] },
   'anker-solix-bp3800': { alt: 'Anker SOLIX BP3800 expansion battery, listed as 3,840Wh, for the F3800 series', widths: [480, 960, 1600, 2000] },
   'anker-solix-bp2000-gen2': { alt: 'Anker SOLIX BP2000 expansion battery (Gen 2), for the C2000 Gen 2', widths: [480, 960, 1600, 2000] },
-  'anker-solix-c300x': { alt: 'Anker SOLIX C300X portable power station, listed as 288Wh and 300W', widths: [480, 960, 1600, 2000] },
-  'anker-solix-c800x-100w-kit': { alt: 'Anker SOLIX C800X portable power station with a 100W solar panel kit', widths: [480, 960, 1600, 2000] },
+  'anker-solix-c300x': { alt: 'Anker SOLIX C300X portable energy reserve, listed as 288Wh and 300W', widths: [480, 960, 1600, 2000] },
+  'anker-solix-c800x-100w-kit': { alt: 'Anker SOLIX C800X portable energy reserve with a 100W solar panel kit', widths: [480, 960, 1600, 2000] },
   'anker-solix-c300-dc-60w-kit': { alt: 'Anker SOLIX C300 DC solar generator with a 60W solar panel', widths: [480, 960, 1600, 2000] },
   'litime-12v-50ah': { alt: 'LiTime 12V 50Ah lithium battery', widths: [480, 960, 1600] },
   'litime-12v-200ah-bluetooth': { alt: 'LiTime 12V 200Ah Bluetooth lithium battery', widths: [480, 960, 1000] },
@@ -59,7 +59,7 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'ispring-wgb32b': { alt: 'iSpring WGB32B 3-stage whole-house water filter with 20-inch sediment and carbon-block cartridges', widths: [480, 960, 1500] },
   'ispring-sf2s': { alt: 'iSpring SF2S 33-stage shower filter with a replaceable cartridge', widths: [480, 960, 1493] },
   'ispring-df1': { alt: 'iSpring DF1 chrome faucet-mount drinking-water filter', widths: [480, 960, 1500] },
-  'bluetti-ac180': { alt: 'BLUETTI AC180 portable power station, listed as 1,152Wh and 1,800W', widths: [480, 960, 1200] },
+  'bluetti-ac180': { alt: 'BLUETTI AC180 portable energy reserve, listed as 1,152Wh and 1,800W', widths: [480, 960, 1200] },
   'redi-the-roadie': { alt: 'REDI The Roadie car emergency kit', widths: [480, 960, 1600, 3000] },
   'redi-roadie-plus': { alt: 'REDI The Roadie PLUS car emergency kit', widths: [480, 960, 1200] },
   'redi-roadie-pro': { alt: 'REDI The Roadie PRO hard-case roadside emergency kit', widths: [480, 960, 1600, 3000] },
@@ -68,10 +68,10 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'berkey-travel-berkey': { alt: 'Travel Berkey gravity-fed water filter', widths: [390] },
   'aquatru-carafe': { alt: 'AquaTru Carafe countertop reverse osmosis system', widths: [480, 960, 1600, 2000] },
   'clearly-filtered-pitcher': { alt: 'Clearly Filtered Water Pitcher', widths: [480, 960, 1200] },
-  'jackery-explorer-2000-v2': { alt: 'Jackery Explorer 2000 v2 portable power station', widths: [480, 960, 1600] },
-  'ecoflow-delta-2-max': { alt: 'EcoFlow DELTA 2 Max portable power station', widths: [480, 960, 1500] },
-  'goal-zero-yeti-500': { alt: 'Goal Zero Yeti 500 portable power station', widths: [480, 960, 1600, 2100] },
-  'goal-zero-yeti-700': { alt: 'Goal Zero Yeti 700 portable power station', widths: [480, 960, 1600, 2100] },
+  'jackery-explorer-2000-v2': { alt: 'Jackery Explorer 2000 v2 portable energy reserve', widths: [480, 960, 1600] },
+  'ecoflow-delta-2-max': { alt: 'EcoFlow DELTA 2 Max portable energy reserve', widths: [480, 960, 1500] },
+  'goal-zero-yeti-500': { alt: 'Goal Zero Yeti 500 portable energy reserve', widths: [480, 960, 1600, 2100] },
+  'goal-zero-yeti-700': { alt: 'Goal Zero Yeti 700 portable energy reserve', widths: [480, 960, 1600, 2100] },
   'instant-pot-duo-6qt': { alt: 'Instant Pot Duo 6QT Multi-Use Pressure Cooker', widths: [480, 766] },
   'instant-pot-vortex-plus-6qt': { alt: 'Instant Pot Vortex Plus 6QT ClearCook Air Fryer', widths: [480, 798] },
   'instant-pot-duo-plus-6qt': { alt: 'Instant Pot Duo Plus 6QT Multi-Use Pressure Cooker', widths: [480, 960, 1600, 1982] },
@@ -305,8 +305,8 @@ export function photoBackdropClass(item: {
     item.id, item.title, item.name, item.offerLabel, item.category, item.brand, ...(item.tags ?? []),
   ].filter(Boolean).join(' ').toLowerCase();
   if (/flashlight|headlamp|spotlight|lantern|\blighting\b|wuben/.test(hay)) return 'backdrop-light';
-  if (/(?:\bbatter(?:y|ies)\b|litime)/.test(hay) && !/solar|panel|generator kit|power station|inverter|charger|mppt|anker-solix|bluetti/.test(hay)) return 'backdrop-battery';
-  if (item.category === 'power' || /power station|solar|anker-solix|bluetti|inverter|charger|mppt/.test(hay)) return 'backdrop-power';
+  if (/(?:\bbatter(?:y|ies)\b|litime)/.test(hay) && !/solar|panel|generator kit|power station|energy reserve|inverter|charger|mppt|anker-solix|bluetti/.test(hay)) return 'backdrop-battery';
+  if (item.category === 'power' || /power station|energy reserve|solar|anker-solix|bluetti|inverter|charger|mppt/.test(hay)) return 'backdrop-power';
   if (item.category === 'water' || /ispring|aquasana|waterdrop|\bberkey\b|aquatru|clearly filtered|epic|reverse osmosis|water filter|filtration/.test(hay)) return 'backdrop-water';
   return 'backdrop-default';
 }

@@ -93,7 +93,7 @@ You don't need to do everything on this page the day before. Spread it out.
 - [ ] **Food:** at least a 3-day supply that needs little or no cooking, water, or refrigeration, plus a manual can opener. Include baby food, special diets, and pet food.
 - [ ] **Medicine:** refill prescriptions early, before roads close.
 - [ ] **Fuel and cash:** fill the car's gas tank (pumps need electricity) and get some cash (card readers go down with the power).
-- [ ] **Batteries and charging:** charge phones, power banks, laptops, and any portable power station. Check flashlight and radio batteries.
+- [ ] **Batteries and charging:** charge phones, power banks, laptops, and any portable energy reserve. Check flashlight and radio batteries.
 - [ ] **Fridge prep:** put appliance thermometers in the fridge and freezer, make extra ice, and freeze water jugs and gel packs. (Details in [Water and food](#water-and-food-safety).)
 - [ ] **Generator owners:** check fuel, oil, and extension cords. Decide now exactly where it will sit outdoors.
 - [ ] **Check on people:** call older neighbors and relatives and ask what they need. Our [Winter Emergency Kit for Elderly Parents](/guides/winter-emergency-kit-for-elderly-parents/) has a full plan.
@@ -194,7 +194,7 @@ Per the CDC and Ready.gov:
 
 **Never plug a generator into a wall outlet.** Feeding power back through your house wiring can hurt you and utility crews working on the lines. If you want a generator to power household circuits, have a licensed electrician install a transfer switch.
 
-Still deciding what to buy? [Inverter Generator vs Portable Power Station](/guides/generator-vs-power-station/) compares the two, and battery power stations make no exhaust at all, so they're the safer choice for apartments and for running things indoors. [How to Pick a Portable Power Station](/guides/how-to-pick-a-portable-power-station/) explains watt-hours and sizing, and the free [Generator & Power Station Sizer](/tools/power-sizer/) estimates what you'd actually need. Browse options in [Home Backup Power & Solar](/home-backup-power-solar/) and [Off-Grid Power](/off-grid-power/). Portable power stations from <a href="https://www.jdoqocy.com/click-101929817-16981946?url=https%3A%2F%2Fwww.bluettipower.com%2F" target="_blank" rel="sponsored nofollow noopener" data-program="bluetti">BLUETTI</a> and <a href="https://www.kqzyfj.com/click-101929817-17227114" target="_blank" rel="sponsored nofollow noopener" data-program="allpowers">ALLPOWERS</a> are two battery options; they make no exhaust, unlike a generator, which must stay outdoors. Program code AFF5OFF for 5% off at checkout, per BLUETTI, and program code ALLPOWERS26 for 10% off at checkout, per ALLPOWERS.
+Still deciding what to buy? [Inverter Generator vs Portable Energy Reserve](/guides/generator-vs-energy-reserve/) compares the two, and battery energy reserves make no exhaust at all, so they're the safer choice for apartments and for running things indoors. [How to Pick a Portable Energy Reserve](/guides/how-to-pick-an-energy-reserve/) explains watt-hours and sizing, and the free [Generator & Energy Reserve Sizer](/tools/power-sizer/) estimates what you'd actually need. Browse options in [Home Backup Power & Solar](/home-backup-power-solar/) and [Off-Grid Power](/off-grid-power/). Energy reserves from <a href="https://www.jdoqocy.com/click-101929817-16981946?url=https%3A%2F%2Fwww.bluettipower.com%2F" target="_blank" rel="sponsored nofollow noopener" data-program="bluetti">BLUETTI</a> and <a href="https://www.kqzyfj.com/click-101929817-17227114" target="_blank" rel="sponsored nofollow noopener" data-program="allpowers">ALLPOWERS</a> are two battery options; they make no exhaust, unlike a generator, which must stay outdoors. Program code AFF5OFF for 5% off at checkout, per BLUETTI, and program code ALLPOWERS26 for 10% off at checkout, per ALLPOWERS.
 
 ### Fuel-burning heaters, fireplaces, and wood stoves
 
@@ -217,7 +217,7 @@ From the [CDC](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-
 - Avoid extension cords, and don't run the cord under rugs.
 - Stop using any heater with a damaged cord or that sparks.
 
-A space heater draws a lot of power, so it will drain a portable power station fast. For more on keeping one room livable, read [Best Ways to Heat One Room Safely in an Outage](/guides/heat-one-room-safely-in-an-outage/) and [How to Stay Warm When the Power Goes Out in Winter](/guides/how-to-stay-warm-without-power/). Gear for this lives in [Home Heating Backup](/home-heating-backup/) and [Cold-Weather Gear](/cold-weather-gear/).
+A space heater draws a lot of power, so it will drain a portable energy reserve fast. For more on keeping one room livable, read [Best Ways to Heat One Room Safely in an Outage](/guides/heat-one-room-safely-in-an-outage/) and [How to Stay Warm When the Power Goes Out in Winter](/guides/how-to-stay-warm-without-power/). Gear for this lives in [Home Heating Backup](/home-heating-backup/) and [Cold-Weather Gear](/cold-weather-gear/).
 
 ## Water and food safety
 
@@ -272,7 +272,7 @@ A power outage can make medical devices stop working, and Ready.gov lists that a
 - [ ] Keep a written list of medications, doses, allergies, device model and serial numbers, and doctor contacts, plus extra glasses and hearing-aid batteries.
 - [ ] Decide in advance **where you'll go** if the home can't stay warm or keep a device running: a relative with power, a hospital, or a warming center. Ready.gov says to go to a community location with power if heat or cold is extreme.
 
-**Backup power for devices:** a portable power station can run some devices for a while, but check the device's power draw against the station's capacity and ask the device maker or your provider before you rely on it. The free [Generator & Power Station Sizer](/tools/power-sizer/) helps you estimate.
+**Backup power for devices:** a portable energy reserve can run some devices for a while, but check the device's power draw against the energy reserve's capacity and ask the device maker or your provider before you rely on it. The free [Generator & Energy Reserve Sizer](/tools/power-sizer/) helps you estimate.
 
 **Babies and older adults:** the [CDC](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html) says infants under one year should never sleep in a cold room, and if you can't keep the home warm, make arrangements to stay elsewhere. It also says older adults make less body heat, so check on older neighbors often.
 
@@ -359,7 +359,7 @@ A small interior room with few windows is usually easiest to keep warm. Pick a r
 
 ### Power: what to run first
 
-If you have a power station or a generator running safely outdoors, prioritize:
+If you have an energy reserve or a generator running safely outdoors, prioritize:
 
 1. Medical devices and medication cooling
 2. Phones and a weather radio
@@ -367,7 +367,7 @@ If you have a power station or a generator running safely outdoors, prioritize:
 4. The refrigerator, in short stretches, if your setup can handle it
 5. Internet router, so you can get updates
 
-The [Runtime Reserve](/apps/runtime-reserve/) app logs generator fuel and runtime and estimates how many hours you have left, offline. The [Solar & Power Station Sizer](/tools/solar-sizer/) helps if you're planning to recharge with solar panels after the storm. Portable panels such as the [Anker SOLIX PS100](/gear/anker-solix-ps100/) or [PS400](/gear/anker-solix-ps400/) are one option; confirm connector and input compatibility with your power station, and remember that solar only helps when there is usable sun.
+The [Runtime Reserve](/apps/runtime-reserve/) app logs generator fuel and runtime and estimates how many hours you have left, offline. The [Solar & Energy Reserve Sizer](/tools/solar-sizer/) helps if you're planning to recharge with solar panels after the storm. Portable panels such as the [Anker SOLIX PS100](/gear/anker-solix-ps100/) or [PS400](/gear/anker-solix-ps400/) are one option; confirm connector and input compatibility with your energy reserve, and remember that solar only helps when there is usable sun.
 
 ### Watch for cold-related illness
 
@@ -443,8 +443,8 @@ Everything below is free to use in your browser unless noted.
 - [Emergency Kit Builder](/tools/kit-builder/): a printable Ready.gov kit checklist sized to your household
 - [Water Storage Calculator](/tools/water-calculator/): how much water to store
 - [Fridge & Freezer Outage Timer](/tools/outage-timer/): food-safety countdown
-- [Generator & Power Station Sizer](/tools/power-sizer/): estimate the watts you need
-- [Solar & Power Station Sizer](/tools/solar-sizer/): size panels and batteries
+- [Generator & Energy Reserve Sizer](/tools/power-sizer/): estimate the watts you need
+- [Solar & Energy Reserve Sizer](/tools/solar-sizer/): size panels and batteries
 
 **Offline apps** ([all apps](/apps/))
 
@@ -480,8 +480,8 @@ Everything below is free to use in your browser unless noted.
 - [How to Keep Pipes From Freezing in a Southern Cold Snap](/guides/how-to-keep-pipes-from-freezing/)
 - [How to Stay Warm When the Power Goes Out](/guides/how-to-stay-warm-without-power/)
 - [Best Ways to Heat One Room Safely in an Outage](/guides/heat-one-room-safely-in-an-outage/)
-- [Inverter Generator vs Portable Power Station](/guides/generator-vs-power-station/)
-- [How to Pick a Portable Power Station](/guides/how-to-pick-a-portable-power-station/)
+- [Inverter Generator vs Portable Energy Reserve](/guides/generator-vs-energy-reserve/)
+- [How to Pick a Portable Energy Reserve](/guides/how-to-pick-an-energy-reserve/)
 - [Emergency Water Storage](/guides/emergency-water-storage/)
 - [Family First Aid Kit for Storms](/guides/storm-first-aid-kit/)
 - [Winter Emergency Kit for Elderly Parents](/guides/winter-emergency-kit-for-elderly-parents/)

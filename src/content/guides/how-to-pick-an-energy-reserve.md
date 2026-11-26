@@ -1,13 +1,13 @@
 ---
-title: "How to Pick a Portable Power Station (Without Overbuying)"
-description: "A plain-English guide to choosing a portable power station for outages, camping, or off-grid use: watt-hours vs. watts, battery types, charging options, and how to size one for what you actually need to run."
+title: "How to Pick a Portable Energy Reserve (Without Overbuying)"
+description: "A plain-English guide to choosing a portable energy reserve for outages, camping, or off-grid use: watt-hours vs. watts, battery types, charging options, and how to size one for what you actually need to run."
 lane: off-grid-power
 season: ["winter", "hurricane", "all-season"]
 published: 2026-11-15
 relatedItems: ["ecoflow-delta-3-plus", "jackery-explorer-1000-plus", "anker-solix-c1000x", "bluetti-ac180", "goal-zero-yeti-1500", "goal-zero-nomad-100-plus", "jackery-solarsaga-100-prime"]
 ---
 
-A portable power station is a big rechargeable battery with outlets. Unlike a gas generator, it's silent, produces no fumes, and is safe to use indoors. That makes it one of the most popular pieces of outage gear. There are dozens of models, though, so here's how to choose without paying for more than you need.
+A portable energy reserve is a big rechargeable battery with outlets. Unlike a gas generator, it's silent, produces no fumes, and is safe to use indoors. That makes it one of the most popular pieces of outage gear. There are dozens of models, though, so here's how to choose without paying for more than you need.
 
 ## Step 1: Know the two numbers that matter
 
@@ -32,7 +32,7 @@ Look at the label or power brick on each device for its watts. Typical examples:
 
 These are ballpark figures. Always check your own device labels.
 
-**Simple sizing math** (or let the [generator & power-station sizer](/tools/power-sizer/) do it): add up the watts of what you'll run at the same time, then multiply by the hours you want. Then add about 15–20% because of conversion losses.
+**Simple sizing math** (or let the [generator & energy-reserve sizer](/tools/power-sizer/) do it): add up the watts of what you'll run at the same time, then multiply by the hours you want. Then add about 15–20% because of conversion losses.
 
 > Example: router (20 W) + two lamps (20 W) + phone charging (20 W) = 60 W. Running that for 10 hours = 600 Wh. Add 20%, and you're looking at roughly **700 Wh or more** of capacity.
 
@@ -61,10 +61,10 @@ During a multi-day outage, how you recharge matters as much as capacity:
 - **Weight:** a 1,000 Wh unit often weighs 20–30 lb. Make sure whoever needs to move it can.
 - **Warranty and support:** stick with established brands that publish clear warranty terms.
 
-## What a power station can't do well
+## What an energy reserve can't do well
 
-It isn't a whole-home solution. Electric heat, electric ovens, well pumps, and central AC draw too much for most portable units. For those, people use a properly installed generator with a transfer switch (see [inverter generator vs. power station](/guides/generator-vs-power-station/)), operated outdoors and at least 20 feet from the home as the CDC recommends.
+It isn't a whole-home solution. Electric heat, electric ovens, well pumps, and central AC draw too much for most portable units. For those, people use a properly installed generator with a transfer switch (see [inverter generator vs. energy reserve](/guides/generator-vs-energy-reserve/)), operated outdoors and at least 20 feet from the home as the CDC recommends.
 
 ## Bottom line
 
-For most homes, a **1,000 Wh-class LFP power station plus one compatible solar panel** covers the essentials through a typical outage. Compare current models in our [Off-Grid Power](/off-grid-power/), [Power Outage Kits](/power-outage-kits/), and [Home Backup Power & Solar](/home-backup-power-solar/) lanes, and always check the manufacturer's page for current specs and price.
+For most homes, a **1,000 Wh-class LFP energy reserve plus one compatible solar panel** covers the essentials through a typical outage. Compare current models in our [Off-Grid Power](/off-grid-power/), [Power Outage Kits](/power-outage-kits/), and [Home Backup Power & Solar](/home-backup-power-solar/) lanes, and always check the manufacturer's page for current specs and price.

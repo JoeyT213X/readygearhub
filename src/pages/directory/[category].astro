@@ -17,6 +17,7 @@ import { isWinterDealDirectoryCategory } from '../../data/winter-deals';
 import { getItems } from '../../lib/data';
 import { buildFullCatalog } from '../../data/full-catalog';
 import { brandPages } from '../../data/brands';
+import { doomsdaySections, doomsdaySectionOf, doomsdayRank } from '../../data/doomsday-prepper';
 
 export function getStaticPaths() {
   return sourceCategories.map((c) => ({ params: { category: c.slug } }));
@@ -33,6 +34,15 @@ const fillerItems = items.filter((i) => i.filler);
 const pending = comingSoonFor(category.id);
 const spotlightCats = new Set(['power', 'outdoor', 'auto']);
 const spotlights = spotlightCats.has(category.id) ? brandPages.filter((b) => category.id !== 'auto' || b.slug === 'litime') : [];
+const isDoomsday = category.id === 'doomsday-prepper';
+const doomsdayGroups = isDoomsday
+  ? doomsdaySections.map((sec) => ({
+      sec,
+      items: primaryItems
+        .filter((i) => doomsdaySectionOf.get(i.id) === sec.id)
+        .sort((a, b) => (Number(!!b.usBadge) - Number(!!a.usBadge)) || (doomsdayRank(a.id) - doomsdayRank(b.id))),
+    })).filter((g) => g.items.length > 0)
+  : [];
 const storesInCat = sourceStores().filter((s) => items.some((i) => i.programId === s.id));
 
 const schema = {
@@ -80,7 +90,7 @@ const schema = {
     )}
 
     <div data-source-filters data-current-cat={category.id}>
-      {storesInCat.length > 1 && (
+      {storesInCat.length > 1 && !isDoomsday && (
         <div class="dir-filters">
           <div class="filter-row">
             <p class="filter-label" id="filter-src-label">Store</p>
@@ -102,11 +112,31 @@ const schema = {
     </div>
 
     <section class="dir-section" data-dir-section={category.id}>
-      {primaryItems.length > 0 ? (
+      {isDoomsday && (
+        <>
+          <nav class="dd-jump" aria-label="Doomsday Prepper sections">
+            {doomsdayGroups.map((g) => <a class="pill" href={`#dd-${g.sec.id}`}>{g.sec.name} <span class="dd-count">{g.items.length}</span></a>)}
+          </nav>
+          <aside class="dd-plan">
+            <p><strong>Planning a bigger build?</strong> Permits, beginner guides and published cost ranges for bunkers, fencing, wells, septic, solar and more are on the <a href="/doomsday-prepper/projects/">Projects</a> page. Looking for an installer or contractor? <a href="/doomsday-prepper/projects/#installers">Start here</a>.</p>
+          </aside>
+          {doomsdayGroups.map((g) => (
+            <section class="dd-section" id={`dd-${g.sec.id}`}>
+              <h2 class="section-title">{g.sec.name}</h2>
+              <p class="fine">{g.sec.blurb}</p>
+              <div class="grid shop-grid source-grid">
+                {g.items.map((item) => <SourceCard item={item} />)}
+              </div>
+            </section>
+          ))}
+          <p class="fine dd-disclosure">Some links may earn us a commission at no cost to you. Items marked U.S. come from U.S.-based makers. We list official pages and never invent prices, specs or reviews.</p>
+        </>
+      )}
+      {!isDoomsday && primaryItems.length > 0 ? (
         <div class="grid shop-grid source-grid">
           {primaryItems.map((item) => <SourceCard item={item} />)}
         </div>
-      ) : items.length === 0 ? (
+      ) : !isDoomsday && items.length === 0 ? (
         <p>No listings in this category yet. Partners still on the way are listed below.</p>
       ) : null}
       {fillerItems.length > 0 && (
@@ -140,10 +170,19 @@ const schema = {
     </ul>
   </nav>
 
-  {storesInCat.length > 1 && (
+  {storesInCat.length > 1 && !isDoomsday && (
     <script>
       import { initSourceDirectoryFilters } from '../../scripts/source-directory';
       initSourceDirectoryFilters();
     </script>
   )}
 </Base>
+<style is:global>
+  .dd-jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+  .dd-jump .pill{background:#14233a;color:#f1e7c8;border:1px solid #b08d3c;text-decoration:none}
+  .dd-count{opacity:.7;font-size:.8em;margin-left:4px}
+  .dd-plan{border-left:4px solid #b08d3c;background:#f4efe2;color:#1b2430;padding:12px 16px;margin:0 0 24px;border-radius:4px}
+  .dd-section{margin:32px 0 8px;scroll-margin-top:90px}
+  .dd-section .section-title{border-bottom:2px solid #b08d3c;padding-bottom:6px}
+  .dd-disclosure{margin-top:28px}
+</style>

@@ -8,7 +8,7 @@ description: "A compact solar-generator kit from Anker SOLIX that pairs the C300
 uses:
   - "A small go-bag or camping kit with a way to recharge from the sun"
   - "Low-wattage backup for phones and lights"
-  - "A compact option when a mid-size AC power station is more than you need"
+  - "A compact option when a mid-size AC energy reserve is more than you need"
 officialUrl: "https://www.ankersolix.com/products/c300-dc-60w-portable-solar-panel-1"
 affiliateUrl: ""
 rank: 0

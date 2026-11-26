@@ -4,9 +4,9 @@ brand: "BLUETTI"
 lane: off-grid-power
 alsoIn: ["storm-hurricane-prep", "home-backup-power-solar"]
 tags: ["solar panel", "portable"]
-description: "A portable folding solar panel from BLUETTI for recharging power stations."
+description: "A portable folding solar panel from BLUETTI for recharging energy reserves."
 uses:
-  - "Recharge a power station in multi-day outages"
+  - "Recharge an energy reserve in multi-day outages"
   - "Camping and RV"
   - "Off-grid cabin"
   - "Hurricane recovery"
@@ -18,4 +18,4 @@ season: ["all-season", "hurricane"]
 verified: "2026-11-15"
 ---
 
-Confirm connector and input compatibility with your power station. See BLUETTI's page for details.
+Confirm connector and input compatibility with your energy reserve. See BLUETTI's page for details.

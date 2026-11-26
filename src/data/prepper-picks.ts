@@ -60,7 +60,7 @@ export type PrepperLane = {
 export const prepperLanes: PrepperLane[] = [
   { id: 'water', name: 'Water storage & filtration', blurb: 'Containers for stored water, plus filters and purifiers for drinking water at home or on the go.' },
   { id: 'food', name: 'Long-term food', blurb: 'Shelf-stable meals for a 72-hour bag and a longer pantry. Check the official page for servings and storage life.' },
-  { id: 'power', name: 'Power & solar', blurb: 'Portable batteries, a small generator, and a starter solar kit. Confirm output and fuel or recharge notes on the official page.' },
+  { id: 'power', name: 'Prepper power & solar', blurb: 'Portable batteries, a small generator, and a starter solar kit. Confirm output and fuel or recharge notes on the official page.' },
   { id: 'lighting', name: 'Lighting', blurb: 'Lanterns and headlamps you can use when the lights are out, without improvising with candles as your only option.' },
   { id: 'comms', name: 'Radios & comms', blurb: 'Weather radios, a hand-crank option, and a satellite messenger for places with no cell coverage.' },
   { id: 'first-aid', name: 'First aid & IFAK', blurb: 'A trauma-oriented individual kit, a family first-aid kit, and a well-known splint. Training matters as much as the contents.' },
@@ -222,17 +222,17 @@ export const prepperPicks: PrepperPick[] = [
   // ---- Power ----
   {
     id: 'pick-bluetti-elite-200-v2',
-    title: 'BLUETTI Elite 200 V2 portable power station',
+    title: 'BLUETTI Elite 200 V2',
     blurb: 'A mid-size portable battery for lights, chargers, and a fridge during a short outage. See the official page for current output, capacity, and price.',
     lane: 'power',
     sourceName: 'BLUETTI',
     affiliateUrl: null,
-    fallbackUrl: 'https://www.bluettipower.com/products/elite-200-v2-portable-power-station',
+    fallbackUrl: 'https://www.bluettipower.com/products/elite-200-v2-portable-power-energy reserve',
     programId: 'bluetti',
     catalogId: 'bluetti-elite-200-v2',
     image: '/directory/photos/bluetti-elite-200-v2.webp',
     imageKind: 'photo',
-    offerLabel: 'Portable power station',
+    offerLabel: 'Portable energy reserve',
     featured: true,
   },
   {
@@ -244,7 +244,7 @@ export const prepperPicks: PrepperPick[] = [
     affiliateUrl: null,
     fallbackUrl: 'https://powerequipment.honda.com/generators/models/eu2200i',
     catalogId: 'honda-eu2200i',
-    image: '/directory/covers/power-station.svg',
+    image: '/directory/covers/power-energy reserve.svg',
     imageKind: 'icon',
     offerLabel: 'Inverter generator',
     featured: true,
@@ -252,7 +252,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-renogy-100w',
     title: 'Renogy 100W 12V solar panel kit',
-    blurb: 'A starter 100W solar kit for charging a compatible battery or station. Confirm compatibility and current price on the official page.',
+    blurb: 'A starter 100W solar kit for charging a compatible battery or energy reserve. Confirm compatibility and current price on the official page.',
     lane: 'power',
     sourceName: 'Renogy',
     affiliateUrl: null,
@@ -719,7 +719,7 @@ export type HomePrepperSpot = {
 
 /**
  * Home-page 5-spot (one large feature + four photo tiles).
- * Do not include portable power stations here; solar panels would be fine,
+ * Do not include portable energy reserves here; solar panels would be fine,
  * but this set stays on water, food, radios, and first aid.
  */
 export function homePrepperSpots(catalog: CatalogItem[]): HomePrepperSpot[] {

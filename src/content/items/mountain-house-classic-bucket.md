@@ -18,4 +18,4 @@ season: ["winter", "hurricane", "all-season"]
 verified: "2026-11-15"
 ---
 
-Freeze-dried meals only need hot water, which you can heat on an outdoor camp stove or a power station-friendly kettle. Check Mountain House's page for the current meal lineup, serving count, and shelf-life details.
+Freeze-dried meals only need hot water, which you can heat on an outdoor camp stove or an energy reserve-friendly kettle. Check Mountain House's page for the current meal lineup, serving count, and shelf-life details.

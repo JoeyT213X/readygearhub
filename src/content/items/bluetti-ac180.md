@@ -1,10 +1,10 @@
 ---
-name: "BLUETTI AC180 Solar Portable Power Station"
+name: "BLUETTI AC180 Solar"
 brand: "BLUETTI"
 lane: off-grid-power
 alsoIn: ["power-outage-kits", "storm-hurricane-prep", "home-backup-power-solar"]
-tags: ["power station", "solar ready", "battery backup"]
-description: "A solar-ready portable power station from BLUETTI for home backup, camping, and off-grid use."
+tags: ["energy reserve", "solar ready", "battery backup"]
+description: "A solar-ready portable energy reserve from BLUETTI for home backup, camping, and off-grid use."
 uses:
   - "Outage backup"
   - "Solar charging at camp or cabin"

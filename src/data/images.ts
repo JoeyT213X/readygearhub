@@ -52,15 +52,15 @@ export const photos: Record<string, Photo> = {
 Object.assign(photos, {
   "stock-solar-panel": { key: "stock-solar-panel", alt: "Close-up of a solar panel", author: "Los Muertos Crew", authorUrl: "https://www.pexels.com/photo/8853509/", sourceUrl: "https://www.pexels.com/photo/8853509/" },
   "stock-solar-camp": { key: "stock-solar-camp", alt: "Solar panels set up beside a camper at sunset", author: "Eslam Mohammed Abdelmaksoud", authorUrl: "https://www.pexels.com/photo/28705865/", sourceUrl: "https://www.pexels.com/photo/28705865/" },
-  "stock-power-station": { key: "stock-power-station", alt: "Person carrying a portable power station outdoors", author: "Amar Preciado", authorUrl: "https://www.pexels.com/photo/37489595/", sourceUrl: "https://www.pexels.com/photo/37489595/" },
+  "stock-power-station": { key: "stock-power-station", alt: "Person carrying a portable energy reserve outdoors", author: "Amar Preciado", authorUrl: "https://www.pexels.com/photo/37489595/", sourceUrl: "https://www.pexels.com/photo/37489595/" },
   "stock-rv": { key: "stock-rv", alt: "A camper trailer parked in a field with chairs outside", author: "Kampus Production", authorUrl: "https://www.pexels.com/photo/7967392/", sourceUrl: "https://www.pexels.com/photo/7967392/" },
 });
 
 
 Object.assign(photos, {
-  "hero-anker-solix": { key: "hero-anker-solix", alt: "Official Anker SOLIX products: the F3800 Plus power station, a PS400 solar panel, and a C2000 Gen 2 solar-generator kit", author: "Anker SOLIX", authorUrl: "https://www.ankersolix.com/", sourceUrl: "https://www.ankersolix.com/" },
+  "hero-anker-solix": { key: "hero-anker-solix", alt: "Official Anker SOLIX products: the F3800 Plus energy reserve, a PS400 solar panel, and a C2000 Gen 2 solar-generator kit", author: "Anker SOLIX", authorUrl: "https://www.ankersolix.com/", sourceUrl: "https://www.ankersolix.com/" },
   "hero-litime": { key: "hero-litime", alt: "Official LiTime products: LiHeat lithium batteries and a DIY solar generator kit", author: "LiTime", authorUrl: "https://www.litime.com/", sourceUrl: "https://www.litime.com/" },
-  "hero-bluetti-official": { key: "hero-bluetti-official", alt: "Official BLUETTI products: Elite 200 V2 and AC180 power stations and an SP200L solar panel", author: "BLUETTI", authorUrl: "https://www.bluettipower.com/", sourceUrl: "https://www.bluettipower.com/" },
+  "hero-bluetti-official": { key: "hero-bluetti-official", alt: "Official BLUETTI products: Elite 200 V2 and AC180 energy reserves and an SP200L solar panel", author: "BLUETTI", authorUrl: "https://www.bluettipower.com/", sourceUrl: "https://www.bluettipower.com/" },
 });
 
 export const photoSrc = (key: string, w: 480 | 960 | 1600 = 960) => `/images/photos/${key}-${w}.webp`;
@@ -85,10 +85,10 @@ export const lanePhoto: Record<string, string> = {
 export const guidePhoto: Record<string, string> = {
   'emergency-water-storage': 'water-bottles',
   'emergency-food-storage': 'cast-iron-fire',
-  'generator-vs-power-station': 'portable-generator',
+  'generator-vs-energy-reserve': 'portable-generator',
   'heat-one-room-safely-in-an-outage': 'fireplace-living-room',
   'how-to-keep-pipes-from-freezing': 'snowy-trees-road',
-  'how-to-pick-a-portable-power-station': 'power-banks',
+  'how-to-pick-an-energy-reserve': 'power-banks',
   'how-to-stay-warm-without-power': 'wool-socks-snow',
   'hurricane-prep-guide-gulf-south': 'storm-over-sea',
   'ice-storm-prep-checklist-south': 'checklist-writing',

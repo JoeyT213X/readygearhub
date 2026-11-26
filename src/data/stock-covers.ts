@@ -9,7 +9,7 @@ export type StockCover = { key: string; src: string; srcset: string; alt: string
 const ALT: Record<string, string> = {
   'stock-solar-panel': 'Close-up of a solar panel',
   'stock-solar-camp': 'Solar panels set up at a campsite',
-  'stock-power-station': 'Person carrying a portable power station outdoors',
+  'stock-power-station': 'Person carrying a portable energy reserve outdoors',
   'stock-battery-bank': 'A battery bank wired to an inverter',
   'stock-rv': 'A camper trailer parked in a field',
   'stock-boat': 'A boat on calm water',
@@ -81,7 +81,7 @@ const RULES: Rule[] = [
   ['stock-solar-camp', /diy-solar-generator|solar (generator|kit)|solar-kit|c2000-gen2-400w-kit|12v-solar-kit/],
   ['stock-solar-panel', /solar[- ]?panel|bifacial|nomad|solarsaga|\bps\d{3}\b|anker-solix-ps\d+|sp\d{3}|\bpv\d|^renogy|renogy$/],
   ['solar-rooftops', /energysage|rooftop solar/],
-  ['stock-power-station', /power[- ]?station|anker.?solix|f3800|c1000|f2000|ecoflow|jackery|goal.zero|allpowers|pecron|powermarket|generac|honda|generator|battery backup|bluetti/],
+  ['stock-power-station', /power[- ]?station|energy[- ]?reserve|anker.?solix|f3800|c1000|f2000|ecoflow|jackery|goal.zero|allpowers|pecron|powermarket|generac|honda|generator|battery backup|bluetti/],
   ['power-banks', /power[- ]?bank|jump ?starter|batteries plus|noco/],
   // Specific brand lines that would otherwise match broader rules
   ['multitools', /leatherman|gerber|multi-?tool|knife|raptor/],

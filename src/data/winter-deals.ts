@@ -31,7 +31,7 @@ export const winterDealSections: { id: WinterDealSection; title: string; intro: 
     id: 'power',
     title: 'Backup power for a winter outage',
     intro:
-      'Portable power stations from Anker SOLIX and BLUETTI, both approved partners. These are not the week’s Amazon best-seller list; they are the winter-outage gear we can actually send you to with a working partner link. Prices below are the official-store prices we read on November 23, 2026. We only mention a discount when the official page showed one.',
+      'Energy reserves from Anker SOLIX and BLUETTI, both approved partners. These are not the week’s Amazon best-seller list; they are the winter-outage gear we can actually send you to with a working partner link. Prices below are the official-store prices we read on November 23, 2026. We only mention a discount when the official page showed one.',
   },
   {
     id: 'cold',
@@ -105,14 +105,14 @@ export const winterDeals: WinterDeal[] = [
     section: 'power',
     priceLabel: '$549.00',
     stockNote: 'In stock on the official BLUETTI store when checked.',
-    why: 'Another mid-size station for outage backup. The official unit price matched the compare-at price, so we are not calling it a sale. BLUETTI’s program lists a sitewide code AFF5OFF for 5% off; check the official checkout, because it may not apply to every item.',
+    why: 'Another mid-size energy reserve for outage backup. The official unit price matched the compare-at price, so we are not calling it a sale. BLUETTI’s program lists a sitewide code AFF5OFF for 5% off; check the official checkout, because it may not apply to every item.',
   },
   {
     itemId: 'anker-solix-c2000-gen2',
     section: 'power',
     priceLabel: '$849.99',
     stockNote: 'Listed as a preorder on the official Anker SOLIX store when checked.',
-    why: 'A larger station if you want more runtime. This was a preorder, not immediate ship, on November 23, 2026.',
+    why: 'A larger energy reserve if you want more runtime. This was a preorder, not immediate ship, on November 23, 2026.',
   },
   {
     itemId: 'litime-12v-100ah-group24',

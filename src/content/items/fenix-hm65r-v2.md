@@ -18,4 +18,4 @@ season: ["winter", "all-season"]
 verified: "2026-11-15"
 ---
 
-A rechargeable headlamp can be topped up from a power station or USB battery. See Fenix's page for current specs.
+A rechargeable headlamp can be topped up from an energy reserve or USB battery. See Fenix's page for current specs.

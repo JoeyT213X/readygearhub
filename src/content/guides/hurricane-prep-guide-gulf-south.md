@@ -100,7 +100,7 @@ Do this in the spring, or any quiet week, so you are not shopping in a crowded s
 - [ ] **Install and test carbon monoxide alarms** that have battery backup, and keep extra batteries. See [Power, generators, and carbon monoxide](#power-generators-and-carbon-monoxide).
 - [ ] **Build a home kit and a go-bag.** Use the free [Emergency Kit Builder](/tools/kit-builder/), which follows Ready.gov's kit list, and read [Family First Aid Kit for Storms](/guides/storm-first-aid-kit/). A small grab-and-go option lives on the [ReadyWise 5-Day Survival Backpack](/gear/readywise-5-day-survival-backpack/) listing; whatever bag you use, pack what your household actually needs.
 - [ ] **Walk the house.** Ready.gov's hurricane guidance is to declutter drains and gutters, bring in outside furniture, and consider hurricane shutters. Fix easy water-entry problems now, not in a 36-hour warning.
-- [ ] **Know how you will get alerts** if the power and the cell network are both struggling: a weather radio, a battery or power station, and a planned check of [Live Weather Alerts](/alerts/).
+- [ ] **Know how you will get alerts** if the power and the cell network are both struggling: a weather radio, a battery or energy reserve, and a planned check of [Live Weather Alerts](/alerts/).
 
 ### When a Tropical Storm or Hurricane Watch is issued
 
@@ -109,7 +109,7 @@ A hurricane watch means hurricane-force winds are possible, and it is issued 48 
 - [ ] **Decide stay or go**, based on your official zone and the latest local instructions, not on the storm's category alone. If you will evacuate, leaving during the watch is often easier than leaving during the warning. See [evacuation](#know-your-evacuation-zone-and-leave-plan).
 - [ ] **Fill your water storage** and, if you are staying, consider filling a bathtub bladder such as the [waterBOB](/gear/waterbob/). Use the [Water Storage Calculator](/tools/water-calculator/) and the [water](#water-and-food-safety) section below.
 - [ ] **Get cash, fuel, and prescriptions.** Ready.gov's evacuation page says to keep a full tank of gas if an evacuation seems likely, and to keep at least a half tank at all times, because stations may be closed or unable to pump during an outage. Plan on one car per family to reduce congestion.
-- [ ] **Charge phones, power banks, and a power station.** Ready.gov says to keep your cell phone charged when a hurricane is in the forecast and to have backup charging devices.
+- [ ] **Charge phones, power banks, and an energy reserve.** Ready.gov says to keep your cell phone charged when a hurricane is in the forecast and to have backup charging devices.
 - [ ] **Bring in or tie down anything that can fly:** furniture, grills, trash cans, decorations, and loose tools. The NHC warns that items left outside can become missiles.
 - [ ] **Check on neighbors** who may need a ride or an extra hand, which Ready.gov also recommends.
 - [ ] **Freeze water jugs and leftovers** to help the freezer ride out an outage. See [food](#water-and-food-safety).
@@ -224,11 +224,11 @@ After a hurricane, this matters even more than usual: people run generators and 
 
 A working CO alarm such as the [Kidde KN-COB-LP2](/gear/kidde-kn-cob-lp2/), or a unit that also works as a nightlight such as the [Eton Blackout Buddy CO](/gear/eton-blackout-buddy-co/), belongs inside the house before you ever start a generator. Test it, and keep batteries on hand.
 
-### Battery power stations
+### Battery energy reserves
 
-Battery power stations make no exhaust, so they are the safer choice indoors and in apartments, as long as you follow the manufacturer's instructions and do not try to backfeed the house wiring. [Inverter Generator vs Portable Power Station](/guides/generator-vs-power-station/) compares the two, [How to Pick a Portable Power Station](/guides/how-to-pick-a-portable-power-station/) explains watt-hours and sizing, and the free [Generator & Power Station Sizer](/tools/power-sizer/) and [Solar & Power Station Sizer](/tools/solar-sizer/) help you estimate what you need. Browse [Home Backup Power & Solar](/home-backup-power-solar/) and [Off-Grid Power](/off-grid-power/).
+Battery energy reserves make no exhaust, so they are the safer choice indoors and in apartments, as long as you follow the manufacturer's instructions and do not try to backfeed the house wiring. [Inverter Generator vs Portable Energy Reserve](/guides/generator-vs-energy-reserve/) compares the two, [How to Pick a Portable Energy Reserve](/guides/how-to-pick-an-energy-reserve/) explains watt-hours and sizing, and the free [Generator & Energy Reserve Sizer](/tools/power-sizer/) and [Solar & Energy Reserve Sizer](/tools/solar-sizer/) help you estimate what you need. Browse [Home Backup Power & Solar](/home-backup-power-solar/) and [Off-Grid Power](/off-grid-power/).
 
-Portable power stations from <a href="https://www.jdoqocy.com/click-101929817-16981946?url=https%3A%2F%2Fwww.bluettipower.com%2F" target="_blank" rel="sponsored nofollow noopener" data-program="bluetti">BLUETTI</a> and <a href="https://www.kqzyfj.com/click-101929817-17227114" target="_blank" rel="sponsored nofollow noopener" data-program="allpowers">ALLPOWERS</a> are two battery options; they make no exhaust, unlike a generator, which must stay outdoors. On this site, see the [BLUETTI AC180](/gear/bluetti-ac180/) and the [BLUETTI 200W solar panel](/gear/bluetti-200w-solar-panel/). Program code AFF5OFF for 5% off at checkout, per BLUETTI, and program code ALLPOWERS26 for 10% off at checkout, per ALLPOWERS.
+Energy reserves from <a href="https://www.jdoqocy.com/click-101929817-16981946?url=https%3A%2F%2Fwww.bluettipower.com%2F" target="_blank" rel="sponsored nofollow noopener" data-program="bluetti">BLUETTI</a> and <a href="https://www.kqzyfj.com/click-101929817-17227114" target="_blank" rel="sponsored nofollow noopener" data-program="allpowers">ALLPOWERS</a> are two battery options; they make no exhaust, unlike a generator, which must stay outdoors. On this site, see the [BLUETTI AC180](/gear/bluetti-ac180/) and the [BLUETTI 200W solar panel](/gear/bluetti-200w-solar-panel/). Program code AFF5OFF for 5% off at checkout, per BLUETTI, and program code ALLPOWERS26 for 10% off at checkout, per ALLPOWERS.
 
 If you do run a generator, the [Runtime Reserve](/apps/runtime-reserve/) app is a simple fuel and runtime log you can use offline.
 
@@ -323,7 +323,7 @@ The NHC says hurricane-force winds, 74 mph or more, can destroy buildings and mo
 
 ### Apartments and close neighbors
 
-If you do not have a private yard, skip gasoline generators. Use flashlights, a weather radio, and a battery power station sized for phones, medical devices, and a fan or CPAP if you need one. Know how your building will communicate, where the stairwells are, and whether anyone on your floor needs a ride out. The [Apartment Outage Kit](/kits/apartment-outage-kit/) is a practical starting list.
+If you do not have a private yard, skip gasoline generators. Use flashlights, a weather radio, and a battery energy reserve sized for phones, medical devices, and a fan or CPAP if you need one. Know how your building will communicate, where the stairwells are, and whether anyone on your floor needs a ride out. The [Apartment Outage Kit](/kits/apartment-outage-kit/) is a practical starting list.
 
 ### Rural wells, pumps, and long distances
 
@@ -347,8 +347,8 @@ Everything below is free to use in your browser unless noted. You can also get o
 - [Emergency Kit Builder](/tools/kit-builder/): a printable Ready.gov kit checklist sized to your household
 - [Water Storage Calculator](/tools/water-calculator/): how much water to store
 - [Fridge & Freezer Outage Timer](/tools/outage-timer/): food-safety countdown
-- [Generator & Power Station Sizer](/tools/power-sizer/): estimate the watts you need
-- [Solar & Power Station Sizer](/tools/solar-sizer/): size panels and batteries
+- [Generator & Energy Reserve Sizer](/tools/power-sizer/): estimate the watts you need
+- [Solar & Energy Reserve Sizer](/tools/solar-sizer/): size panels and batteries
 
 **Offline apps** ([all apps](/apps/))
 
@@ -376,8 +376,8 @@ Everything below is free to use in your browser unless noted. You can also get o
 **More guides** ([all guides](/guides/))
 
 - [How Much Water to Store for a Hurricane](/guides/emergency-water-storage/)
-- [Inverter Generator vs Portable Power Station](/guides/generator-vs-power-station/)
-- [How to Pick a Portable Power Station](/guides/how-to-pick-a-portable-power-station/)
+- [Inverter Generator vs Portable Energy Reserve](/guides/generator-vs-energy-reserve/)
+- [How to Pick a Portable Energy Reserve](/guides/how-to-pick-an-energy-reserve/)
 - [Family First Aid Kit for Storms](/guides/storm-first-aid-kit/)
 - [Winter Storm & Power Outage Prep Guide for the South](/guides/winter-storm-power-outage-prep-guide-south/)
 - [Winter Storm Watch vs. Warning](/guides/winter-storm-watch-vs-warning/)

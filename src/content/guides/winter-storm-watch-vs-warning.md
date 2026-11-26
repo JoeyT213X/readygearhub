@@ -53,7 +53,7 @@ So if you live in Mississippi, Alabama, or Louisiana and see a warning for what 
 
 - [ ] Check your supplies: water, food that needs no cooking, medications, pet food, flashlights, and batteries.
 - [ ] Test your smoke and carbon monoxide alarms. Ready.gov recommends both with battery backups.
-- [ ] Charge phones, power banks, and any power station.
+- [ ] Charge phones, power banks, and any energy reserve.
 - [ ] Fill your gas tank. Ready.gov recommends keeping a full tank in winter.
 - [ ] Do your pipe prep: drain hoses and insulate exposed lines.
 - [ ] Make sure you have a way to get alerts if cell service drops (see below).

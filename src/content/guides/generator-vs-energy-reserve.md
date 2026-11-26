@@ -1,6 +1,6 @@
 ---
-title: "Inverter Generator vs Portable Power Station for Power Outages"
-description: "How to choose between an inverter generator and a portable power station for a power outage, including solar charging, hurricane use, and carbon monoxide safety for gas generators."
+title: "Inverter Generator vs Portable Energy Reserve for Power Outages"
+description: "How to choose between an inverter generator and a portable energy reserve for a power outage, including solar charging, hurricane use, and carbon monoxide safety for gas generators."
 lane: home-backup-power-solar
 season: ["hurricane", "winter", "all-season"]
 published: 2026-11-15
@@ -8,17 +8,17 @@ updated: 2026-11-23
 relatedItems: ["honda-eu3200i", "generac-iq3500", "honda-eu2200i", "bluetti-ac70", "ecoflow-river-3-plus", "anker-solix-f2000", "anker-solix-f3800-plus", "ecoflow-delta-3-plus", "ecoflow-400w-portable-solar-panel", "jackery-solarsaga-200", "goal-zero-nomad-50", "anker-solix-ps100", "anker-solix-ps400", "litime-12v-100ah-group24", "litime-24v-230ah"]
 ---
 
-A portable power station is a big rechargeable battery with outlets. An inverter generator is a small gasoline (or sometimes propane) engine that makes clean-enough power for electronics. For a hurricane or other outage, many households end up asking which one to buy. The honest answer is that they do different jobs, and some homes are better served by both.
+A portable energy reserve is a big rechargeable battery with outlets. An inverter generator is a small gasoline (or sometimes propane) engine that makes clean-enough power for electronics. For a hurricane or other outage, many households end up asking which one to buy. The honest answer is that they do different jobs, and some homes are better served by both.
 
 This is a buying and safety guide, not a runtime calculator. Appliance draw and fuel use vary. If you want a starting point for sizing, ReadyGearHub also has a [power sizer tool](/tools/power-sizer/) and a [runtime reserve app](/apps/runtime-reserve/). Do not treat any tool or marketing example as a guarantee of how long your generator or battery will last.
 
 ## What each one is good at
 
-**A portable power station** is silent, produces no exhaust, and is meant to be used indoors. That makes it a strong choice for phones, lights, a router, a laptop, a CPAP (confirm wattage first), or a small fridge for a limited time. You can recharge it from a wall outlet before the storm, from a car, or from a portable solar panel if the sun is out. When the battery is empty, it is empty until you recharge it.
+**A portable energy reserve** is silent, produces no exhaust, and is meant to be used indoors. That makes it a strong choice for phones, lights, a router, a laptop, a CPAP (confirm wattage first), or a small fridge for a limited time. You can recharge it from a wall outlet before the storm, from a car, or from a portable solar panel if the sun is out. When the battery is empty, it is empty until you recharge it.
 
 **An inverter generator** can usually keep running as long as you have fuel, oil, and safe outdoor space. That helps if you need to power a refrigerator, a furnace fan, or other larger loads for more than a few hours. The tradeoff is fuel storage, noise, maintenance, and carbon monoxide risk. It cannot be used indoors.
 
-If you already have a mid-size station such as the [BLUETTI AC70](/gear/bluetti-ac70/), [EcoFlow RIVER 3 Plus](/gear/ecoflow-river-3-plus/), or a larger unit such as the [Anker SOLIX F2000](/gear/anker-solix-f2000/) (Anker’s current large home-backup listing is the [F3800 Plus](/gear/anker-solix-f3800-plus/)) or [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/), you may only need a generator if those batteries cannot cover the loads or the outage length you actually expect. If you already have a generator, a smaller station is still useful indoors at night, so you are not running the engine just to charge phones.
+If you already have a mid-size energy reserve such as the [BLUETTI AC70](/gear/bluetti-ac70/), [EcoFlow RIVER 3 Plus](/gear/ecoflow-river-3-plus/), or a larger unit such as the [Anker SOLIX F2000](/gear/anker-solix-f2000/) (Anker’s current large home-backup listing is the [F3800 Plus](/gear/anker-solix-f3800-plus/)) or [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/), you may only need a generator if those batteries cannot cover the loads or the outage length you actually expect. If you already have a generator, a smaller energy reserve is still useful indoors at night, so you are not running the engine just to charge phones.
 
 ## How to size without overbuying
 
@@ -31,7 +31,7 @@ Read the label or power brick on each device you care about. Add the watts of an
 
 ## Solar, including "solar generators" for a hurricane outage
 
-A so-called solar generator is usually a power station plus a portable panel, not a rooftop solar system. Panels such as the [EcoFlow 400W portable panel](/gear/ecoflow-400w-portable-solar-panel/), [Jackery SolarSaga 200W](/gear/jackery-solarsaga-200/), [Goal Zero Nomad 50](/gear/goal-zero-nomad-50/), or the [Anker SOLIX PS100](/gear/anker-solix-ps100/) and [PS400](/gear/anker-solix-ps400/) only make power when they see the sun. After a hurricane, skies can stay cloudy for days, and you still need a safe outdoor place to set a panel up. Solar is a way to *recharge* a battery when the grid is down. It does not replace a correctly sized battery, and it does not make a gas generator safe to use indoors. A portable power station is not the only battery path: some RV and off-grid setups use a lithium house-battery bank instead, such as LiTime's [12V 100Ah Group 24](/gear/litime-12v-100ah-group24/) or [24V 230Ah](/gear/litime-24v-230ah/) self-heating LiFePO4 batteries. Those are components you size and install for a 12V or 24V system, not an all-in-one station with built-in outlets. Confirm chemistry, charging, and installation on the official pages. (More on both brands: [Anker SOLIX](/brands/anker-solix/) and [LiTime](/brands/litime/).)
+A so-called solar generator is usually an energy reserve plus a portable panel, not a rooftop solar system. Panels such as the [EcoFlow 400W portable panel](/gear/ecoflow-400w-portable-solar-panel/), [Jackery SolarSaga 200W](/gear/jackery-solarsaga-200/), [Goal Zero Nomad 50](/gear/goal-zero-nomad-50/), or the [Anker SOLIX PS100](/gear/anker-solix-ps100/) and [PS400](/gear/anker-solix-ps400/) only make power when they see the sun. After a hurricane, skies can stay cloudy for days, and you still need a safe outdoor place to set a panel up. Solar is a way to *recharge* a battery when the grid is down. It does not replace a correctly sized battery, and it does not make a gas generator safe to use indoors. A portable energy reserve is not the only battery path: some RV and off-grid setups use a lithium house-battery bank instead, such as LiTime's [12V 100Ah Group 24](/gear/litime-12v-100ah-group24/) or [24V 230Ah](/gear/litime-24v-230ah/) self-heating LiFePO4 batteries. Those are components you size and install for a 12V or 24V system, not an all-in-one energy reserve with built-in outlets. Confirm chemistry, charging, and installation on the official pages. (More on both brands: [Anker SOLIX](/brands/anker-solix/) and [LiTime](/brands/litime/).)
 
 ## Generator safety, including rain and carbon monoxide
 
@@ -41,7 +41,7 @@ Carbon monoxide (CO) is an odorless, colorless gas. The [CDC](https://www.cdc.go
 - Use generators only outside, more than 20 feet away from any windows, doors, and vents.
 - When you use a generator, use a battery-powered or battery-backup CO detector in your home.
 
-Follow the manufacturer's ventilation and weather instructions as well. If it is raining, do not move the generator into a garage, porch, or other enclosed or partly enclosed space to keep it dry. That is still an indoor CO risk. Keep the unit dry only in the way the manual allows (for example, a canopy or cover that does not trap exhaust or block airflow). If the manual does not describe a rain setup, do not improvise one. A power station inside the house is often the safer way to keep phones and lights on during a storm.
+Follow the manufacturer's ventilation and weather instructions as well. If it is raining, do not move the generator into a garage, porch, or other enclosed or partly enclosed space to keep it dry. That is still an indoor CO risk. Keep the unit dry only in the way the manual allows (for example, a canopy or cover that does not trap exhaust or block airflow). If the manual does not describe a rain setup, do not improvise one. An energy reserve inside the house is often the safer way to keep phones and lights on during a storm.
 
 Other hard limits:
 
@@ -54,7 +54,7 @@ For local outage and emergency contacts in Mississippi, start at the [Mississipp
 
 ## A practical way to choose
 
-- **Choose a power station first** if your priority is indoor, quiet power for communications, lighting, medical devices with a confirmed wattage, and short fridge runtime, and you can recharge from the wall or solar.
+- **Choose an energy reserve first** if your priority is indoor, quiet power for communications, lighting, medical devices with a confirmed wattage, and short fridge runtime, and you can recharge from the wall or solar.
 - **Choose an inverter generator** if you need longer runtime for larger household loads and you have a legal, outdoor place more than 20 feet from the home to run it.
 - **Consider both** if you want indoor battery power day to day and a generator you run only when you need to recharge the battery or carry a heavier load.
 

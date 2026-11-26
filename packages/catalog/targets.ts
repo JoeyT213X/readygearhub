@@ -46,8 +46,8 @@ export const categoryTargets: Record<string, CategoryTarget> = {
     label: 'Power',
     links: [
       { path: '/directory/power/', content: 'power', label: 'Power directory' },
-      { path: '/tools/power-sizer/', content: 'power-sizer', label: 'Generator and power-station sizer' },
-      { path: '/guides/how-to-pick-a-portable-power-station/', content: 'power-guide', label: 'How to pick a power station' },
+      { path: '/tools/power-sizer/', content: 'power-sizer', label: 'Generator and energy-reserve sizer' },
+      { path: '/guides/how-to-pick-an-energy-reserve/', content: 'power-guide', label: 'How to pick an energy reserve' },
     ],
   },
   tech: {

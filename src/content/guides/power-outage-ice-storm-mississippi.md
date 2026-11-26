@@ -20,7 +20,7 @@ Ice storms don't hit Mississippi every winter, but when one does, it can take ou
 - [ ] **Unplug sensitive electronics** such as TVs, computers, and game consoles. Ready.gov notes that power can come back with surges that damage equipment. Leave one lamp switched on so you'll know when power returns.
 - [ ] **Switch to flashlights, headlamps, or lanterns.** Skip candles if you can, since an open flame in a dark, crowded house is a fire risk.
 - [ ] **Turn on a weather radio.** Cell networks can get overloaded or lose power during big storms. A battery or hand-crank radio keeps you hearing NWS alerts and local news.
-- [ ] **Save your phone battery.** Turn on low-power mode, dim the screen, and use a power bank or power station to top it up.
+- [ ] **Save your phone battery.** Turn on low-power mode, dim the screen, and use a power bank or energy reserve to top it up.
 
 ## Stay warm without risking carbon monoxide
 
@@ -93,7 +93,7 @@ You don't need everything, but these cover the basics. Check each manufacturer's
 | Alerts without cell service | [Midland ER310 crank weather radio](/gear/midland-er310-crank-radio/) |
 | Hands-free light | [Black Diamond Spot 400 headlamp](/gear/black-diamond-spot-400/) |
 | Room light and USB charging | [Goal Zero Lighthouse 600 lantern](/gear/goal-zero-lighthouse-600/) |
-| Phones, router, lights, medical devices | [EcoFlow DELTA 3 Plus power station](/gear/ecoflow-delta-3-plus/) or see our [power station guide](/guides/how-to-pick-a-portable-power-station/) |
+| Phones, router, lights, medical devices | [EcoFlow DELTA 3 Plus energy reserve](/gear/ecoflow-delta-3-plus/) or see our [energy reserve guide](/guides/how-to-pick-an-energy-reserve/) |
 | CO protection | [Eton Blackout Buddy CO detector](/gear/eton-blackout-buddy-co/) |
 | Extra warmth | [SOL Emergency Bivvy](/gear/sol-emergency-bivvy/) |
 

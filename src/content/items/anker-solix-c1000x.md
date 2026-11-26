@@ -1,16 +1,16 @@
 ---
-name: "Anker SOLIX C1000 Portable Power Station"
+name: "Anker SOLIX C1000 Energy Reserve"
 brand: "Anker SOLIX"
 lane: power-outage-kits
 alsoIn: ["off-grid-power", "home-backup-power-solar"]
-tags: ["power station", "battery backup", "fast charging"]
-description: "A mid-size portable power station from Anker SOLIX with an LFP battery and fast AC recharging, according to Anker."
+tags: ["energy reserve", "battery backup", "fast charging"]
+description: "A mid-size portable energy reserve from Anker SOLIX with an LFP battery and fast AC recharging, according to Anker."
 uses:
   - "Outage backup for phones, lights, and small appliances"
   - "Recharge quickly between outages"
   - "Camping and RV power"
   - "Remote work power"
-officialUrl: "https://www.ankersolix.com/c1000-camping-portable-power-station-pps"
+officialUrl: "https://www.ankersolix.com/c1000-camping-portable-power-energy reserve-pps"
 affiliateUrl: ""
 rank: 0
 featured: false

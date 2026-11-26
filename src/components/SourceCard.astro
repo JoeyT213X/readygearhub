@@ -63,7 +63,7 @@ const badge = item.trending
       </span>
     )}
   </a>
-  <p class="product-meta">{item.sourceName}{item.offerLabel ? ` · ${item.offerLabel}` : ''}</p>
+  <p class="product-meta">{item.sourceName}{item.offerLabel ? ` · ${item.offerLabel}` : ''}{item.usBadge && <span class="us-chip" title="U.S.-based maker"><svg viewBox="0 0 16 12" width="13" height="10" aria-hidden="true" focusable="false"><rect width="16" height="12" rx="1.2" fill="#b22234"/><rect y="2.4" width="16" height="2.4" fill="#f7f3ea"/><rect y="7.2" width="16" height="2.4" fill="#f7f3ea"/><rect width="7.2" height="6.4" fill="#1f3a5f"/></svg>U.S.</span>}</p>
   <Tag><a href={titleHref} target={titleInternal ? undefined : '_blank'} rel={titleRel}>{item.title}</a></Tag>
   <p class="product-price">{item.priceLabel}</p>
   <p>{item.blurb}</p>
@@ -78,3 +78,7 @@ const badge = item.trending
     {action.code && <p class="listing-code">Code: <strong>{action.code}</strong></p>}
   </div>
 </article>
+
+<style>
+  .us-chip{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:1px 7px 1px 5px;border-radius:999px;background:#1f3a5f;color:#f7f3ea;font-size:.68rem;font-weight:700;letter-spacing:.04em;vertical-align:middle;line-height:1.5}
+</style>

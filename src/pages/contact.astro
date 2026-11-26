@@ -14,12 +14,13 @@ import site from '../data/site';
       <label>Name<input name="name" autocomplete="name" required /></label>
       <label>Email<input type="email" name="email" autocomplete="email" required /></label>
       <label>Topic
-        <select name="topic"><option>General question</option><option>Correction</option><option>Product suggestion</option><option>Partnership</option></select>
+        <select name="topic"><option>General question</option><option>Correction</option><option>Product suggestion</option><option>Partnership</option><option>Installer or contractor lead (Doomsday Prepper projects)</option></select>
       </label>
       <label>Message<textarea name="message" rows="5" required></textarea></label>
       <button class="btn" type="submit">Send message</button>
     </form>
   </section>
+  <script is:inline>(function(){var t=new URLSearchParams(location.search).get('topic');if(t==='installer-leads'){var s=document.querySelector('select[name=topic]');if(s)s.selectedIndex=s.options.length-1;}})();</script>
   <RelatedLinks links={[
     { href: "/about/", icon: "ℹ️", title: "About ReadyGearHub", text: "How we choose listings and stay independent." },
     { href: "/get-featured/", icon: "⭐", title: "Get featured", text: "List your business in the directory." },

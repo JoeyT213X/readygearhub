@@ -182,7 +182,7 @@ export const payhipProducts: PayhipProduct[] = [
     image: '/shop/homestead-prep-starter-guide.png',
     related: [
       { href: '/guides/emergency-water-storage/', label: 'Emergency water storage' },
-      { href: '/guides/generator-vs-power-station/', label: 'Generator vs. power station' },
+      { href: '/guides/generator-vs-energy-reserve/', label: 'Generator vs. energy reserve' },
       { href: '/kits/', label: 'Storm kits' },
     ],
   },

@@ -1,10 +1,10 @@
 ---
-name: "Goal Zero Yeti 1500 Portable Power Station"
+name: "Goal Zero Yeti 1500"
 brand: "Goal Zero"
 lane: off-grid-power
 alsoIn: ["power-outage-kits", "home-backup-power-solar"]
-tags: ["power station", "lifepo4", "solar ready"]
-description: "Goal Zero's new-for-2026 Yeti 1500 power station with a LiFePO4 battery and weather-rated build, according to Goal Zero."
+tags: ["energy reserve", "lifepo4", "solar ready"]
+description: "Goal Zero's new-for-2026 Yeti 1500 energy reserve with a LiFePO4 battery and weather-rated build, according to Goal Zero."
 uses:
   - "Whole-weekend outage backup for essentials"
   - "Off-grid cabin power"

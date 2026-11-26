@@ -16,6 +16,7 @@ import { isStoreFront } from './listing-actions';
 import type { SourceCategoryId, SourceGroupId } from './source-directory';
 import { isNoPpcProgram, programIdForItem, resolveOutbound } from './affiliates';
 import { roboticsDronesItems } from './robotics-drones';
+import { doomsdayNewItems } from './doomsday-prepper';
 
 export type HighTicketItem = {
   id: string;
@@ -37,6 +38,8 @@ export type HighTicketItem = {
   price?: string;
   /** Low-key filler: sort after US/allied listings, bottom group only, never featured or on the home page. */
   filler?: boolean;
+  /** U.S.-based maker: shows the small U.S. chip on the card. */
+  us?: boolean;
 };
 
 export const highTicketItems: HighTicketItem[] = [
@@ -900,8 +903,8 @@ export const highTicketItems: HighTicketItem[] = [
   },
   {
     id: 'jackery-explorer-2000-v2',
-    title: 'Jackery Explorer 2000 v2 portable power station',
-    blurb: 'A portable power station listed on Jackery’s official shop as the Explorer 2000 v2. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
+    title: 'Jackery Explorer 2000 v2',
+    blurb: 'A portable energy reserve listed on Jackery’s official shop as the Explorer 2000 v2. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
     sourceName: 'Jackery',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -910,14 +913,14 @@ export const highTicketItems: HighTicketItem[] = [
     fallbackUrl: 'https://www.jackery.com/products/explorer-2000-v2-portable-power-station',
     image: '/directory/photos/jackery-explorer-2000-v2-960.webp',
     imageKind: 'photo',
-    offerLabel: 'Portable power station',
+    offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
     price: '$999.00 as of Nov 23, 2026',
   },
   {
     id: 'ecoflow-delta-2-max',
-    title: 'EcoFlow DELTA 2 Max portable power station',
-    blurb: 'A portable power station listed on EcoFlow’s official US shop as the DELTA 2 Max. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
+    title: 'EcoFlow DELTA 2 Max',
+    blurb: 'A portable energy reserve listed on EcoFlow’s official US shop as the DELTA 2 Max. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
     sourceName: 'EcoFlow',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -926,14 +929,14 @@ export const highTicketItems: HighTicketItem[] = [
     fallbackUrl: 'https://us.ecoflow.com/products/delta-2-max-portable-power-station',
     image: '/directory/photos/ecoflow-delta-2-max-960.webp',
     imageKind: 'photo',
-    offerLabel: 'Portable power station',
+    offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
     price: '$1,459.00 as of Nov 23, 2026',
   },
   {
     id: 'goal-zero-yeti-500',
-    title: 'Goal Zero Yeti 500 portable power station',
-    blurb: 'A portable power station listed on Goal Zero’s official shop as the Yeti 500. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
+    title: 'Goal Zero Yeti 500',
+    blurb: 'A portable energy reserve listed on Goal Zero’s official shop as the Yeti 500. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
     sourceName: 'Goal Zero',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -942,14 +945,14 @@ export const highTicketItems: HighTicketItem[] = [
     fallbackUrl: 'https://www.goalzero.com/products/yeti-500-portable-power-station-lfp-battery',
     image: '/directory/photos/goal-zero-yeti-500-960.webp',
     imageKind: 'photo',
-    offerLabel: 'Portable power station',
+    offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
     price: '$499.95 as of Nov 23, 2026',
   },
   {
     id: 'goal-zero-yeti-700',
-    title: 'Goal Zero Yeti 700 portable power station',
-    blurb: 'A portable power station listed on Goal Zero’s official shop as the Yeti 700. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
+    title: 'Goal Zero Yeti 700',
+    blurb: 'A portable energy reserve listed on Goal Zero’s official shop as the Yeti 700. See the official page for capacity, output, and the current price. We don’t have a partner program with this brand yet.',
     sourceName: 'Goal Zero',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -958,7 +961,7 @@ export const highTicketItems: HighTicketItem[] = [
     fallbackUrl: 'https://www.goalzero.com/products/yeti-700-portable-power-station-lfp-batteries',
     image: '/directory/photos/goal-zero-yeti-700-960.webp',
     imageKind: 'photo',
-    offerLabel: 'Portable power station',
+    offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
     price: '$699.95 as of Nov 23, 2026',
   },
@@ -1567,6 +1570,9 @@ export const highTicketItems: HighTicketItem[] = [
 // Drones & Robotics lineups (RobotShop, Robots International, Autel Robotics, HOVERAir). Pending programs, plain links.
 highTicketItems.push(...roboticsDronesItems);
 
+// Doomsday Prepper category: new official US/allied maker pages (cross-listed items stay in their own categories).
+highTicketItems.push(...doomsdayNewItems);
+
 export function highTicketToCatalogItem(item: HighTicketItem): CatalogItem {
   const official = item.fallbackUrl;
   const manual = (item.affiliateUrl && item.affiliateUrl.trim()) || '';
@@ -1596,6 +1602,7 @@ export function highTicketToCatalogItem(item: HighTicketItem): CatalogItem {
     kind: 'brand',
     origin: 'directory',
     filler: item.filler,
+    usBadge: item.us || undefined,
     storeLevel: isStoreFront(official) || undefined,
   };
 }

@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Disclosure from '../../components/Disclosure.astro';
+import { doomsdaySections, doomsdayNewItems, doomsdayCrossList } from '../../data/doomsday-prepper';
+import { doomsdayProjects } from '../../data/doomsday-projects';
+const counts = (id: string) => doomsdayNewItems.filter((n) => n.section === id).length + (doomsdayCrossList as Record<string, string[]>)[id].length;
+---
+<Base title="Doomsday Prepper: Shelters, Extreme Vehicles, Security & More | ReadyGearHub" description="Serious preparedness, calmly laid out: shelters and bunkers, extreme vehicles, perimeter security, air and water, long-term food, energy reserves, comms, medical and tools. Plus a projects guide with permits and sourced cost ranges.">
+  <PageHero title="Doomsday Prepper" eyebrow="Extreme preparedness" lead="The serious end of the hobby, laid out calmly. Official maker pages, U.S. makers first, allied makers next." photo="hero-bunker-hatch" crumbs={[{ label: 'Doomsday Prepper' }]} />
+  <section class="wrap section dd-hub">
+    <p class="dd-lead">Big projects take planning more than gear. Start with the sections below, then see the <a href="/doomsday-prepper/projects/">Projects guide</a> for permits, beginner steps and cost ranges taken from published sources.</p>
+    <div class="dd-tiles">
+      {doomsdaySections.map((s) => (
+        <a class="dd-tile" href={`/directory/doomsday-prepper/#dd-${s.id}`}>
+          <h2>{s.name}</h2>
+          <p>{s.blurb}</p>
+          <span class="dd-tile-count">{counts(s.id)} listings</span>
+        </a>
+      ))}
+    </div>
+    <div class="dd-cta">
+      <a class="btn" href="/directory/doomsday-prepper/">Browse every listing</a>
+      <a class="btn secondary" href="/doomsday-prepper/projects/">Projects: permits, guides, costs</a>
+    </div>
+    <h2 class="dd-h2">Planning a build?</h2>
+    <ul class="dd-projects">
+      {doomsdayProjects.map((p) => <li><a href={`/doomsday-prepper/projects/#${p.id}`}>{p.name}</a></li>)}
+    </ul>
+    <p class="fine">Rules vary by county and state. Nothing here is legal, engineering or financial advice. Confirm requirements with your local building department.</p>
+    <Disclosure />
+  </section>
+</Base>
+<style is:global>
+  .dd-lead{max-width:62ch;font-size:1.08rem}
+  .dd-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:24px 0}
+  .dd-tile{display:block;padding:18px 18px 14px;border:1px solid #b08d3c;border-radius:6px;background:#14233a;color:#f1e7c8;text-decoration:none}
+  .dd-tile h2{margin:0 0 6px;font-size:1.15rem;color:#f4d98a}
+  .dd-tile p{margin:0 0 10px;font-size:.92rem;color:#d9d3c0}
+  .dd-tile-count{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:#b08d3c}
+  .dd-tile:hover{background:#1b2e4b}
+  .dd-cta{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0 28px}
+  .dd-h2{margin-top:32px}
+  .dd-projects{columns:2;max-width:560px}
+  @media (max-width:560px){.dd-projects{columns:1}}
+</style>

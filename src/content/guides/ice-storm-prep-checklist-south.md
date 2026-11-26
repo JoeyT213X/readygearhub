@@ -38,7 +38,7 @@ Ready.gov says Winter Storm Watches usually come 12 to 48 hours before a storm. 
 
 - [ ] A **flashlight for every household member**, as Ready.gov recommends, plus extra batteries. Lanterns like the [Goal Zero Lighthouse 600](/gear/goal-zero-lighthouse-600/) light up a whole room.
 - [ ] A **battery or hand-crank weather radio**, like the [Midland ER310](/gear/midland-er310-crank-radio/), for NWS alerts if cell service goes down.
-- [ ] Charge every phone, power bank, and laptop. If you have a portable power station, like the [Jackery Explorer 1000 Plus](/gear/jackery-explorer-1000-plus/), charge it to full. Not sure if you need one? Read our [power station guide](/guides/how-to-pick-a-portable-power-station/).
+- [ ] Charge every phone, power bank, and laptop. If you have a portable energy reserve, like the [Jackery Explorer 1000 Plus](/gear/jackery-explorer-1000-plus/), charge it to full. Not sure if you need one? Read our [energy reserve guide](/guides/how-to-pick-an-energy-reserve/).
 
 **Safety**
 
