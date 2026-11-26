@@ -7,7 +7,7 @@ import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import WinterDealCard from '../components/WinterDealCard.astro';
 import { getItems, getGuides, site } from '../lib/data';
 import { isAffiliate } from '../lib/data';
-import { programs, isProgramLive, buildLink } from '../data/affiliates';
+import { programs, isProgramLive, buildLink, isAmazonUrl, amazonLink } from '../data/affiliates';
 import {
   winterDeals,
   winterDealSections,
@@ -23,9 +23,9 @@ function hostOf(url: string): string {
 const trackedSources = winterDealSources.map((s) => {
   const host = hostOf(s.href);
   const program = programs.find((p) => isProgramLive(p.id) && p.officialUrl && hostOf(p.officialUrl) === host);
-  const tracked = program ? buildLink(program, s.href) : '';
+  const tracked = isAmazonUrl(s.href) ? amazonLink(s.href) : program ? buildLink(program, s.href) : '';
   return tracked
-    ? { ...s, href: tracked, affiliate: true as const, programId: program!.id }
+    ? { ...s, href: tracked, affiliate: true as const, programId: program?.id ?? 'amazon' }
     : { ...s, affiliate: false as const, programId: '' };
 });
 
@@ -96,8 +96,7 @@ const schema = [
     <p>
       On November 23, 2026, Amazon’s best-seller lists were led by portable space heaters (DREO, GiveBest, Amazon Basics, Lasko),
       HotHands hand warmers, Bedsure heated throws, and an AstroAI snow brush. Retail Black Friday coverage also highlighted heated vests
-      from brands such as ORORO. We still do not have approved programs for those brands, Amazon Associates is still
-      pending, and this site does not use Sovrn, so we are not adding buy links for those products. We do now list TideWe heated jackets, vests, and insulated waders from TideWe’s official store, and Bogs winter boots from Bogs’ official store.
+      from brands such as ORORO. We do not have brand programs for those makers, so we link only to the Amazon pages below. This site does not use Sovrn. We do now list TideWe heated jackets, vests, and insulated waders from TideWe’s official store, and Bogs winter boots from Bogs’ official store.
     </p>
     <p>
       Our own ReadyGearHub analytics from November 18 through {PRICE_CHECKED_LABEL} show only seven clicks on product links,
