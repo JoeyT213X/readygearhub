@@ -173,6 +173,7 @@ export const doomsdayProjects: Project[] = [
       { label: 'FEMA P-320: Taking Shelter from the Storm (includes plans)', url: 'https://www.fema.gov/sites/default/files/documents/fema_rsl_fema-p-320-taking-shelter-from-the-storm_042025.pdf' },
       { label: 'FEMA P-361', url: 'https://www.fema.gov/sites/default/files/documents/fema_p-361_safe-rooms-for-tornadoes-and-hurricanes_122024.pdf' },
       { label: 'ICC: International Codes', url: 'https://codes.iccsafe.org/' },
+      { label: 'FEMA building science FAQ: safe room costs', url: 'https://www.fema.gov/emergency-managers/risk-management/building-science/faq' },
       { label: 'Building America Solution Center: safe rooms and storm shelters (US DOE)', url: 'https://basc.pnnl.gov/resource-guides/safe-rooms-and-storm-shelters' },
       localGov, callBeforeDig,
     ],
@@ -185,7 +186,7 @@ export const doomsdayProjects: Project[] = [
     costs: [
       { size: 'Small', what: '10 x 20 ft outbuilding (200 sq ft)', range: 'prefab $4,000–$10,000; custom $10,000–$30,000', sourceLabel: 'HomeGuide', sourceUrl: 'https://homeguide.com/costs/cost-to-build-a-shop' },
       { size: 'Medium', what: '20 x 30 ft outbuilding (600 sq ft)', range: 'prefab $12,000–$30,000; custom $30,000–$90,000', sourceLabel: 'HomeGuide', sourceUrl: 'https://homeguide.com/costs/cost-to-build-a-shop', note: 'HomeGuide lists permits at about 0.5% to 2% of cost.' },
-      { size: 'Large', what: '30 x 40 ft outbuilding (1,200 sq ft)', range: 'prefab $24,000–$60,000; custom $60,000–$180,000', sourceLabel: 'HomeGuide', sourceUrl: 'https://homeguide.com/costs/cost-to-build-a-shop', note: 'Site-built safe room added during new construction: about $6,300–$9,500 (8 x 8 ft) or $11,400–$17,000 (14 x 14 ft), per the Building America Solution Center.' },
+      { size: 'Large', what: '30 x 40 ft outbuilding (1,200 sq ft)', range: 'prefab $24,000–$60,000; custom $60,000–$180,000', sourceLabel: 'HomeGuide', sourceUrl: 'https://homeguide.com/costs/cost-to-build-a-shop', note: 'Site-built safe room added during new construction (FEMA, 2024 dollars, door assembly extra at about $2,500–$3,200): $12,700–$16,100 for 8 x 8 ft and $25,600–$34,500 for 14 x 14 ft. Retrofits cost more. Source: FEMA building science FAQ (https://www.fema.gov/emergency-managers/risk-management/building-science/faq).' },
     ],
   },
   {
