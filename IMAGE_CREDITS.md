@@ -396,3 +396,7 @@ Storyteller Overland MODE, Sportsmobile, EarthRoamer, INKAS and other brands wit
 ## Amazon picks (amz-*.webp in public/directory/photos)
 
 Each `amz-<asin>-960.webp` is the product's own listing image for the Amazon product it links to, stored locally (no hotlinking) and padded onto a white 16:9 card. The owner approved local storage; note that Amazon Associates terms restrict storing Amazon images, so consider swapping in brand-supplied press images over time. Source: https://www.amazon.com/dp/<asin>. Product names and logos belong to their owners.
+
+## Doomsday Prepper home window loop (public/videos/doomsday-extreme.*)
+
+Rebuilt 26 November 2026 as a 5-second muted loop from our own self-hosted, already-credited photos only: `hero-bunker-hatch`, `hero-overland-cruiser`, `hero-radios`, `hero-food-shelves`, `hero-utv-dunes`, `hero-overland-truck` (credits above). No power station, BLUETTI or EcoFlow product appears in the loop or the poster.
