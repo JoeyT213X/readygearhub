@@ -793,7 +793,7 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
 
   const scenes: ShopBoardTile[] = [
     sceneTile('scene-lead', 'Winter storm prep', '/winter-storm-prep/', 'hero-snowy-home'),
-    sceneTile('scene-power', 'Power', '/directory/power/', 'solar-rooftops'),
+    sceneTile('scene-power', 'Energy Reserves', '/directory/power/', 'solar-rooftops'),
     sceneTile('scene-drone', 'Drones', '/directory/drones/', 'hero-drone'),
     sceneTile('scene-utv', 'Off-road vehicles', '/directory/vehicles/', 'hero-utv-dunes'),
     sceneTile('scene-bunker', 'Shelters', '/directory/security/', 'hero-bunker-hatch'),

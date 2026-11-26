@@ -2,11 +2,9 @@
 /**
  * Product previews beside the Shop the Directory heading on desktop
  * (four small windows in that row, each rotating independently).
- * On tablets the same four windows become one panel at a time, with swipe and dots.
- * On phones (768px and under) the four windows show as one static row under
- * the headline — first product of each lane, no swipe, no auto-rotation, no
- * dots. The Extreme window and category tiles follow below. No portable
- * energy reserves, no robot-dog fillers, no badges or invented stats.
+ * Hidden at 1023px and under: phones and tablets show the category tile
+ * grid instead, with no swipe, dots, or rotation. No portable energy
+ * reserves, no robot-dog fillers, no badges or invented stats.
  */
 import { productPhotoFor } from '../data/product-photos';
 import { headingProductHref, shortProductName, type CatalogItem } from '../data/full-catalog';
@@ -73,7 +71,7 @@ const laneCount = filledLanes.length;
   if (root) {
     const desktop = window.matchMedia('(min-width: 1024px)');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const phone = window.matchMedia('(max-width: 768px)'); // phones: static four-up row, nothing rotates or swipes
+    const phone = window.matchMedia('(max-width: 1023px)'); // phones and tablets: windows are hidden, nothing rotates or swipes
     const stage = root.querySelector<HTMLElement>('[data-hero-stage]')!;
     const slots = Array.from(root.querySelectorAll<HTMLElement>('.home-hero-slot'));
     const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-hero-dot]'));
