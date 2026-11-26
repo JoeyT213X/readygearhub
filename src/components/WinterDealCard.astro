@@ -33,7 +33,7 @@ const href = outUrl(item);
     {deal.compareAt && deal.priceLabel !== 'See price' ? (
       <><span class="wd-was">Listed at {deal.compareAt}</span> <span class="wd-now">{deal.priceLabel}</span></>
     ) : (
-      <span class="wd-now">{deal.priceLabel}</span>
+      <span class="wd-now">{deal.priceLabel === 'See price' ? 'Price on the store page' : deal.priceLabel}</span>
     )}
     <span class="wd-checked">Checked {PRICE_CHECKED_LABEL} on the official store.</span>
   </p>

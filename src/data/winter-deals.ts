@@ -37,13 +37,13 @@ export const winterDealSections: { id: WinterDealSection; title: string; intro: 
     id: 'cold',
     title: 'A self-heating battery for cold weather',
     intro:
-      'LiTime’s LiHeat battery is built to warm itself in the cold, according to LiTime. We could not confirm a live price on November 23, 2026, so this card says “See price.”',
+      'LiTime’s LiHeat battery is built to warm itself in the cold, according to LiTime. We could not confirm a live price on November 23, 2026, so this card says “Price on the store page.”',
   },
   {
     id: 'water',
     title: 'Drinking water if pipes or supply are a problem',
     intro:
-      'A countertop iSpring dispenser does not require under-sink plumbing, which can matter if a freeze has you thinking about water at home. We could not confirm a live price on November 23, 2026, so this card says “See price.”',
+      'A countertop iSpring dispenser does not require under-sink plumbing, which can matter if a freeze has you thinking about water at home. We could not confirm a live price on November 23, 2026, so this card says “Price on the store page.”',
   },
   {
     id: 'apparel',
