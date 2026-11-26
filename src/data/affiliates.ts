@@ -5,6 +5,12 @@
  */
 export {
   CJ_PID,
+  AMAZON_TAG,
+  AMAZON_DISCLOSURE,
+  isAmazonUrl,
+  amazonLink,
+  amazonProductUrl,
+  amazonSearchUrl,
   programs,
   isProgramLive,
   cjLink,

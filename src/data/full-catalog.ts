@@ -12,6 +12,7 @@ import { catalogExtraById, type CatalogExtra } from './catalog-extras';
 import { newPrepperOnlyPicks, prepperPickToCatalogItem } from './prepper-picks';
 import { doomsdayCrossList, doomsdayUsCrossIds } from './doomsday-prepper';
 import { highTicketCatalogItems } from './high-ticket';
+import { amazonCatalogItems } from './amazon-picks';
 import { stockCoverFor } from './stock-covers';
 import { isStoreFront } from './listing-actions';
 import { productPhotoFor } from './product-photos';
@@ -370,6 +371,13 @@ export function buildFullCatalog(gearItems: GearInput[]): CatalogItem[] {
   }
 
   for (const item of highTicketCatalogItems()) {
+    if (used.has(item.id)) continue;
+    items.push(applyExtra(item, catalogExtraById[item.id]));
+    used.add(item.id);
+  }
+
+  // Amazon picks come last: any product already linked through another partner keeps its partner card.
+  for (const item of amazonCatalogItems()) {
     if (used.has(item.id)) continue;
     items.push(applyExtra(item, catalogExtraById[item.id]));
     used.add(item.id);

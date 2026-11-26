@@ -392,3 +392,7 @@ Self-hosted in `public/directory/photos/{id}-{480,960}.webp` (resized copies, no
 Ghost Robotics reuses the U.S. Army public-domain photo already credited above, now stored as `ghost-robotics-official-{480,960}.webp`.
 
 Storyteller Overland MODE, Sportsmobile, EarthRoamer, INKAS and other brands without a legitimately licensed photo show a name card instead of a look-alike photo.
+
+## Amazon picks (amz-*.webp in public/directory/photos)
+
+Each `amz-<asin>-960.webp` is the product's own listing image for the Amazon product it links to, stored locally (no hotlinking) and padded onto a white 16:9 card. The owner approved local storage; note that Amazon Associates terms restrict storing Amazon images, so consider swapping in brand-supplied press images over time. Source: https://www.amazon.com/dp/<asin>. Product names and logos belong to their owners.

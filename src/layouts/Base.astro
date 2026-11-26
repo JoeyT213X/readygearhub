@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import '../styles/refresh.css';
 import site from '../data/site';
+import { AMAZON_DISCLOSURE } from '../data/affiliates';
 import lanesRaw from '../data/lanes.json';
 import { mailerlite } from '../data/mailerlite';
 import MailerLiteSignup from '../components/MailerLiteSignup.astro';
@@ -169,7 +170,7 @@ const menuJs = `(function(){var d=document,btn=d.querySelector('[data-menu-open]
         <p class="logo small">Ready<span>Gear</span>Hub</p>
         <p>{site.tagline}</p>
         <p class="fine">A site of {site.legalName} — Unified Commerce Operations.</p>
-        <p class="fine">As an affiliate, ReadyGearHub may earn a commission from qualifying purchases at no extra cost to you. <a href="/affiliate-disclosure/">Learn more</a>.</p>
+        <p class="fine">As an affiliate, ReadyGearHub may earn a commission from qualifying purchases at no extra cost to you. {AMAZON_DISCLOSURE} <a href="/affiliate-disclosure/">Learn more</a>.</p>
         <MailerLiteSignup variant="footer" heading="Email tips" intro="Occasional checklists. Unsubscribe anytime." />
       </div>
       <div>

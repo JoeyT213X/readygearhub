@@ -1,6 +1,7 @@
 ---
 import RelatedLinks from '../components/RelatedLinks.astro';
 import Base from '../layouts/Base.astro';
+import { AMAZON_DISCLOSURE } from '../data/affiliates';
 ---
 <Base title="Affiliate Disclosure | ReadyGearHub" description="How ReadyGearHub earns money: affiliate links, featured listings, and how we keep recommendations honest, in line with FTC guidelines.">
   <section class="page-hero"><div class="wrap"><h1>Affiliate Disclosure</h1><p class="fine light">Last updated November 15, 2026</p></div></section>
@@ -9,6 +10,8 @@ import Base from '../layouts/Base.astro';
     <h2>Affiliate links</h2>
     <p>Some of the links on ReadyGearHub are affiliate links. If you click one and buy something, we may receive a commission from the retailer or brand. The price you pay is the same either way. Links that are affiliate links are marked with <code>rel="sponsored"</code> in the page code, and pages that may contain affiliate links show a short disclosure near those links.</p>
     <p>We may participate in affiliate programs run by individual brands and by affiliate networks. Program participation doesn't change which products we list or how we describe them.</p>
+    <h2>Amazon</h2>
+    <p>ReadyGearHub is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. <strong>{AMAZON_DISCLOSURE}</strong> Amazon links on this site carry our Associates tracking ID, and we never show an Amazon price, rating or review on a card, because those change constantly. Check the Amazon page for the current price.</p>
     <h2>Our own digital products</h2>
     <p>ReadyGearHub previously sold a few print-at-home PDF guides through Payhip. Those offers are no longer for sale. If you already bought one, checkout and delivery were handled by Payhip, not by an affiliate program, and the <a href="/refund-policy/">refund policy</a> still applies to that purchase.</p>
     <h2>Featured listings</h2>

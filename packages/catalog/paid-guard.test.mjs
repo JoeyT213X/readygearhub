@@ -10,7 +10,7 @@ import { dirname, join } from 'node:path';
 import { mkdirSync, writeFileSync } from 'node:fs';
 
 const root = dirname(fileURLToPath(import.meta.url));
-const required = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe', 'bogs', 'robotshop', 'robots-international', 'autel-robotics', 'hoverair', 'elephant-robotics'];
+const required = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe', 'bogs', 'robotshop', 'robots-international', 'autel-robotics', 'hoverair', 'elephant-robotics', 'amazon'];
 const outfile = join(root, 'dist', 'test-entry.mjs');
 mkdirSync(join(root, 'dist'), { recursive: true });
 

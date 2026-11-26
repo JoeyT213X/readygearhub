@@ -77,7 +77,7 @@ export const PROGRAM_PAYOUT_PERCENT: Record<string, number> = {
   'roaring-fire-gear': 10,
   'nova-safety': 8,
   'natures-generator': 5,
-  amazon: 10,
+  amazon: 3, // Amazon Associates standard rates run roughly 1–4.5% for most gear (up to 10% in a few categories); 3 is a conservative mid-point
 };
 
 const programById = new Map(programs.map((p) => [p.id, p]));

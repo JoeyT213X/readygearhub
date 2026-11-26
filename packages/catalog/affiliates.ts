@@ -19,7 +19,7 @@
  * lead boxes stay hidden — no sponsored label, no tracking, no invented affiliate URLs.
  *
  * ppcAllowed: set `ppcAllowed: false` for partners that bar paid-search promotion
- * (currently Choice Home Warranty, REDI, Waterdrop Filter, TideWe, and Bogs). FunnelGuards hides
+ * (currently Choice Home Warranty, REDI, Waterdrop Filter, TideWe, Bogs, and Amazon, whose Associates terms bar Amazon links in paid ads). FunnelGuards hides
  * those cards and links during an rgh_paid_search session; they stay visible on
  * ordinary organic visits. Omit the field or set it true when paid search is allowed
  * under the site Paid Advertising Policy. Use isPpcAllowed(id) and isProgramLive(id).
@@ -28,6 +28,45 @@
  */
 
 export const CJ_PID = '101929817';
+
+/**
+ * Amazon Associates tracking ID (payee OMEGA UCO SOLUTIONS, LLC). Public by design: it appears in every
+ * amazon.com link. Never build an amazon.com link by hand: use amazonLink(), amazonProductUrl() or
+ * amazonSearchUrl() so the tag is always attached.
+ */
+export const AMAZON_TAG = 'readygearhub-20';
+
+/** The one-line disclosure Amazon requires wherever we link to amazon.com. */
+export const AMAZON_DISCLOSURE = 'As an Amazon Associate I earn from qualifying purchases.';
+
+/** True for amazon.com (any subdomain) URLs. Short links (amzn.to, a.co) cannot carry our tag and are not used. */
+export function isAmazonUrl(url: string | undefined | null): boolean {
+  if (!url) return false;
+  try {
+    const h = new URL(url).hostname.toLowerCase();
+    return h === 'amazon.com' || h.endsWith('.amazon.com');
+  } catch {
+    return false;
+  }
+}
+
+/** Return the amazon.com URL with tag=readygearhub-20 (replacing any other tag). Non-Amazon URLs pass through unchanged. */
+export function amazonLink(url: string): string {
+  if (!isAmazonUrl(url)) return url;
+  const u = new URL(url);
+  u.searchParams.set('tag', AMAZON_TAG);
+  return u.toString();
+}
+
+/** Tagged product page for a verified ASIN. */
+export function amazonProductUrl(asin: string): string {
+  return amazonLink(`https://www.amazon.com/dp/${asin}`);
+}
+
+/** Tagged Amazon search for an exact product name (use only when no verified ASIN exists). */
+export function amazonSearchUrl(query: string): string {
+  return amazonLink(`https://www.amazon.com/s?k=${encodeURIComponent(query)}`);
+}
 
 export type Network =
   | 'CJ' | 'Impact' | 'Awin' | 'Partnerize' | 'FlexOffers' | 'Refersion' | 'GoAffPro'
@@ -453,8 +492,8 @@ export const programs: Program[] = [
       'bogs-snow-shell-cosmic-forest': 'https://click.linksynergy.com/deeplink?id=j8aaZmp7txc&mid=37142&murl=https%3A%2F%2Fwww.bogsfootwear.com%2Fshop%2Fstyle%2F73377-409.html',
     },
     note: 'Rakuten MID 37142, publisher SID 4780263, 2% last-click commission, approved by Joseph Nov 25, 2026. PPC, coupon, and image terms could not be confirmed because the terms document would not open, so Bogs stays off all paid-search landing pages and paid-ad sessions, alongside Choice Home Warranty, REDI, Waterdrop, and TideWe. Do not show promo codes or sale prices. No official product photos are used because image terms were not confirmed. Linked from /winter-deals/, /cold-weather-gear/, /gear/ (Warmth, Vehicle, Tools & Retailers), and the Full Source Directory outdoor tab.' },
-  { id: 'amazon', name: 'Amazon Associates', network: 'Amazon', status: 'pending', kind: 'product', retailerUrls: {},
-    note: 'Catch-all retailer for listings without a brand program. Official page: up to 10% depending on category. Paid ~60 days after month end.' },
+  { id: 'amazon', name: 'Amazon Associates', network: 'Amazon', status: 'live', kind: 'product', ppcAllowed: false, retailerUrls: {},
+    note: 'Tracking ID readygearhub-20 (payee OMEGA UCO SOLUTIONS, LLC), account created Nov 25, 2026. Catch-all retailer for listings without a brand program. Every amazon.com link gets tag=readygearhub-20 through amazonLink(). Required disclosure: "As an Amazon Associate I earn from qualifying purchases." Hidden in paid-search sessions (Associates terms bar Amazon links in paid ads). Rates are set by Amazon per product category (most gear is roughly 3–4.5%). Paid ~60 days after month end.' },
   { id: 'mailerlite-referral', name: 'MailerLite', network: 'Direct', status: 'pending', kind: 'text',
     note: '30% lifetime on paid plans, 45-day cookie, Trackdesk. $100 and 2 unique sales before payout. Already a MailerLite customer.' },
   { id: 'nordvpn', name: 'NordVPN', network: 'CJ', status: 'approved', kind: 'text', link: 'https://www.anrdoezrs.net/click-101929817-12814518',
@@ -731,6 +770,7 @@ export function cjLink(productUrl: string, aid = ''): string {
 /** Build a tracked link for a destination URL, or '' if the program isn't ready. */
 export function buildLink(p: Program, destination: string): string {
   if (!live(p)) return '';
+  if (p.network === 'Amazon') return amazonLink(destination);
   const template = trackingTemplate(p);
   if (template) {
     return template.includes('{url}') || template.includes('{rawurl}')
@@ -749,7 +789,7 @@ export function buildLink(p: Program, destination: string): string {
  * Prefer setting `ppcAllowed: false` on the program as well; isPpcAllowed()
  * and noPpcProgramIds() honor both this list and the per-program flag.
  */
-export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe', 'bogs', 'robotshop', 'robots-international', 'autel-robotics', 'hoverair', 'elephant-robotics'] as const;
+export const NO_PPC_PROGRAM_IDS = ['choice-home-warranty', 'redi', 'waterdrop', 'tidewe', 'bogs', 'robotshop', 'robots-international', 'autel-robotics', 'hoverair', 'elephant-robotics', 'amazon'] as const;
 
 /** Paid-search allowed for this program? Default true unless listed or ppcAllowed is false. */
 export function isPpcAllowed(programId: string | undefined | null): boolean {
@@ -784,6 +824,8 @@ export type OutboundLink = { href: string; affiliate: boolean; programId: string
  */
 export function resolveOutbound(programId: string | undefined, destination: string, entryId?: string): OutboundLink {
   const id = programId || '';
+  // Any amazon.com destination always carries our tag, whichever program (or none) the entry names.
+  if (isAmazonUrl(destination)) return { href: amazonLink(destination), affiliate: true, programId: id || 'amazon' };
   if (!id) return { href: destination, affiliate: false, programId: '' };
   const p = programs.find((x) => x.id === id);
   if (p && live(p) && entryId && p.itemLinks?.[entryId]) {
@@ -796,7 +838,9 @@ export function resolveOutbound(programId: string | undefined, destination: stri
 /** Listing buy-button resolver. A manual affiliateUrl in the markdown wins; otherwise the program helper. */
 export function resolveItemOutbound(itemId: string, officialUrl: string, affiliateUrl?: string): OutboundLink {
   const programId = programIdForItem(itemId);
+  if (isAmazonUrl(affiliateUrl)) return { href: amazonLink(affiliateUrl as string), affiliate: true, programId: 'amazon' };
   if (affiliateUrl) return { href: affiliateUrl, affiliate: true, programId };
+  if (isAmazonUrl(officialUrl)) return { href: amazonLink(officialUrl), affiliate: true, programId: 'amazon' };
   const fromProgram = trackedItemLink(itemId, officialUrl);
   if (fromProgram) return { href: fromProgram, affiliate: true, programId };
   return { href: officialUrl, affiliate: false, programId };
