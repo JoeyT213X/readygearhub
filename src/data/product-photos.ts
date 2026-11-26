@@ -16,7 +16,7 @@ const ENTRIES: Record<string, { alt: string; widths: number[] }> = {
   'anker-solix-ps100': { alt: 'Anker SOLIX PS100 bifacial portable solar panel', widths: [480, 960, 1600] },
   'anker-solix-c2000-gen2-400w-kit': { alt: 'Anker SOLIX C2000 Gen 2 portable power station with a 400W solar panel kit', widths: [480, 960, 1600] },
   'anker-solix-f3800-plus': { alt: 'Anker SOLIX F3800 Plus portable power station', widths: [480, 960, 1600] },
-  'anker-solix-c1000x': { alt: 'Anker SOLIX C1000X portable power station', widths: [480, 960, 1200] },
+  'anker-solix-c1000x': { alt: 'Anker SOLIX C1000 portable power station', widths: [480, 960, 1200] },
   'litime-12v-100ah-group24': { alt: 'LiTime LiHeat 12V 100Ah Group 24 self-heating lithium battery', widths: [480, 960, 1000] },
   'litime-24v-230ah': { alt: 'LiTime LiHeat 24V 230Ah self-heating lithium battery', widths: [480, 960, 1000] },
   'litime-12v-100ah-trolling': { alt: 'LiTime 12V 100Ah TM lithium marine trolling-motor battery', widths: [480, 960, 1000] },

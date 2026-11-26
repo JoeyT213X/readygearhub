@@ -39,7 +39,7 @@ These are ballpark figures. Always check your own device labels.
 ## Step 3: Rough size categories
 
 - **Under 500 Wh:** phones, lights, a router, and a laptop for an evening. Easy to carry.
-- **About 1,000 Wh:** the sweet spot for most households (for example the [Jackery Explorer 1000 Plus](/gear/jackery-explorer-1000-plus/) or [Anker SOLIX C1000X](/gear/anker-solix-c1000x/)). It covers essentials overnight and can run a fridge in short bursts. Most of the models in our [Power Outage Kits](/power-outage-kits/) lane are around this size.
+- **About 1,000 Wh:** the sweet spot for most households (for example the [Jackery Explorer 1000 Plus](/gear/jackery-explorer-1000-plus/) or [Anker SOLIX C1000](/gear/anker-solix-c1000x/)). It covers essentials overnight and can run a fridge in short bursts. Most of the models in our [Power Outage Kits](/power-outage-kits/) lane are around this size.
 - **1,500–3,000+ Wh:** for longer outages (like the [Goal Zero Yeti 1500](/gear/goal-zero-yeti-1500/)), medical equipment, or running a fridge for longer. Heavier, and often expandable with add-on batteries.
 
 ## Step 4: Check the battery type

@@ -7,6 +7,7 @@ import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import WinterDealCard from '../components/WinterDealCard.astro';
 import { getItems, getGuides, site } from '../lib/data';
 import { isAffiliate } from '../lib/data';
+import { programs, isProgramLive, buildLink } from '../data/affiliates';
 import {
   winterDeals,
   winterDealSections,
@@ -14,6 +15,19 @@ import {
   winterDealGaps,
   PRICE_CHECKED_LABEL,
 } from '../data/winter-deals';
+
+function hostOf(url: string): string {
+  try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; }
+}
+
+const trackedSources = winterDealSources.map((s) => {
+  const host = hostOf(s.href);
+  const program = programs.find((p) => isProgramLive(p.id) && p.officialUrl && hostOf(p.officialUrl) === host);
+  const tracked = program ? buildLink(program, s.href) : '';
+  return tracked
+    ? { ...s, href: tracked, affiliate: true as const, programId: program!.id }
+    : { ...s, affiliate: false as const, programId: '' };
+});
 
 const all = await getItems();
 const byId = new Map(all.map((i) => [i.id, i]));
@@ -142,8 +156,8 @@ const schema = [
     </ul>
     <h2>Sources</h2>
     <ul>
-      {winterDealSources.map((s) => (
-        <li><a href={s.href} rel="noopener" target="_blank">{s.title}</a> — {s.note}</li>
+      {trackedSources.map((s) => (
+        <li><a href={s.href} rel={s.affiliate ? 'sponsored nofollow noopener' : 'noopener'} target="_blank" data-program={s.affiliate ? s.programId : undefined}>{s.title}</a> — {s.note}</li>
       ))}
       <li>ReadyGearHub GA4 property 565093262, <code>affiliate_click</code> events from November 18, 2026 through {PRICE_CHECKED_LABEL}.</li>
     </ul>

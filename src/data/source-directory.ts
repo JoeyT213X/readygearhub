@@ -549,7 +549,7 @@ export const sourceItems: SourceItem[] = [
     programId: 'bluetti',
     sourceName: 'BLUETTI',
     linkLevel: 'product',
-    destination: 'https://www.bluettipower.com/products/bluetti-pv350d-solar-panel',
+    destination: 'https://www.bluettipower.com/products/350w-solar-panel',
     image: '/directory/photos/bluetti-350w-solar.webp',
     imageKind: 'photo',
     offerLabel: 'Solar panel',
@@ -1315,6 +1315,7 @@ export const sourceItems: SourceItem[] = [
     sourceName: 'Aquasana',
     linkLevel: 'merchant',
     useProgramLink: true,
+    useItemLink: true,
     image: '/directory/photos/aquasana-brand-300x250.webp',
     imageKind: 'banner',
     offerLabel: 'Official shop',
@@ -1362,6 +1363,7 @@ export const sourceItems: SourceItem[] = [
     sourceName: 'Waterdrop Filter',
     linkLevel: 'merchant',
     useProgramLink: true,
+    useItemLink: true,
     trending: true,
     trendingRank: 9,
     image: '/directory/photos/waterdrop-g3p600.webp',
@@ -1370,9 +1372,9 @@ export const sourceItems: SourceItem[] = [
     cta: 'Shop at Waterdrop',
   },
   // ---- More Aquasana and Waterdrop products from the official catalog.
-  // No product-level Rakuten {url} template or itemLinks exist for these ids,
-  // so cards use the existing official-shop tracking link (useProgramLink).
-  // Official product URLs are stored on `destination` for a later one-line upgrade.
+  // Product cards keep official URLs on `destination` and, as of Nov 25, 2026,
+  // wrap them with the Rakuten deeplink template (MID 36667 / 53950).
+  // Merchant shop cards use the portal-issued offer links via useItemLink.
   {
     id: 'aquasana-shower-chrome',
     title: 'Aquasana shower filter with chrome handheld wand',
@@ -2389,7 +2391,12 @@ export function resolveSourceItem(item: SourceItem): ResolvedSourceItem {
   if (item.useItemLink && p.itemLinks?.[item.id]) {
     href = p.itemLinks[item.id];
   } else if (item.useProgramLink) {
-    href = (p.link || p.url || '').trim();
+    const template = (p.link || p.url || '').trim();
+    if ((template.includes('{url}') || template.includes('{rawurl}')) && item.destination) {
+      href = buildLink(p, item.destination);
+    } else {
+      href = template;
+    }
   } else if (item.destination) {
     const template = (p.link || p.url || '').trim();
     if (template.includes('{url}') || template.includes('{rawurl}')) {

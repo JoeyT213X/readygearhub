@@ -1,5 +1,5 @@
 ---
-name: "Anker SOLIX C1000X Portable Power Station"
+name: "Anker SOLIX C1000 Portable Power Station"
 brand: "Anker SOLIX"
 lane: power-outage-kits
 alsoIn: ["off-grid-power", "home-backup-power-solar"]
@@ -15,7 +15,7 @@ affiliateUrl: ""
 rank: 0
 featured: false
 season: ["winter", "hurricane", "all-season"]
-verified: "2026-11-15"
+verified: "2026-11-25"
 ---
 
-Anker lists this model at 1,056Wh capacity with LFP (lithium iron phosphate) battery chemistry. Check the official page for current specs and price.
+Anker lists the C1000 as a 1,056Wh portable power station with LFP (lithium iron phosphate) battery chemistry. Check the official page for current specs and price.

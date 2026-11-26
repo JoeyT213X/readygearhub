@@ -72,7 +72,7 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
       {extraLanes.length > 0 && <p><strong>Also in:</strong> {extraLanes.map((l, i) => <>{i > 0 && ', '}<a href={`/${l!.slug}/`}>{l!.name}</a></>)}</p>}
       <p><strong>Season:</strong> {d.season.join(', ')}</p>
       {d.tags.length > 0 && <ul class="chip-list">{d.tags.map((t) => <li><span class="pill">{t}</span></li>)}</ul>}
-      <a class="btn small" href={d.officialUrl} target="_blank" rel="noopener">Official product page ↗</a>
+      <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>Official product page ↗</a>
     </aside>
   </section>
   {moreGuides.length > 0 && (
