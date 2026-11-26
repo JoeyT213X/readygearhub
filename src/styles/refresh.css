@@ -857,3 +857,8 @@ body.dir-drones-robotics .dir-meta .disclosure{color:var(--muted)}
   .live-grid::-webkit-scrollbar{display:none}
   .live-grid>.live-card{flex:0 0 min(84%,340px);scroll-snap-align:start;min-height:0}
 }
+
+/* Phones: no one-panel-at-a-time product rotator; the category tiles and Extreme window below carry the page. */
+@media (max-width: 768px) {
+  .home-hero-windows{display:none}
+}
