@@ -1,0 +1,15 @@
+---
+/**
+ * Clean name card used where no correct product photo is available: the brand name over the
+ * site's storm-navy panel (same look as the directory's text cards). Never a mismatched picture.
+ */
+interface Props { kicker?: string; title: string; href?: string }
+const { kicker, title, href } = Astro.props;
+const Tag = href ? 'a' : 'span';
+---
+<Tag class="item-card-photo is-name" href={href} tabindex={href ? -1 : undefined} aria-hidden="true">
+  <span class="source-cover-label">
+    {kicker && <span class="source-cover-kicker">{kicker}</span>}
+    <span class="source-cover-title">{title}</span>
+  </span>
+</Tag>

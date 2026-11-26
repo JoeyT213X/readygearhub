@@ -2,6 +2,7 @@
 import { laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides, type Item } from '../lib/data';
 import { isNoPpcProgram } from '../data/affiliates';
 import { cardImageFor } from '../data/card-image';
+import NameCover from './NameCover.astro';
 import { retailLabel } from '../data/listing-actions';
 interface Props { item: Item; showRank?: boolean; showGuide?: boolean }
 const { item, showRank = false, showGuide = true } = Astro.props;
@@ -17,6 +18,7 @@ const photo = cardImageFor(item);
       {photo.representative && <span class="stock-chip">Representative photo</span>}
     </a>
   )}
+  {!photo && <NameCover kicker={item.data.brand} title={item.data.name} href={`/gear/${item.id}/`} />}
   <div class="card-top">
     {lane && <a class="pill" href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a>}
     {showRank && item.data.rank > 0 && <span class="pill hot">🔥 Trending</span>}

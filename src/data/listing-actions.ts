@@ -6,6 +6,8 @@
  *   - Buy with discount code — a program coupon applies; the code is shown next to the button
  *   - Inquire here — quote or contact-only (no public checkout)
  *   - Buy now / Shop now / See price / View deal / Get it here — a normal retail / affiliate product page.
+ *     "See price" only appears when the card actually shows a price.
+ *   - Official brand page with no listed price (vehicles, shelters) — Visit site (or Inquire here for quote-only).
  *     The wording rotates deterministically per product id (same product, same label on every page and build).
  *     "Buy now" and "View deal" only appear when a price is shown on the card; no urgency wording.
  *   - Inquire here / Request a quote — quote or contact-only items (no public checkout)
@@ -38,7 +40,8 @@ function hashSeed(seed: string): number {
 
 /** Deterministic retail button wording. `priced` = the card shows a real price. */
 export function retailLabel(seed: string, priced: boolean): string {
-  const pool = priced ? RETAIL_LABELS : ['Shop now', 'See price', 'Get it here'];
+  // No price on the card: never promise one. "See price" is only used when a real price is shown.
+  const pool = priced ? RETAIL_LABELS : ['Shop now', 'Get it here'];
   return pool[hashSeed(seed || 'x') % pool.length];
 }
 
@@ -90,6 +93,10 @@ export function listingAction(item: {
   const code = couponCodeFor(item);
   if (item.ctaKind === 'discount' || code) {
     return { label: hashSeed(seed || 'x') % 2 === 0 ? 'Buy with discount code' : 'Shop with code', code, kind: 'discount' };
+  }
+  // Official brand pages with no listed price (vehicles, shelters, build-to-order): plain "Visit site".
+  if (item.kind === 'brand' && !priced) {
+    return { label: 'Visit site', kind: 'details' };
   }
   if (item.ctaKind === 'details') {
     return { label: 'See details', kind: 'details' };

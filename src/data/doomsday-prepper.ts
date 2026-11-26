@@ -28,7 +28,8 @@ export const doomsdaySections: { id: DoomsdaySectionId; name: string; blurb: str
 
 export type DoomsdayNew = HighTicketItem & { section: DoomsdaySectionId };
 
-const SITE = 'We don’t have a partner program with this brand yet, so this is a plain official link.';
+/** Internal status only: no partner program is approved for these brands (affiliateUrl stays null). Never shown on cards. */
+const SITE = '';
 const mk = (o: Omit<DoomsdayNew, 'category' | 'groups' | 'affiliateUrl' | 'ctaKind'> & { ctaKind?: HighTicketItem['ctaKind'] }): DoomsdayNew => ({
   category: 'doomsday-prepper', groups: ['safety-prep'], affiliateUrl: null, ctaKind: 'details', ...o,
 });
@@ -36,73 +37,73 @@ const mk = (o: Omit<DoomsdayNew, 'category' | 'groups' | 'affiliateUrl' | 'ctaKi
 export const doomsdayNewItems: DoomsdayNew[] = [
   // ---- Shelters & Bunkers ----
   mk({ id: 'rising-s-bunkers', section: 'shelters', us: true, title: 'Rising S Bunkers', sourceName: 'Rising S Company (Texas)', fallbackUrl: 'https://risingsbunkers.com/', image: '/images/photos/hero-bunker-hatch-960.webp', imageKind: 'photo', offerLabel: 'Underground shelters', cta: 'Request details', ctaKind: 'inquire',
-    blurb: 'Texas maker of all-steel underground bunkers, storm shelters, safe rooms and blast doors; NBC air filtration is part of its standard systems. Sizes, pricing and lead times come from the maker. ' + SITE }),
+    blurb: 'Texas maker of all-steel underground bunkers, storm shelters, safe rooms and blast doors; NBC air filtration is part of its standard systems. Sizes, pricing and lead times come from the maker. ' }),
   mk({ id: 'american-safe-room', section: 'shelters', us: true, title: 'American Safe Room', sourceName: 'American Safe Room (Oregon)', fallbackUrl: 'https://americansaferoom.com/', image: '/images/photos/stock-vault-doors-960.webp', imageKind: 'photo', offerLabel: 'Shelter kits and blast doors', cta: 'Request details', ctaKind: 'inquire',
-    blurb: 'Oregon maker of underground shelter kits, blast-resistant doors and hatches, and the ASR Safe Cell NBC air-filtration system. Technical manuals are public on its site; quotes by request. ' + SITE }),
+    blurb: 'Oregon maker of underground shelter kits, blast-resistant doors and hatches, and the ASR Safe Cell NBC air-filtration system. Technical manuals are public on its site; quotes by request. ' }),
   mk({ id: 'survive-a-storm', section: 'shelters', us: true, title: 'Survive-A-Storm Shelters', sourceName: 'Survive-A-Storm (Oklahoma)', fallbackUrl: 'https://survive-a-storm.com/', image: '/images/photos/hero-bunker-hatch-960.webp', imageKind: 'photo', offerLabel: 'Storm shelters', cta: 'See shelters',
-    blurb: 'Oklahoma maker of above-ground and below-ground steel storm shelters, which it describes as FEMA/ICC compliant. Confirm the rating, installation scope and local permits before you buy. ' + SITE }),
+    blurb: 'Oklahoma maker of above-ground and below-ground steel storm shelters, which it describes as FEMA/ICC compliant. Confirm the rating, installation scope and local permits before you buy. ' }),
   mk({ id: 'shiftpod-shelters', section: 'shelters', us: true, title: 'SHIFTPOD rapid-deploy shelters', sourceName: 'SHIFTPOD (Advanced Shelter Systems)', fallbackUrl: 'https://shiftpod.com/', image: '/images/photos/hero-tent-stars-960.webp', imageKind: 'photo', offerLabel: 'Portable shelter', cta: 'See shelters',
-    blurb: 'Integrated-frame tents with reflective, multi-layer insulated fabric, built for quick setup. A fit for a bug-out camp, work site or backup room. ' + SITE }),
+    blurb: 'Integrated-frame tents with reflective, multi-layer insulated fabric, built for quick setup. A fit for a bug-out camp, work site or backup room. ' }),
 
   // ---- Extreme Vehicles ----
-  mk({ id: 'alpine-armoring', section: 'vehicles', us: true, title: 'Alpine Armoring', sourceName: 'Alpine Armoring (Virginia)', fallbackUrl: 'https://www.alpineco.com/', image: '/images/photos/hero-overland-cruiser-960.webp', imageKind: 'photo', offerLabel: 'Armored vehicles', cta: 'Request a quote', ctaKind: 'inquire', price: 'Alpine lists A4-level armoring at $75,000–$200,000 (as of Nov 25, 2026)',
-    blurb: 'Virginia manufacturer of civilian and government armored SUVs, sedans, vans and trucks. Alpine says civilians can buy armored vehicles in the US with no federal restrictions; state road rules and insurance still apply. ' + SITE }),
-  mk({ id: 'four-wheel-campers', section: 'vehicles', us: true, title: 'Four Wheel Campers', sourceName: 'Four Wheel Campers (California)', fallbackUrl: 'https://www.fourwheelcampers.com/', image: '/images/photos/hero-overland-truck-960.webp', imageKind: 'photo', offerLabel: 'Truck campers', cta: 'See campers',
-    blurb: 'California builder of lightweight pop-up truck campers for pickups and flatbeds. Check your truck’s payload with the maker before ordering. ' + SITE }),
+  mk({ id: 'alpine-armoring', section: 'vehicles', us: true, title: 'Alpine Armoring', sourceName: 'Alpine Armoring (Virginia)', fallbackUrl: 'https://www.alpineco.com/', image: '/directory/photos/alpine-armoring-960.webp', imageKind: 'photo', offerLabel: 'Armored vehicles', cta: 'Request a quote', ctaKind: 'inquire', price: 'Alpine lists A4-level armoring at $75,000–$200,000 (as of Nov 25, 2026)',
+    blurb: 'Virginia manufacturer of civilian and government armored SUVs, sedans, vans and trucks. Alpine says civilians can buy armored vehicles in the US with no federal restrictions; state road rules and insurance still apply. ' }),
+  mk({ id: 'four-wheel-campers', section: 'vehicles', us: true, title: 'Four Wheel Campers', sourceName: 'Four Wheel Campers (California)', fallbackUrl: 'https://www.fourwheelcampers.com/', image: '/directory/photos/four-wheel-campers-960.webp', imageKind: 'photo', offerLabel: 'Truck campers', cta: 'See campers',
+    blurb: 'California builder of lightweight pop-up truck campers for pickups and flatbeds. Check your truck’s payload with the maker before ordering. ' }),
   mk({ id: 'warn-industries', section: 'vehicles', us: true, title: 'WARN Industries winches and recovery gear', sourceName: 'WARN Industries (Oregon)', fallbackUrl: 'https://www.warn.com/', image: '/images/photos/hero-offroad-close-960.webp', imageKind: 'photo', offerLabel: 'Recovery gear', cta: 'See gear',
-    blurb: 'Oregon maker of winches, hubs and recovery gear for trucks, Jeeps and UTVs. ' + SITE }),
+    blurb: 'Oregon maker of winches, hubs and recovery gear for trucks, Jeeps and UTVs. ' }),
   mk({ id: 'rotopax', section: 'vehicles', us: true, title: 'RotopaX fuel and water containers', sourceName: 'RotopaX (Arizona)', fallbackUrl: 'https://rotopax.com/', image: '/images/photos/hero-overland-truck-960.webp', imageKind: 'photo', offerLabel: 'Mountable containers', cta: 'See containers',
-    blurb: 'Rotationally molded fuel and water containers with vehicle mounting systems. Store fuel only as the container labeling and local rules allow. ' + SITE }),
+    blurb: 'Rotationally molded fuel and water containers with vehicle mounting systems. Store fuel only as the container labeling and local rules allow. ' }),
   mk({ id: 'arb-usa', section: 'vehicles', title: 'ARB 4x4 Accessories', sourceName: 'ARB USA (Australian maker, US operations)', fallbackUrl: 'https://arbusa.com/', image: '/images/photos/hero-offroad-close-960.webp', imageKind: 'photo', offerLabel: 'Bumpers, lockers, recovery', cta: 'See gear',
-    blurb: 'Off-road equipment since 1975: air lockers, bull bars, recovery gear and suspension. The maker runs an affiliate program (3–5% per its page); ours is not applied yet, so this is a plain link. Australia is a US ally.' }),
+    blurb: 'Off-road equipment since 1975: air lockers, bull bars, recovery gear and suspension. Australia is a US ally.' }),
   mk({ id: 'inspired-overland', section: 'vehicles', title: 'Inspired Overland rooftop tents', sourceName: 'Inspired Overland', fallbackUrl: 'https://inspiredoverland.com/', image: '/images/photos/hero-tent-stars-960.webp', imageKind: 'photo', offerLabel: 'Rooftop tents', cta: 'See tents',
-    blurb: 'Lightweight rooftop tents, awnings and overland gear. Check roof-rack load ratings before mounting any tent. ' + SITE }),
+    blurb: 'Lightweight rooftop tents, awnings and overland gear. Check roof-rack load ratings before mounting any tent. ' }),
   mk({ id: 'baja-designs', section: 'vehicles', us: true, title: 'Baja Designs lighting', sourceName: 'Baja Designs (California)', fallbackUrl: 'https://www.bajadesigns.com/', image: '/images/photos/hero-utv-dunes-960.webp', imageKind: 'photo', offerLabel: 'Off-road lighting', cta: 'See lights',
-    blurb: 'California maker of LED and laser off-road lighting for trucks, Jeeps, UTVs and bikes. Check local rules for on-road use. ' + SITE }),
+    blurb: 'California maker of LED and laser off-road lighting for trucks, Jeeps, UTVs and bikes. Check local rules for on-road use. ' }),
 
   // ---- Perimeter & Security ----
   mk({ id: 'ameristar-perimeter', section: 'perimeter', us: true, title: 'Ameristar Perimeter Security', sourceName: 'Ameristar (Tulsa, Oklahoma; ASSA ABLOY)', fallbackUrl: 'https://www.ameristarperimeter.com/', image: '/images/photos/stock-security-fence-960.webp', imageKind: 'photo', offerLabel: 'Fence, gates, bollards', cta: 'Request details', ctaKind: 'inquire',
-    blurb: 'Oklahoma manufacturer of ornamental and high-security fence, gates, anti-ram barriers and bollards, sold through regional sales reps and installers. Pricing is by quote. ' + SITE }),
+    blurb: 'Oklahoma manufacturer of ornamental and high-security fence, gates, anti-ram barriers and bollards, sold through regional sales reps and installers. Pricing is by quote. ' }),
   mk({ id: 'gibraltar-perimeter', section: 'perimeter', us: true, title: 'Gibraltar Perimeter Security', sourceName: 'Gibraltar (Burnet, Texas)', fallbackUrl: 'https://www.gibraltarperimetersecurity.com/', image: '/images/photos/stock-security-fence-960.webp', imageKind: 'photo', offerLabel: 'Anti-ram barriers and fence', cta: 'Request details', ctaKind: 'inquire',
-    blurb: 'Texas maker of crash-rated vehicle barriers, bollards and high-security fence and gate systems, aimed at commercial and government sites. Quotes by request. ' + SITE }),
+    blurb: 'Texas maker of crash-rated vehicle barriers, bollards and high-security fence and gate systems, aimed at commercial and government sites. Quotes by request. ' }),
   mk({ id: 'amico-security', section: 'perimeter', us: true, title: 'AMICO Security', sourceName: 'AMICO Security (Birmingham, Alabama)', fallbackUrl: 'https://amicosecurity.com/', image: '/images/photos/stock-security-fence-960.webp', imageKind: 'photo', offerLabel: 'Security fence and barriers', cta: 'Request details', ctaKind: 'inquire',
-    blurb: 'Alabama maker of metal and wire-mesh security fencing and bollard vehicle barriers. Quotes by request. ' + SITE }),
+    blurb: 'Alabama maker of metal and wire-mesh security fencing and bollard vehicle barriers. Quotes by request. ' }),
   mk({ id: 'mulholland-brand', section: 'perimeter', us: true, title: 'Mulholland Brand aluminum fence and gates', sourceName: 'Mulholland Brand (Canoga Park, California)', fallbackUrl: 'https://mulhollandbrand.com/', image: '/images/photos/stock-security-fence-960.webp', imageKind: 'photo', offerLabel: 'Fence and gates', cta: 'Request a quote', ctaKind: 'inquire',
-    blurb: 'Aluminum gates, fences, railings and pergolas built in its California factory. The maker publishes a referral program (up to 5% on materials); ours is not applied yet. ' + SITE }),
+    blurb: 'Aluminum gates, fences, railings and pergolas built in its California factory. ' }),
   mk({ id: 'liftmaster-gate-operators', section: 'perimeter', us: true, title: 'LiftMaster gate operators and access control', sourceName: 'LiftMaster (Chamberlain Group, Illinois)', fallbackUrl: 'https://www.liftmaster.com/', image: '/images/photos/stock-security-fence-960.webp', imageKind: 'photo', offerLabel: 'Gate openers', cta: 'See gear',
-    blurb: 'Residential and commercial gate openers and access control, usually installed by a dealer. Follow the maker’s safety-sensor requirements. ' + SITE }),
+    blurb: 'Residential and commercial gate openers and access control, usually installed by a dealer. Follow the maker’s safety-sensor requirements. ' }),
 
   // ---- Air, Water & NBC ----
   mk({ id: 'mira-safety', section: 'air-water', us: true, title: 'MIRA Safety CBRN gas masks and filters', sourceName: 'MIRA Safety (Texas)', fallbackUrl: 'https://www.mirasafety.com/', image: '/images/photos/stock-gas-masks-960.webp', imageKind: 'photo', offerLabel: 'Respirators', cta: 'See respirators',
-    blurb: 'Texas maker of CBRN respirators, filters and protective gear for civil defense, industry and civilians. Its affiliate program (up to 10%, AvantLink) is not applied yet. Learn fit-testing and filter shelf life from the maker before relying on one. ' + SITE }),
+    blurb: 'Texas maker of CBRN respirators, filters and protective gear for civil defense, industry and civilians. Learn fit-testing and filter shelf life from the maker before relying on one. ' }),
 
   // ---- Long-Term Food ----
   mk({ id: 'my-patriot-supply', section: 'food', us: true, title: 'My Patriot Supply', sourceName: 'My Patriot Supply (Idaho)', fallbackUrl: 'https://mypatriotsupply.com/', image: '/images/photos/hero-food-shelves-960.webp', imageKind: 'photo', offerLabel: 'Food storage', cta: 'See food kits',
-    blurb: 'Idaho seller of long-term food kits, seeds and emergency supplies. Compare servings, calories and shelf life on the official page. ' + SITE }),
+    blurb: 'Idaho seller of long-term food kits, seeds and emergency supplies. Compare servings, calories and shelf life on the official page. ' }),
   mk({ id: 'harvest-right', section: 'food', us: true, title: 'Harvest Right home freeze dryers', sourceName: 'Harvest Right (Utah)', fallbackUrl: 'https://harvestright.com/', image: '/images/photos/hero-pantry-cans-960.webp', imageKind: 'photo', offerLabel: 'Freeze dryers', cta: 'See freeze dryers',
-    blurb: 'Home freeze dryers for putting up your own long-term food. Check the power, space and vacuum-pump needs on the official page. ' + SITE }),
+    blurb: 'Home freeze dryers for putting up your own long-term food. Check the power, space and vacuum-pump needs on the official page. ' }),
 
   // ---- Energy Reserves ----
   mk({ id: 'tesla-powerwall', section: 'energy', us: true, title: 'Tesla Powerwall home battery', sourceName: 'Tesla', fallbackUrl: 'https://www.tesla.com/powerwall', image: '/images/photos/stock-solar-panel-960.webp', imageKind: 'photo', offerLabel: 'Home battery', cta: 'See home battery',
-    blurb: 'Whole-home battery storage that works with solar and can back up the house in an outage. A licensed installer, a permit and a utility interconnection are normally required. ' + SITE }),
+    blurb: 'Whole-home battery storage that works with solar and can back up the house in an outage. A licensed installer, a permit and a utility interconnection are normally required. ' }),
   mk({ id: 'enphase-battery', section: 'energy', us: true, title: 'Enphase IQ Battery', sourceName: 'Enphase Energy (California)', fallbackUrl: 'https://enphase.com/', image: '/images/photos/solar-rooftops-960.webp', imageKind: 'photo', offerLabel: 'Home battery', cta: 'See batteries',
-    blurb: 'Modular home batteries and solar microinverters, sold and installed through Enphase installers. Confirm installer licensing and permit scope locally. ' + SITE }),
+    blurb: 'Modular home batteries and solar microinverters, sold and installed through Enphase installers. Confirm installer licensing and permit scope locally. ' }),
 
   // ---- Comms ----
   mk({ id: 'starlink', section: 'comms', us: true, title: 'Starlink satellite internet', sourceName: 'Starlink (SpaceX)', fallbackUrl: 'https://www.starlink.com/', image: '/images/photos/hero-radios-960.webp', imageKind: 'photo', offerLabel: 'Satellite internet', cta: 'See plans',
-    blurb: 'Satellite internet for homes, vehicles and remote sites. Needs a clear view of the sky and power; plans and prices are on the official site. ' + SITE }),
+    blurb: 'Satellite internet for homes, vehicles and remote sites. Needs a clear view of the sky and power; plans and prices are on the official site. ' }),
   mk({ id: 'rugged-radios', section: 'comms', us: true, title: 'Rugged Radios', sourceName: 'Rugged Radios (California)', fallbackUrl: 'https://www.ruggedradios.com/', image: '/images/photos/hero-radios-960.webp', imageKind: 'photo', offerLabel: 'GMRS and vehicle radios', cta: 'See radios',
-    blurb: 'California maker of GMRS two-way radios, intercoms and headsets for trucks, UTVs and convoys. GMRS needs an FCC license in the US. Dealer program only; no affiliate program is published. ' + SITE }),
+    blurb: 'California maker of GMRS two-way radios, intercoms and headsets for trucks, UTVs and convoys. GMRS needs an FCC license in the US. ' }),
 
   // ---- Medical ----
   mk({ id: 'north-american-rescue', section: 'medical', us: true, title: 'North American Rescue', sourceName: 'North American Rescue (South Carolina)', fallbackUrl: 'https://www.narescue.com/', image: '/images/photos/hero-first-aid-crisp-960.webp', imageKind: 'photo', offerLabel: 'Trauma and medical gear', cta: 'See gear',
-    blurb: 'South Carolina maker of trauma kits, tourniquets and medical gear used by responders and civilians. Train before you need it. ' + SITE }),
+    blurb: 'South Carolina maker of trauma kits, tourniquets and medical gear used by responders and civilians. Train before you need it. ' }),
 
   // ---- Tools & Field Gear ----
   mk({ id: 'pelican-cases', section: 'tools', us: true, title: 'Pelican protective cases', sourceName: 'Pelican (California)', fallbackUrl: 'https://www.pelican.com/us/en', image: '/images/photos/multitools-960.webp', imageKind: 'photo', offerLabel: 'Hard cases', cta: 'See cases',
-    blurb: 'Rugged protective cases made in the USA, a common choice for radios, medical kits and documents. ' + SITE }),
+    blurb: 'Rugged protective cases made in the USA, a common choice for radios, medical kits and documents. ' }),
   mk({ id: 'estwing-tools', section: 'tools', us: true, title: 'Estwing hand tools', sourceName: 'Estwing (Illinois)', fallbackUrl: 'https://www.estwing.com/', image: '/images/photos/stock-drill-960.webp', imageKind: 'photo', offerLabel: 'Hammers and hand tools', cta: 'See tools',
-    blurb: 'Illinois maker of one-piece forged hammers, hatchets and hand tools. ' + SITE }),
+    blurb: 'Illinois maker of one-piece forged hammers, hatchets and hand tools. ' }),
 ];
 
 /**

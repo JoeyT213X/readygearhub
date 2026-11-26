@@ -286,8 +286,27 @@ export function productPhotoByKey(key: string): ProductPhoto | undefined {
   return (CACHE[key] ??= build(key));
 }
 
+/**
+ * Brand-level cards (a maker's whole shop or official site) may show one of that same brand's own
+ * product photos. Card id -> product photo key. Anything not listed gets a clean name card.
+ */
+const BRAND_PHOTO: Record<string, string> = {
+  'harvest-right': 'harvest-right-countertop-360',
+  'redi-shop': 'redi-the-roadie',
+  'eufy-security': 'eufy-solocam-s340',
+  'ispring': 'ispring-rcc7',
+  'skydio-official': 'skydio-x10',
+  'ring-official': 'ring-battery-doorbell-4k-pro',
+  'ring': 'ring-battery-doorbell-4k-pro',
+  'ecoflow': 'ecoflow-delta-2-max',
+  'goal-zero': 'goal-zero-yeti-500',
+  'jackery': 'jackery-explorer-2000-v2',
+  'milwaukee-tool-official': 'milwaukee-2719-20',
+  'yeti': 'yeti-rambler-16-travel',
+};
+
 export function productPhotoFor(item: { id?: string }): ProductPhoto | undefined {
-  const key = BY_ID[item.id || ''];
+  const key = BY_ID[item.id || ''] || BRAND_PHOTO[item.id || ''];
   return key ? productPhotoByKey(key) : undefined;
 }
 

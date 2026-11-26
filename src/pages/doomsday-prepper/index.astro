@@ -11,13 +11,12 @@ import { doomsdayProjects } from '../../data/doomsday-projects';
 import { getItems } from '../../lib/data';
 import { buildFullCatalog } from '../../data/full-catalog';
 import { productPhotoFor } from '../../data/product-photos';
-import { stockCoverFor } from '../../data/stock-covers';
 
 const catalog = buildFullCatalog(await getItems()).filter(
   (i) => i.category === 'doomsday-prepper' || (i.alsoIn ?? []).includes('doomsday-prepper'),
 );
 const hasVisual = (i: (typeof catalog)[number]) =>
-  !!(productPhotoFor(i) || stockCoverFor(i) || (i.image && !i.image.endsWith('.svg')));
+  !!(productPhotoFor(i) || (i.image && !i.image.endsWith('.svg') && !i.image.startsWith('/images/photos/')));
 const featured = catalog
   .filter((i) => !i.filler && hasVisual(i))
   .sort((a, b) => (Number(!!b.usBadge) - Number(!!a.usBadge)) || (doomsdayRank(a.id) - doomsdayRank(b.id)))

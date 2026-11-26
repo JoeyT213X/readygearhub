@@ -53,6 +53,10 @@ const ALT: Record<string, string> = {
   'checklist-writing': 'Someone checking items off a list',
   'gear-flatlay': 'Outdoor gear',
   'hero-binoculars': 'A person holding binoculars',
+  'portable-generator': 'A portable gasoline generator',
+  'stock-security-fence': 'A tall palisade security fence',
+  'stock-vault-doors': 'Two steel vault doors in a brick wall',
+  'stock-gas-masks': 'Gas masks on a stone wall',
 };
 
 export function cover(key: string): StockCover {
@@ -81,6 +85,7 @@ const RULES: Rule[] = [
   ['stock-solar-camp', /diy-solar-generator|solar (generator|kit)|solar-kit|c2000-gen2-400w-kit|12v-solar-kit/],
   ['stock-solar-panel', /solar[- ]?panel|bifacial|nomad|solarsaga|\bps\d{3}\b|anker-solix-ps\d+|sp\d{3}|\bpv\d|^renogy|renogy$/],
   ['solar-rooftops', /energysage|rooftop solar/],
+  ['portable-generator', /generator|honda eu|generac/],
   ['stock-power-station', /power[- ]?station|energy[- ]?reserve|anker.?solix|f3800|c1000|f2000|ecoflow|jackery|goal.zero|allpowers|pecron|powermarket|generac|honda|generator|battery backup|bluetti/],
   ['power-banks', /power[- ]?bank|jump ?starter|batteries plus|noco/],
   // Specific brand lines that would otherwise match broader rules
@@ -92,7 +97,10 @@ const RULES: Rule[] = [
   ['hero-drones-air', /drone|autel|skydio|hoverair|mavic/],
   ['hero-utv-dunes', /polaris|can-am|utv|side-by-side/],
   ['hero-overland-truck', /toyota|jeep|land rover|ineos|inkas|rezvani|sportsmobile|storyteller|earthroamer|overland|defender|wrangler|gladiator|grenadier|vevor|vehicle/],
-  ['hero-bunker-hatch', /bunker|shelter|rising s|atlas survival|terra vivos|safe room|vivos/],
+  ['hero-bunker-hatch', /bunker|shelter|rising s|atlas survival|terra vivos|vivos/],
+  ['stock-vault-doors', /safe room|vault/],
+  ['stock-security-fence', /fence|fencing/],
+  ['stock-gas-masks', /gas mask|respirator|cbrn|nbc/],
   ['stock-cctv', /knightscope|reolink|arlo|eufy|camera|cove smart|simplisafe/],
   // Medical, light
   ['hero-first-aid-crisp', /first[- ]aid|medic|tourniquet|splint|chest-seals|trauma|amk|my ?medic|mymedic|sam medical|heartstart|philips|dental|blister|mira safety/],
@@ -129,24 +137,86 @@ const RULES: Rule[] = [
   ['gear-flatlay', /amazon|walmart|target|academy|bass pro|cabela|dick|sportsman|retailer|marketplace/],
 ];
 
+/**
+ * A stock photo may only sit on a card when it shows the SAME KIND OF PRODUCT the card is for
+ * (a solar panel on a solar-panel listing, a radio on a radio listing). It is then labeled
+ * "Representative photo". Brands, stores, services, vehicles, and anything else without a
+ * same-type photo get a clean name card instead, never a mismatched picture.
+ * Tested against the card's title + offer label only (never the brand name).
+ */
+const TYPE: Record<string, RegExp> = {
+  'stock-winter-boots': /boots?\b/,
+  'stock-snow-shovel': /shovel/,
+  'stock-rv': /$^/,
+  'stock-boat': /$^/,
+  'stock-battery-bank': /battery|lifepo4|lithium/,
+  'stock-solar-camp': /solar (generator|kit)/,
+  'stock-solar-panel': /solar panel|solar kit|\bnomad\b|solarsaga|bifacial|\bps\d{3}\b|\bsp\d{3}\b|portable solar/,
+  'solar-rooftops': /$^/,
+  'portable-generator': /generator/,
+  'stock-power-station': /power station|energy reserve|solix|\bdelta\b|\byeti\b|\bexplorer\b|\bac\d{2,3}\b|\bc\d{3,4}\b|\bf\d{4}|\beb\d+|\belite\b|\bapex\b|pecron|\be\d{3,4}\b/,
+  'power-banks': /^(?!.*radio).*(power bank|portable charger)/,
+  multitools: /multi-?tool|leatherman|multi-plier|\bknife\b|wave plus/,
+  'stock-radio': /$^/,
+  'hero-radios': /walkie|handheld|uv-?5/, // handheld radios photo: handhelds only (not crank, weather, CB, or mobile radios)
+  'hero-tent-stars': /\btent|shelter|shiftpod/,
+  'hero-drones-air': /drone|hoverair/,
+  'hero-utv-dunes': /utv|side-by-side|rzr/,
+  'hero-overland-truck': /$^/,
+  'hero-bunker-hatch': /$^/, // brand-level maker cards get a name card, not a look-alike photo
+  'stock-vault-doors': /$^/, // brand-level maker cards get a name card, not a look-alike photo
+  'stock-security-fence': /$^/, // brand-level maker cards get a name card, not a look-alike photo
+  'stock-gas-masks': /$^/, // brand-level maker cards get a name card, not a look-alike photo
+  'stock-cctv': /camera/,
+  'hero-first-aid-crisp': /first[- ]aid|medic|trauma|tourniquet|splint|chest seal|myfak|bandage/,
+  'hero-campsite': /\btent|campsite|camp chair/,
+  'stock-lantern': /lantern|lighthouse/,
+  'stock-flashlight': /flashlight/,
+  'stock-house': /$^/,
+  'stock-smart-cam': /sensor/,
+  'stock-alarm': /smoke|carbon monoxide|\bco alarm|alarm/,
+  'stock-pipe': /$^/,
+  'prep-food-storage': /$^/, // generic pantry photo does not show these kits: own photo or a name card
+  'gear-flatlay': /$^/,
+  'water-bottles': /aqua-tainer|jumbo-tainer|water container|water jug/,
+  'hero-water-pour': /$^/, // a glass of water is not a filter: filters get their own photo or a name card
+  'stock-wood-stove': /wood stove|fireplace/,
+  'cast-iron-fire': /cast iron|dutch oven/,
+  'stock-stove': /stove|jetboil/,
+  'car-in-snow': /$^/,
+  'stock-boots': /hiker|hiking boot/,
+  'stock-gloves': /winter glove|heated glove|insulated glove/,
+  'stock-insurance': /$^/,
+  'stock-drill': /\bdrill\b|impact driver|impact wrench/,
+  'stock-headphones': /headphone|earbud/,
+  'stock-speaker': /speaker/,
+  'stock-cyber': /$^/,
+  'stock-laptop': /$^/,
+  'stock-books': /$^/,
+  'checklist-writing': /$^/,
+};
+
 /** Listings we deliberately leave as text cards: no honest generic photo exists. */
 const LEAVE_TEXT = /byrna|sabre|boston dynamics|unitree|ghost robotics|pepper spray|launcher|cleanwaste|luggable loo|toilet/i;
 
 type Cardish = {
   id: string; title: string; sourceName?: string; category?: string;
-  image?: string; imageKind?: string; kind?: string; origin?: string; programId?: string;
+  image?: string; imageKind?: string; kind?: string; origin?: string; programId?: string; offerLabel?: string;
 };
 
 export function stockCoverFor(item: Cardish): StockCover | undefined {
-  if (item.kind === 'tool' || item.kind === 'own' || item.origin === 'payhip' || item.origin === 'tools' || item.origin === 'apps') return undefined;
+  if (item.kind === 'tool' || item.kind === 'own' || item.kind === 'resource' || item.origin === 'payhip' || item.origin === 'tools' || item.origin === 'apps') return undefined;
   const tinyCreative = /aquasana-brand-300x250|choice-home-warranty-250|nordpass-logo-512|nordvpn-faster-300x250|surfshark-privacy/.test(item.image || '');
-  if (item.image && !item.image.endsWith('.svg') && !tinyCreative) return undefined;
+  // A real product photo or brand logo wins. SVG covers and site stock files do not count as "real".
+  const realImage = item.image && !item.image.endsWith('.svg') && !item.image.startsWith('/images/photos/') && !tinyCreative;
+  if (realImage) return undefined;
   const hay = `${item.id} ${item.title} ${item.sourceName || ''} ${item.category || ''}`.toLowerCase().replace(/&#39;/g, "'");
   if (LEAVE_TEXT.test(hay)) return undefined;
   // Drones & Robotics: only drones get a (labeled) representative drone photo. Robot cards stay text-only.
   if (item.category === 'drones-robotics' && !/\bdrone\b|autel|hoverair/.test(hay)) return undefined;
+  const typeHay = `${item.title} ${item.offerLabel || ''}`.toLowerCase().replace(/&#39;/g, "'");
   for (const [key, re] of RULES) {
-    if (re.test(hay)) return cover(key);
+    if (re.test(hay) && (TYPE[key] || /$^/).test(typeHay)) return cover(key);
   }
-  return cover('gear-flatlay');
+  return undefined;
 }

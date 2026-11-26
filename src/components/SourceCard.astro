@@ -8,17 +8,22 @@ const { item, heading = 'h3' } = Astro.props;
 const action = listingAction(item);
 const product = productPhotoFor(item);
 const stock = product ? undefined : stockCoverFor(item);
+// SVG covers and generic site stock files are never shown as a product picture: the card gets a labeled
+// same-type stock photo (stock-covers.ts) or a clean name card instead.
+const realImage = item.image && !item.image.endsWith('.svg') && !item.image.startsWith('/images/photos/') ? item.image : undefined;
 const Tag = heading;
+// A placeholder "See price" is not a price: say where the price lives instead.
+const priceText = item.priceLabel === 'See price' ? (item.kind === 'brand' ? 'Price on official site' : 'Price on the store page') : item.priceLabel;
 const titleHref = item.detailHref || item.href;
 const ctaHref = item.href;
 const titleInternal = titleHref.startsWith('/');
 const ctaInternal = ctaHref.startsWith('/');
 const titleRel = titleInternal ? undefined : (item.rel || undefined);
 const ctaRel = ctaInternal ? undefined : (item.rel || undefined);
-const backdrop = (product || item.imageKind === 'photo') ? photoBackdropClass(item) : '';
+const backdrop = (product || (realImage && item.imageKind === 'photo')) ? photoBackdropClass(item) : '';
 const coverClass = [
-  product || item.imageKind === 'photo' ? ' is-photo' : !stock && item.imageKind ? ` is-${item.imageKind}` : '',
-  stock ? ' is-stock' : product || item.image ? '' : ' is-text',
+  product || (realImage && item.imageKind === 'photo') ? ' is-photo' : !stock && realImage && item.imageKind ? ` is-${item.imageKind}` : '',
+  stock ? ' is-stock' : product || realImage ? '' : ' is-text',
   item.kind === 'tool' ? ' is-free' : '',
   backdrop ? ` ${backdrop}` : '',
 ].join('');
@@ -54,8 +59,8 @@ const badge = item.trending
         <img src={stock.src} srcset={stock.srcset} sizes="(min-width: 900px) 330px, (min-width: 600px) 45vw, 92vw" alt={stock.alt} width="960" height="540" loading="lazy" decoding="async" class="stock-photo" />
         <span class="stock-chip">Representative photo</span>
       </>
-    ) : item.image ? (
-      <img src={item.image} alt="" width="640" height="360" loading="lazy" decoding="async" class={item.imageKind ? 'source-fit' : undefined} />
+    ) : realImage ? (
+      <img src={realImage} alt={item.title} width="640" height="360" loading="lazy" decoding="async" class={item.imageKind ? 'source-fit' : undefined} />
     ) : (
       <span class="source-cover-label">
         <span class="source-cover-kicker">{item.sourceName}</span>
@@ -65,7 +70,7 @@ const badge = item.trending
   </a>
   <p class="product-meta">{item.sourceName}{item.offerLabel ? ` · ${item.offerLabel}` : ''}{item.usBadge && <span class="us-chip" title="U.S.-based maker"><svg viewBox="0 0 16 12" width="13" height="10" aria-hidden="true" focusable="false"><rect width="16" height="12" rx="1.2" fill="#b22234"/><rect y="2.4" width="16" height="2.4" fill="#f7f3ea"/><rect y="7.2" width="16" height="2.4" fill="#f7f3ea"/><rect width="7.2" height="6.4" fill="#1f3a5f"/></svg>U.S.</span>}</p>
   <Tag><a href={titleHref} target={titleInternal ? undefined : '_blank'} rel={titleRel}>{item.title}</a></Tag>
-  <p class="product-price">{item.priceLabel}</p>
+  <p class="product-price">{priceText}</p>
   <p>{item.blurb}</p>
   <div class="card-actions">
     <a

@@ -2,6 +2,7 @@
 import { outUrl, isAffiliate, programIdForItem, type Item } from '../lib/data';
 import { isNoPpcProgram } from '../data/affiliates';
 import { cardImageFor } from '../data/card-image';
+import NameCover from './NameCover.astro';
 import { retailLabel } from '../data/listing-actions';
 import type { WinterDeal } from '../data/winter-deals';
 import { PRICE_CHECKED_LABEL } from '../data/winter-deals';
@@ -25,6 +26,7 @@ const href = outUrl(item);
       {photo.representative && <span class="stock-chip">Representative photo</span>}
     </a>
   )}
+  {!photo && <NameCover kicker={item.data.brand} title={item.data.name} href={`/gear/${item.id}/`} />}
   <p class="brand">{item.data.brand}</p>
   <h3><a href={`/gear/${item.id}/`}>{item.data.name}</a></h3>
   <p class="winter-deal-price">

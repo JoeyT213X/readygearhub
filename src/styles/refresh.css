@@ -737,3 +737,8 @@ body.dir-drones-robotics .listing-notes summary{color:var(--muted)}
 }
 body.dir-drones-robotics .dir-meta .dir-meta-count,
 body.dir-drones-robotics .dir-meta .disclosure{color:var(--muted)}
+
+/* Name card (no correct product photo available): same storm-navy panel as the directory text cards. */
+.item-card-photo.is-name{align-items:stretch;justify-content:flex-start;background:radial-gradient(70% 90% at 100% 0%,rgba(245,158,11,.30),transparent 65%),var(--texture-lines),var(--grad-storm);text-decoration:none}
+.item-card-photo.is-name::before{display:none}
+.item-card-photo.is-name .source-cover-label{position:relative;z-index:1}

@@ -367,3 +367,28 @@ Self-hosted in `public/images/photos/{key}-{width}.webp`. Used in the home Extre
 | `stock-security-fence` | Tall gray palisade security fence | [Pexels photo 430204](https://www.pexels.com/photo/gray-metal-fence-430204/) | Scott Webb / Pexels |
 | `stock-gas-masks` | Three gas masks on a stone wall, no people | [Pexels photo 19376807](https://www.pexels.com/photo/black-and-white-photo-of-gas-masks-lying-on-a-wall-19376807/) | Alexander Zvir / Pexels |
 | `stock-vault-doors` | Two steel vault doors in a brick wall | [Pexels photo 19882101](https://www.pexels.com/photo/steel-heavy-doors-of-vault-19882101/) | wutthichai charoenburi / Pexels |
+
+## Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)
+
+Self-hosted in `public/directory/photos/{id}-{480,960}.webp` (resized copies, no other edits). Each is the actual model or brand named on its card. Licence: CC BY-SA 4.0 unless noted; attribution is shown on `/image-credits/`.
+
+| Card id | Subject | Author | Licence | Source |
+| --- | --- | --- | --- | --- |
+| `jeep-gladiator` | Jeep Gladiator | Alexander Migl | CC BY-SA 4.0 | [File:Jeep Gladiator (JT) IMG 3988.jpg](https://commons.wikimedia.org/wiki/File:Jeep_Gladiator_(JT)_IMG_3988.jpg) |
+| `jeep-wrangler` | Jeep Wrangler | Benespit | CC BY-SA 4.0 | [File:0 Jeep Wrangler Rubicon (JL) 1.jpg](https://commons.wikimedia.org/wiki/File:0_Jeep_Wrangler_Rubicon_(JL)_1.jpg) |
+| `land-rover-defender` | Land Rover Defender | Alexander Migl | CC BY-SA 4.0 | [File:Land Rover Defender (L663) DSC 9062.jpg](https://commons.wikimedia.org/wiki/File:Land_Rover_Defender_(L663)_DSC_9062.jpg) |
+| `toyota-4runner` | Toyota 4Runner | HJUdall | CC0 | [File:25 Toyota 4Runner SR5.jpg](https://commons.wikimedia.org/wiki/File:25_Toyota_4Runner_SR5.jpg) |
+| `toyota-land-cruiser` | Toyota Land Cruiser | Mr.choppers | CC BY-SA 4.0 | [File:2024 Toyota Land Cruiser 250 VX in Platinum White Pearl Mica, front left.jpg](https://commons.wikimedia.org/wiki/File:2024_Toyota_Land_Cruiser_250_VX_in_Platinum_White_Pearl_Mica,_front_left.jpg) |
+| `toyota-tacoma` | Toyota Tacoma | Alexander-93 | CC BY-SA 4.0 | [File:Toyota Tacoma TRD Off Road (N400) IMG 9727.jpg](https://commons.wikimedia.org/wiki/File:Toyota_Tacoma_TRD_Off_Road_(N400)_IMG_9727.jpg) |
+| `ineos-grenadier` | INEOS Grenadier | Alexander Migl | CC BY-SA 4.0 | [File:Ineos Grenadier 1X7A6399.jpg](https://commons.wikimedia.org/wiki/File:Ineos_Grenadier_1X7A6399.jpg) |
+| `rezvani-official` | Rezvani vehicle | Vincehive | CC BY-SA 4.0 | [File:Rezvani tank.jpg](https://commons.wikimedia.org/wiki/File:Rezvani_tank.jpg) |
+| `polaris-official` | Polaris off-road vehicle | Calreyn88 | CC BY-SA 4.0 | [File:2023 Polaris RZR Pro R.jpg](https://commons.wikimedia.org/wiki/File:2023_Polaris_RZR_Pro_R.jpg) |
+| `can-am-official` | Can-Am Maverick X3 Turbo | Calreyn88 | CC BY-SA 4.0 | [File:Can-Am Maverick X3 Turbo Talos T2S.jpg](https://commons.wikimedia.org/wiki/File:Can-Am_Maverick_X3_Turbo_Talos_T2S.jpg) |
+| `alpine-armoring` | Alpine Armoring Pit-Bull VX | Dyerko1 | CC BY-SA 4.0 | [File:Alpine Armoring Pit-Bull VX.jpg](https://commons.wikimedia.org/wiki/File:Alpine_Armoring_Pit-Bull_VX.jpg) |
+| `storyteller-overland-official` | Storyteller Overland GXV | Tomás Del Coro | CC BY-SA 4.0 | [File:Storyteller Overland GXV HILT RAM 5500 (55469434620).jpg](https://commons.wikimedia.org/wiki/File:Storyteller_Overland_GXV_HILT_RAM_5500_(55469434620).jpg) |
+| `four-wheel-campers` | Four Wheel Camper on a Toyota Tacoma | Gillfoto | CC BY-SA 4.0 | [File:Four Wheel Camper 5609.jpg](https://commons.wikimedia.org/wiki/File:Four_Wheel_Camper_5609.jpg) |
+| `can-am-off-road` | Can-Am Maverick X3 (off-road brand card) | Dunebuggydubai | CC BY-SA 4.0 | [File:Can am maverick x3 xrs turbo rr.jpg](https://commons.wikimedia.org/wiki/File:Can_am_maverick_x3_xrs_turbo_rr.jpg) |
+
+Ghost Robotics reuses the U.S. Army public-domain photo already credited above, now stored as `ghost-robotics-official-{480,960}.webp`.
+
+Storyteller Overland MODE, Sportsmobile, EarthRoamer, INKAS and other brands without a legitimately licensed photo show a name card instead of a look-alike photo.
