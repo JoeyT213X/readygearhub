@@ -3,8 +3,10 @@
  * Product previews beside the Shop the Directory heading on desktop
  * (four small windows in that row, each rotating independently).
  * On tablets the same four windows become one panel at a time, with swipe and dots.
- * On phones (768px and under) they are hidden: the category tiles below carry the page. No portable energy reserves, no
- * robot-dog fillers, no badges or invented stats.
+ * On phones (768px and under) the four windows show as one static row under
+ * the headline — first product of each lane, no swipe, no auto-rotation, no
+ * dots. The Extreme window and category tiles follow below. No portable
+ * energy reserves, no robot-dog fillers, no badges or invented stats.
  */
 import { productPhotoFor } from '../data/product-photos';
 import { headingProductHref, shortProductName, type CatalogItem } from '../data/full-catalog';
@@ -37,7 +39,7 @@ const laneCount = filledLanes.length;
                 <img
                   src={photo.src}
                   srcset={photo.srcset}
-                  sizes="(min-width: 1024px) 160px, 80vw"
+                  sizes="(min-width: 1024px) 160px, (max-width: 768px) 25vw, 80vw"
                   alt={photo.alt}
                   width="160"
                   height="160"
@@ -71,7 +73,7 @@ const laneCount = filledLanes.length;
   if (root) {
     const desktop = window.matchMedia('(min-width: 1024px)');
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const phone = window.matchMedia('(max-width: 768px)'); // phones: windows are hidden, nothing rotates
+    const phone = window.matchMedia('(max-width: 768px)'); // phones: static four-up row, nothing rotates or swipes
     const stage = root.querySelector<HTMLElement>('[data-hero-stage]')!;
     const slots = Array.from(root.querySelectorAll<HTMLElement>('.home-hero-slot'));
     const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-hero-dot]'));
@@ -210,7 +212,7 @@ const laneCount = filledLanes.length;
     let tracking = false;
     let swiped = false;
     const onDown = (event: PointerEvent) => {
-      if (desktop.matches || event.pointerType === 'mouse' && event.button !== 0) return;
+      if (desktop.matches || phone.matches || (event.pointerType === 'mouse' && event.button !== 0)) return;
       tracking = true;
       swiped = false;
       startX = event.clientX;
