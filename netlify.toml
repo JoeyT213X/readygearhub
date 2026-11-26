@@ -16,6 +16,26 @@
 
 # Paid template/PDF shop taken down. Keep these 301s so old links still land somewhere useful.
 [[redirects]]
+  from = "/guides/generator-vs-power-station"
+  to = "/guides/generator-vs-energy-reserve/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/generator-vs-power-station/"
+  to = "/guides/generator-vs-energy-reserve/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/how-to-pick-a-portable-power-station"
+  to = "/guides/how-to-pick-an-energy-reserve/"
+  status = 301
+
+[[redirects]]
+  from = "/guides/how-to-pick-a-portable-power-station/"
+  to = "/guides/how-to-pick-an-energy-reserve/"
+  status = 301
+
+[[redirects]]
   from = "/shop/winter-storm-prep-planner"
   to = "/winter-storm-ready-checklist/"
   status = 301

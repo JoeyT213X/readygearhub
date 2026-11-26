@@ -18,4 +18,4 @@ season: ["winter", "hurricane", "all-season"]
 verified: "2026-11-25"
 ---
 
-Anker lists the C1000 as a 1,056Wh portable power station with LFP (lithium iron phosphate) battery chemistry. Check the official page for current specs and price.
+The Anker C1000 is a 1,056Wh portable energy reserve with LFP (lithium iron phosphate) battery chemistry. Check the official page for current specs and price.
