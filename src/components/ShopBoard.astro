@@ -27,6 +27,7 @@ function isInternal(href: string) {
     </div>
     <!-- Optional desktop heading-row preview; us-first-badge only edits shop-board-copy above. -->
     <slot name="aside" />
+    <slot name="between" />
     <div class="shop-board-grid">
       {tiles.map((tile) => {
         const internal = isInternal(tile.href);

@@ -477,8 +477,9 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
   .home-shop-hero .shop-board:has(.home-hero-windows){
     display:grid;
     grid-template-columns:max-content minmax(0,1fr);
-    grid-template-rows:auto auto;
+    grid-template-rows:auto auto auto;
     column-gap:20px;
+    row-gap:14px;
     align-items:start;
   }
   .home-shop-hero .shop-board:has(.home-hero-windows) .shop-board-copy{
@@ -487,9 +488,16 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
     width:max-content;
     max-width:38rem;
   }
-  .home-shop-hero .shop-board:has(.home-hero-windows) .shop-board-grid{
+  .home-shop-hero .shop-board:has(.home-hero-windows) .extreme-wrap,
+  .home-shop-hero .shop-board:has(.home-hero-windows) .extreme-window{
     grid-column:1 / -1;
     grid-row:2;
+    margin:0;
+    width:100%;
+  }
+  .home-shop-hero .shop-board:has(.home-hero-windows) .shop-board-grid{
+    grid-column:1 / -1;
+    grid-row:3;
   }
   .home-hero-windows{
     display:block;
@@ -594,61 +602,6 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
     color:var(--ink);
   }
 
-  /* Drones & Robotics directory: finished dark navy/green grid on desktop only.
-     Cards stay light for contrast. Mobile keeps the cream/tan page. */
-  body.dir-drones-robotics{
-    background-color:#12261f;
-    background-image:
-      linear-gradient(rgba(255,247,232,.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,247,232,.04) 1px, transparent 1px),
-      radial-gradient(820px 420px at 8% -8%, rgba(198,140,80,.22), transparent 52%),
-      radial-gradient(720px 420px at 100% 110%, rgba(22,58,46,.55), transparent 58%);
-    background-size:28px 28px,28px 28px,auto,auto;
-    --ink:#ffffff;
-    --muted:var(--on-dark-muted);
-    --link:var(--link-on-dark);
-    --link-hover:#ffffff;
-    color:var(--on-dark);
-  }
-  body.dir-drones-robotics :is(.card,.live-card,.signup-split,.alert-callout,.coming-soon-panel,.prose table,.source-card){
-    --ink:var(--c-ink);
-    --muted:var(--c-muted);
-    --link:var(--c-link);
-    --link-hover:var(--c-link-hover);
-    color:var(--ink);
-  }
-  body.dir-drones-robotics .card{
-    border-color:rgba(255,255,255,.08);
-    box-shadow:var(--shadow-on-dark);
-  }
-  body.dir-drones-robotics :is(.chip-list,.dir-nav) .pill{
-    background:rgba(255,255,255,.10);
-    color:#fff;
-    border:1px solid rgba(255,255,255,.22);
-  }
-  body.dir-drones-robotics :is(.chip-list,.dir-nav) .pill:hover{
-    background:rgba(255,255,255,.2);
-    color:#fff;
-  }
-  body.dir-drones-robotics .section-title,
-  body.dir-drones-robotics .section-head h2{
-    color:#fff;
-  }
-  body.dir-drones-robotics .fine,
-  body.dir-drones-robotics .disclosure,
-  body.dir-drones-robotics .filter-label,
-  body.dir-drones-robotics [data-filter-status],
-  body.dir-drones-robotics .section-head p{
-    color:var(--muted);
-  }
-  body.dir-drones-robotics .disclosure a,
-  body.dir-drones-robotics .fine a{
-    color:var(--link);
-  }
-  body.dir-drones-robotics .filler-block{
-    border-top-color:rgba(255,247,232,.16);
-  }
-
   /* Robotics filler group: same visual family, a little smaller and plainer, no badges. */
   .filler-block{
     margin-top:3rem;
@@ -670,6 +623,92 @@ a.card:hover,.item-card:hover,.tool-card:hover,.media-card:hover,.lane-card:hove
   .filler-block .source-card.is-filler .product-meta{font-size:.9rem}
   .filler-block .source-card.is-filler .btn.small{font-size:1rem;min-height:42px}
 }
+
+/* Navy specialty pages (Doomsday Prepper, Drones & Robotics): same storm-navy
+   grid as the home shop hero, at every breakpoint. Mobile previously kept the
+   cream/tan page background on robotics; that is no longer used. Cards stay
+   light so product photos and type stay readable. */
+body.dir-drones-robotics,
+body.dir-doomsday{
+  background-color:#12261f;
+  background-image:
+    linear-gradient(rgba(255,247,232,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,247,232,.04) 1px, transparent 1px),
+    radial-gradient(820px 420px at 8% -8%, rgba(198,140,80,.22), transparent 52%),
+    radial-gradient(720px 420px at 100% 110%, rgba(22,58,46,.55), transparent 58%);
+  background-size:28px 28px,28px 28px,auto,auto;
+  --ink:#ffffff;
+  --muted:var(--on-dark-muted);
+  --link:var(--link-on-dark);
+  --link-hover:#ffffff;
+  color:var(--on-dark);
+}
+body.dir-drones-robotics :is(.card,.live-card,.signup-split,.alert-callout,.coming-soon-panel,.prose table,.source-card),
+body.dir-doomsday :is(.card,.live-card,.signup-split,.alert-callout,.coming-soon-panel,.prose table,.source-card,.pj-card){
+  --ink:var(--c-ink);
+  --muted:var(--c-muted);
+  --link:var(--c-link);
+  --link-hover:var(--c-link-hover);
+  color:var(--ink);
+}
+body.dir-drones-robotics .card,
+body.dir-doomsday .card,
+body.dir-doomsday .pj-card{
+  border-color:rgba(255,255,255,.08);
+  box-shadow:var(--shadow-on-dark);
+}
+body.dir-drones-robotics :is(.chip-list,.dir-nav) .pill,
+body.dir-doomsday :is(.chip-list,.dir-nav,.dd-jump,.pj-jump) .pill{
+  background:rgba(255,255,255,.10);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.22);
+}
+body.dir-drones-robotics :is(.chip-list,.dir-nav) .pill:hover,
+body.dir-doomsday :is(.chip-list,.dir-nav,.dd-jump,.pj-jump) .pill:hover{
+  background:rgba(255,255,255,.2);
+  color:#fff;
+}
+body.dir-drones-robotics .section-title,
+body.dir-drones-robotics .section-head h2,
+body.dir-doomsday .section-title,
+body.dir-doomsday .section-head h2,
+body.dir-doomsday .pj-card h2,
+body.dir-doomsday .pj-card h3,
+body.dir-doomsday .dd-h2{
+  color:#fff;
+}
+body.dir-doomsday .pj-card h2,
+body.dir-doomsday .pj-card h3,
+body.dir-doomsday .pj-card h4{color:var(--c-ink)}
+body.dir-drones-robotics .fine,
+body.dir-drones-robotics .disclosure,
+body.dir-drones-robotics .filter-label,
+body.dir-drones-robotics [data-filter-status],
+body.dir-drones-robotics .section-head p,
+body.dir-doomsday .fine,
+body.dir-doomsday .disclosure,
+body.dir-doomsday .section-head p{
+  color:var(--muted);
+}
+body.dir-drones-robotics .disclosure a,
+body.dir-drones-robotics .fine a,
+body.dir-doomsday .disclosure a,
+body.dir-doomsday .fine a{
+  color:var(--link);
+}
+body.dir-drones-robotics .filler-block,
+body.dir-doomsday .filler-block{
+  border-top-color:rgba(255,247,232,.16);
+}
+body.dir-drones-robotics .listing-notes,
+body.dir-drones-robotics .listing-notes summary,
+body.dir-doomsday .listing-notes,
+body.dir-doomsday .listing-notes summary{color:var(--muted)}
+body.dir-drones-robotics .dir-meta .dir-meta-count,
+body.dir-drones-robotics .dir-meta .disclosure,
+body.dir-doomsday .dir-meta .dir-meta-count,
+body.dir-doomsday .dir-meta .disclosure{color:var(--muted)}
+
 
 @media (min-width: 1024px) and (prefers-reduced-motion: reduce) {
   .home-hero-window{transition:none}

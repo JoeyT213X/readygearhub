@@ -1,46 +1,115 @@
 ---
 import Base from '../../layouts/Base.astro';
-import PageHero from '../../components/PageHero.astro';
 import Disclosure from '../../components/Disclosure.astro';
-import { doomsdaySections, doomsdayNewItems, doomsdayCrossList } from '../../data/doomsday-prepper';
+import SectionHead from '../../components/SectionHead.astro';
+import SourceCard from '../../components/SourceCard.astro';
+import Photo from '../../components/Photo.astro';
+import ExtremeWindow from '../../components/ExtremeWindow.astro';
+import UsFirstBadge from '../../components/UsFirstBadge.astro';
+import { doomsdaySections, doomsdayRank } from '../../data/doomsday-prepper';
 import { doomsdayProjects } from '../../data/doomsday-projects';
-const counts = (id: string) => doomsdayNewItems.filter((n) => n.section === id).length + (doomsdayCrossList as Record<string, string[]>)[id].length;
+import { getItems } from '../../lib/data';
+import { buildFullCatalog } from '../../data/full-catalog';
+import { productPhotoFor } from '../../data/product-photos';
+import { stockCoverFor } from '../../data/stock-covers';
+
+const catalog = buildFullCatalog(await getItems()).filter(
+  (i) => i.category === 'doomsday-prepper' || (i.alsoIn ?? []).includes('doomsday-prepper'),
+);
+const hasVisual = (i: (typeof catalog)[number]) =>
+  !!(productPhotoFor(i) || stockCoverFor(i) || (i.image && !i.image.endsWith('.svg')));
+const featured = catalog
+  .filter((i) => !i.filler && hasVisual(i))
+  .sort((a, b) => (Number(!!b.usBadge) - Number(!!a.usBadge)) || (doomsdayRank(a.id) - doomsdayRank(b.id)))
+  .slice(0, 12);
 ---
-<Base title="Doomsday Prepper: Shelters, Extreme Vehicles, Security & More | ReadyGearHub" description="Serious preparedness, calmly laid out: shelters and bunkers, extreme vehicles, perimeter security, air and water, long-term food, energy reserves, comms, medical and tools. Plus a projects guide with permits and sourced cost ranges.">
-  <PageHero title="Doomsday Prepper" eyebrow="Extreme preparedness" lead="The serious end of the hobby, laid out calmly. Official maker pages, U.S. makers first, allied makers next." photo="hero-bunker-hatch" crumbs={[{ label: 'Doomsday Prepper' }]} />
-  <section class="wrap section dd-hub">
-    <p class="dd-lead">Big projects take planning more than gear. Start with the sections below, then see the <a href="/doomsday-prepper/projects/">Projects guide</a> for permits, beginner steps and cost ranges taken from published sources.</p>
-    <div class="dd-tiles">
-      {doomsdaySections.map((s) => (
-        <a class="dd-tile" href={`/directory/doomsday-prepper/#dd-${s.id}`}>
-          <h2>{s.name}</h2>
-          <p>{s.blurb}</p>
-          <span class="dd-tile-count">{counts(s.id)} listings</span>
+<Base
+  title="Doomsday Prepper: Shelters, Extreme Vehicles, Security & More | ReadyGearHub"
+  description="Serious preparedness, calmly laid out: shelters and bunkers, extreme vehicles, perimeter security, air and water, long-term food, energy reserves, comms, medical and tools. Plus a projects guide with permits and sourced cost ranges."
+  pageClass="dir-doomsday"
+>
+  <section class="home-shop-hero dd-landing" aria-label="Doomsday Prepper">
+    <div class="wrap">
+      <div class="shop-board-copy dd-landing-copy">
+        <div class="shop-board-topline">
+          <span class="bento-kicker">Extreme</span>
+          <UsFirstBadge />
+        </div>
+        <h1 class="shop-board-heading"><a class="shop-board-title" href="/directory/doomsday-prepper/">Doomsday Prepper</a></h1>
+        <p class="shop-board-text">The serious end of the hobby, laid out calmly. Shelters, overland and armored rigs, perimeter security, NBC air, long-term food and energy reserves. U.S. makers first, official pages only.</p>
+      </div>
+
+      <ExtremeWindow embedded variant="hero" href="/directory/doomsday-prepper/" />
+
+      <SectionHead
+        kicker="Explore"
+        title="Shop the sections"
+        href="/directory/doomsday-prepper/"
+        linkLabel="All listings"
+      />
+      <div class="shop-board-grid dd-section-grid">
+        {doomsdaySections.map((s) => (
+          <a class="shop-board-cell is-cover" href={`/directory/doomsday-prepper/#dd-${s.id}`}>
+            <Photo name={s.photo} sizes="(max-width: 719px) 30vw, 12vw" alt={s.name} />
+            <span class="shop-board-caption">{s.name}</span>
+          </a>
+        ))}
+        <a class="shop-board-cell is-count" href="/doomsday-prepper/projects/">
+          <span class="shop-board-count-kicker">Projects</span>
+          <span class="shop-board-count-num">{doomsdayProjects.length}</span>
+          <span class="shop-board-caption">Permits, guides, costs</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section band-storm" id="featured">
+    <SectionHead
+      kicker="Shop"
+      title="Featured gear"
+      intro="A first look at official listings in this category. Cross-listed items stay in their home categories too."
+      href="/directory/doomsday-prepper/"
+      linkLabel="Browse every listing"
+    />
+    <div class="grid shop-grid source-grid home-shop-grid">
+      {featured.map((item) => <SourceCard item={item} />)}
+    </div>
+  </section>
+
+  <section class="wrap section band-storm" id="projects">
+    <SectionHead
+      kicker="Build"
+      title="Planning a bigger project?"
+      intro="Permits, beginner steps and sourced cost ranges for bunkers, fencing, wells, septic, solar and more. Rules vary by county."
+      href="/doomsday-prepper/projects/"
+      linkLabel="Open the projects guide"
+    />
+    <div class="shop-board-grid dd-project-grid">
+      {doomsdayProjects.map((p) => (
+        <a class="shop-board-cell is-cover" href={`/doomsday-prepper/projects/#${p.id}`}>
+          <Photo name={p.photo} sizes="(max-width: 719px) 45vw, 18vw" alt={p.name} />
+          <span class="shop-board-caption">{p.name}</span>
         </a>
       ))}
     </div>
-    <div class="dd-cta">
-      <a class="btn" href="/directory/doomsday-prepper/">Browse every listing</a>
-      <a class="btn secondary" href="/doomsday-prepper/projects/">Projects: permits, guides, costs</a>
-    </div>
-    <h2 class="dd-h2">Planning a build?</h2>
-    <ul class="dd-projects">
-      {doomsdayProjects.map((p) => <li><a href={`/doomsday-prepper/projects/#${p.id}`}>{p.name}</a></li>)}
-    </ul>
-    <p class="fine">Rules vary by county and state. Nothing here is legal, engineering or financial advice. Confirm requirements with your local building department.</p>
+    <p class="fine" style="margin-top:18px">Nothing here is legal, engineering or financial advice. Confirm requirements with your local building department. <a href="/affiliate-disclosure/">Affiliate disclosure</a>.</p>
     <Disclosure />
   </section>
 </Base>
 <style is:global>
-  .dd-lead{max-width:62ch;font-size:1.08rem}
-  .dd-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:24px 0}
-  .dd-tile{display:block;padding:18px 18px 14px;border:1px solid #b08d3c;border-radius:6px;background:#14233a;color:#f1e7c8;text-decoration:none}
-  .dd-tile h2{margin:0 0 6px;font-size:1.15rem;color:#f4d98a}
-  .dd-tile p{margin:0 0 10px;font-size:.92rem;color:#d9d3c0}
-  .dd-tile-count{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:#b08d3c}
-  .dd-tile:hover{background:#1b2e4b}
-  .dd-cta{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0 28px}
-  .dd-h2{margin-top:32px}
-  .dd-projects{columns:2;max-width:560px}
-  @media (max-width:560px){.dd-projects{columns:1}}
+  .dd-landing{padding-bottom:36px}
+  .dd-landing-copy{padding:8px 0 12px}
+  .dd-landing .extreme-window{margin:8px 0 22px}
+  .dd-section-grid{margin:0 0 8px}
+  .dd-project-grid{margin-top:8px}
+  .dd-landing .section-head{border-bottom-color:rgba(255,255,255,.14)}
+  .dd-landing .section-head h2{color:#fff}
+  .dd-landing .section-head p{color:#e8f0e8}
+  .dd-landing .kicker{color:#f6b98c;background:rgba(245,158,11,.14);border-color:rgba(245,158,11,.35)}
+  .dd-landing .section-link{color:var(--amber-on-dark)}
+  .dd-landing .section-link:hover{color:#fff}
+  @media (min-width:720px){
+    .dd-section-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .dd-project-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  }
 </style>

@@ -61,6 +61,10 @@ Object.assign(photos, {
   "hero-anker-solix": { key: "hero-anker-solix", alt: "Official Anker SOLIX products: the F3800 Plus energy reserve, a PS400 solar panel, and a C2000 Gen 2 solar-generator kit", author: "Anker SOLIX", authorUrl: "https://www.ankersolix.com/", sourceUrl: "https://www.ankersolix.com/" },
   "hero-litime": { key: "hero-litime", alt: "Official LiTime products: LiHeat lithium batteries and a DIY solar generator kit", author: "LiTime", authorUrl: "https://www.litime.com/", sourceUrl: "https://www.litime.com/" },
   "hero-bluetti-official": { key: "hero-bluetti-official", alt: "Official BLUETTI products: Elite 200 V2 and AC180 energy reserves and an SP200L solar panel", author: "BLUETTI", authorUrl: "https://www.bluettipower.com/", sourceUrl: "https://www.bluettipower.com/" },
+  "stock-security-fence": { key: "stock-security-fence", alt: "A tall gray metal palisade security fence against an overcast sky", author: "Scott Webb", authorUrl: "https://www.pexels.com/@scottwebb/", sourceUrl: "https://www.pexels.com/photo/gray-metal-fence-430204/" },
+  "stock-gas-masks": { key: "stock-gas-masks", alt: "Three civil-defense gas masks and a filter canister resting on a stone wall", author: "Alexander Zvir", authorUrl: "https://www.pexels.com/photo/black-and-white-photo-of-gas-masks-lying-on-a-wall-19376807/", sourceUrl: "https://www.pexels.com/photo/black-and-white-photo-of-gas-masks-lying-on-a-wall-19376807/" },
+  "stock-pipe": { key: "stock-pipe", alt: "A close view of a metal water pipe and fittings", author: "aamir dukanwala", authorUrl: "https://www.pexels.com/photo/18274115/", sourceUrl: "https://www.pexels.com/photo/18274115/" },
+  "stock-vault-doors": { key: "stock-vault-doors", alt: "Two heavy steel vault doors set into a brick wall", author: "wutthichai charoenburi", authorUrl: "https://www.pexels.com/photo/steel-heavy-doors-of-vault-19882101/", sourceUrl: "https://www.pexels.com/photo/steel-heavy-doors-of-vault-19882101/" },
 });
 
 export const photoSrc = (key: string, w: 480 | 960 | 1600 = 960) => `/images/photos/${key}-${w}.webp`;

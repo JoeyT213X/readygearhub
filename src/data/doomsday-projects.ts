@@ -9,6 +9,7 @@ export type CostRow = { size: 'Small' | 'Medium' | 'Large'; what: string; range?
 export type Project = {
   id: string;
   name: string;
+  photo: string;
   intro: string;
   approvals: string[];
   sources: ProjectSource[];
@@ -21,7 +22,7 @@ export const localGov: ProjectSource = { label: 'USA.gov: find your local govern
 
 export const doomsdayProjects: Project[] = [
   {
-    id: 'shelters', name: 'Bunkers and underground shelters',
+    id: 'shelters', name: 'Bunkers and underground shelters', photo: 'hero-bunker-hatch',
     intro: 'Below-ground shelters are structures, so most counties treat them like any other build: plans, a permit and inspections. Storm shelters have their own standard; other bunker types are reviewed case by case.',
     approvals: [
       'Building permit and plan review (often with an engineer’s stamp for a buried structure).',
@@ -53,7 +54,7 @@ export const doomsdayProjects: Project[] = [
     ],
   },
   {
-    id: 'fencing-gates', name: 'Security fencing and gates',
+    id: 'fencing-gates', name: 'Security fencing and gates', photo: 'stock-security-fence',
     intro: 'A fence is the cheapest place to start. Height, material and gate type decide both the price and the approvals. Crash-rated barriers and bollards are sold by quote through makers and installers.',
     approvals: [
       'Fence or zoning permit, with height limits that are often lower in front yards.',
@@ -81,7 +82,7 @@ export const doomsdayProjects: Project[] = [
     ],
   },
   {
-    id: 'wells', name: 'Water wells',
+    id: 'wells', name: 'Water wells', photo: 'hero-water-pour',
     intro: 'A private well is a long-term water supply, and it is regulated for a reason. Most states license drillers and require a permit before drilling.',
     approvals: [
       'Well permit from the state or county agency that governs drilling. Which agency varies by state.',
@@ -108,7 +109,7 @@ export const doomsdayProjects: Project[] = [
     ],
   },
   {
-    id: 'septic', name: 'Septic systems',
+    id: 'septic', name: 'Septic systems', photo: 'stock-pipe',
     intro: 'Septic is decided by soil. A percolation test tells you which system the regulator will accept, and that choice drives most of the cost.',
     approvals: [
       'Soil or percolation test, usually done by a licensed professional.',
@@ -133,7 +134,7 @@ export const doomsdayProjects: Project[] = [
     ],
   },
   {
-    id: 'solar-generators', name: 'Solar, batteries and generator hookups',
+    id: 'solar-generators', name: 'Solar, batteries and generator hookups', photo: 'stock-solar-panel',
     intro: 'Portable energy reserves plug in and need no permit. A transfer switch, a standby generator or a roof array is a permanent electrical job, and the electrical code and your utility both have a say.',
     approvals: [
       'Electrical permit and inspection, with work done to the National Electrical Code. NEC Article 702 covers optional standby systems, 705 interconnected power sources and 706 energy storage.',
@@ -160,7 +161,7 @@ export const doomsdayProjects: Project[] = [
     ],
   },
   {
-    id: 'outbuildings-safe-rooms', name: 'Outbuildings and safe rooms',
+    id: 'outbuildings-safe-rooms', name: 'Outbuildings and safe rooms', photo: 'stock-vault-doors',
     intro: 'A workshop, barn or safe room is an accessory structure. Counties usually set size triggers for permits, plus setbacks and use limits.',
     approvals: [
       'Building permit and zoning review for accessory structures, with setbacks and size or height limits.',
@@ -190,7 +191,7 @@ export const doomsdayProjects: Project[] = [
     ],
   },
   {
-    id: 'grading-excavation', name: 'Grading and excavation',
+    id: 'grading-excavation', name: 'Grading and excavation', photo: 'storm-barn',
     intro: 'Moving earth sounds simple and has more rules than people expect: utility locates, erosion control and trench safety.',
     approvals: [
       'Grading or land-disturbance permit from the county or city for larger jobs.',

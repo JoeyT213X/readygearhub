@@ -1,12 +1,13 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import PageHero from '../../../components/PageHero.astro';
+import Photo from '../../../components/Photo.astro';
 import { doomsdayProjects } from '../../../data/doomsday-projects';
 const title = 'Doomsday Prepper Projects: Permits, Beginner Guides & Costs | ReadyGearHub';
 const description = 'Permits and approvals, beginner guides and sourced cost ranges for bunkers, security fencing and gates, wells, septic, solar and generator hookups, outbuildings, safe rooms and excavation. Rules vary by county.';
 const schema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Doomsday Prepper projects: permits, beginner guides and costs', description, inLanguage: 'en-US', dateModified: '2026-11-25', author: { '@type': 'Organization', name: 'ReadyGearHub' } };
 ---
-<Base title={title} description={description} schema={schema}>
+<Base title={title} description={description} schema={schema} pageClass="dir-doomsday">
   <PageHero title="Projects: permits, guides and costs" eyebrow="Doomsday Prepper" lead="Plan the big builds before you buy the gear. Each project has the approvals you will likely need, a beginner guide, and cost ranges with the source beside every figure." photo="hero-bunker-hatch" crumbs={[{ href: '/doomsday-prepper/', label: 'Doomsday Prepper' }, { label: 'Projects' }]} />
   <section class="wrap section pj">
     <aside class="pj-note">
@@ -21,6 +22,9 @@ const schema = { '@context': 'https://schema.org', '@type': 'Article', headline:
 
     {doomsdayProjects.map((p) => (
       <article class="pj-card" id={p.id}>
+        <div class="pj-visual">
+          <Photo name={p.photo} sizes="(max-width: 699px) 100vw, 640px" alt="" />
+        </div>
         <h2>{p.name}</h2>
         <p>{p.intro}</p>
 
@@ -68,19 +72,22 @@ const schema = { '@context': 'https://schema.org', '@type': 'Article', headline:
   </section>
 </Base>
 <style is:global>
-  .pj-note{border-left:4px solid #b08d3c;background:#f4efe2;color:#1b2430;padding:12px 18px;border-radius:4px;margin-bottom:20px}
+  .pj-note{border-left:4px solid var(--amber);background:rgba(7,21,32,.55);color:var(--on-dark);padding:12px 18px;border-radius:4px;margin-bottom:20px}
+  .pj-note a{color:var(--link-on-dark)}
   .pj-note p{margin:.4rem 0}
   .pj-jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
-  .pj-jump .pill{background:#14233a;color:#f1e7c8;border:1px solid #b08d3c;text-decoration:none}
-  .pj-card{border:1px solid #cfc7b2;border-top:4px solid #14233a;border-radius:6px;padding:20px 22px;margin:0 0 28px;background:#fffdf7;color:#1b2430;scroll-margin-top:90px}
-  .pj-card h2{margin-top:0;color:#14233a}
+  .pj-jump .pill{text-decoration:none}
+  .pj-card{border:1px solid var(--line);border-top:4px solid var(--navy);border-radius:var(--radius);padding:0 22px 20px;margin:0 0 28px;background:var(--card);color:var(--c-ink);scroll-margin-top:90px;overflow:hidden}
+  .pj-visual{margin:0 -22px 16px;aspect-ratio:16/7;overflow:hidden;background:var(--storm-800)}
+  .pj-visual img{width:100%;height:100%;object-fit:cover;display:block}
+  .pj-card h2{margin-top:16px;color:var(--navy)}
   .pj-card h3{margin:22px 0 6px;border-bottom:1px solid #b08d3c;padding-bottom:4px;color:#14233a}
   .pj-card h4{margin:8px 0 4px;color:#14233a}
   .pj-guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
   .pj-sources li{margin:.25rem 0}
   .pj-table-wrap{overflow-x:auto}
   .pj-table{width:100%;border-collapse:collapse;font-size:.93rem}
-  .pj-table th,.pj-table td{border:1px solid #cfc7b2;padding:8px 10px;text-align:left;vertical-align:top}
+  .pj-table th,.pj-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
   .pj-table th{background:#14233a;color:#f1e7c8}
   .pj-note-in{display:inline}
 </style>

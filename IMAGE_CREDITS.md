@@ -357,3 +357,13 @@ Self-hosted in `public/directory/photos/{key}-{width}.webp`, flattened onto whit
 | `ri-mirrorme-bpx-pro` | MirrorMe BPX Pro Quadruped Robot | Official product photo from robotsinternational.com (`mirrorme-bpxpro-quadruped-robot.jpg`), downloaded November 25, 2026 | Official catalog photo, source 1,200×1,200, no upscaling. Image provided by Robots International. |
 
 Deep Robotics Lite3 filler cards stay text-only: the only official RobotShop thumbnail available at download time was 300 px, and this site does not upscale product photos. FX Aegis Pro, Ultra+, and Ultra-W+ also stay text-only because their official store heroes were the same packshot as a related trim already shown.
+
+## Extreme window and Doomsday Prepper stills (Pexels, added 25 Nov 2026)
+
+Self-hosted in `public/images/photos/{key}-{width}.webp`. Used in the home Extreme window loop, the Doomsday Prepper landing tiles, project cards, and as listing photos where no official product photo is available. Pexels License. No people in frame.
+
+| Key | Subject | Source | Credit / notes |
+| --- | --- | --- | --- |
+| `stock-security-fence` | Tall gray palisade security fence | [Pexels photo 430204](https://www.pexels.com/photo/gray-metal-fence-430204/) | Scott Webb / Pexels |
+| `stock-gas-masks` | Three gas masks on a stone wall, no people | [Pexels photo 19376807](https://www.pexels.com/photo/black-and-white-photo-of-gas-masks-lying-on-a-wall-19376807/) | Alexander Zvir / Pexels |
+| `stock-vault-doors` | Two steel vault doors in a brick wall | [Pexels photo 19882101](https://www.pexels.com/photo/steel-heavy-doors-of-vault-19882101/) | wutthichai charoenburi / Pexels |

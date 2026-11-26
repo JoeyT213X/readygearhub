@@ -59,11 +59,10 @@ import ExtremeWindow from '../components/ExtremeWindow.astro';
     <div class="wrap">
       <ShopBoard hero tiles={boardTiles} catalogCount={catalog.length}>
         <HomeHeroWindows slot="aside" products={headingProducts} />
+        <ExtremeWindow slot="between" embedded />
       </ShopBoard>
     </div>
   </section>
-
-  <ExtremeWindow />
 
   <HeroSpread
     title="Prepping & Survival Network"
