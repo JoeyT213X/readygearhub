@@ -486,8 +486,8 @@
         "/images/photos/solar-rooftops-480.webp",
         "/images/photos/solar-rooftops-960.webp"
       ],
-      "source": "[Rainbow over a suburban neighborhood with solar panels](https://unsplash.com/photos/rainbow-over-a-suburban-neighborhood-with-solar-panels-VNIjztzKF_U) | [Lara John](https://unsplash.com/@lara_j) | see `src/data/images.ts`",
-      "license": "Unsplash License (free to use, self-hosted)",
+      "source": "[Solar panels on the roof of a house](https://commons.wikimedia.org/wiki/File:Solar_Energy_Roof_Solar_Power_Generation_2666770_CC0.jpg) (CC0, via Wikimedia Commons) | [Roy Bury](https://pixabay.com/users/royburi-3128024/) | see `src/data/images.ts`; replaced the previous rainbow rooftop photo",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
       "creditSection": "Image credits"
     },
     {

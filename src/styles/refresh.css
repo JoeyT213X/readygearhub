@@ -858,7 +858,76 @@ body.dir-drones-robotics .dir-meta .disclosure{color:var(--muted)}
   .live-grid>.live-card{flex:0 0 min(84%,340px);scroll-snap-align:start;min-height:0}
 }
 
-/* Phones: no one-panel-at-a-time product rotator; the category tiles and Extreme window below carry the page. */
-@media (max-width: 768px) {
+/* Below desktop: hide the four product windows (no tablet swipe rotator).
+   Category tiles come first, the Extreme Doomsday Prepper window follows. */
+@media (max-width: 1023px) {
   .home-hero-windows{display:none}
+  .home-hero-dots{display:none}
+  .home-shop-hero .shop-board{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .home-shop-hero .shop-board-copy{order:0}
+  .home-shop-hero .shop-board-grid{order:1}
+  .home-shop-hero .extreme-wrap,
+  .home-shop-hero .extreme-window{order:2;margin:0;width:100%}
+}
+
+/* Phones: the 15-tile category grid fills the first screen under the header
+   and quick links (390x844, header included). A compact badge + title stay
+   at the top; the long intro and product windows are gone. The Extreme
+   window starts on the second screen. */
+@media (max-width: 768px) {
+  .home-shop-hero{padding:6px 0 8px}
+  .home-shop-hero .shop-board{padding:0;gap:6px}
+  .home-shop-hero .shop-board-copy{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    gap:8px;
+    min-height:28px;
+  }
+  .home-shop-hero .shop-board-topline{margin:0;flex:0 0 auto}
+  .home-shop-hero .shop-board-topline .bento-kicker{display:none}
+  /* Keep the heading for screen readers; the 15-tile grid is the first-screen view. */
+  .home-shop-hero .shop-board-heading{
+    position:absolute;
+    width:1px;height:1px;
+    padding:0;margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+  }
+  .home-shop-hero .shop-board-text{display:none}
+  .home-shop-hero .shop-board-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    grid-template-rows:repeat(5,minmax(0,1fr));
+    gap:6px;
+    /* Header 95 + top pad 6 + badge row 28 + gaps 6+8 */
+    height:calc(100svh - 95px - 6px - 28px - 14px);
+    max-height:calc(100svh - 95px - 6px - 28px - 14px);
+  }
+  .home-shop-hero .shop-board-cell{
+    aspect-ratio:auto;
+    height:auto;
+    min-height:0;
+    border-radius:10px;
+  }
+  .home-shop-hero .shop-board-caption,
+  .home-shop-hero .shop-board-cell.is-count .shop-board-caption{
+    font-size:.68rem;
+    letter-spacing:-.02em;
+    line-height:1.15;
+    padding:1.4em 5px 5px;
+    text-align:left;
+  }
+  .home-shop-hero .shop-board-cell.is-count{padding:8px 6px 2.2rem}
+  .home-shop-hero .shop-board-count-kicker{font-size:.62rem;letter-spacing:.06em}
+  .home-shop-hero .shop-board-count-num{font-size:1.05rem}
+  .home-shop-hero .extreme-wrap,
+  .home-shop-hero .extreme-window{
+    margin-top:4px;
+  }
 }
