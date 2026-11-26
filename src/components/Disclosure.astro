@@ -1,8 +1,9 @@
 ---
+import { AMAZON_DISCLOSURE } from '../data/affiliates';
 interface Props {
   /** Light text for a dark navy hero, so the line stays readable. */
   onDark?: boolean;
 }
 const { onDark = false } = Astro.props;
 ---
-<p class:list={['disclosure', { 'is-on-dark': onDark }]}>We may earn a commission from links on this page. <a href="/affiliate-disclosure/">Learn more</a></p>
+<p class:list={['disclosure', { 'is-on-dark': onDark }]}>We may earn a commission from links on this page. {AMAZON_DISCLOSURE} <a href="/affiliate-disclosure/">Learn more</a></p>

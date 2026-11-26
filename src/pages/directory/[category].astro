@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { AMAZON_DISCLOSURE } from '../../data/affiliates';
 import PageHero from '../../components/PageHero.astro';
 import CategoryShort from '../../components/CategoryShort.astro';
 import SectionHead from '../../components/SectionHead.astro';
@@ -129,7 +130,7 @@ const schema = {
               </div>
             </section>
           ))}
-          <p class="fine dd-disclosure">Some links may earn us a commission at no cost to you. Items marked U.S. come from U.S.-based makers. We list official pages and never invent prices, specs or reviews.</p>
+          <p class="fine dd-disclosure">Some links may earn us a commission at no cost to you. {AMAZON_DISCLOSURE} Items marked U.S. come from U.S.-based makers. We list official pages and never invent prices, specs or reviews.</p>
         </>
       )}
       {!isDoomsday && primaryItems.length > 0 ? (
