@@ -79,6 +79,12 @@ export function listingAction(item: {
   if (item.kind === 'tool' || item.kind === 'resource') {
     return { label: item.ctaLabel || 'See details', kind: 'details' };
   }
+  // Amazon product cards: a deterministic mix of plain wordings (no seller name on the button).
+  if (item.programId === 'amazon') {
+    const AMAZON_LABELS: Array<[string, CtaKind]> = [['Check listing', 'listing'], ['See details', 'details'], ['Buy now', 'listing'], ['Visit site', 'details']];
+    const [label, kind] = AMAZON_LABELS[hashSeed(seed || 'x') % AMAZON_LABELS.length];
+    return { label, kind };
+  }
   const amount = Number((/\$\s?([\d,]+)/.exec(item.priceLabel || '') || [])[1]?.replace(/,/g, '') || 0);
   // Robots International pages offer "Request a Quote" next to the cart; use it for the big-ticket units.
   const quoteScale = item.programId === 'robots-international' && amount >= 10000;

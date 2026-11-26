@@ -232,7 +232,7 @@ export function amazonPickToCatalogItem(p: AmazonPick): CatalogItem {
     imageKind: 'photo',
     priceLabel: 'See price',
     offerLabel: 'On Amazon',
-    ctaLabel: 'Shop now',
+    ctaLabel: 'Check listing',
     ctaKind: 'listing',
     groups,
     kind: 'partner',
