@@ -78,6 +78,13 @@ export const PROGRAM_PAYOUT_PERCENT: Record<string, number> = {
   'nova-safety': 8,
   'natures-generator': 5,
   amazon: 3, // Amazon Associates standard rates run roughly 1–4.5% for most gear (up to 10% in a few categories); 3 is a conservative mid-point
+  'my-patriot-supply': 10, // Ready Alliance / Everflow, affiliate 1361, confirmed 10% CPS
+  beprepared: 10,
+  'camping-survival': 10,
+  'ready-hour': 10,
+  alexapure: 10,
+  instafire: 10,
+  'grid-doctor': 10,
 };
 
 const programById = new Map(programs.map((p) => [p.id, p]));

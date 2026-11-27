@@ -79,8 +79,8 @@ export function listingAction(item: {
   if (item.kind === 'tool' || item.kind === 'resource') {
     return { label: item.ctaLabel || 'See details', kind: 'details' };
   }
-  // Amazon and My Patriot Supply: a deterministic mix of plain wordings (no seller name on the button).
-  if (item.programId === 'amazon' || item.programId === 'my-patriot-supply') {
+  // Amazon and Ready Alliance / Everflow cards: a deterministic mix of plain wordings (no seller name on the button).
+  if (item.programId === 'amazon' || item.programId === 'my-patriot-supply' || item.programId === 'beprepared' || item.programId === 'camping-survival' || item.programId === 'ready-hour' || item.programId === 'alexapure' || item.programId === 'instafire' || item.programId === 'grid-doctor') {
     const MIXED_LABELS: Array<[string, CtaKind]> = [['Check listing', 'listing'], ['See details', 'details'], ['Buy now', 'listing'], ['Visit site', 'details']];
     const [label, kind] = MIXED_LABELS[hashSeed(seed || 'x') % MIXED_LABELS.length];
     return { label, kind };
