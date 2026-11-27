@@ -9,7 +9,7 @@ uses:
   - "A go-bag or everyday backup for phones, lights, and other low-wattage devices"
   - "Short outages when you do not need a mid-size or home-backup energy reserve"
   - "Camping and travel power at a compact size"
-officialUrl: "https://www.ankersolix.com/products/c300x-portable-power-energy reserve-us"
+officialUrl: "https://www.ankersolix.com/products/c300x-portable-power-station-us"
 affiliateUrl: ""
 rank: 0
 featured: false

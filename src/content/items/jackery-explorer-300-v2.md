@@ -9,7 +9,7 @@ uses:
   - "Keep phones, a router, lights, and small devices running in a short outage"
   - "A lighter energy reserve you can move from room to room"
   - "Camping and car travel, then reuse at home"
-officialUrl: "https://www.jackery.com/products/jackery-explorer-300-v2-portable-power-energy reserve"
+officialUrl: "https://www.jackery.com/products/jackery-explorer-300-v2-portable-power-station"
 affiliateUrl: ""
 rank: 0
 featured: false
