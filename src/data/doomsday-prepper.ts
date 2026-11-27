@@ -191,10 +191,93 @@ export const doomsdayUsCrossIds = new Set<string>([
   'eton-roadguard-jump-starter',
 ]);
 
+
+/** Amazon Associates picks that already carry category or alsoIn "doomsday-prepper".
+ *  Mapped here so they render in the visible section grids (not only in JSON-LD).
+ *  Official curated items stay first; these follow in a quality-then-staples order.
+ *  Page sort is still U.S. badge, then doomsdayRank. */
+export const doomsdayAmazonCross: Record<DoomsdaySectionId, readonly string[]> = {
+  shelters: [],
+  vehicles: [],
+  perimeter: [],
+  'air-water': [
+    'amz-b06xzvbsmx', // Sawyer SP160 gravity filter
+    'amz-b075tttx2r', // Katadyn Hiker Pro
+    'amz-b01n7gc9z6', // MSR TrailShot
+    'amz-b08c9hc52j', // Aquamira drops
+    'amz-b001949tks', // Potable Aqua tablets
+    'amz-b09ffqn924', // Aquatabs
+    'amz-b06y3k69d1', // Mayday water pouches
+    'amz-b00u415mgw', // Scepter can spout
+    'amz-b01h0s90qe', // 3M half-face respirator
+    'amz-b00aefckky', // 3M P100 cartridges
+    'amz-b008mcuzzs', // 3M 8210 N95
+    'amz-b0dswjj5tm', // ThyroSafe potassium iodide
+    'amz-b0ckm5fjqx', // GQ Geiger counter
+  ],
+  food: [
+    'amz-b0843j11jw', // Mountain House meal bucket
+    'amz-b0b8jzdc13', // ReadyWise 90-day supply
+    'amz-b08kskc8nm', // ReadyWise protein bucket
+    'amz-b0755h39hb', // Augason vegetable medley
+    'amz-b0djtzwjry', // Peak Refuel granola
+    'amz-b001cs7mbe', // Datrex ration bars
+    'amz-b001eq5nhe', // SPAM
+    'amz-b004ahdv5a', // Wild Planet tuna
+    'amz-b01m6wm4c5', // Jif peanut butter
+    'amz-b006m14uc0', // Sue Bee honey
+    'amz-b07vcm66n6', // Bob's Red Mill oats
+    'amz-b000rhsy9k', // Pinto beans
+    'amz-b000joq57e', // Mahatma rice
+    'amz-b08s7s98l2', // Survival seed vault
+    'amz-b00004s88z', // All American canner
+    'amz-b00di342b4', // FoodSaver
+    'amz-b0bpw1l2tf', // Ball mason jars
+    'amz-b0c6nmyvhw', // Food-grade buckets
+    'amz-b010bvoadk', // ShieldPro mylar bags
+    'amz-b0hqwy1rr3', // FreshUS oxygen absorbers
+    'amz-b000q3cjgo', // Morton salt
+  ],
+  energy: [],
+  comms: [
+    'amz-b001eug3ii', // Kaito KA500 emergency radio
+    'amz-b073sdlwxd', // Mission Darkness faraday tote
+  ],
+  medical: [
+    'amz-b01itakg6a', // NAR C-A-T tourniquet
+    'amz-b00hjth5l2', // QuikClot gauze
+    'amz-b009ejufda', // Celox Rapid gauze
+    'amz-b01hgslb6k', // Surviveware first aid kit
+  ],
+  tools: [
+    'amz-b079mjbp21', // Leatherman Wave+
+    'amz-b01fscrjlc', // Estwing camper's axe
+    'amz-b0002yto7e', // Fiskars X7 hatchet
+    'amz-b004m3baqe', // Fiskars X27 splitting axe
+    'amz-b000ced1qy', // Silky PocketBoy
+    'amz-b0001ix7ow', // Bahco Laplander
+    'amz-b00u1ocpwq', // Lodge dutch oven
+    'amz-b0006vordy', // Camp Chef two-burner
+    'amz-b007dbd3iu', // Solo Stove Lite
+    'amz-b07mw96bhy', // GSI cookset
+    'amz-b0bkfltm3t', // Therm-a-Rest pad
+    'amz-b00ezexcbg', // SOL bivvy
+    'amz-b00oj8n8ik', // Rothco wool blanket
+    'amz-b00dz1nfsk', // Primacare mylar blankets
+    'amz-b000s5odnc', // Rothco paracord
+    'amz-b004vrkwr4', // Condor 3-day pack
+    'amz-b0013axy54', // Maxpedition Falcon-II
+    'amz-b0ghcdvc7q', // Ready America 72-hour kit
+  ],
+};
+
 export const doomsdaySectionOf: Map<string, DoomsdaySectionId> = (() => {
   const m = new Map<string, DoomsdaySectionId>();
   for (const n of doomsdayNewItems) m.set(n.id, n.section);
-  for (const s of doomsdaySections) for (const id of doomsdayCrossList[s.id]) if (!m.has(id)) m.set(id, s.id);
+  for (const s of doomsdaySections) {
+    for (const id of doomsdayCrossList[s.id]) if (!m.has(id)) m.set(id, s.id);
+    for (const id of doomsdayAmazonCross[s.id]) if (!m.has(id)) m.set(id, s.id);
+  }
   return m;
 })();
 
@@ -203,7 +286,7 @@ export function doomsdayRank(id: string): number {
   const sec = doomsdaySectionOf.get(id);
   if (!sec) return 9999;
   const news = doomsdayNewItems.filter((n) => n.section === sec).map((n) => n.id);
-  const order = [...news, ...doomsdayCrossList[sec]];
+  const order = [...news, ...doomsdayCrossList[sec], ...doomsdayAmazonCross[sec]];
   const i = order.indexOf(id);
   return i < 0 ? 9999 : i;
 }

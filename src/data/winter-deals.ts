@@ -8,7 +8,7 @@
 export const PRICE_CHECKED = '2026-11-25';
 export const PRICE_CHECKED_LABEL = 'November 23–25, 2026';
 
-export type WinterDealSection = 'lights' | 'power' | 'cold' | 'water' | 'apparel' | 'boots';
+export type WinterDealSection = 'lights' | 'power' | 'cold' | 'water' | 'apparel' | 'boots' | 'warmth';
 
 export type WinterDeal = {
   itemId: string;
@@ -56,6 +56,12 @@ export const winterDealSections: { id: WinterDealSection; title: string; intro: 
     title: 'Winter boots for snow, ice, and wet cold',
     intro:
       'Winter boots from Bogs, an approved partner. The prices below are the regular list prices on Bogs’ official store as of November 25, 2026. We are not listing sale prices or promo codes.',
+  },
+  {
+    id: 'warmth',
+    title: 'A heater, hand warmers, a throw, and a snow brush',
+    intro:
+      'Four specific product pages through Amazon Associates: a small electric heater, disposable hand warmers, a heated throw, and a windshield snow brush. We do not show a price on these cards, because Amazon prices change. Check the product page for the current price.',
   },
 ];
 
@@ -214,26 +220,34 @@ export const winterDeals: WinterDeal[] = [
   },
 ];
 
+
+/** Amazon Associates product cards on /winter-deals/ (catalog items, not /gear/ pages). */
+export const winterAmazonDealIds = [
+  'amz-b000tkdq5c', // Lasko Mini Space Heater
+  'amz-b00d7h9lia', // HotHands 10-pair hand warmers
+  'amz-b07fl4wvvs', // Sunbeam heated throw
+  'amz-b0b39bnhbm', // EcoNour 27-inch ice scraper
+] as const;
 export const winterDealSources: { title: string; href: string; note: string }[] = [
   {
-    title: 'Amazon Best Sellers: Indoor Electric Space Heaters',
-    href: 'https://www.amazon.com/Best-Sellers-Indoor-Electric-Space-Heaters/zgbs/home-garden/19240644011',
-    note: 'Read November 23, 2026. Top sellers included DREO, GiveBest, Amazon Basics, and Lasko ceramic heaters.',
+    title: 'Lasko Mini Space Heater',
+    href: 'https://www.amazon.com/dp/B000TKDQ5C',
+    note: 'A small electric heater for a desk or bedroom. Handy for warming one room when you cannot heat the whole house.',
   },
   {
-    title: 'Amazon Best Sellers: Camping Hand Warmers & Foot Warmers',
-    href: 'https://www.amazon.com/Best-Sellers-Camping-Hand-Warmers-Foot-Warmers/zgbs/sporting-goods/14332911',
-    note: 'Read November 23, 2026. HotHands disposable packs led the list, followed by generic rechargeable warmers.',
+    title: 'HotHands Hand Warmers Value Pack (10 Pairs)',
+    href: 'https://www.amazon.com/dp/B00D7H9LIA',
+    note: 'Air-activated packs that warm your hands for hours. Keep a few in a coat, a glove box, or a go-bag.',
   },
   {
-    title: 'Amazon Best Sellers: Blankets & Throws',
-    href: 'https://www.amazon.com/Best-Sellers-Blankets-Throws/zgbs/home-garden/1063280',
-    note: 'Read November 23, 2026. A Bedsure heated throw was #2, with other Bedsure and GENIANI throws also high on the list.',
+    title: 'Sunbeam Heated Throw Blanket',
+    href: 'https://www.amazon.com/dp/B07FL4WVVS',
+    note: 'A soft electric throw for the couch. A simple way to stay warm without heating the whole house.',
   },
   {
-    title: 'Amazon Best Sellers: Ice Scrapers & Snow Brushes',
-    href: 'https://www.amazon.com/Best-Sellers-Ice-Scrapers-Snow-Brushes/zgbs/automotive/15737041',
-    note: 'Read November 23, 2026. An AstroAI 27-inch snow brush and ice scraper was #1.',
+    title: 'EcoNour 27-inch Ice Scraper and Snow Brush (2-Pack)',
+    href: 'https://www.amazon.com/dp/B0B39BNHBM',
+    note: 'Clears frost and snow off a windshield and roof before you drive. A simple winter must-have for every vehicle.',
   },
   {
     title: 'Good Housekeeping, 40 Best Black Friday Deals on Amazon',
@@ -328,34 +342,14 @@ export const winterDealSources: { title: string; href: string; note: string }[] 
 
 export const winterDealGaps: { category: string; leaders: string; status: string }[] = [
   {
-    category: 'Space heaters',
-    leaders: 'DREO, GiveBest, Amazon Basics, and Lasko led Amazon’s indoor electric space-heater best-seller list on November 23, 2026.',
-    status: 'No approved affiliate program. We already have Mr. Heater write-ups, but those links do not earn.',
-  },
-  {
-    category: 'Heated blankets and throws',
-    leaders: 'Bedsure heated throws were high on Amazon’s blankets list, and Good Housekeeping flagged a Bedsure heated blanket as a Black Friday Amazon deal.',
-    status: 'No approved affiliate program.',
-  },
-  {
-    category: 'Hand warmers',
-    leaders: 'HotHands packs led Amazon’s camping hand-warmer best-seller list.',
-    status: 'No approved affiliate program. We have a HotHands write-up with a plain official link only.',
-  },
-  {
-    category: 'Heated apparel from Amazon-bestseller brands',
-    leaders: 'Retail Black Friday coverage on November 22, 2026 listed Soaccks, Beamsks, and ORORO heated vests among live Amazon deals.',
-    status: 'No approved program for those brands. We now list TideWe heated jackets, vests, and insulated bootfoot waders from the official TideWe store.',
-  },
-  {
-    category: 'Snow tools and ice scrapers',
-    leaders: 'An AstroAI 27-inch snow brush was #1 on Amazon’s ice-scraper and snow-brush best-seller list. Snow Joe also appears on that list.',
-    status: 'No approved affiliate program. We have Snow Joe write-ups with plain official links only.',
+    category: 'Heated apparel from other bestseller brands',
+    leaders: 'Retail Black Friday coverage on November 22, 2026 listed Soaccks, Beamsks, and ORORO heated vests among live deals.',
+    status: 'No approved program for those brands. We list TideWe heated jackets, vests, and insulated bootfoot waders from the official TideWe store.',
   },
   {
     category: 'Car winter kits and jump starters',
-    leaders: 'Amazon’s automotive safety-kit list and winter-kit roundups often feature bundled roadside kits. On our own site, a NOCO Boost GB40 page drew one affiliate_click, but that was a plain official link.',
-    status: 'No approved affiliate program for NOCO, AstroAI, or winter car-kit brands. Pelican has not been added yet.',
+    leaders: 'Automotive safety-kit lists and winter-kit roundups often feature bundled roadside kits. On our own site, a NOCO Boost GB40 page drew one affiliate_click, but that was a plain official link.',
+    status: 'No approved brand program for NOCO or winter car-kit brands. Pelican has not been added yet. We do list a specific EcoNour ice scraper through Amazon Associates.',
   },
 ];
 

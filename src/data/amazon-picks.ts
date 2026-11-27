@@ -212,6 +212,7 @@ export const amazonPicks: AmazonPick[] = [
   { id: "amz-b004ahdv5a", asin: "B004AHDV5A", category: "food", alsoIn: ["doomsday-prepper"], brand: "Wild Planet", title: "Wild Planet Albacore Wild Tuna (12 Cans)", blurb: "Canned tuna that needs no refrigeration. Shelf-stable protein for a pantry.", us: true },
   { id: "amz-b004m3baqe", asin: "B004M3BAQE", category: "tools", alsoIn: ["outdoor", "doomsday-prepper"], brand: "Fiskars", title: "Fiskars X27 Super Splitting Axe (36-inch)", blurb: "A long-handled splitting axe for firewood. A must if you heat with wood." },
   { id: "amz-b0001ix7ow", asin: "B0001IX7OW", category: "tools", alsoIn: ["outdoor", "doomsday-prepper"], brand: "Bahco", title: "Bahco Laplander Folding Saw", blurb: "A strong folding saw for firewood and clearing branches. Folds up for a pack." },
+  { id: "amz-b00d7h9lia", asin: "B00D7H9LIA", category: "outdoor", alsoIn: ["auto"], brand: "HotHands", title: "HotHands Hand Warmers Value Pack (10 Pairs)", blurb: "Air-activated packs that warm your hands for hours. Shake one open for the game, the driveway, or a cold car, and keep a few extras in every coat.", us: true },
 ];
 
 export function amazonPickToCatalogItem(p: AmazonPick): CatalogItem {

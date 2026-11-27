@@ -13,8 +13,11 @@ import {
   winterDealSections,
   winterDealSources,
   winterDealGaps,
+  winterAmazonDealIds,
   PRICE_CHECKED_LABEL,
 } from '../data/winter-deals';
+import SourceCard from '../components/SourceCard.astro';
+import { amazonCatalogItems } from '../data/amazon-picks';
 
 function hostOf(url: string): string {
   try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; }
@@ -41,6 +44,12 @@ const sections = winterDealSections.map((section) => ({
   ...section,
   picks: picks.filter((p) => p.deal.section === section.id),
 }));
+const amazonById = new Map(amazonCatalogItems().map((item) => [item.id, item]));
+const warmthItems = winterAmazonDealIds.map((id) => {
+  const item = amazonById.get(id);
+  if (!item) throw new Error(`Winter Amazon deal is missing catalog item: ${id}`);
+  return item;
+});
 
 const guides = (await getGuides()).filter((g) => g.data.season.includes('winter')).slice(0, 8);
 const url = new URL('/winter-deals/', Astro.site).href;
@@ -77,13 +86,13 @@ const schema = [
 ---
 <Base
   title="Winter prep picks this week | ReadyGearHub"
-  description="Lights, backup power, heated apparel, winter boots, and other winter-ready gear from partner programs we can actually earn on. Prices checked November 23–25, 2026. We don’t list heaters, blankets, or snow tools we can’t earn on."
+  description="Lights, backup power, heated apparel, winter boots, plus a space heater, hand warmers, a heated throw, and a snow brush from partner programs we can actually earn on. Prices checked November 23–25, 2026."
   schema={schema}
 >
   <PageHero
     title="Winter prep picks this week"
     eyebrow="Black Friday and Cyber Monday week"
-    lead="A short list of winter-ready gear from partner programs we already have, with prices checked on official stores. We left off this week’s best-selling heaters, blankets, hand warmers, and snow tools because we don’t have a way to earn on those brands yet."
+    lead="A short list of winter-ready gear from partner programs we already have, with prices checked on official stores. We also list a space heater, hand warmers, a heated throw, and a snow brush as specific product pages through Amazon Associates."
     photo="winter-storm-street"
     crumbs={[{ label: 'Winter prep picks' }]}
   >
@@ -94,22 +103,25 @@ const schema = [
     <Disclosure />
     <h2>What is selling this week, and what we can actually list</h2>
     <p>
-      On November 23, 2026, Amazon’s best-seller lists were led by portable space heaters (DREO, GiveBest, Amazon Basics, Lasko),
-      HotHands hand warmers, Bedsure heated throws, and an AstroAI snow brush. Retail Black Friday coverage also highlighted heated vests
-      from brands such as ORORO. We do not have brand programs for those makers, so we link only to the Amazon pages below. This site does not use Sovrn. We do now list TideWe heated jackets, vests, and insulated waders from TideWe’s official store, and Bogs winter boots from Bogs’ official store.
+      On November 23, 2026, category best-seller lists were led by portable space heaters (DREO, GiveBest, Lasko),
+      HotHands hand warmers, heated throws, and a 27-inch snow brush. We do not have brand programs for every name on those lists,
+      so we do not send you to a category page. Instead we list four specific product pages through Amazon Associates: a Lasko mini heater,
+      HotHands hand warmers, a Sunbeam heated throw, and an EcoNour snow brush. This site does not use Sovrn. We also list TideWe heated jackets, vests, and insulated waders from TideWe’s official store, and Bogs winter boots from Bogs’ official store.
     </p>
     <p>
       Our own ReadyGearHub analytics from November 18 through {PRICE_CHECKED_LABEL} show only seven clicks on product links,
-      each a single click, and none clustered on heaters, blankets, or snow tools. The list below is limited to winter-relevant items from
-      approved programs with working tracking links: Wuben, Anker SOLIX, BLUETTI, LiTime, iSpring, TideWe, and Bogs.
+      each a single click, and none clustered on heaters, blankets, or snow tools. The list below is winter-relevant gear from
+      approved programs with working tracking links: Wuben, Anker SOLIX, BLUETTI, LiTime, iSpring, TideWe, Bogs, and Amazon Associates.
     </p>
   </section>
 
   {sections.map((section, i) => (
     <section class:list={['wrap', 'section', i % 2 === 0 ? 'band-storm' : 'band-stone']} id={section.id}>
       <SectionHead kicker="Partner picks" title={section.title} intro={section.intro} />
-      <div class="grid">
-        {section.picks.map((p) => <WinterDealCard item={p.item} deal={p.deal} />)}
+      <div class={section.id === 'warmth' ? 'grid shop-grid source-grid' : 'grid'}>
+        {section.id === 'warmth'
+          ? warmthItems.map((item) => <SourceCard item={item} />)
+          : section.picks.map((p) => <WinterDealCard item={p.item} deal={p.deal} />)}
       </div>
     </section>
   ))}
