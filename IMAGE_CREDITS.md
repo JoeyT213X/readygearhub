@@ -401,6 +401,18 @@ Each `amz-<asin>-960.webp` is the product's own listing image for the Amazon pro
 
 Rebuilt 26 November 2026 as a 5-second muted loop from our own self-hosted, already-credited photos only: `hero-bunker-hatch`, `hero-overland-cruiser`, `hero-radios`, `hero-food-shelves`, `hero-utv-dunes`, `hero-overland-truck` (credits above). No power station, BLUETTI or EcoFlow product appears in the loop or the poster.
 
-## My Patriot Supply (name cards)
+## Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)
 
-Ready Alliance Group shared a Google Drive folder of pre-approved MPS creatives (folder `1CGU6svU41NK98-cmb7nT34u6BqvsF6sD`). From this environment the folder required a Google sign-in, so those banners were not downloaded. The three MPS cards (`my-patriot-supply`, `my-patriot-supply-emergency-food`, `my-patriot-supply-generators`) use the site’s clean name-card treatment instead of a generic pantry or generator photo. No hotlinking. Swap in official banners later when the folder can be downloaded and the files stored under `public/directory/photos/`.
+Official product photos could not be downloaded: the pre-approved Google Drive folder required a Google sign-in, and each brand site (mypatriotsupply.com, beprepared.com, campingsurvival.com, readyhour.com, alexapure.com, instafire.com) returned a Cloudflare challenge from this environment. The cards below use photorealistic concept images generated for ReadyGearHub on 27 November 2026 (America/Chicago). They show the kind of product or service on each card (food buckets and pantry kits, a solar generator, camping gear, a gravity water filter, a fire-starter pouch, a home electrical-panel protection device). They are not photographs of a specific official SKU, and they contain no logos or readable brand text. Self-hosted as `{id}-{480,960}.webp`. No hotlinking. Swap in official banners later when they can be downloaded.
+
+| File key | Card id | What the concept shows |
+| --- | --- | --- |
+| `my-patriot-supply` | `my-patriot-supply` | Emergency pantry: unlabeled food buckets, #10 cans and pouches on wooden shelves |
+| `my-patriot-supply-emergency-food` | `my-patriot-supply-emergency-food` | Stacked white emergency food buckets and meal pouches |
+| `my-patriot-supply-generators` | `my-patriot-supply-generators` | Portable power station and folding solar panel on a porch |
+| `beprepared` | `beprepared` | Food cans, a storage pail, water jugs and a first-aid pouch on a workbench |
+| `ready-hour` | `ready-hour` | #10 cans and two food-kit buckets on a kitchen island |
+| `camping-survival` | `camping-survival` | Backpack, lantern, cook pot, compass and cord on a forest picnic table |
+| `alexapure` | `alexapure` | Stainless two-chamber gravity water filter on a kitchen counter |
+| `instafire` | `instafire` | Plain fire-starter pouch beside a small campfire |
+| `grid-doctor-3300-emp` | `grid-doctor-3300-emp` | Home breaker panel with a compact protection module beside it |
