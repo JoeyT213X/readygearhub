@@ -766,7 +766,10 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
   object-position:center center;
   padding:0;
   background:transparent;
-  mix-blend-mode:normal;
+  /* White-background product photos blend into the tinted stage. This rule used to say normal and, being
+     more specific, beat the multiply rule in refresh.css, so white photos showed as hard white boxes and
+     white products (Nest Cam) looked blank. */
+  mix-blend-mode:multiply;
   position:relative;
   z-index:1;
 }
