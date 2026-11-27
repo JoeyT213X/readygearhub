@@ -400,3 +400,7 @@ Each `amz-<asin>-960.webp` is the product's own listing image for the Amazon pro
 ## Doomsday Prepper home window loop (public/videos/doomsday-extreme.*)
 
 Rebuilt 26 November 2026 as a 5-second muted loop from our own self-hosted, already-credited photos only: `hero-bunker-hatch`, `hero-overland-cruiser`, `hero-radios`, `hero-food-shelves`, `hero-utv-dunes`, `hero-overland-truck` (credits above). No power station, BLUETTI or EcoFlow product appears in the loop or the poster.
+
+## My Patriot Supply (name cards)
+
+Ready Alliance Group shared a Google Drive folder of pre-approved MPS creatives (folder `1CGU6svU41NK98-cmb7nT34u6BqvsF6sD`). From this environment the folder required a Google sign-in, so those banners were not downloaded. The three MPS cards (`my-patriot-supply`, `my-patriot-supply-emergency-food`, `my-patriot-supply-generators`) use the site’s clean name-card treatment instead of a generic pantry or generator photo. No hotlinking. Swap in official banners later when the folder can be downloaded and the files stored under `public/directory/photos/`.

@@ -1579,6 +1579,21 @@ export const highTicketItems: HighTicketItem[] = [
   },
 ];
 
+// My Patriot Supply generators collection (Ready Alliance / Everflow). Food cards live in doomsday-prepper.ts.
+highTicketItems.push({
+  id: 'my-patriot-supply-generators',
+  title: 'My Patriot Supply generators collection',
+  blurb: 'Portable and home standby generators sold by this Idaho emergency-supply company. Compare fuel type, starting watts and run time on the official collection page. Fuel-burning generators need outdoor use, ventilation per the manual and a CO alarm.',
+  sourceName: 'My Patriot Supply (Idaho)',
+  category: 'power',
+  groups: ['power-tech'],
+  affiliateUrl: null,
+  fallbackUrl: 'https://mypatriotsupply.com/',
+  offerLabel: 'Generators',
+  cta: 'See details',
+  us: true,
+});
+
 // Drones & Robotics lineups (RobotShop, Robots International, Autel Robotics, HOVERAir). Pending programs, plain links.
 highTicketItems.push(...roboticsDronesItems);
 

@@ -70,7 +70,7 @@ export function amazonSearchUrl(query: string): string {
 
 export type Network =
   | 'CJ' | 'Impact' | 'Awin' | 'Partnerize' | 'FlexOffers' | 'Refersion' | 'GoAffPro'
-  | 'AvantLink' | 'ShareASale' | 'Rakuten' | 'Amazon' | 'Direct' | 'TBD';
+  | 'AvantLink' | 'ShareASale' | 'Rakuten' | 'Amazon' | 'Everflow' | 'Direct' | 'TBD';
 
 export type Program = {
   id: string;
@@ -214,6 +214,16 @@ export const programs: Program[] = [
     note: 'Parked Nov 21, 2026: Impact marketplace application for account 8245345 was declined. Brand apply is not available until a later reapply (plan: 4–8 weeks, with more traffic). Do not open a second Impact account. Official links stay plain.',
   },
   { id: 'mountain-house', name: 'Mountain House', network: 'FlexOffers', status: 'none', kind: 'product', items: ['mountain-house-classic-bucket', 'mountain-house-beef-stew-pouch', 'mountain-house-breakfast-skillet-pouch', 'mountain-house-macaroni-cheese-2-pack'], note: 'FlexOffers account 1572451 was declined. Do not re-apply there. Keep official links until a retailer catch-all (Amazon/Walmart/Sportsman\'s Guide) is live.' },
+  { id: 'my-patriot-supply', name: 'My Patriot Supply', network: 'Everflow', status: 'approved', kind: 'product',
+    officialUrl: 'https://mypatriotsupply.com/',
+    items: ['my-patriot-supply', 'my-patriot-supply-emergency-food', 'my-patriot-supply-generators'],
+    link: 'https://www.rzmaf8trk.com/36R3J12/2CTPL/',
+    itemLinks: {
+      'my-patriot-supply': 'https://www.rzmaf8trk.com/36R3J12/2CTPL/',
+      'my-patriot-supply-emergency-food': 'https://www.rzmaf8trk.com/36R3J12/2CTPL/?uid=22',
+      'my-patriot-supply-generators': 'https://www.rzmaf8trk.com/36R3J12/2CTPL/?uid=23',
+    },
+    note: 'Ready Alliance Group / Everflow, affiliate ID 1361. Approved Nov 27, 2026 (OMEGA UCO SOLUTIONS, LLC). Three official tracking links: main store, Emergency Food Collection (uid=22), Generators Collection (uid=23). Paid-search terms are not yet confirmed, so ppcAllowed is omitted and the default applies (cards stay visible in paid-search sessions until terms say otherwise). Commission rate is not documented in our program notes; do not invent a payout percent.' },
   { id: 'grayl', name: 'GRAYL', network: 'AvantLink', status: 'none', kind: 'product', items: ['grayl-geopress-24oz', 'grayl-ultrapress-16-9oz'],
     note: 'AvantLink application 1685501 was declined Nov 20, 2026. Parked; reapply later. Do not use AvantLink as a path today. Official links stay plain.',
   },

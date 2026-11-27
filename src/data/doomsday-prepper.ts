@@ -78,8 +78,10 @@ export const doomsdayNewItems: DoomsdayNew[] = [
     blurb: 'Texas maker of CBRN respirators, filters and protective gear for civil defense, industry and civilians. Learn fit-testing and filter shelf life from the maker before relying on one. ' }),
 
   // ---- Long-Term Food ----
-  mk({ id: 'my-patriot-supply', section: 'food', us: true, title: 'My Patriot Supply', sourceName: 'My Patriot Supply (Idaho)', fallbackUrl: 'https://mypatriotsupply.com/', image: '/images/photos/hero-food-shelves-960.webp', imageKind: 'photo', offerLabel: 'Food storage', cta: 'See food kits',
-    blurb: 'Idaho seller of long-term food kits, seeds and emergency supplies. Compare servings, calories and shelf life on the official page. ' }),
+  mk({ id: 'my-patriot-supply', section: 'food', us: true, title: 'My Patriot Supply', sourceName: 'My Patriot Supply (Idaho)', fallbackUrl: 'https://mypatriotsupply.com/', offerLabel: 'Food and supplies', cta: 'Visit site',
+    blurb: 'Idaho company with long-term food kits, seeds and emergency supplies. Check the official page for what’s in each kit and how long it keeps.' }),
+  mk({ id: 'my-patriot-supply-emergency-food', section: 'food', alsoIn: ['food'], us: true, title: 'My Patriot Supply emergency food collection', sourceName: 'My Patriot Supply (Idaho)', fallbackUrl: 'https://mypatriotsupply.com/', offerLabel: 'Emergency food', cta: 'Check listing',
+    blurb: 'A collection of freeze-dried and shelf-stable meals from this Idaho company, from short kits to longer household supplies. See what’s in each kit, serving sizes and storage life on their page.' }),
   mk({ id: 'harvest-right', section: 'food', us: true, title: 'Harvest Right home freeze dryers', sourceName: 'Harvest Right (Utah)', fallbackUrl: 'https://harvestright.com/', image: '/images/photos/hero-pantry-cans-960.webp', imageKind: 'photo', offerLabel: 'Freeze dryers', cta: 'See freeze dryers',
     blurb: 'Home freeze dryers for putting up your own long-term food. Check the power, space and vacuum-pump needs on the official page. ' }),
 

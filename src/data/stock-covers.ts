@@ -197,7 +197,7 @@ const TYPE: Record<string, RegExp> = {
 };
 
 /** Listings we deliberately leave as text cards: no honest generic photo exists. */
-const LEAVE_TEXT = /byrna|sabre|boston dynamics|unitree|ghost robotics|pepper spray|launcher|cleanwaste|luggable loo|toilet/i;
+const LEAVE_TEXT = /byrna|sabre|boston dynamics|unitree|ghost robotics|pepper spray|launcher|cleanwaste|luggable loo|toilet|my patriot supply|my-patriot-supply/i;
 
 type Cardish = {
   id: string; title: string; sourceName?: string; category?: string;
