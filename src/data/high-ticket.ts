@@ -1583,7 +1583,7 @@ export const highTicketItems: HighTicketItem[] = [
 highTicketItems.push({
   id: 'my-patriot-supply-generators',
   title: 'My Patriot Supply generators collection',
-  blurb: 'Portable and home standby generators sold by this Idaho emergency-supply company. Compare fuel type, starting watts and run time on the official collection page. Fuel-burning generators need outdoor use, ventilation per the manual and a CO alarm.',
+  blurb: 'A collection of solar generators and backup power sold by this Idaho emergency-supply company. Compare capacity and what’s included on the official collection page.',
   sourceName: 'My Patriot Supply (Idaho)',
   category: 'power',
   groups: ['power-tech'],
