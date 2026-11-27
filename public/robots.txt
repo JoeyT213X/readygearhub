@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
 Disallow: /thanks/
+Disallow: /thank-you/
+Disallow: /widgets/embed/
+Disallow: /widgets/alert/
+Disallow: /card-styles-preview/
+Disallow: /shorts-preview/
+Disallow: /image-credits/
 
 Sitemap: https://readygearhub.com/sitemap-index.xml
