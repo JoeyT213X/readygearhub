@@ -847,7 +847,7 @@
         },
         {
           "name": "Coast Electric Power Association",
-          "outageMapUrl": "https://outages.coastelectric.coop/",
+          "outageMapUrl": "https://coastelectric.coop/outages/",
           "territorySource": {
             "name": "Coast Electric \u2014 2024 Annual Report (PDF)",
             "url": "https://coastelectric.coop/wp-content/uploads/2025/09/2024-COAST-ELECTRIC-ANNUAL-REPORT.pdf",
@@ -920,7 +920,7 @@
         },
         {
           "name": "Coast Electric Power Association",
-          "outageMapUrl": "https://outages.coastelectric.coop/",
+          "outageMapUrl": "https://coastelectric.coop/outages/",
           "territorySource": {
             "name": "Coast Electric \u2014 2024 Annual Report (PDF)",
             "url": "https://coastelectric.coop/wp-content/uploads/2025/09/2024-COAST-ELECTRIC-ANNUAL-REPORT.pdf",

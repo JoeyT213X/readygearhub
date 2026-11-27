@@ -209,3 +209,34 @@
   to = "/guides/winter-car-emergency-kit/?utm_source=youtube&utm_medium=shorts&utm_campaign=winter-car-emergency-kit"
   status = 302
   force = true
+
+# Nov 27, 2026: Anker SOLIX removed these products from its US store (official pages return 404),
+# so their ReadyGearHub cards were retired. Send old gear pages to the Anker SOLIX brand page.
+[[redirects]]
+  from = "/gear/anker-solix-ps100/"
+  to = "/brands/anker-solix/"
+  status = 301
+[[redirects]]
+  from = "/gear/anker-solix-ps200/"
+  to = "/brands/anker-solix/"
+  status = 301
+[[redirects]]
+  from = "/gear/anker-solix-ps400/"
+  to = "/brands/anker-solix/"
+  status = 301
+[[redirects]]
+  from = "/gear/anker-solix-bp3800/"
+  to = "/brands/anker-solix/"
+  status = 301
+[[redirects]]
+  from = "/gear/anker-solix-c2000-gen2-400w-kit/"
+  to = "/brands/anker-solix/"
+  status = 301
+[[redirects]]
+  from = "/gear/anker-solix-c800x-100w-kit/"
+  to = "/brands/anker-solix/"
+  status = 301
+[[redirects]]
+  from = "/gear/anker-solix-c300x/"
+  to = "/brands/anker-solix/"
+  status = 301

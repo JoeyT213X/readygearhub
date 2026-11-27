@@ -14,6 +14,9 @@ import { doomsdayCrossList, doomsdayUsCrossIds } from './doomsday-prepper';
 import { highTicketCatalogItems } from './high-ticket';
 import { amazonCatalogItems } from './amazon-picks';
 import { stockCoverFor } from './stock-covers';
+import { sourceCategories } from './source-directory';
+
+const DIRECTORY_PAGE_SLUGS = new Set(sourceCategories.map((c) => c.slug));
 import { isStoreFront } from './listing-actions';
 import { productPhotoFor } from './product-photos';
 import {
@@ -448,9 +451,6 @@ export function isPortablePowerStation(item: { id?: string; title?: string; imag
 /** Keep these off the home shop grid so new partner products do not reshuffle the 16-card layout. They stay in the directory and on gear pages. */
 const HOME_SHOP_EXCLUDED_IDS = new Set([
   'anker-solix',
-  'anker-solix-ps400',
-  'anker-solix-ps100',
-  'anker-solix-c2000-gen2-400w-kit',
   'anker-solix-f3800-plus',
   'litime',
   'litime-12v-100ah-group24',
@@ -467,11 +467,7 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
   'wuben-c2',
   'anker-solix-c1000x-gen2',
   'anker-solix-c2000-gen2',
-  'anker-solix-ps200',
-  'anker-solix-bp3800',
   'anker-solix-bp2000-gen2',
-  'anker-solix-c300x',
-  'anker-solix-c800x-100w-kit',
   'anker-solix-c300-dc-60w-kit',
   'litime-12v-50ah',
   'litime-12v-200ah-bluetooth',
@@ -652,6 +648,8 @@ const HEADING_MAX_PER_CATEGORY = 3;
 /** On-site product card or gear page, never a raw seller URL. */
 export function headingProductHref(item: CatalogItem): string {
   if (item.detailHref && item.detailHref.startsWith('/')) return item.detailHref;
+  // Some legacy categories (insurance, digital-safety, more, ...) have no page of their own; the full directory lists every card.
+  if (!DIRECTORY_PAGE_SLUGS.has(String(item.category))) return `/directory/#${item.id}`;
   return `/directory/${item.category}/#${item.id}`;
 }
 

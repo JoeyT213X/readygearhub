@@ -36,8 +36,7 @@ const mk = (o: Omit<DoomsdayNew, 'category' | 'groups' | 'affiliateUrl' | 'ctaKi
 
 export const doomsdayNewItems: DoomsdayNew[] = [
   // ---- Shelters & Bunkers ----
-  mk({ id: 'rising-s-bunkers', section: 'shelters', us: true, title: 'Rising S Bunkers', sourceName: 'Rising S Company (Texas)', fallbackUrl: 'https://risingsbunkers.com/', image: '/images/photos/hero-bunker-hatch-960.webp', imageKind: 'photo', offerLabel: 'Underground shelters', cta: 'Request details', ctaKind: 'inquire',
-    blurb: 'Texas maker of all-steel underground bunkers, storm shelters, safe rooms and blast doors; NBC air filtration is part of its standard systems. Sizes, pricing and lead times come from the maker. ' }),
+  // Rising S Bunkers (risingsbunkers.com) removed Nov 27, 2026: the official site keeps returning HTTP 502. Re-add when it loads again.
   mk({ id: 'american-safe-room', section: 'shelters', us: true, title: 'American Safe Room', sourceName: 'American Safe Room (Oregon)', fallbackUrl: 'https://americansaferoom.com/', image: '/images/photos/stock-vault-doors-960.webp', imageKind: 'photo', offerLabel: 'Shelter kits and blast doors', cta: 'Request details', ctaKind: 'inquire',
     blurb: 'Oregon maker of underground shelter kits, blast-resistant doors and hatches, and the ASR Safe Cell NBC air-filtration system. Technical manuals are public on its site; quotes by request. ' }),
   mk({ id: 'survive-a-storm', section: 'shelters', us: true, title: 'Survive-A-Storm Shelters', sourceName: 'Survive-A-Storm (Oklahoma)', fallbackUrl: 'https://survive-a-storm.com/', image: '/images/photos/hero-bunker-hatch-960.webp', imageKind: 'photo', offerLabel: 'Storm shelters', cta: 'See shelters',
@@ -150,8 +149,8 @@ export const doomsdayCrossList: Record<DoomsdaySectionId, string[]> = {
     'goal-zero-yeti-1500', 'goal-zero-yeti-500', 'goal-zero-yeti-700', 'goal-zero-nomad-100-plus', 'goal-zero-nomad-50',
     'generac-iq3500', 'generac', 'honda-eu3200i', 'honda-eu2200i', 'honda-power', 'renogy-100w-12v-solar-kit',
     'ecoflow-delta-pro-ultra', 'ecoflow-delta-3-plus', 'ecoflow-river-3-plus', 'ecoflow-400w-portable-solar-panel', 'ecoflow-glacier-classic',
-    'anker-solix-f3800-plus', 'anker-solix-f3800', 'anker-solix-c2000-gen2', 'anker-solix-c2000-gen2-400w-kit', 'anker-solix-bp3800', 'anker-solix-bp2000-gen2',
-    'anker-solix-f2000', 'anker-solix-c1000x-gen2', 'anker-solix-ps400', 'anker-solix-ps200',
+    'anker-solix-f3800-plus', 'anker-solix-f3800', 'anker-solix-c2000-gen2', 'anker-solix-bp2000-gen2',
+    'anker-solix-f2000', 'anker-solix-c1000x-gen2', 
     'bluetti-apex-300', 'bluetti-apex-200', 'bluetti-ac200l', 'bluetti-ac180', 'bluetti-elite-400', 'bluetti-b300k', 'bluetti-350w-solar',
     'jackery-explorer-1000-plus', 'jackery-explorer-2000-v2', 'jackery-solarsaga-200', 'allpowers-s2000-pro', 'allpowers-r2500-v2',
     'litime-diy-solar-generator-kit', 'litime-12v-200ah-bluetooth', 'litime-2000w-12v-inverter-ats', 'litime-30a-mppt',

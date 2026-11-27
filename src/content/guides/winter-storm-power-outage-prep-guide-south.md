@@ -5,7 +5,7 @@ lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-19
 updated: 2026-11-23
-relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "anker-solix-ps100", "anker-solix-ps400", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40", "mountain-house-classic-bucket", "readywise-4-week-food-supply", "midland-wr400", "kidde-pro-210", "wuben-h1", "wuben-c2"]
+relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40", "mountain-house-classic-bucket", "readywise-4-week-food-supply", "midland-wr400", "kidde-pro-210", "wuben-h1", "wuben-c2"]
 draft: false
 ---
 
@@ -367,7 +367,7 @@ If you have an energy reserve or a generator running safely outdoors, prioritize
 4. The refrigerator, in short stretches, if your setup can handle it
 5. Internet router, so you can get updates
 
-The [Runtime Reserve](/apps/runtime-reserve/) app logs generator fuel and runtime and estimates how many hours you have left, offline. The [Solar & Energy Reserve Sizer](/tools/solar-sizer/) helps if you're planning to recharge with solar panels after the storm. Portable panels such as the [Anker SOLIX PS100](/gear/anker-solix-ps100/) or [PS400](/gear/anker-solix-ps400/) are one option; confirm connector and input compatibility with your energy reserve, and remember that solar only helps when there is usable sun.
+The [Runtime Reserve](/apps/runtime-reserve/) app logs generator fuel and runtime and estimates how many hours you have left, offline. The [Solar & Energy Reserve Sizer](/tools/solar-sizer/) helps if you're planning to recharge with solar panels after the storm. Portable panels such as the [Jackery SolarSaga 200W](/gear/jackery-solarsaga-200/) are one option; confirm connector and input compatibility with your energy reserve, and remember that solar only helps when there is usable sun.
 
 ### Watch for cold-related illness
 
