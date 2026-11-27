@@ -617,6 +617,15 @@ Root cause of the blank-looking Ring and Nest covers: in `global.css` the direct
 | `yolink-water-leak-sensor-5` | YoLink Water Leak Sensor 5 | https://shop.yosmart.com/products/ys7986 | https://shop.yosmart.com/cdn/shop/files/yl-pair-9430259335419-15d76606e9d44731b4784851de4f0c099727eaf6f8e7c702dc00b4c69dd0c41a.webp |
 | `zippo-heatbank-9s` | Zippo HeatBank 9s Rechargeable Hand Warmer | https://zippo.com/products/heatbank-9s-rechargeable-hand-warmer-box | https://zippo.com/cdn/shop/files/40512_Z-SP-Out_HeatBank9s_Black_PT01_1.jpg |
 | `zoleo-satellite-communicator` | ZOLEO Satellite Communicator | https://www.zoleo.com/en-us/product/zoleo-global-satellite-communicator | https://cdn11.bigcommerce.com/s-zirnuihc1s/images/stencil/160w/products/139/418/zoleo-product-2__00361.1794840714.jpg |
+| `dewalt-official` | DEWALT 20V MAX cordless drill | https://www.dewalt.com/en-us/products/power-tools/drills | https://assets.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/WHITEBG/DCD801QQ2_K1_1280.webp |
+| `boston-dynamics-official` | Boston Dynamics Spot robot climbing stairs | https://bostondynamics.com/products/spot/ | https://bostondynamics.com/wp-content/uploads/2024/02/spot-stairs-safety-lights.jpg |
+| `magid` | Magid work gloves | https://www.magidglove.com/ | https://www.magidglove.com/media/catalog/product/g/p/gpd682_1200x900_hero.png |
+| `pick-sentrysafe-fireproof` | SentrySafe SF123ES fireproof safe | https://www.sentrysafe.com/fireproof-safes | https://cdn.masterlock.com/product/sentrysafe/SF123ES_angled.png |
+| `jackery-explorer-300-v2` | Jackery Explorer 300 V2 | https://www.jackery.com/products/jackery-explorer-300-v2-portable-power-station | https://www.jackery.com/cdn/shop/files/jackery-portable-power-station-explorer-300-v2-8502568.webp?v=1787333288\u0026width=1600 |
+| `pick-luggable-loo` | Reliance Luggable Loo portable toilet | https://relianceoutdoors.com/products/luggable-loo-portable-toilet | https://relianceoutdoors.com/cdn/shop/products/LL9853-23LIDUP_1500x.png?v=1681156836 |
+| `allpowers-volix-p300` | ALLPOWERS VOLIX P300 | https://iallpowers.com/products/allpowers-volix-p300-portable-power-station | https://iallpowers.com/cdn/shop/files/P300-US-05.jpg?crop=center&height=1200&v=1772000498&width=1200 |
+| `hunter-boots` | Hunter rain boots | https://hunterboots.com/ | https://hunterboots.com/cdn/shop/files/HU_1126_MEGA_MENU_HOLIDAY_GIFT_GUIDE_DT.png?v=1793260854&width=640 |
+| `pecron` | Pecron portable power station | https://mightygenerators.com/ | https://cdn.shopify.com/s/files/1/0751/3885/9282/files/PecronE1500LFPFrontLeft.jpg?v=1741181844&auto=compress |
 
 ### Brand cards that reuse the same brand's own product photo
 
@@ -652,6 +661,9 @@ Root cause of the blank-looking Ring and Nest covers: in `global.css` the direct
 | `sawyer` | `sawyer-squeeze-water-filter` |
 | `survival-frog` | `survival-frog-beef-canned-meat` |
 | `wuben-official` | `wuben-a1` |
+| `allpowers-best-sellers` | `allpowers-r2500-v2` |
+| `olight` | `olight-official` |
+| `mighty-generators` | `pecron` (a Pecron unit shown on the Mighty Generators page) |
 
 ### Concept images (illustration of product type)
 
@@ -682,5 +694,67 @@ Where no usable official photo existed (logo-only pages, banners with sale text,
 | `survive-a-storm` | an above-ground steel storm shelter in a home garage |
 | `terra-vivos-official` | earth-covered bunker entrances on open prairie |
 | `tesla-powerwall` | a wall-mounted home battery in a garage |
+| `klein-tools-official` | insulated pliers, screwdrivers and a multimeter on a workbench |
+| `stanley-tools-official` | a tape measure, hammer, utility knife and level on a workbench |
+| `elephant-robotics-official-shop` | a small desktop robot arm beside a laptop |
+| `rs-deep-robotics-lite3-basic-quadruped-robot` | a compact four-legged robot standing on pavement |
+| `rs-deep-robotics-lite3-lidar-quadruped-robot` | a four-legged robot with a lidar sensor on its back |
+| `rs-deep-robotics-lite3-pro-quadruped-robot` | a four-legged robot walking outdoors |
+| `rs-deep-robotics-lite3-venture-quadruped-robot` | a four-legged robot on rough trail terrain |
+| `vevor-electric-winches` | an electric winch mounted on a truck bumper |
+| `vevor-rooftop-tents` | a rooftop tent opened on top of an SUV |
+| `3m-indoor-window-insulator-kit` | clear insulating film fitted over a window |
+| `carhartt` | a canvas work jacket and work gear |
+| `allpowers-r600` | a compact portable power station |
+| `aquasana-home` | an under-sink water filter system |
+| `choice-home-warranty` | a technician repairing a dishwasher |
+| `american-home-shield` | an outdoor AC unit being serviced |
+| `angi` | a backyard deck build with tools |
+| `hiscox` | a small workshop office desk |
+| `axa-travel` | a packed suitcase and passport by an airport window |
+| `leaffilter` | a mesh gutter guard installed on a roof gutter |
+| `liberty-mutual` | a house with a car in the driveway |
+| `modernize` | new window and siding installation |
+| `networx` | kitchen cabinet installation in progress |
+| `home-depot` | warehouse aisles of building supplies |
+| `ace-hardware` | a hardware store aisle with bins of fasteners |
+| `academy` | tents, sleeping bags and coolers in a sporting goods store |
+| `amazon` | delivery boxes on a porch with a headlamp and work gloves |
+| `bass-pro` | fishing rods, tackle box and net on a lake dock |
+| `cabelas` | blaze orange vest, camo pack, thermos and boots on a cabin porch |
+| `dicks` | running shoes, basketball, bottle and resistance bands on a gym bench |
+| `sportsmans` | camp stove, duffel, lantern and trekking poles on a truck tailgate |
+| `sportsmans-guide` | surplus-style wool blanket, canteen, shovel and rucksack |
+| `walmart` | a shopping cart of water, batteries, canned food and a flashlight |
+| `mro-supreme` | bearings, safety glasses, tape, hose clamps and a gauge on a shelf |
+| `batteries-plus-official` | assorted AA, AAA, 9-volt and coin cell batteries |
+| `amazon-comics` | a stack of graphic novels by a reading lamp |
+| `dc-shop-books` | comic collections and bagged comics on a shelf |
+| `ebay-collectible-card-games` | trading cards in clear graded cases on a felt mat |
+| `ebay-non-sport-trading-cards` | vintage non-sport trading cards in a binder page |
+| `hasbro-pulse-official` | posable collectible figures in display cases |
+| `magic-the-gathering` | a fantasy card game laid out on a playmat with dice |
+| `pokemon-tcg` | sealed booster packs, a booster box and a binder of holo cards |
+| `tcgplayer` | sorted trading cards, top loaders and a mailer at a packing station |
+| `theory11-official` | a luxury navy and gold deck of playing cards on velvet |
+| `us-playing-card-official` | red and blue playing card decks with poker chips |
+| `target-board-games` | a family board game set up on a coffee table |
+| `walmart-board-games` | board game boxes, a travel chess set and dice on a shelf |
+| `1password` | a laptop and phone showing a password lock, with a security key |
+| `cyberghost` | a phone with a VPN connect button in an airport lounge |
+| `deleteme` | a paper shredder next to a laptop and phone |
+| `expressvpn` | a laptop showing a secure connection across a world map |
+| `incogni` | a pile of junk mail beside a laptop checklist |
+| `monarch` | a tablet showing budget charts with a calculator and receipts |
+| `pia` | a home router beside a laptop showing an encrypted tunnel |
+| `proton` | a padlocked envelope next to a laptop inbox |
+| `roboform` | a monitor showing an auto-filled login form |
+| `nordvpn` | a TV, laptop and phone protected on a home network |
+| `surfshark` | a phone and tablet with a VPN toggle switched on |
+| `nordpass` | a phone showing a fingerprint vault unlock |
+| `amazon-music` | a smart speaker and a phone playing music |
+| `apple-music` | wireless earbuds, headphones and a phone playing music |
+| `audible` | headphones on a book beside a phone playing an audiobook |
+| `bluecosmo` | a satellite phone and terminal at a remote mountain camp |
 
 The nine Ready Alliance / My Patriot Supply concept images listed in the section above now carry the same "Concept image" tag on their cards.

@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-27T19:39:18.189Z",
+  "generated": "2026-11-27T19:52:39.727Z",
   "note": "Self-hosted images only; nothing is hotlinked. Representative stock photos are labeled \"Representative photo\" on cards. Human-readable credits: IMAGE_CREDITS.md.",
   "counts": {
-    "keys": 688,
-    "officialProductOrBrand": 614,
+    "keys": 758,
+    "officialProductOrBrand": 684,
     "representativeStock": 31,
     "editorialStock": 43,
     "missingCredit": 189
@@ -1125,6 +1125,17 @@
       "creditSection": "Image credits"
     },
     {
+      "key": "1password",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/1password-480.webp",
+        "/directory/photos/1password-960.webp"
+      ],
+      "source": "a laptop and phone showing a password lock, with a security key",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "1password-password-manager",
       "kind": "official-product-or-brand",
       "files": [
@@ -1135,6 +1146,39 @@
       "source": "1Password password manager | 1Password | Official marketing image from 1password.com (Contentful CDN open-graph-1password-business.jpg), Open Graph image on the 1Password homepage, downloaded November 23, 2026. Image provided by 1Password. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by 1Password.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "3m-indoor-window-insulator-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/3m-indoor-window-insulator-kit-480.webp",
+        "/directory/photos/3m-indoor-window-insulator-kit-960.webp"
+      ],
+      "source": "clear insulating film fitted over a window",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "academy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/academy-480.webp",
+        "/directory/photos/academy-960.webp"
+      ],
+      "source": "tents, sleeping bags and coolers in a sporting goods store",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "ace-hardware",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ace-hardware-480.webp",
+        "/directory/photos/ace-hardware-960.webp"
+      ],
+      "source": "a hardware store aisle with bins of fasteners",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "acurite",
@@ -1170,6 +1214,17 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "allpowers-r600",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/allpowers-r600-480.webp",
+        "/directory/photos/allpowers-r600-960.webp"
+      ],
+      "source": "a compact portable power station",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "allpowers-s2000-pro",
       "kind": "official-product-or-brand",
       "files": [
@@ -1177,6 +1232,17 @@
         "/directory/photos/allpowers-s2000-pro-960.webp"
       ],
       "source": "ALLPOWERS S2000 Pro | https://iallpowers.com/products/allpowers-2400w-portable-power-station | https://iallpowers.com/cdn/shop/files/S2000PRO-US-03.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "allpowers-volix-p300",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/allpowers-volix-p300-480.webp",
+        "/directory/photos/allpowers-volix-p300-960.webp"
+      ],
+      "source": "ALLPOWERS VOLIX P300 | https://iallpowers.com/products/allpowers-volix-p300-portable-power-station | https://iallpowers.com/cdn/shop/files/P300-US-05.jpg?crop=center&height=1200&v=1772000498&width=1200",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
     },
@@ -1190,6 +1256,50 @@
       "source": "Alpine Armoring Pit-Bull VX | Dyerko1 | CC BY-SA 4.0 | [File:Alpine Armoring Pit-Bull VX.jpg](https://commons.wikimedia.org/wiki/File:Alpine_Armoring_Pit-Bull_VX.jpg)",
       "license": "Wikimedia Commons (see credit row for the exact license)",
       "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "amazon",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amazon-480.webp",
+        "/directory/photos/amazon-960.webp"
+      ],
+      "source": "delivery boxes on a porch with a headlamp and work gloves",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "amazon-comics",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amazon-comics-480.webp",
+        "/directory/photos/amazon-comics-960.webp"
+      ],
+      "source": "a stack of graphic novels by a reading lamp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "amazon-music",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amazon-music-480.webp",
+        "/directory/photos/amazon-music-960.webp"
+      ],
+      "source": "a smart speaker and a phone playing music",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "american-home-shield",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/american-home-shield-480.webp",
+        "/directory/photos/american-home-shield-960.webp"
+      ],
+      "source": "an outdoor AC unit being serviced",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "american-safe-room",
@@ -3210,6 +3320,17 @@
       "creditSection": null
     },
     {
+      "key": "angi",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/angi-480.webp",
+        "/directory/photos/angi-960.webp"
+      ],
+      "source": "a backyard deck build with tools",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "anker-prime-power-bank-20k-220w",
       "kind": "official-product-or-brand",
       "files": [
@@ -3452,6 +3573,17 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "apple-music",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/apple-music-480.webp",
+        "/directory/photos/apple-music-960.webp"
+      ],
+      "source": "wireless earbuds, headphones and a phone playing music",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "aquasana-brand-300x250",
       "kind": "official-product-or-brand",
       "files": [
@@ -3530,6 +3662,17 @@
       "source": "Aquasana HealthShield whole-house water filter product card | Aquasana | Rakuten Advertising product catalog (MID 36667) | Official catalog photo from products.csv, Nov 21, 2026 (America/Chicago). Image provided by Aquasana via Rakuten Advertising. The card uses the existing official-shop tracking link, not a product-level deep link.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "aquasana-home",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/aquasana-home-480.webp",
+        "/directory/photos/aquasana-home-960.webp"
+      ],
+      "source": "an under-sink water filter system",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "aquasana-rhino-whole-house",
@@ -3628,6 +3771,17 @@
       "creditSection": "Concept images (illustration of product type)"
     },
     {
+      "key": "audible",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/audible-480.webp",
+        "/directory/photos/audible-960.webp"
+      ],
+      "source": "headphones on a book beside a phone playing an audiobook",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "augason-farms-3-month-emergency-food",
       "kind": "official-product-or-brand",
       "files": [
@@ -3672,6 +3826,17 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "axa-travel",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/axa-travel-480.webp",
+        "/directory/photos/axa-travel-960.webp"
+      ],
+      "source": "a packed suitcase and passport by an airport window",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "backpackers-pantry-14-day-emergency-kit-meat",
       "kind": "official-product-or-brand",
       "files": [
@@ -3702,6 +3867,28 @@
       ],
       "source": "off-road LED pod lights and a light bar on a truck at dusk",
       "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "bass-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bass-pro-480.webp",
+        "/directory/photos/bass-pro-960.webp"
+      ],
+      "source": "fishing rods, tackle box and net on a lake dock",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "batteries-plus-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/batteries-plus-official-480.webp",
+        "/directory/photos/batteries-plus-official-960.webp"
+      ],
+      "source": "assorted AA, AAA, 9-volt and coin cell batteries",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Concept images (illustration of product type)"
     },
     {
@@ -3766,6 +3953,17 @@
       "source": "Black Diamond Spot 400 Headlamp | https://blackdiamondequipment.com/products/spot-400-headlamp | https://blackdiamondequipment.com/cdn/shop/files/620672_8001_Spot_400_Headlamp_Octane_01.jpg",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "bluecosmo",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bluecosmo-480.webp",
+        "/directory/photos/bluecosmo-960.webp"
+      ],
+      "source": "a satellite phone and terminal at a remote mountain camp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "bluetti-350w-solar",
@@ -4144,6 +4342,17 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "boston-dynamics-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/boston-dynamics-official-480.webp",
+        "/directory/photos/boston-dynamics-official-960.webp"
+      ],
+      "source": "Boston Dynamics Spot robot climbing stairs | https://bostondynamics.com/products/spot/ | https://bostondynamics.com/wp-content/uploads/2024/02/spot-stairs-safety-lights.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "btech-uv-5x3",
       "kind": "official-product-or-brand",
       "files": [
@@ -4235,6 +4444,17 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "cabelas",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/cabelas-480.webp",
+        "/directory/photos/cabelas-960.webp"
+      ],
+      "source": "blaze orange vest, camo pack, thermos and boots on a cabin porch",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "camping-survival",
       "kind": "official-product-or-brand",
       "files": [
@@ -4268,6 +4488,17 @@
       "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
     },
     {
+      "key": "carhartt",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/carhartt-480.webp",
+        "/directory/photos/carhartt-960.webp"
+      ],
+      "source": "a canvas work jacket and work gear",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "catan-base-game",
       "kind": "official-product-or-brand",
       "files": [
@@ -4282,7 +4513,9 @@
       "key": "choice-home-warranty",
       "kind": "official-product-or-brand",
       "files": [
-        "/directory/photos/choice-home-warranty-250.webp"
+        "/directory/photos/choice-home-warranty-250.webp",
+        "/directory/photos/choice-home-warranty-480.webp",
+        "/directory/photos/choice-home-warranty-960.webp"
       ],
       "source": "Choice Home Warranty merchant card | Choice Home Warranty | CJ Affiliate (link 12469543, 250×250 logo) | Image provided by Choice Home Warranty via CJ Affiliate.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
@@ -4365,6 +4598,17 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "cyberghost",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/cyberghost-480.webp",
+        "/directory/photos/cyberghost-960.webp"
+      ],
+      "source": "a phone with a VPN connect button in an airport lounge",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "darn-tough-hiker-boot-full-cushion",
       "kind": "official-product-or-brand",
       "files": [
@@ -4383,6 +4627,50 @@
         "/directory/photos/datrex-emergency-water-dx1000w-960.webp"
       ],
       "source": "a case of foil emergency drinking-water pouches",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "dc-shop-books",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/dc-shop-books-480.webp",
+        "/directory/photos/dc-shop-books-960.webp"
+      ],
+      "source": "comic collections and bagged comics on a shelf",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "deleteme",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/deleteme-480.webp",
+        "/directory/photos/deleteme-960.webp"
+      ],
+      "source": "a paper shredder next to a laptop and phone",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "dewalt-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/dewalt-official-480.webp",
+        "/directory/photos/dewalt-official-960.webp"
+      ],
+      "source": "DEWALT 20V MAX cordless drill | https://www.dewalt.com/en-us/products/power-tools/drills | https://assets.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/WHITEBG/DCD801QQ2_K1_1280.webp",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "dicks",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/dicks-480.webp",
+        "/directory/photos/dicks-960.webp"
+      ],
+      "source": "running shoes, basketball, bottle and resistance bands on a gym bench",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Concept images (illustration of product type)"
     },
@@ -4426,6 +4714,28 @@
       "source": "EarthRoamer official site | https://earthroamer.com/ | https://earthroamer.com/wp-content/uploads/2025/08/EarthRoamer-YouTube-Thumbnails-1-scaled.jpg",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "ebay-collectible-card-games",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ebay-collectible-card-games-480.webp",
+        "/directory/photos/ebay-collectible-card-games-960.webp"
+      ],
+      "source": "trading cards in clear graded cases on a felt mat",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "ebay-non-sport-trading-cards",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ebay-non-sport-trading-cards-480.webp",
+        "/directory/photos/ebay-non-sport-trading-cards-960.webp"
+      ],
+      "source": "vintage non-sport trading cards in a binder page",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "ecoflow-400w-portable-solar-panel",
@@ -4491,6 +4801,17 @@
       ],
       "source": "a compact portable energy reserve on a camp table",
       "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "elephant-robotics-official-shop",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/elephant-robotics-official-shop-480.webp",
+        "/directory/photos/elephant-robotics-official-shop-960.webp"
+      ],
+      "source": "a small desktop robot arm beside a laptop",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Concept images (illustration of product type)"
     },
     {
@@ -4676,6 +4997,17 @@
       "source": "eufy SoloCam S340 | eufy | Official product photo from eufy.com (Shopify CDN files/1500_1500.png), Open Graph image on the SoloCam S340 product page, downloaded November 23, 2026. Image provided by eufy. | Official catalog photo, flattened onto white for the card backdrop (native 1500 px used as the large srcset step, no upscaling). Image provided by eufy.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "expressvpn",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/expressvpn-480.webp",
+        "/directory/photos/expressvpn-960.webp"
+      ],
+      "source": "a laptop showing a secure connection across a world map",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "fema-app",
@@ -4929,6 +5261,39 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "hasbro-pulse-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hasbro-pulse-official-480.webp",
+        "/directory/photos/hasbro-pulse-official-960.webp"
+      ],
+      "source": "posable collectible figures in display cases",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "hiscox",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hiscox-480.webp",
+        "/directory/photos/hiscox-960.webp"
+      ],
+      "source": "a small workshop office desk",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "home-depot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/home-depot-480.webp",
+        "/directory/photos/home-depot-960.webp"
+      ],
+      "source": "warehouse aisles of building supplies",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "honda-eu2200i",
       "kind": "official-product-or-brand",
       "files": [
@@ -5022,6 +5387,16 @@
       "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
     },
     {
+      "key": "hunter-boots",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hunter-boots-480.webp"
+      ],
+      "source": "Hunter rain boots | https://hunterboots.com/ | https://hunterboots.com/cdn/shop/files/HU_1126_MEGA_MENU_HOLIDAY_GIFT_GUIDE_DT.png?v=1793260854&width=640",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "hydro-flask-32-wide",
       "kind": "official-product-or-brand",
       "files": [
@@ -5044,6 +5419,17 @@
       "source": "Hydro Flask 40 oz Wide Mouth water bottle | Hydro Flask | Official product photo from hydroflask.com (media/catalog/product ... w40cts001-40-oz-wide-mouth-with-flex-cap-black-straight_1.jpg), Open Graph image on the 40 oz Wide Mouth product page, downloaded November 23, 2026. Image provided by Hydro Flask. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by Hydro Flask.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "incogni",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/incogni-480.webp",
+        "/directory/photos/incogni-960.webp"
+      ],
+      "source": "a pile of junk mail beside a laptop checklist",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "ineos-grenadier",
@@ -5273,6 +5659,16 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "jackery-explorer-300-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jackery-explorer-300-v2-480.webp"
+      ],
+      "source": "Jackery Explorer 300 V2 | https://www.jackery.com/products/jackery-explorer-300-v2-portable-power-station | https://www.jackery.com/cdn/shop/files/jackery-portable-power-station-explorer-300-v2-8502568.webp?v=1787333288\\u0026width=1600",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "jackery-solarsaga-100-prime",
       "kind": "official-product-or-brand",
       "files": [
@@ -5391,6 +5787,17 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "klein-tools-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/klein-tools-official-480.webp",
+        "/directory/photos/klein-tools-official-960.webp"
+      ],
+      "source": "insulated pliers, screwdrivers and a multimeter on a workbench",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "knightscope-official",
       "kind": "official-product-or-brand",
       "files": [
@@ -5411,6 +5818,17 @@
       "source": "Land Rover Defender | Alexander Migl | CC BY-SA 4.0 | [File:Land Rover Defender (L663) DSC 9062.jpg](https://commons.wikimedia.org/wiki/File:Land_Rover_Defender_(L663)_DSC_9062.jpg)",
       "license": "Wikimedia Commons (see credit row for the exact license)",
       "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "leaffilter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leaffilter-480.webp",
+        "/directory/photos/leaffilter-960.webp"
+      ],
+      "source": "a mesh gutter guard installed on a roof gutter",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "leatherman-arc",
@@ -5575,6 +5993,17 @@
       "source": "Legacy Food Storage Premium 240-Serving Package | https://www.legacyfoodstorage.com/products/premium-240-serving-package | https://www.legacyfoodstorage.com/cdn/shop/products/GF0240a_627dd687-b1e9-4a0b-9c85-892fea4f1148_1024x1024.jpg",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "liberty-mutual",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/liberty-mutual-480.webp",
+        "/directory/photos/liberty-mutual-960.webp"
+      ],
+      "source": "a house with a car in the driveway",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "lifestraw-family",
@@ -5760,6 +6189,27 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "magic-the-gathering",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/magic-the-gathering-480.webp",
+        "/directory/photos/magic-the-gathering-960.webp"
+      ],
+      "source": "a fantasy card game laid out on a playmat with dice",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "magid",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/magid-480.webp"
+      ],
+      "source": "Magid work gloves | https://www.magidglove.com/ | https://www.magidglove.com/media/catalog/product/g/p/gpd682_1200x900_hero.png",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "mario-kart-world",
       "kind": "official-product-or-brand",
       "files": [
@@ -5933,6 +6383,28 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "modernize",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/modernize-480.webp",
+        "/directory/photos/modernize-960.webp"
+      ],
+      "source": "new window and siding installation",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "monarch",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/monarch-480.webp",
+        "/directory/photos/monarch-960.webp"
+      ],
+      "source": "a tablet showing budget charts with a calculator and receipts",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "mountain-house-beef-stew-pouch",
       "kind": "official-product-or-brand",
       "files": [
@@ -6015,6 +6487,17 @@
       "source": "Mr. Heater Portable Buddy Heater | https://mrheater.com/products/portable-buddy-heater | https://mrheater.com/cdn/shop/files/MRH-BUDDY-MH9BX-PORTBUDDY-MI.jpg",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "mro-supreme",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mro-supreme-480.webp",
+        "/directory/photos/mro-supreme-960.webp"
+      ],
+      "source": "bearings, safety glasses, tape, hose clamps and a gauge on a shelf",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "mulholland-brand",
@@ -6101,6 +6584,17 @@
       "source": "My Medic MyFAK First Aid and Trauma Kit | https://mymedic.com/products/myfak-firstaidkit | https://mymedic.com/cdn/shop/products/red-myfak-ifak_1200x1200.png",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "networx",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/networx-480.webp",
+        "/directory/photos/networx-960.webp"
+      ],
+      "source": "kitchen cabinet installation in progress",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "nintendo-switch-2",
@@ -6195,6 +6689,17 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "nordpass",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nordpass-480.webp",
+        "/directory/photos/nordpass-960.webp"
+      ],
+      "source": "a phone showing a fingerprint vault unlock",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "nordpass-logo",
       "kind": "official-product-or-brand",
       "files": [
@@ -6203,6 +6708,17 @@
       "source": "NordPass merchant card | NordPass | CJ Affiliate (link 15111945, “Logo 512x512”) | Image provided by NordPass via CJ Affiliate.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "nordvpn",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nordvpn-480.webp",
+        "/directory/photos/nordvpn-960.webp"
+      ],
+      "source": "a TV, laptop and phone protected on a home network",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "nordvpn-faster-300x250",
@@ -6296,6 +6812,16 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "pecron",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/pecron-480.webp"
+      ],
+      "source": "Pecron portable power station | https://mightygenerators.com/ | https://cdn.shopify.com/s/files/1/0751/3885/9282/files/PecronE1500LFPFrontLeft.jpg?v=1741181844&auto=compress",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "pelican-cases",
       "kind": "official-product-or-brand",
       "files": [
@@ -6328,6 +6854,17 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "pia",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/pia-480.webp",
+        "/directory/photos/pia-960.webp"
+      ],
+      "source": "a home router beside a laptop showing an encrypted tunnel",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "pick-cleanwaste-go-anywhere",
       "kind": "official-product-or-brand",
       "files": [
@@ -6339,6 +6876,38 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "pick-luggable-loo",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/pick-luggable-loo-480.webp",
+        "/directory/photos/pick-luggable-loo-960.webp"
+      ],
+      "source": "Reliance Luggable Loo portable toilet | https://relianceoutdoors.com/products/luggable-loo-portable-toilet | https://relianceoutdoors.com/cdn/shop/products/LL9853-23LIDUP_1500x.png?v=1681156836",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "pick-sentrysafe-fireproof",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/pick-sentrysafe-fireproof-480.webp"
+      ],
+      "source": "SentrySafe SF123ES fireproof safe | https://www.sentrysafe.com/fireproof-safes | https://cdn.masterlock.com/product/sentrysafe/SF123ES_angled.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "pokemon-tcg",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/pokemon-tcg-480.webp",
+        "/directory/photos/pokemon-tcg-960.webp"
+      ],
+      "source": "sealed booster packs, a booster box and a binder of holo cards",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "polaris-official",
       "kind": "official-product-or-brand",
       "files": [
@@ -6348,6 +6917,17 @@
       "source": "Polaris off-road vehicle | Calreyn88 | CC BY-SA 4.0 | [File:2023 Polaris RZR Pro R.jpg](https://commons.wikimedia.org/wiki/File:2023_Polaris_RZR_Pro_R.jpg)",
       "license": "Wikimedia Commons (see credit row for the exact license)",
       "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "proton",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/proton-480.webp",
+        "/directory/photos/proton-960.webp"
+      ],
+      "source": "a padlocked envelope next to a laptop inbox",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "ready-hour",
@@ -6766,6 +7346,17 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "roboform",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/roboform-480.webp",
+        "/directory/photos/roboform-960.webp"
+      ],
+      "source": "a monitor showing an auto-filled login form",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "rotopax",
       "kind": "official-product-or-brand",
       "files": [
@@ -6775,6 +7366,50 @@
       "source": "RotopaX fuel and water containers | https://www.rotopax.com/ | https://cdn.shopify.com/s/files/1/0616/9965/3786/files/IMG_7893.webp",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "rs-deep-robotics-lite3-basic-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rs-deep-robotics-lite3-basic-quadruped-robot-480.webp",
+        "/directory/photos/rs-deep-robotics-lite3-basic-quadruped-robot-960.webp"
+      ],
+      "source": "a compact four-legged robot standing on pavement",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "rs-deep-robotics-lite3-lidar-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rs-deep-robotics-lite3-lidar-quadruped-robot-480.webp",
+        "/directory/photos/rs-deep-robotics-lite3-lidar-quadruped-robot-960.webp"
+      ],
+      "source": "a four-legged robot with a lidar sensor on its back",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "rs-deep-robotics-lite3-pro-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rs-deep-robotics-lite3-pro-quadruped-robot-480.webp",
+        "/directory/photos/rs-deep-robotics-lite3-pro-quadruped-robot-960.webp"
+      ],
+      "source": "a four-legged robot walking outdoors",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "rs-deep-robotics-lite3-venture-quadruped-robot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rs-deep-robotics-lite3-venture-quadruped-robot-480.webp",
+        "/directory/photos/rs-deep-robotics-lite3-venture-quadruped-robot-960.webp"
+      ],
+      "source": "a four-legged robot on rough trail terrain",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "rugged-radios",
@@ -6978,6 +7613,28 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "sportsmans",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sportsmans-480.webp",
+        "/directory/photos/sportsmans-960.webp"
+      ],
+      "source": "camp stove, duffel, lantern and trekking poles on a truck tailgate",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "sportsmans-guide",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sportsmans-guide-480.webp",
+        "/directory/photos/sportsmans-guide-960.webp"
+      ],
+      "source": "surplus-style wool blanket, canteen, shovel and rucksack",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "sportsmobile-official",
       "kind": "official-product-or-brand",
       "files": [
@@ -6987,6 +7644,17 @@
       "source": "Sportsmobile official site | https://sportsmobile.com/ | https://sportsmobile.com/wp-content/uploads/2024/01/home-hero-frist-scaled.webp",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "stanley-tools-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/stanley-tools-official-480.webp",
+        "/directory/photos/stanley-tools-official-960.webp"
+      ],
+      "source": "a tape measure, hammer, utility knife and level on a workbench",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "starlink",
@@ -7020,6 +7688,17 @@
       "source": "Storyteller Overland GXV | Tomás Del Coro | CC BY-SA 4.0 | [File:Storyteller Overland GXV HILT RAM 5500 (55469434620).jpg](https://commons.wikimedia.org/wiki/File:Storyteller_Overland_GXV_HILT_RAM_5500_(55469434620).jpg)",
       "license": "Wikimedia Commons (see credit row for the exact license)",
       "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "surfshark",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/surfshark-480.webp",
+        "/directory/photos/surfshark-960.webp"
+      ],
+      "source": "a phone and tablet with a VPN toggle switched on",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "surfshark-privacy",
@@ -7065,6 +7744,28 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "target-board-games",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/target-board-games-480.webp",
+        "/directory/photos/target-board-games-960.webp"
+      ],
+      "source": "a family board game set up on a coffee table",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "tcgplayer",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tcgplayer-480.webp",
+        "/directory/photos/tcgplayer-960.webp"
+      ],
+      "source": "sorted trading cards, top loaders and a mailer at a packing station",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "terra-vivos-official",
       "kind": "official-product-or-brand",
       "files": [
@@ -7096,6 +7797,17 @@
       "source": "TETON Sports Celsius Regular 0°F Sleeping Bag | https://tetongear.com/products/celsius-0-f-sleeping-bag-orange-grey | https://tetongear.com/cdn/shop/files/teton-sports-celsius-0-f-sleeping-bag-38931539493102_4029b64c-4464-46da-94ad-260ac71ee1c8.jpg",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "theory11-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/theory11-official-480.webp",
+        "/directory/photos/theory11-official-960.webp"
+      ],
+      "source": "a luxury navy and gold deck of playing cards on velvet",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "therm-a-rest-z-lite-sol",
@@ -7246,6 +7958,39 @@
       "creditSection": "Official photos"
     },
     {
+      "key": "us-playing-card-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/us-playing-card-official-480.webp",
+        "/directory/photos/us-playing-card-official-960.webp"
+      ],
+      "source": "red and blue playing card decks with poker chips",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "vevor-electric-winches",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/vevor-electric-winches-480.webp",
+        "/directory/photos/vevor-electric-winches-960.webp"
+      ],
+      "source": "an electric winch mounted on a truck bumper",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "vevor-rooftop-tents",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/vevor-rooftop-tents-480.webp",
+        "/directory/photos/vevor-rooftop-tents-960.webp"
+      ],
+      "source": "a rooftop tent opened on top of an SUV",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "vornado-avh10",
       "kind": "official-product-or-brand",
       "files": [
@@ -7254,6 +7999,28 @@
       "source": "Vornado AVH10 Whole Room Heater with Auto Climate | https://vornado.com/products/vornado-avh10-whole-room-space-heater-ice-white | https://vornado.com/cdn/shop/files/138269.jpg",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Official photos"
+    },
+    {
+      "key": "walmart",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/walmart-480.webp",
+        "/directory/photos/walmart-960.webp"
+      ],
+      "source": "a shopping cart of water, batteries, canned food and a flashlight",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "walmart-board-games",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/walmart-board-games-480.webp",
+        "/directory/photos/walmart-board-games-960.webp"
+      ],
+      "source": "board game boxes, a travel chess set and dice on a shelf",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "warn-industries",
