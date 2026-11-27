@@ -1579,7 +1579,7 @@ export const highTicketItems: HighTicketItem[] = [
   },
 ];
 
-// My Patriot Supply generators collection (Ready Alliance / Everflow). Food cards live in doomsday-prepper.ts.
+// Ready Alliance / Everflow collection cards (food, water and EMP cards live in doomsday-prepper.ts).
 highTicketItems.push({
   id: 'my-patriot-supply-generators',
   title: 'My Patriot Supply generators collection',
@@ -1589,8 +1589,39 @@ highTicketItems.push({
   groups: ['power-tech'],
   affiliateUrl: null,
   fallbackUrl: 'https://mypatriotsupply.com/',
+  image: '/directory/photos/my-patriot-supply-generators-960.webp',
+  imageKind: 'photo',
   offerLabel: 'Generators',
   cta: 'See details',
+  us: true,
+}, {
+  id: 'camping-survival',
+  title: 'Camping Survival',
+  blurb: 'Utah shop for camping and survival gear, from camp kitchen items to trail and emergency kit pieces. See current gear on their official page.',
+  sourceName: 'Camping Survival (Utah)',
+  category: 'outdoor',
+  groups: ['outdoor-auto'],
+  affiliateUrl: null,
+  fallbackUrl: 'https://www.campingsurvival.com/',
+  image: '/directory/photos/camping-survival-960.webp',
+  imageKind: 'photo',
+  offerLabel: 'Camping gear',
+  cta: 'Visit site',
+  us: true,
+}, {
+  id: 'instafire',
+  title: 'InstaFire fire starters',
+  blurb: 'Utah maker of fire starters for campfires and emergency use. See how to use them and what’s in each pack on the official page.',
+  sourceName: 'InstaFire (Utah)',
+  category: 'outdoor',
+  alsoIn: ['tools'],
+  groups: ['outdoor-auto'],
+  affiliateUrl: null,
+  fallbackUrl: 'https://www.instafire.com/',
+  image: '/directory/photos/instafire-960.webp',
+  imageKind: 'photo',
+  offerLabel: 'Fire starter',
+  cta: 'Buy now',
   us: true,
 });
 
