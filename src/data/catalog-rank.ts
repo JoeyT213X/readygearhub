@@ -95,13 +95,20 @@ export function payoutPercentFor(programId: string | undefined | null): number {
 }
 
 export function hasOfficialProductPhoto(item: RankableItem): boolean {
-  if (productPhotoFor(item)) return true;
+  const photo = productPhotoFor(item);
+  if (photo) return !photo.concept;
   return Boolean(item.imageKind === 'photo' && item.image && !item.image.endsWith('.svg'));
+}
+
+/** A generated concept image is better than a name card but ranks below a real product photo. */
+export function hasConceptImage(item: RankableItem): boolean {
+  return Boolean(productPhotoFor(item)?.concept);
 }
 
 export function qualityScore(item: RankableItem): number {
   let score = 0;
   if (hasOfficialProductPhoto(item)) score += 40;
+  else if (hasConceptImage(item)) score += 12;
   const price = (item.priceLabel || '').trim();
   if (price && !/^see\s+(official site|price|store)/i.test(price) && !/^free$/i.test(price)) {
     score += 15;

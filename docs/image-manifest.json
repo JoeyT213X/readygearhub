@@ -1,14 +1,204 @@
 {
-  "generated": "2026-11-25T19:49:47.531Z",
+  "generated": "2026-11-27T19:39:18.189Z",
   "note": "Self-hosted images only; nothing is hotlinked. Representative stock photos are labeled \"Representative photo\" on cards. Human-readable credits: IMAGE_CREDITS.md.",
   "counts": {
-    "keys": 260,
-    "officialProductOrBrand": 189,
-    "representativeStock": 28,
+    "keys": 688,
+    "officialProductOrBrand": 614,
+    "representativeStock": 31,
     "editorialStock": 43,
-    "missingCredit": 0
+    "missingCredit": 189
   },
-  "missingCredit": [],
+  "missingCredit": [
+    "amz-b00000izjb",
+    "amz-b00004s88z",
+    "amz-b00004sbcq",
+    "amz-b00004sqkq",
+    "amz-b000069eya",
+    "amz-b0001ix7ow",
+    "amz-b0001p151w",
+    "amz-b0002wrhe8",
+    "amz-b0002yto7e",
+    "amz-b000688vne",
+    "amz-b0006vordy",
+    "amz-b00080qhmm",
+    "amz-b000buu5yu",
+    "amz-b000ced1qy",
+    "amz-b000edpt9k",
+    "amz-b000i3f91o",
+    "amz-b000joq57e",
+    "amz-b000lq78yy",
+    "amz-b000q3cjgo",
+    "amz-b000rhsy9k",
+    "amz-b000s5odnc",
+    "amz-b000tkdq5c",
+    "amz-b000x9axr8",
+    "amz-b0013axy54",
+    "amz-b0015sbilg",
+    "amz-b00176t9oy",
+    "amz-b001949tks",
+    "amz-b001cf4uxu",
+    "amz-b001couoyk",
+    "amz-b001cs7mbe",
+    "amz-b001eq5nhe",
+    "amz-b001eug3ii",
+    "amz-b001r1rxug",
+    "amz-b001wmfyh4",
+    "amz-b0024e6v30",
+    "amz-b002g51bzu",
+    "amz-b00339b0li",
+    "amz-b003coqaka",
+    "amz-b00429n19w",
+    "amz-b004ahdv5a",
+    "amz-b004k95pbq",
+    "amz-b004lqcdoa",
+    "amz-b004m3baqe",
+    "amz-b004vrkwr4",
+    "amz-b005asy23i",
+    "amz-b005p12c5a",
+    "amz-b006m14uc0",
+    "amz-b007dbd3iu",
+    "amz-b008mcuzzs",
+    "amz-b0090wocn0",
+    "amz-b009ejufda",
+    "amz-b00a2hd40e",
+    "amz-b00aefckky",
+    "amz-b00asksb1m",
+    "amz-b00b7fc4di",
+    "amz-b00d7h9lia",
+    "amz-b00di342b4",
+    "amz-b00dz1nfsk",
+    "amz-b00ezexcbg",
+    "amz-b00fk0aeg0",
+    "amz-b00hjth5l2",
+    "amz-b00hzax5sm",
+    "amz-b00ij0alys",
+    "amz-b00jhksn5i",
+    "amz-b00k8v2vd0",
+    "amz-b00oj8n8ik",
+    "amz-b00tzkfa0q",
+    "amz-b00u1ocpwq",
+    "amz-b00u415mgw",
+    "amz-b00ujv3e12",
+    "amz-b00un2ii4a",
+    "amz-b010bvoadk",
+    "amz-b013ldn6bc",
+    "amz-b016mefqu6",
+    "amz-b0171a6feq",
+    "amz-b017o8jzp6",
+    "amz-b019riozvk",
+    "amz-b01acc8zfw",
+    "amz-b01acmcugm",
+    "amz-b01c4pp8fk",
+    "amz-b01dwh77gc",
+    "amz-b01fscrjlc",
+    "amz-b01gwf2r70",
+    "amz-b01h0s90qe",
+    "amz-b01hgslb6k",
+    "amz-b01iqxdtgy",
+    "amz-b01itakg6a",
+    "amz-b01m6wm4c5",
+    "amz-b01msygzgi",
+    "amz-b01mtb55wh",
+    "amz-b01n7gc9z6",
+    "amz-b06xzvbsmx",
+    "amz-b06y3k69d1",
+    "amz-b0711j9fjp",
+    "amz-b0732brrhz",
+    "amz-b073sdlwxd",
+    "amz-b073zj3l13",
+    "amz-b0755h39hb",
+    "amz-b075cr4j3w",
+    "amz-b075tttx2r",
+    "amz-b076hq2thc",
+    "amz-b079ddc5c6",
+    "amz-b079mjbp21",
+    "amz-b07bllrm8r",
+    "amz-b07fl4wvvs",
+    "amz-b07g7ggfv6",
+    "amz-b07glgk4w3",
+    "amz-b07kq4q2l5",
+    "amz-b07mw96bhy",
+    "amz-b07p6mzpk3",
+    "amz-b07sjhvqtj",
+    "amz-b07vcm66n6",
+    "amz-b07vspl8fj",
+    "amz-b07w8kjh44",
+    "amz-b07xkgwnp8",
+    "amz-b07ynjvtnr",
+    "amz-b0842ryhvb",
+    "amz-b0843j11jw",
+    "amz-b085828bq6",
+    "amz-b0863txgm3",
+    "amz-b0874xn4d8",
+    "amz-b08c9hc52j",
+    "amz-b08crjyj22",
+    "amz-b08d8kfpv8",
+    "amz-b08dj7bm11",
+    "amz-b08gry1w93",
+    "amz-b08gtyfc37",
+    "amz-b08kskc8nm",
+    "amz-b08s7s98l2",
+    "amz-b08tyt543y",
+    "amz-b09bd9552g",
+    "amz-b09d44jh4s",
+    "amz-b09d8gl5fl",
+    "amz-b09ffqn924",
+    "amz-b09gjzkq3k",
+    "amz-b09knwt4jf",
+    "amz-b09l89lw3p",
+    "amz-b09lp3wdgk",
+    "amz-b09nmkgrmz",
+    "amz-b09q59321n",
+    "amz-b09vphvt2z",
+    "amz-b09x6bt44d",
+    "amz-b0b2kx374t",
+    "amz-b0b39bnhbm",
+    "amz-b0b3gk9rw6",
+    "amz-b0b5hlz8t4",
+    "amz-b0b8jzdc13",
+    "amz-b0b9t4kcv7",
+    "amz-b0bkfltm3t",
+    "amz-b0bpw1l2tf",
+    "amz-b0brxj9wtd",
+    "amz-b0bs1prc4l",
+    "amz-b0c2dgmwc5",
+    "amz-b0c6nmyvhw",
+    "amz-b0c9s5pmsd",
+    "amz-b0cfpjyx7p",
+    "amz-b0chshnrnk",
+    "amz-b0ckm5fjqx",
+    "amz-b0cnrnh23l",
+    "amz-b0cpt83mtv",
+    "amz-b0ct91zzy8",
+    "amz-b0ctnwbt1z",
+    "amz-b0ctp56c5r",
+    "amz-b0cw1yjvsz",
+    "amz-b0cy3bzcx9",
+    "amz-b0cylntz9k",
+    "amz-b0d6wd2qsq",
+    "amz-b0d7qn9s9q",
+    "amz-b0d87pkyyk",
+    "amz-b0djtzwjry",
+    "amz-b0dnty55km",
+    "amz-b0dswjj5tm",
+    "amz-b0dxqcvvyb",
+    "amz-b0f63v4c2n",
+    "amz-b0f7kfdlhd",
+    "amz-b0f8pkn4b7",
+    "amz-b0ffvpfmfr",
+    "amz-b0fh7cnjlw",
+    "amz-b0fjnnxvl4",
+    "amz-b0g4xv4xpf",
+    "amz-b0g8llxfjh",
+    "amz-b0gfpnv29k",
+    "amz-b0ghcdvc7q",
+    "amz-b0gjps57xr",
+    "amz-b0gl9rl3xs",
+    "amz-b0h1r7g7vn",
+    "amz-b0hcxrbqg1",
+    "amz-b0hqwy1rr3",
+    "ghost-robotics-official"
+  ],
   "images": [
     {
       "key": "car-in-snow",
@@ -599,6 +789,18 @@
       "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
     },
     {
+      "key": "stock-gas-masks",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-gas-masks-1600.webp",
+        "/images/photos/stock-gas-masks-480.webp",
+        "/images/photos/stock-gas-masks-960.webp"
+      ],
+      "source": "Three gas masks on a stone wall, no people | [Pexels photo 19376807](https://www.pexels.com/photo/black-and-white-photo-of-gas-masks-lying-on-a-wall-19376807/) | Alexander Zvir / Pexels",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Extreme window and Doomsday Prepper stills (Pexels, added 25 Nov 2026)"
+    },
+    {
       "key": "stock-gloves",
       "kind": "representative-stock",
       "files": [
@@ -719,6 +921,18 @@
       "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
     },
     {
+      "key": "stock-security-fence",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-security-fence-1600.webp",
+        "/images/photos/stock-security-fence-480.webp",
+        "/images/photos/stock-security-fence-960.webp"
+      ],
+      "source": "Tall gray palisade security fence | [Pexels photo 430204](https://www.pexels.com/photo/gray-metal-fence-430204/) | Scott Webb / Pexels",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Extreme window and Doomsday Prepper stills (Pexels, added 25 Nov 2026)"
+    },
+    {
       "key": "stock-smart-cam",
       "kind": "representative-stock",
       "files": [
@@ -789,6 +1003,18 @@
       "source": "[Pexels photo 4909104](https://www.pexels.com/photo/4909104/) | Taryn Elliott / Pexels | Representative photo on directory cards without a licensed product photo",
       "license": "Pexels License (free to use, self-hosted)",
       "creditSection": "Representative photos on directory cards (Pexels, added 23 Nov 2026)"
+    },
+    {
+      "key": "stock-vault-doors",
+      "kind": "representative-stock",
+      "files": [
+        "/images/photos/stock-vault-doors-1600.webp",
+        "/images/photos/stock-vault-doors-480.webp",
+        "/images/photos/stock-vault-doors-960.webp"
+      ],
+      "source": "Two steel vault doors in a brick wall | [Pexels photo 19882101](https://www.pexels.com/photo/steel-heavy-doors-of-vault-19882101/) | wutthichai charoenburi / Pexels",
+      "license": "Pexels License (free to use, self-hosted)",
+      "creditSection": "Extreme window and Doomsday Prepper stills (Pexels, added 25 Nov 2026)"
     },
     {
       "key": "stock-winter-boots",
@@ -911,6 +1137,2099 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "acurite",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/acurite-480.webp",
+        "/directory/photos/acurite-960.webp"
+      ],
+      "source": "a backyard home weather station sensor array",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "alexapure",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/alexapure-480.webp",
+        "/directory/photos/alexapure-960.webp"
+      ],
+      "source": "`alexapure` | Stainless two-chamber gravity water filter on a kitchen counter",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "allpowers-r2500-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/allpowers-r2500-v2-480.webp",
+        "/directory/photos/allpowers-r2500-v2-960.webp"
+      ],
+      "source": "ALLPOWERS R2500 V2 | https://iallpowers.com/products/allpowers-r2500-v2-portable-power-station-2500w-1920wh | https://iallpowers.com/cdn/shop/files/R2500-US-03.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "allpowers-s2000-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/allpowers-s2000-pro-480.webp",
+        "/directory/photos/allpowers-s2000-pro-960.webp"
+      ],
+      "source": "ALLPOWERS S2000 Pro | https://iallpowers.com/products/allpowers-2400w-portable-power-station | https://iallpowers.com/cdn/shop/files/S2000PRO-US-03.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "alpine-armoring",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/alpine-armoring-480.webp",
+        "/directory/photos/alpine-armoring-960.webp"
+      ],
+      "source": "Alpine Armoring Pit-Bull VX | Dyerko1 | CC BY-SA 4.0 | [File:Alpine Armoring Pit-Bull VX.jpg](https://commons.wikimedia.org/wiki/File:Alpine_Armoring_Pit-Bull_VX.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "american-safe-room",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/american-safe-room-480.webp",
+        "/directory/photos/american-safe-room-960.webp"
+      ],
+      "source": "a steel blast door with a hand wheel in a concrete shelter wall",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "ameristar-perimeter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ameristar-perimeter-480.webp",
+        "/directory/photos/ameristar-perimeter-960.webp"
+      ],
+      "source": "Ameristar Perimeter Security | https://www.ameristarperimeter.com/us/en | https://gw-assets.assaabloy.com/is/image/assaabloy/Home-DoverSchool-Hero-2",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amico-security",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amico-security-480.webp",
+        "/directory/photos/amico-security-800.webp"
+      ],
+      "source": "AMICO Security (cropped to the photo area) | https://amicosecurity.com/ | https://amicosecurity.com/wp-content/uploads/2020/04/0.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-adventure-first-aid-2-0",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-adventure-first-aid-2-0-480.webp"
+      ],
+      "source": "Adventure Medical Kits Adventure First Aid 2.0 | https://adventuremedicalkits.com/products/adventure-first-aid-2-0 | https://adventuremedicalkits.com/cdn/shop/files/0120-0220_afa_2.0_front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-adventure-first-aid-family",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-adventure-first-aid-family-480.webp",
+        "/directory/photos/amk-adventure-first-aid-family-960.webp"
+      ],
+      "source": "Adventure Medical Kits Adventure First Aid Family Kit | https://adventuremedicalkits.com/products/adventure-first-aid-family-first-aid-kit | https://adventuremedicalkits.com/cdn/shop/files/0120-0230_afa_family_first_aid_kit_front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-blister-medic-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-blister-medic-kit-480.webp"
+      ],
+      "source": "Adventure Medical Kits Blister Medic Kit | https://adventuremedicalkits.com/products/blister-medic-kit | https://adventuremedicalkits.com/cdn/shop/files/0155-0667_blister_medic_kit_front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-dental-medic-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-dental-medic-kit-480.webp",
+        "/directory/photos/amk-dental-medic-kit-960.webp"
+      ],
+      "source": "Adventure Medical Kits Dental Medic Kit | https://adventuremedicalkits.com/products/dental-medic-emergency-first-aid-kit-for-teeth | https://adventuremedicalkits.com/cdn/shop/files/0185-0102_dental_medic_front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-mountain-series-explorer",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-mountain-series-explorer-480.webp",
+        "/directory/photos/amk-mountain-series-explorer-960.webp"
+      ],
+      "source": "Adventure Medical Kits Mountain Series Explorer | https://adventuremedicalkits.com/products/mountain-series-medical-kit-explorer | https://adventuremedicalkits.com/cdn/shop/files/0100-1005_mountain_explorer_kit_front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-mountain-series-hiker",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-mountain-series-hiker-480.webp",
+        "/directory/photos/amk-mountain-series-hiker-960.webp"
+      ],
+      "source": "Adventure Medical Kits Mountain Series Hiker Medical Kit | https://adventuremedicalkits.com/products/mountain-series-medical-kit-hiker | https://adventuremedicalkits.com/cdn/shop/files/Mountain_Series_Forest_Kit.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-sports-first-aid-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-sports-first-aid-kit-480.webp"
+      ],
+      "source": "Adventure Medical Kits Sports First Aid Kit | https://adventuremedicalkits.com/products/sports-first-aid-kit | https://adventuremedicalkits.com/cdn/shop/files/218.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-trauma-pak-quikclot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-trauma-pak-quikclot-480.webp"
+      ],
+      "source": "Adventure Medical Kits Trauma Pak with QuikClot | https://adventuremedicalkits.com/products/trauma-pak-first-aid-kit-with-quikclot | https://adventuremedicalkits.com/cdn/shop/files/2064-0292-trauma-pak-with-quikclot-front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-trauma-tourniquet",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-trauma-tourniquet-480.webp"
+      ],
+      "source": "Adventure Medical Kits Trauma Tourniquet | https://adventuremedicalkits.com/products/adventure-medical-trauma-tourniquet | https://adventuremedicalkits.com/cdn/shop/files/2064-0017_1_1.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amk-ultralight-watertight-9",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amk-ultralight-watertight-9-480.webp",
+        "/directory/photos/amk-ultralight-watertight-9-960.webp"
+      ],
+      "source": "Adventure Medical Kits Ultralight/Watertight .9 | https://adventuremedicalkits.com/products/ultralight-watertight-medical-kit-9 | https://adventuremedicalkits.com/cdn/shop/files/100.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "amz-b00000izjb",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00000izjb-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00004s88z",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00004s88z-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00004sbcq",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00004sbcq-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00004sqkq",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00004sqkq-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000069eya",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000069eya-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0001ix7ow",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0001ix7ow-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0001p151w",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0001p151w-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0002wrhe8",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0002wrhe8-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0002yto7e",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0002yto7e-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000688vne",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000688vne-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0006vordy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0006vordy-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00080qhmm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00080qhmm-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000buu5yu",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000buu5yu-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000ced1qy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000ced1qy-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000edpt9k",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000edpt9k-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000i3f91o",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000i3f91o-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000joq57e",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000joq57e-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000lq78yy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000lq78yy-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000q3cjgo",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000q3cjgo-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000rhsy9k",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000rhsy9k-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000s5odnc",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000s5odnc-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000tkdq5c",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000tkdq5c-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b000x9axr8",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b000x9axr8-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0013axy54",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0013axy54-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0015sbilg",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0015sbilg-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00176t9oy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00176t9oy-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001949tks",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001949tks-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001cf4uxu",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001cf4uxu-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001couoyk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001couoyk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001cs7mbe",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001cs7mbe-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001eq5nhe",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001eq5nhe-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001eug3ii",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001eug3ii-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001r1rxug",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001r1rxug-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b001wmfyh4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b001wmfyh4-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0024e6v30",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0024e6v30-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b002g51bzu",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b002g51bzu-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00339b0li",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00339b0li-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b003coqaka",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b003coqaka-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00429n19w",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00429n19w-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b004ahdv5a",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b004ahdv5a-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b004k95pbq",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b004k95pbq-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b004lqcdoa",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b004lqcdoa-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b004m3baqe",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b004m3baqe-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b004vrkwr4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b004vrkwr4-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b005asy23i",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b005asy23i-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b005p12c5a",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b005p12c5a-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b006m14uc0",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b006m14uc0-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b007dbd3iu",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b007dbd3iu-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b008mcuzzs",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b008mcuzzs-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0090wocn0",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0090wocn0-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b009ejufda",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b009ejufda-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00a2hd40e",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00a2hd40e-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00aefckky",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00aefckky-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00asksb1m",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00asksb1m-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00b7fc4di",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00b7fc4di-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00d7h9lia",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00d7h9lia-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00di342b4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00di342b4-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00dz1nfsk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00dz1nfsk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00ezexcbg",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00ezexcbg-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00fk0aeg0",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00fk0aeg0-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00hjth5l2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00hjth5l2-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00hzax5sm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00hzax5sm-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00ij0alys",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00ij0alys-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00jhksn5i",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00jhksn5i-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00k8v2vd0",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00k8v2vd0-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00oj8n8ik",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00oj8n8ik-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00tzkfa0q",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00tzkfa0q-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00u1ocpwq",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00u1ocpwq-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00u415mgw",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00u415mgw-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00ujv3e12",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00ujv3e12-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b00un2ii4a",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b00un2ii4a-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b010bvoadk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b010bvoadk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b013ldn6bc",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b013ldn6bc-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b016mefqu6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b016mefqu6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0171a6feq",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0171a6feq-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b017o8jzp6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b017o8jzp6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b019riozvk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b019riozvk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01acc8zfw",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01acc8zfw-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01acmcugm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01acmcugm-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01c4pp8fk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01c4pp8fk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01dwh77gc",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01dwh77gc-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01fscrjlc",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01fscrjlc-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01gwf2r70",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01gwf2r70-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01h0s90qe",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01h0s90qe-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01hgslb6k",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01hgslb6k-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01iqxdtgy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01iqxdtgy-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01itakg6a",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01itakg6a-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01m6wm4c5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01m6wm4c5-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01msygzgi",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01msygzgi-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01mtb55wh",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01mtb55wh-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b01n7gc9z6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b01n7gc9z6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b06xzvbsmx",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b06xzvbsmx-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b06y3k69d1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b06y3k69d1-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0711j9fjp",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0711j9fjp-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0732brrhz",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0732brrhz-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b073sdlwxd",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b073sdlwxd-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b073zj3l13",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b073zj3l13-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0755h39hb",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0755h39hb-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b075cr4j3w",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b075cr4j3w-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b075tttx2r",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b075tttx2r-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b076hq2thc",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b076hq2thc-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b079ddc5c6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b079ddc5c6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b079mjbp21",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b079mjbp21-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07bllrm8r",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07bllrm8r-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07fl4wvvs",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07fl4wvvs-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07g7ggfv6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07g7ggfv6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07glgk4w3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07glgk4w3-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07kq4q2l5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07kq4q2l5-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07mw96bhy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07mw96bhy-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07p6mzpk3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07p6mzpk3-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07sjhvqtj",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07sjhvqtj-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07vcm66n6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07vcm66n6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07vspl8fj",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07vspl8fj-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07w8kjh44",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07w8kjh44-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07xkgwnp8",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07xkgwnp8-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b07ynjvtnr",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b07ynjvtnr-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0842ryhvb",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0842ryhvb-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0843j11jw",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0843j11jw-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b085828bq6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b085828bq6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0863txgm3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0863txgm3-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0874xn4d8",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0874xn4d8-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08c9hc52j",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08c9hc52j-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08crjyj22",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08crjyj22-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08d8kfpv8",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08d8kfpv8-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08dj7bm11",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08dj7bm11-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08gry1w93",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08gry1w93-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08gtyfc37",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08gtyfc37-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08kskc8nm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08kskc8nm-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08s7s98l2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08s7s98l2-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b08tyt543y",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b08tyt543y-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09bd9552g",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09bd9552g-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09d44jh4s",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09d44jh4s-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09d8gl5fl",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09d8gl5fl-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09ffqn924",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09ffqn924-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09gjzkq3k",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09gjzkq3k-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09knwt4jf",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09knwt4jf-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09l89lw3p",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09l89lw3p-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09lp3wdgk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09lp3wdgk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09nmkgrmz",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09nmkgrmz-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09q59321n",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09q59321n-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09vphvt2z",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09vphvt2z-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b09x6bt44d",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b09x6bt44d-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0b2kx374t",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0b2kx374t-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0b39bnhbm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0b39bnhbm-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0b3gk9rw6",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0b3gk9rw6-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0b5hlz8t4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0b5hlz8t4-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0b8jzdc13",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0b8jzdc13-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0b9t4kcv7",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0b9t4kcv7-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0bkfltm3t",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0bkfltm3t-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0bpw1l2tf",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0bpw1l2tf-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0brxj9wtd",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0brxj9wtd-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0bs1prc4l",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0bs1prc4l-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0c2dgmwc5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0c2dgmwc5-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0c6nmyvhw",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0c6nmyvhw-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0c9s5pmsd",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0c9s5pmsd-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0cfpjyx7p",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0cfpjyx7p-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0chshnrnk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0chshnrnk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0ckm5fjqx",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0ckm5fjqx-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0cnrnh23l",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0cnrnh23l-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0cpt83mtv",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0cpt83mtv-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0ct91zzy8",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0ct91zzy8-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0ctnwbt1z",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0ctnwbt1z-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0ctp56c5r",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0ctp56c5r-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0cw1yjvsz",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0cw1yjvsz-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0cy3bzcx9",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0cy3bzcx9-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0cylntz9k",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0cylntz9k-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0d6wd2qsq",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0d6wd2qsq-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0d7qn9s9q",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0d7qn9s9q-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0d87pkyyk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0d87pkyyk-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0djtzwjry",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0djtzwjry-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0dnty55km",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0dnty55km-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0dswjj5tm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0dswjj5tm-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0dxqcvvyb",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0dxqcvvyb-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0f63v4c2n",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0f63v4c2n-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0f7kfdlhd",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0f7kfdlhd-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0f8pkn4b7",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0f8pkn4b7-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0ffvpfmfr",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0ffvpfmfr-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0fh7cnjlw",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0fh7cnjlw-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0fjnnxvl4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0fjnnxvl4-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0g4xv4xpf",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0g4xv4xpf-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0g8llxfjh",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0g8llxfjh-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0gfpnv29k",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0gfpnv29k-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0ghcdvc7q",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0ghcdvc7q-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0gjps57xr",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0gjps57xr-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0gl9rl3xs",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0gl9rl3xs-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0h1r7g7vn",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0h1r7g7vn-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0hcxrbqg1",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0hcxrbqg1-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "amz-b0hqwy1rr3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/amz-b0hqwy1rr3-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "anker-prime-power-bank-20k-220w",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-prime-power-bank-20k-220w-480.webp"
+      ],
+      "source": "Anker Prime Power Bank (20K, 220W) | https://www.anker.com/products/a110b-anker-prime-20k-220w-power-bank | https://cdn.shopify.com/s/files/1/0493/9834/9974/files/A110BH11_Rich_image_TD01_US_V1_fd7235fe-c983-4463-871f-24f54e89b930.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "anker-solix",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-480.webp"
+      ],
+      "source": "Anker SOLIX official shop | https://www.ankersolix.com/collections/power-stations | https://cdn.shopify.com/s/files/1/0854/3820/2186/collections/power_station.png",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "anker-solix-bp2000-gen2",
       "kind": "official-product-or-brand",
       "files": [
@@ -1023,6 +3342,17 @@
       "source": "Anker SOLIX C800X + 100W solar panel kit | Anker SOLIX | Rakuten Advertising product links (MID 53552), collected November 23, 2026 | Official catalog photo, source 4,000×4,000, flattened onto white for the card backdrop. Image provided by Anker SOLIX via Rakuten Advertising.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "anker-solix-f2000",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/anker-solix-f2000-480.webp",
+        "/directory/photos/anker-solix-f2000-960.webp"
+      ],
+      "source": "a large portable energy reserve with carry handles and a folding solar panel",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "anker-solix-f3800-plus",
@@ -1265,6 +3595,127 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "arb-usa",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/arb-usa-480.webp",
+        "/directory/photos/arb-usa-960.webp"
+      ],
+      "source": "ARB 4x4 Accessories | https://arbusa.com/ | https://arbusa.com/asset/6affe99970c1f/0F3A1633-2.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "arlo-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/arlo-official-480.webp",
+        "/directory/photos/arlo-official-960.webp"
+      ],
+      "source": "a wire-free outdoor security camera on house siding",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "atlas-survival-shelters-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/atlas-survival-shelters-official-480.webp",
+        "/directory/photos/atlas-survival-shelters-official-960.webp"
+      ],
+      "source": "a round steel entry hatch to an underground shelter in a backyard",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "augason-farms-3-month-emergency-food",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/augason-farms-3-month-emergency-food-480.webp",
+        "/directory/photos/augason-farms-3-month-emergency-food-960.webp"
+      ],
+      "source": "Augason Farms 3-Month Emergency Food Supply (cropped to the photo area) | https://augasonfarms.com/products/3-month-emergency-food-supply-1 | https://augasonfarms.com/cdn/shop/files/3-month-emergency-food-supply-582-servings-1290-calories-per-day-2594925.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "augason-farms-30-day-1-person",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/augason-farms-30-day-1-person-480.webp",
+        "/directory/photos/augason-farms-30-day-1-person-960.webp"
+      ],
+      "source": "Augason Farms 30-Day 1-Person Emergency Food Supply (cropped to the photo area) | https://augasonfarms.com/products/30-day-1-person-emergency-food-supply-kit-194-servings | https://augasonfarms.com/cdn/shop/files/30-day-1-person-emergency-food-supply-kit-194-servings-1290-calories-per-day-8026061.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "augason-farms-grab-and-go-backpack",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/augason-farms-grab-and-go-backpack-480.webp",
+        "/directory/photos/augason-farms-grab-and-go-backpack-960.webp"
+      ],
+      "source": "Augason Farms Grab and Go Emergency Backpack | https://augasonfarms.com/products/grab-and-go-emergency-backpack-6-cook-in-pouch-meals-and-essential-survival-gear | https://augasonfarms.com/cdn/shop/files/grab-and-go-emergency-backpack-72-hour-pouch-and-essential-survival-gear-9736562.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "augason-farms-lunch-dinner-variety-pail",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/augason-farms-lunch-dinner-variety-pail-480.webp",
+        "/directory/photos/augason-farms-lunch-dinner-variety-pail-960.webp"
+      ],
+      "source": "Augason Farms Lunch and Dinner Variety Pail, 122 Servings (cropped to the photo area) | https://augasonfarms.com/products/lunch-and-dinner-variety-pail-122-servings | https://augasonfarms.com/cdn/shop/files/lunch-and-dinner-variety-pail-113-servings-4408695.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "backpackers-pantry-14-day-emergency-kit-meat",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/backpackers-pantry-14-day-emergency-kit-meat-480.webp",
+        "/directory/photos/backpackers-pantry-14-day-emergency-kit-meat-960.webp"
+      ],
+      "source": "Backpacker's Pantry 14-Day Emergency Survival Kit, Meat | https://backpackerspantry.com/products/14-day-emergency-survival-kit-meat | https://backpackerspantry.com/cdn/shop/files/Meal.Kit.14Day.Meat.Main.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "backpackers-pantry-3-day-meal-kit-meat",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/backpackers-pantry-3-day-meal-kit-meat-480.webp",
+        "/directory/photos/backpackers-pantry-3-day-meal-kit-meat-960.webp"
+      ],
+      "source": "Backpacker's Pantry 3-Day Meal Kit, Meat | https://backpackerspantry.com/products/3-day-meal-kit-meat | https://backpackerspantry.com/cdn/shop/files/3DayMixedEmergencyMealKit.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "baja-designs",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/baja-designs-480.webp",
+        "/directory/photos/baja-designs-960.webp"
+      ],
+      "source": "off-road LED pod lights and a light bar on a truck at dusk",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "beprepared",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/beprepared-480.webp",
+        "/directory/photos/beprepared-960.webp"
+      ],
+      "source": "`beprepared` | Food cans, a storage pail, water jugs and a first-aid pouch on a workbench",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
       "key": "berkey-big-berkey",
       "kind": "official-product-or-brand",
       "files": [
@@ -1283,6 +3734,38 @@
       "source": "Travel Berkey gravity-fed water filter | TheBerkey.com | Official product photo from theberkey.com (Shopify CDN products/Travel-Berkey-Water-Filte.jpg), first image on the Travel Berkey product page, downloaded November 23, 2026. Image provided by TheBerkey.com. | Official catalog photo, flattened onto white for the card backdrop (native 390 px used as the large srcset step, no upscaling). Image provided by TheBerkey.com.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "bicycle-playing-cards",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bicycle-playing-cards-480.webp",
+        "/directory/photos/bicycle-playing-cards-960.webp"
+      ],
+      "source": "Bicycle Playing Cards official site | https://bicyclecards.com/ | https://images.ctfassets.net/sm166qdr1jca/4WIKJ1dhgYqwKg9WcjplwL/b869aabaaa08f891a7a6ef02dfb820f8/691A0514__4_.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "biolite-alpenglow-500",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/biolite-alpenglow-500-480.webp"
+      ],
+      "source": "BioLite AlpenGlow 500 Lantern | https://www.bioliteenergy.com/products/alpenglow-500 | https://www.bioliteenergy.com/cdn/shop/files/alpenglow-500lnb0100-749729.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "black-diamond-spot-400",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/black-diamond-spot-400-480.webp",
+        "/directory/photos/black-diamond-spot-400-960.webp"
+      ],
+      "source": "Black Diamond Spot 400 Headlamp | https://blackdiamondequipment.com/products/spot-400-headlamp | https://blackdiamondequipment.com/cdn/shop/files/620672_8001_Spot_400_Headlamp_Octane_01.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "bluetti-350w-solar",
@@ -1591,6 +4074,200 @@
       "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
     },
     {
+      "key": "bogs-arcata-ii-dash-kids",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bogs-arcata-ii-dash-kids-480.webp"
+      ],
+      "source": "Bogs Arcata II Dash kid's winter boots | https://www.bogsfootwear.com/shop/style/73118-001.html | https://www.bogsfootwear.com/shop/images/73118-001.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "bogs-arcata-ii-lace",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bogs-arcata-ii-lace-480.webp"
+      ],
+      "source": "Bogs Arcata II Lace men's winter boots | https://www.bogsfootwear.com/shop/style/73589-001.html | https://www.bogsfootwear.com/shop/images/73589-001.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "bogs-arcata-ii-plaid",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bogs-arcata-ii-plaid-480.webp"
+      ],
+      "source": "Bogs Arcata II Plaid women's winter boots | https://www.bogsfootwear.com/shop/style/73597-302.html | https://www.bogsfootwear.com/shop/images/73597-302.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "bogs-arcata-urban-ii-leather",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bogs-arcata-urban-ii-leather-480.webp"
+      ],
+      "source": "Bogs Arcata Urban II Leather women's winter boots | https://www.bogsfootwear.com/shop/style/73592-009.html | https://www.bogsfootwear.com/shop/images/73592-009.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "bogs-bozeman-ii-tall",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bogs-bozeman-ii-tall-480.webp"
+      ],
+      "source": "Bogs Bozeman II Tall men's winter boots | https://www.bogsfootwear.com/shop/style/73452-001.html | https://www.bogsfootwear.com/shop/images/73452-001.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "bogs-bozeman-ii-vibram-arctic-grip",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bogs-bozeman-ii-vibram-arctic-grip-480.webp"
+      ],
+      "source": "Bogs Bozeman II Vibram Arctic Grip men's snow boot | https://www.bogsfootwear.com/shop/style/73421-001.html | https://www.bogsfootwear.com/shop/images/73421-001.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "bogs-snow-shell-cosmic-forest",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/bogs-snow-shell-cosmic-forest-480.webp"
+      ],
+      "source": "Bogs Snow Shell Boot (Cosmic Forest) kids' winter boots | https://www.bogsfootwear.com/shop/style/73377-409.html | https://www.bogsfootwear.com/shop/images/73377-409.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "btech-uv-5x3",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/btech-uv-5x3-480.webp",
+        "/directory/photos/btech-uv-5x3-960.webp"
+      ],
+      "source": "BTECH UV-5X3 Tri-Band Radio | https://baofengtech.com/product/uv-5x3/ | https://baofengtech.com/wp-content/uploads/2020/08/btechproduct_uv5x3_main1-scaled-scaled.jpeg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-banshee-alarm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-banshee-alarm-387.webp"
+      ],
+      "source": "Byrna Banshee personal safety alarm | https://byrna.com/products/byrna-banshee-personal-safety-alarm | https://byrna.com/cdn/shop/products/Byrna-Banshee-Black_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-clxl-launcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-clxl-launcher-480.webp"
+      ],
+      "source": "Byrna CLXL launcher kit | https://byrna.com/products/byrna-clxl-launcher-universal-kit | https://byrna.com/cdn/shop/files/CL-XL-Orange-kit-v2_600x.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-compact-launcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-compact-launcher-480.webp"
+      ],
+      "source": "Byrna Compact launcher kit | https://byrna.com/products/byrna-compact-launcher-universal-kit | https://byrna.com/cdn/shop/files/Orange-Byrna-CL-Universal-Kit-Orange_Full-Kit-Image_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-duo",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-duo-348.webp"
+      ],
+      "source": "Byrna Duo kit | https://byrna.com/products/byrna-duo | https://byrna.com/cdn/shop/files/Duo-Black_WITB_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-le-launcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-le-launcher-480.webp"
+      ],
+      "source": "Byrna LE launcher | https://byrna.com/products/byrna-le-short-barrel-launcher-basic-box | https://byrna.com/cdn/shop/files/LE-Short-Barrel-Kit-Thumbnail-1_aa2931b5-d7b0-4534-879f-7377e3323b60_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-mission-4-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-mission-4-kit-480.webp"
+      ],
+      "source": "Byrna Mission 4 kit | https://byrna.com/products/mission-4-kit | https://byrna.com/cdn/shop/files/Mission4PromoV2_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-sd-launcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-sd-launcher-462.webp"
+      ],
+      "source": "Byrna SD launcher | https://byrna.com/products/byrna-sd-non-lethal-self-defense-pistol | https://byrna.com/cdn/shop/files/Orange-Byrna-SD-Universal-Kit_Full-Kit-Image_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "byrna-tcr",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/byrna-tcr-480.webp"
+      ],
+      "source": "Byrna TCR launcher | https://byrna.com/products/byrna-tcr | https://byrna.com/cdn/shop/files/Byrna-Tactical-Compact-Rifle_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "camping-survival",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/camping-survival-480.webp",
+        "/directory/photos/camping-survival-960.webp"
+      ],
+      "source": "`camping-survival` | Backpack, lantern, cook pot, compass and cord on a forest picnic table",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "can-am-off-road",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/can-am-off-road-480.webp",
+        "/directory/photos/can-am-off-road-960.webp"
+      ],
+      "source": "Can-Am Maverick X3 (off-road brand card) | Dunebuggydubai | CC BY-SA 4.0 | [File:Can am maverick x3 xrs turbo rr.jpg](https://commons.wikimedia.org/wiki/File:Can_am_maverick_x3_xrs_turbo_rr.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "can-am-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/can-am-official-480.webp",
+        "/directory/photos/can-am-official-960.webp"
+      ],
+      "source": "Can-Am Maverick X3 Turbo | Calreyn88 | CC BY-SA 4.0 | [File:Can-Am Maverick X3 Turbo Talos T2S.jpg](https://commons.wikimedia.org/wiki/File:Can-Am_Maverick_X3_Turbo_Talos_T2S.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
       "key": "catan-base-game",
       "kind": "official-product-or-brand",
       "files": [
@@ -1624,6 +4301,92 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "cobra-25ltd",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/cobra-25ltd-480.webp",
+        "/directory/photos/cobra-25ltd-960.webp"
+      ],
+      "source": "Cobra 25 LTD Classic CB Radio | https://www.cobra.com/products/25ltd | https://www.cobra.com/cdn/shop/files/Cobra_2024_Product-Launch_25-LTD_AM-FM_CB-Radio_Website_Hero-Image_v1.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "cobra-29ltd",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/cobra-29ltd-480.webp",
+        "/directory/photos/cobra-29ltd-960.webp"
+      ],
+      "source": "Cobra 29 LTD Classic CB Radio | https://www.cobra.com/products/29ltd | https://www.cobra.com/cdn/shop/files/Cobra_Website_Product-Heros_Transparent-PNGs_29LTD-Classic_v1_4bc7de94-6888-4051-828a-bc4a8f9b8d8c.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "cobra-29lx",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/cobra-29lx-480.webp",
+        "/directory/photos/cobra-29lx-960.webp"
+      ],
+      "source": "Cobra 29 LX Professional CB Radio | https://www.cobra.com/products/29lx | https://www.cobra.com/cdn/shop/files/29LX_AMFM_HERO_Badge.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "cobra-75-allroad",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/cobra-75-allroad-480.webp"
+      ],
+      "source": "Cobra 75 AllRoad CB Radio | https://www.cobra.com/products/75-allroad | https://www.cobra.com/cdn/shop/files/Cobra_Website_Product-Heros_Transparent-PNGs_75AllRoad_v1.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "coleman-classic-propane-stove-2-burner",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/coleman-classic-propane-stove-2-burner-480.webp",
+        "/directory/photos/coleman-classic-propane-stove-2-burner-960.webp"
+      ],
+      "source": "Coleman Classic Propane Gas Camping Stove, 2-Burner | https://www.coleman.com/grills-stoves/camping-stoves/multi-burner/classic-propane-gas-camping-stove-2-burner/SAP_2223621.html | https://s7d1.scene7.com/is/image/NewellBrands/-201428330-2000020943_r_01",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "cove",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/cove-480.webp"
+      ],
+      "source": "Cove Smart Home Security | https://www.covesmart.com/ | https://www.datocms-assets.com/10154/1767635137-alula_equipment.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "darn-tough-hiker-boot-full-cushion",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/darn-tough-hiker-boot-full-cushion-480.webp",
+        "/directory/photos/darn-tough-hiker-boot-full-cushion-960.webp"
+      ],
+      "source": "Darn Tough Men's Hiker Boot Full Cushion Midweight Socks | https://darntough.com/products/mens-merino-wool-hiker-boot-full-cushion-midweight-hiking-socks | https://darntough.com/cdn/shop/files/1405_Walnut.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "datrex-emergency-water-dx1000w",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/datrex-emergency-water-dx1000w-480.webp",
+        "/directory/photos/datrex-emergency-water-dx1000w-960.webp"
+      ],
+      "source": "a case of foil emergency drinking-water pouches",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
       "key": "dji-matrice-4-series",
       "kind": "official-product-or-brand",
       "files": [
@@ -1654,6 +4417,28 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "earthroamer-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/earthroamer-official-480.webp",
+        "/directory/photos/earthroamer-official-960.webp"
+      ],
+      "source": "EarthRoamer official site | https://earthroamer.com/ | https://earthroamer.com/wp-content/uploads/2025/08/EarthRoamer-YouTube-Thumbnails-1-scaled.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "ecoflow-400w-portable-solar-panel",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ecoflow-400w-portable-solar-panel-480.webp",
+        "/directory/photos/ecoflow-400w-portable-solar-panel-960.webp"
+      ],
+      "source": "EcoFlow 400W Portable Solar Panel | https://us.ecoflow.com/products/ecoflow-400w-lightweight-portable-solar-panel | https://us.ecoflow.com/cdn/shop/files/ecoflow-us-ecoflow-400w-portable-solar-panel-solar-panels-400w-portable-solar-panel-1266991821.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "ecoflow-delta-2-max",
       "kind": "official-product-or-brand",
       "files": [
@@ -1664,6 +4449,71 @@
       "source": "EcoFlow DELTA 2 Max portable power station | EcoFlow | Official product photo from us.ecoflow.com (Shopify CDN files/ecoflow-us-ecoflow-delta-2-max-portable-power-station-delta-2-max-30402652930121.png), first image on the DELTA 2 Max product page, downloaded November 23, 2026. Image provided by EcoFlow. | Official catalog photo, flattened onto white for the card backdrop (native 1500 px used as the large srcset step, no upscaling). Image provided by EcoFlow.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ecoflow-delta-3-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ecoflow-delta-3-plus-480.webp"
+      ],
+      "source": "EcoFlow DELTA 3 Plus | https://us.ecoflow.com/products/delta-3-plus-portable-power-station | https://us.ecoflow.com/cdn/shop/files/ecoflow-us-ecoflow-delta-3-plus-portable-power-station-standalone-delta-3-plus-1179495741.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "ecoflow-delta-pro-ultra",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ecoflow-delta-pro-ultra-480.webp",
+        "/directory/photos/ecoflow-delta-pro-ultra-960.webp"
+      ],
+      "source": "EcoFlow DELTA Pro Ultra | https://www.ecoflow.com/us/delta-pro-ultra | https://www.ecoflow.com/responsive/picture/delta-pro-ultra/launch/swiper1.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "ecoflow-glacier-classic",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ecoflow-glacier-classic-480.webp",
+        "/directory/photos/ecoflow-glacier-classic-960.webp"
+      ],
+      "source": "EcoFlow GLACIER Classic Portable Fridge Freezer | https://us.ecoflow.com/products/ecoflow-glacier-classic-portable-fridge-freezer | https://us.ecoflow.com/cdn/shop/files/ecoflow-us-ecoflow-glacier-classic-portable-fridge-freezer-glacier-classic-35l-2x-glacier-plug-in-battery-1180663722.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "ecoflow-river-3-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ecoflow-river-3-plus-480.webp",
+        "/directory/photos/ecoflow-river-3-plus-960.webp"
+      ],
+      "source": "a compact portable energy reserve on a camp table",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "energysage",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/energysage-480.webp",
+        "/directory/photos/energysage-960.webp"
+      ],
+      "source": "a home with rooftop solar panels",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "enphase-battery",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/enphase-battery-480.webp",
+        "/directory/photos/enphase-battery-960.webp"
+      ],
+      "source": "wall-mounted home battery cabinets beside an electrical panel",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "epic-nano-xp-pitcher",
@@ -1725,6 +4575,97 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "estwing-tools",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/estwing-tools-480.webp",
+        "/directory/photos/estwing-tools-960.webp"
+      ],
+      "source": "a solid-steel hammer with a blue grip on a workbench",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "eton-blackout-buddy-co",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-blackout-buddy-co-320.webp"
+      ],
+      "source": "Eton American Red Cross Blackout Buddy Carbon Monoxide Detector | https://etoncorp.com/products/american-red-cross-blackout-buddy-carbon-monoxide-bbco | https://etoncorp.com/cdn/shop/files/1200x1200Front_600x.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "eton-blackout-buddy-h2o",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-blackout-buddy-h2o-235.webp"
+      ],
+      "source": "Eton American Red Cross Blackout Buddy H2O Water-Activated Flashlight | https://etoncorp.com/products/american-red-cross-blackout-buddy-h20-water-activated-flashlight | https://etoncorp.com/cdn/shop/files/Test1_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "eton-elite-executive-radio",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-elite-executive-radio-480.webp"
+      ],
+      "source": "Eton Elite Executive Radio | https://etoncorp.com/products/elite-executive-radio | https://etoncorp.com/cdn/shop/files/ExecutiveFace_600x.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "eton-elite-field-radio",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-elite-field-radio-480.webp"
+      ],
+      "source": "Eton Elite Field Radio | https://etoncorp.com/products/elitefield | https://etoncorp.com/cdn/shop/files/Slide1_3a127f7f-2b58-446c-97f6-099eeab4991d_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "eton-elite-traveler-radio",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-elite-traveler-radio-480.webp"
+      ],
+      "source": "Eton Elite Traveler Radio | https://etoncorp.com/products/elitetraveler | https://etoncorp.com/cdn/shop/products/Untitleddesign-2022-01-25T231544.418_600x.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "eton-red-cross-frx2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-red-cross-frx2-442.webp"
+      ],
+      "source": "Eton American Red Cross FRX2 Hand Crank Weather Radio | https://etoncorp.com/products/american-red-cross-frx2 | https://etoncorp.com/cdn/shop/files/1200x1200FrontandSide_600x.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "eton-red-cross-journey-radio",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-red-cross-journey-radio-263.webp"
+      ],
+      "source": "Eton American Red Cross Journey Emergency Radio | https://etoncorp.com/products/officially-licensed-american-red-cross-journey-compact-all-band-emergency-radio | https://etoncorp.com/cdn/shop/files/1200x1200front_78c6dca1-d2ab-4c27-8365-c2f718b92f20_600x.png",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "eton-roadguard-jump-starter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/eton-roadguard-jump-starter-480.webp"
+      ],
+      "source": "Eton RoadGuard Jump Starter with Air Compressor | https://etoncorp.com/products/roadguard-portable-compact-multi-function-jump-starter-with-air-compressor-led-flashlight-and-power-bank | https://etoncorp.com/cdn/shop/files/1200x1200Front_9d9036b8-6232-45e7-ae36-0f235cb96431_600x.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "eufy-solocam-s340",
       "kind": "official-product-or-brand",
       "files": [
@@ -1737,6 +4678,61 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "fema-app",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/fema-app-480.webp",
+        "/directory/photos/fema-app-960.webp"
+      ],
+      "source": "a phone showing a weather alert map beside a flashlight and kit",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "fenix-hm65r-v2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/fenix-hm65r-v2-480.webp",
+        "/directory/photos/fenix-hm65r-v2-960.webp"
+      ],
+      "source": "Fenix HM65R V2.0 Rechargeable Headlamp | https://www.fenixlighting.com/products/fenix-hm65r-v2-rechargeable-headlamp | https://www.fenixlighting.com/cdn/shop/files/fenix-HM65Rv2-rechargeable-headlamp_1200x1200.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "first-aid-only-50-person-272",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/first-aid-only-50-person-272-480.webp",
+        "/directory/photos/first-aid-only-50-person-272-960.webp"
+      ],
+      "source": "First Aid Only 50-Person 272-Piece First Aid Kit | https://firstaidonly.com/products/50-person-clear-front-plastic-first-aid-kit-272-pieces | https://firstaidonly.com/cdn/shop/files/50-person-clear-front-plastic-first-aid-kit-272-pieces-775.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "flo-smart-water-monitor",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/flo-smart-water-monitor-480.webp",
+        "/directory/photos/flo-smart-water-monitor-960.webp"
+      ],
+      "source": "Flo by Moen Smart Water Monitor and Shutoff | https://www.moen.com/products/900-001 | https://www.moen.com/cdn/shop/files/900-001_MO_KO_sq.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "four-wheel-campers",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/four-wheel-campers-480.webp",
+        "/directory/photos/four-wheel-campers-960.webp"
+      ],
+      "source": "Four Wheel Camper on a Toyota Tacoma | Gillfoto | CC BY-SA 4.0 | [File:Four Wheel Camper 5609.jpg](https://commons.wikimedia.org/wiki/File:Four_Wheel_Camper_5609.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
       "key": "garmin-dash-cam-mini-3",
       "kind": "official-product-or-brand",
       "files": [
@@ -1746,6 +4742,110 @@
       "source": "Garmin Dash Cam Mini 3 | Garmin | Official product photo from garmin.com (res.garmin.com/en/products/010-02899-00/v/cf-lg.jpg), Open Graph image on the Dash Cam Mini 3 product page, downloaded November 23, 2026. Image provided by Garmin. | Official catalog photo, flattened onto white for the card backdrop (native 600 px used as the large srcset step, no upscaling). Image provided by Garmin.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "garmin-inreach-messenger",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/garmin-inreach-messenger-446.webp"
+      ],
+      "source": "Garmin inReach Messenger | https://www.garmin.com/en-US/p/793265/ | https://res.garmin.com/en/products/010-02672-00/v/cf-lg.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "garmin-inreach-mini-2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/garmin-inreach-mini-2-372.webp"
+      ],
+      "source": "Garmin inReach Mini 2 Satellite Communicator | https://www.garmin.com/en-US/p/765374/ | https://res.garmin.com/en/products/010-02602-00/v/cf-lg-751bd56a-08aa-4b4f-a932-0e2d8ac71de7.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "generac-iq3500",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/generac-iq3500-480.webp",
+        "/directory/photos/generac-iq3500-960.webp"
+      ],
+      "source": "Generac iQ3500 Portable Inverter Generator with COsense | https://www.generac.com/residential-products/portable-generators/3500-portable-inverter-generator-with-cosense-50st-7723/ | https://www.generac.com/globalassets/products/residential/portable-generators/products/7127-7723/iq3500_portable_main-image.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "gerber-multi-plier-600-basic",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/gerber-multi-plier-600-basic-480.webp"
+      ],
+      "source": "Gerber Multi-Plier 600 Basic | https://gerbergear.com/products/multi-plier-600-basic-g07550n | https://gerbergear.com/cdn/shop/files/resource_gerberamericas_g07550n.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "ghost-robotics-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ghost-robotics-official-480.webp",
+        "/directory/photos/ghost-robotics-official-960.webp"
+      ],
+      "source": "NOT FOUND IN IMAGE_CREDITS.md",
+      "license": "unknown",
+      "creditSection": null
+    },
+    {
+      "key": "gibraltar-perimeter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/gibraltar-perimeter-480.webp",
+        "/directory/photos/gibraltar-perimeter-960.webp"
+      ],
+      "source": "Gibraltar Perimeter Security | https://www.gibraltarperimetersecurity.com/ | https://www.gibraltarperimetersecurity.com/og/default.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "goal-zero-lighthouse-600",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/goal-zero-lighthouse-600-480.webp"
+      ],
+      "source": "Goal Zero Lighthouse 600 Lantern & USB Power Hub | https://goalzero.com/products/lighthouse-600-lantern-usb-power-hub | https://goalzero.com/cdn/shop/products/2a80fdd023ddde5f7476536c35575890_1024x1024.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "goal-zero-nomad-100-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/goal-zero-nomad-100-plus-452.webp"
+      ],
+      "source": "Goal Zero Nomad 100+ Foldable Solar Panel | https://goalzero.com/products/nomad-100-plus-foldable-solar-panel | https://goalzero.com/cdn/shop/files/Nomad100__1_1024x1024.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "goal-zero-nomad-50",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/goal-zero-nomad-50-480.webp",
+        "/directory/photos/goal-zero-nomad-50-960.webp"
+      ],
+      "source": "Goal Zero Nomad 50 Portable Solar Panel | https://goalzero.com/products/nomad-50-solar-panel | https://goalzero.com/cdn/shop/products/66b7493315a406760125336f43c245a3_1024x1024.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "goal-zero-yeti-1500",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/goal-zero-yeti-1500-480.webp"
+      ],
+      "source": "Goal Zero Yeti 1500 | https://goalzero.com/products/yeti-1500-portable-power-station-lifepo4-battery | https://goalzero.com/cdn/shop/files/Yeti_1500_1024x1024.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "goal-zero-yeti-500",
@@ -1777,12 +4877,43 @@
       "key": "google-nest-cam-indoor-wired-3rd-gen",
       "kind": "official-product-or-brand",
       "files": [
-        "/directory/photos/google-nest-cam-indoor-wired-3rd-gen-480.webp",
-        "/directory/photos/google-nest-cam-indoor-wired-3rd-gen-512.webp"
+        "/directory/photos/google-nest-cam-indoor-wired-3rd-gen-430.webp"
       ],
       "source": "Google Nest Cam Indoor (wired, 3rd gen) | Google | Official product photo from store.google.com (lh3.googleusercontent.com ...), Open Graph image on the Nest Cam Indoor (wired, 3rd gen) page, downloaded November 23, 2026. Image provided by Google. | Official catalog photo, flattened onto white for the card backdrop (native 512 px used as the large srcset step, no upscaling). Image provided by Google.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "grayl-geopress-24oz",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/grayl-geopress-24oz-480.webp",
+        "/directory/photos/grayl-geopress-24oz-960.webp"
+      ],
+      "source": "GRAYL 24oz GeoPress Purifier | https://grayl.com/products/24oz-geopress-purifier | https://grayl.com/cdn/shop/files/GEO_BALI_BLUE_STD_1800px_61db9ee3-9d6c-46d8-9d82-51bff7764d9c.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "grayl-ultrapress-16-9oz",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/grayl-ultrapress-16-9oz-480.webp"
+      ],
+      "source": "GRAYL UltraPress 16.9oz Filter and Purifier Bottle | https://grayl.com/products/16-9oz-ultrapress-purifier | https://grayl.com/cdn/shop/products/500-FOR_STD_1800px.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "grid-doctor-3300-emp",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/grid-doctor-3300-emp-480.webp",
+        "/directory/photos/grid-doctor-3300-emp-960.webp"
+      ],
+      "source": "`grid-doctor-3300-emp` | Home breaker panel with a compact protection module beside it",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
     },
     {
       "key": "harvest-right-countertop-360",
@@ -1796,6 +4927,50 @@
       "source": "Harvest Right Countertop 360 freeze dryer | Harvest Right | Official product photo from harvestright.com (Shopify CDN files/countertop-freeze-dryer-black-right_9f651329-22aa-4c6d-8c6d-62f24185943e.jpg, store 1/0882/1030/9367), first image on the Countertop 360 product page, downloaded November 23, 2026. Image provided by Harvest Right. | Official catalog photo, flattened onto white for the card backdrop (native 4052 px used as the large srcset step, no upscaling). Image provided by Harvest Right.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "honda-eu2200i",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/honda-eu2200i-480.webp",
+        "/directory/photos/honda-eu2200i-960.webp"
+      ],
+      "source": "Honda EU2200i Super Quiet Inverter Generator | https://powerequipment.honda.com/generators/models/eu2200i | https://services.powerequipment.honda.com/content/images/pe/models/eu2200itag_pe_imglg.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "honda-eu3200i",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/honda-eu3200i-480.webp",
+        "/directory/photos/honda-eu3200i-960.webp"
+      ],
+      "source": "Honda EU3200i Super Quiet Inverter Generator | https://powerequipment.honda.com/generators/models/eu3200i | https://services.powerequipment.honda.com/content/images/pe/models/eu3200i_pe_imglg.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "honda-power",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/honda-power-480.webp",
+        "/directory/photos/honda-power-960.webp"
+      ],
+      "source": "Honda Power Equipment | https://powerequipment.honda.com/generators/models/eu2200i | https://services.powerequipment.honda.com/content/images/pe/models/features/eu2200i_profile.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "hothands-hand-warmers",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/hothands-hand-warmers-480.webp",
+        "/directory/photos/hothands-hand-warmers-960.webp"
+      ],
+      "source": "air-activated hand warmer pouches on winter gloves",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "hoverair-aqua",
@@ -1871,6 +5046,50 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "ineos-grenadier",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ineos-grenadier-480.webp",
+        "/directory/photos/ineos-grenadier-960.webp"
+      ],
+      "source": "INEOS Grenadier | Alexander Migl | CC BY-SA 4.0 | [File:Ineos Grenadier 1X7A6399.jpg](https://commons.wikimedia.org/wiki/File:Ineos_Grenadier_1X7A6399.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "inkas-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/inkas-official-480.webp",
+        "/directory/photos/inkas-official-960.webp"
+      ],
+      "source": "INKAS Armored official site | https://inkasarmored.com/ | https://inkasarmored.com/wp-content/uploads/INKAS-Armored-Sentry-Civilian-01.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "inspired-overland",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/inspired-overland-480.webp",
+        "/directory/photos/inspired-overland-960.webp"
+      ],
+      "source": "Inspired Overland rooftop tents | https://inspiredoverland.com/ | https://inspiredoverland.com/cdn/shop/files/unnamed_98.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "instafire",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/instafire-480.webp",
+        "/directory/photos/instafire-960.webp"
+      ],
+      "source": "`instafire` | Plain fire-starter pouch beside a small campfire",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
       "key": "instant-pot-duo-6qt",
       "kind": "official-product-or-brand",
       "files": [
@@ -1904,6 +5123,16 @@
       "source": "Instant Pot Vortex Plus 6QT ClearCook Air Fryer | Instant Pot | Official product photo from instantpot.com (Shopify CDN files/IB_Quiet-Mark_Silos_ATF_Square_140-3088-01_Vortex-Plus-ClearCook_6QT.png), first image on the Vortex Plus 6QT ClearCook product page, downloaded November 23, 2026. Image provided by Instant Brands. | Official catalog photo, flattened onto white for the card backdrop (native 798 px used as the large srcset step, no upscaling). Image provided by Instant Pot.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "iridium-go-exec",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/iridium-go-exec-480.webp"
+      ],
+      "source": "Iridium GO! exec | https://www.iridium.com/products/iridium-go-exec-portable-wireless-access-device | https://www.iridium.com/sites/default/files/styles/og_image/public/images/product/products-go-exec-front-1.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "ispring-df1",
@@ -2022,6 +5251,16 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "jackery-explorer-1000-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jackery-explorer-1000-plus-480.webp"
+      ],
+      "source": "Jackery Explorer 1000 Plus | https://www.jackery.com/products/jackery-explorer-1000-plus-portable-power-station | https://www.jackery.com/cdn/shop/files/jackery-portable-power-station-explorer-1000-plus-8235297.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "jackery-explorer-2000-v2",
       "kind": "official-product-or-brand",
       "files": [
@@ -2032,6 +5271,351 @@
       "source": "Jackery Explorer 2000 v2 portable power station | Jackery | Official product photo from jackery.com (Shopify CDN files/explorer-2000-v2-portable-power-station-8979684.webp), first image on the Explorer 2000 v2 product page, downloaded November 23, 2026. Image provided by Jackery. | Official catalog photo, flattened onto white for the card backdrop (native 1600 px used as the large srcset step, no upscaling). Image provided by Jackery.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "jackery-solarsaga-100-prime",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jackery-solarsaga-100-prime-480.webp"
+      ],
+      "source": "Jackery SolarSaga 100 Prime Solar Panel | https://www.jackery.com/products/jackery-solarsaga-100-prime-solar-panel | https://www.jackery.com/cdn/shop/files/jackery-solarsaga-100-prime-solar-panel-refurbished-1712823.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "jackery-solarsaga-200",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jackery-solarsaga-200-480.webp",
+        "/directory/photos/jackery-solarsaga-200-960.webp"
+      ],
+      "source": "Jackery SolarSaga 200W Solar Panel | https://www.jackery.com/products/solarsaga-200w-solar-panel | https://www.jackery.com/cdn/shop/files/jackery-solarsaga-200w-solar-panel-8524590.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "jbl-flip-7",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jbl-flip-7-480.webp"
+      ],
+      "source": "JBL Flip 7 | https://www.jbl.com/FLIP-7.html | https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf45a2daf/JBL_FLIP_7_HERO_SQUAD_054_x2.png",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "jeep-gladiator",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jeep-gladiator-480.webp",
+        "/directory/photos/jeep-gladiator-960.webp"
+      ],
+      "source": "Jeep Gladiator | Alexander Migl | CC BY-SA 4.0 | [File:Jeep Gladiator (JT) IMG 3988.jpg](https://commons.wikimedia.org/wiki/File:Jeep_Gladiator_(JT)_IMG_3988.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "jeep-wrangler",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/jeep-wrangler-480.webp",
+        "/directory/photos/jeep-wrangler-960.webp"
+      ],
+      "source": "Jeep Wrangler | Benespit | CC BY-SA 4.0 | [File:0 Jeep Wrangler Rubicon (JL) 1.jpg](https://commons.wikimedia.org/wiki/File:0_Jeep_Wrangler_Rubicon_(JL)_1.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "kahtoola-microspikes",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/kahtoola-microspikes-386.webp"
+      ],
+      "source": "Kahtoola MICROspikes Footwear Traction | https://kahtoola.com/traction/microspikes-footwear-traction/ | https://cdn11.bigcommerce.com/s-m69x292sg4/products/115/images/1289/microspikes-red-lead-white__87607.1795182577.386.513.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "katadyn",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/katadyn-480.webp",
+        "/directory/photos/katadyn-960.webp"
+      ],
+      "source": "Katadyn | https://katadyn.com/en-us/ | https://katadyn.com/cdn/shop/files/IMG_Katadyn_8021573_BeFree_Bottle_Inuse_0.7L_green_8_be69e6b2-b94e-42fb-81cb-ee54e3c05d16.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "katadyn-befree-0-6l",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/katadyn-befree-0-6l-480.webp",
+        "/directory/photos/katadyn-befree-0-6l-960.webp"
+      ],
+      "source": "a soft water flask with a filter cap beside a mountain stream",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "kidde-kn-cob-lp2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/kidde-kn-cob-lp2-480.webp",
+        "/directory/photos/kidde-kn-cob-lp2-960.webp"
+      ],
+      "source": "Kidde Battery Operated Carbon Monoxide Alarm KN-COB-LP2 | https://www.kidde.com/products/carbon-monoxide-alarms/battery-carbon-monoxide-alarm-with-hush | https://a.mktgcdn.com/p/_0itVnAF4C7WdsZFdEbXy847mWLZ1zbo5pmtl6aubqY/3000x3000.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "kidde-pro-210",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/kidde-pro-210-480.webp",
+        "/directory/photos/kidde-pro-210-960.webp"
+      ],
+      "source": "Kidde Pro 210 Fire Extinguisher | https://www.kidde.com/products/commercial-fire-extinguishers/pro-210-fire-extinguisher | https://a.mktgcdn.com/p/FZFB7ywN5t0pxl-rpzZRuT5cqdr0WHr55cIYmbGS1KY/3000x3000.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "kidde-smart-combo-smoke-co",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/kidde-smart-combo-smoke-co-480.webp",
+        "/directory/photos/kidde-smart-combo-smoke-co-960.webp"
+      ],
+      "source": "Kidde Smart Combo Smoke + CO Alarm | https://www.kidde.com/products/smart/smart-combo-smoke-co-alarm-hardwired-aa-backup-battery | https://a.mktgcdn.com/p/P2P_22XQv-b95jlZzfizJYo1VaOR6p6ZiMeqURcqhzk/3000x3000.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "knightscope-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/knightscope-official-480.webp",
+        "/directory/photos/knightscope-official-960.webp"
+      ],
+      "source": "Knightscope official site | https://knightscope.com/the-force | https://knightscope.com/hubfs/raw_assets/public/knightscope/assets/force/k5_night.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "land-rover-defender",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/land-rover-defender-480.webp",
+        "/directory/photos/land-rover-defender-960.webp"
+      ],
+      "source": "Land Rover Defender | Alexander Migl | CC BY-SA 4.0 | [File:Land Rover Defender (L663) DSC 9062.jpg](https://commons.wikimedia.org/wiki/File:Land_Rover_Defender_(L663)_DSC_9062.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "leatherman-arc",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-arc-480.webp"
+      ],
+      "source": "Leatherman ARC Multi-Tool | https://www.leatherman.com/products/arc | https://www.leatherman.com/cdn/shop/files/arc_20260402201530_u9uh.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-bond",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-bond-480.webp",
+        "/directory/photos/leatherman-bond-960.webp"
+      ],
+      "source": "Leatherman Bond Multi-Tool | https://www.leatherman.com/products/bond | https://www.leatherman.com/cdn/shop/files/bond_burnt_sienna_fanned_front_20260402201655.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-crunch",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-crunch-480.webp"
+      ],
+      "source": "Leatherman Crunch Multi-Tool | https://www.leatherman.com/products/crunch | https://www.leatherman.com/cdn/shop/files/crunch_20260402201749.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-free-p4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-free-p4-480.webp"
+      ],
+      "source": "Leatherman Free P4 Multi-Tool | https://www.leatherman.com/products/free-p4 | https://www.leatherman.com/cdn/shop/files/free_p4_20260402201624_lkpl.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-micra",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-micra-480.webp"
+      ],
+      "source": "Leatherman Micra Keychain Multi-Tool | https://www.leatherman.com/products/micra | https://www.leatherman.com/cdn/shop/files/micra_20260402201535_gze7.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-raptor-rescue",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-raptor-rescue-480.webp"
+      ],
+      "source": "Leatherman Raptor Rescue | https://www.leatherman.com/products/raptor-rescue | https://www.leatherman.com/cdn/shop/files/leatherman_raptor_rescue_black_20260402201511_h2h2.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-rebar",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-rebar-480.webp",
+        "/directory/photos/leatherman-rebar-960.webp"
+      ],
+      "source": "Leatherman Rebar Multi-Tool | https://www.leatherman.com/products/rebar | https://www.leatherman.com/cdn/shop/files/rebar_20260402201743_enxy.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-signal",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-signal-480.webp"
+      ],
+      "source": "Leatherman Signal Multi-Tool | https://www.leatherman.com/products/signal | https://www.leatherman.com/cdn/shop/files/signal_20260402201811_dz9x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-skeletool-cx",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-skeletool-cx-480.webp"
+      ],
+      "source": "Leatherman Skeletool CX Multi-Tool | https://www.leatherman.com/products/skeletool-cx | https://www.leatherman.com/cdn/shop/files/skeletool_cx_20260402201813.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-super-tool-300",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-super-tool-300-480.webp"
+      ],
+      "source": "Leatherman Super Tool 300 | https://www.leatherman.com/products/super-tool-300 | https://www.leatherman.com/cdn/shop/files/super_tool_300_20260402201843_rnat.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-surge",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-surge-480.webp",
+        "/directory/photos/leatherman-surge-960.webp"
+      ],
+      "source": "Leatherman Surge Multi-Tool | https://www.leatherman.com/products/surge | https://www.leatherman.com/cdn/shop/files/surge_20260402201845_8ac4.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-wave-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-wave-plus-480.webp",
+        "/directory/photos/leatherman-wave-plus-960.webp"
+      ],
+      "source": "Leatherman Wave Plus Multi-Tool | https://www.leatherman.com/products/wave | https://www.leatherman.com/cdn/shop/files/wave_20260402201902_5dib.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "leatherman-wingman",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/leatherman-wingman-480.webp"
+      ],
+      "source": "Leatherman Wingman Multi-Tool | https://www.leatherman.com/products/wingman | https://www.leatherman.com/cdn/shop/files/wingman_20260402201906_plfc.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "legacy-120-serving-entree-bucket",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/legacy-120-serving-entree-bucket-460.webp"
+      ],
+      "source": "Legacy Food Storage 120-Serving Entrée Bucket | https://www.legacyfoodstorage.com/products/120-serving-entree-bucket | https://www.legacyfoodstorage.com/cdn/shop/products/EG0120_1024x1024.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "legacy-60-serving-entree-bucket",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/legacy-60-serving-entree-bucket-460.webp"
+      ],
+      "source": "Legacy Food Storage 60-Serving Entrée Bucket | https://www.legacyfoodstorage.com/products/60-serving-entree-bucket | https://www.legacyfoodstorage.com/cdn/shop/products/EB0060a_1024x1024.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "legacy-premium-240-serving-package",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/legacy-premium-240-serving-package-460.webp"
+      ],
+      "source": "Legacy Food Storage Premium 240-Serving Package | https://www.legacyfoodstorage.com/products/premium-240-serving-package | https://www.legacyfoodstorage.com/cdn/shop/products/GF0240a_627dd687-b1e9-4a0b-9c85-892fea4f1148_1024x1024.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "lifestraw-family",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/lifestraw-family-480.webp"
+      ],
+      "source": "LifeStraw Family Emergency Water Purifier | https://lifestraw.com/products/lifestraw-family-emergency-water-filter | https://lifestraw.com/cdn/shop/products/LifeStrawonGreyw-Shadows-26_1200x1200.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "lifestraw-personal",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/lifestraw-personal-335.webp"
+      ],
+      "source": "LifeStraw Personal Water Filter Straw | https://lifestraw.com/products/lifestraw | https://lifestraw.com/cdn/shop/products/LifeStrawonGreyw-Shadows-7_1200x1200.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "lifestraw-straw-emergency-pack",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/lifestraw-straw-emergency-pack-480.webp"
+      ],
+      "source": "LifeStraw Straw Emergency Pack | https://lifestraw.com/products/lifestraw-straw-emergency-pack | https://lifestraw.com/cdn/shop/files/variety-pack_1200x1200.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "liftmaster-gate-operators",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/liftmaster-gate-operators-480.webp",
+        "/directory/photos/liftmaster-gate-operators-960.webp"
+      ],
+      "source": "an automatic swing gate opener arm on a black steel driveway gate",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "litime-1000w-12v-inverter",
@@ -2166,6 +5750,16 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "lodge-classic-cast-iron-skillet",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/lodge-classic-cast-iron-skillet-480.webp"
+      ],
+      "source": "Lodge Classic Cast Iron Skillet | https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet | https://www.lodgecastiron.com/cdn/shop/files/L14SK3_L.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "mario-kart-world",
       "kind": "official-product-or-brand",
       "files": [
@@ -2177,6 +5771,104 @@
       "source": "Mario Kart World | Nintendo | Official product image from nintendo.com (assets.nintendo.com store/software/switch2/70010000095431/...), used on the official Mario Kart World store page, downloaded November 23, 2026. Image provided by Nintendo. | Official catalog photo, flattened onto white for the card backdrop (native 1920 px used as the large srcset step, no upscaling). Image provided by Nintendo.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "midland-cliptalk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-cliptalk-480.webp",
+        "/directory/photos/midland-cliptalk-960.webp"
+      ],
+      "source": "Midland ClipTalk Portable FRS Radio | https://midlandusa.com/products/cliptalk-radio-cliptalk-portable-frs-radio | https://midlandusa.com/cdn/shop/files/CT_W_AWARD_b3734f39-3f59-4ba2-bb1f-fa678891d430.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-er310-crank-radio",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-er310-crank-radio-480.webp",
+        "/directory/photos/midland-er310-crank-radio-960.webp"
+      ],
+      "source": "Midland ER310 Emergency Crank Weather Radio | https://midlandusa.com/products/er310-portable-emergency-crank-weather-radio | https://midlandusa.com/cdn/shop/files/ER310Front-CNN.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-er310pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-er310pro-480.webp",
+        "/directory/photos/midland-er310pro-960.webp"
+      ],
+      "source": "Midland ER310 Pro Emergency Crank Radio with Power Bank | https://midlandusa.com/products/er310pro-portable-emergency-crank-radio-with-power-bank | https://midlandusa.com/cdn/shop/files/ER310PROFront_2000.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-gxt1000x3vp4",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-gxt1000x3vp4-480.webp",
+        "/directory/photos/midland-gxt1000x3vp4-960.webp"
+      ],
+      "source": "Midland GXT1000X3VP4 GMRS Walkie Talkie Three-Pack | https://midlandusa.com/products/gxt1000x3vp4-gmrs-walkie-talkie-3-pack | https://midlandusa.com/cdn/shop/files/1GXT1000X3VP4Front3.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-gxt67-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-gxt67-pro-480.webp"
+      ],
+      "source": "Midland GXT67 PRO GMRS 5-Watt Walkie Talkie | https://midlandusa.com/products/gxt67-pro-gmrs-5-watt-walkie-talkie | https://midlandusa.com/cdn/shop/files/GXT67_PRO_Front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-mxt115p",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-mxt115p-480.webp",
+        "/directory/photos/midland-mxt115p-960.webp"
+      ],
+      "source": "Midland MXT115 MicroMobile GMRS Two-Way Radio | https://midlandusa.com/products/mxt115p-micromobile-gmrs-two-way-radio | https://midlandusa.com/cdn/shop/files/MXT115P_Front_2000X2000_Gray_1.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-overlanding-collection",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-overlanding-collection-480.webp",
+        "/directory/photos/midland-overlanding-collection-960.webp"
+      ],
+      "source": "Midland overlanding radios | https://midlandusa.com/collections/overlanding | https://midlandusa.com/cdn/shop/collections/Overlanding-collection-page-hero-image.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-t71vp3-xtalker",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-t71vp3-xtalker-480.webp",
+        "/directory/photos/midland-t71vp3-xtalker-960.webp"
+      ],
+      "source": "Midland T71VP3 X-Talker FRS Walkie Talkie Two-Pack | https://midlandusa.com/products/t71vp3-x-talker-frs-walkie-talkie-2-pack | https://midlandusa.com/cdn/shop/files/1T71VP3front2.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "midland-wr400",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/midland-wr400-480.webp",
+        "/directory/photos/midland-wr400-960.webp"
+      ],
+      "source": "Midland WR400 Deluxe NOAA Weather Alert Radio | https://midlandusa.com/products/wr400-deluxe-noaa-weather-alert-radio | https://midlandusa.com/cdn/shop/files/1WR400Front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "milwaukee-2719-20",
@@ -2231,6 +5923,26 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "mira-safety",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mira-safety-480.webp"
+      ],
+      "source": "MIRA Safety | https://www.mirasafety.com/products/cm-6m-tactical-gas-mask | https://www.mirasafety.com/cdn/shop/products/CM-6M_tactical_gas_mask_1.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mountain-house-beef-stew-pouch",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mountain-house-beef-stew-pouch-480.webp"
+      ],
+      "source": "Mountain House Beef Stew Pouch | https://mountainhouse.com/products/beef-stew-pouch | https://mountainhouse.com/cdn/shop/files/55145-beef-stew-pouch_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "mountain-house-best-sellers-kit",
       "kind": "official-product-or-brand",
       "files": [
@@ -2244,6 +5956,153 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "mountain-house-breakfast-skillet-pouch",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mountain-house-breakfast-skillet-pouch-480.webp"
+      ],
+      "source": "Mountain House Breakfast Skillet Pouch | https://mountainhouse.com/products/breakfast-skillet-pouch | https://mountainhouse.com/cdn/shop/files/55451-breakfast-skillet-pouch_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mountain-house-classic-bucket",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mountain-house-classic-bucket-422.webp"
+      ],
+      "source": "Mountain House Classic Meal Assortment Bucket | https://mountainhouse.com/products/classic-assortment-bucket | https://mountainhouse.com/cdn/shop/files/0081635-classic-bucket-front_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mountain-house-macaroni-cheese-2-pack",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mountain-house-macaroni-cheese-2-pack-480.webp"
+      ],
+      "source": "Mountain House Creamy Macaroni and Cheese 2-Pack | https://mountainhouse.com/products/creamy-macaroni-cheese-2-pack | https://mountainhouse.com/cdn/shop/files/5519402-2-pack-main_600x.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mr-heater-buddy-flex",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mr-heater-buddy-flex-480.webp"
+      ],
+      "source": "Mr. Heater Buddy FLEX Heater | https://mrheater.com/products/buddy-flex-heater | https://mrheater.com/cdn/shop/files/mhflex-01-700.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mr-heater-buddy-flex-cooker",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mr-heater-buddy-flex-cooker-480.webp"
+      ],
+      "source": "Mr. Heater Buddy FLEX Cooker | https://mrheater.com/products/buddy-flex-cooker | https://mrheater.com/cdn/shop/files/mh8cflex-cooker_700x700_48697f23-c3f6-48c1-a294-ebbfec367725.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mr-heater-portable-buddy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mr-heater-portable-buddy-480.webp",
+        "/directory/photos/mr-heater-portable-buddy-960.webp"
+      ],
+      "source": "Mr. Heater Portable Buddy Heater | https://mrheater.com/products/portable-buddy-heater | https://mrheater.com/cdn/shop/files/MRH-BUDDY-MH9BX-PORTBUDDY-MI.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mulholland-brand",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mulholland-brand-480.webp",
+        "/directory/photos/mulholland-brand-498.webp",
+        "/directory/photos/mulholland-brand-684.webp"
+      ],
+      "source": "Mulholland Brand aluminum fence and gates (cropped to the photo area) | https://mulhollandbrand.com/ | https://mulhollandbrand.com/og-default.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "my-patriot-supply",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-480.webp",
+        "/directory/photos/my-patriot-supply-960.webp"
+      ],
+      "source": "`my-patriot-supply` | Emergency pantry: unlabeled food buckets, #10 cans and pouches on wooden shelves",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "my-patriot-supply-emergency-food",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-emergency-food-480.webp",
+        "/directory/photos/my-patriot-supply-emergency-food-960.webp"
+      ],
+      "source": "`my-patriot-supply-emergency-food` | Stacked white emergency food buckets and meal pouches",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "my-patriot-supply-generators",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-generators-480.webp",
+        "/directory/photos/my-patriot-supply-generators-960.webp"
+      ],
+      "source": "`my-patriot-supply-generators` | Portable power station and folding solar panel on a porch",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "mymedic-bleeding-control-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mymedic-bleeding-control-kit-480.webp"
+      ],
+      "source": "My Medic Bleeding Control Kit | https://mymedic.com/products/bleeding-control-kit | https://mymedic.com/cdn/shop/files/BleedingControl_1200x1200.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mymedic-cat-tourniquet-gen-7",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mymedic-cat-tourniquet-gen-7-480.webp",
+        "/directory/photos/mymedic-cat-tourniquet-gen-7-960.webp"
+      ],
+      "source": "My Medic C-A-T Tourniquet, Gen 7 | https://mymedic.com/products/cat-tourniquet-gen-7 | https://mymedic.com/cdn/shop/products/30-0001_g_1_2000x_2000x_55e8ea86-ff6e-4cb3-a5c2-6a08a819b654_1200x1200.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mymedic-everyday-carry",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mymedic-everyday-carry-480.webp"
+      ],
+      "source": "My Medic Everyday Carry First Aid Kit | https://mymedic.com/products/everyday-carry | https://mymedic.com/cdn/shop/files/Red-3-4--Right-EDC_1_1200x1200.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "mymedic-myfak",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/mymedic-myfak-480.webp"
+      ],
+      "source": "My Medic MyFAK First Aid and Trauma Kit | https://mymedic.com/products/myfak-firstaidkit | https://mymedic.com/cdn/shop/products/red-myfak-ifak_1200x1200.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "nintendo-switch-2",
       "kind": "official-product-or-brand",
       "files": [
@@ -2253,6 +6112,39 @@
       "source": "Nintendo Switch 2 | Nintendo | Official product image from nintendo.com (assets.nintendo.com ... /Global Nav/Explore/Nintendo-Switch-2.png), used on Nintendo’s official US site, downloaded November 23, 2026. Image provided by Nintendo. | Official catalog photo, flattened onto white for the card backdrop (native 616 px used as the large srcset step, no upscaling). Image provided by Nintendo.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "nitecore-edc29",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nitecore-edc29-480.webp",
+        "/directory/photos/nitecore-edc29-960.webp"
+      ],
+      "source": "NITECORE EDC29 USB-C Rechargeable EDC Flashlight | https://nitecorestore.com/collections/all-products/products/nitecore-edc29-usb-c-rechargeable-flat-edc-flashlight | https://nitecorestore.com/cdn/shop/files/FL-NITE-EDC29-BK_GN.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "nitecore-edc37",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nitecore-edc37-480.webp",
+        "/directory/photos/nitecore-edc37-960.webp"
+      ],
+      "source": "NITECORE EDC37 USB-C Rechargeable Flashlight | https://nitecorestore.com/collections/all-products/products/edc37-usbc-rechargeable-bright-flat-flashlight | https://nitecorestore.com/cdn/shop/files/edc37.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "nitecore-hc65-uhe",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nitecore-hc65-uhe-480.webp",
+        "/directory/photos/nitecore-hc65-uhe-960.webp"
+      ],
+      "source": "NITECORE HC65 UHE USB-C Rechargeable Headlamp | https://nitecorestore.com/collections/all-products/products/nitecore-hc65-uhe-usb-c-rechargeable-headlamp | https://nitecorestore.com/cdn/shop/files/black_hc65uhe.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "noco-air20",
@@ -2277,6 +6169,17 @@
       "source": "NOCO Boost Air jump starter and air compressor | NOCO | Official product photo from no.co (media/catalog/product/a/x/ax65-front_1.png), product image on the Boost Air page, downloaded November 23, 2026. Image provided by NOCO. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by NOCO.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "noco-boost-gb40",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/noco-boost-gb40-480.webp",
+        "/directory/photos/noco-boost-gb40-960.webp"
+      ],
+      "source": "a handheld lithium jump starter clamped to a car battery",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "noco-gb70",
@@ -2310,6 +6213,38 @@
       "source": "NordVPN merchant card | NordVPN | CJ Affiliate (link 15640650, “faster-than-ever-300x250”) | Image provided by NordVPN via CJ Affiliate.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "north-american-rescue",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/north-american-rescue-480.webp",
+        "/directory/photos/north-american-rescue-960.webp"
+      ],
+      "source": "North American Rescue | https://www.narescue.com/ | https://www.narescue.com/media/wysiwyg/FP_ARS_1210x910_4.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "nwr",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/nwr-480.webp",
+        "/directory/photos/nwr-960.webp"
+      ],
+      "source": "a tabletop weather alert radio on a kitchen counter",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "olight-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/olight-official-480.webp"
+      ],
+      "source": "Olight official shop | https://www.olight.com/all-products | https://cdn.olightstore.com/image/atubdt-iz2n6g.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
     },
     {
       "key": "owala-freesip-24",
@@ -2359,6 +6294,132 @@
       "source": "Peak Refuel Homestyle Chicken & Rice | Peak Refuel | Official product photo from peakrefuel.com (Shopify CDN files/Homestyle_Chicken_Ricel-Front.png), first image on the Homestyle Chicken & Rice product page, downloaded November 23, 2026. Image provided by Peak Refuel. | Official catalog photo, flattened onto white for the card backdrop (native 1000 px used as the large srcset step, no upscaling). Image provided by Peak Refuel.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "pelican-cases",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/pelican-cases-480.webp",
+        "/directory/photos/pelican-cases-960.webp"
+      ],
+      "source": "Pelican protective cases | https://www.pelican.com/us/en/product/cases/protector/1510 | https://pelicanweb-prod.s3.us-west-1.amazonaws.com/public/products/cases/1510/pelican-hard-rolling-travel-carry-on-case.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "petzl-actik-core",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/petzl-actik-core-480.webp",
+        "/directory/photos/petzl-actik-core-960.webp"
+      ],
+      "source": "Petzl ACTIK CORE Headlamp | https://www.petzl.com/us/en/sport/products/multisport-headlamps/actik-core/ACTIK-CORE_SPO_a2mTx000000o12YIAQ.html | https://www.petzl.com/dw/image/v2/BLQG_PRD/on/demandware.static/-/Sites-petzl-master-catalog/default/dw7c20694e/media/product/E065AB02-ACTIK-CORE_LowRes_068Tx000006KwpDIAS.jpeg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "philips-heartstart-onsite",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/philips-heartstart-onsite-217.webp"
+      ],
+      "source": "Philips HeartStart OnSite AED | https://www.usa.philips.com/healthcare/product/HCM5066A | https://images.philips.com/is/image/philipsconsumer/f94a3ca24fd84c718a89ad2b0088daed",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "pick-cleanwaste-go-anywhere",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/pick-cleanwaste-go-anywhere-480.webp",
+        "/directory/photos/pick-cleanwaste-go-anywhere-960.webp"
+      ],
+      "source": "Cleanwaste GO Anywhere portable toilet | https://cleanwaste.com/product/go-anywhere-portable-toilet/ | https://cleanwaste.com/wp-content/uploads/2023/07/Cleanwaste-GO-anywhere-portable-toilet-White-Front.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "polaris-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/polaris-official-480.webp",
+        "/directory/photos/polaris-official-960.webp"
+      ],
+      "source": "Polaris off-road vehicle | Calreyn88 | CC BY-SA 4.0 | [File:2023 Polaris RZR Pro R.jpg](https://commons.wikimedia.org/wiki/File:2023_Polaris_RZR_Pro_R.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "ready-hour",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ready-hour-480.webp",
+        "/directory/photos/ready-hour-960.webp"
+      ],
+      "source": "`ready-hour` | #10 cans and two food-kit buckets on a kitchen island",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "readywise-1-month-two-bucket-bundle",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/readywise-1-month-two-bucket-bundle-480.webp"
+      ],
+      "source": "ReadyWise Emergency 1-Month Supply, 2-Bucket Bundle | https://readywise.com/products/emergency-1-month-supply-2-bucket-bundle | https://readywise.com/cdn/shop/files/RW-26_1-Month-Bundle_PDP-A_600x600.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "readywise-4-week-food-supply",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/readywise-4-week-food-supply-480.webp"
+      ],
+      "source": "ReadyWise 4-Week Emergency Food Supply | https://readywise.com/products/4-week-emergency-food-supply-1-800-calories-day | https://readywise.com/cdn/shop/files/RW-4weekgeneric_600x600.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "readywise-5-day-survival-backpack",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/readywise-5-day-survival-backpack-480.webp"
+      ],
+      "source": "ReadyWise 5-Day Survival Backpack & Water Filtration Kit | https://readywise.com/products/5-day-survival-backpack-water-filtration-kit | https://readywise.com/cdn/shop/files/RW-Emergency-Kit-with-Camo-Backpack_600x600.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "readywise-72-hour-food-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/readywise-72-hour-food-kit-480.webp"
+      ],
+      "source": "ReadyWise 72 Hour Food Kit | https://readywise.com/products/72-hour-emergency-food-and-drink-supply | https://readywise.com/cdn/shop/files/RW-72hrkitmain_600x600.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "readywise-powdered-eggs-144-servings",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/readywise-powdered-eggs-144-servings-480.webp"
+      ],
+      "source": "ReadyWise Emergency Freeze-Dried Powdered Eggs, 144 Servings | https://readywise.com/products/emergency-freeze-dried-powdered-eggs-144-servings | https://readywise.com/cdn/shop/products/71-a4_fM2rL._SL1500_600x600.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "redcross-first-aid",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/redcross-first-aid-480.webp",
+        "/directory/photos/redcross-first-aid-960.webp"
+      ],
+      "source": "CPR manikin, AED trainer and first aid kit for a training class",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "redi-roadie-plus",
@@ -2411,6 +6472,59 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "reliance-aqua-tainer",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/reliance-aqua-tainer-480.webp",
+        "/directory/photos/reliance-aqua-tainer-960.webp"
+      ],
+      "source": "Reliance Aqua-Tainer Water Container | https://relianceoutdoors.com/products/aqua-tainer-4g-15l | https://relianceoutdoors.com/cdn/shop/products/4G_7GAquaTainer_1200x1200.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "reliance-jumbo-tainer-2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/reliance-jumbo-tainer-2-480.webp",
+        "/directory/photos/reliance-jumbo-tainer-2-960.webp"
+      ],
+      "source": "Reliance Jumbo-Tainer 2.0 7-Gallon Water Container | https://relianceoutdoors.com/products/jumbo-tainer-7g-26l | https://relianceoutdoors.com/cdn/shop/products/JumboTainer2.0MAIN_1200x1200.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "renogy-100w-12v-solar-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/renogy-100w-12v-solar-kit-480.webp",
+        "/directory/photos/renogy-100w-12v-solar-kit-960.webp"
+      ],
+      "source": "Renogy 100W 12V Solar Panel Kit | https://www.renogy.com/products/100w-12v-solar-panel-kit | https://www.renogy.com/cdn/shop/files/1_1__97984.1733821249.1280.1280.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "reolink-argus-4-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/reolink-argus-4-pro-400.webp"
+      ],
+      "source": "Reolink Argus 4 Pro | https://reolink.com/product/argus-4-pro/ | https://home-cdn.reolink.us/wp-content/uploads/2024/06/argus-4-pro-whitesolar-panel-2-white.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "reolink-e1-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/reolink-e1-pro-195.webp"
+      ],
+      "source": "Reolink E1 Pro | https://reolink.com/product/e1-pro/ | https://home-cdn.reolink.us/wp-content/uploads/2024/12/1-Cameras-5MP-White.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "reolink-trackmix-wifi",
       "kind": "official-product-or-brand",
       "files": [
@@ -2421,6 +6535,37 @@
       "source": "Reolink TrackMix WiFi | Reolink | Official product photo from reolink.com (home-cdn.reolink.us wp-content/uploads/2024/12/090149081733708948.8663.jpg), image from the official TrackMix WiFi product page, downloaded November 23, 2026. Image provided by Reolink. | Official catalog photo, flattened onto white for the card backdrop (native 1340 px used as the large srcset step, no upscaling). Image provided by Reolink.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "reolink-video-doorbell-wifi",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/reolink-video-doorbell-wifi-293.webp"
+      ],
+      "source": "Reolink Video Doorbell WiFi | https://reolink.com/product/reolink-video-doorbell-wifi/ | https://home-cdn.reolink.us/wp-content/uploads/2022/05/170610101652767810.7304.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "rezvani-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rezvani-official-480.webp",
+        "/directory/photos/rezvani-official-960.webp"
+      ],
+      "source": "Rezvani vehicle | Vincehive | CC BY-SA 4.0 | [File:Rezvani tank.jpg](https://commons.wikimedia.org/wiki/File:Rezvani_tank.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "ri-fx-aegis-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-fx-aegis-pro-230.webp"
+      ],
+      "source": "FX Aegis Pro Quadruped Robot Dog | https://www.robotsinternational.com/FX-Aegis-Pro.htm | https://www.robotsinternational.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/x/fx-aeg-pro-1.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
     },
     {
       "key": "ri-fx-aegis-quadruped-robot-dog",
@@ -2447,6 +6592,26 @@
       "source": "FX Aegis Ultra Quadruped Robot Dog | Official product photo from robotsinternational.com (`fx-aeg-ultra-1.jpg`), first image on the FX Aegis Ultra product page, downloaded November 25, 2026 | Official catalog photo, source 1,800×1,800. The Ultra+ page uses the same packshot, so Ultra+ is left without a photo. Image provided by Robots International / Faraday Future.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official product photos — HOVERAir and robot dogs (November 25, 2026)"
+    },
+    {
+      "key": "ri-fx-aegis-ultra-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-fx-aegis-ultra-plus-213.webp"
+      ],
+      "source": "FX Aegis Ultra+ Quadruped Robot Dog | https://www.robotsinternational.com/FX-Aegis-Ultra-Plus.htm | https://www.robotsinternational.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/x/fx-ags-ultra-plus-1.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "ri-fx-aegis-ultra-w-plus",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ri-fx-aegis-ultra-w-plus-187.webp"
+      ],
+      "source": "FX Aegis Ultra-W+ Wheel-Legged Robot Dog | https://www.robotsinternational.com/FX-Aegis-Ultra-W-Plus.htm | https://www.robotsinternational.com/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/f/x/fx-ags-ultra-w-plus-1.jpg",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
     },
     {
       "key": "ri-fx-aegis-ultra-w-wheel-legged-robot-dog",
@@ -2545,13 +6710,34 @@
       "key": "ring-battery-doorbell-4k-pro",
       "kind": "official-product-or-brand",
       "files": [
-        "/directory/photos/ring-battery-doorbell-4k-pro-1500.webp",
         "/directory/photos/ring-battery-doorbell-4k-pro-480.webp",
-        "/directory/photos/ring-battery-doorbell-4k-pro-960.webp"
+        "/directory/photos/ring-battery-doorbell-4k-pro-776.webp"
       ],
       "source": "Ring Battery Doorbell 4K Pro | Ring | Official product photo from ring.com (Contentful CDN ring_battery_doorbell_pro_gen2_product_dark_silver_1500x1500.jpg), Open Graph image on the Battery Doorbell 4K Pro page, downloaded November 23, 2026. Image provided by Ring. | Official catalog photo, flattened onto white for the card backdrop (native 1500 px used as the large srcset step, no upscaling). Image provided by Ring.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "ring-flood-freeze-sensor",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/ring-flood-freeze-sensor-480.webp",
+        "/directory/photos/ring-flood-freeze-sensor-960.webp"
+      ],
+      "source": "Ring Flood & Freeze Sensor | https://ring.com/products/flood-and-freeze-sensor | https://images.ctfassets.net/a3peezndovsu/52ESJ9xS3fbwG35swDeiMn/9c99b96e0bbb7e1f9775fa411114c5e8/ring_flood_and_freeze_sensor_1500x1500__1_.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "rising-s-bunkers",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rising-s-bunkers-480.webp",
+        "/directory/photos/rising-s-bunkers-960.webp"
+      ],
+      "source": "inside an all-steel underground bunker with bunks, shelving and air filtration",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
     },
     {
       "key": "rivian-r1s",
@@ -2580,6 +6766,141 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "rotopax",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rotopax-480.webp",
+        "/directory/photos/rotopax-960.webp"
+      ],
+      "source": "RotopaX fuel and water containers | https://www.rotopax.com/ | https://cdn.shopify.com/s/files/1/0616/9965/3786/files/IMG_7893.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "rugged-radios",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/rugged-radios-480.webp",
+        "/directory/photos/rugged-radios-960.webp"
+      ],
+      "source": "Rugged Radios | https://www.ruggedradios.com/ | https://www.ruggedradios.com/cdn/shop/products/rugged-radios-nitro-bee-xtreme-uhf-race-receiver-369084.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sabre-home-defense-launcher",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sabre-home-defense-launcher-480.webp"
+      ],
+      "source": "SABRE home defense pepper projectile launcher | https://www.sabrered.com/home-defense-pepper-projectile-launcher/ | https://cdn11.bigcommerce.com/s-a3soq7nz2t/images/stencil/1200x630/c/sl-p1c_ls-02%20%288%29__60465.original.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sabre-mighty-discreet",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sabre-mighty-discreet-158.webp"
+      ],
+      "source": "SABRE Mighty Discreet pepper spray | https://www.sabrered.com/pepper-spray/sabre-mighty-discreet-pepper-spray | https://cdn11.bigcommerce.com/s-a3soq7nz2t/products/127/images/7076/htxc5p29e1duo9betr26__17749.1787172295.386.513.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sabre-pepper-spray-alarm-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sabre-pepper-spray-alarm-kit-257.webp"
+      ],
+      "source": "SABRE pepper spray and personal alarm safety kit | https://www.sabrered.com/pepper-spray/pepper-spray-personal-alarm-safety-kit | https://cdn11.bigcommerce.com/s-a3soq7nz2t/products/156/images/2615/xv14zijqbhbduz4vf5cz__33929.1788881551.386.513.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sabre-smart-pepper-spray",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sabre-smart-pepper-spray-270.webp"
+      ],
+      "source": "SABRE Smart pepper spray | https://www.sabrered.com/pepper-spray/smart-pepper-spray | https://cdn11.bigcommerce.com/s-a3soq7nz2t/products/206/images/7914/xfdtagnm0r17uf0pftfu__99752.1795041434.386.513.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sam-chest-seals",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sam-chest-seals-460.webp"
+      ],
+      "source": "SAM Chest Seals | https://www.sammedical.com/products/sam-chest-seals | https://www.sammedical.com/cdn/shop/products/SAM-Chest-Seal-Transparent_grande.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sam-splint",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sam-splint-227.webp"
+      ],
+      "source": "SAM Splint | https://www.sammedical.com/products/sam-splint | https://www.sammedical.com/cdn/shop/products/SAM-Splint-2-Transparent_grande.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sawyer-mini-water-filter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sawyer-mini-water-filter-480.webp"
+      ],
+      "source": "Sawyer MINI Water Filtration System | https://www.sawyer.com/product/mini-water-filtration-system-blue | https://cdn.prod.website-files.com/61549f9352f3558157a226ea/69036dcc3dafdf576551fbbe_Sawyer-mini-water-filtration-system-blue-mini-filter-main-image.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sawyer-squeeze-water-filter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sawyer-squeeze-water-filter-480.webp"
+      ],
+      "source": "Sawyer Squeeze Water Filtration System | https://www.sawyer.com/product/squeeze-water-filter-system | https://cdn.prod.website-files.com/61549f9352f3558157a226ea/6776e9804a8c2ee279d54f97_sawyer-squeeze-water-filteration.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "shiftpod-shelters",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/shiftpod-shelters-480.webp",
+        "/directory/photos/shiftpod-shelters-960.webp"
+      ],
+      "source": "SHIFTPOD rapid-deploy shelters | https://shiftpod.com/ | https://shiftpod.com/cdn/shop/files/SHIFTPOD_SHARE.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "simplisafe-shop",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/simplisafe-shop-480.webp",
+        "/directory/photos/simplisafe-shop-960.webp"
+      ],
+      "source": "a wireless home security kit with keypad, base station and sensors",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "skullcandy-session-360",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/skullcandy-session-360-480.webp",
+        "/directory/photos/skullcandy-session-360-960.webp"
+      ],
+      "source": "Skullcandy Session 360 | https://www.skullcandy.com/products/session-360 | https://www.skullcandy.com/cdn/shop/files/Session360_Black_1.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "skydio-x10",
       "kind": "official-product-or-brand",
       "files": [
@@ -2590,6 +6911,59 @@
       "source": "Skydio X10 | Skydio | Official product photo from skydio.com (cdn.sanity.io ... 6a6fef86c5dad572083363430f9a27971cc62a1a-2400x1300.png), Open Graph image on the Skydio X10 page, downloaded November 23, 2026. Image provided by Skydio. | Official catalog photo, flattened onto white for the card backdrop (native 1600 px used as the large srcset step, no upscaling). Image provided by Skydio.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "snow-joe-shovelution-18",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/snow-joe-shovelution-18-480.webp",
+        "/directory/photos/snow-joe-shovelution-18-960.webp"
+      ],
+      "source": "Snow Joe Shovelution 18-Inch Strain-Reducing Snow Shovel | https://shopjoe.com/products/snow-joe-shovelution-18-in-strain-reducing-snow-shovel-w-spring-assisted-handle | https://shopjoe.com/cdn/shop/files/SJ-SHLV01_Hero_Image01_3000x3000_V2.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "snow-joe-telescoping-snow-broom",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/snow-joe-telescoping-snow-broom-480.webp",
+        "/directory/photos/snow-joe-telescoping-snow-broom-960.webp"
+      ],
+      "source": "Snow Joe 2-in-1 Telescoping Snow Broom + Ice Scraper | https://shopjoe.com/products/snow-joe-telescoping-snow-broom-with-ice-scraper | https://shopjoe.com/cdn/shop/files/SJBLZD_Image01_V3.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sol-emergency-bivvy",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sol-emergency-bivvy-480.webp"
+      ],
+      "source": "SOL Emergency Bivvy with Rescue Whistle | https://www.surviveoutdoorslonger.com/products/emergency-bivvy-with-rescue-whistle | https://www.surviveoutdoorslonger.com/cdn/shop/products/Emergency_Bivvy_Orange_in_box_white_background.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sol-emergency-blanket",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sol-emergency-blanket-480.webp"
+      ],
+      "source": "SOL Emergency Blanket | https://www.surviveoutdoorslonger.com/products/emergency-blanket | https://www.surviveoutdoorslonger.com/cdn/shop/products/Emergency_Blanket_in_packaging_on_white.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "sonos-roam-2",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sonos-roam-2-480.webp",
+        "/directory/photos/sonos-roam-2-960.webp"
+      ],
+      "source": "Sonos Roam 2 | https://www.sonos.com/en-us/shop/roam-2 | https://media.sonos.com/images/znqtjj88/production/110a711ffb1d9ec82743734ef7477a7d400c8d11-2400x2400.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "sony-wh-1000xm6",
@@ -2604,6 +6978,50 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "sportsmobile-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/sportsmobile-official-480.webp",
+        "/directory/photos/sportsmobile-official-960.webp"
+      ],
+      "source": "Sportsmobile official site | https://sportsmobile.com/ | https://sportsmobile.com/wp-content/uploads/2024/01/home-hero-frist-scaled.webp",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "starlink",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/starlink-480.webp",
+        "/directory/photos/starlink-960.webp"
+      ],
+      "source": "Starlink satellite internet | https://starlink.com/ | https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "storyteller-mode-vans",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/storyteller-mode-vans-480.webp",
+        "/directory/photos/storyteller-mode-vans-960.webp"
+      ],
+      "source": "Storyteller Overland MODE vans (cropped to the photo area) | https://www.storytelleroverland.com/pages/2026-mode-vans | https://www.storytelleroverland.com/cdn/shop/files/Storyteller_MODE_Vans.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "storyteller-overland-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/storyteller-overland-official-480.webp",
+        "/directory/photos/storyteller-overland-official-960.webp"
+      ],
+      "source": "Storyteller Overland GXV | Tomás Del Coro | CC BY-SA 4.0 | [File:Storyteller Overland GXV HILT RAM 5500 (55469434620).jpg](https://commons.wikimedia.org/wiki/File:Storyteller_Overland_GXV_HILT_RAM_5500_(55469434620).jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
       "key": "surfshark-privacy",
       "kind": "official-product-or-brand",
       "files": [
@@ -2612,6 +7030,82 @@
       "source": "Surfshark merchant card | Surfshark | CJ Affiliate (link 15554631) | Image provided by Surfshark via CJ Affiliate.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official affiliate creatives (`public/directory/photos/`)"
+    },
+    {
+      "key": "survival-frog-beef-canned-meat",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/survival-frog-beef-canned-meat-480.webp",
+        "/directory/photos/survival-frog-beef-canned-meat-960.webp"
+      ],
+      "source": "Survival Frog Canned Beef | https://www.survivalfrog.com/products/beef-canned-meat | https://www.survivalfrog.com/cdn/shop/files/Frog_CoMeatCansJAN_220115_140942-Edit_3.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "survive-a-storm",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/survive-a-storm-480.webp",
+        "/directory/photos/survive-a-storm-960.webp"
+      ],
+      "source": "an above-ground steel storm shelter in a home garage",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "tap-score",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tap-score-480.webp",
+        "/directory/photos/tap-score-960.webp"
+      ],
+      "source": "Tap Score | https://mytapscore.com/ | https://mytapscore.com/cdn/shop/files/Shopify_MTS_Social_Sharing_Image_1200x628_bbe3724d-16b9-439d-99c1-96eda2609f91.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "terra-vivos-official",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/terra-vivos-official-480.webp",
+        "/directory/photos/terra-vivos-official-960.webp"
+      ],
+      "source": "earth-covered bunker entrances on open prairie",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "tesla-powerwall",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/tesla-powerwall-480.webp",
+        "/directory/photos/tesla-powerwall-960.webp"
+      ],
+      "source": "a wall-mounted home battery in a garage",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "teton-sports-celsius-regular-0",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/teton-sports-celsius-regular-0-480.webp",
+        "/directory/photos/teton-sports-celsius-regular-0-960.webp"
+      ],
+      "source": "TETON Sports Celsius Regular 0°F Sleeping Bag | https://tetongear.com/products/celsius-0-f-sleeping-bag-orange-grey | https://tetongear.com/cdn/shop/files/teton-sports-celsius-0-f-sleeping-bag-38931539493102_4029b64c-4464-46da-94ad-260ac71ee1c8.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "therm-a-rest-z-lite-sol",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/therm-a-rest-z-lite-sol-480.webp"
+      ],
+      "source": "Therm-a-Rest Z Lite SOL Sleeping Pad | https://cascadedesigns.com/products/z-lite-sol-sleeping-pad | https://cascadedesigns.com/cdn/shop/files/06670_tr_zlite_sol_limonsilver_regular_silver_angle_fold.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "tidewe-aquawade-pro-waders",
@@ -2683,6 +7177,28 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "toyota-4runner",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/toyota-4runner-480.webp",
+        "/directory/photos/toyota-4runner-960.webp"
+      ],
+      "source": "Toyota 4Runner | HJUdall | CC0 | [File:25 Toyota 4Runner SR5.jpg](https://commons.wikimedia.org/wiki/File:25_Toyota_4Runner_SR5.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
+      "key": "toyota-land-cruiser",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/toyota-land-cruiser-480.webp",
+        "/directory/photos/toyota-land-cruiser-960.webp"
+      ],
+      "source": "Toyota Land Cruiser | Mr.choppers | CC BY-SA 4.0 | [File:2024 Toyota Land Cruiser 250 VX in Platinum White Pearl Mica, front left.jpg](https://commons.wikimedia.org/wiki/File:2024_Toyota_Land_Cruiser_250_VX_in_Platinum_White_Pearl_Mica,_front_left.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
       "key": "toyota-rav4-2027",
       "kind": "official-product-or-brand",
       "files": [
@@ -2696,6 +7212,17 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "toyota-tacoma",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/toyota-tacoma-480.webp",
+        "/directory/photos/toyota-tacoma-960.webp"
+      ],
+      "source": "Toyota Tacoma | Alexander-93 | CC BY-SA 4.0 | [File:Toyota Tacoma TRD Off Road (N400) IMG 9727.jpg](https://commons.wikimedia.org/wiki/File:Toyota_Tacoma_TRD_Off_Road_(N400)_IMG_9727.jpg)",
+      "license": "Wikimedia Commons (see credit row for the exact license)",
+      "creditSection": "Vehicle and brand photos (Wikimedia Commons, added 25 Nov 2026)"
+    },
+    {
       "key": "toyota-tundra-2027",
       "kind": "official-product-or-brand",
       "files": [
@@ -2707,6 +7234,47 @@
       "source": "2027 Toyota Tundra | Toyota | Official product photo from toyota.com (delivery.tcom.assetscs.toyota.com ... MY27_Tundra_US_SR5-Gas-4WD-CM-5ft_TH_8361_01G3_03_6K.png), Open Graph image on the 2027 Tundra page, downloaded November 23, 2026. Image provided by Toyota. | Official catalog photo, flattened onto white for the card backdrop (native 2048 px used as the large srcset step, no upscaling). Image provided by Toyota.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "uco-stormproof-match-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/uco-stormproof-match-kit-480.webp"
+      ],
+      "source": "UCO Stormproof Match Kit | https://ucogear.com/products/stormproof-match-container-w-25-matches | https://ucogear.com/cdn/shop/products/UCO_Stormproof_Match_Kit_with_waterproof_match_container_for_tornado_preparedness_kits_and_emergency_survival_fire_starting.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "vornado-avh10",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/vornado-avh10-465.webp"
+      ],
+      "source": "Vornado AVH10 Whole Room Heater with Auto Climate | https://vornado.com/products/vornado-avh10-whole-room-space-heater-ice-white | https://vornado.com/cdn/shop/files/138269.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "warn-industries",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/warn-industries-480.webp",
+        "/directory/photos/warn-industries-960.webp"
+      ],
+      "source": "WARN Industries winches and recovery gear | https://www.warn.com/ | https://www.warn.com/cdn/shop/files/zeon-xc-desktop3.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "waterbob",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/waterbob-480.webp"
+      ],
+      "source": "waterBOB Emergency Drinking Water Storage | https://waterbob.com/product/waterbob/ | https://waterbob.com/wp-content/uploads/2020/06/waterbob-emergency-water-storage-container-single.png",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     },
     {
       "key": "waterdrop-as13",
@@ -3014,6 +7582,17 @@
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
     },
     {
+      "key": "yaktrax-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/yaktrax-pro-480.webp",
+        "/directory/photos/yaktrax-pro-960.webp"
+      ],
+      "source": "Yaktrax Pro Traction Device | https://yaktrax.com/products/pro-traction-device | https://yaktrax.com/cdn/shop/files/jfncofgddrlawvjwuri6.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
       "key": "yeti-rambler-16-travel",
       "kind": "official-product-or-brand",
       "files": [
@@ -3024,6 +7603,37 @@
       "source": "YETI Rambler 16 oz Travel Bottle | YETI | Official product photo from yeti.com (yeti-webmedia.imgix.net ... YETI_Rambler_Travel_Bottle_16oz_Riverhead_Green_Front_140_B.png), page image on the Rambler 16 oz Travel Bottle product page, downloaded November 23, 2026. Image provided by YETI. | Official catalog photo, flattened onto white for the card backdrop (native 1200 px used as the large srcset step, no upscaling). Image provided by YETI.",
       "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
       "creditSection": "Official network product photos (added 23 Nov 2026, America/New_York)"
+    },
+    {
+      "key": "yolink-water-leak-sensor-5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/yolink-water-leak-sensor-5-480.webp",
+        "/directory/photos/yolink-water-leak-sensor-5-960.webp"
+      ],
+      "source": "YoLink Water Leak Sensor 5 | https://shop.yosmart.com/products/ys7986 | https://shop.yosmart.com/cdn/shop/files/yl-pair-9430259335419-15d76606e9d44731b4784851de4f0c099727eaf6f8e7c702dc00b4c69dd0c41a.webp",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "zippo-heatbank-9s",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/zippo-heatbank-9s-480.webp"
+      ],
+      "source": "Zippo HeatBank 9s Rechargeable Hand Warmer | https://zippo.com/products/heatbank-9s-rechargeable-hand-warmer-box | https://zippo.com/cdn/shop/files/40512_Z-SP-Out_HeatBank9s_Black_PT01_1.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
+    },
+    {
+      "key": "zoleo-satellite-communicator",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/zoleo-satellite-communicator-160.webp"
+      ],
+      "source": "ZOLEO Satellite Communicator | https://www.zoleo.com/en-us/product/zoleo-global-satellite-communicator | https://cdn11.bigcommerce.com/s-zirnuihc1s/images/stencil/160w/products/139/418/zoleo-product-2__00361.1794840714.jpg",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Official photos"
     }
   ]
 }

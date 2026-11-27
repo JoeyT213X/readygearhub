@@ -3,8 +3,14 @@
  * Files live in /public/directory/photos/{key}-{width}.webp. Widths never exceed
  * the source pixel size (no upscaling). Credits: IMAGE_CREDITS.md.
  */
+import { CARD_PHOTOS, CARD_BRAND_REUSE } from './card-photos';
+
 export type ProductPhoto = {
   key: string;
+  /** Photorealistic concept image (no official photo was available); the card shows a "Concept image" tag. */
+  concept?: boolean;
+  /** Full-frame photo (installation, vehicle, scene) shown edge to edge instead of on the tinted stage. */
+  scene?: boolean;
   alt: string;
   src: string;
   srcset: string;
@@ -269,7 +275,7 @@ const BY_ID: Record<string, string> = {
 
 
 function build(key: string): ProductPhoto {
-  const e = ENTRIES[key];
+  const e = ENTRIES[key] ?? CARD_PHOTOS[key];
   const def = e.widths.includes(960) ? 960 : e.widths[e.widths.length - 1];
   return {
     key,
@@ -277,12 +283,14 @@ function build(key: string): ProductPhoto {
     src: `/directory/photos/${key}-${def}.webp`,
     srcset: e.widths.map((w) => `/directory/photos/${key}-${w}.webp ${w}w`).join(', '),
     widths: e.widths,
+    concept: CARD_PHOTOS[key]?.concept || undefined,
+    scene: CARD_PHOTOS[key]?.scene || CARD_PHOTOS[key]?.concept || undefined,
   };
 }
 
 const CACHE: Record<string, ProductPhoto> = {};
 export function productPhotoByKey(key: string): ProductPhoto | undefined {
-  if (!ENTRIES[key]) return undefined;
+  if (!ENTRIES[key] && !CARD_PHOTOS[key]) return undefined;
   return (CACHE[key] ??= build(key));
 }
 
@@ -306,7 +314,8 @@ const BRAND_PHOTO: Record<string, string> = {
 };
 
 export function productPhotoFor(item: { id?: string }): ProductPhoto | undefined {
-  const key = BY_ID[item.id || ''] || BRAND_PHOTO[item.id || ''];
+  const id = item.id || '';
+  const key = BY_ID[id] || BRAND_PHOTO[id] || (CARD_PHOTOS[id] ? id : CARD_BRAND_REUSE[id]);
   return key ? productPhotoByKey(key) : undefined;
 }
 
