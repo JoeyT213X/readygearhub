@@ -15,7 +15,8 @@ import {
 } from '../../data/source-directory';
 import WinterDealsCallout from '../../components/WinterDealsCallout.astro';
 import { isWinterDealDirectoryCategory } from '../../data/winter-deals';
-import { getItems } from '../../lib/data';
+import { getItems, getGuides } from '../../lib/data';
+import { guideNav } from '../../data/guide-links';
 import { buildFullCatalog } from '../../data/full-catalog';
 import { brandPages } from '../../data/brands';
 import { doomsdaySections, doomsdaySectionOf, doomsdayRank } from '../../data/doomsday-prepper';
@@ -44,6 +45,8 @@ const doomsdayGroups = isDoomsday
         .sort((a, b) => (Number(!!b.usBadge) - Number(!!a.usBadge)) || (doomsdayRank(a.id) - doomsdayRank(b.id))),
     })).filter((g) => g.items.length > 0)
   : [];
+const guideList = await getGuides();
+const guidesHere = guideList.filter((g) => (guideNav[g.id]?.directory ?? []).includes(category.slug)).sort((a, b) => +(b.data.updated ?? b.data.published) - +(a.data.updated ?? a.data.published));
 const storesInCat = sourceStores().filter((s) => items.some((i) => i.programId === s.id));
 
 const schema = {
@@ -157,6 +160,14 @@ const schema = {
         <summary>About these listings</summary>
         <p class="fine">These are listings from stores we have applied to, with plain links to each store’s own product page. Prices and stock change often, so confirm them on the store. The main robot listings here are Faraday Future (FF EAI Robotics, California) quadrupeds sold through Robots International. Drone listings are HOVERAir self-flying cameras. Additional robot-dog models from other makers are listed at the bottom of this page. Drone rules: since Dec 22, 2025, new foreign-made drone models can’t get FCC authorization for sale in the US. Models authorized before then can still be sold and flown, so what a store offers can change. Follow FAA and local rules wherever you fly.</p>
       </details>
+    )}
+
+    {guidesHere.length > 0 && (
+      <nav class="dir-guides" aria-label={`Guides related to ${category.name}`} style="margin-top:2rem">
+        <h2 class="section-title">Guides for this category</h2>
+        <p class="fine">Plain-English guides that connect to this category.</p>
+        <ul class="link-list">{guidesHere.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}</ul>
+      </nav>
     )}
 
     <p class="fine" style="margin-top:2rem"><a href="/directory/">← All Full Source Directory categories</a> · <a href="/gear/">Gear directory</a></p>

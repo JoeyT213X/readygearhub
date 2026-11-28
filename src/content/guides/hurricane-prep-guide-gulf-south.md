@@ -4,6 +4,7 @@ description: "How to get a Gulf South home ready for a hurricane or tropical sto
 lane: storm-hurricane-prep
 season: ["hurricane", "summer", "fall"]
 published: 2026-11-19
+updated: 2026-11-27
 relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "bluetti-ac180", "bluetti-200w-solar-panel", "waterbob", "reliance-jumbo-tainer-2", "readywise-5-day-survival-backpack", "amk-adventure-first-aid-family"]
 draft: false
 ---
@@ -288,6 +289,7 @@ The storm ending is not the same thing as it being safe. Follow local officials 
 - Stay away from fallen power lines and report them to the utility. Do not touch electrical equipment if it is wet or if you are standing in water. If it is safe, Ready.gov says to turn off electricity at the main breaker or fuse box to prevent shock.
 - Do not enter a damaged building until local authorities say it is safe, the CDC says. Leave if you hear shifting or unusual noises.
 - If you evacuated, check with officials where you are and back home before you travel. Ready.gov warns that returning before debris is cleared is dangerous. Charge devices, fill the gas tank, and bring water and food for the ride.
+- Want a look at a roof or yard without climbing? Some people use a small drone for a view from the ground. Check FAA rules and any local flight restrictions first, and never fly near emergency crews or power lines. A drone does not replace a licensed inspector or your insurer. Official maker shops are in our [Drones and robotics directory](/directory/drones-robotics/).
 
 **Cleanup and carbon monoxide**
 
@@ -381,13 +383,12 @@ Everything below is free to use in your browser unless noted. You can also get o
 - [Family First Aid Kit for Storms](/guides/storm-first-aid-kit/)
 - [Winter Storm & Power Outage Prep Guide for the South](/guides/winter-storm-power-outage-prep-guide-south/)
 - [Winter Storm Watch vs. Warning](/guides/winter-storm-watch-vs-warning/)
-- [How to Prepare for an Ice Storm in the South: 48-Hour Checklist](/guides/ice-storm-prep-checklist-south/)
-- [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/)
+- [Ice Storm Prep & Survival Checklist for the South: 48-Hour Plan](/guides/ice-storm-prep-checklist-south/)
 - [What to Do When the Power Goes Out in a Mississippi Ice Storm](/guides/power-outage-ice-storm-mississippi/)
 - [Winter Power Outage Checklist](/guides/winter-power-outage-checklist/)
 - [How to Keep Pipes From Freezing in a Southern Cold Snap](/guides/how-to-keep-pipes-from-freezing/)
 - [How to Stay Warm When the Power Goes Out](/guides/how-to-stay-warm-without-power/)
-- [Best Ways to Heat One Room Safely in an Outage](/guides/heat-one-room-safely-in-an-outage/)
+- [Heat One Room Safely in an Outage: Space Heaters and Fuel Heaters](/guides/heat-one-room-safely-in-an-outage/)
 - [Winter Emergency Kit for Elderly Parents](/guides/winter-emergency-kit-for-elderly-parents/)
 - [What to Keep in Your Car for Winter](/guides/winter-car-emergency-kit/)
 

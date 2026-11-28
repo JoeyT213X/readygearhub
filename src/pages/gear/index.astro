@@ -12,8 +12,10 @@ import { lanes, getGuides } from '../../lib/data';
 import { getItems } from '../../lib/data';
 import { categories, entries, categoryForItem, resolveEntry } from '../../data/directory';
 import { isNoPpcProgram } from '../../data/affiliates';
+import { gearSectionGuides } from '../../data/guide-links';
 const items = await getItems();
-const guides = (await getGuides()).slice(0, 3);
+const allGuides = await getGuides();
+const guides = allGuides.slice(0, 3);
 const laneCounts = Object.fromEntries(lanes.map((l) => [l.slug, items.filter((i) => i.data.lane === l.slug || i.data.alsoIn.includes(l.slug)).length]));
 const resolved = entries.map(resolveEntry);
 const total = items.length + resolved.length;
@@ -53,6 +55,9 @@ const schema = { '@context': 'https://schema.org', '@type': 'ItemList', name: 'R
         <h2>{g.icon} {g.name}</h2>
         <p>{g.blurb}</p>
         {g.note && <p class="fine"><strong>Note:</strong> {g.note}</p>}
+        {(gearSectionGuides[g.id] ?? []).length > 0 && (
+          <p class="fine"><strong>Related guides:</strong> {(gearSectionGuides[g.id] ?? []).map((id, i) => { const gd = allGuides.find((x) => x.id === id); return gd ? (<>{i > 0 && ' · '}<a href={`/guides/${gd.id}/`}>{gd.data.title}</a></>) : null; })}</p>
+        )}
         {g.items.length > 0 && (<>
           <h3>Gear listings</h3>
           <div class="grid">{g.items.map((item) => <ItemCard item={item} showRank />)}</div>

@@ -4,7 +4,7 @@ description: "What to pack and arrange for older parents before a winter storm: 
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-15
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["kidde-kn-cob-lp2", "midland-wr400", "anker-prime-power-bank-20k-220w", "jackery-explorer-300-v2", "teton-sports-celsius-regular-0", "kahtoola-microspikes", "hothands-hand-warmers", "eton-blackout-buddy-co"]
 ---
 
@@ -59,6 +59,9 @@ The CDC is direct: walking on ice is extremely dangerous, and many winter injuri
 
 Keep them in one closed-off room with the supplies, follow [Ready.gov's winter weather safety guidance](https://www.ready.gov/winter-weather) on heating safely without carbon monoxide risk, and use a battery-powered thermometer to watch indoor temperature. If the house cannot be kept reasonably warm, if a CO alarm sounds, or if the parent becomes confused, drowsy, or unusually quiet, move them to a warming center or to someone with heat. Check official openings with the county office on the [Mississippi local resources](/local/mississippi/) pages, and watch the [What's happening now](/#live-status) board or [live alerts](/alerts/). You can also follow occasional official-source notes on [Local & community safety updates](/updates/). Confusion and drowsiness can be signs of hypothermia, which Ready.gov treats as an emergency when body temperature drops below 95°F.
 
+A few things to do help a long outage feel calmer: large-print books, cards, puzzles, or music and audiobooks downloaded ahead of time. See [offline entertainment](/gear/#offline-entertainment) and the [Fun & Gifts directory](/directory/fun/).
+
+
 A simple household check-in list lives in [All Accounted](/apps/all-accounted/), and [Aid Dates](/apps/aid-dates/) can track medication and supply expiration dates.
 
 ## Common questions
@@ -72,6 +75,6 @@ Talk with their medical provider about a power-outage plan before the storm. Rea
 **Where are official warming centers listed?**
 Locations change with each event. Use the county emergency-management contacts and MEMA links on the [Mississippi local resources](/local/mississippi/) pages rather than a saved address.
 
-For related gear, see [Winter Storm Prep](/winter-storm-prep/) and [Power Outage Kits](/power-outage-kits/). For a storm-day checklist aimed at Southern ice, use [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/).
+For related gear, see [Winter Storm Prep](/winter-storm-prep/) and [Power Outage Kits](/power-outage-kits/). For a storm-day checklist aimed at Southern ice, use [Ice Storm Prep & Survival Checklist for the South](/guides/ice-storm-prep-checklist-south/).
 
 *Sources: Ready.gov (Winter Weather, Power Outages, Older Adults, Pets); CDC (Carbon Monoxide Poisoning Basics, winter safety).*

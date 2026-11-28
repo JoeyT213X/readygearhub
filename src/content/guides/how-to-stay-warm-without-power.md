@@ -1,15 +1,17 @@
 ---
 title: "How to Stay Warm When the Power Goes Out in Winter (Safely)"
-description: "No power and no heat? Safe ways to stay warm in a winter outage: one warm room, smart layers, and what never to use indoors because of carbon monoxide."
+description: "No power and no heat? How to stay warm in a winter outage without a heater: one warm room, layers, warm food and drink, and what never to use indoors."
 lane: home-heating-backup
 season: ["winter"]
 published: 2026-11-16
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["eton-blackout-buddy-co", "mr-heater-portable-buddy", "mr-heater-buddy-flex", "sol-emergency-bivvy", "sol-emergency-blanket", "darn-tough-hiker-boot-full-cushion", "zippo-heatbank-9s", "ecoflow-delta-3-plus"]
 draft: false
 ---
 
 When a winter storm knocks out the power, most homes lose heat too. Even gas furnaces usually need electricity for the blower and controls. The good news is that you can stay reasonably warm for a long time without any heater at all, if you focus on keeping *people* warm instead of the whole house. Here's how to do it without creating a bigger emergency.
+
+This page is about **staying warm without a heater**. If you are choosing or using a heater, read [heating one room safely in an outage](/guides/heat-one-room-safely-in-an-outage/).
 
 > **Free: Winter Storm Ready Checklist.** A one-page printable for heat, light, food, water, and safety. [Get the checklist](/winter-storm-ready-checklist/)
 
@@ -67,6 +69,10 @@ If you have a fuel-burning heater (propane, kerosene, or similar), ReadyGearHub'
 ## What about a portable energy reserve?
 
 A battery energy reserve is safe to use indoors because it makes no fumes. It's great for lights, phones, a router, and medical devices. It's **not** a good way to run a space heater. Space heaters often draw 750–1,500 watts, which drains most portable batteries fast. A low-wattage electric blanket or heated pad is a better match. Check the watts on its label and compare that with the energy reserve's capacity. Our [energy reserve guide](/guides/how-to-pick-an-energy-reserve/) explains the math, and the [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/) is one of the options listed.
+
+## Something to do while you wait
+
+A long, dark evening goes easier with a plan. Card and board games, puzzles, books, and music or audiobooks you downloaded ahead of time all work without power, as long as your phone or speaker still has battery. Keep the phone for calls and alerts first. Our [offline entertainment list](/gear/#offline-entertainment), the [Fun & Gifts directory](/directory/fun/), and the [Audio & Entertainment directory](/directory/audio/) are places to start. This is comfort, not a substitute for the warmth and safety steps above.
 
 ## Watch for cold-weather illness
 

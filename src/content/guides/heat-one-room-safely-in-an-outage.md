@@ -1,16 +1,18 @@
 ---
-title: "Best Ways to Heat One Room Safely in an Outage"
-description: "How to keep one room livable in a winter outage without creating a carbon monoxide or fire hazard, including what never to use indoors and how to run a space heater safely."
+title: "Heat One Room Safely in an Outage: Space Heaters and Fuel Heaters"
+description: "Which heaters are safe in a winter outage and which never are: electric space heaters, indoor-rated fuel heaters, CO alarms, and how to hold heat in one room."
 lane: home-heating-backup
 season: ["winter"]
 published: 2026-11-15
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["kidde-kn-cob-lp2", "vornado-avh10", "teton-sports-celsius-regular-0", "therm-a-rest-z-lite-sol", "3m-indoor-window-insulator-kit", "mr-heater-portable-buddy", "eton-blackout-buddy-co", "honda-eu2200i"]
 ---
 
 When the heat goes out in winter, the safest plan is usually not to heat the whole house. It is to keep **one occupied room** warm enough, stay dry, and avoid carbon monoxide and fire. Most outage injuries in this situation come from unsafe heat sources, not from a slightly chilly room.
 
 This guide is about doing that safely. It is not a reason to improvise with equipment that was never meant for indoor use.
+
+This page is about **heaters and heat sources**. For staying warm with layers, blankets and warm food when you have no heater at all, read [how to stay warm when the power goes out](/guides/how-to-stay-warm-without-power/).
 
 ## First: what you should never use for indoor heat
 
@@ -74,7 +76,7 @@ If you cannot meet those conditions, do not use the heater. Extra blankets are s
 
 If indoor temperatures keep falling, if anyone is medically vulnerable, or if you smell exhaust or the CO alarm sounds, leave. Many communities open warming centers during long winter outages; listen to local officials, a weather radio, the [What's happening now](/#live-status) board, and [live alerts](/alerts/) for locations. You can also follow occasional official-source notes on [Local & community safety updates](/updates/). Mississippi readers can find official county emergency-management contacts, shelter sources, and utility outage maps on our [Mississippi local resources](/local/mississippi/) pages, including [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro, and [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast. Go to a friend or relative with heat if you can travel safely, or wait for a plow or sand truck if the roads are ice-covered.
 
-More gear for this situation lives in the [Home Heating Backup](/home-heating-backup/) and [Power Outage Kits](/power-outage-kits/) lanes. For a South-specific storm checklist, see [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/).
+More gear for this situation lives in the [Home Heating Backup](/home-heating-backup/) and [Power Outage Kits](/power-outage-kits/) lanes. For a South-specific storm checklist, see [Ice Storm Prep & Survival Checklist for the South](/guides/ice-storm-prep-checklist-south/).
 
 ## Common questions
 

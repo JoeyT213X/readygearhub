@@ -4,7 +4,7 @@ description: "Winter storm watch, warning, or advisory? What each National Weath
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-16
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["midland-er310-crank-radio", "eton-red-cross-frx2", "black-diamond-spot-400", "noco-boost-gb40", "snow-joe-telescoping-snow-broom", "yaktrax-pro"]
 draft: false
 ---
@@ -84,6 +84,8 @@ Two options on ReadyGearHub:
 - [Eton American Red Cross FRX2 Hand Crank Weather Radio](/gear/eton-red-cross-frx2/)
 
 Check each manufacturer's page for current features and power options. Browse more in the [Winter Storm Prep](/winter-storm-prep/) lane.
+
+A battery-powered speaker or headphones can be handy for downloaded music or podcasts in a long outage, but they do not receive official alerts. Use a weather radio for alerts first. Speakers and headphones are listed in [Audio & Entertainment](/directory/audio/).
 
 ## Gear for each alert level
 
