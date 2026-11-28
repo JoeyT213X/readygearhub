@@ -26,6 +26,7 @@ This is the short version, made to scan. For the full explanation, read the [win
 - [ ] A **carbon monoxide alarm** with battery backup on every level of the home, especially near bedrooms. Test it now. A portable one like the [Eton Blackout Buddy CO](/gear/eton-blackout-buddy-co/) can go in the warm room.
 - [ ] If you plan to use a backup heater, make sure it's **rated for indoor use**, and keep the fuel stored safely. Read [how to heat one room safely in an outage](/guides/heat-one-room-safely-in-an-outage/) first.
 - [ ] Extra blankets, sleeping bags, and wool socks and hats for everyone.
+- [ ] Something to do without power: a deck of cards, a board game, books, or music and audiobooks downloaded ahead of time. See [offline entertainment](/gear/#offline-entertainment).
 - [ ] Know where your water shut-off valve is, in case pipes freeze and burst. See [how to keep pipes from freezing](/guides/how-to-keep-pipes-from-freezing/).
 
 **Food and water**

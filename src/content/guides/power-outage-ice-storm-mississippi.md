@@ -86,6 +86,10 @@ It's time to go somewhere warmer if:
 
 Ready.gov suggests checking with local officials about heating locations. In Mississippi, watch for announcements from your county emergency management office and MEMA, listen to local news on your radio, and use the official contacts and outage maps on the [Mississippi local resources](/local/mississippi/) pages — including [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast, and [Hinds](/local/mississippi/hinds/), [Madison](/local/mississippi/madison/), and [Rankin](/local/mississippi/rankin/) in the Jackson metro. During the storm, the [What's happening now](/#live-status) board and [live alerts](/alerts/) show official National Weather Service alerts. You can also follow occasional official-source notes on [Local & community safety updates](/updates/).
 
+## Keep everyone calm and busy
+
+Kids, and plenty of adults, do better with something to do. Card games, board games, puzzles, books, and downloaded audiobooks need little or no power. Save phone battery for calls and alerts, and treat screens as a bonus. See [offline entertainment](/gear/#offline-entertainment) and the [Fun & Gifts directory](/directory/fun/) for ideas.
+
 ## Gear that makes an ice-storm outage easier
 
 You don't need everything, but these cover the basics. Check each manufacturer's page for current specs and prices.

@@ -70,6 +70,10 @@ If you have a fuel-burning heater (propane, kerosene, or similar), ReadyGearHub'
 
 A battery energy reserve is safe to use indoors because it makes no fumes. It's great for lights, phones, a router, and medical devices. It's **not** a good way to run a space heater. Space heaters often draw 750–1,500 watts, which drains most portable batteries fast. A low-wattage electric blanket or heated pad is a better match. Check the watts on its label and compare that with the energy reserve's capacity. Our [energy reserve guide](/guides/how-to-pick-an-energy-reserve/) explains the math, and the [EcoFlow DELTA 3 Plus](/gear/ecoflow-delta-3-plus/) is one of the options listed.
 
+## Something to do while you wait
+
+A long, dark evening goes easier with a plan. Card and board games, puzzles, books, and music or audiobooks you downloaded ahead of time all work without power, as long as your phone or speaker still has battery. Keep the phone for calls and alerts first. Our [offline entertainment list](/gear/#offline-entertainment), the [Fun & Gifts directory](/directory/fun/), and the [Audio & Entertainment directory](/directory/audio/) are places to start. This is comfort, not a substitute for the warmth and safety steps above.
+
 ## Watch for cold-weather illness
 
 Ready.gov lists these warning signs:

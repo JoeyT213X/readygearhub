@@ -4,6 +4,7 @@ description: "How to get a Gulf South home ready for a hurricane or tropical sto
 lane: storm-hurricane-prep
 season: ["hurricane", "summer", "fall"]
 published: 2026-11-19
+updated: 2026-11-27
 relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "bluetti-ac180", "bluetti-200w-solar-panel", "waterbob", "reliance-jumbo-tainer-2", "readywise-5-day-survival-backpack", "amk-adventure-first-aid-family"]
 draft: false
 ---
@@ -288,6 +289,7 @@ The storm ending is not the same thing as it being safe. Follow local officials 
 - Stay away from fallen power lines and report them to the utility. Do not touch electrical equipment if it is wet or if you are standing in water. If it is safe, Ready.gov says to turn off electricity at the main breaker or fuse box to prevent shock.
 - Do not enter a damaged building until local authorities say it is safe, the CDC says. Leave if you hear shifting or unusual noises.
 - If you evacuated, check with officials where you are and back home before you travel. Ready.gov warns that returning before debris is cleared is dangerous. Charge devices, fill the gas tank, and bring water and food for the ride.
+- Want a look at a roof or yard without climbing? Some people use a small drone for a view from the ground. Check FAA rules and any local flight restrictions first, and never fly near emergency crews or power lines. A drone does not replace a licensed inspector or your insurer. Official maker shops are in our [Drones and robotics directory](/directory/drones-robotics/).
 
 **Cleanup and carbon monoxide**
 

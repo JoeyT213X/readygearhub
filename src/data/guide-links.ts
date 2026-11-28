@@ -20,28 +20,33 @@ export type GuideNav = {
 
 export const guideNav: Record<string, GuideNav> = {
   'winter-storm-power-outage-prep-guide-south': {
-    directory: ['power', 'water', 'food', 'outdoor', 'auto'],
+    directory: ['power', 'water', 'food', 'outdoor', 'auto', 'fun', 'audio'],
     readNext: ['ice-storm-prep-checklist-south', 'power-outage-ice-storm-mississippi', 'emergency-food-storage', 'how-to-keep-pipes-from-freezing'],
+    extras: [{ href: '/gear/#offline-entertainment', label: 'Offline entertainment for long outages: card games, downloaded music and audiobooks' }],
   },
   'ice-storm-prep-checklist-south': {
-    directory: ['power', 'water', 'food', 'outdoor'],
+    directory: ['power', 'water', 'food', 'outdoor', 'fun', 'audio'],
     readNext: ['winter-storm-power-outage-prep-guide-south', 'emergency-food-storage', 'emergency-water-storage'],
+    extras: [{ href: '/gear/#offline-entertainment', label: 'Offline entertainment for long outages: card games, downloaded music and audiobooks' }],
   },
   'ice-storm-survival-checklist-for-the-south': {
     directory: ['power', 'outdoor'],
     readNext: ['ice-storm-prep-checklist-south', 'winter-storm-power-outage-prep-guide-south'],
   },
   'power-outage-ice-storm-mississippi': {
-    directory: ['power', 'water', 'food', 'outdoor'],
+    directory: ['power', 'water', 'food', 'outdoor', 'fun'],
     readNext: ['ice-storm-prep-checklist-south', 'emergency-food-storage', 'carbon-monoxide-safety-during-an-outage'],
+    extras: [{ href: '/gear/#offline-entertainment', label: 'Offline entertainment for long outages: card games, downloaded music and audiobooks' }],
   },
   'winter-power-outage-checklist': {
-    directory: ['power', 'food', 'outdoor'],
+    directory: ['power', 'food', 'outdoor', 'fun'],
     readNext: ['winter-storm-power-outage-prep-guide-south', 'emergency-food-storage', 'emergency-water-storage'],
+    extras: [{ href: '/gear/#offline-entertainment', label: 'Offline entertainment for long outages: card games, downloaded music and audiobooks' }],
   },
   'how-to-stay-warm-without-power': {
-    directory: ['outdoor', 'power'],
+    directory: ['outdoor', 'power', 'fun'],
     readNext: ['heat-one-room-safely-in-an-outage', 'carbon-monoxide-safety-during-an-outage', 'emergency-food-storage'],
+    extras: [{ href: '/gear/#offline-entertainment', label: 'Offline entertainment for long outages: card games, downloaded music and audiobooks' }],
   },
   'heat-one-room-safely-in-an-outage': {
     directory: ['outdoor', 'power'],
@@ -52,7 +57,7 @@ export const guideNav: Record<string, GuideNav> = {
     readNext: ['winter-storm-power-outage-prep-guide-south', 'emergency-water-storage'],
   },
   'winter-storm-watch-vs-warning': {
-    directory: ['tech'],
+    directory: ['tech', 'audio'],
     readNext: ['ice-storm-prep-checklist-south', 'winter-storm-power-outage-prep-guide-south'],
   },
   'winter-car-emergency-kit': {
@@ -60,7 +65,7 @@ export const guideNav: Record<string, GuideNav> = {
     readNext: ['winter-storm-power-outage-prep-guide-south', 'emergency-food-storage'],
   },
   'winter-emergency-kit-for-elderly-parents': {
-    directory: ['safety', 'power', 'food'],
+    directory: ['safety', 'power', 'food', 'fun'],
     readNext: ['winter-storm-power-outage-prep-guide-south', 'emergency-food-storage', 'storm-first-aid-kit'],
   },
   'carbon-monoxide-safety-during-an-outage': {
@@ -78,12 +83,12 @@ export const guideNav: Record<string, GuideNav> = {
     extras: [{ href: '/doomsday-prepper/projects/#wells', label: 'Planning a private well? Permits, guides and cost ranges' }],
   },
   'hurricane-prep-guide-gulf-south': {
-    directory: ['power', 'water', 'food', 'safety'],
+    directory: ['power', 'water', 'food', 'safety', 'audio', 'drones-robotics', 'drones'],
     readNext: ['emergency-food-storage', 'emergency-water-storage', 'tornado-watch-vs-warning-mississippi'],
     extras: [{ href: '/doomsday-prepper/projects/#outbuildings-safe-rooms', label: 'Safe rooms and shelters: permits, guides and cost ranges' }],
   },
   'tornado-watch-vs-warning-mississippi': {
-    directory: ['safety'],
+    directory: ['safety', 'audio'],
     readNext: ['hurricane-prep-guide-gulf-south', 'storm-first-aid-kit'],
     extras: [{ href: '/doomsday-prepper/projects/#outbuildings-safe-rooms', label: 'Safe rooms and storm shelters: permits, guides and cost ranges' }],
   },
@@ -125,4 +130,12 @@ export const winterOptIn: Record<string, { heading: string; intro: string }> = {
     heading: 'Free winter storm checklist, by email',
     intro: 'Pipes are one line on a longer list. Leave your email for the printable checklist and a few calm seasonal reminders.',
   },
+};
+
+/**
+ * /gear/ sections (directory.ts category ids) that list related guides under the section heading.
+ * Keeps category-to-guide links in data rather than in the page.
+ */
+export const gearSectionGuides: Record<string, string[]> = {
+  'offline-entertainment': ['how-to-stay-warm-without-power', 'power-outage-ice-storm-mississippi', 'winter-power-outage-checklist', 'winter-emergency-kit-for-elderly-parents'],
 };

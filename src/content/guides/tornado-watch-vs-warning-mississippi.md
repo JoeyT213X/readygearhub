@@ -4,6 +4,7 @@ description: "What a tornado watch, warning, and emergency mean in Mississippi a
 lane: storm-hurricane-prep
 season: ["spring", "fall", "all-season"]
 published: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["midland-er310-crank-radio", "midland-wr400", "eton-red-cross-frx2"]
 draft: false
 ---
@@ -66,6 +67,9 @@ Because November tornadoes in Mississippi often occur at night, do not rely on s
 - **NOAA Weather Radio.** A nationwide network that broadcasts continuous weather information, including official watches and warnings, from the nearest National Weather Service office, 24 hours a day. A battery or hand-crank radio still works if the power is out. See the NWS [NOAA Weather Radio](https://www.weather.gov/nwr/) page, and options such as the [Midland ER310](/gear/midland-er310-crank-radio/), the [Midland WR400](/gear/midland-wr400/), or the [Eton American Red Cross FRX2](/gear/eton-red-cross-frx2/).
 - **Emergency Alert System (EAS).** Official alerts carried on broadcast television and radio.
 - **Community warning systems and outdoor sirens**, where your county or city offers them. Sign up if your community has a list, and learn what the siren tone means. County contacts are on our [Mississippi local resources](/local/mississippi/) pages.
+
+A battery-powered speaker or headphones can help pass time in a shelter, but they are not an alert source. Keep a weather radio and your phone for alerts. For audio gear, see the [Audio & Entertainment directory](/directory/audio/).
+
 
 You can also watch official NWS alerts on our home [What's happening now](/#live-status) board, the [live alerts](/alerts/) page, or [Storm Tracker](/storm-tracker/). For occasional, source-based notes, see [Local & community safety updates](/updates/).
 
