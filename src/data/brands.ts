@@ -177,7 +177,7 @@ export const brandPages: BrandPage[] = [
     photo: 'hero-bluetti-official',
     heroPhoto: 'hero-bluetti-official',
     photoNote: 'Official BLUETTI product photos (Elite 200 V2, AC180, and the SP200L 200W panel) from the CJ Affiliate product catalog, arranged on a plain background. Originally downloaded November 21, 2026; this arrangement was made November 23, 2026.',
-    summary: 'We chose BLUETTI as the third spotlight because it is an approved partner with the most product coverage on the site: dozens of listings with official product photos, plus the gear pages and guides that already link to it. BLUETTI’s official shop has current prices, so this page does not show any.',
+    summary: 'We chose BLUETTI as the third spotlight because it is an approved partner with the most product coverage on the site: dozens of listings with official product photos, plus the gear pages and guides that already link to it. Dated prices on the product cards come from the CJ US catalog and may change; confirm the current price on BLUETTI’s page when you buy.',
     goodFor: [
       'Households that want a mid-size, solar-ready energy reserve for outage backup, camping, or van life (the AC70, AC180, and Elite 200 V2).',
       'People adding solar charging with a panel from the same brand (the 350W panel).',
@@ -196,7 +196,7 @@ export const brandPages: BrandPage[] = [
       { id: 'bluetti-350w-solar', why: 'A 350W solar panel for recharging a compatible energy reserve when the grid is down.', check: 'Compatibility with your energy reserve and the panel’s connector and input limits.' },
       { id: 'bluetti-apex-300', why: 'A home battery backup system. BLUETTI lists 3,840W of output and 2,764.8Wh of capacity, with options to expand for longer outages.', check: 'Installation guidance, expansion options, and whether a licensed electrician is needed for your setup.' },
     ],
-    priceNote: 'We do not publish BLUETTI prices because we have no verified, dated price list for them. Prices change often, so see the current price on BLUETTI’s product page.',
+    priceNote: 'Dated prices on the product cards are from the CJ US catalog, checked Nov 27, 2026, and may change. Confirm the current price on BLUETTI’s product page when you buy. A few models not in that catalog have no price on the card.',
     code: 'Program code AFF5OFF for 5% off at checkout, per BLUETTI. Check BLUETTI’s page for the terms that apply when you buy.',
     choose: [
       { title: 'Add up your must-run devices', text: 'Total the watts of what you need running at once, then check the energy reserve’s rated output. Leave headroom for motors that draw more when they start.' },

@@ -70,12 +70,268 @@
       "url": "https://theberkey.com/products/travel-berkey-water-filter"
     },
     {
+      "id": "bluetti-200w-solar-panel",
+      "price": 399,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-sp200l-solar-panel-200w"
+    },
+    {
+      "id": "bluetti-350w-solar",
+      "price": 649,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/350w-solar-panel"
+    },
+    {
       "id": "bluetti-ac180",
       "price": 549,
       "currency": "USD",
-      "source": "page",
+      "source": "cj",
       "checked": "2026-11-27",
       "url": "https://www.bluettipower.com/products/ac180"
+    },
+    {
+      "id": "bluetti-ac180p",
+      "price": 649,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/ac180p"
+    },
+    {
+      "id": "bluetti-ac200l",
+      "price": 899,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/ac200l-portable-power-station"
+    },
+    {
+      "id": "bluetti-ac200p-l",
+      "price": 1399,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/ac200p-l"
+    },
+    {
+      "id": "bluetti-ac50b",
+      "price": 399,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/ac50b"
+    },
+    {
+      "id": "bluetti-ac70",
+      "price": 359,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/ac70"
+    },
+    {
+      "id": "bluetti-apex-200",
+      "price": 1399,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/apex-200-expandable-power-station"
+    },
+    {
+      "id": "bluetti-apex-300",
+      "price": 1699,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/apex-300-home-battery-backup"
+    },
+    {
+      "id": "bluetti-b1210",
+      "price": 299,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/lifepo4-lithium-batteries"
+    },
+    {
+      "id": "bluetti-b210",
+      "price": 1499,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/b210"
+    },
+    {
+      "id": "bluetti-b300k",
+      "price": 1199,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/apex-300-b300k-expansion-battery"
+    },
+    {
+      "id": "bluetti-b4810",
+      "price": 1999,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-b4810-lifepo-battery-51-2-v-100-ah"
+    },
+    {
+      "id": "bluetti-bc200",
+      "price": 899,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-bluecell-200-battery"
+    },
+    {
+      "id": "bluetti-charger-1",
+      "price": 249,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-charger-1"
+    },
+    {
+      "id": "bluetti-charger-2",
+      "price": 449,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-charger-2-alternator-solar-charger"
+    },
+    {
+      "id": "bluetti-elite-10-mini",
+      "price": 129.99,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-elite-10-mini-power-station-200w-128wh-green"
+    },
+    {
+      "id": "bluetti-elite-100-mini",
+      "price": 429,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/elite-100-mini-portable-power-station"
+    },
+    {
+      "id": "bluetti-elite-100-v2",
+      "price": 549,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/elite-100-v2-portable-power-station"
+    },
+    {
+      "id": "bluetti-elite-200-v2",
+      "price": 899,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/elite-200-v2-portable-power-station"
+    },
+    {
+      "id": "bluetti-elite-30-mini",
+      "price": 249.99,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/elite-30-mini-portable-power-station"
+    },
+    {
+      "id": "bluetti-elite-30-v2",
+      "price": 299.99,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/elite-30-v2-portable-power-station"
+    },
+    {
+      "id": "bluetti-elite-300",
+      "price": 1199,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/elite-300-portable-power-station"
+    },
+    {
+      "id": "bluetti-elite-400",
+      "price": 1399,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/elite-400-portable-power-station"
+    },
+    {
+      "id": "bluetti-fridgepower",
+      "price": 949,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/fridgepower-battery-backup"
+    },
+    {
+      "id": "bluetti-pioneer-na",
+      "price": 899,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/sodium-ion-battery-pioneer-na"
+    },
+    {
+      "id": "bluetti-premium-100-v2",
+      "price": 849,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-premium-100-v2-portable-power-station"
+    },
+    {
+      "id": "bluetti-premium-200-v2",
+      "price": 1549,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-premium-200-v2-portable-power-station"
+    },
+    {
+      "id": "bluetti-sora-60",
+      "price": 129,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-sora-60-solar-panel-60w"
+    },
+    {
+      "id": "bluetti-sp100l",
+      "price": 249,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/foldable-solar-panel-sp100l"
+    },
+    {
+      "id": "bluetti-sp200l",
+      "price": 399,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/bluetti-sp200l-solar-panel-200w"
+    },
+    {
+      "id": "bluetti-x20",
+      "price": 119,
+      "currency": "USD",
+      "source": "cj",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/x20-portable-power-bank"
     },
     {
       "id": "bogs-arcata-ii-dash-kids",

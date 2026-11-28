@@ -13,7 +13,8 @@
     "catalog:build": "esbuild packages/catalog/index.ts --bundle --format=esm --platform=neutral --outfile=packages/catalog/dist/index.mjs",
     "images:manifest": "node scripts/image-manifest.mjs",
     "prices:update": "node scripts/price-feed.mjs",
-    "prices:priority": "node scripts/price-priority.mjs"
+    "prices:priority": "node scripts/price-priority.mjs",
+    "cj:refresh": "node scripts/cj-refresh.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.5",

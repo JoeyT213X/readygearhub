@@ -142,12 +142,12 @@ export type SourceItem = {
   offerLabel?: string;
   /** Internal path for our own products (preferred over the Payhip checkout URL). */
   internalHref?: string;
-  /** Verified price already in the repo (Payhip only today). */
+  /** Verified dated price (Payhip, or a partner catalog such as CJ). */
   price?: string;
 };
 
 export const sourceItems: SourceItem[] = [
-  // ---- Power: BLUETTI product deep links via the existing {url} template ----
+  // ---- Power: BLUETTI product deep links via CJ itemLinks clickUrls when matched ----
   {
     id: 'bluetti-elite-200-v2',
     title: 'BLUETTI Elite 200 V2',
@@ -163,6 +163,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-200-v2.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$899.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-ac180',
@@ -178,6 +180,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-ac180.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$549.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-ac200l',
@@ -193,6 +197,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-ac200l.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$899.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-ac2a',
@@ -224,6 +230,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-100-v2.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$549.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-ac70',
@@ -238,6 +246,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-ac70.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$359.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-elite-300',
@@ -252,6 +262,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-300.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '}199.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-sp200l',
@@ -266,6 +278,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-sp200l-200w.webp',
     imageKind: 'photo',
     offerLabel: 'Solar panel',
+    price: '$399.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-power-stations',
@@ -280,7 +294,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-200-v2.webp',
     imageKind: 'photo',
     offerLabel: 'Official collection',
-    cta: 'Browse BLUETTI energy reserves',
+    cta: 'Browse the collection',
   },
 
   // ---- Power: more BLUETTI product deep links via the existing {url} template ----
@@ -297,6 +311,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-30-mini.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$249.99 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-elite-100-mini',
@@ -311,6 +327,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-100-mini.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$429.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-elite-30-v2',
@@ -325,6 +343,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-30-v2.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$299.99 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-elite-10-mini',
@@ -339,6 +359,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-10-mini.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '}29.99 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-elite-400',
@@ -352,6 +374,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-elite-400.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '}399.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-apex-300',
@@ -366,6 +390,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-apex-300.webp',
     imageKind: 'photo',
     offerLabel: 'Home battery backup',
+    price: '}699.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-apex-200',
@@ -380,6 +406,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-apex-200.webp',
     imageKind: 'photo',
     offerLabel: 'Home battery backup',
+    price: '}399.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-premium-100-v2',
@@ -394,6 +422,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-premium-100-v2.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$849.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-premium-200-v2',
@@ -407,6 +437,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-premium-200-v2.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '}549.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-ac180p',
@@ -421,6 +453,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-ac180p.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$649.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-ac200p-l',
@@ -434,6 +468,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-ac200p-l.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '}399.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-ac50b',
@@ -448,6 +484,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-ac50b.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$399.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-pioneer-na',
@@ -462,6 +500,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-pioneer-na.webp',
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
+    price: '$899.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-bc200',
@@ -475,6 +515,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-bc200.webp',
     imageKind: 'photo',
     offerLabel: 'Battery',
+    price: '$899.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-fridgepower',
@@ -489,6 +531,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-fridgepower.webp',
     imageKind: 'photo',
     offerLabel: 'Fridge backup',
+    price: '$949.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-b300k',
@@ -502,6 +546,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-b300k.webp',
     imageKind: 'photo',
     offerLabel: 'Expansion battery',
+    price: '}199.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-b210',
@@ -515,6 +561,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-b210.webp',
     imageKind: 'photo',
     offerLabel: 'Expansion battery',
+    price: '}499.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-b1210',
@@ -528,6 +576,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-b1210.webp',
     imageKind: 'photo',
     offerLabel: 'Battery',
+    price: '$299.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-b4810',
@@ -541,6 +591,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-b4810.webp',
     imageKind: 'photo',
     offerLabel: 'Battery',
+    price: '}999.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-charger-1',
@@ -555,6 +607,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-charger-1.webp',
     imageKind: 'photo',
     offerLabel: 'Charger',
+    price: '$249.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-350w-solar',
@@ -569,6 +623,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-350w-solar.webp',
     imageKind: 'photo',
     offerLabel: 'Solar panel',
+    price: '$649.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-sora-60',
@@ -583,6 +639,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-sora-60.webp',
     imageKind: 'photo',
     offerLabel: 'Solar panel',
+    price: '}29.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-sp100l',
@@ -597,6 +655,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-sp100l.webp',
     imageKind: 'photo',
     offerLabel: 'Solar panel',
+    price: '$249.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-x20',
@@ -611,6 +671,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-x20.webp',
     imageKind: 'photo',
     offerLabel: 'Power bank',
+    price: '}19.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
   {
     id: 'bluetti-charger-2',
@@ -625,6 +687,8 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/bluetti-charger-2.webp',
     imageKind: 'photo',
     offerLabel: 'Charger',
+    price: '$449.00 as of Nov 27, 2026',
+    useItemLink: true,
   },
 
   // ---- Power: ALLPOWERS via existing CJ AID deep-link helper ----
@@ -691,7 +755,7 @@ export const sourceItems: SourceItem[] = [
     destination: 'https://iallpowers.com/collections/best-sellers',
     image: '/directory/covers/store.svg',
     offerLabel: 'Official collection',
-    cta: 'Browse ALLPOWERS bestsellers',
+    cta: 'Browse the collection',
   },
 
   // ---- Power: Anker SOLIX (Rakuten MID 53552, verified deep links Nov 23, 2026) ----
@@ -2386,7 +2450,9 @@ export function resolveSourceItem(item: SourceItem): ResolvedSourceItem {
   }
 
   let href = '';
-  if (item.useItemLink && p.itemLinks?.[item.id]) {
+  if (p.itemLinks?.[item.id]) {
+    href = p.itemLinks[item.id];
+  } else if (item.useItemLink && p.itemLinks?.[item.id]) {
     href = p.itemLinks[item.id];
   } else if (item.useProgramLink) {
     const template = (p.link || p.url || '').trim();
