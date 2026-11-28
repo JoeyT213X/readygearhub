@@ -6,7 +6,6 @@
  *   family-emergency-binder        ZwvsR   $5   https://payhip.com/b/ZwvsR
  *   winter-storm-prep-planner      x7iZ2   $5   https://payhip.com/b/x7iZ2
  *   homestead-prep-starter-guide   wc9Ez   $5   https://payhip.com/b/wc9Ez
- *   complete-prep-bundle           kRx6L  $10   https://payhip.com/b/kRx6L
  *
  */
 
@@ -24,21 +23,14 @@
  *   family-emergency-binder        ZwvsR   $5   https://payhip.com/b/ZwvsR
  *   winter-storm-prep-planner      x7iZ2   $5   https://payhip.com/b/x7iZ2
  *   homestead-prep-starter-guide   wc9Ez   $5   https://payhip.com/b/wc9Ez
- *   complete-prep-bundle           kRx6L  $10   https://payhip.com/b/kRx6L
- *     (Guest-checkout digital ZIP: all three guides plus both free quick-reference
- *     sheets packed together for easy printing.)
  */
 
-/** Single-line bundle Payhip ID (guest-checkout complete-prep-bundle.zip). */
-export const PAYHIP_BUNDLE_ID = 'kRx6L';
 export const PAYHIP_BINDER_ID = 'ZwvsR';
 export const PAYHIP_PLANNER_ID = 'x7iZ2';
 export const PAYHIP_HOMESTEAD_ID = 'wc9Ez';
 
 export const PAYHIP_GUIDE_PRICE = '$5';
 export const PAYHIP_GUIDE_PRICE_AMOUNT = '5.00';
-export const PAYHIP_BUNDLE_PRICE = '$10';
-export const PAYHIP_BUNDLE_PRICE_AMOUNT = '10.00';
 
 export function payhipUrl(productId: string): string {
   return productId ? `https://payhip.com/b/${productId}` : '';
@@ -64,33 +56,6 @@ export type PayhipProduct = {
 
 export const payhipProducts: PayhipProduct[] = [
 
-  {
-    slug: 'complete-prep-bundle',
-    title: 'Complete Storm & Family Prep Bundle',
-    price: PAYHIP_BUNDLE_PRICE,
-    priceAmount: PAYHIP_BUNDLE_PRICE_AMOUNT,
-    description:
-      'The three ReadyGearHub print-at-home guides together: the Family Emergency Binder, the Winter Storm Prep Planner, and the Homestead Prep Starter Guide. A simple way to keep the household plan, the week-before-the-ice countdown, and the rural or well-water starter in one download.',
-    summary:
-      'The Family Emergency Binder, Winter Storm Prep Planner, and Homestead Prep Starter Guide, together as a print-at-home set.',
-    includes: [
-      'Family Emergency Binder — 12-page fillable household plan',
-      'Winter Storm Prep Planner — 10-page seven-day countdown for the week before the ice',
-      'Homestead Prep Starter Guide — 10-page starter for a farm, cabin, or house on a well',
-      'Both free quick-reference sheets packed in for easy printing (Outage Food-Safety Chart + Emergency Contacts & Shut-Offs Sheet)',
-      'Instant ZIP download after checkout, through Payhip',
-      'Personal-use license; print as many household copies as you need',
-    ],
-    productId: PAYHIP_BUNDLE_ID,
-    image: '/shop/complete-prep-bundle.png',
-    freeSignup: true,
-    related: [
-      { href: '/shop/family-emergency-binder/', label: `Family Emergency Binder on its own (${PAYHIP_GUIDE_PRICE})` },
-      { href: '/shop/winter-storm-prep-planner/', label: `Winter Storm Prep Planner on its own (${PAYHIP_GUIDE_PRICE})` },
-      { href: '/shop/homestead-prep-starter-guide/', label: `Homestead Prep Starter Guide on its own (${PAYHIP_GUIDE_PRICE})` },
-      { href: '/winter-storm-ready-checklist/', label: 'Free winter storm checklist' },
-    ],
-  },
   {
     slug: 'family-emergency-binder',
     title: 'Family Emergency Binder (Fillable PDF)',
