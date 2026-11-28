@@ -27,7 +27,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/fx-navi-embodied-ai-quadruped-robot.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$1,990 on Robots International as of Nov 25, 2026",
+    price: "$1,990 on Robots International as of Nov 27, 2026",
   },
   {
     id: "ri-fx-aegis-ultra-w-wheel-legged-robot-dog",
@@ -40,7 +40,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/fx-aegis-ultra-w-wheel-legged-robot-dog.htm",
     offerLabel: "Wheeled quadruped robot",
     cta: "Check listing",
-    price: "$12,990 on Robots International as of Nov 25, 2026",
+    price: "$12,990 on Robots International as of Nov 27, 2026",
   },
   {
     id: "ri-fx-aegis-ultra-w-plus",
@@ -53,7 +53,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Ultra-W-Plus.htm",
     offerLabel: "Wheeled quadruped robot",
     cta: "Check listing",
-    price: "$24,990 on Robots International as of Nov 25, 2026",
+    price: "$24,990 on Robots International as of Nov 27, 2026",
   },
   {
     id: "ri-fx-aegis-ultra-plus",
@@ -66,7 +66,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Ultra-Plus.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$22,990 on Robots International as of Nov 25, 2026",
+    price: "$22,990 on Robots International as of Nov 27, 2026",
   },
   {
     id: "ri-fx-aegis-ultra",
@@ -79,7 +79,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Ultra.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$12,990 on Robots International as of Nov 25, 2026",
+    price: "$12,990 on Robots International as of Nov 27, 2026",
   },
   {
     id: "ri-fx-aegis-pro",
@@ -92,7 +92,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/FX-Aegis-Pro.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$4,490 on Robots International as of Nov 25, 2026",
+    price: "$4,490 on Robots International as of Nov 27, 2026",
   },
   {
     id: "ri-fx-aegis-quadruped-robot-dog",
@@ -105,7 +105,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/fx-aegis-quadruped-robot-dog.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$2,490 on Robots International as of Nov 25, 2026",
+    price: "$2,490 on Robots International as of Nov 27, 2026",
   },
   {
     id: "ri-galileo-c1",
@@ -118,7 +118,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/GALILEO-C1.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$10,000 on Robots International as of Nov 25, 2026",
+    price: "$9,999.99 on Robots International as of Nov 27, 2026",
     filler: true,
   },
   {
@@ -132,7 +132,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/GALILEO-C1-W.htm",
     offerLabel: "Wheeled quadruped robot",
     cta: "Check listing",
-    price: "$11,995 on Robots International as of Nov 25, 2026",
+    price: "$11,995 on Robots International as of Nov 27, 2026",
     filler: true,
   },
   {
@@ -146,7 +146,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/PUDU-D5-W-Wheeled-Quadruped-Robot.htm",
     offerLabel: "Wheeled quadruped robot",
     cta: "Check listing",
-    price: "$83,995 on Robots International as of Nov 25, 2026",
+    price: "$83,995 on Robots International as of Nov 27, 2026",
     filler: true,
   },
   {
@@ -160,7 +160,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/PUDU-D5-Quadruped-Robot.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$69,995 on Robots International as of Nov 25, 2026",
+    price: "$69,995 on Robots International as of Nov 27, 2026",
     filler: true,
   },
   {
@@ -174,7 +174,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/MagicLab-MagicDog-Quadruped-Robot.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$12,500 on Robots International as of Nov 25, 2026",
+    price: "$12,500 on Robots International as of Nov 27, 2026",
     filler: true,
   },
   {
@@ -188,7 +188,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
     fallbackUrl: "https://www.robotsinternational.com/MirrorMe-BPX-Pro.htm",
     offerLabel: "Quadruped robot",
     cta: "Check listing",
-    price: "$7,995 on Robots International as of Nov 25, 2026",
+    price: "$7,995 on Robots International as of Nov 27, 2026",
     filler: true,
   },
   {

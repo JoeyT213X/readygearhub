@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import ItemCard from '../../components/ItemCard.astro';
 import Disclosure from '../../components/Disclosure.astro';
+import PriceNote from '../../components/PriceNote.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import { render } from 'astro:content';
@@ -69,6 +70,7 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
       <h2>Why it's on the list</h2>
       <div class="prose"><Content /></div>
       {priceLine && <p class="price-line"><strong>Price:</strong> {priceLine}.{d.priceNote && ` ${d.priceNote}`}</p>}
+      {priceLine && <PriceNote />}
       <p class="fine">{priceLine ? 'The price above is what the maker listed on the date shown and can change.' : 'We only show a price when we have a dated one.'} We don't publish star ratings. Always check the manufacturer's page for current price, specs and safety instructions.{d.verified && ` Official link last checked ${d.verified}.`}</p>
     </div>
     <aside class="detail-side card">

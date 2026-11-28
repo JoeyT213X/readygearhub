@@ -17,6 +17,7 @@ import {
   PRICE_CHECKED_LABEL,
 } from '../data/winter-deals';
 import SourceCard from '../components/SourceCard.astro';
+import PriceNote from '../components/PriceNote.astro';
 import { amazonCatalogItems } from '../data/amazon-picks';
 
 function hostOf(url: string): string {
@@ -101,6 +102,7 @@ const schema = [
 
   <section class="wrap section tight prose">
     <Disclosure />
+    <PriceNote />
     <h2>What is selling this week, and what we can actually list</h2>
     <p>
       On November 23, 2026, category best-seller lists were led by portable space heaters (DREO, GiveBest, Lasko),

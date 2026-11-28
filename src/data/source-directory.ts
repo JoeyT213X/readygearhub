@@ -721,7 +721,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/anker-solix-f3800-plus-960.webp',
     imageKind: 'photo',
     offerLabel: 'Home backup',
-    price: '$2,999.99 as of Nov 23, 2026',
+    price: 'See price',
   },
 
   {
@@ -768,7 +768,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/anker-solix-bp2000-gen2-960.webp',
     imageKind: 'photo',
     offerLabel: 'Expansion battery',
-    price: '$899.99 as of Nov 23, 2026',
+    price: '$749.99 as of Nov 27, 2026',
   },
   {
     id: 'anker-solix-c300-dc-60w-kit',
@@ -784,7 +784,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/anker-solix-c300-dc-60w-kit-960.webp',
     imageKind: 'photo',
     offerLabel: 'Solar kit',
-    price: '$279.99 as of Nov 23, 2026',
+    price: 'See price',
   },
 
   // ---- Power: LiTime (Awin 71451, verified deep links Nov 23, 2026) ----
@@ -817,7 +817,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-12v-100ah-group24-960.webp',
     imageKind: 'photo',
     offerLabel: 'Battery',
-    price: '$409.99 as of Nov 23, 2026',
+    price: '$409.99 as of Nov 27, 2026',
   },
   {
     id: 'litime-24v-230ah',
@@ -833,7 +833,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-24v-230ah-960.webp',
     imageKind: 'photo',
     offerLabel: 'Battery',
-    price: '$1,119.99 as of Nov 23, 2026',
+    price: '$1,328.98 as of Nov 27, 2026',
   },
   {
     id: 'litime-12v-100ah-trolling',
@@ -849,7 +849,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-12v-100ah-trolling-960.webp',
     imageKind: 'photo',
     offerLabel: 'Battery',
-    price: '$355.99 as of Nov 23, 2026',
+    price: '$355.99 as of Nov 27, 2026',
   },
   {
     id: 'litime-diy-solar-generator-kit',
@@ -865,7 +865,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-diy-solar-generator-kit-960.webp',
     imageKind: 'photo',
     offerLabel: 'Solar kit',
-    price: '$533.87 as of Nov 23, 2026',
+    price: '$533.87 as of Nov 27, 2026',
   },
 
 
@@ -898,7 +898,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-12v-200ah-bluetooth-960.webp',
     imageKind: 'photo',
     offerLabel: 'Battery',
-    price: '$519.99 as of Nov 23, 2026',
+    price: '$519.99 as of Nov 27, 2026',
   },
   {
     id: 'litime-1000w-12v-inverter',
@@ -914,7 +914,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-1000w-12v-inverter-960.webp',
     imageKind: 'photo',
     offerLabel: 'Inverter',
-    price: '$149.99 as of Nov 23, 2026',
+    price: '$149.99 as of Nov 27, 2026',
   },
   {
     id: 'litime-2000w-12v-inverter-ats',
@@ -930,7 +930,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-2000w-12v-inverter-ats-960.webp',
     imageKind: 'photo',
     offerLabel: 'Inverter',
-    price: '$245.99 as of Nov 23, 2026',
+    price: '$245.99 as of Nov 27, 2026',
   },
   {
     id: 'litime-30a-mppt',
@@ -946,7 +946,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-30a-mppt-960.webp',
     imageKind: 'photo',
     offerLabel: 'Charge controller',
-    price: '$144.99 as of Nov 23, 2026',
+    price: '$144.99 as of Nov 27, 2026',
   },
   {
     id: 'litime-12v-10a-charger',
@@ -962,7 +962,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-12v-10a-charger-960.webp',
     imageKind: 'photo',
     offerLabel: 'Charger',
-    price: '$79.99 as of Nov 23, 2026',
+    price: '$79.99 as of Nov 27, 2026',
   },
   {
     id: 'litime-12v-40a-dc-dc',
@@ -978,7 +978,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/litime-12v-40a-dc-dc-960.webp',
     imageKind: 'photo',
     offerLabel: 'Charger',
-    price: '$155.99 as of Nov 23, 2026',
+    price: '$155.99 as of Nov 27, 2026',
   },
 
   // ---- Power / outdoor: BougeRV (Awin 52765, approved Nov 26, 2026). Pages and Awin deep links checked Nov 27, 2026. ----
@@ -1724,7 +1724,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-rcc7-960.webp',
     imageKind: 'photo',
     offerLabel: 'Under-sink RO',
-    price: '$229.99 as of Nov 23, 2026',
+    price: '$229.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
   {
@@ -1741,7 +1741,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-rcc7ak-960.webp',
     imageKind: 'photo',
     offerLabel: 'Alkaline under-sink RO',
-    price: '$241.99 as of Nov 23, 2026',
+    price: '$241.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
   {
@@ -1758,7 +1758,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-ro500-960.webp',
     imageKind: 'photo',
     offerLabel: 'Tankless RO',
-    price: '$659.99 as of Nov 23, 2026',
+    price: '$659.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
   {
@@ -1775,7 +1775,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-rcd100-960.webp',
     imageKind: 'photo',
     offerLabel: 'Countertop RO',
-    price: '$419.99 as of Nov 23, 2026',
+    price: '$419.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
   {
@@ -1792,7 +1792,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-wgb21b-960.webp',
     imageKind: 'photo',
     offerLabel: 'Whole-house filter',
-    price: '$173.99 as of Nov 23, 2026',
+    price: '$173.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
   {
@@ -1809,7 +1809,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-wgb32b-960.webp',
     imageKind: 'photo',
     offerLabel: 'Whole-house filter',
-    price: '$516.99 as of Nov 23, 2026',
+    price: '$516.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
   {
@@ -1826,7 +1826,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-sf2s-960.webp',
     imageKind: 'photo',
     offerLabel: 'Shower filter',
-    price: '$22.99 as of Nov 23, 2026',
+    price: '$22.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
   {
@@ -1843,7 +1843,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/ispring-df1-960.webp',
     imageKind: 'photo',
     offerLabel: 'Faucet filter',
-    price: '$34.99 as of Nov 23, 2026',
+    price: '$34.99 as of Nov 27, 2026',
     cta: 'See price at iSpring',
   },
 
@@ -1861,7 +1861,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/epic-pure-xp-pitcher-960.webp',
     imageKind: 'photo',
     offerLabel: 'Filter pitcher',
-    price: 'From $59.25 as of Nov 24, 2026',
+    price: 'From $63.20 as of Nov 27, 2026',
     cta: 'See price at Epic Water Filters',
   },
   {
@@ -1878,7 +1878,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/epic-nano-xp-pitcher-960.webp',
     imageKind: 'photo',
     offerLabel: 'Filter pitcher',
-    price: '$59.25 as of Nov 24, 2026',
+    price: '$63.20 as of Nov 27, 2026',
     cta: 'See price at Epic Water Filters',
   },
   {
@@ -1895,7 +1895,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/epic-smart-shield-960.webp',
     imageKind: 'photo',
     offerLabel: 'Under-sink filter',
-    price: '$96.75 as of Nov 24, 2026',
+    price: '$103.20 as of Nov 27, 2026',
     cta: 'See price at Epic Water Filters',
   },
   {
@@ -1912,7 +1912,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/epic-smart-shield-max-960.webp',
     imageKind: 'photo',
     offerLabel: 'Under-sink filter',
-    price: '$111.75 as of Nov 24, 2026',
+    price: '$119.20 as of Nov 27, 2026',
     cta: 'See price at Epic Water Filters',
   },
   {
@@ -1929,7 +1929,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/epic-og-ultimate-travel-bottle-600.webp',
     imageKind: 'photo',
     offerLabel: 'Filter bottle',
-    price: '$41.25 as of Nov 24, 2026',
+    price: '$40.00 as of Nov 27, 2026',
     cta: 'See price at Epic Water Filters',
   },
 
@@ -1946,7 +1946,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/tidewe-inferno-heated-jacket-800.webp',
     imageKind: 'photo',
     offerLabel: 'Heated jacket',
-    price: 'From $144.99 as of Nov 24, 2026',
+    price: 'From $129.99 as of Nov 27, 2026',
     cta: 'See price at TideWe',
   },
   {
@@ -1962,7 +1962,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/tidewe-silentrace-heated-jacket-800.webp',
     imageKind: 'photo',
     offerLabel: 'Heated jacket set',
-    price: '$159.99 as of Nov 24, 2026',
+    price: '$159.99 as of Nov 27, 2026',
     cta: 'See price at TideWe',
   },
   {
@@ -1978,7 +1978,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/tidewe-thermcore-heated-vest-960.webp',
     imageKind: 'photo',
     offerLabel: 'Heated vest',
-    price: 'From $99.99 as of Nov 24, 2026',
+    price: 'From $99.99 as of Nov 27, 2026',
     cta: 'See price at TideWe',
   },
   {
@@ -1994,7 +1994,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/tidewe-thermshift-heated-vest-960.webp',
     imageKind: 'photo',
     offerLabel: 'Heated vest',
-    price: 'From $108.00 as of Nov 24, 2026',
+    price: 'From $108.00 as of Nov 27, 2026',
     cta: 'See price at TideWe',
   },
   {
@@ -2010,7 +2010,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/tidewe-torridseeker-heated-waders-960.webp',
     imageKind: 'photo',
     offerLabel: 'Heated waders',
-    price: 'From $149.99 as of Nov 24, 2026',
+    price: 'From $149.99 as of Nov 27, 2026',
     cta: 'See price at TideWe',
   },
   {
@@ -2026,7 +2026,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/tidewe-aquawade-pro-waders-800.webp',
     imageKind: 'photo',
     offerLabel: 'Insulated waders',
-    price: 'From $239.99 as of Nov 24, 2026',
+    price: 'From $239.99 as of Nov 27, 2026',
     cta: 'See price at TideWe',
   },
 
@@ -2043,7 +2043,7 @@ export const sourceItems: SourceItem[] = [
     useItemLink: true,
     image: '/images/photos/stock-boots-960.webp',
     offerLabel: 'Winter boots',
-    price: '$185 regular list price as of Nov 25, 2026',
+    price: '$185 regular list price as of Nov 27, 2026',
     cta: 'See price at Bogs',
   },
   {
@@ -2058,7 +2058,7 @@ export const sourceItems: SourceItem[] = [
     useItemLink: true,
     image: '/images/photos/stock-boots-960.webp',
     offerLabel: 'Winter boots',
-    price: '$220 regular list price as of Nov 25, 2026',
+    price: '$220 regular list price as of Nov 27, 2026',
     cta: 'See price at Bogs',
   },
   {
@@ -2073,7 +2073,7 @@ export const sourceItems: SourceItem[] = [
     useItemLink: true,
     image: '/images/photos/stock-boots-960.webp',
     offerLabel: 'Winter boots',
-    price: '$180 regular list price as of Nov 25, 2026',
+    price: '$180 regular list price as of Nov 27, 2026',
     cta: 'See price at Bogs',
   },
   {
@@ -2088,7 +2088,7 @@ export const sourceItems: SourceItem[] = [
     useItemLink: true,
     image: '/images/photos/stock-boots-960.webp',
     offerLabel: 'Winter boots',
-    price: '$185 regular list price as of Nov 25, 2026',
+    price: '$185 regular list price as of Nov 27, 2026',
     cta: 'See price at Bogs',
   },
   {
@@ -2103,7 +2103,7 @@ export const sourceItems: SourceItem[] = [
     useItemLink: true,
     image: '/images/photos/stock-boots-960.webp',
     offerLabel: 'Winter boots',
-    price: '$165 regular list price as of Nov 25, 2026',
+    price: '$165 regular list price as of Nov 27, 2026',
     cta: 'See price at Bogs',
   },
   {
@@ -2118,7 +2118,7 @@ export const sourceItems: SourceItem[] = [
     useItemLink: true,
     image: '/images/photos/stock-boots-960.webp',
     offerLabel: 'Winter boots',
-    price: '$125 regular list price as of Nov 25, 2026',
+    price: '$125 regular list price as of Nov 27, 2026',
     cta: 'See price at Bogs',
   },
   {
@@ -2133,7 +2133,7 @@ export const sourceItems: SourceItem[] = [
     useItemLink: true,
     image: '/images/photos/stock-boots-960.webp',
     offerLabel: 'Winter boots',
-    price: '$75 regular list price as of Nov 25, 2026',
+    price: '$75 regular list price as of Nov 27, 2026',
     cta: 'See price at Bogs',
   },
 
@@ -2244,7 +2244,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/redi-the-roadie-960.webp',
     imageKind: 'photo',
     offerLabel: 'Ready kit',
-    price: '$143.10 as of Nov 23, 2026',
+    price: '$143.10 as of Nov 27, 2026',
     cta: 'See price at REDI',
   },
   {
@@ -2261,7 +2261,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/redi-roadie-plus-960.webp',
     imageKind: 'photo',
     offerLabel: 'Ready kit',
-    price: '$179.10 as of Nov 23, 2026',
+    price: '$179.10 as of Nov 27, 2026',
     cta: 'See price at REDI',
   },
   {
@@ -2278,7 +2278,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/redi-roadie-pro-960.webp',
     imageKind: 'photo',
     offerLabel: 'Ready kit',
-    price: '$449.10 as of Nov 23, 2026',
+    price: '$449.10 as of Nov 27, 2026',
     cta: 'See price at REDI',
   },
   {
@@ -2294,7 +2294,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/redi-trauma-pack-960.webp',
     imageKind: 'photo',
     offerLabel: 'Ready kit',
-    price: '$71.10 as of Nov 23, 2026',
+    price: '$71.10 as of Nov 27, 2026',
     cta: 'See price at REDI',
   },
   {
@@ -2311,7 +2311,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/berkey-big-berkey-390.webp',
     imageKind: 'photo',
     offerLabel: 'Gravity filter',
-    price: '$367.00 as of Nov 23, 2026',
+    price: '$367.00 as of Nov 27, 2026',
     cta: 'See price at TheBerkey.com',
   },
   {
@@ -2328,7 +2328,7 @@ export const sourceItems: SourceItem[] = [
     image: '/directory/photos/berkey-travel-berkey-390.webp',
     imageKind: 'photo',
     offerLabel: 'Gravity filter',
-    price: '$327.00 as of Nov 23, 2026',
+    price: '$327.00 as of Nov 27, 2026',
     cta: 'See price at TheBerkey.com',
   },
 ];

@@ -15,7 +15,7 @@ rank: 0
 featured: false
 season: ["all-season"]
 price: "$79.99"
-priceDate: "2026-11-23"
+priceDate: "2026-11-27"
 priceNote: "Source: LiTime’s official Awin product feed."
 verified: "2026-11-23"
 ---

@@ -15,7 +15,7 @@ rank: 0
 featured: false
 season: ["winter"]
 price: "$75"
-priceDate: "2026-11-25"
+priceDate: "2026-11-27"
 priceNote: "Regular list price, not a sale price."
 verified: "2026-11-25"
 ---

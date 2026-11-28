@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import BrandHero from '../../components/BrandHero.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SourceCard from '../../components/SourceCard.astro';
+import PriceNote from '../../components/PriceNote.astro';
 import { brandPages } from '../../data/brands';
 import { resolveOutbound } from '../../data/affiliates';
 import { getItems } from '../../lib/data';
@@ -57,6 +58,7 @@ const schema = [
   <section class="wrap section" id="picks">
     <SectionHead kicker="Our picks" title={`${picks.length} ${brand.name} picks`} intro="Chosen for fit, not payment. Specs come from the maker’s own pages." />
     <p class="fine brand-price-note">{brand.priceNote}</p>
+    <PriceNote />
     {brand.code && <p class="fine brand-code">{brand.code}</p>}
     <div class="grid shop-grid source-grid brand-picks">
       {picks.map((p) => (

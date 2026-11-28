@@ -1,0 +1,1140 @@
+{
+  "updated": "2026-11-27",
+  "cadence": "monthly",
+  "about": "Product prices shown on ReadyGearHub, read from retailer product data feeds and product pages. Written by scripts/price-feed.mjs.",
+  "items": [
+    {
+      "id": "alpine-armoring",
+      "price": 75000,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.alpineco.com/"
+    },
+    {
+      "id": "anker-solix-bp2000-gen2",
+      "price": 749.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ankersolix.com/products/c2000-gen2-expansion-battery"
+    },
+    {
+      "id": "anker-solix-c2000-gen2",
+      "price": 849.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ankersolix.com/products/c2000-gen2"
+    },
+    {
+      "id": "anker-solix-c300-dc-60w-kit",
+      "price": null,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ankersolix.com/products/c300-dc-60w-portable-solar-panel-1",
+      "status": "removed"
+    },
+    {
+      "id": "anker-solix-f3800-plus",
+      "price": null,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ankersolix.com/products/f3800-plus",
+      "status": "removed"
+    },
+    {
+      "id": "aquatru-carafe",
+      "price": 375,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://aquatruwater.com/products/carafe-countertop"
+    },
+    {
+      "id": "berkey-big-berkey",
+      "price": 367,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://theberkey.com/products/big-berkey-water-filter"
+    },
+    {
+      "id": "berkey-travel-berkey",
+      "price": 327,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://theberkey.com/products/travel-berkey-water-filter"
+    },
+    {
+      "id": "bluetti-ac180",
+      "price": 549,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bluettipower.com/products/ac180"
+    },
+    {
+      "id": "bogs-arcata-ii-dash-kids",
+      "price": 125,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bogsfootwear.com/shop/style/73118-001.html"
+    },
+    {
+      "id": "bogs-arcata-ii-lace",
+      "price": 180,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bogsfootwear.com/shop/style/73589-001.html"
+    },
+    {
+      "id": "bogs-arcata-ii-plaid",
+      "price": 185,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bogsfootwear.com/shop/style/73597-302.html"
+    },
+    {
+      "id": "bogs-arcata-urban-ii-leather",
+      "price": 165,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bogsfootwear.com/shop/style/73592-009.html"
+    },
+    {
+      "id": "bogs-bozeman-ii-tall",
+      "price": 185,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bogsfootwear.com/shop/style/73452-001.html"
+    },
+    {
+      "id": "bogs-bozeman-ii-vibram-arctic-grip",
+      "price": 220,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bogsfootwear.com/shop/style/73421-001.html"
+    },
+    {
+      "id": "bogs-snow-shell-cosmic-forest",
+      "price": 75,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.bogsfootwear.com/shop/style/73377-409.html"
+    },
+    {
+      "id": "clearly-filtered-pitcher",
+      "price": 110,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://clearlyfiltered.com/products/clean-water-pitcher"
+    },
+    {
+      "id": "ecoflow-delta-2-max",
+      "price": 1029,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://us.ecoflow.com/products/delta-2-max-portable-power-station"
+    },
+    {
+      "id": "epic-nano-xp-pitcher",
+      "price": 63.2,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.epicwaterfilters.com/products/epic-nano-water-filter-pitcher"
+    },
+    {
+      "id": "epic-og-ultimate-travel-bottle",
+      "price": 40,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.epicwaterfilters.com/products/ultimate-travel-bottle-og"
+    },
+    {
+      "id": "epic-pure-xp-pitcher",
+      "price": 63.2,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.epicwaterfilters.com/products/pure-xp-water-filter-pitcher"
+    },
+    {
+      "id": "epic-smart-shield",
+      "price": 103.2,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.epicwaterfilters.com/products/epic-smart-shield-under-sink-water-filter-system"
+    },
+    {
+      "id": "epic-smart-shield-max",
+      "price": 119.2,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.epicwaterfilters.com/products/epic-smart-shield-max"
+    },
+    {
+      "id": "eufy-solocam-s340",
+      "price": 219.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.eufy.com/products/t81701w1"
+    },
+    {
+      "id": "garmin-dash-cam-mini-3",
+      "price": 149.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.garmin.com/en-US/p/1223369/"
+    },
+    {
+      "id": "goal-zero-yeti-500",
+      "price": 499.95,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.goalzero.com/products/yeti-500-portable-power-station-lfp-battery"
+    },
+    {
+      "id": "goal-zero-yeti-700",
+      "price": 699.95,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.goalzero.com/products/yeti-700-portable-power-station-lfp-batteries"
+    },
+    {
+      "id": "harvest-right-countertop-360",
+      "price": 1295,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://harvestright.com/products/countertop-freeze-dryer"
+    },
+    {
+      "id": "hydro-flask-32-wide",
+      "price": 33.7477,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.hydroflask.com/32-oz-wide-mouth"
+    },
+    {
+      "id": "hydro-flask-40-wide",
+      "price": 37.5017,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.hydroflask.com/40-oz-wide-mouth"
+    },
+    {
+      "id": "indestructible-ares-boot",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/ares-black"
+    },
+    {
+      "id": "indestructible-armara",
+      "price": 87,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/armara"
+    },
+    {
+      "id": "indestructible-aura",
+      "price": 86,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/aura-black"
+    },
+    {
+      "id": "indestructible-bolt",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/steelure-pluse-1"
+    },
+    {
+      "id": "indestructible-camox",
+      "price": 88,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/camox-black-red"
+    },
+    {
+      "id": "indestructible-capped",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/capped-black"
+    },
+    {
+      "id": "indestructible-compression-crew-socks",
+      "price": 15,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/indestructible-compression-crew-socks"
+    },
+    {
+      "id": "indestructible-conquer-boot",
+      "price": 86,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/conquer-beige"
+    },
+    {
+      "id": "indestructible-dashguard",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/dashguard-grey-black"
+    },
+    {
+      "id": "indestructible-defendr-boot",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/defendr-grey"
+    },
+    {
+      "id": "indestructible-ems-foot-pad",
+      "price": 19.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/ems-foot-massager-pad"
+    },
+    {
+      "id": "indestructible-fable-boot",
+      "price": 88,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/fable-black"
+    },
+    {
+      "id": "indestructible-fator",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/fator-black"
+    },
+    {
+      "id": "indestructible-flashwalk",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/flashwalk-black"
+    },
+    {
+      "id": "indestructible-flux",
+      "price": 85,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/flux-indestructible-shoes"
+    },
+    {
+      "id": "indestructible-flyer",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/flyer-white"
+    },
+    {
+      "id": "indestructible-hummer",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/hummer-red"
+    },
+    {
+      "id": "indestructible-hype-2-boot",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/hype-indestructible-shoes"
+    },
+    {
+      "id": "indestructible-insoles",
+      "price": 19,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/indestructible-insoles"
+    },
+    {
+      "id": "indestructible-j3-boot",
+      "price": 86,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/j3-black"
+    },
+    {
+      "id": "indestructible-jet",
+      "price": 87,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/jet-black"
+    },
+    {
+      "id": "indestructible-kivini",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/kivini-black-red"
+    },
+    {
+      "id": "indestructible-kneetec",
+      "price": 59,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/kneetec-support-pads"
+    },
+    {
+      "id": "indestructible-no-tie-laces",
+      "price": 9,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/indestructible-no-tie-shoelaces"
+    },
+    {
+      "id": "indestructible-onyx",
+      "price": 85,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/onyx-grey"
+    },
+    {
+      "id": "indestructible-origin",
+      "price": 88,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/origin-red-black"
+    },
+    {
+      "id": "indestructible-protex",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/protex-black"
+    },
+    {
+      "id": "indestructible-retro",
+      "price": 88,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/retro-black-red"
+    },
+    {
+      "id": "indestructible-ryder",
+      "price": 87,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/ryder-black"
+    },
+    {
+      "id": "indestructible-ryder-1-5",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/ryder-1-5-black"
+    },
+    {
+      "id": "indestructible-s-series",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/s-series-black-red"
+    },
+    {
+      "id": "indestructible-safetix",
+      "price": 85,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/safetix-black"
+    },
+    {
+      "id": "indestructible-space",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/space-black"
+    },
+    {
+      "id": "indestructible-star-101-boot",
+      "price": 88,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/star-black"
+    },
+    {
+      "id": "indestructible-steelure-pluse",
+      "price": 87,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/117-steelure-pluse"
+    },
+    {
+      "id": "indestructible-stripe",
+      "price": null,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/stripe-orange-blue",
+      "status": "removed"
+    },
+    {
+      "id": "indestructible-surge",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/surge"
+    },
+    {
+      "id": "indestructible-titan",
+      "price": 85,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/titan-brown"
+    },
+    {
+      "id": "indestructible-trekfit",
+      "price": 85,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/trekfit-black"
+    },
+    {
+      "id": "indestructible-urban-edge-sunglasses",
+      "price": 19.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/urban-edge-sunglasses"
+    },
+    {
+      "id": "indestructible-vigogun",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/vigogun-v2"
+    },
+    {
+      "id": "indestructible-vigoleg",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/vigoleg-air-massager"
+    },
+    {
+      "id": "indestructible-xciter",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/xciter-black"
+    },
+    {
+      "id": "indestructible-xciter-mesh",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/exciter-mesh-black"
+    },
+    {
+      "id": "indestructible-xeno",
+      "price": 86,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/xeno-black-green"
+    },
+    {
+      "id": "indestructible-ziczac",
+      "price": 89,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/ziczac-black-red"
+    },
+    {
+      "id": "indestructible-zip",
+      "price": 83,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://indestructibleshoes.com/products/zip-black"
+    },
+    {
+      "id": "instant-pot-duo-6qt",
+      "price": 109.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://instantpot.com/products/instant-pot-duo-6qt-multi-use-pressure-cooker"
+    },
+    {
+      "id": "instant-pot-duo-plus-6qt",
+      "price": 139.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://instantpot.com/products/instant-pot-duo-plus-6qt-multi-use-pressure-cooker-whisper-quiet"
+    },
+    {
+      "id": "instant-pot-vortex-plus-6qt",
+      "price": 139.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://instantpot.com/products/instant-pot-vortex-plus-6qt-clearcook-air-fryer"
+    },
+    {
+      "id": "ispring-df1",
+      "price": 34.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/ispring-df1-faucet-mount-water-filter-150-contaminants-removal-500gal-filter-life-15gpm-filtration-rate"
+    },
+    {
+      "id": "ispring-rcc7",
+      "price": 229.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/5-stage-essence-ro-water-filtration-system-ispring-rcc7-5-stage-residential-under-sink-reverse-osmosis-water-filter-system-wqa-certified-75-gpd"
+    },
+    {
+      "id": "ispring-rcc7ak",
+      "price": 241.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/ispring-6-stage-75-gpd-high-capacity-under-sink-reverse-osmosis-drinking-water-filter-system-with-alkaline-remineralization"
+    },
+    {
+      "id": "ispring-rcd100",
+      "price": 419.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/ispring-rcd100-5-stage-countertop-reverse-osmosis-system-instant-hot-ro-water-dispenser-with-uv-251-pure-to-drain-100-gpd-portable-water-filtration-system-customizable-temperature-options-bpa-free-plug-and-play"
+    },
+    {
+      "id": "ispring-ro500",
+      "price": 659.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/ispring-ro500-bn-tankless-ro-reverse-osmosis-water-filtration-system-500-gpd-fast-flow-brushed-nickel-faucet-21-pure-to-drain-ratio-white-nsf-certified"
+    },
+    {
+      "id": "ispring-sf2s",
+      "price": 22.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/ispring-sf2s-stylish-multi-stage-high-output-shower-head-filter-with-replaceable-cartridge-to-remove-chlorine-sediment-and-heavy-minerals-chrome_782"
+    },
+    {
+      "id": "ispring-wgb21b",
+      "price": 173.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/ispring-wgb21b-2-stage-heavy-duty-whole-house-water-filtration-system-10x45-in-sediment-filter-and-cto-filter1in-inletoutlet"
+    },
+    {
+      "id": "ispring-wgb32b",
+      "price": 516.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.ispringfilter.com/products/ispring-whole-house-water-filtration-system-sediment-carbon-big-blue"
+    },
+    {
+      "id": "jackery-explorer-2000-v2",
+      "price": 999,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.jackery.com/products/explorer-2000-v2-portable-power-station"
+    },
+    {
+      "id": "litime-1000w-12v-inverter",
+      "price": 149.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/litime-1000w-12v-pure-sine-wave-inverter"
+    },
+    {
+      "id": "litime-12v-100ah-group24",
+      "price": 409.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/12v-100ah-group-24-bluetooth-self-heating-battery"
+    },
+    {
+      "id": "litime-12v-100ah-trolling",
+      "price": 355.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/12v-100ah-lithium-trolling-motor-battery-with-bluetooth"
+    },
+    {
+      "id": "litime-12v-10a-charger",
+      "price": 79.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/litime-12v-10a-lithium-battery-charger"
+    },
+    {
+      "id": "litime-12v-200ah-bluetooth",
+      "price": 519.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/12v-200ah-bluetooth-lithium-battery"
+    },
+    {
+      "id": "litime-12v-40a-dc-dc",
+      "price": 155.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/12v-40a-dc-to-dc-battery-charger"
+    },
+    {
+      "id": "litime-2000w-12v-inverter-ats",
+      "price": 245.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/2000w-12v-pure-sine-wave-inverter-with-20ms-ats"
+    },
+    {
+      "id": "litime-24v-230ah",
+      "price": 1328.98,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/24v-230ah-smart-self-heating-lithium-battery"
+    },
+    {
+      "id": "litime-30a-mppt",
+      "price": 144.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/30a-mppt-solar-charge-controller"
+    },
+    {
+      "id": "litime-diy-solar-generator-kit",
+      "price": 533.87,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.litime.com/products/litime-diy-solar-generator-complete-power-kit-for-camping-rv-and-off-grid-living"
+    },
+    {
+      "id": "mountain-house-best-sellers-kit",
+      "price": null,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://mountainhouse.com/products/best-sellers-kit",
+      "status": "removed"
+    },
+    {
+      "id": "noco-air20",
+      "price": 159.95,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-23",
+      "url": "https://no.co/air20"
+    },
+    {
+      "id": "noco-boost-air",
+      "price": 299.95,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-23",
+      "url": "https://no.co/boost/boost-air"
+    },
+    {
+      "id": "noco-gb70",
+      "price": 199.95,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://no.co/gb70"
+    },
+    {
+      "id": "owala-freesip-24",
+      "price": 34.99,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-23",
+      "url": "https://www.owalalife.com/products/freesip"
+    },
+    {
+      "id": "peak-refuel-biscuits-sausage-gravy",
+      "price": 14.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.peakrefuel.com/products/biscuits-sausage-gravy"
+    },
+    {
+      "id": "peak-refuel-entree-essentials-bucket-2",
+      "price": 169.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.peakrefuel.com/products/entree-essentials-bucket-2-0"
+    },
+    {
+      "id": "peak-refuel-homestyle-chicken-rice",
+      "price": 13.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.peakrefuel.com/products/homestyle-chicken-rice"
+    },
+    {
+      "id": "redi-roadie-plus",
+      "price": 179.1,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://getredi.com/products/roadie-plus"
+    },
+    {
+      "id": "redi-roadie-pro",
+      "price": 449.1,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://getredi.com/products/roadie-pro"
+    },
+    {
+      "id": "redi-the-roadie",
+      "price": 143.1,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://getredi.com/products/the-roadie"
+    },
+    {
+      "id": "redi-trauma-pack",
+      "price": 71.1,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://getredi.com/products/trauma-kit"
+    },
+    {
+      "id": "ri-fx-aegis-pro",
+      "price": 4490,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/FX-Aegis-Pro.htm"
+    },
+    {
+      "id": "ri-fx-aegis-quadruped-robot-dog",
+      "price": 2490,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/fx-aegis-quadruped-robot-dog.htm"
+    },
+    {
+      "id": "ri-fx-aegis-ultra",
+      "price": 12990,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/FX-Aegis-Ultra.htm"
+    },
+    {
+      "id": "ri-fx-aegis-ultra-plus",
+      "price": 22990,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/FX-Aegis-Ultra-Plus.htm"
+    },
+    {
+      "id": "ri-fx-aegis-ultra-w-plus",
+      "price": 24990,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/FX-Aegis-Ultra-W-Plus.htm"
+    },
+    {
+      "id": "ri-fx-aegis-ultra-w-wheel-legged-robot-dog",
+      "price": 12990,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/fx-aegis-ultra-w-wheel-legged-robot-dog.htm"
+    },
+    {
+      "id": "ri-fx-navi-embodied-ai-quadruped-robot",
+      "price": 1990,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/fx-navi-embodied-ai-quadruped-robot.htm"
+    },
+    {
+      "id": "ri-galileo-c1",
+      "price": 9999.99,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/GALILEO-C1.htm"
+    },
+    {
+      "id": "ri-galileo-c1-w",
+      "price": 11995,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/GALILEO-C1-W.htm"
+    },
+    {
+      "id": "ri-magiclab-magicdog-quadruped-robot",
+      "price": 12500,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/MagicLab-MagicDog-Quadruped-Robot.htm"
+    },
+    {
+      "id": "ri-mirrorme-bpx-pro",
+      "price": 7995,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/MirrorMe-BPX-Pro.htm"
+    },
+    {
+      "id": "ri-pudu-d5-quadruped-robot",
+      "price": 69995,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/PUDU-D5-Quadruped-Robot.htm"
+    },
+    {
+      "id": "ri-pudu-d5-w-wheeled-quadruped-robot",
+      "price": 83995,
+      "currency": "USD",
+      "source": "page",
+      "checked": "2026-11-27",
+      "url": "https://www.robotsinternational.com/PUDU-D5-W-Wheeled-Quadruped-Robot.htm"
+    },
+    {
+      "id": "rs-deep-robotics-lite3-basic-quadruped-robot",
+      "price": 6600,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-25",
+      "url": "https://www.robotshop.com/products/deep-robotics-lite3-basic-quadruped-robot"
+    },
+    {
+      "id": "rs-deep-robotics-lite3-lidar-quadruped-robot",
+      "price": 22990,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-25",
+      "url": "https://www.robotshop.com/products/deep-robotics-lite3-lidar-quadruped-robot"
+    },
+    {
+      "id": "rs-deep-robotics-lite3-pro-quadruped-robot",
+      "price": 15290,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-25",
+      "url": "https://www.robotshop.com/products/deep-robotics-lite3-pro-quadruped-robot"
+    },
+    {
+      "id": "rs-deep-robotics-lite3-venture-quadruped-robot",
+      "price": 7986,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-25",
+      "url": "https://www.robotshop.com/products/deep-robotics-lite3-venture-quadruped-robot"
+    },
+    {
+      "id": "sony-wh-1000xm6",
+      "price": 348,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-23",
+      "url": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-b"
+    },
+    {
+      "id": "tidewe-aquawade-pro-waders",
+      "price": 239.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.tidewe.com/products/tidewe-breathable-insulated-chest-waders-1600g-waterproof-bootfoot-duck-hunting-waders-with-steel-shank-boots"
+    },
+    {
+      "id": "tidewe-inferno-heated-jacket",
+      "price": 129.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.tidewe.com/products/inferno-mens-camo-heated-hunting-jacket-with-battery-pack"
+    },
+    {
+      "id": "tidewe-silentrace-heated-jacket",
+      "price": 159.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.tidewe.com/products/silentrace-heated-hunting-jacket"
+    },
+    {
+      "id": "tidewe-thermcore-heated-vest",
+      "price": 99.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.tidewe.com/products/heated-vest-double-sided-polar-fleece-hunting-vest-all-gender"
+    },
+    {
+      "id": "tidewe-thermshift-heated-vest",
+      "price": 108,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.tidewe.com/products/tidewe-heated-vest-with-battery-pack-lightweight-and-washable-vest"
+    },
+    {
+      "id": "tidewe-torridseeker-heated-waders",
+      "price": 149.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.tidewe.com/products/tidewe-hunting-chest-waders-heated-with-800g-insulation-neoprene-duck-wader-for-men-realtree-max5-camo-waterproof-fishing-waders-size-7-14"
+    },
+    {
+      "id": "wuben-c2",
+      "price": null,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.wubenlight.com/products/wuben-c2-2000-lumens-flashlight-for-outdoor-needs",
+      "status": "removed"
+    },
+    {
+      "id": "wuben-c3",
+      "price": 24.22,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.wubenlight.com/products/wuben-c3-1200-lumens-flashlight-for-everyday-carry"
+    },
+    {
+      "id": "wuben-e12r",
+      "price": 47.19,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.wubenlight.com/products/wuben-e12r-power-bank-flashlight"
+    },
+    {
+      "id": "wuben-f5",
+      "price": 28.11,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.wubenlight.com/products/wuben-f5-power-bank-camping-light"
+    },
+    {
+      "id": "wuben-h4",
+      "price": 23.99,
+      "currency": "USD",
+      "source": "feed:awin",
+      "checked": "2026-11-27",
+      "url": "https://www.wubenlight.com/products/wuben-h4-rechargeable-hunting-led-headlamp"
+    },
+    {
+      "id": "yeti-rambler-16-travel",
+      "price": 25.9,
+      "currency": "USD",
+      "source": "unconfirmed",
+      "checked": "2026-11-23",
+      "url": "https://www.yeti.com/drinkware/bottles/travel-bottle-16oz.html"
+    }
+  ]
+}

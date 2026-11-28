@@ -15,7 +15,7 @@ rank: 0
 featured: false
 season: ["all-season"]
 price: "$516.99"
-priceDate: "2026-11-23"
+priceDate: "2026-11-27"
 verified: "2026-11-23"
 ---
 

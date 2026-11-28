@@ -879,7 +879,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Countertop RO',
     cta: 'Visit official site',
-    price: '$375.00 as of Nov 23, 2026',
+    price: '$375.00 as of Nov 27, 2026',
   },
   {
     id: 'clearly-filtered-pitcher',
@@ -895,7 +895,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Filter pitcher',
     cta: 'Visit official site',
-    price: '$110.00 as of Nov 23, 2026',
+    price: '$110.00 as of Nov 27, 2026',
   },
   {
     id: 'jackery-explorer-2000-v2',
@@ -911,7 +911,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
-    price: '$999.00 as of Nov 23, 2026',
+    price: '$999.00 as of Nov 27, 2026',
   },
   {
     id: 'ecoflow-delta-2-max',
@@ -927,7 +927,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
-    price: '$1,459.00 as of Nov 23, 2026',
+    price: '$1,029.00 as of Nov 27, 2026',
   },
   {
     id: 'goal-zero-yeti-500',
@@ -943,7 +943,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
-    price: '$499.95 as of Nov 23, 2026',
+    price: '$499.95 as of Nov 27, 2026',
   },
   {
     id: 'goal-zero-yeti-700',
@@ -959,7 +959,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Portable energy reserve',
     cta: 'Visit official site',
-    price: '$699.95 as of Nov 23, 2026',
+    price: '$699.95 as of Nov 27, 2026',
   },
   {
     id: 'instant-pot-duo-6qt',
@@ -974,7 +974,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Kitchen appliance',
     cta: 'Visit official site',
-    price: '$109.99 as of Nov 23, 2026',
+    price: '$109.99 as of Nov 27, 2026',
   },
   {
     id: 'instant-pot-vortex-plus-6qt',
@@ -989,7 +989,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Kitchen appliance',
     cta: 'Visit official site',
-    price: '$139.99 as of Nov 23, 2026',
+    price: '$139.99 as of Nov 27, 2026',
   },
   {
     id: 'instant-pot-duo-plus-6qt',
@@ -1004,7 +1004,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Kitchen appliance',
     cta: 'Visit official site',
-    price: '$139.99 as of Nov 23, 2026',
+    price: '$139.99 as of Nov 27, 2026',
   },
   {
     id: 'owala-freesip-24',
@@ -1034,7 +1034,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Water bottle',
     cta: 'Visit official site',
-    price: '$33.75 as of Nov 23, 2026',
+    price: '$33.75 as of Nov 27, 2026',
   },
   {
     id: 'hydro-flask-40-wide',
@@ -1049,7 +1049,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Water bottle',
     cta: 'Visit official site',
-    price: '$37.50 as of Nov 23, 2026',
+    price: '$37.50 as of Nov 27, 2026',
   },
   {
     id: 'yeti-rambler-16-travel',
@@ -1079,7 +1079,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Freeze-dried meal',
     cta: 'Visit official site',
-    price: '$13.99 as of Nov 23, 2026',
+    price: '$13.99 as of Nov 27, 2026',
   },
   {
     id: 'peak-refuel-biscuits-sausage-gravy',
@@ -1094,7 +1094,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Freeze-dried meal',
     cta: 'Visit official site',
-    price: '$14.99 as of Nov 23, 2026',
+    price: '$14.99 as of Nov 27, 2026',
   },
   {
     id: 'peak-refuel-entree-essentials-bucket-2',
@@ -1109,7 +1109,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Food kit',
     cta: 'Visit official site',
-    price: '$169.99 as of Nov 23, 2026',
+    price: '$169.99 as of Nov 27, 2026',
   },
   {
     id: 'mountain-house-best-sellers-kit',
@@ -1124,7 +1124,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Food kit',
     cta: 'Visit official site',
-    price: '$69.99 as of Nov 23, 2026',
+    price: 'See price',
   },
   {
     id: 'sony-wh-1000xm6',
@@ -1278,7 +1278,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Jump starter',
     cta: 'Visit official site',
-    price: '$199.95 as of Nov 23, 2026',
+    price: '$199.95 as of Nov 27, 2026',
   },
   {
     id: 'noco-boost-air',
@@ -1308,7 +1308,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Dash cam',
     cta: 'Visit official site',
-    price: '$149.99 as of Nov 23, 2026',
+    price: '$149.99 as of Nov 27, 2026',
   },
   {
     id: 'noco-air20',
@@ -1464,7 +1464,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Security camera',
     cta: 'Visit official site',
-    price: '$219.99 as of Nov 23, 2026',
+    price: '$219.99 as of Nov 27, 2026',
   },
   {
     id: 'google-nest-cam-indoor-wired-3rd-gen',
@@ -1512,7 +1512,7 @@ export const highTicketItems: HighTicketItem[] = [
     imageKind: 'photo',
     offerLabel: 'Home freeze dryer',
     cta: 'Visit official site',
-    price: '$1,295.00 as of Nov 23, 2026',
+    price: '$1,295.00 as of Nov 27, 2026',
   },
   {
     id: 'milwaukee-2719-20',
