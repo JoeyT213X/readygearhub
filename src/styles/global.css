@@ -820,3 +820,4 @@ body:has(.brand-intro) .page-hero.has-photo .page-hero-media::after{background:l
 .kit-card .count{margin-top:auto}
 .kit-card:hover{border-color:var(--ice-2);box-shadow:var(--shadow-lg);color:var(--ink)}
 .price-line{margin:1.2em 0 .6em}
+.price-note{margin:.4rem 0 1rem}

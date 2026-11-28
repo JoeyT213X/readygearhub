@@ -1,0 +1,34 @@
+---
+import RelatedLinks from '../components/RelatedLinks.astro';
+import Base from '../layouts/Base.astro';
+import prices from '../data/prices.json';
+import { fmtDate } from '../lib/price';
+const updated = fmtDate((prices as { updated?: string }).updated);
+const items = (prices as { items: { price: number | null; source: string | null }[] }).items;
+const feedCount = items.filter((i) => i.price != null && i.source === 'feed:awin').length;
+const pageCount = items.filter((i) => i.price != null && i.source === 'page').length;
+---
+<Base title="How We Price | ReadyGearHub" description="Where the prices on ReadyGearHub come from, how often they are refreshed, and why the price at checkout is the one that counts.">
+  <section class="page-hero"><div class="wrap"><h1>How we price</h1>{updated && <p class="fine light">Last updated {updated}</p>}</div></section>
+  <section class="wrap section prose">
+    <p><strong>The short version:</strong> when a listing shows a price, it was read from the retailer’s own data, with the date we checked it. The price at checkout is the one that counts.</p>
+    <h2>Where prices come from</h2>
+    <ul>
+      <li><strong>Retailer data feeds.</strong> Some brands share a product feed through the affiliate network we use. It lists each product’s current price and whether it is in stock.</li>
+      <li><strong>The product page.</strong> For other brands we read the price from the product page itself, using the price data the store publishes for search engines.</li>
+    </ul>
+    {updated && <p>Right now {feedCount} listed prices come from feeds and {pageCount} from product pages.</p>}
+    <h2>How often they are refreshed</h2>
+    <p>Prices are refreshed monthly, and the date on each price is the day we last confirmed it. If we can’t confirm a price, or the item is out of stock, we remove the price and the card says “Price on the store page.”</p>
+    <h2>What “About” and “may change” mean</h2>
+    <p>Stores change prices, run sales and update stock at any time, so a price here can be out of date between refreshes. We only show a sale or “marked down” price when the store’s own page shows both the regular and the sale price. The price shown at checkout on the store’s site is what you pay.</p>
+    <h2>Do prices affect what we list?</h2>
+    <p>No. We don’t choose products based on price or on what we earn. See the <a href="/affiliate-disclosure/">affiliate disclosure</a> for how the site is paid.</p>
+    <p>Spot a wrong price? <a href="/contact/">Tell us</a> and we’ll fix it.</p>
+  </section>
+  <RelatedLinks links={[
+    { href: "/affiliate-disclosure/", icon: "ℹ️", title: "Affiliate disclosure", text: "How ReadyGearHub earns money." },
+    { href: "/directory/", icon: "📚", title: "Full source directory", text: "Gear and brands by category." },
+    { href: "/contact/", icon: "💬", title: "Contact us", text: "Corrections and product suggestions." }
+  ]} />
+</Base>

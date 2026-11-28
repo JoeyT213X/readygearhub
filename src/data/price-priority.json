@@ -1,0 +1,1014 @@
+{
+  "generated": "2026-11-27",
+  "event": "affiliate_click",
+  "property": "properties/565093262",
+  "window": {
+    "start": "2026-10-28",
+    "end": "2026-11-27",
+    "days": 30
+  },
+  "counts": {
+    "hot": 12,
+    "warm": 71,
+    "cold": 58
+  },
+  "items": {
+    "bluetti-ac180": {
+      "tier": "hot",
+      "clicks": 1,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 10.4
+    },
+    "ispring-ro500": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 1,
+      "categoryViews": 3,
+      "score": 2.3
+    },
+    "ispring-rcd100": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "aquatru-carafe": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "berkey-big-berkey": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "berkey-travel-berkey": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "clearly-filtered-pitcher": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "epic-nano-xp-pitcher": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "epic-pure-xp-pitcher": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "epic-og-ultimate-travel-bottle": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "ispring-df1": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 5,
+      "score": 0.5,
+      "reason": "top-up by category views"
+    },
+    "anker-solix-f3800-plus": {
+      "tier": "hot",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4,
+      "reason": "top-up by category views"
+    },
+    "ecoflow-delta-2-max": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-24v-230ah": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "jackery-explorer-2000-v2": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "anker-solix-bp2000-gen2": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "anker-solix-c2000-gen2": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "goal-zero-yeti-700": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-diy-solar-generator-kit": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-12v-200ah-bluetooth": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "goal-zero-yeti-500": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-12v-100ah-group24": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-12v-100ah-trolling": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "anker-solix-c300-dc-60w-kit": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-2000w-12v-inverter-ats": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-12v-40a-dc-dc": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-1000w-12v-inverter": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-30a-mppt": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "litime-12v-10a-charger": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 4,
+      "score": 0.4
+    },
+    "harvest-right-countertop-360": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "ispring-wgb32b": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "ispring-rcc7ak": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "ispring-rcc7": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "ispring-wgb21b": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "instant-pot-duo-plus-6qt": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "instant-pot-vortex-plus-6qt": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "epic-smart-shield-max": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "instant-pot-duo-6qt": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "epic-smart-shield": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "ispring-sf2s": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 3,
+      "score": 0.3
+    },
+    "ri-pudu-d5-w-wheeled-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-pudu-d5-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-fx-aegis-ultra-w-plus": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-fx-aegis-ultra-plus": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "rs-deep-robotics-lite3-lidar-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "rs-deep-robotics-lite3-pro-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-fx-aegis-ultra": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-fx-aegis-ultra-w-wheel-legged-robot-dog": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-magiclab-magicdog-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-galileo-c1-w": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-galileo-c1": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-mirrorme-bpx-pro": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "rs-deep-robotics-lite3-venture-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "rs-deep-robotics-lite3-basic-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-fx-aegis-pro": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-fx-aegis-quadruped-robot-dog": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "ri-fx-navi-embodied-ai-quadruped-robot": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "redi-roadie-pro": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "tidewe-aquawade-pro-waders": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "bogs-bozeman-ii-vibram-arctic-grip": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "bogs-arcata-ii-plaid": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "bogs-bozeman-ii-tall": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "bogs-arcata-ii-lace": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "redi-roadie-plus": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "bogs-arcata-urban-ii-leather": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "tidewe-silentrace-heated-jacket": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "tidewe-torridseeker-heated-waders": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "tidewe-inferno-heated-jacket": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "redi-the-roadie": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "bogs-arcata-ii-dash-kids": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "tidewe-thermshift-heated-vest": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "tidewe-thermcore-heated-vest": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "bogs-snow-shell-cosmic-forest": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "redi-trauma-pack": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "wuben-e12r": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "wuben-c2": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "hydro-flask-40-wide": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "owala-freesip-24": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "hydro-flask-32-wide": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "wuben-f5": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "yeti-rambler-16-travel": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "wuben-c3": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "wuben-h4": {
+      "tier": "warm",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 2,
+      "score": 0.2
+    },
+    "eufy-solocam-s340": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 1,
+      "score": 0.1
+    },
+    "peak-refuel-entree-essentials-bucket-2": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 1,
+      "score": 0.1
+    },
+    "mountain-house-best-sellers-kit": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 1,
+      "score": 0.1
+    },
+    "peak-refuel-biscuits-sausage-gravy": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 1,
+      "score": 0.1
+    },
+    "peak-refuel-homestyle-chicken-rice": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 1,
+      "score": 0.1
+    },
+    "alpine-armoring": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "sony-wh-1000xm6": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "noco-boost-air": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "noco-gb70": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "noco-air20": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "garmin-dash-cam-mini-3": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-ares-boot": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-bolt": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-defendr-boot": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-hummer": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-hype-2-boot": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-protex": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-ryder-1-5": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-s-series": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-surge": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-vigogun": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-vigoleg": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-xciter": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-xciter-mesh": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-ziczac": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-camox": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-fable-boot": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-origin": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-retro": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-star-101-boot": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-stripe": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-armara": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-jet": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-ryder": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-steelure-pluse": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-aura": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-conquer-boot": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-j3-boot": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-xeno": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-flux": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-onyx": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-safetix": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-titan": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-trekfit": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-capped": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-dashguard": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-fator": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-flashwalk": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-flyer": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-kivini": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-space": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-zip": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-kneetec": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-ems-foot-pad": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-urban-edge-sunglasses": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-insoles": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-compression-crew-socks": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    },
+    "indestructible-no-tie-laces": {
+      "tier": "cold",
+      "clicks": 0,
+      "views": 0,
+      "categoryViews": 0,
+      "score": 0
+    }
+  }
+}

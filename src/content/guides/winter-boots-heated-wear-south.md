@@ -6,7 +6,7 @@ season: ["winter"]
 published: 2026-11-27
 relatedItems: ["bogs-arcata-ii-lace", "bogs-arcata-ii-plaid", "bogs-bozeman-ii-tall", "bogs-bozeman-ii-vibram-arctic-grip", "bogs-arcata-urban-ii-leather", "bogs-arcata-ii-dash-kids", "bogs-snow-shell-cosmic-forest", "tidewe-thermshift-heated-vest", "tidewe-thermcore-heated-vest", "tidewe-inferno-heated-jacket", "yaktrax-pro", "darn-tough-hiker-boot-full-cushion"]
 directory: outdoor
-siblings: ["how-to-stay-warm-without-power", "ice-storm-survival-checklist-for-the-south"]
+siblings: ["how-to-stay-warm-without-power", "ice-storm-prep-checklist-south"]
 draft: false
 ---
 
@@ -103,6 +103,6 @@ For each person in your home:
 
 For a Southern winter, think dry and steady first: waterproof boots, good socks and traction. Then add warmth in layers, with a heated vest as a flexible option that also helps inside a cold house during an outage.
 
-For more, read [how to stay warm when the power goes out](/guides/how-to-stay-warm-without-power/) and our [ice storm survival checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/), or browse boots and heated wear in the [Outdoor & Camping directory](/directory/outdoor/).
+For more, read [how to stay warm when the power goes out](/guides/how-to-stay-warm-without-power/) and our [ice storm survival checklist for the South](/guides/ice-storm-prep-checklist-south/), or browse boots and heated wear in the [Outdoor & Camping directory](/directory/outdoor/).
 
 *Sources: [CDC: Safety guidelines during and after a winter storm](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html), [National Weather Service: winter ice and frost](https://www.weather.gov/safety/winter-ice-frost). Product details come from each maker's official page.*

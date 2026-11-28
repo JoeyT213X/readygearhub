@@ -45,7 +45,7 @@ export const doomsdayNewItems: DoomsdayNew[] = [
     blurb: 'Integrated-frame tents with reflective, multi-layer insulated fabric, built for quick setup. A fit for a bug-out camp, work site or backup room.' }),
 
   // ---- Extreme Vehicles ----
-  mk({ id: 'alpine-armoring', section: 'vehicles', us: true, title: 'Alpine Armoring', sourceName: 'Alpine Armoring (Virginia)', fallbackUrl: 'https://www.alpineco.com/', image: '/directory/photos/alpine-armoring-960.webp', imageKind: 'photo', offerLabel: 'Armored vehicles', cta: 'Request a quote', ctaKind: 'inquire', price: 'Alpine lists A4-level armoring at $75,000–$200,000 (as of Nov 25, 2026)',
+  mk({ id: 'alpine-armoring', section: 'vehicles', us: true, title: 'Alpine Armoring', sourceName: 'Alpine Armoring (Virginia)', fallbackUrl: 'https://www.alpineco.com/', image: '/directory/photos/alpine-armoring-960.webp', imageKind: 'photo', offerLabel: 'Armored vehicles', cta: 'Request a quote', ctaKind: 'inquire', price: 'Alpine lists A4-level armoring at $75,000–$200,000 (as of Nov 27, 2026)',
     blurb: 'Virginia manufacturer of civilian and government armored SUVs, sedans, vans and trucks. Alpine says civilians can buy armored vehicles in the US with no federal restrictions; state road rules and insurance still apply.' }),
   mk({ id: 'four-wheel-campers', section: 'vehicles', us: true, title: 'Four Wheel Campers', sourceName: 'Four Wheel Campers (California)', fallbackUrl: 'https://www.fourwheelcampers.com/', image: '/directory/photos/four-wheel-campers-960.webp', imageKind: 'photo', offerLabel: 'Truck campers', cta: 'See campers',
     blurb: 'California builder of lightweight pop-up truck campers for pickups and flatbeds.' }),

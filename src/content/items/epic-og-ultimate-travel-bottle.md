@@ -14,8 +14,8 @@ affiliateUrl: ""
 rank: 0
 featured: false
 season: ["all-season"]
-price: "$41.25"
-priceDate: "2026-11-24"
+price: "$40.00"
+priceDate: "2026-11-27"
 priceNote: "For the in-stock 48 oz size."
 verified: "2026-11-24"
 ---

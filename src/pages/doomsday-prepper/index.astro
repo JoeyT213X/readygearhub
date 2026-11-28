@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Disclosure from '../../components/Disclosure.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import SourceCard from '../../components/SourceCard.astro';
+import PriceNote from '../../components/PriceNote.astro';
 import Photo from '../../components/Photo.astro';
 import ExtremeWindow from '../../components/ExtremeWindow.astro';
 import UsFirstBadge from '../../components/UsFirstBadge.astro';
@@ -70,6 +71,7 @@ const featured = catalog
       href="/directory/doomsday-prepper/"
       linkLabel="Browse every listing"
     />
+    <PriceNote />
     <div class="grid shop-grid source-grid home-shop-grid">
       {featured.map((item) => <SourceCard item={item} />)}
     </div>

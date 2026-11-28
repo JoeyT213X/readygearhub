@@ -15,7 +15,7 @@ rank: 0
 featured: false
 season: ["winter"]
 price: "$159.99"
-priceDate: "2026-11-24"
+priceDate: "2026-11-27"
 verified: "2026-11-24"
 ---
 

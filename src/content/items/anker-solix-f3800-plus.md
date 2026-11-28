@@ -14,8 +14,6 @@ affiliateUrl: ""
 rank: 0
 featured: false
 season: ["all-season", "hurricane", "winter"]
-price: "$2,999.99"
-priceDate: "2026-11-23"
 verified: "2026-11-23"
 ---
 
