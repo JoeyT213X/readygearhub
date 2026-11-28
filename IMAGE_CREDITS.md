@@ -816,3 +816,7 @@ Each file is the main product image from the product page on indestructibleshoes
 ## Generated media (mobile home hero)
 
 `public/videos/mobile-extreme-hero-v5.mp4` and `mobile-extreme-poster.jpg` (added 2026-11-27) are AI-generated imagery made for ReadyGearHub: a six-wheeled armored rig in a storm; a pack of generic robot dogs pouring out of a bunkered house and running down a hill with spotlights, seen through a gated yard; people (seen from behind) doing a bunker inventory; an enclosed generator with propane lines to a house; gear scenes for water, off-grid solar and comms, first aid, camping and vehicle kits, plus a gear pile; and a compound gate with one robot dog on patrol, industrial drones overhead, survival vehicles inside the fence and a watchtower. No identifiable people, logos, readable text or real products. The photographs above are unchanged and none of them are AI-generated.
+
+## Generated media (desktop home hero)
+
+`public/videos/desktop-extreme-hero.mp4` and `desktop-extreme-poster.jpg` (added 2026-11-27) are a 16:9 widescreen cut of the same scenes, in the same order, made for the desktop home-page preview. Same constraints: no identifiable people, logos, readable text or real products, and no DJI- or Unitree-looking designs. The photographs above are unchanged and none of them are AI-generated.
