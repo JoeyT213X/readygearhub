@@ -1,15 +1,17 @@
 ---
 title: "How to Stay Warm When the Power Goes Out in Winter (Safely)"
-description: "No power and no heat? Safe ways to stay warm in a winter outage: one warm room, smart layers, and what never to use indoors because of carbon monoxide."
+description: "No power and no heat? How to stay warm in a winter outage without a heater: one warm room, layers, warm food and drink, and what never to use indoors."
 lane: home-heating-backup
 season: ["winter"]
 published: 2026-11-16
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["eton-blackout-buddy-co", "mr-heater-portable-buddy", "mr-heater-buddy-flex", "sol-emergency-bivvy", "sol-emergency-blanket", "darn-tough-hiker-boot-full-cushion", "zippo-heatbank-9s", "ecoflow-delta-3-plus"]
 draft: false
 ---
 
 When a winter storm knocks out the power, most homes lose heat too. Even gas furnaces usually need electricity for the blower and controls. The good news is that you can stay reasonably warm for a long time without any heater at all, if you focus on keeping *people* warm instead of the whole house. Here's how to do it without creating a bigger emergency.
+
+This page is about **staying warm without a heater**. If you are choosing or using a heater, read [heating one room safely in an outage](/guides/heat-one-room-safely-in-an-outage/).
 
 > **Free: Winter Storm Ready Checklist.** A one-page printable for heat, light, food, water, and safety. [Get the checklist](/winter-storm-ready-checklist/)
 

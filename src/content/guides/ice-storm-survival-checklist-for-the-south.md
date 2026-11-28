@@ -4,11 +4,13 @@ description: "A practical checklist for Southern ice storms: what to do before f
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-15
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["midland-wr400", "waterbob", "reliance-aqua-tainer", "kahtoola-microspikes", "3m-indoor-window-insulator-kit", "midland-er310-crank-radio", "kidde-kn-cob-lp2", "teton-sports-celsius-regular-0"]
 ---
 
 Ice storms in the South are often brief, but they can be unusually disruptive. Freezing rain loads trees, power lines, and roads with ice. Homes built for milder winters may be drafty, and a heat pump or well pump can stop as soon as the electricity goes out. This checklist is written for that kind of event, not a long Northern blizzard.
+
+> **Looking for the main ice storm checklist?** The [Ice Storm Prep & Survival Checklist for the South](/guides/ice-storm-prep-checklist-south/) is our main version, with a 48-hour countdown. This page covers the same ground in a shorter before, during and after format.
 
 Pay attention to National Weather Service products: a **Winter Storm Watch** means ice, sleet, or heavy snow is possible, usually 12 to 48 hours out; a **Winter Storm Warning** means hazardous winter weather is imminent or occurring, usually 12 to 24 hours out, according to [Ready.gov](https://www.ready.gov/winter-weather). A Winter Weather Advisory still deserves caution. Sign up for local alerts and keep a [NOAA weather radio](/gear/midland-wr400/) ready if the cell network fails.
 

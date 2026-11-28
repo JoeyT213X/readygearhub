@@ -1,15 +1,17 @@
 ---
 title: "What to Do When the Power Goes Out in a Mississippi Ice Storm"
-description: "Power out in a Mississippi ice storm? A calm, step-by-step guide to the first hour, staying warm without CO risk, keeping food safe, and knowing when to leave."
+description: "Power out in a Mississippi ice storm? A calm step-by-step plan for the first 30 minutes, staying warm without CO risk, keeping food safe, and knowing when to leave."
 lane: power-outage-kits
 season: ["winter"]
 published: 2026-11-16
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "mr-heater-portable-buddy", "sol-emergency-bivvy", "yaktrax-pro"]
 draft: false
 ---
 
 Ice storms don't hit Mississippi every winter, but when one does, it can take out power across a wide area. The National Weather Service explains why: heavy ice can bring down trees and topple utility poles, and it can disrupt power and communications for days while crews repair the damage. Here's what to do, in order, once the lights go out.
+
+This page is for **after the lights go out**. If a storm is still on the way, use the [48-hour ice storm checklist](/guides/ice-storm-prep-checklist-south/) first, or the [full winter storm and power outage guide](/guides/winter-storm-power-outage-prep-guide-south/).
 
 > **Get the free Winter Storm Ready Checklist.** A printable checklist to stick on the fridge before the next storm. [Get the checklist](/winter-storm-ready-checklist/)
 

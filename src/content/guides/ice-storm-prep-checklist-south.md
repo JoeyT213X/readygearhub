@@ -1,15 +1,17 @@
 ---
-title: "How to Prepare for an Ice Storm in the South: 48-Hour Checklist"
-description: "Ice storm coming to Mississippi or the South? A 48-hour checklist for water, food, heat, pipes, power, and your car, built on Ready.gov safety advice."
+title: "Ice Storm Prep & Survival Checklist for the South: 48-Hour Plan"
+description: "Ice storm coming to Mississippi or the South? A 48-hour countdown for water, food, heat, pipes, power and your car, plus staying safe on ice and near downed lines."
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-16
-updated: 2026-11-21
+updated: 2026-11-27
 relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "goal-zero-lighthouse-600", "mountain-house-classic-bucket", "noco-boost-gb40", "snow-joe-telescoping-snow-broom", "yaktrax-pro", "jackery-explorer-1000-plus"]
 draft: false
 ---
 
 In Mississippi and across the Deep South, ice is often a bigger problem than snow. The National Weather Service explains that heavy ice can bring down trees and topple utility poles, cutting power and communications for days. Even a thin glaze makes roads and steps dangerous. The good news is that you usually get a day or two of warning. Here's how to use it, hour by hour.
+
+This is our ice storm checklist: a countdown from 48 hours out to the first ice. If the power is already out, go to [what to do when the power goes out in a Mississippi ice storm](/guides/power-outage-ice-storm-mississippi/). For everything in one place, including pipes, pets, cars and cleanup, read the [full winter storm and power outage guide](/guides/winter-storm-power-outage-prep-guide-south/).
 
 > **Want this on paper?** Get the free **Winter Storm Ready Checklist** and keep it on the fridge. [Get the checklist](/winter-storm-ready-checklist/)
 
@@ -90,7 +92,9 @@ Once the storm starts, switch to our [what to do when the power goes out in an i
 
 - **No grills, camp stoves, generators, or gas ovens for heat indoors.** The CDC and Ready.gov both warn about carbon monoxide, which the CDC calls odorless and colorless.
 - **Keep the fridge and freezer closed.** Per Ready.gov, food stays cold about 4 hours in a closed fridge and about 48 hours in a full freezer.
-- **Treat downed lines as live**, and report them.
+- **Treat downed lines as live**, and stay far from anything they touch, including fences and puddles. Report them to the utility. Limbs and lines can still fall as ice melts or the wind shifts.
+- **Stay off icy steps and walks if you can.** The CDC notes that many winter injuries come from falls on ice. If you must go out, wear shoes with traction, take small steps, and use handrails.
+- **Skip outdoor cleanup while ice is still falling.** Ready.gov warns that overexertion in winter weather raises the risk of a heart attack.
 - **Check on neighbors** who are older, have medical needs, or live alone.
 
 ## Your Southern ice storm shopping list

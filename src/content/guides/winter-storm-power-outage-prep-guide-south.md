@@ -1,10 +1,10 @@
 ---
 title: "Winter Storm & Power Outage Prep Guide for the South"
-description: "How to get a Southern home ready for a winter storm and power outage: pipes, safe heat, CO alarms, water, food, medical needs, pets, cars, and cleanup after."
+description: "The complete winter storm and power outage guide for the South: pipes, safe heat, CO alarms, water, food, medical needs, pets, cars, and cleanup after."
 lane: winter-storm-prep
 season: ["winter"]
 published: 2026-11-19
-updated: 2026-11-23
+updated: 2026-11-27
 relatedItems: ["kidde-kn-cob-lp2", "eton-blackout-buddy-co", "midland-er310-crank-radio", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "waterbob", "reliance-aqua-tainer", "3m-indoor-window-insulator-kit", "yaktrax-pro", "noco-boost-gb40", "mountain-house-classic-bucket", "readywise-4-week-food-supply", "midland-wr400", "kidde-pro-210", "wuben-h1", "wuben-c2"]
 draft: false
 ---
@@ -12,6 +12,8 @@ draft: false
 Most winters in the South bring a few cold mornings and nothing more. Then every few years a storm drops freezing rain on trees and power lines, the roads glaze over, and a lot of us find out at the same time that our houses, cars, and plans were built for heat, not ice. This guide pulls everything together in one place: what to do before the storm, how to keep the house and the people in it safe while the power is out, and what to check once it's over.
 
 It's long on purpose. Use the contents below to jump to what you need right now, and print the [free Winter Storm Ready Checklist](/winter-storm-ready-checklist/) if you'd rather work from paper. Every safety number on this page comes from the National Weather Service (NWS), Ready.gov, the CDC, or FoodSafety.gov, with a link so you can check it yourself. Advice on copies of important documents and on public Wi-Fi comes from Ready.gov and CISA.
+
+**Short on time?** This is our full guide. For a quicker route, use the [48-hour ice storm checklist](/guides/ice-storm-prep-checklist-south/), the [first-hour steps when the power goes out](/guides/power-outage-ice-storm-mississippi/), or the [short winter power outage checklist](/guides/winter-power-outage-checklist/).
 
 > **If a storm is already on top of you:** go straight to [During the outage](#during-the-outage-the-first-hours-and-days). Never run a generator, grill, camp stove, or charcoal indoors or in a garage, and never heat the house with a gas oven or stovetop. Call 911 if anyone shows signs of carbon monoxide poisoning or hypothermia.
 
@@ -108,7 +110,7 @@ You don't need to do everything on this page the day before. Spread it out.
 - [ ] Set your plan for checking in with family. The free [All Accounted](/apps/all-accounted/) app is a household check-in board that works offline and shares a text snapshot.
 - [ ] Get off the roads before the ice starts.
 
-For a tighter, hour-by-hour version of this countdown, use [How to Prepare for an Ice Storm in the South: 48-Hour Checklist](/guides/ice-storm-prep-checklist-south/), or the free printable [Winter Storm Ready Checklist](/winter-storm-ready-checklist/).
+For a tighter, hour-by-hour version of this countdown, use [Ice Storm Prep & Survival Checklist for the South: 48-Hour Plan](/guides/ice-storm-prep-checklist-south/), or the free printable [Winter Storm Ready Checklist](/winter-storm-ready-checklist/).
 
 ## Get the house ready
 
@@ -217,7 +219,7 @@ From the [CDC](https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-
 - Avoid extension cords, and don't run the cord under rugs.
 - Stop using any heater with a damaged cord or that sparks.
 
-A space heater draws a lot of power, so it will drain a portable energy reserve fast. For more on keeping one room livable, read [Best Ways to Heat One Room Safely in an Outage](/guides/heat-one-room-safely-in-an-outage/) and [How to Stay Warm When the Power Goes Out in Winter](/guides/how-to-stay-warm-without-power/). Gear for this lives in [Home Heating Backup](/home-heating-backup/) and [Cold-Weather Gear](/cold-weather-gear/).
+A space heater draws a lot of power, so it will drain a portable energy reserve fast. For more on keeping one room livable, read [Heat One Room Safely in an Outage: Space Heaters and Fuel Heaters](/guides/heat-one-room-safely-in-an-outage/) and [How to Stay Warm When the Power Goes Out in Winter](/guides/how-to-stay-warm-without-power/). Gear for this lives in [Home Heating Backup](/home-heating-backup/) and [Cold-Weather Gear](/cold-weather-gear/).
 
 ## Water and food safety
 
@@ -379,7 +381,7 @@ The [Runtime Reserve](/apps/runtime-reserve/) app logs generator fuel and runtim
 
 Leave for a relative's house, a hotel, or a warming center if the house can't be kept warm, if someone has a medical device you can't power, if there's an infant who would otherwise sleep in a cold room, or if a CO alarm goes off. Ready.gov says to check with local officials about warming locations; our [local resources pages](/local/) link to official sources for warming centers by county.
 
-The step-by-step version of this section is [What to Do When the Power Goes Out in a Mississippi Ice Storm](/guides/power-outage-ice-storm-mississippi/), and the shorter checklist is [Winter Power Outage Checklist](/guides/winter-power-outage-checklist/). For staying safe around ice, falling limbs, and downed lines, see the [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/).
+The step-by-step version of this section is [What to Do When the Power Goes Out in a Mississippi Ice Storm](/guides/power-outage-ice-storm-mississippi/), and the shorter checklist is [Winter Power Outage Checklist](/guides/winter-power-outage-checklist/). For staying safe around ice, falling limbs, and downed lines, see the [Ice Storm Prep & Survival Checklist for the South](/guides/ice-storm-prep-checklist-south/).
 
 ## After the storm
 
@@ -473,13 +475,12 @@ Everything below is free to use in your browser unless noted.
 - [Winter Storm Watch vs. Warning](/guides/winter-storm-watch-vs-warning/)
 - [Tornado Watch vs. Warning in Mississippi and the Gulf South](/guides/tornado-watch-vs-warning-mississippi/)
 - [Carbon Monoxide Safety During a Power Outage](/guides/carbon-monoxide-safety-during-an-outage/)
-- [How to Prepare for an Ice Storm in the South: 48-Hour Checklist](/guides/ice-storm-prep-checklist-south/)
-- [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/)
+- [Ice Storm Prep & Survival Checklist for the South: 48-Hour Plan](/guides/ice-storm-prep-checklist-south/)
 - [What to Do When the Power Goes Out in a Mississippi Ice Storm](/guides/power-outage-ice-storm-mississippi/)
 - [Winter Power Outage Checklist](/guides/winter-power-outage-checklist/)
 - [How to Keep Pipes From Freezing in a Southern Cold Snap](/guides/how-to-keep-pipes-from-freezing/)
 - [How to Stay Warm When the Power Goes Out](/guides/how-to-stay-warm-without-power/)
-- [Best Ways to Heat One Room Safely in an Outage](/guides/heat-one-room-safely-in-an-outage/)
+- [Heat One Room Safely in an Outage: Space Heaters and Fuel Heaters](/guides/heat-one-room-safely-in-an-outage/)
 - [Inverter Generator vs Portable Energy Reserve](/guides/generator-vs-energy-reserve/)
 - [How to Pick a Portable Energy Reserve](/guides/how-to-pick-an-energy-reserve/)
 - [Emergency Water Storage](/guides/emergency-water-storage/)

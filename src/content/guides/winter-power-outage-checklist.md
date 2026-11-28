@@ -1,14 +1,16 @@
 ---
-title: "Winter Power Outage Checklist: What to Do Before, During & After"
-description: "A practical winter power outage checklist: what to stock before an ice storm, how to stay warm and safe while the power is out, and what to check when it comes back."
+title: "Winter Power Outage Checklist: A Short List for Before, During & After"
+description: "A short, scannable winter power outage checklist: what to have ready, what to do while the power is out, and what to check when it comes back."
 lane: power-outage-kits
 season: ["winter"]
 published: 2026-11-15
-updated: 2026-11-23
+updated: 2026-11-27
 relatedItems: ["midland-er310-crank-radio", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "eton-blackout-buddy-co", "mr-heater-portable-buddy", "black-diamond-spot-400", "mountain-house-classic-bucket", "wuben-h1"]
 ---
 
 Ice storms and blizzards are some of the most common causes of long power outages. Winter outages are also the most dangerous kind, because losing power usually means losing heat. This checklist walks through what to do before, during, and after.
+
+This is the short version, made to scan. For the full explanation, read the [winter storm and power outage guide for the South](/guides/winter-storm-power-outage-prep-guide-south/). If the lights are already out, the [first-hour steps for a Mississippi ice storm](/guides/power-outage-ice-storm-mississippi/) come first. For a countdown before ice arrives, use the [48-hour ice storm checklist](/guides/ice-storm-prep-checklist-south/), or print the [free Winter Storm Ready Checklist](/winter-storm-ready-checklist/).
 
 ## Before the storm: stock and prep
 

@@ -72,6 +72,6 @@ Talk with their medical provider about a power-outage plan before the storm. Rea
 **Where are official warming centers listed?**
 Locations change with each event. Use the county emergency-management contacts and MEMA links on the [Mississippi local resources](/local/mississippi/) pages rather than a saved address.
 
-For related gear, see [Winter Storm Prep](/winter-storm-prep/) and [Power Outage Kits](/power-outage-kits/). For a storm-day checklist aimed at Southern ice, use [Ice Storm Survival Checklist for the South](/guides/ice-storm-survival-checklist-for-the-south/).
+For related gear, see [Winter Storm Prep](/winter-storm-prep/) and [Power Outage Kits](/power-outage-kits/). For a storm-day checklist aimed at Southern ice, use [Ice Storm Prep & Survival Checklist for the South](/guides/ice-storm-prep-checklist-south/).
 
 *Sources: Ready.gov (Winter Weather, Power Outages, Older Adults, Pets); CDC (Carbon Monoxide Poisoning Basics, winter safety).*
