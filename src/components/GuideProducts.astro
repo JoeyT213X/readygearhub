@@ -1,0 +1,26 @@
+---
+// "Products in this guide": every related item with its current outbound link, taken from the same resolver as the
+// gear cards (affiliateUrl or an approved program's tracked link, else the official URL), so a link switches
+// automatically when a program is approved. No-PPC programs keep data-program/data-no-ppc so FunnelGuards strips them.
+import { outUrl, isAffiliate, programIdForItem, type Item, type Lane } from '../lib/data';
+import { isNoPpcProgram } from '../data/affiliates';
+interface Props { items: Item[]; lane?: Lane }
+const { items, lane } = Astro.props;
+---
+{items.length > 0 && (
+  <nav class="card toc guide-products" aria-label="Products in this guide">
+    <p class="aside-h">Products in this guide</p>
+    <ul>
+      {items.map((item) => {
+        const program = programIdForItem(item.id);
+        const tracked = isAffiliate(item);
+        return (
+          <li data-no-ppc={isNoPpcProgram(program) ? '' : undefined}>
+            <a href={outUrl(item)} target="_blank" rel={tracked ? 'sponsored nofollow noopener' : 'noopener'} data-program={tracked && program ? program : undefined}>{item.data.name} ↗</a>
+          </li>
+        );
+      })}
+    </ul>
+    <p class="fine">Some links may earn us a commission (<a href="/affiliate-disclosure/">disclosure</a>). <a href="#gear">Details below</a>{lane && <> · <a href={`/${lane.slug}/`}>More in {lane.name}</a></>}</p>
+  </nav>
+)}

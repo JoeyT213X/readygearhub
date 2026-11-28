@@ -222,7 +222,7 @@ html.menu-open body{position:fixed;left:0;right:0;overflow:hidden;width:100%}
 .guide-cover img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
 .guide-cover figcaption{font-size:.78rem;color:var(--muted);padding:6px 2px 0}
 .toc{font-size:.93rem}
-.toc ol{margin:6px 0 0;padding-left:1.1em}
+.toc ol,.toc ul{margin:6px 0 0;padding-left:1.1em}
 .toc li{margin:5px 0}
 .toc a{text-decoration:none}
 .toc a:hover{text-decoration:underline}

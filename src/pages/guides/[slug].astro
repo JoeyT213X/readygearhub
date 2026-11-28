@@ -7,6 +7,7 @@ import PageHero from '../../components/PageHero.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import Photo from '../../components/Photo.astro';
+import GuideProducts from '../../components/GuideProducts.astro';
 import { render } from 'astro:content';
 import { getGuides, getItems, laneBySlug, site } from '../../lib/data';
 import { photoForGuide, photos } from '../../data/images';
@@ -66,6 +67,7 @@ const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month:
           <ol>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
         </nav>
       )}
+      <GuideProducts items={related} lane={lane} />
       {lane && (
         <div class="card">
           <p class="aside-h">{lane.icon} {lane.name}</p>
