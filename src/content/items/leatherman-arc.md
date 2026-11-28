@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "tools"]
-description: "The Leatherman ARC multi-tool. See the official page for the current tool list, materials, and warranty."
+description: "The Leatherman ARC multi-tool."
 uses:
   - "A full-size multi-tool for a bag or toolbox"
   - "Workshop and field repairs"

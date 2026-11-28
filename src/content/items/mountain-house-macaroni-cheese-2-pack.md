@@ -4,7 +4,7 @@ brand: "Mountain House"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "freeze-dried", "pouch"]
-description: "A two-pack of freeze-dried creamy macaroni and cheese pouches from Mountain House. See the official page for current ingredients, servings, prep directions, allergens, and stated shelf life."
+description: "A two-pack of freeze-dried creamy macaroni and cheese pouches from Mountain House."
 uses:
   - "A familiar comfort meal during a short outage"
   - "A compact add-on to a go-bag food kit"

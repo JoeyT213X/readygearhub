@@ -4,7 +4,7 @@ brand: "ReadyWise"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep", "winter-storm-prep"]
 tags: ["emergency food", "long shelf life", "food storage"]
-description: "A three-day emergency food and drink kit from ReadyWise. The official page lists 30 servings, 5,460 total calories, and 1,820 calories per day, in a compact box with a long stated shelf life."
+description: "A three-day emergency food and drink kit from ReadyWise."
 uses:
   - "A 72-hour food supply for a hurricane go-bag or a short home outage"
   - "Shelf-stable meals and a milk drink when the fridge is off"

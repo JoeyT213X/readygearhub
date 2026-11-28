@@ -4,7 +4,7 @@ brand: "Eton"
 lane: power-outage-kits
 alsoIn: ["vehicle-emergency-kits", "winter-storm-prep"]
 tags: ["radio", "portable", "comms"]
-description: "A compact Eton Elite Traveler radio. See the official page for current bands, power options, and features."
+description: "A compact Eton Elite Traveler radio."
 uses:
   - "A travel or go-bag radio when you need a broadcast receiver"
   - "A compact complement to a larger home weather radio"

@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "tools"]
-description: "A Leatherman Rebar multi-tool. See the official page for the current tool list, materials, and warranty."
+description: "A Leatherman Rebar multi-tool."
 uses:
   - "A sturdy multi-tool for the shop, bag, or glove box"
   - "Everyday repairs around a homestead"

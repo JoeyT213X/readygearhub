@@ -4,7 +4,7 @@
  * tools and apps. Links and images are reused exactly as each source
  * already resolves them. No invented tracking URLs or prices.
  */
-import { isNoPpcProgram, resolveItemOutbound, resolveOutbound } from './affiliates';
+import { isNoPpcProgram, resolveItemOutbound, resolveOutbound, programs } from './affiliates';
 import { compareByQualityAndPayout } from './catalog-rank';
 import { entries, resolveEntry, categoryForItem, type CategoryId } from './directory';
 import { CALCULATORS, OFFLINE_APPS } from '../lib/app-config';
@@ -339,6 +339,106 @@ export function sortFullCatalog(items: CatalogItem[]): CatalogItem[] {
   return [...items].sort(compareByQualityAndPayout);
 }
 
+
+/**
+ * Cards removed from the directory (Nov 27, 2026 weak-points pass), with the reason.
+ * rejected = the program declined us; duplicate = another card already covers the same product or page;
+ * no-profit-path = no affiliate, referral or lead program exists or is likely (enterprise or dealer-only).
+ * Remove an id here to bring a card back.
+ */
+export const REMOVED_CARDS: Record<string, 'rejected' | 'duplicate' | 'no-profit-path'> = {
+  // Rejected programs
+  'byrna-banshee-alarm': 'rejected', 'byrna-clxl-launcher': 'rejected', 'byrna-compact-launcher': 'rejected', 'byrna-duo': 'rejected',
+  'byrna-le-launcher': 'rejected', 'byrna-mission-4-kit': 'rejected', 'byrna-sd-launcher': 'rejected', 'byrna-tcr': 'rejected',
+  'survival-frog': 'rejected', 'survival-frog-beef-canned-meat': 'rejected',
+  // Duplicates (the kept card is cross-listed with alsoIn)
+  'ring': 'duplicate', // kept: ring-official
+  '1password': 'duplicate', // kept: 1password-password-manager
+  'aquasana-under-sink': 'duplicate', // covered by the Claryum under-sink cards
+  'aquasana-whole-house': 'duplicate', // covered by the HealthShield whole-house and salt-free conditioner cards
+  'ri-fx-aegis-ultra': 'duplicate', // kept: ri-fx-aegis-ultra-plus
+  'ri-fx-aegis-ultra-w-wheel-legged-robot-dog': 'duplicate', // kept: ri-fx-aegis-ultra-w-plus
+  'can-am-official': 'duplicate', // kept: can-am-off-road
+  // No realistic path to paying (mass-market car makers and enterprise-only robots or drones; no consumer affiliate program)
+  'jeep-gladiator': 'no-profit-path', 'jeep-wrangler': 'no-profit-path', 'land-rover-defender': 'no-profit-path',
+  'toyota-4runner': 'no-profit-path', 'toyota-land-cruiser': 'no-profit-path', 'toyota-tacoma': 'no-profit-path',
+  'toyota-rav4-2027': 'no-profit-path', 'toyota-tundra-2027': 'no-profit-path', 'rivian-r1s': 'no-profit-path', 'rivian-r1t': 'no-profit-path',
+  'boston-dynamics-official': 'no-profit-path', 'ghost-robotics-official': 'no-profit-path', 'knightscope-official': 'no-profit-path',
+  'skydio-x10': 'no-profit-path',
+};
+
+/** Extra cross-listing for the card kept after a duplicate was removed. */
+const KEPT_ALSO_IN: Record<string, string[]> = {
+  'ring-official': ['home-protection'],
+  '1password-password-manager': ['digital-safety'],
+};
+
+/**
+ * The old 'More' catch-all is retired: every card gets a real home. Cooking and heating go to Home & Kitchen,
+ * vehicle gear to Auto, multi-tools and hardware to Tools, camping and cold-weather gear and outdoor retailers to Outdoor.
+ */
+const MORE_REHOME: Record<string, { category: string; alsoIn?: string[] }> = {
+  'coleman': { category: 'outdoor' },
+  'coleman-classic-propane-stove-2-burner': { category: 'home', alsoIn: ['outdoor'] },
+  'lodge-classic-cast-iron-skillet': { category: 'home', alsoIn: ['outdoor'] },
+  'mr-heater-buddy-flex-cooker': { category: 'home', alsoIn: ['outdoor'] },
+  'ecoflow-glacier-classic': { category: 'power', alsoIn: ['outdoor'] },
+  'mr-heater-portable-buddy': { category: 'home', alsoIn: ['outdoor', 'safety'] },
+  'mr-heater-buddy-flex': { category: 'home', alsoIn: ['outdoor'] },
+  'vornado-avh10': { category: 'home' },
+  '3m-indoor-window-insulator-kit': { category: 'home' },
+  'hothands-hand-warmers': { category: 'outdoor' },
+  'zippo-heatbank-9s': { category: 'outdoor' },
+  'darn-tough-hiker-boot-full-cushion': { category: 'outdoor' },
+  'kahtoola-microspikes': { category: 'outdoor' },
+  'yaktrax-pro': { category: 'outdoor' },
+  'sol-emergency-bivvy': { category: 'outdoor', alsoIn: ['safety'] },
+  'sol-emergency-blanket': { category: 'outdoor', alsoIn: ['safety'] },
+  'teton-sports-celsius-regular-0': { category: 'outdoor' },
+  'therm-a-rest-z-lite-sol': { category: 'outdoor' },
+  'uco-stormproof-match-kit': { category: 'outdoor' },
+  'eton-roadguard-jump-starter': { category: 'auto', alsoIn: ['power'] },
+  'noco-boost-gb40': { category: 'auto', alsoIn: ['power'] },
+  'snow-joe-telescoping-snow-broom': { category: 'auto' },
+  'snow-joe-shovelution-18': { category: 'tools' },
+  'gerber-multi-plier-600-basic': { category: 'tools' },
+  'yeti': { category: 'outdoor' },
+  'carhartt': { category: 'outdoor' },
+  'hunter-boots': { category: 'outdoor' },
+  'magid': { category: 'tools' },
+  'mro-supreme': { category: 'tools' },
+  'home-depot': { category: 'tools' },
+  'ace-hardware': { category: 'tools' },
+  'bass-pro': { category: 'outdoor' },
+  'cabelas': { category: 'outdoor' },
+  'academy': { category: 'outdoor' },
+  'sportsmans': { category: 'outdoor' },
+  'sportsmans-guide': { category: 'outdoor' },
+  'dicks': { category: 'outdoor' },
+  'walmart': { category: 'home' },
+  'amazon': { category: 'home' },
+};
+
+function rehome(item: CatalogItem): CatalogItem {
+  const extra = KEPT_ALSO_IN[item.id];
+  if (extra) item = { ...item, alsoIn: [...new Set([...(item.alsoIn ?? []), ...extra])] };
+  if (item.category !== 'more') return item;
+  const r = MORE_REHOME[item.id] ?? { category: /^leatherman-/.test(item.id) ? 'tools' : 'outdoor' };
+  const alsoIn = [...new Set([...(item.alsoIn ?? []), ...(r.alsoIn ?? [])])].filter((c) => c !== r.category && c !== 'more');
+  return { ...item, category: r.category, alsoIn };
+}
+
+/** Gear listing id -> ASIN for listings that carry a verified Amazon link (amazon program retailerUrls). */
+function gearAsins(): Map<string, string> {
+  const m = new Map<string, string>();
+  const amz = programs.find((p) => p.id === 'amazon');
+  for (const [id, url] of Object.entries(amz?.retailerUrls ?? {})) {
+    const a = url.match(/\/dp\/([A-Z0-9]{10})/);
+    if (a) m.set(id, a[1]);
+  }
+  return m;
+}
+
 export function buildFullCatalog(gearItems: GearInput[]): CatalogItem[] {
   const used = new Set<string>();
   const items: CatalogItem[] = [];
@@ -380,13 +480,27 @@ export function buildFullCatalog(gearItems: GearInput[]): CatalogItem[] {
   }
 
   // Amazon picks come last: any product already linked through another partner keeps its partner card.
+  // A pick whose ASIN is already on a gear listing (its Amazon twin) folds into that listing: one card per product.
+  const twinOf = new Map<string, string>();
+  for (const [gearId, asin] of gearAsins()) if (used.has(gearId)) twinOf.set(`amz-${asin.toLowerCase()}`, gearId);
   for (const item of amazonCatalogItems()) {
     if (used.has(item.id)) continue;
+    const twin = twinOf.get(item.id);
+    if (twin) {
+      const idx = items.findIndex((i) => i.id === twin);
+      if (idx >= 0) {
+        const g = items[idx];
+        const extra = [item.category, ...(item.alsoIn ?? [])].filter((c) => c !== g.category);
+        items[idx] = { ...g, alsoIn: [...new Set([...(g.alsoIn ?? []), ...extra])], image: g.image ?? item.image, imageKind: g.image ? g.imageKind : item.imageKind };
+      }
+      used.add(item.id);
+      continue;
+    }
     items.push(applyExtra(item, catalogExtraById[item.id]));
     used.add(item.id);
   }
 
-  return sortFullCatalog(applyDoomsdayCrossList(items));
+  return sortFullCatalog(applyDoomsdayCrossList(items.filter((i) => !REMOVED_CARDS[i.id]).map(rehome)));
 }
 
 /**

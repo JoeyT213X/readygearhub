@@ -4,7 +4,7 @@ brand: "Midland Radio"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "power-outage-kits"]
 tags: ["weather radio", "crank radio", "comms"]
-description: "The Midland ER310 Pro hand-crank emergency radio with a power-bank function. See the official page for current bands, power claims, and charging notes. This is a later ER310 Pro model, separate from the ER310."
+description: "The Midland ER310 Pro hand-crank emergency radio with a power-bank function. This is a later ER310 Pro model, separate from the ER310."
 uses:
   - "NOAA weather alerts and radio when the power is out"
   - "A hand-crank or solar-charged backup radio"

@@ -4,7 +4,7 @@ brand: "Bogs"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["winter boots", "kids' boots", "cold weather"]
-description: "A kid’s winter boot listed on Bogs’ official shop as the Arcata II Dash."
+description: "A kid’s winter boot from Bogs, the Arcata II Dash."
 uses:
   - "A kid’s winter boot for snow, slush, or wet cold"
   - "A winter boot to keep by the door for a cold or icy day"

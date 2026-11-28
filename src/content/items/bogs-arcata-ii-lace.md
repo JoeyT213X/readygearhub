@@ -4,7 +4,7 @@ brand: "Bogs"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["winter boots", "men's boots", "cold weather"]
-description: "A lace-up men’s winter boot listed on Bogs’ official shop as the Arcata II Lace."
+description: "A lace-up men’s winter boot from Bogs, the Arcata II Lace."
 uses:
   - "A men’s winter boot for snow, slush, or wet cold"
   - "A lace-up boot for everyday winter wear"

@@ -4,7 +4,7 @@ brand: "LifeStraw"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["water purifier", "emergency water", "gravity filter"]
-description: "A gravity-fed emergency water purifier from LifeStraw with membrane ultrafiltration. The official page lists virus, bacteria, and parasite removal, a 2-liter reservoir, and a lifespan of up to 18,000 liters."
+description: "A gravity-fed emergency water purifier from LifeStraw with membrane ultrafiltration."
 uses:
   - "Treat larger batches of water for a household during an outage or boil-water notice"
   - "A gravity purifier when a personal straw filter is too slow for a family"

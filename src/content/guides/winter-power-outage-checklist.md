@@ -5,7 +5,7 @@ lane: power-outage-kits
 season: ["winter"]
 published: 2026-11-15
 updated: 2026-11-23
-relatedItems: ["midland-er310-crank-radio", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "eton-blackout-buddy-co", "mr-heater-portable-buddy", "black-diamond-spot-400", "mountain-house-classic-bucket", "wuben-h1"]
+relatedItems: ["midland-er310-crank-radio", "goal-zero-lighthouse-600", "anker-solix-c1000x", "eton-blackout-buddy-co", "mr-heater-portable-buddy", "black-diamond-spot-400", "mountain-house-classic-bucket", "wuben-h1"]
 ---
 
 Ice storms and blizzards are some of the most common causes of long power outages. Winter outages are also the most dangerous kind, because losing power usually means losing heat. This checklist walks through what to do before, during, and after.
@@ -16,6 +16,7 @@ Ice storms and blizzards are some of the most common causes of long power outage
 
 - [ ] At least one **headlamp or flashlight per person** (a headlamp such as the [Wuben H1](/gear/wuben-h1/) keeps both hands free), plus a **lantern** for each main room (the [Goal Zero Lighthouse 600](/gear/goal-zero-lighthouse-600/) also charges a phone). Skip candles if you can, since they're a leading cause of fires during outages.
 - [ ] A **battery or hand-crank weather radio**, like the [Midland ER310](/gear/midland-er310-crank-radio/), so you can hear alerts if cell service goes down.
+- [ ] **Something to do without power:** a deck of cards, a board game, or a charged speaker with downloaded music. See [off-grid games](/directory/fun/) and [outage-ready audio](/directory/audio/).
 - [ ] Phones, power banks, and any **portable energy reserve** fully charged. Not sure what size you need? See [how to pick a portable energy reserve](/guides/how-to-pick-an-energy-reserve/) or try the [generator & energy-reserve sizer](/tools/power-sizer/).
 - [ ] A written list of important phone numbers, in case your phone dies.
 

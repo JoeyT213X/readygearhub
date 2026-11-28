@@ -4,7 +4,7 @@ brand: "Anker SOLIX"
 lane: power-outage-kits
 alsoIn: ["off-grid-power", "vehicle-emergency-kits"]
 tags: ["solar kit", "compact"]
-description: "A compact solar-generator kit from Anker SOLIX that pairs the C300 DC with a 60W solar panel, as listed on Anker’s official shop."
+description: "A compact solar-generator kit from Anker SOLIX that pairs the C300 DC with a 60W solar panel, as from Anker."
 uses:
   - "A small go-bag or camping kit with a way to recharge from the sun"
   - "Low-wattage backup for phones and lights"

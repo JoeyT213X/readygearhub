@@ -4,7 +4,7 @@ brand: "ReadyWise"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "powdered eggs", "food storage"]
-description: "A freeze-dried powdered egg supply from ReadyWise, listed at 144 servings on the official page. Confirm current servings, prep directions, and storage guidance there."
+description: "A freeze-dried powdered egg supply from ReadyWise, listed by the maker at 144 servings. Handy for breakfast and baking from the pantry."
 uses:
   - "A protein staple in a longer pantry plan"
   - "Breakfast food that does not need a fridge"

@@ -4,7 +4,7 @@ brand: "My Medic"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "storm-hurricane-prep"]
 tags: ["first aid", "bleeding control", "trauma"]
-description: "A bleeding-control kit from My Medic. See the official page for the current contents list and training notes."
+description: "A bleeding-control kit from My Medic."
 uses:
   - "A dedicated bleeding-control pouch for a vehicle or home"
   - "An add-on to a general first aid kit after you get training"

@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "tools"]
-description: "A Leatherman Wingman multi-tool, described by Leatherman as an everyday-carry model. See the official page for the current tool list and warranty."
+description: "A Leatherman Wingman multi-tool, described by Leatherman as an everyday-carry model."
 uses:
   - "An everyday-carry multi-tool for a pocket or bag"
   - "Light repairs at home or in a vehicle"

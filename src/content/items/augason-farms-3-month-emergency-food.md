@@ -4,7 +4,7 @@ brand: "Augason Farms"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "long shelf life", "food storage"]
-description: "A longer emergency food supply kit from Augason Farms, sold as a 3-month supply on the official site. See that page for current servings, calories, contents, and storage guidance."
+description: "A longer emergency food supply kit from Augason Farms, sold as a 3-month supply on the official site."
 uses:
   - "A longer pantry reserve beyond a 72-hour kit"
   - "Home food storage for winter storms or hurricanes"

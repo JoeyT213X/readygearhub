@@ -4,7 +4,7 @@ brand: "Bogs"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["winter boots", "men's boots", "snow boots", "cold weather"]
-description: "A men’s snow boot listed on Bogs’ official shop as the Bozeman II Vibram Arctic Grip."
+description: "A men’s snow boot from Bogs, the Bozeman II Vibram Arctic Grip."
 uses:
   - "A men’s snow boot for packed snow or icy ground"
   - "A winter boot when you want the Vibram Arctic Grip outsole listed on the official page"

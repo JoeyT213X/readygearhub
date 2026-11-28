@@ -4,7 +4,7 @@ brand: "Eton"
 lane: power-outage-kits
 alsoIn: ["winter-storm-prep", "homestead-multi-purpose"]
 tags: ["radio", "shortwave", "comms"]
-description: "The Eton Elite Executive is a portable all-band radio on the official Eton site. See that page for current bands, power options, and features."
+description: "The Eton Elite Executive is a portable all-band radio on the official Eton site."
 uses:
   - "Listening to AM, FM, or shortwave when a phone network is down"
   - "A home radio for outage news and weather broadcasts"

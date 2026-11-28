@@ -4,7 +4,7 @@ brand: "Cobra Electronics"
 lane: vehicle-emergency-kits
 alsoIn: ["storm-hurricane-prep"]
 tags: ["CB radio", "comms", "overland"]
-description: "The Cobra 75 AllRoad CB radio. See the official page for current features, mounting notes, and legal operating rules."
+description: "The Cobra 75 AllRoad CB radio."
 uses:
   - "Vehicle CB communication on the highway or a back road"
   - "Listening to local CB traffic when cell coverage is thin"

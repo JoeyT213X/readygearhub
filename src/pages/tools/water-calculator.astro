@@ -14,7 +14,7 @@ const relatedLanes = (waterLine?.relatedLanes || [])
   .map((slug) => lanes.find((l) => l.slug === slug))
   .filter(Boolean);
 ---
-<Base title="Water Storage Calculator | ReadyGearHub" description="Calculate emergency water storage from Ready.gov guidance: one gallon per person per day for several days.">
+<Base footerSignup={false} title="Water Storage Calculator | ReadyGearHub" description="Calculate emergency water storage from Ready.gov guidance: one gallon per person per day for several days.">
   <section class="page-hero">
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Water calculator</p>

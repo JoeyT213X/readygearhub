@@ -4,7 +4,7 @@ brand: "Mountain House"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "freeze-dried", "breakfast"]
-description: "A freeze-dried breakfast skillet pouch from Mountain House. See the official page for current ingredients, servings, prep directions, allergens, and stated shelf life."
+description: "A freeze-dried breakfast skillet pouch from Mountain House."
 uses:
   - "A breakfast option in a 72-hour bag or a short outage"
   - "A freeze-dried meal that does not need refrigeration"

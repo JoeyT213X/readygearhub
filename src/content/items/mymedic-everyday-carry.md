@@ -4,7 +4,7 @@ brand: "My Medic"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "homestead-multi-purpose"]
 tags: ["first aid", "edc", "compact kit"]
-description: "A compact everyday-carry first aid kit from My Medic. See the official page for the current contents list."
+description: "A compact everyday-carry first aid kit from My Medic."
 uses:
   - "A small kit for a bag, belt, or glove box"
   - "Everyday cuts and basic care away from the main home kit"

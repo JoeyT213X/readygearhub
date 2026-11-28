@@ -4,7 +4,7 @@ brand: "Adventure Medical Kits"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "homestead-multi-purpose"]
 tags: ["first aid", "sports kit"]
-description: "A sports-oriented first aid kit from Adventure Medical Kits. See the official page for the current contents list and intended use."
+description: "A sports-oriented first aid kit from Adventure Medical Kits."
 uses:
   - "A kit for practices, games, or a family vehicle"
   - "Basic injury care to keep beside a larger home kit"

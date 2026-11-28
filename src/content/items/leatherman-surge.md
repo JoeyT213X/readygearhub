@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "tools"]
-description: "The Leatherman Surge full-size multi-tool. See the official page for the current tool list, materials, and warranty."
+description: "The Leatherman Surge full-size multi-tool."
 uses:
   - "A larger multi-tool for a kit or toolbox"
   - "Field and home repairs"

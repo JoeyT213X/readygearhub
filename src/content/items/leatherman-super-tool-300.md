@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "tools"]
-description: "The Leatherman Super Tool 300. See the official page for the current tool list, materials, and warranty."
+description: "The Leatherman Super Tool 300."
 uses:
   - "A heavy-duty multi-tool for a work bag or vehicle kit"
   - "Field repairs"

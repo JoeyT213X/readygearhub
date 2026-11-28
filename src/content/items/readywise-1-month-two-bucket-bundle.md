@@ -4,7 +4,7 @@ brand: "ReadyWise"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "long shelf life", "food storage"]
-description: "A two-bucket emergency food bundle from ReadyWise, sold as a 1-month supply on the official site. See that page for current servings, calories, contents, and storage guidance."
+description: "A two-bucket emergency food bundle from ReadyWise, sold as a 1-month supply on the official site."
 uses:
   - "A month-scale pantry reserve for home storage"
   - "A complement to a 72-hour kit and stored water"

@@ -4,7 +4,7 @@ brand: "Adventure Medical Kits"
 lane: first-aid-medical-prep
 alsoIn: ["homestead-multi-purpose", "storm-hurricane-prep"]
 tags: ["first aid", "dental kit"]
-description: "A dental emergency kit from Adventure Medical Kits, intended for temporary tooth care until you can see a dentist. See the official page for the current contents and directions."
+description: "A dental emergency kit from Adventure Medical Kits, intended for temporary tooth care until you can see a dentist."
 uses:
   - "Temporary dental care when a dentist is not immediately available"
   - "An add-on to a home or storm first aid kit"

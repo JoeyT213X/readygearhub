@@ -4,7 +4,7 @@ brand: "Eton"
 lane: vehicle-emergency-kits
 alsoIn: ["power-outage-kits"]
 tags: ["jump starter", "air compressor", "vehicle kit"]
-description: "Eton’s RoadGuard is a portable jump starter with an air compressor, LED flashlight, and power bank functions on the official page. Confirm current ratings and instructions there."
+description: "Eton’s RoadGuard combines a portable jump starter with an air compressor, an LED flashlight and a power bank, so one box covers several roadside problems."
 uses:
   - "A compact jump starter and tire inflator for a vehicle kit"
   - "A USB power bank and flashlight during a roadside delay"

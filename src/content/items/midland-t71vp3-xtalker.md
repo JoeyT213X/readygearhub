@@ -4,7 +4,7 @@ brand: "Midland Radio"
 lane: vehicle-emergency-kits
 alsoIn: ["homestead-multi-purpose", "storm-hurricane-prep"]
 tags: ["walkie talkie", "FRS", "comms"]
-description: "A Midland X-Talker T71VP3 FRS walkie-talkie two-pack. See the official page for current range claims, features, and licensing notes. FRS radios do not need an FCC license in the United States."
+description: "A Midland X-Talker T71VP3 FRS walkie-talkie two-pack. FRS radios do not need an FCC license in the United States."
 uses:
   - "Short-range family communication when cell service is down"
   - "A pair of radios for a house, a yard, or two vehicles"

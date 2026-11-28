@@ -4,7 +4,7 @@ brand: "Legacy Food Storage"
 lane: winter-storm-prep
 alsoIn: ["homestead-multi-purpose"]
 tags: ["emergency food", "freeze-dried"]
-description: "Legacy Food Storage’s premium 240-serving package. See the official page for current contents, serving counts, and stated storage life."
+description: "Legacy Food Storage’s premium 240-serving package."
 uses:
   - "A larger long-term food package for a household"
   - "Pantry planning for longer isolation"

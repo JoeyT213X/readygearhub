@@ -4,7 +4,7 @@ brand: "Datrex"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep", "vehicle-emergency-kits"]
 tags: ["emergency water", "water storage", "pouches"]
-description: "Individually packaged purified emergency drinking water from Datrex. The official page lists 64 pouches per case (8 liters total), 125 ml per pouch, and a 5-year shelf life from the date of manufacture."
+description: "Individually packaged purified emergency drinking water from Datrex."
 uses:
   - "A compact, long-shelf water supply for a hurricane go-bag or car kit"
   - "Stored drinking water when jugs are too bulky to move"

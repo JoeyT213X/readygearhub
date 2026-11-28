@@ -4,7 +4,7 @@ brand: "Bogs"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["winter boots", "men's boots", "cold weather"]
-description: "A tall men’s winter boot listed on Bogs’ official shop as the Bozeman II Tall."
+description: "A tall men’s winter boot from Bogs, the Bozeman II Tall."
 uses:
   - "A tall men’s winter boot for snow, slush, or wet cold"
   - "A chore boot when you want a taller shaft"

@@ -4,7 +4,7 @@ brand: "NITECORE"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits", "power-outage-kits"]
 tags: ["flashlight", "EDC", "lighting", "tools"]
-description: "The NITECORE EDC37 USB-C rechargeable flat flashlight. See the official store page for current output claims, run-time, and charging notes."
+description: "The NITECORE EDC37 USB-C rechargeable flat flashlight."
 uses:
   - "A brighter everyday-carry or kit flashlight"
   - "Outage lighting and close work around a vehicle"

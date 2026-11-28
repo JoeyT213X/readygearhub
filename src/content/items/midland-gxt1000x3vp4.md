@@ -4,7 +4,7 @@ brand: "Midland Radio"
 lane: storm-hurricane-prep
 alsoIn: ["homestead-multi-purpose", "vehicle-emergency-kits"]
 tags: ["walkie talkie", "GMRS", "comms"]
-description: "A Midland GXT1000 X3VP4 GMRS walkie-talkie three-pack. See the official page for current features and licensing notes. GMRS use in the United States requires an FCC license."
+description: "A Midland GXT1000 X3VP4 GMRS walkie-talkie three-pack. GMRS use in the United States requires an FCC license."
 uses:
   - "Short-range family or team communication when cell service is down"
   - "A three-radio set for a household or two vehicles"

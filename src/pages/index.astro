@@ -54,7 +54,7 @@ const navList = {
 };
 import ExtremeWindow from '../components/ExtremeWindow.astro';
 ---
-<Base title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, plus guides, free tools, and live official alerts." schema={[webSite, navList]}>
+<Base footerSignup={false} title="ReadyGearHub: Winter Storm, Power Outage & Survival Gear Directory" description="A hand-picked directory of winter storm, power outage, vehicle emergency, off-grid, and multi-purpose gear from trusted brands, plus guides, free tools, and live official alerts." schema={[webSite, navList]}>
   <section class="home-shop-hero" aria-label="Shop the Directory">
     <div class="wrap">
       <ShopBoard hero tiles={boardTiles} catalogCount={catalog.length}>

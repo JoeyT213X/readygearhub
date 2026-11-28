@@ -4,7 +4,7 @@ brand: "Augason Farms"
 lane: storm-hurricane-prep
 alsoIn: ["winter-storm-prep", "emergency-water", "vehicle-emergency-kits"]
 tags: ["emergency food", "go bag", "backpack"]
-description: "A grab-and-go emergency backpack from Augason Farms that the official page describes as including cook-in-pouch meals and survival gear. See the official page for the current packing list."
+description: "A grab-and-go emergency backpack from Augason Farms that pairs cook-in-pouch meals with basic survival gear, sized to toss in a closet or car."
 uses:
   - "A portable 72-hour style bag for a short evacuation or outage"
   - "A compact kit to keep in a closet or car"

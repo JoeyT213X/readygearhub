@@ -8,7 +8,8 @@ import GuideCard from '../../components/GuideCard.astro';
 import SectionHead from '../../components/SectionHead.astro';
 import Photo from '../../components/Photo.astro';
 import { render } from 'astro:content';
-import { getGuides, getItems, laneBySlug, site } from '../../lib/data';
+import { getGuides, getItems, laneBySlug, site, isAffiliate } from '../../lib/data';
+import { categoryBySlug } from '../../data/source-directory';
 import { photoForGuide, photos } from '../../data/images';
 import { CALCULATORS } from '../../lib/app-config';
 import WinterDealsCallout from '../../components/WinterDealsCallout.astro';
@@ -28,6 +29,19 @@ const allGuides = await getGuides();
 const score = (g: typeof guide) => (g.data.lane && g.data.lane === d.lane ? 10 : 0) + g.data.relatedItems.filter((id) => d.relatedItems.includes(id)).length + (g.data.season.some((s) => d.season.includes(s)) ? 1 : 0);
 const relatedGuides = allGuides.filter((g) => g.id !== guide.id).map((g) => ({ g, s: score(g) })).sort((a, b) => b.s - a.s).slice(0, 3).map((x) => x.g);
 const toc = headings.filter((h) => h.depth === 2);
+// Products in this guide: picks on paid (tracked) links lead; the rest are listed as plain mentions with no outbound link.
+const paidPicks = related.filter((r) => isAffiliate(r));
+const otherPicks = related.filter((r) => !isAffiliate(r));
+const dirByLane: Record<string, string> = {
+  'winter-storm-prep': 'safety', 'power-outage-kits': 'power', 'vehicle-emergency-kits': 'auto', 'home-heating-backup': 'home',
+  'cold-weather-gear': 'outdoor', 'off-grid-power': 'power', 'storm-hurricane-prep': 'safety', 'homestead-multi-purpose': 'food',
+  'home-backup-power-solar': 'power', 'emergency-water': 'water', 'first-aid-medical-prep': 'safety',
+};
+const dirCat = categoryBySlug(d.directory ?? dirByLane[d.lane ?? ''] ?? 'safety');
+const siblingGuides = [
+  ...d.siblings.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean),
+  ...relatedGuides,
+].filter((g, i, arr) => g && arr.findIndex((x) => x!.id === g.id) === i).slice(0, 2) as typeof allGuides;
 const photoKey = photoForGuide(guide.id, d.lane);
 const toolByLane: Record<string, string> = {
   'power-outage-kits': '/tools/outage-timer/', 'home-backup-power-solar': '/tools/power-sizer/', 'off-grid-power': '/tools/solar-sizer/',
@@ -48,13 +62,13 @@ const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month:
 ---
 <Base title={`${d.title} | ReadyGearHub`} description={d.description} schema={schema} type="article">
   <PageHero title={d.title} lead={d.description} crumbs={[{ href: '/guides/', label: 'Guides' }, ...(lane ? [{ href: `/${lane.slug}/`, label: lane.name }] : [])]}>
-    <p class="meta-row">Updated {fmt(d.updated ?? d.published)}{lane && <> · <a href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a></>}{related.length > 0 && <> · <a href="#gear">{related.length} gear picks</a></>}</p>
+    <p class="meta-row">Updated {fmt(d.updated ?? d.published)}{lane && <> · <a href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a></>}{related.length > 0 && <> · <a href="#gear">Products in this guide</a></>}</p>
   </PageHero>
   <div class="wrap section guide-layout">
     <article class="guide-main">
       <figure class="guide-cover">
         <Photo name={photoKey} eager sizes="(min-width: 1024px) 760px, 100vw" />
-        <figcaption>Photo: <a href={photos[photoKey].sourceUrl} rel="noopener" target="_blank">{photos[photoKey].author} on Unsplash</a></figcaption>
+        <figcaption>Photo: <a href={photos[photoKey].sourceUrl} rel="noopener" target="_blank">{photos[photoKey].author} on {(() => { try { const h = new URL(photos[photoKey].sourceUrl).hostname.replace(/^www\./, ''); return h.startsWith('pexels') ? 'Pexels' : h.startsWith('pixabay') ? 'Pixabay' : h.startsWith('unsplash') ? 'Unsplash' : h; } catch { return 'Unsplash'; } })()}</a></figcaption>
       </figure>
       <Disclosure />
       <div class="prose guide"><Content /></div>
@@ -79,13 +93,19 @@ const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month:
     </aside>
   </div>
   <LeadCta place={guide.id} />
-  {related.length > 0 && (
-    <section class="wrap section" id="gear">
-      <SectionHead kicker="Gear mentioned" title="Gear mentioned in this guide" intro="Each pick has a details page with uses and safety notes, plus a link to check the current price." href={lane ? `/${lane.slug}/` : '/gear/'} linkLabel={lane ? `All ${lane.name}` : 'Full directory'} />
-      <Disclosure />
-      <div class="grid">{related.map((r) => <ItemCard item={r} showGuide={false} />)}</div>
-    </section>
-  )}
+  <section class="wrap section" id="gear">
+    <SectionHead kicker="Products in this guide" title="Products in this guide" intro="The picks we mention, each with a details page covering uses and safety notes, plus a link to check the current price." href={dirCat ? `/directory/${dirCat.slug}/` : '/directory/'} linkLabel={dirCat ? `Browse ${dirCat.name}` : 'Full directory'} />
+    {paidPicks.length > 0 && <Disclosure />}
+    {paidPicks.length > 0 && <div class="grid">{paidPicks.map((r) => <ItemCard item={r} showGuide={false} />)}</div>}
+    {otherPicks.length > 0 && (
+      <p class="fine guide-also">Also mentioned: {otherPicks.map((r, i) => <>{i > 0 && ' · '}<a href={`/gear/${r.id}/`}>{r.data.name}</a></>)}</p>
+    )}
+    <div class="guide-links card">
+      {dirCat && <p><strong>Shop the category:</strong> <a href={`/directory/${dirCat.slug}/`}>{dirCat.name}</a> in the Full Source Directory.</p>}
+      {siblingGuides.length > 0 && <p><strong>Read next:</strong> {siblingGuides.map((g, i) => <>{i > 0 && ' and '}<a href={`/guides/${g.id}/`}>{g.data.title}</a></>)}</p>}
+    </div>
+  </section>
+
   <section class="band">
     <div class="wrap section">
       <SectionHead kicker="Keep going" title="Related guides" href="/guides/" linkLabel="All guides" />
@@ -100,3 +120,8 @@ const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month:
     </div>
   </section>
 </Base>
+<style>
+  .guide-also{margin-top:14px}
+  .guide-links{margin-top:16px;padding:14px 18px}
+  .guide-links p{margin:.3em 0}
+</style>

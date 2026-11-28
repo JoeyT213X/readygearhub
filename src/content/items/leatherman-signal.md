@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits", "off-grid-power"]
 tags: ["multi-tool", "outdoors", "tools"]
-description: "A Leatherman Signal multi-tool with outdoor-oriented tools. See the official page for the current tool list, materials, and warranty."
+description: "A Leatherman Signal multi-tool with outdoor-oriented tools."
 uses:
   - "A multi-tool for a bag, glove box, or homestead drawer"
   - "Outdoor repairs and camp tasks"

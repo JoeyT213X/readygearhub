@@ -4,7 +4,7 @@ brand: "Backpacker's Pantry"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "two week kit", "food storage"]
-description: "A 14-day emergency survival meal kit from Backpacker's Pantry, meat version. See the official page for the current menu, servings, and storage guidance."
+description: "A 14-day emergency survival meal kit from Backpacker's Pantry, meat version."
 uses:
   - "A two-week food reserve for home or a longer outage"
   - "A packaged meal plan to sit beside stored water"

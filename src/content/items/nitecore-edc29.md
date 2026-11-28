@@ -4,7 +4,7 @@ brand: "NITECORE"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits", "power-outage-kits"]
 tags: ["flashlight", "EDC", "lighting", "tools"]
-description: "The NITECORE EDC29 USB-C rechargeable everyday-carry flashlight. See the official store page for current output claims, run-time, and charging notes."
+description: "The NITECORE EDC29 USB-C rechargeable everyday-carry flashlight."
 uses:
   - "A flat everyday-carry light for a pocket or kit"
   - "Outage lighting around the house or a vehicle"

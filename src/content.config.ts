@@ -34,6 +34,8 @@ const guides = defineCollection({
     published: z.coerce.date(),
     updated: z.coerce.date().optional(),
     relatedItems: z.array(z.string()).default([]), // item file names without .md
+    directory: z.string().optional(),               // /directory/<slug>/ this guide points to (defaults by lane)
+    siblings: z.array(z.string()).default([]),      // 2 sibling guide slugs (defaults to the closest guides)
     draft: z.boolean().default(false),
   }),
 });

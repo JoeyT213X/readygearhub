@@ -4,7 +4,7 @@ brand: "TideWe"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["heated jacket", "hunting apparel", "cold weather"]
-description: "A two-piece heated hunting jacket set listed on TideWe’s official shop as SilenTrace, with a camo outer layer and a heated base-layer piece."
+description: "A two-piece heated hunting jacket set from TideWe, the SilenTrace, with a camo outer layer and a heated base-layer piece."
 uses:
   - "A layered heated jacket when you want an outer shell and a warmer mid layer together"
   - "Cold-weather hunting or outdoor work in quiet conditions, according to TideWe"

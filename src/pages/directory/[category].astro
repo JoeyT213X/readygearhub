@@ -66,6 +66,7 @@ const schema = {
 };
 ---
 <Base
+  noindex={items.length === 0}
   title={`${category.name} · Full Source Directory | ReadyGearHub`}
   description={category.blurb}
   schema={schema}
@@ -138,7 +139,16 @@ const schema = {
           {primaryItems.map((item) => <SourceCard item={item} />)}
         </div>
       ) : !isDoomsday && items.length === 0 ? (
-        <p>No listings in this category yet. Partners still on the way are listed below.</p>
+        <>
+          <p>No listings in this category yet. We add products here only after checking each one. Partners still on the way are listed below.</p>
+          {category.subsections && category.subsections.length > 0 && (
+            <div class="grid">
+              {category.subsections.map((sub) => (
+                <div class="card"><h2 class="section-title" style="font-size:1.05rem">{sub.name}</h2><p class="fine">{sub.blurb}</p><p class="fine"><em>Listings coming soon.</em></p></div>
+              ))}
+            </div>
+          )}
+        </>
       ) : null}
       {fillerItems.length > 0 && (
         <div class="filler-block">

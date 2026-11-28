@@ -4,7 +4,7 @@ brand: "Eton"
 lane: power-outage-kits
 alsoIn: ["off-grid-power", "winter-storm-prep"]
 tags: ["radio", "field radio", "comms"]
-description: "The Eton Elite Field is a portable field radio on the official Eton site. See that page for current bands, power options, and features."
+description: "The Eton Elite Field is a portable field radio on the official Eton site."
 uses:
   - "A field or homestead radio for broadcast news and weather"
   - "A home outage radio with more than just the local FM band"

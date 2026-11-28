@@ -4,7 +4,7 @@ brand: "Eton"
 lane: power-outage-kits
 alsoIn: ["storm-hurricane-prep", "winter-storm-prep", "vehicle-emergency-kits"]
 tags: ["radio", "emergency radio", "NOAA"]
-description: "An officially licensed American Red Cross Journey compact all-band emergency radio from Eton. See the official page for current bands, power options, and features."
+description: "An officially licensed American Red Cross Journey compact all-band emergency radio from Eton."
 uses:
   - "A compact emergency radio for a go-bag or home kit"
   - "Listening to weather and news alerts during an outage"

@@ -4,7 +4,7 @@ brand: "Epic Water Filters"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep"]
 tags: ["water filter", "pitcher", "home filtration"]
-description: "A countertop water filter pitcher listed on Epic’s official shop as the Nano XP, a no-install pitcher Epic describes as reducing bacteria and PFAS."
+description: "A countertop water filter pitcher from Epic, the Nano XP, a no-install pitcher Epic describes as reducing bacteria and PFAS."
 uses:
   - "Filtered drinking water at the fridge or on the counter, with no plumbing work"
   - "A pitcher option when you want a replaceable filter instead of an under-sink install"

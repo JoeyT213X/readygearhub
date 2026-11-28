@@ -4,7 +4,7 @@ brand: "Legacy Food Storage"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep"]
 tags: ["emergency food", "freeze-dried"]
-description: "A Legacy Food Storage 60-serving entrée bucket. See the official page for current menus, serving counts, and stated storage life."
+description: "A Legacy Food Storage 60-serving entrée bucket."
 uses:
   - "A smaller entrée bucket for an apartment or a first food kit"
   - "Long-shelf-life meals during an outage"

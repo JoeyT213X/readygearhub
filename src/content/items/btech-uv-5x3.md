@@ -4,7 +4,7 @@ brand: "BTECH"
 lane: homestead-multi-purpose
 alsoIn: ["storm-hurricane-prep"]
 tags: ["ham radio", "comms"]
-description: "The BTECH UV-5X3 tri-band handheld radio, sold on the official BaofengTech site. Amateur-radio privileges and an FCC license are required to transmit on ham bands in the United States. See the official page for bands and current specs."
+description: "The BTECH UV-5X3 tri-band handheld radio, sold on the official BaofengTech site. Amateur-radio privileges and an FCC license are required to transmit on ham bands in the United States."
 uses:
   - "Licensed amateur-radio communication when repeaters or simplex are in range"
   - "A programmable handheld for people who already hold a ham license"
