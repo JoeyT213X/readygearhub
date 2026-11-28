@@ -321,7 +321,7 @@ export const programs: Program[] = [
     lead: { title: 'Thinking about solar plus battery backup?',
       blurb: 'EnergySage lets you compare quotes from pre-screened local installers for free, with no obligation to buy.',
       button: 'Compare free solar quotes',
-      places: ['generator-vs-power-station', 'how-to-pick-a-portable-power-station', 'winter-power-outage-checklist', 'tool:solar-sizer', 'tool:power-sizer', 'project:*'] } },
+      places: ['generator-vs-power-station', 'how-to-pick-a-portable-power-station', 'winter-power-outage-checklist', 'tool:solar-sizer', 'tool:power-sizer', 'project:solar-generators'] } },
   { id: 'choice-home-warranty', name: 'Choice Home Warranty', network: 'CJ', status: 'approved', kind: 'lead', ppcAllowed: false, link: 'https://www.dpbolvw.net/click-101929817-12337172',
     note: 'CJ advertiser CID 4593144; $20/lead homeowners; no search bidding.',
     lead: { title: 'Worried about a furnace or water heater failing mid-storm?',
@@ -332,12 +332,12 @@ export const programs: Program[] = [
     lead: { title: 'Need a contractor after the storm?',
       blurb: 'Modernize matches you with local pros for roofing, generators, and home repairs. Free, no-obligation quotes.',
       button: 'Get free contractor quotes',
-      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi', 'generator-vs-power-station', 'project:*'] } },
+      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi', 'generator-vs-power-station', 'project:fencing-gates', 'project:outbuildings-safe-rooms'] } },
   { id: 'networx', name: 'Networx', network: 'Direct', status: 'pending', kind: 'lead', link: '',
     lead: { title: 'Storm damage or frozen-pipe repairs?',
       blurb: 'Networx connects you with screened local contractors and plumbers. Compare free quotes before you hire.',
       button: 'Find a local pro',
-      places: ['how-to-keep-pipes-from-freezing', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi', 'project:*'] } },
+      places: ['how-to-keep-pipes-from-freezing', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi', 'project:fencing-gates', 'project:wells', 'project:outbuildings-safe-rooms', 'project:grading-excavation'] } },
   { id: 'leaffilter', name: 'LeafFilter', network: 'Impact', status: 'none', kind: 'lead', link: '',
     lead: { title: 'Ice dams and clogged gutters?',
       blurb: 'LeafFilter offers a free gutter-protection estimate at your home.',
@@ -413,7 +413,7 @@ export const programs: Program[] = [
     lead: { title: 'Need a local pro for storm repairs?',
       blurb: 'Angi helps you find local contractors for roofing, plumbing, and home repairs. Compare options before you hire.',
       button: 'Find a local contractor',
-      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south', 'project:*'] } },
+      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south', 'project:shelters', 'project:fencing-gates', 'project:wells', 'project:septic', 'project:solar-generators', 'project:outbuildings-safe-rooms', 'project:grading-excavation'] } },
   { id: 'american-home-shield', name: 'American Home Shield', network: 'Direct', status: 'pending', kind: 'lead', link: '',
     note: 'Program-manager page lists $18 per lead and $30 per order, 30-day cookie; confirm in the contract. Do not stack on the same page as Choice Home Warranty at launch.',
     lead: { title: 'Thinking about a home warranty for major systems?',
@@ -905,19 +905,15 @@ export function trackedItemLink(itemId: string, officialUrl: string): string {
 
 export type LeadCta = { id: string; url: string; title: string; blurb: string; button: string; name: string; preview?: boolean };
 
-/** A lead `places` entry matches a place exactly, or by prefix when it ends in `*` (e.g. 'project:*'). */
-const placeMatches = (places: string[], place: string) =>
-  places.some((x) => x === place || (x.endsWith('*') && place.startsWith(x.slice(0, -1))));
-
 /**
- * Lead boxes for a place (guide slug, 'tool:<slug>' or 'project:<id>'), max `max` (default 2).
+ * Lead boxes for a place (guide slug, 'tool:<slug>' or 'project:<section id>'), max `max` (default 2).
  * Only approved/live programs with a tracking link show. `preview` (build-time PUBLIC_PREVIEW_LEADS=1,
  * never on in production) also shows boxes for programs still `pending`, flagged `preview: true`
  * and without a link, so layouts can be tested. It never changes a program's status.
  */
 export function leadCtasFor(place: string, max = 2, preview = false): LeadCta[] {
   return programs
-    .filter((p) => p.kind === 'lead' && p.lead && placeMatches(p.lead.places, place)
+    .filter((p) => p.kind === 'lead' && p.lead && p.lead.places.includes(place)
       && ((live(p) && trackingTemplate(p)) || (preview && p.status === 'pending')))
     .slice(0, max)
     .map((p) => {
