@@ -111,9 +111,8 @@ for (const p of programs.filter((x) => x.status === 'dropped')) {
 
 // ---- (d) visible prices ----
 // PRICE RULES (BOTS.md: no prices on the site; buttons say "Check current price").
-//  * /gear/, /directory/ and /brands/: any dollar amount in the visible text fails, except the structured card price
-//    label (<p class="product-price">, built from each card's `price` field). That label is a known exception pending
-//    Joseph's decision; it is the only price text those pages may carry.
+//  * /gear/, /directory/ and /brands/: any dollar amount in the visible text fails, including the card
+//    price label (<p class="product-price">); SourceCard swaps any label containing "$" for "Price on the store page".
 //  * Every other indexable page fails on price prose: "listed $N", "listed at/from $N" or "$N as of <date>".
 //  * Excluded on purpose (intentional prices): /shop/ and /thank-you/ (RGH's own Payhip product prices), /apps/ and
 //    /storm-tracker/ (the $5 supporter unlock), /doomsday-prepper/projects/ (cost ranges, each with its cited source),
@@ -125,7 +124,7 @@ for (const file of pages(dist)) {
   if (PRICE_EXCLUDED.some((x) => page.startsWith(x))) continue;
   const html = readFileSync(file, 'utf8');
   if (/<meta name="robots" content="[^"]*noindex/.test(html)) continue;
-  const text = strip(html.replace(/<(script|style)[\s\S]*?<\/\1>/g, '').replace(/<p class="product-price"[^>]*>[^<]*<\/p>/g, ' '));
+  const text = strip(html.replace(/<(script|style)[\s\S]*?<\/\1>/g, ''));
   const strict = STRICT_PRICE_AREAS.some((x) => page.startsWith(x));
   const re = strict ? /.{0,40}\$\s?\d[\d,.]*.{0,30}/g : /.{0,40}(?:listed (?:this |at |from )*\$\s?\d|\$\s?\d[\d,.]* as of).{0,30}/g;
   for (const m of text.matchAll(re)) add('d-price', `${page}|${m[0].trim()}`, `visible price on ${page}: "${m[0].trim()}"`);
