@@ -761,4 +761,4 @@ The nine Ready Alliance / My Patriot Supply concept images listed in the section
 
 ## Generated media (mobile home hero)
 
-`public/videos/mobile-extreme-hero.mp4` and `mobile-extreme-poster.jpg` (added 2026-11-27) are AI-generated imagery made for ReadyGearHub: a six-wheeled armored rig in a storm, the inside of a bunker with gear, robot dogs and drones, an enclosed generator with propane lines to a house, and a pile of gear. No people, logos, readable text or real products. The photographs above are unchanged and none of them are AI-generated.
+`public/videos/mobile-extreme-hero-v3.mp4` and `mobile-extreme-poster.jpg` (added 2026-11-27) are AI-generated imagery made for ReadyGearHub: a six-wheeled armored rig in a storm, a boxy bunker with gear and robot dogs, people (seen from behind) doing a bunker inventory, an enclosed generator with propane lines to a house, and gear scenes for water, off-grid solar and comms, first aid, home security and fencing, camping and vehicle kits, plus a gear pile. No identifiable people, logos, readable text or real products. The photographs above are unchanged and none of them are AI-generated.

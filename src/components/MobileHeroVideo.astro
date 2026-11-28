@@ -5,12 +5,12 @@
  * - Hidden on wider screens; nothing is downloaded there (the poster is a CSS background inside the phone media query).
  * - The video file is not requested until the page has loaded and the browser is idle. It is skipped entirely for
  *   prefers-reduced-motion, Save-Data and 2G/slow connections, and the poster stays as the still.
- * - Paused when scrolled out of view or the tab is hidden. 9.2 s, about 1.6 MB, no audio, our own generated imagery
+ * - Paused when scrolled out of view or the tab is hidden. 17.3 s, about 2.7 MB, no audio, our own generated imagery
  *   (no people, no logos or readable text).
  */
 ---
 <div class="mx-hero-bg" data-mx-hero aria-hidden="true">
-  <video class="mx-hero-video" muted loop playsinline autoplay preload="none" tabindex="-1" disablepictureinpicture data-src="/videos/mobile-extreme-hero.mp4"></video>
+  <video class="mx-hero-video" muted loop playsinline autoplay preload="none" tabindex="-1" disablepictureinpicture data-src="/videos/mobile-extreme-hero-v3.mp4"></video>
   <span class="mx-hero-shade"></span>
 </div>
 <p class="mx-hero-tag">Storms. Outages. Off-grid.<br />Be ready.</p>
