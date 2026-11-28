@@ -10,7 +10,7 @@ draft: false
 
 When the power goes out, people reach for backup heat and backup power. Some of those choices can fill a house with carbon monoxide (CO), a gas you cannot see or smell. This page collects official safety steps from the CDC, Ready.gov, and the U.S. Consumer Product Safety Commission so you can keep the lights or a little heat going without creating that risk.
 
-This guide is general preparedness information, **not medical advice**. If you think someone is being poisoned by carbon monoxide, get everyone into fresh air and call **911**. You can also call Poison Help, which connects you to your local poison center (the number is on the HRSA page linked here) ([HRSA Poison Help: Carbon Monoxide](https://poisonhelp.hrsa.gov/faq/carbon-monoxide)).
+This guide is general preparedness information, **not medical advice**. If you think someone is being poisoned by carbon monoxide, get everyone into fresh air and call **911**. You can also call Poison Help at **1-800-222-1222**, which connects you to your local poison center ([HRSA Poison Help: Carbon Monoxide](https://poisonhelp.hrsa.gov/faq/carbon-monoxide)).
 
 ## What carbon monoxide is
 
@@ -26,7 +26,7 @@ Outages do not create carbon monoxide by themselves. The risk comes from how peo
 
 The CDC lists the most common symptoms as headache, dizziness, weakness, upset stomach, vomiting, chest pain, and confusion. The symptoms are often described as "flu-like." Breathing in a lot of CO can make you pass out or can kill you. People who are sleeping, drunk, or under the influence of other substances can die from CO poisoning before they have symptoms. Infants, older adults, and people with chronic heart disease, anemia, or breathing problems are more likely to get sick from CO ([CDC: Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html)).
 
-Poison Help says: immediately go outside to get fresh air, and call Poison Help (the number is on the HRSA page linked below). If you feel better when you are out of the home and worse when you return, CO may be present — and if you notice that pattern, call 911. Have the fire department check for CO, and do not go back inside until the source is repaired and the home is safe ([HRSA Poison Help: Carbon Monoxide](https://poisonhelp.hrsa.gov/faq/carbon-monoxide)).
+Poison Help says: immediately go outside to get fresh air, and call Poison Help at 1-800-222-1222. If you feel better when you are out of the home and worse when you return, CO may be present — and if you notice that pattern, call 911. Have the fire department check for CO, and do not go back inside until the source is repaired and the home is safe ([HRSA Poison Help: Carbon Monoxide](https://poisonhelp.hrsa.gov/faq/carbon-monoxide)).
 
 If someone is unconscious, having a seizure, or struggling to breathe, call 911 first.
 
@@ -79,7 +79,7 @@ Two examples on ReadyGearHub, with details and safety notes on each product page
 3. Close the door between an attached garage and the house, and do not run a vehicle in that garage.
 4. Rely on battery CO alarms near sleeping areas.
 5. Make one room warmer with layers, blankets, and sunlight, as described in the [stay-warm](/guides/how-to-stay-warm-without-power/) and [heat-one-room](/guides/heat-one-room-safely-in-an-outage/) guides, instead of improvising with combustion indoors.
-6. If anyone feels flu-like symptoms, or an alarm sounds, get to fresh air and call 911 or Poison Help.
+6. If anyone feels flu-like symptoms, or an alarm sounds, get to fresh air and call 911 or Poison Help at 1-800-222-1222.
 
 For food safety while the power is out, use the [Fridge & Freezer Outage Timer](/tools/outage-timer/) or the [Cold Hold](/apps/cold-hold/) app, and see [What to Do When the Power Goes Out in a Mississippi Ice Storm](/guides/power-outage-ice-storm-mississippi/). Watch official conditions on our home [What's happening now](/#live-status) board, [live alerts](/alerts/), and [Local & community safety updates](/updates/). Mississippi readers can find county emergency-management contacts and utility outage maps on the [Mississippi local resources](/local/mississippi/) pages, including [Harrison](/local/mississippi/harrison/), [Hancock](/local/mississippi/hancock/), and [Jackson County](/local/mississippi/jackson/) on the Gulf Coast.
 
@@ -92,7 +92,7 @@ No. The CDC says never to use a generator inside your home or garage, even if do
 Do not burn charcoal indoors. The CDC and CPSC both warn that charcoal gives off carbon monoxide, and CPSC says not to do this even with ventilation. A porch that is enclosed, or close to windows and doors, can still allow exhaust to drift inside ([CDC: Carbon Monoxide Poisoning Basics](https://www.cdc.gov/carbon-monoxide/about/index.html); [CPSC: Generators and Engine-Driven Tools](https://www.cpsc.gov/Safety-Education/Safety-Guides/Carbon-Monoxide-Home/Generators-and-Engine-Driven-Tools)).
 
 **What number do I call besides 911?**
-Poison Help connects you to your local poison center. HRSA lists the number on its carbon monoxide advice page. Call 911 if symptoms are severe, if someone is unconscious, or if you need the fire department to check the home ([HRSA Poison Help: Carbon Monoxide](https://poisonhelp.hrsa.gov/faq/carbon-monoxide)).
+Poison Help at 1-800-222-1222 connects you to your local poison center. HRSA lists that number on its carbon monoxide advice page. Call 911 if symptoms are severe, if someone is unconscious, or if you need the fire department to check the home ([HRSA Poison Help: Carbon Monoxide](https://poisonhelp.hrsa.gov/faq/carbon-monoxide)).
 
 ## Sources
 
@@ -101,4 +101,4 @@ Poison Help connects you to your local poison center. HRSA lists the number on i
 - U.S. Consumer Product Safety Commission: [Generators and Engine-Driven Tools](https://www.cpsc.gov/Safety-Education/Safety-Guides/Carbon-Monoxide-Home/Generators-and-Engine-Driven-Tools)
 - Ready.gov: [Power Outages](https://www.ready.gov/power-outages)
 
-*This guide is general preparedness information, not medical advice. In an emergency, get to fresh air and call 911, or call Poison Help.*
+*This guide is general preparedness information, not medical advice. In an emergency, get to fresh air and call 911, or call Poison Help at 1-800-222-1222.*

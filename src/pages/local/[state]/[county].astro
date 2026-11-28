@@ -30,7 +30,7 @@ const allGuides = await getGuides();
 const prepGuides = guideIds.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
 const otherCounties = state.counties.filter((c) => c.slug !== county.slug);
 const schema = [
-  { '@context': 'https://schema.org', '@type': 'GovernmentService', name: em.name, url: em.url, areaServed: county.name },
+  { '@context': 'https://schema.org', '@type': 'GovernmentService', name: em.name, url: em.url, areaServed: county.name, ...(em.phone ? { telephone: em.phone } : {}) },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
     { '@type': 'ListItem', position: 2, name: 'Local resources', item: new URL('/local/', Astro.site).href },
@@ -54,6 +54,7 @@ const schema = [
     <h2>County emergency management</h2>
     <div class="card">
       <h3>{em.name}</h3>
+      {em.phone && <p><strong>Phone:</strong> <a href={`tel:+1${em.phone.replace(/\D/g, '')}`}>{em.phone}</a></p>}
       <p><a href={em.url} rel="noopener noreferrer">Official page</a></p>
       {em.notes && <p class="fine">{em.notes}</p>}
     </div>

@@ -301,7 +301,7 @@ The storm ending is not the same thing as it being safe. Follow local officials 
 
 - Follow local advice on whether tap water is safe. When in doubt, use bottled, boiled, or treated water, and follow the [food and water](#water-and-food-safety) rules above, including throwing out food that touched floodwater.
 - Take care of wounds quickly to help prevent infection, the CDC says. This is not medical advice; get care when you need it.
-- Strong emotions after a hurricane are common. The CDC points people to SAMHSA's Disaster Distress Helpline (call or text; the number is on SAMHSA's site).
+- Strong emotions after a hurricane are common. The CDC points people to SAMHSA's Disaster Distress Helpline at 1-800-985-5990 (call or text).
 
 **Insurance, repairs, and records**
 
@@ -315,7 +315,7 @@ The storm ending is not the same thing as it being safe. Follow local officials 
 
 </div>
 
-If you need federal disaster-assistance information after a declaration, FEMA points survivors to [disasterassistance.gov](https://www.disasterassistance.gov/) and the FEMA Helpline listed there. That is official aid information, not a product offer.
+If you need federal disaster-assistance information after a declaration, FEMA points survivors to [disasterassistance.gov](https://www.disasterassistance.gov/) and the FEMA Helpline at 1-800-621-3362. That is official aid information, not a product offer.
 
 ## Special cases
 

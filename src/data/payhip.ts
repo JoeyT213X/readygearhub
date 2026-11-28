@@ -103,7 +103,7 @@ export const payhipProducts: PayhipProduct[] = [
     includes: [
       '12-page US Letter fillable PDF, with AcroForm fields you can type into and print',
       'Household, contacts, medical, insurance, utilities, evacuation, pets, supply checklist, and documents pages',
-      'U.S. 911 and the national Poison Help line pre-printed; all local numbers are left for you to look up',
+      'U.S. 911 and Poison Help (1-800-222-1222) pre-printed; all local numbers are left for you to look up',
       'Carbon monoxide and generator safety notes from Ready.gov and the CDC',
       'Personal-use license; print as many household copies as you need',
     ],
