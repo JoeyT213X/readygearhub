@@ -1,17 +1,22 @@
 ---
-// Pay-per-lead boxes from src/data/affiliates.ts. Renders nothing until a lead program is approved.
+// Pay-per-lead boxes from packages/catalog/affiliates.ts. Renders nothing until a lead program is approved.
+// Preview builds only: PUBLIC_PREVIEW_LEADS=1 also shows boxes for pending programs (labelled, no link) so layouts can be tested.
+// check-directory.mjs refuses to pass a production build that has the flag on.
 import { leadCtasFor, isNoPpcProgram } from '../data/affiliates';
-interface Props { place: string }
-const ctas = leadCtasFor(Astro.props.place);
+interface Props { place: string; /** Most boxes to show (default 2). */ max?: number; /** Drop the page-wide section wrapper, for use inside a card. */ inline?: boolean }
+const { place, max = 2, inline = false } = Astro.props;
+const ctas = leadCtasFor(place, max, import.meta.env.PUBLIC_PREVIEW_LEADS === '1');
 ---
 {ctas.length > 0 && (
-  <section class="wrap section lead-ctas" aria-label="Sponsored offers">
+  <section class:list={['lead-ctas', inline ? 'is-inline' : 'wrap section']} aria-label="Sponsored offers">
     {ctas.map((c) => (
-      <div class="card lead-cta" data-chw-wrap={c.id === 'choice-home-warranty' ? c.id : undefined} data-no-ppc={isNoPpcProgram(c.id) ? '' : undefined}>
+      <div class="card lead-cta" data-preview-lead={c.preview ? '' : undefined} data-chw-wrap={c.id === 'choice-home-warranty' ? c.id : undefined} data-no-ppc={isNoPpcProgram(c.id) ? '' : undefined}>
         <h2>{c.title}</h2>
         <p>{c.blurb}</p>
-        <a class="btn" href={c.url} target="_blank" rel="sponsored nofollow noopener" data-program={c.id}>{c.button} ↗</a>
-        <p class="fine">Sponsored: ReadyGearHub may be paid by {c.name} when you request a quote. <a href="/affiliate-disclosure/">Disclosure</a></p>
+        <a class="btn" href={c.preview ? '#' : c.url} target={c.preview ? undefined : '_blank'} rel={c.preview ? undefined : 'sponsored nofollow noopener'} data-program={c.id}>{c.button}{c.preview ? '' : ' ↗'}</a>
+        {c.preview
+          ? <p class="fine"><strong>Preview only:</strong> {c.name} is still pending, so this box and its link stay hidden on the live site until it is approved.</p>
+          : <p class="fine">Sponsored: ReadyGearHub may be paid by {c.name} when you request a quote. <a href="/affiliate-disclosure/">Disclosure</a></p>}
       </div>
     ))}
   </section>

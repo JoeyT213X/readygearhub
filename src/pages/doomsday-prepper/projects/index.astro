@@ -2,7 +2,20 @@
 import Base from '../../../layouts/Base.astro';
 import PageHero from '../../../components/PageHero.astro';
 import Photo from '../../../components/Photo.astro';
+import LeadCta from '../../../components/LeadCta.astro';
+import Disclosure from '../../../components/Disclosure.astro';
 import { doomsdayProjects } from '../../../data/doomsday-projects';
+import { programs, resolveOutbound } from '../../../data/affiliates';
+// Cost citations that point at Angi use the Angi program: plain until it is approved, then the tracked link
+// (rel=sponsored, data-program) with no page edits. A fixed link without {url} would send every citation to one
+// page, so those stay plain; the program then needs a deep-link template (or none, for CJ's deep-link form).
+const angi = programs.find((p) => p.id === 'angi');
+const cite = (url: string) => {
+  if (!/^https:\/\/(www\.)?angi\.com\//.test(url)) return { href: url, affiliate: false, programId: '' };
+  const o = resolveOutbound('angi', url);
+  return o.affiliate && angi?.link && !angi.link.includes('{url}') ? { href: url, affiliate: false, programId: '' } : o;
+};
+const anyTracked = doomsdayProjects.some((p) => p.costs.some((c) => c.sourceUrl && cite(c.sourceUrl).affiliate));
 const title = 'Doomsday Prepper Projects: Permits, Beginner Guides & Costs | ReadyGearHub';
 const description = 'Permits and approvals, beginner guides and sourced cost ranges for bunkers, security fencing and gates, wells, septic, solar and generator hookups, outbuildings, safe rooms and excavation. Rules vary by county.';
 const schema = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Doomsday Prepper projects: permits, beginner guides and costs', description, inLanguage: 'en-US', dateModified: '2026-11-25', author: { '@type': 'Organization', name: 'ReadyGearHub' } };
@@ -14,6 +27,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Article', headline:
       <p><strong>Rules vary by county and state.</strong> Permit requirements, fees and timelines are set locally. We link to the official sources and to published guides, and we do not summarize your local law for you. Call your county or city building department first. HOA covenants add their own rules.</p>
       <p><strong>About the numbers.</strong> Every dollar figure below comes from a page we link next to it, dated 2026. Cost guides are national averages and ranges, not quotes. Where we found no published figure, we say so instead of guessing.</p>
       <p><strong>Call 811 before any digging.</strong> It is free, and wait times vary by state. <a href="https://call811.com/" rel="noopener" target="_blank">call811.com</a></p>
+      {anyTracked && <Disclosure onDark />}
     </aside>
     <nav class="pj-jump" aria-label="Projects">
       {doomsdayProjects.map((p) => <a class="pill" href={`#${p.id}`}>{p.name}</a>)}
@@ -52,13 +66,14 @@ const schema = { '@context': 'https://schema.org', '@type': 'Article', headline:
                   <td>{c.size}</td>
                   <td>{c.what}{c.note ? <span class="fine pj-note-in"><br />{c.note}</span> : null}</td>
                   <td>{c.range ?? 'No published figure found'}</td>
-                  <td>{c.sourceUrl ? <a href={c.sourceUrl} rel="noopener" target="_blank">{c.sourceLabel}</a> : 'None cited'}</td>
+                  <td>{c.sourceUrl ? <a href={cite(c.sourceUrl).href} rel={cite(c.sourceUrl).affiliate ? 'sponsored nofollow noopener' : 'noopener'} data-program={cite(c.sourceUrl).programId || undefined} target="_blank">{c.sourceLabel}</a> : 'None cited'}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <p class="fine">National planning figures from the linked pages, checked Nov 25, 2026. Your quote will differ.</p>
+        <LeadCta place={`project:${p.id}`} max={4} inline />
       </article>
     ))}
 

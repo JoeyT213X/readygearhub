@@ -321,7 +321,7 @@ export const programs: Program[] = [
     lead: { title: 'Thinking about solar plus battery backup?',
       blurb: 'EnergySage lets you compare quotes from pre-screened local installers for free, with no obligation to buy.',
       button: 'Compare free solar quotes',
-      places: ['generator-vs-power-station', 'how-to-pick-a-portable-power-station', 'winter-power-outage-checklist', 'tool:solar-sizer', 'tool:power-sizer'] } },
+      places: ['generator-vs-power-station', 'how-to-pick-a-portable-power-station', 'winter-power-outage-checklist', 'tool:solar-sizer', 'tool:power-sizer', 'project:*'] } },
   { id: 'choice-home-warranty', name: 'Choice Home Warranty', network: 'CJ', status: 'approved', kind: 'lead', ppcAllowed: false, link: 'https://www.dpbolvw.net/click-101929817-12337172',
     note: 'CJ advertiser CID 4593144; $20/lead homeowners; no search bidding.',
     lead: { title: 'Worried about a furnace or water heater failing mid-storm?',
@@ -332,12 +332,12 @@ export const programs: Program[] = [
     lead: { title: 'Need a contractor after the storm?',
       blurb: 'Modernize matches you with local pros for roofing, generators, and home repairs. Free, no-obligation quotes.',
       button: 'Get free contractor quotes',
-      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi', 'generator-vs-power-station'] } },
+      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi', 'generator-vs-power-station', 'project:*'] } },
   { id: 'networx', name: 'Networx', network: 'Direct', status: 'pending', kind: 'lead', link: '',
     lead: { title: 'Storm damage or frozen-pipe repairs?',
       blurb: 'Networx connects you with screened local contractors and plumbers. Compare free quotes before you hire.',
       button: 'Find a local pro',
-      places: ['how-to-keep-pipes-from-freezing', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi'] } },
+      places: ['how-to-keep-pipes-from-freezing', 'ice-storm-survival-checklist-for-the-south', 'power-outage-ice-storm-mississippi', 'project:*'] } },
   { id: 'leaffilter', name: 'LeafFilter', network: 'Impact', status: 'none', kind: 'lead', link: '',
     lead: { title: 'Ice dams and clogged gutters?',
       blurb: 'LeafFilter offers a free gutter-protection estimate at your home.',
@@ -408,12 +408,12 @@ export const programs: Program[] = [
     note: 'AvantLink application 1685501 was declined Nov 20, 2026. Parked; reapply later. Do not use AvantLink as a path today. Official links stay plain. Up to 10%, 30-day cookie if later approved.' },
   { id: 'bluecosmo', name: 'BlueCosmo ZOLEO', network: 'AvantLink', status: 'none', kind: 'product',
     note: 'AvantLink application 1685501 was declined Nov 20, 2026. Parked; reapply later. Do not use AvantLink as a path today. Official links stay plain. 10%, 90-day cookie, ZOLEO-branded products only.' },
-  { id: 'angi', name: 'Angi', network: 'CJ', status: 'pending', kind: 'lead', link: '',
+  { id: 'angi', name: 'Angi', network: 'CJ', status: 'pending', kind: 'lead', link: '', officialUrl: 'https://www.angi.com/',
     note: 'CJ advertiser CID 7439025. Payout not public. Phone, link, and API leads. Do not lean on this as a primary offer.',
     lead: { title: 'Need a local pro for storm repairs?',
       blurb: 'Angi helps you find local contractors for roofing, plumbing, and home repairs. Compare options before you hire.',
       button: 'Find a local contractor',
-      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south'] } },
+      places: ['ice-storm-prep-checklist-south', 'ice-storm-survival-checklist-for-the-south', 'project:*'] } },
   { id: 'american-home-shield', name: 'American Home Shield', network: 'Direct', status: 'pending', kind: 'lead', link: '',
     note: 'Program-manager page lists $18 per lead and $30 per order, 30-day cookie; confirm in the contract. Do not stack on the same page as Choice Home Warranty at launch.',
     lead: { title: 'Thinking about a home warranty for major systems?',
@@ -903,12 +903,26 @@ export function trackedItemLink(itemId: string, officialUrl: string): string {
   return '';
 }
 
-export type LeadCta = { id: string; url: string; title: string; blurb: string; button: string; name: string };
+export type LeadCta = { id: string; url: string; title: string; blurb: string; button: string; name: string; preview?: boolean };
 
-/** Approved lead boxes for a place (guide slug or 'tool:<slug>'), max 2. */
-export function leadCtasFor(place: string, max = 2): LeadCta[] {
+/** A lead `places` entry matches a place exactly, or by prefix when it ends in `*` (e.g. 'project:*'). */
+const placeMatches = (places: string[], place: string) =>
+  places.some((x) => x === place || (x.endsWith('*') && place.startsWith(x.slice(0, -1))));
+
+/**
+ * Lead boxes for a place (guide slug, 'tool:<slug>' or 'project:<id>'), max `max` (default 2).
+ * Only approved/live programs with a tracking link show. `preview` (build-time PUBLIC_PREVIEW_LEADS=1,
+ * never on in production) also shows boxes for programs still `pending`, flagged `preview: true`
+ * and without a link, so layouts can be tested. It never changes a program's status.
+ */
+export function leadCtasFor(place: string, max = 2, preview = false): LeadCta[] {
   return programs
-    .filter((p) => p.kind === 'lead' && live(p) && trackingTemplate(p) && p.lead?.places.includes(place))
+    .filter((p) => p.kind === 'lead' && p.lead && placeMatches(p.lead.places, place)
+      && ((live(p) && trackingTemplate(p)) || (preview && p.status === 'pending')))
     .slice(0, max)
-    .map((p) => ({ id: p.id, url: trackingTemplate(p), name: p.name, ...p.lead! }));
+    .map((p) => {
+      const ready = live(p) && !!trackingTemplate(p);
+      // A {url} deep-link template (used to track outside citations) resolves to the program's own site for its box.
+      return { id: p.id, url: ready ? buildLink(p, p.officialUrl ?? '') : '', name: p.name, preview: !ready, ...p.lead! };
+    });
 }

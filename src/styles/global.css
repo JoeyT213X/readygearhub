@@ -302,6 +302,7 @@ html.menu-open body{position:fixed;left:0;right:0;overflow:hidden;width:100%}
 
 /* Pay-per-lead CTA boxes (src/components/LeadCta.astro) */
 .lead-ctas { display: grid; gap: 1rem; }
+.lead-ctas.is-inline { margin-top: 1.4rem; }
 .lead-cta h2 { margin-top: 0; font-size: 1.25rem; }
 .situation h3 a{color:#fff;text-decoration:none}
 .situation h3 a::after{content:"";position:absolute;inset:0;z-index:0}
