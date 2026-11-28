@@ -32,7 +32,8 @@ export type SourceCategoryId =
   | 'security'
   | 'doomsday-prepper'
   | 'food'
-  | 'backup-power';
+  | 'backup-power'
+  | 'footwear';
 
 export type SourceLinkLevel = 'product' | 'merchant' | 'own';
 
@@ -72,6 +73,7 @@ export const sourceCategories: SourceCategory[] = [
       { name: 'Outdoor safety', blurb: 'Carbon monoxide alarms, purpose-built running canopies, and a pad to keep a generator off wet ground.' },
       { name: 'Energy Reserve home-backup', blurb: 'Home-backup Energy Reserves and the transfer kits made for them. These stay indoors; fuel generators still stay outside.' },
     ] },
+  { id: 'footwear', slug: 'footwear', name: 'Footwear & Work Gear', short: 'Footwear', blurb: 'Work shoes, high-top boots, socks and foot-care extras from Indestructible Shoes. Good to have on hand for yard work, storm cleanup and long days on your feet. Safety claims are the maker\u2019s own; check each product page.', photo: 'gear-flatlay' },
   { id: 'food', slug: 'food', name: 'Food & pantry', short: 'Food', blurb: 'Shelf-stable kits and pantry supplies from brands we already list, plus official shops.', photo: 'hero-pantry-cans' },
 ];
 
@@ -91,7 +93,7 @@ export type SourceGroup = {
 export const sourceGroups: SourceGroup[] = [
   { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar, everyday tech, and backup power for the house.', categories: ['power', 'tech', 'audio', 'backup-power'], photo: 'solar-rooftops' },
   { id: 'home-water', name: 'Home & Water', short: 'Home & Water', blurb: 'Drinking-water filters and home setups from approved partners.', categories: ['home', 'water'], photo: 'water-bottles' },
-  { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus official vehicle shops.', categories: ['outdoor', 'auto', 'tools', 'vehicles'], photo: 'lantern-dusk' },
+  { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus official vehicle shops.', categories: ['outdoor', 'auto', 'tools', 'vehicles', 'footwear'], photo: 'lantern-dusk' },
   { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits, food stores, shelters, and official security pages, described plainly.', categories: ['safety', 'fun', 'security', 'food', 'drones-robotics', 'doomsday-prepper'], photo: 'first-aid-kit-open' },
 ];
 
