@@ -43,6 +43,8 @@ export type SourceCategory = {
   name: string;
   short: string;
   blurb: string;
+  /** Optional longer search-result description; falls back to blurb. Not shown on the page. */
+  metaDescription?: string;
   photo?: string;
   image?: string;
   /** Planned subsections shown while a new category has no listings yet. */
@@ -51,9 +53,9 @@ export type SourceCategory = {
 
 export const sourceCategories: SourceCategory[] = [
   { id: 'tech', slug: 'tech', name: 'Tech & Gadgets', short: 'Tech', blurb: 'Paid software and everyday tech from partner stores. Plans and prices are on the seller’s site.', photo: 'power-banks' },
-  { id: 'power', slug: 'power', name: 'Energy Reserves & Prepper Power', short: 'Energy Reserves', blurb: 'Energy reserves and solar from partner brands we already link.', photo: 'solar-rooftops' },
-  { id: 'home', slug: 'home', name: 'Home & Kitchen', short: 'Home', blurb: 'Filters and other home setups from approved partners.', photo: 'fireplace-living-room' },
-  { id: 'water', slug: 'water', name: 'Water & Air', short: 'Water', blurb: 'Drinking-water filters and related gear from official partner shops.', photo: 'water-bottles' },
+  { id: 'power', slug: 'power', name: 'Energy Reserves & Prepper Power', short: 'Energy Reserves', blurb: 'Energy reserves and solar from partner brands we already link.', metaDescription: 'Energy Reserves, solar panels and Prepper Power gear for home backup during outages, linked to official partner brand pages with approximate prices.', photo: 'solar-rooftops' },
+  { id: 'home', slug: 'home', name: 'Home & Kitchen', short: 'Home', blurb: 'Filters and other home setups from approved partners.', metaDescription: 'Home and kitchen readiness picks, including whole-house and countertop water filters, linked to approved partner shops with approximate prices.', photo: 'fireplace-living-room' },
+  { id: 'water', slug: 'water', name: 'Water & Air', short: 'Water', blurb: 'Drinking-water filters and related gear from official partner shops.', metaDescription: 'Drinking-water filters, purifiers and air gear for outages and boil-water notices, linked to official partner shops with approximate prices.', photo: 'water-bottles' },
   { id: 'outdoor', slug: 'outdoor', name: 'Outdoor & Camping', short: 'Outdoor', blurb: 'Portable power that travels, plus outdoor retailers we are still waiting to add.', photo: 'lantern-dusk' },
   { id: 'audio', slug: 'audio', name: 'Audio & Entertainment', short: 'Audio', blurb: 'Outage-ready audio: battery speakers and headphones for news, music and calm during a long night without power. Charge them before a storm, and keep a crank or battery radio for official alerts.', image: '/directory/covers/cat-audio.svg' },
   { id: 'tools', slug: 'tools', name: 'Tools & DIY', short: 'Tools', blurb: 'Tools, parts, and workshop supplies once pending tool partners are approved.', photo: 'multitools' },
@@ -61,8 +63,8 @@ export const sourceCategories: SourceCategory[] = [
   { id: 'fun', slug: 'fun', name: 'Fun & Gifts', short: 'Fun', blurb: 'Off-grid fun for when the power is out: card games, board games and gifts that need no outlet. A good way to keep kids and grown-ups calm through a long outage.', image: '/directory/covers/cat-fun.svg' },
   { id: 'safety', slug: 'safety', name: 'Safety & Prep', short: 'Safety', blurb: 'Ready kits and paid home plans from approved partners, described plainly.', photo: 'first-aid-kit-open' },
   { id: 'drones-robotics', slug: 'drones-robotics', name: 'Drones & Robotics', short: 'Drones & Robotics', blurb: 'Drones and robotics for the curious prepper: self-flying cameras for checking a roof or field after a storm, official Skydio drone pages, plus robot dogs from specialty stores. Follow FAA and local rules.', photo: 'hero-drone' },
-  { id: 'vehicles', slug: 'vehicles', name: 'Off-road & overland', short: 'Off-road & overland', blurb: 'Official pages for overland, off-road, and armored-style vehicles.', photo: 'hero-overland-truck' },
-  { id: 'security', slug: 'security', name: 'Security & shelters', short: 'Security', blurb: 'Official shelter and security-robotics pages.', photo: 'hero-bunker-hatch' },
+  { id: 'vehicles', slug: 'vehicles', name: 'Off-road & overland', short: 'Off-road & overland', blurb: 'Official pages for overland, off-road, and armored-style vehicles.', metaDescription: 'Overland, off-road and armored-style vehicles for serious preparedness, with links to each maker’s official page. Official links only.', photo: 'hero-overland-truck' },
+  { id: 'security', slug: 'security', name: 'Security & shelters', short: 'Security', blurb: 'Official shelter and security-robotics pages.', metaDescription: 'Storm shelters, safe rooms, bunkers and security robotics for serious preparedness, with links to each maker’s official page.', photo: 'hero-bunker-hatch' },
   { id: 'doomsday-prepper', slug: 'doomsday-prepper', name: 'Doomsday Prepper', short: 'Doomsday Prepper', blurb: 'Serious preparedness, calmly laid out: shelters, extreme vehicles, perimeter security, air and water, long-term food, energy reserves, comms, medical and tools. U.S. makers first, allied makers next, official links only.', photo: 'hero-bunker-hatch' },
   { id: 'backup-power', slug: 'backup-power-propane', name: 'Backup Power & Propane', short: 'Backup Power', blurb: 'Generators, transfer switches and inlets, propane tanks, hoses and regulators, outdoor safety gear, and Energy Reserve home-backup kits. Anything wired into a home should be installed by a licensed electrician. Fuel-burning equipment always runs outdoors, at least 20 feet from the house.', photo: 'portable-generator',
     subsections: [

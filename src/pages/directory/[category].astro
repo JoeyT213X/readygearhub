@@ -71,7 +71,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: `${category.name} · Full Source Directory`,
-  description: category.blurb,
+  description: category.metaDescription ?? category.blurb,
   url: new URL(`/directory/${category.slug}/`, Astro.site).href,
   isPartOf: new URL('/directory/', Astro.site).href,
   mainEntity: {
@@ -89,7 +89,7 @@ const schema = {
 <Base
   noindex={items.length === 0}
   title={`${category.name} · Full Source Directory | ReadyGearHub`}
-  description={category.blurb}
+  description={category.metaDescription ?? category.blurb}
   schema={schema}
   pageClass={category.id === 'drones-robotics' ? 'dir-drones-robotics' : category.id === 'doomsday-prepper' ? 'dir-doomsday' : undefined}
 >

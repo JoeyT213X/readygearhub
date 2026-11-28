@@ -14,6 +14,30 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Static media keep stable file names, so browsers may reuse them for a day
+# (and serve a stale copy while revalidating for a week). Netlify's CDN still
+# refreshes on every deploy.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/shorts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/directory/covers/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+
 # Search engines often request /sitemap.xml; Astro emits sitemap-index.xml + sitemap-0.xml.
 [[redirects]]
   from = "/sitemap.xml"
