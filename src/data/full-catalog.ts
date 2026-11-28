@@ -16,6 +16,7 @@ import { amazonCatalogItems } from './amazon-picks';
 import { stockCoverFor } from './stock-covers';
 import { sourceCategories } from './source-directory';
 import { backupPowerCatalogItems, BACKUP_POWER_ALSO_IN } from './backup-power';
+import { footwearCatalogItems } from './indestructible-shoes';
 
 const DIRECTORY_PAGE_SLUGS = new Set(sourceCategories.map((c) => c.slug));
 import { isStoreFront } from './listing-actions';
@@ -502,6 +503,12 @@ export function buildFullCatalog(gearItems: GearInput[]): CatalogItem[] {
       }
       continue;
     }
+    items.push(applyExtra(item, catalogExtraById[item.id]));
+    used.add(item.id);
+  }
+
+  for (const item of footwearCatalogItems()) {
+    if (used.has(item.id)) continue;
     items.push(applyExtra(item, catalogExtraById[item.id]));
     used.add(item.id);
   }

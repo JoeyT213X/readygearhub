@@ -758,3 +758,58 @@ Where no usable official photo existed (logo-only pages, banners with sale text,
 | `bluecosmo` | a satellite phone and terminal at a remote mountain camp |
 
 The nine Ready Alliance / My Patriot Supply concept images listed in the section above now carry the same "Concept image" tag on their cards.
+
+## Indestructible Shoes product photos (Nov 27, 2026)
+
+Each file is the main product image from the product page on indestructibleshoes.com, downloaded and resized to webp (480 and 960 px wide, square). Self-hosted, never hotlinked. Used to show the products we list with plain links to the store; the program (Shoutout/Awin) is pending. Source: the store's public product pages.
+
+| Key | Photo of |
+|---|---|
+| `indestructible-compression-crew-socks` | Compression crew socks, 2 pairs, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-hype-2-boot` | Hype 2.0 work boot, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-star-101-boot` | Star 101 work boot, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-defendr-boot` | Defendr work boot, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-j3-boot` | J3 work boot, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-fable-boot` | Fable work boot, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-ares-boot` | Ares work boot, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-conquer-boot` | Conquer work boot, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-surge` | Surge work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-bolt` | Bolt work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-steelure-pluse` | Steelure Pluse work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-titan` | Titan work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-flux` | Flux work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-onyx` | Onyx work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-trekfit` | TrekFit work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-safetix` | Safetix safety shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-flashwalk` | FlashWalk work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-dashguard` | DashGuard work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-capped` | Capped work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-armara` | Armara work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-aura` | Aura work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-protex` | Protex work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-xeno` | Xeno work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-space` | Space work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-jet` | Jet work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-fator` | Fator work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-ryder` | Ryder work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-ryder-1-5` | Ryder 1.5 work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-flyer` | Flyer work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-hummer` | Hummer work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-kivini` | Kivini work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-zip` | Zip work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-xciter` | Xciter work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-xciter-mesh` | Xciter Mesh work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-s-series` | S Series work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-ziczac` | Ziczac work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-camox` | CamoX work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-origin` | Origin work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-stripe` | Stripe work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-retro` | Retro work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-insoles` | Comfort and energy work insoles, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-no-tie-laces` | No-tie elastic shoelaces, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-kneetec` | KneeTec knee support pads, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-ems-foot-pad` | EMS foot massager pad, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-vigoleg` | VigoLEG air massager, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-vigogun` | VigoGUN V2 percussion massager, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+| `indestructible-urban-edge-sunglasses` | Urban Edge sunglasses, product page photo from indestructibleshoes.com (official product photo, downloaded) |
+

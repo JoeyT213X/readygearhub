@@ -185,6 +185,8 @@ export const programs: Program[] = [
   { id: 'renogy', name: 'Renogy', network: 'Impact', status: 'none', kind: 'product', items: ['renogy-100w-12v-solar-kit'],
     note: 'Parked Nov 21, 2026: Impact marketplace application for account 8245345 was declined. Brand apply is not available until a later reapply (plan: 4–8 weeks, with more traffic). Do not open a second Impact account. Official links stay plain.',
   },
+  { id: 'indestructible-shoes', name: 'Indestructible Shoes', network: 'Awin', status: 'pending', kind: 'product', officialUrl: 'https://indestructibleshoes.com/',
+    note: 'Added Nov 27, 2026. Application via Shoutout/Awin is pending (per Destructicon); network and approval not yet confirmed. All footwear cards use plain product-page links until approved. When approved, set status and paste the tracking link (link or itemLinks); do not invent one.' },
   { id: 'biolite', name: 'BioLite', network: 'Partnerize', status: 'pending', kind: 'product', items: ['biolite-alpenglow-500'] },
   { id: 'leatherman', name: 'Leatherman', network: 'Partnerize', status: 'pending', kind: 'product', items: ['leatherman-wave-plus', 'leatherman-signal', 'leatherman-rebar', 'leatherman-wingman', 'leatherman-raptor-rescue', 'leatherman-skeletool-cx', 'leatherman-arc', 'leatherman-micra', 'leatherman-surge', 'leatherman-free-p4', 'leatherman-bond', 'leatherman-super-tool-300', 'leatherman-crunch'] },
   { id: 'lifestraw', name: 'LifeStraw', network: 'Impact', status: 'none', kind: 'product',

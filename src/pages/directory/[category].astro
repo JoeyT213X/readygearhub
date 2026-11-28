@@ -21,6 +21,7 @@ import { buildFullCatalog } from '../../data/full-catalog';
 import { brandPages } from '../../data/brands';
 import { doomsdaySections, doomsdaySectionOf, doomsdayRank } from '../../data/doomsday-prepper';
 import { backupPowerSections } from '../../data/backup-power';
+import { footwearSections, footwearRank } from '../../data/indestructible-shoes';
 
 export function getStaticPaths() {
   return sourceCategories.map((c) => ({ params: { category: c.slug } }));
@@ -39,6 +40,13 @@ const spotlightCats = new Set(['power', 'outdoor', 'auto']);
 const spotlights = spotlightCats.has(category.id) ? brandPages.filter((b) => category.id !== 'auto' || b.slug === 'litime') : [];
 const isDoomsday = category.id === 'doomsday-prepper';
 const isBackupPower = category.id === 'backup-power';
+const isFootwear = category.id === 'footwear';
+const footwearGroups = isFootwear
+  ? footwearSections.map((sec) => ({
+      sec,
+      items: primaryItems.filter((i) => i.section === sec.id).sort((a, b) => footwearRank(a.id) - footwearRank(b.id)),
+    })).filter((g) => g.items.length > 0)
+  : [];
 const backupGroups = isBackupPower
   ? backupPowerSections.map((sec) => ({
       sec,
@@ -172,11 +180,28 @@ const schema = {
           <p class="fine dd-disclosure">Some links may earn us a commission at no cost to you. {AMAZON_DISCLOSURE} We list official pages and Amazon product pages we have checked, and never invent prices, specs or reviews. Anything wired into a home should be installed by a licensed electrician. Fuel-burning equipment always runs outdoors.</p>
         </>
       )}
-      {!isDoomsday && !isBackupPower && primaryItems.length > 0 ? (
+      {isFootwear && footwearGroups.length > 0 && (
+        <>
+          <nav class="dd-jump" aria-label="Footwear sections">
+            {footwearGroups.map((g) => <a class="pill" href={`#fw-${g.sec.id}`}>{g.sec.name} <span class="dd-count">{g.items.length}</span></a>)}
+          </nav>
+          {footwearGroups.map((g) => (
+            <section class={`dd-section${g.sec.id === 'socks' ? ' fw-featured' : ''}`} id={`fw-${g.sec.id}`}>
+              <h2 class="section-title">{g.sec.name}</h2>
+              <p class="fine">{g.sec.blurb}</p>
+              <div class="grid shop-grid source-grid">
+                {g.items.map((item) => <SourceCard item={item} />)}
+              </div>
+            </section>
+          ))}
+          <p class="fine dd-disclosure">Links on this page go to the store's own product pages and are not affiliate links at this time. Prices are what the store listed when we checked, and may change. Safety and waterproof claims are the maker's own; check each product page and your workplace requirements.</p>
+        </>
+      )}
+      {!isDoomsday && !isBackupPower && !isFootwear && primaryItems.length > 0 ? (
         <div class="grid shop-grid source-grid">
           {primaryItems.map((item) => <SourceCard item={item} />)}
         </div>
-      ) : !isDoomsday && !isBackupPower && items.length === 0 ? (
+      ) : !isDoomsday && !isBackupPower && !isFootwear && items.length === 0 ? (
         <>
           <p>No listings in this category yet. We add products here only after checking each one. Partners still on the way are listed below.</p>
           {category.subsections && category.subsections.length > 0 && (
@@ -243,4 +268,5 @@ const schema = {
   .dd-section{margin:32px 0 8px;scroll-margin-top:90px}
   .dd-section .section-title{border-bottom:2px solid #b08d3c;padding-bottom:6px}
   .dd-disclosure{margin-top:28px}
+  .fw-featured{border:2px solid #b08d3c;border-radius:10px;padding:4px 16px 12px;background:rgba(176,141,60,.07)}
 </style>
