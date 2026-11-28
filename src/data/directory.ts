@@ -251,6 +251,7 @@ export const entries: DirEntry[] = [
 /** Gear listing id -> category. Anything not listed falls into 'more'. */
 const itemCategory: Record<string, CategoryId> = {};
 const put = (cat: CategoryId, ids: string[]) => ids.forEach((i) => (itemCategory[i] = cat));
+put('backup-power', ['champion-4000-dual-fuel-inverter', 'champion-12500-trifuel', 'generac-5200-dual-fuel-inverter', 'reliance-31410crk', 'square-d-homcgk2c', 'generac-homelink-30', 'flame-king-20lb', 'champion-12ft-propane-hose', 'gentent-open-frame', 'bluetti-apex-300-home-integration-kit', 'anker-solix-f3800-10c-backup-kit', 'kidde-plugin-battery-co']);
 put('power', ['anker-prime-power-bank-20k-220w', 'anker-solix-c1000x', 'anker-solix-f2000', 'anker-solix-f3800-plus', 'anker-solix-c1000x-gen2', 'anker-solix-c2000-gen2', 'anker-solix-bp2000-gen2', 'anker-solix-c300-dc-60w-kit', 'litime-12v-100ah-group24', 'litime-24v-230ah', 'litime-12v-100ah-trolling', 'litime-diy-solar-generator-kit', 'litime-12v-50ah', 'litime-12v-200ah-bluetooth', 'litime-1000w-12v-inverter', 'litime-2000w-12v-inverter-ats', 'litime-30a-mppt', 'litime-12v-10a-charger', 'litime-12v-40a-dc-dc', 'bluetti-200w-solar-panel', 'bluetti-ac180', 'bluetti-ac70',
   'ecoflow-400w-portable-solar-panel', 'ecoflow-delta-3-plus', 'ecoflow-river-3-plus', 'generac-iq3500', 'goal-zero-nomad-100-plus', 'goal-zero-nomad-50',
   'goal-zero-yeti-1500', 'honda-eu2200i', 'honda-eu3200i', 'jackery-explorer-1000-plus', 'jackery-explorer-300-v2', 'jackery-solarsaga-100-prime',

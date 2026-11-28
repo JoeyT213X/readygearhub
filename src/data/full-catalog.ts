@@ -15,6 +15,7 @@ import { highTicketCatalogItems } from './high-ticket';
 import { amazonCatalogItems } from './amazon-picks';
 import { stockCoverFor } from './stock-covers';
 import { sourceCategories } from './source-directory';
+import { backupPowerCatalogItems, BACKUP_POWER_ALSO_IN } from './backup-power';
 
 const DIRECTORY_PAGE_SLUGS = new Set(sourceCategories.map((c) => c.slug));
 import { isStoreFront } from './listing-actions';
@@ -60,6 +61,8 @@ export type CatalogItem = {
   filler?: boolean;
   /** Official showpiece with no paying program: keep visible, sort just above fillers. */
   showpiece?: boolean;
+  /** Subsection on a category page that is split into named groups (Backup Power & Propane). */
+  section?: string;
   /** The link opens a store or brand front page (or a whole collection), not one product page. The button says so. */
   storeLevel?: boolean;
   /** Small U.S. chip on the card (U.S.-based maker). */
@@ -116,7 +119,7 @@ function seoAlsoIn(group: SourceGroupId, originCat: string): string[] | undefine
     if (originCat === 'home-protection' || originCat === 'insurance') extra.push('home');
     else if (originCat !== 'water' && originCat !== 'home') extra.push('home', 'water');
   }
-  if (group === 'power-tech' && originCat !== 'power' && originCat !== 'tech') extra.push('tech');
+  if (group === 'power-tech' && originCat !== 'power' && originCat !== 'tech' && originCat !== 'backup-power') extra.push('tech');
   if (group === 'outdoor-auto' && originCat !== 'outdoor') extra.push('outdoor');
   return extra.length ? extra : undefined;
 }
@@ -124,6 +127,10 @@ function seoAlsoIn(group: SourceGroupId, originCat: string): string[] | undefine
 function catToGroup(cat: CategoryId): SourceGroupId {
   switch (cat) {
     case 'power':
+    case 'tech':
+    case 'audio':
+    case 'drones':
+    case 'backup-power':
     case 'digital-safety':
     case 'comms':
     case 'lighting':
@@ -435,6 +442,11 @@ function rehome(item: CatalogItem): CatalogItem {
   const extra = KEPT_ALSO_IN[item.id];
   if (extra) item = { ...item, alsoIn: [...new Set([...(item.alsoIn ?? []), ...extra])] };
   if (SHOWPIECE_IDS.has(item.id)) item = { ...item, showpiece: true };
+  const bp = BACKUP_POWER_ALSO_IN[item.id];
+  if (bp) {
+    const alsoIn = [...new Set([...(item.alsoIn ?? []), 'backup-power'])].filter((c) => c !== item.category);
+    item = { ...item, alsoIn, section: item.section ?? bp };
+  }
   if (item.category !== 'more') return item;
   const r = MORE_REHOME[item.id] ?? { category: /^leatherman-/.test(item.id) ? 'tools' : 'outdoor' };
   const alsoIn = [...new Set([...(item.alsoIn ?? []), ...(r.alsoIn ?? [])])].filter((c) => c !== r.category && c !== 'more');
@@ -478,6 +490,20 @@ export function buildFullCatalog(gearItems: GearInput[]): CatalogItem[] {
     if (used.has(tool.id)) continue;
     items.push(applyExtra(tool, catalogExtraById[tool.id]));
     used.add(tool.id);
+  }
+
+  for (const item of backupPowerCatalogItems()) {
+    if (used.has(item.id)) {
+      const idx = items.findIndex((i) => i.id === item.id);
+      if (idx >= 0) {
+        const cur = items[idx];
+        const alsoIn = [...new Set([...(item.alsoIn ?? []), ...(cur.alsoIn ?? []), cur.category])].filter((c) => c && c !== item.category);
+        items[idx] = { ...item, detailHref: cur.detailHref ?? item.detailHref, alsoIn };
+      }
+      continue;
+    }
+    items.push(applyExtra(item, catalogExtraById[item.id]));
+    used.add(item.id);
   }
 
   for (const pick of newPrepperOnlyPicks()) {

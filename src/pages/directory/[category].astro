@@ -19,6 +19,7 @@ import { getItems } from '../../lib/data';
 import { buildFullCatalog } from '../../data/full-catalog';
 import { brandPages } from '../../data/brands';
 import { doomsdaySections, doomsdaySectionOf, doomsdayRank } from '../../data/doomsday-prepper';
+import { backupPowerSections } from '../../data/backup-power';
 
 export function getStaticPaths() {
   return sourceCategories.map((c) => ({ params: { category: c.slug } }));
@@ -36,6 +37,14 @@ const pending = comingSoonFor(category.id);
 const spotlightCats = new Set(['power', 'outdoor', 'auto']);
 const spotlights = spotlightCats.has(category.id) ? brandPages.filter((b) => category.id !== 'auto' || b.slug === 'litime') : [];
 const isDoomsday = category.id === 'doomsday-prepper';
+const isBackupPower = category.id === 'backup-power';
+const backupGroups = isBackupPower
+  ? backupPowerSections.map((sec) => ({
+      sec,
+      items: primaryItems.filter((i) => i.section === sec.id),
+    })).filter((g) => g.items.length > 0)
+  : [];
+const backupUnsectioned = isBackupPower ? primaryItems.filter((i) => !i.section) : [];
 const doomsdayGroups = isDoomsday
   ? doomsdaySections.map((sec) => ({
       sec,
@@ -134,11 +143,37 @@ const schema = {
           <p class="fine dd-disclosure">Some links may earn us a commission at no cost to you. {AMAZON_DISCLOSURE} Items marked U.S. come from U.S.-based makers. We list official pages and never invent prices, specs or reviews.</p>
         </>
       )}
-      {!isDoomsday && primaryItems.length > 0 ? (
+      {isBackupPower && backupGroups.length > 0 && (
+        <>
+          <nav class="dd-jump" aria-label="Backup Power & Propane sections">
+            {backupGroups.map((g) => <a class="pill" href={`#bp-${g.sec.id}`}>{g.sec.name} <span class="dd-count">{g.items.length}</span></a>)}
+          </nav>
+          <p class="fine" style="margin:0 0 18px">Anything wired into a house should be installed by a licensed electrician. Fuel-burning generators always run outdoors, at least 20 feet from the house. In Mississippi, larger or permanent propane work needs a certified L.C. Gas installer. Start with the <a href="/guides/generator-to-house-on-propane/">generator-to-house on propane</a> guide.</p>
+          {backupGroups.map((g) => (
+            <section class="dd-section" id={`bp-${g.sec.id}`}>
+              <h2 class="section-title">{g.sec.name}</h2>
+              <p class="fine">{g.sec.blurb}</p>
+              <div class="grid shop-grid source-grid">
+                {g.items.map((item) => <SourceCard item={item} />)}
+              </div>
+            </section>
+          ))}
+          {backupUnsectioned.length > 0 && (
+            <section class="dd-section">
+              <h2 class="section-title">More listings</h2>
+              <div class="grid shop-grid source-grid">
+                {backupUnsectioned.map((item) => <SourceCard item={item} />)}
+              </div>
+            </section>
+          )}
+          <p class="fine dd-disclosure">Some links may earn us a commission at no cost to you. {AMAZON_DISCLOSURE} We list official pages and Amazon product pages we have checked, and never invent prices, specs or reviews. Anything wired into a home should be installed by a licensed electrician. Fuel-burning equipment always runs outdoors.</p>
+        </>
+      )}
+      {!isDoomsday && !isBackupPower && primaryItems.length > 0 ? (
         <div class="grid shop-grid source-grid">
           {primaryItems.map((item) => <SourceCard item={item} />)}
         </div>
-      ) : !isDoomsday && items.length === 0 ? (
+      ) : !isDoomsday && !isBackupPower && items.length === 0 ? (
         <>
           <p>No listings in this category yet. We add products here only after checking each one. Partners still on the way are listed below.</p>
           {category.subsections && category.subsections.length > 0 && (

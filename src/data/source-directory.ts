@@ -65,12 +65,14 @@ export const sourceCategories: SourceCategory[] = [
   { id: 'vehicles', slug: 'vehicles', name: 'Vehicles & overland', short: 'Vehicles', blurb: 'Official pages for overland, off-road, and armored-style vehicles.', photo: 'hero-overland-truck' },
   { id: 'security', slug: 'security', name: 'Security & shelters', short: 'Security', blurb: 'Official shelter and security-robotics pages.', photo: 'hero-bunker-hatch' },
   { id: 'doomsday-prepper', slug: 'doomsday-prepper', name: 'Doomsday Prepper', short: 'Doomsday Prepper', blurb: 'Serious preparedness, calmly laid out: shelters, extreme vehicles, perimeter security, air and water, long-term food, energy reserves, comms, medical and tools. U.S. makers first, allied makers next, official links only.', photo: 'hero-bunker-hatch' },
-  { id: 'backup-power', slug: 'backup-power-propane', name: 'Backup Power & Propane', short: 'Backup Power', blurb: 'Generators, transfer switches and inlets, propane tanks, and hoses and regulators for keeping a home running through a long outage. Listings are on the way. Anything wired into a home should be installed by a licensed electrician, and fuel-burning equipment always runs outdoors.', photo: 'portable-generator',
+  { id: 'backup-power', slug: 'backup-power-propane', name: 'Backup Power & Propane', short: 'Backup Power', blurb: 'Generators, transfer switches and inlets, propane tanks, hoses and regulators, outdoor safety gear, and Energy Reserve home-backup kits. Anything wired into a home should be installed by a licensed electrician. Fuel-burning equipment always runs outdoors, at least 20 feet from the house.', photo: 'portable-generator',
     subsections: [
-      { name: 'Generators', blurb: 'Portable, inverter and dual-fuel generators. Always run outdoors, at least 20 feet from windows, doors and attached garages (Ready.gov).' },
+      { name: 'Generators', blurb: 'Portable, inverter, dual-fuel and tri-fuel generators. Always run outdoors, at least 20 feet from windows, doors and attached garages (Ready.gov and CPSC).' },
       { name: 'Transfer switches & inlets', blurb: 'The safe way to connect a generator to home circuits, installed by a licensed electrician. Never backfeed through an outlet.' },
-      { name: 'Propane tanks', blurb: 'Refillable cylinders and larger tanks for heaters, stoves and dual-fuel generators. Store outdoors, upright.' },
+      { name: 'Propane tanks', blurb: 'Refillable cylinders and larger tanks for heaters, stoves and dual-fuel generators. Store outdoors, upright. In Mississippi, permanent or larger installations need an L.C. Gas installer.' },
       { name: 'Hoses & regulators', blurb: 'Extension hoses, adapters and regulators matched to your appliance’s fuel and pressure requirements.' },
+      { name: 'Outdoor safety', blurb: 'Carbon monoxide alarms, purpose-built running canopies, and a pad to keep a generator off wet ground.' },
+      { name: 'Energy Reserve home-backup', blurb: 'Home-backup Energy Reserves and the transfer kits made for them. These stay indoors; fuel generators still stay outside.' },
     ] },
   { id: 'food', slug: 'food', name: 'Food & pantry', short: 'Food', blurb: 'Shelf-stable kits and pantry supplies from brands we already list, plus official shops.', photo: 'hero-pantry-cans' },
 ];
@@ -89,7 +91,7 @@ export type SourceGroup = {
 };
 
 export const sourceGroups: SourceGroup[] = [
-  { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar, everyday tech, and official drone shops.', categories: ['power', 'tech', 'audio', 'drones'], photo: 'solar-rooftops' },
+  { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar, everyday tech, official drone shops, and backup power for the house.', categories: ['power', 'tech', 'audio', 'drones', 'backup-power'], photo: 'solar-rooftops' },
   { id: 'home-water', name: 'Home & Water', short: 'Home & Water', blurb: 'Drinking-water filters and home setups from approved partners.', categories: ['home', 'water'], photo: 'water-bottles' },
   { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus official vehicle shops.', categories: ['outdoor', 'auto', 'tools', 'vehicles'], photo: 'lantern-dusk' },
   { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits, food stores, shelters, and official security pages, described plainly.', categories: ['safety', 'fun', 'security', 'food', 'drones-robotics', 'doomsday-prepper'], photo: 'first-aid-kit-open' },
