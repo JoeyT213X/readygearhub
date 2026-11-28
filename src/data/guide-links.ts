@@ -29,10 +29,6 @@ export const guideNav: Record<string, GuideNav> = {
     readNext: ['winter-storm-power-outage-prep-guide-south', 'emergency-food-storage', 'emergency-water-storage'],
     extras: [{ href: '/gear/#offline-entertainment', label: 'Offline entertainment for long outages: card games, downloaded music and audiobooks' }],
   },
-  'ice-storm-survival-checklist-for-the-south': {
-    // Merge candidate (301 to ice-storm-prep-checklist-south): no directory links, so it is not promoted.
-    readNext: ['ice-storm-prep-checklist-south', 'winter-storm-power-outage-prep-guide-south'],
-  },
   'power-outage-ice-storm-mississippi': {
     directory: ['power', 'water', 'food', 'outdoor', 'fun'],
     readNext: ['ice-storm-prep-checklist-south', 'emergency-food-storage', 'carbon-monoxide-safety-during-an-outage'],
@@ -83,7 +79,7 @@ export const guideNav: Record<string, GuideNav> = {
     extras: [{ href: '/doomsday-prepper/projects/#wells', label: 'Planning a private well? Permits, guides and cost ranges' }],
   },
   'hurricane-prep-guide-gulf-south': {
-    directory: ['power', 'water', 'food', 'safety', 'audio', 'drones-robotics', 'drones'],
+    directory: ['power', 'water', 'food', 'safety', 'audio', 'drones-robotics'],
     readNext: ['emergency-food-storage', 'emergency-water-storage', 'tornado-watch-vs-warning-mississippi'],
     extras: [{ href: '/doomsday-prepper/projects/#outbuildings-safe-rooms', label: 'Safe rooms and shelters: permits, guides and cost ranges' }],
   },

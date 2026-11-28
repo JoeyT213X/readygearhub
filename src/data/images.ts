@@ -96,7 +96,6 @@ export const guidePhoto: Record<string, string> = {
   'how-to-stay-warm-without-power': 'wool-socks-snow',
   'hurricane-prep-guide-gulf-south': 'storm-over-sea',
   'ice-storm-prep-checklist-south': 'checklist-writing',
-  'ice-storm-survival-checklist-for-the-south': 'snowy-trees-road',
   'power-outage-ice-storm-mississippi': 'lineworker-repair',
   'storm-first-aid-kit': 'first-aid-kit-open',
   'winter-car-emergency-kit': 'car-in-snow',

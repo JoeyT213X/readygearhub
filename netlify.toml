@@ -262,5 +262,14 @@
   to = "/directory/drones-robotics/"
   status = 301
 
-# TRAFFIC 301 LIST: add Traffic's keyword-to-URL merge redirects below this line, one [[redirects]]
-# block per old URL (from = "/old/", to = "/new/", status = 301). Not landed as of Nov 27, 2026.
+# TRAFFIC 301 LIST: Traffic's keyword-to-URL merge redirects, one [[redirects]] block per old URL
+# (from = "/old/", to = "/new/", status = 301). Add further merges below.
+# Ice storm guide merged into ice-storm-prep-checklist-south (one URL per search intent).
+[[redirects]]
+  from = "/guides/ice-storm-survival-checklist-for-the-south"
+  to = "/guides/ice-storm-prep-checklist-south/"
+  status = 301
+[[redirects]]
+  from = "/guides/ice-storm-survival-checklist-for-the-south/"
+  to = "/guides/ice-storm-prep-checklist-south/"
+  status = 301
