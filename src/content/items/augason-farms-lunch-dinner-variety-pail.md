@@ -4,7 +4,7 @@ brand: "Augason Farms"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "pail", "food storage"]
-description: "A lunch and dinner variety pail from Augason Farms, listed at 122 servings on the official page. Confirm current servings, contents, and storage guidance there."
+description: "A lunch and dinner variety pail from Augason Farms, listed by the maker at 122 servings. A simple way to start a long-term pantry."
 uses:
   - "A bucket-style food reserve for home storage"
   - "Lunch and dinner meals during a multi-day outage"

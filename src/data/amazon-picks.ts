@@ -22,7 +22,7 @@ export type AmazonPick = {
   us?: boolean;
 };
 
-const GROUP: Record<string, SourceGroupId> = {"tech": "power-tech", "power": "power-tech", "audio": "power-tech", "home": "home-water", "water": "home-water", "outdoor": "outdoor-auto", "auto": "outdoor-auto", "tools": "outdoor-auto", "vehicles": "outdoor-auto", "safety": "safety-prep", "fun": "safety-prep", "security": "safety-prep", "food": "safety-prep", "drones-robotics": "safety-prep", "doomsday-prepper": "safety-prep"};
+const GROUP: Record<string, SourceGroupId> = {"tech": "power-tech", "power": "power-tech", "audio": "power-tech", "home": "home-water", "water": "home-water", "outdoor": "outdoor-auto", "auto": "outdoor-auto", "tools": "outdoor-auto", "vehicles": "outdoor-auto", "safety": "safety-prep", "fun": "safety-prep", "security": "safety-prep", "food": "safety-prep", "drones-robotics": "safety-prep", "doomsday-prepper": "safety-prep", "backup-power": "power-tech"};
 
 export const amazonPicks: AmazonPick[] = [
   { id: "amz-b0cpt83mtv", asin: "B0CPT83MTV", category: "power", brand: "Champion", title: "Champion 4500-Watt Dual Fuel Inverter Generator", blurb: "Runs on gasoline or propane and starts with a push button. Enough to keep a fridge, lights and a few devices going through a multi-day outage.", us: true },
@@ -185,7 +185,7 @@ export const amazonPicks: AmazonPick[] = [
   { id: "amz-b01msygzgi", asin: "B01MSYGZGI", category: "power", brand: "Renogy", title: "Renogy Rover 40A MPPT Charge Controller", blurb: "A solar charge controller that keeps a battery bank charging from the panels without overcharging.", us: true },
   { id: "amz-b09l89lw3p", asin: "B09L89LW3P", category: "power", brand: "ECO-WORTHY", title: "ECO-WORTHY 12V 100Ah LiFePO4 Battery", blurb: "A lithium iron phosphate battery for DIY solar, RVs and boats. Lighter than lead-acid and gives you more use per charge." },
   { id: "amz-b07kq4q2l5", asin: "B07KQ4Q2L5", category: "power", brand: "BESTEK", title: "BESTEK 300W Pure Sine Power Inverter", blurb: "Plugs into a car outlet and gives you household power for small devices. A backup for charging a laptop or phone." },
-  { id: "amz-b076hq2thc", asin: "B076HQ2THC", category: "power", alsoIn: ["home"], brand: "Champion", title: "Champion 25-Foot 30-Amp Generator Power Cord", blurb: "A heavy generator cord to bring power to an RV or a transfer switch inlet. Check that the plug matches before you buy.", us: true },
+  { id: "amz-b076hq2thc", asin: "B076HQ2THC", category: "power", alsoIn: ["home"], brand: "Champion", title: "Champion 25-Foot 30-Amp Generator Power Cord", blurb: "A heavy generator cord to bring power to an RV or a transfer switch inlet.", us: true },
   { id: "amz-b0874xn4d8", asin: "B0874XN4D8", category: "tech", brand: "Samsung", title: "Samsung T7 Portable SSD (1TB)", blurb: "A fast, small drive for backing up family photos and documents. Keep a copy offsite." },
   { id: "amz-b09nmkgrmz", asin: "B09NMKGRMZ", category: "tech", alsoIn: ["outdoor"], brand: "Garmin", title: "Garmin Instinct 2 Solar Rugged GPS Watch", blurb: "A tough watch with GPS and a solar-assisted battery for long trips. Tracks your route and helps you find your way back.", us: true },
   { id: "amz-b01n7gc9z6", asin: "B01N7GC9Z6", category: "water", alsoIn: ["outdoor", "doomsday-prepper"], brand: "MSR", title: "MSR TrailShot Pocket Water Filter", blurb: "A tiny squeeze filter you can use to drink straight from a stream, or fill a bottle.", us: true },

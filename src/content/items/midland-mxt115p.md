@@ -4,7 +4,7 @@ brand: "Midland Radio"
 lane: vehicle-emergency-kits
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["GMRS", "mobile radio", "overland", "comms"]
-description: "The Midland MXT115 MicroMobile GMRS radio, intended for vehicle use. See the official page for current features, mounting notes, and licensing. GMRS use in the United States requires an FCC license."
+description: "The Midland MXT115 MicroMobile GMRS radio, intended for vehicle use. GMRS use in the United States requires an FCC license."
 uses:
   - "Vehicle-to-vehicle or vehicle-to-handheld GMRS communication"
   - "Overland and rural driving where cell coverage is thin"

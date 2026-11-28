@@ -4,7 +4,7 @@ import MailerLiteSignup from '../components/MailerLiteSignup.astro';
 import { mailerlite } from '../data/mailerlite';
 import WinterDealsCallout from '../components/WinterDealsCallout.astro';
 ---
-<Base title="Free Winter Storm Ready Checklist (Printable PDF) | ReadyGearHub" description="A free 6-page printable winter storm checklist: before the storm, kit checklist, during an outage, after the storm, and an emergency contacts page.">
+<Base footerSignup={false} title="Free Winter Storm Ready Checklist (Printable PDF) | ReadyGearHub" description="A free 6-page printable winter storm checklist: before the storm, kit checklist, during an outage, after the storm, and an emergency contacts page.">
   <section class="page-hero"><div class="wrap"><h1>Free Winter Storm Ready Checklist</h1><p class="lead">Six printable pages to get your home, car, and family ready before the ice hits. Yours to keep, as a small thank-you for stopping by.</p></div></section>
   {mailerlite.enabled ? (
     <section class="wrap section">

@@ -4,7 +4,7 @@ brand: "Augason Farms"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep", "winter-storm-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "long shelf life", "food storage"]
-description: "A 30-day emergency food supply from Augason Farms for one person. The official page lists 194 servings, 1,290 calories per day, and shelf-stable meals that need water and cooking, with no refrigeration."
+description: "A 30-day emergency food supply from Augason Farms for one person."
 uses:
   - "Build a longer food reserve than a 72-hour kit when a hurricane or outage may last days"
   - "Shelf-stable breakfasts, entrees, and a milk drink that do not need a fridge"

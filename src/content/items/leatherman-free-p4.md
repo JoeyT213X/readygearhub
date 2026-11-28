@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "tools"]
-description: "The Leatherman Free P4 multi-tool. See the official page for the current tool list, magnetic-frame details, and warranty."
+description: "The Leatherman Free P4 multi-tool."
 uses:
   - "Everyday carry or a go-bag multi-tool"
   - "Around-the-house repairs"

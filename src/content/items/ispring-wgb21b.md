@@ -4,7 +4,7 @@ brand: "iSpring Water Systems"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep"]
 tags: ["whole-house", "water filter", "home filtration"]
-description: "A whole-house water filter listed on iSpring’s official shop as the WGB21B, a 2-stage system with 10-inch by 4.5-inch sediment and CTO carbon filters."
+description: "A whole-house water filter from iSpring, the WGB21B: a 2-stage system with 10-inch by 4.5-inch sediment and CTO carbon filters."
 uses:
   - "Filtering water at the home’s main line, before it reaches fixtures"
   - "A compact 2-stage whole-house option compared with larger 3-stage systems"

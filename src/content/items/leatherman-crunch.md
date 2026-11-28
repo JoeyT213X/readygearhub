@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: []
 tags: ["multi-tool", "tools", "locking pliers"]
-description: "The Leatherman Crunch multi-tool, which includes locking pliers. See the official page for the current tool list and warranty."
+description: "The Leatherman Crunch multi-tool, which includes locking pliers."
 uses:
   - "Jobs that need locking pliers in a compact tool"
   - "Workshop and field use"

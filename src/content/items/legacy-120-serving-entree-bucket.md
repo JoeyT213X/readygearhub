@@ -4,7 +4,7 @@ brand: "Legacy Food Storage"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "freeze-dried"]
-description: "A Legacy Food Storage 120-serving entrée bucket. See the official page for current menus, serving counts, and stated storage life. We don’t invent prices or shelf-life numbers."
+description: "A Legacy Food Storage 120-serving entrée bucket. We don’t invent prices or shelf-life numbers."
 uses:
   - "A pantry backup for outages and storm isolation"
   - "Long-shelf-life entrées for a household kit"

@@ -19,7 +19,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-fx-navi-embodied-ai-quadruped-robot",
     title: "FX Navi Embodied AI Quadruped Robot",
-    blurb: "FX Navi Embodied AI Quadruped Robot, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. See the store page for specifications, support, and shipping. In stock on the store.",
+    blurb: "FX Navi Embodied AI Quadruped Robot, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. In stock on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -32,7 +32,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-fx-aegis-ultra-w-wheel-legged-robot-dog",
     title: "FX Aegis Ultra-W Wheel-Legged Robot Dog",
-    blurb: "FX Aegis Ultra-W Wheel-Legged Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. See the store page for specifications, support, and shipping. In stock on the store.",
+    blurb: "FX Aegis Ultra-W Wheel-Legged Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. In stock on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -45,7 +45,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-fx-aegis-ultra-w-plus",
     title: "FX Aegis Ultra-W+ Wheel-Legged Robot Dog",
-    blurb: "FX Aegis Ultra-W+ Wheel-Legged Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. See the store page for specifications, support, and shipping. In stock on the store.",
+    blurb: "FX Aegis Ultra-W+ Wheel-Legged Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. In stock on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -58,7 +58,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-fx-aegis-ultra-plus",
     title: "FX Aegis Ultra+ Quadruped Robot Dog",
-    blurb: "FX Aegis Ultra+ Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. See the store page for specifications, support, and shipping. In stock on the store.",
+    blurb: "FX Aegis Ultra+ Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. In stock on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -71,7 +71,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-fx-aegis-ultra",
     title: "FX Aegis Ultra Quadruped Robot Dog",
-    blurb: "FX Aegis Ultra Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. See the store page for specifications, support, and shipping. In stock on the store.",
+    blurb: "FX Aegis Ultra Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. In stock on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -84,7 +84,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-fx-aegis-pro",
     title: "FX Aegis Pro Quadruped Robot Dog",
-    blurb: "FX Aegis Pro Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. See the store page for specifications, support, and shipping. In stock on the store.",
+    blurb: "FX Aegis Pro Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. In stock on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -97,7 +97,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-fx-aegis-quadruped-robot-dog",
     title: "FX Aegis Quadruped Robot Dog",
-    blurb: "FX Aegis Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. See the store page for specifications, support, and shipping. In stock on the store.",
+    blurb: "FX Aegis Quadruped Robot Dog, a four-legged robot from Faraday Future (FF EAI Robotics, California), sold through Robots International. Faraday Future describes the Aegis line for security, education, and companionship. In stock on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -110,7 +110,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-galileo-c1",
     title: "Galileo C1 Small Quadruped Robot Dog",
-    blurb: "Galileo C1 Small Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+    blurb: "Galileo C1 Small Quadruped Robot Dog, a four-legged robot sold through Robots International. Limited availability on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -124,7 +124,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-galileo-c1-w",
     title: "Galileo C1-W Wheeled Quadruped Robot Dog",
-    blurb: "Galileo C1-W Wheeled Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+    blurb: "Galileo C1-W Wheeled Quadruped Robot Dog, a four-legged robot sold through Robots International. Limited availability on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -138,7 +138,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-pudu-d5-w-wheeled-quadruped-robot",
     title: "PUDU D5-W Wheeled Quadruped Robot Dog",
-    blurb: "PUDU D5-W Wheeled Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+    blurb: "PUDU D5-W Wheeled Quadruped Robot Dog, a four-legged robot sold through Robots International. Limited availability on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -152,7 +152,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-pudu-d5-quadruped-robot",
     title: "PUDU D5 Quadruped Robot Dog",
-    blurb: "PUDU D5 Quadruped Robot Dog, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+    blurb: "PUDU D5 Quadruped Robot Dog, a four-legged robot sold through Robots International. Limited availability on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -166,7 +166,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-magiclab-magicdog-quadruped-robot",
     title: "MagicLab MagicDog Quadruped Robot",
-    blurb: "MagicLab MagicDog Quadruped Robot, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+    blurb: "MagicLab MagicDog Quadruped Robot, a four-legged robot sold through Robots International. Limited availability on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -180,7 +180,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "ri-mirrorme-bpx-pro",
     title: "MirrorMe BPX Pro Quadruped Robot",
-    blurb: "MirrorMe BPX Pro Quadruped Robot, a four-legged robot sold through Robots International. See the store page for specifications, support and shipping. Limited availability on the store.",
+    blurb: "MirrorMe BPX Pro Quadruped Robot, a four-legged robot sold through Robots International. Limited availability on the store.",
     sourceName: "Robots International",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -194,7 +194,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "rs-deep-robotics-lite3-basic-quadruped-robot",
     title: "Deep Robotics Lite3 Basic Quadruped Robot",
-    blurb: "Deep Robotics Lite3 Basic, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+    blurb: "Deep Robotics Lite3 Basic, a four-legged robot listed on RobotShop. Special order on RobotShop.",
     sourceName: "RobotShop",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -208,7 +208,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "rs-deep-robotics-lite3-venture-quadruped-robot",
     title: "Deep Robotics Lite3 Venture Quadruped Robot",
-    blurb: "Deep Robotics Lite3 Venture, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+    blurb: "Deep Robotics Lite3 Venture, a four-legged robot listed on RobotShop. Special order on RobotShop.",
     sourceName: "RobotShop",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -222,7 +222,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "rs-deep-robotics-lite3-pro-quadruped-robot",
     title: "Deep Robotics Lite3 Pro Quadruped Robot",
-    blurb: "Deep Robotics Lite3 Pro, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+    blurb: "Deep Robotics Lite3 Pro, a four-legged robot listed on RobotShop. Special order on RobotShop.",
     sourceName: "RobotShop",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -236,7 +236,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "rs-deep-robotics-lite3-lidar-quadruped-robot",
     title: "Deep Robotics Lite3 Lidar Quadruped Robot",
-    blurb: "Deep Robotics Lite3 Lidar, a four-legged robot listed on RobotShop. See the store page for specifications, availability, and shipping. Special order on RobotShop.",
+    blurb: "Deep Robotics Lite3 Lidar, a four-legged robot listed on RobotShop. Special order on RobotShop.",
     sourceName: "RobotShop",
     category: 'drones-robotics',
     groups: ['safety-prep'],
@@ -263,7 +263,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "hoverair-aqua",
     title: "HOVERAir AQUA",
-    blurb: "HOVERAir describes the AQUA as a waterproof self-flying camera for water sports. Check the official page for the waterproof rating and limits before relying on it near water.",
+    blurb: "HOVERAir describes the AQUA as a waterproof self-flying camera for water sports.",
     sourceName: "HOVERAir",
     category: 'drones-robotics',
     groups: ['power-tech', 'safety-prep'],
@@ -289,7 +289,7 @@ export const roboticsDronesItems: HighTicketItem[] = [
   {
     id: "hoverair-x1",
     title: "HOVERAir X1",
-    blurb: "The original pocket-size self-flying camera for hands-free shots. Check the official page for current availability.",
+    blurb: "The original pocket-size self-flying camera for hands-free shots.",
     sourceName: "HOVERAir",
     category: 'drones-robotics',
     groups: ['power-tech', 'safety-prep'],

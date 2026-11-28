@@ -101,6 +101,12 @@ for (const p of programs.filter((x) => x.status === 'dropped')) {
   const host = p.officialUrl ? destination(p.officialUrl).split('/')[0] : '';
   const hits = list.filter((c) => c.program === p.id || (p.items ?? []).includes(c.id) || (host && c.dest.split('/')[0] === host));
   if (hits.length) add('c-dropped', p.id, `dropped program "${p.id}" still has ${hits.length} visible card(s): ${hits.map((c) => c.id).join(', ')}`);
+  // Cards outside /directory/ (e.g. the /gear/ retailer list) and plain links: any indexable page linking the dropped program's site.
+  const pagesLinking = host ? pages(dist).filter((f) => {
+    const html = readFileSync(f, 'utf8');
+    return !/<meta name="robots" content="[^"]*noindex/.test(html) && [...html.matchAll(/<a\b[^>]*\bhref="(https?:[^"]+)"/g)].some((m) => destination(m[1]).split('/')[0] === host);
+  }).map((f) => f.replace(dist, '/').replace(/index\.html$/, '')) : [];
+  if (pagesLinking.length) add('c-dropped-link', p.id, `dropped program "${p.id}" (${host}) is still linked from: ${pagesLinking.join(', ')}`);
 }
 
 // ---- preview flag must never reach production ----

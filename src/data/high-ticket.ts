@@ -47,7 +47,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'skydio-official',
     title: 'Skydio official site',
-    blurb: 'Official Skydio site for current autonomous drone platforms and programs. Check the official page for models and how to inquire.',
+    blurb: 'Official Skydio site for current autonomous drone platforms and programs.',
     sourceName: 'Skydio',
     category: 'drones-robotics',
     alsoIn: ['tech'],
@@ -63,7 +63,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'rezvani-official',
     title: 'Rezvani Motors official site',
-    blurb: 'Official Rezvani site for current custom and tactical vehicle programs. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Rezvani site for current custom and tactical vehicle programs.',
     sourceName: 'Rezvani Motors',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -78,7 +78,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'inkas-official',
     title: 'INKAS Armored official site',
-    blurb: 'Official INKAS site for factory armored vehicles. Specifications, lead times, and how to inquire are on the official site.',
+    blurb: 'Official INKAS site for factory armored vehicles.',
     sourceName: 'INKAS Armored',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -92,7 +92,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'earthroamer-official',
     title: 'EarthRoamer official site',
-    blurb: 'Official EarthRoamer site for expedition vehicles. Models, build options, and pricing are on the official site.',
+    blurb: 'Official EarthRoamer site for expedition vehicles.',
     sourceName: 'EarthRoamer',
     category: 'vehicles',
     alsoIn: ['auto', 'outdoor'],
@@ -106,7 +106,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'storyteller-overland-official',
     title: 'Storyteller Overland official site',
-    blurb: 'Official Storyteller Overland site, including the GXV overland vehicle line. Current models and pricing are on the official site.',
+    blurb: 'Official Storyteller Overland site, including the GXV overland vehicle line.',
     sourceName: 'Storyteller Overland',
     category: 'vehicles',
     alsoIn: ['auto', 'outdoor'],
@@ -121,7 +121,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'polaris-official',
     title: 'Polaris official site',
-    blurb: 'Official Polaris site for current off-road and side-by-side vehicles. Check the official page for models, dealers, and pricing.',
+    blurb: 'Official Polaris site for current off-road and side-by-side vehicles.',
     sourceName: 'Polaris',
     category: 'vehicles',
     alsoIn: ['auto', 'outdoor'],
@@ -136,7 +136,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'can-am-official',
     title: 'Can-Am official site',
-    blurb: 'Official Can-Am (BRP) site for current off-road and side-by-side vehicles. Check the official page for models, dealers, and pricing.',
+    blurb: 'Official Can-Am (BRP) site for current off-road and side-by-side vehicles.',
     sourceName: 'Can-Am',
     category: 'vehicles',
     alsoIn: ['auto', 'outdoor'],
@@ -153,7 +153,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'atlas-survival-shelters-official',
     title: 'Atlas Survival Shelters official site',
-    blurb: 'Official Atlas Survival Shelters site for current shelter models. Specifications, lead times, and pricing are on the official site.',
+    blurb: 'Official Atlas Survival Shelters site for current shelter models.',
     sourceName: 'Atlas Survival Shelters',
     category: 'security',
     alsoIn: ['safety'],
@@ -186,7 +186,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'boston-dynamics-official',
     title: 'Boston Dynamics official site',
-    blurb: 'Official Boston Dynamics site for current robotics platforms. See the official page for products and how to inquire. The cover on this card is an original illustration, not a product photograph.',
+    blurb: 'Official Boston Dynamics site for current robotics platforms. The cover on this card is an original illustration, not a product photograph.',
     sourceName: 'Boston Dynamics',
     category: 'security',
     alsoIn: ['tech'],
@@ -200,7 +200,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'ghost-robotics-official',
     title: 'Ghost Robotics official site',
-    blurb: 'Official Ghost Robotics site. The photograph shows a Ghost Robotics Vision 60 (also marked Civitas) at BSDA 2024, taken by a U.S. Army photographer and released as a public-domain image. See the official site for current platforms and how to inquire.',
+    blurb: 'Official Ghost Robotics site. The photograph shows a Ghost Robotics Vision 60 (also marked Civitas) at BSDA 2024, taken by a U.S. Army photographer and released as a public-domain image.',
     sourceName: 'Ghost Robotics',
     category: 'security',
     alsoIn: ['tech'],
@@ -215,7 +215,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'knightscope-official',
     title: 'Knightscope official site',
-    blurb: 'Official Knightscope site for autonomous security robots. See the official page for current platforms and how to inquire. The cover on this card is an original illustration, not a product photograph.',
+    blurb: 'Official Knightscope site for autonomous security robots. The cover on this card is an original illustration, not a product photograph.',
     sourceName: 'Knightscope',
     category: 'security',
     alsoIn: ['tech'],
@@ -231,7 +231,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'jeep-wrangler',
     title: 'Jeep Wrangler',
-    blurb: 'Official Jeep page for the current Wrangler. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Jeep page for the current Wrangler.',
     sourceName: 'Jeep',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -246,7 +246,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'jeep-gladiator',
     title: 'Jeep Gladiator',
-    blurb: 'Official Jeep page for the current Gladiator. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Jeep page for the current Gladiator.',
     sourceName: 'Jeep',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -261,7 +261,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'toyota-land-cruiser',
     title: 'Toyota Land Cruiser',
-    blurb: 'Official Toyota page for the current Land Cruiser. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Toyota page for the current Land Cruiser.',
     sourceName: 'Toyota',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -276,7 +276,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'toyota-tacoma',
     title: 'Toyota Tacoma',
-    blurb: 'Official Toyota page for the current Tacoma. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Toyota page for the current Tacoma.',
     sourceName: 'Toyota',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -291,7 +291,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'toyota-4runner',
     title: 'Toyota 4Runner',
-    blurb: 'Official Toyota page for the current 4Runner. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Toyota page for the current 4Runner.',
     sourceName: 'Toyota',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -306,7 +306,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'land-rover-defender',
     title: 'Land Rover Defender',
-    blurb: 'Official Land Rover USA page for the current Defender. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Land Rover USA page for the current Defender.',
     sourceName: 'Land Rover',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -321,7 +321,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'can-am-off-road',
     title: 'Can-Am Off-Road vehicles',
-    blurb: 'Official Can-Am Off-Road page for current side-by-side and off-road vehicles. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Can-Am Off-Road page for current side-by-side and off-road vehicles.',
     sourceName: 'Can-Am',
     category: 'vehicles',
     alsoIn: ['auto', 'outdoor'],
@@ -336,7 +336,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'ineos-grenadier',
     title: 'INEOS Grenadier',
-    blurb: 'Official INEOS Grenadier site for the current Grenadier 4x4. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official INEOS Grenadier site for the current Grenadier 4x4.',
     sourceName: 'INEOS Grenadier',
     category: 'vehicles',
     alsoIn: ['auto'],
@@ -351,7 +351,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'sportsmobile-official',
     title: 'Sportsmobile official site',
-    blurb: 'Official Sportsmobile site for custom 4x4 van conversions. Models, build options, and how to inquire are on the official site.',
+    blurb: 'Official Sportsmobile site for custom 4x4 van conversions.',
     sourceName: 'Sportsmobile',
     category: 'vehicles',
     alsoIn: ['auto', 'outdoor'],
@@ -365,7 +365,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'storyteller-mode-vans',
     title: 'Storyteller Overland MODE vans',
-    blurb: 'Official Storyteller Overland page for current MODE vans. Configuration, availability, and pricing are on the official site.',
+    blurb: 'Official Storyteller Overland page for current MODE vans.',
     sourceName: 'Storyteller Overland',
     category: 'vehicles',
     alsoIn: ['auto', 'outdoor'],
@@ -381,7 +381,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-sd-launcher',
     title: 'Byrna SD launcher',
-    blurb: 'Official Byrna page for the SD less-lethal launcher. See the official page for current model details, legal restrictions, and pricing.',
+    blurb: 'Official Byrna page for the SD less-lethal launcher.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -394,7 +394,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-le-launcher',
     title: 'Byrna LE launcher',
-    blurb: 'Official Byrna page for the LE less-lethal launcher. See the official page for current model details, legal restrictions, and pricing.',
+    blurb: 'Official Byrna page for the LE less-lethal launcher.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -407,7 +407,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-compact-launcher',
     title: 'Byrna Compact launcher kit',
-    blurb: 'Official Byrna page for the Compact launcher universal kit. See the official page for current model details, legal restrictions, and pricing.',
+    blurb: 'Official Byrna page for the Compact launcher universal kit.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -459,7 +459,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'eufy-security',
     title: 'eufy Security',
-    blurb: 'Official eufy Security page for cameras and home security products. See the official page for current devices, plans, and pricing.',
+    blurb: 'Official eufy Security page for cameras and home security products.',
     sourceName: 'eufy',
     category: 'security',
     alsoIn: ['home', 'tech'],
@@ -474,7 +474,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'stanley-tools-official',
     title: 'STANLEY Tools official site',
-    blurb: 'Official STANLEY Tools site for current hand tools and kits. Models and pricing are on the official site.',
+    blurb: 'Official STANLEY Tools site for current hand tools and kits.',
     sourceName: 'STANLEY Tools',
     category: 'tools',
     alsoIn: ['outdoor'],
@@ -487,7 +487,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'dewalt-official',
     title: 'DEWALT official site',
-    blurb: 'Official DEWALT site for current power tools and kits. Models and pricing are on the official site.',
+    blurb: 'Official DEWALT site for current power tools and kits.',
     sourceName: 'DEWALT',
     category: 'tools',
     alsoIn: ['outdoor'],
@@ -500,7 +500,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'milwaukee-tool-official',
     title: 'Milwaukee Tool official site',
-    blurb: 'Official Milwaukee Tool site for current tools and kits. Models and pricing are on the official site.',
+    blurb: 'Official Milwaukee Tool site for current tools and kits.',
     sourceName: 'Milwaukee Tool',
     category: 'tools',
     alsoIn: ['outdoor'],
@@ -513,7 +513,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'klein-tools-official',
     title: 'Klein Tools official site',
-    blurb: 'Official Klein Tools site for current hand tools. Models and pricing are on the official site.',
+    blurb: 'Official Klein Tools site for current hand tools.',
     sourceName: 'Klein Tools',
     category: 'tools',
     alsoIn: ['outdoor'],
@@ -526,7 +526,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'gerber-official',
     title: 'Gerber Gear official site',
-    blurb: 'Official Gerber Gear site for current multi-tools and knives. Models and pricing are on the official site.',
+    blurb: 'Official Gerber Gear site for current multi-tools and knives.',
     sourceName: 'Gerber',
     category: 'tools',
     alsoIn: ['outdoor'],
@@ -599,7 +599,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-tcr',
     title: 'Byrna TCR launcher',
-    blurb: 'Official Byrna page for the TCR less-lethal launcher. See the official page for current model details, legal restrictions, and pricing.',
+    blurb: 'Official Byrna page for the TCR less-lethal launcher.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -612,7 +612,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-clxl-launcher',
     title: 'Byrna CLXL launcher kit',
-    blurb: 'Official Byrna page for the CLXL launcher universal kit. See the official page for current model details, legal restrictions, and pricing.',
+    blurb: 'Official Byrna page for the CLXL launcher universal kit.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -625,7 +625,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-duo',
     title: 'Byrna Duo kit',
-    blurb: 'Official Byrna page for the Duo kit. See the official page for current contents, legal restrictions, and pricing.',
+    blurb: 'Official Byrna page for the Duo kit.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -638,7 +638,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-mission-4-kit',
     title: 'Byrna Mission 4 kit',
-    blurb: 'Official Byrna page for the Mission 4 kit. See the official page for current contents, legal restrictions, and pricing.',
+    blurb: 'Official Byrna page for the Mission 4 kit.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -651,7 +651,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'byrna-banshee-alarm',
     title: 'Byrna Banshee personal safety alarm',
-    blurb: 'Official Byrna page for the Banshee personal safety alarm. See the official page for current features and pricing. This is an alarm, not a launcher.',
+    blurb: 'Official Byrna page for the Banshee personal safety alarm. This is an alarm, not a launcher.',
     sourceName: 'Byrna',
     category: 'security',
     alsoIn: ['safety'],
@@ -664,7 +664,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'sabre-smart-pepper-spray',
     title: 'SABRE Smart pepper spray',
-    blurb: 'Official SABRE page for Smart pepper spray. See the official page for current features and local legal restrictions. Pepper spray is regulated in some places; this is not a substitute for a call to 911.',
+    blurb: 'Official SABRE page for Smart pepper spray. Pepper spray is regulated in some places; this is not a substitute for a call to 911.',
     sourceName: 'SABRE',
     category: 'security',
     alsoIn: ['safety'],
@@ -677,7 +677,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'sabre-mighty-discreet',
     title: 'SABRE Mighty Discreet pepper spray',
-    blurb: 'Official SABRE page for Mighty Discreet pepper spray. See the official page for current features and local legal restrictions. This is not a substitute for a call to 911.',
+    blurb: 'Official SABRE page for Mighty Discreet pepper spray. This is not a substitute for a call to 911.',
     sourceName: 'SABRE',
     category: 'security',
     alsoIn: ['safety'],
@@ -690,7 +690,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'sabre-pepper-spray-alarm-kit',
     title: 'SABRE pepper spray and personal alarm safety kit',
-    blurb: 'Official SABRE page for a pepper-spray and personal-alarm kit. See the official page for current contents and local legal restrictions. This is not a substitute for a call to 911.',
+    blurb: 'Official SABRE page for a pepper-spray and personal-alarm kit. This is not a substitute for a call to 911.',
     sourceName: 'SABRE',
     category: 'security',
     alsoIn: ['safety'],
@@ -703,7 +703,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'sabre-home-defense-launcher',
     title: 'SABRE home defense pepper projectile launcher',
-    blurb: 'Official SABRE page for the home-defense pepper projectile launcher. See the official page for current model details and local legal restrictions. This is not a substitute for a call to 911.',
+    blurb: 'Official SABRE page for the home-defense pepper projectile launcher. This is not a substitute for a call to 911.',
     sourceName: 'SABRE',
     category: 'security',
     alsoIn: ['safety', 'home'],
@@ -716,7 +716,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'reolink-argus-4-pro',
     title: 'Reolink Argus 4 Pro',
-    blurb: 'Official Reolink page for the Argus 4 Pro wireless security camera. See the official page for current features, power options, and pricing.',
+    blurb: 'Official Reolink page for the Argus 4 Pro wireless security camera.',
     sourceName: 'Reolink',
     category: 'security',
     alsoIn: ['home', 'tech'],
@@ -729,7 +729,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'reolink-video-doorbell-wifi',
     title: 'Reolink Video Doorbell WiFi',
-    blurb: 'Official Reolink page for the Wi-Fi video doorbell. See the official page for current features, wiring notes, and pricing.',
+    blurb: 'Official Reolink page for the Wi-Fi video doorbell.',
     sourceName: 'Reolink',
     category: 'security',
     alsoIn: ['home', 'tech'],
@@ -742,7 +742,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'reolink-e1-pro',
     title: 'Reolink E1 Pro',
-    blurb: 'Official Reolink page for the E1 Pro indoor pan-tilt camera. See the official page for current features and pricing.',
+    blurb: 'Official Reolink page for the E1 Pro indoor pan-tilt camera.',
     sourceName: 'Reolink',
     category: 'security',
     alsoIn: ['home', 'tech'],
@@ -755,7 +755,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'vevor-electric-winches',
     title: 'VEVOR electric winches',
-    blurb: 'Official VEVOR category page for electric winches used in vehicle recovery. See the official page for current models, capacity ratings, and safe-use notes.',
+    blurb: 'Official VEVOR category page for electric winches used in vehicle recovery.',
     sourceName: 'VEVOR',
     category: 'vehicles',
     alsoIn: ['auto', 'tools', 'outdoor'],
@@ -769,7 +769,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'vevor-rooftop-tents',
     title: 'VEVOR rooftop tents',
-    blurb: 'Official VEVOR category page for rooftop tents. See the official page for current models, vehicle-fit notes, and pricing.',
+    blurb: 'Official VEVOR category page for rooftop tents.',
     sourceName: 'VEVOR',
     category: 'vehicles',
     alsoIn: ['outdoor', 'auto'],
@@ -783,7 +783,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'midland-overlanding-collection',
     title: 'Midland overlanding radios',
-    blurb: 'Official Midland collection for radios and accessories aimed at overlanding. See the official page for current models and any GMRS licensing notes.',
+    blurb: 'Official Midland collection for radios and accessories aimed at overlanding.',
     sourceName: 'Midland Radio',
     category: 'vehicles',
     alsoIn: ['auto', 'tech', 'audio'],
@@ -797,7 +797,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'olight-official',
     title: 'Olight official shop',
-    blurb: 'Official Olight shop for everyday-carry flashlights and lanterns. See the official page for current models and pricing.',
+    blurb: 'Official Olight shop for everyday-carry flashlights and lanterns.',
     sourceName: 'Olight',
     category: 'tools',
     alsoIn: ['outdoor', 'tech'],
@@ -810,7 +810,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'wuben-official',
     title: 'Wuben official shop',
-    blurb: 'The official Wuben shop for flashlights, headlamps, and everyday-carry lights. See the official page for current models, colors, and pricing.',
+    blurb: 'The official Wuben shop for flashlights, headlamps, and everyday-carry lights.',
     sourceName: 'Wuben',
     category: 'tools',
     alsoIn: ['outdoor', 'tech', 'safety'],
@@ -825,7 +825,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'batteries-plus-official',
     title: 'Batteries Plus official site',
-    blurb: 'Official Batteries Plus site for batteries, chargers, and related supplies. See the official page for current stock and store pickup options.',
+    blurb: 'Official Batteries Plus site for batteries, chargers, and related supplies.',
     sourceName: 'Batteries Plus',
     category: 'tools',
     alsoIn: ['tech'],
@@ -868,7 +868,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'aquatru-carafe',
     title: 'AquaTru Carafe countertop reverse osmosis system',
-    blurb: 'A countertop reverse osmosis system listed on AquaTru’s official shop as the AquaTru Carafe. Read the official page for what it does and does not treat, and for the current price.',
+    blurb: 'A countertop reverse osmosis system from AquaTru, the AquaTru Carafe.',
     sourceName: 'AquaTru',
     category: 'water',
     alsoIn: ["home"],
@@ -884,7 +884,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'clearly-filtered-pitcher',
     title: 'Clearly Filtered Water Pitcher',
-    blurb: 'A filtered water pitcher listed on Clearly Filtered’s official shop. Read the official page for filter life, what it does and does not treat, and the current price.',
+    blurb: 'A filtered water pitcher from Clearly Filtered.',
     sourceName: 'Clearly Filtered',
     category: 'water',
     alsoIn: ["home"],
@@ -900,7 +900,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'jackery-explorer-2000-v2',
     title: 'Jackery Explorer 2000 v2',
-    blurb: 'A portable energy reserve listed on Jackery’s official shop as the Explorer 2000 v2. See the official page for capacity, output, and the current price.',
+    blurb: 'A portable energy reserve from Jackery, the Explorer 2000 v2.',
     sourceName: 'Jackery',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -916,7 +916,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'ecoflow-delta-2-max',
     title: 'EcoFlow DELTA 2 Max',
-    blurb: 'A portable energy reserve listed on EcoFlow’s official US shop as the DELTA 2 Max. See the official page for capacity, output, and the current price.',
+    blurb: 'A portable energy reserve from EcoFlow, the DELTA 2 Max.',
     sourceName: 'EcoFlow',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -932,7 +932,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'goal-zero-yeti-500',
     title: 'Goal Zero Yeti 500',
-    blurb: 'A portable energy reserve listed on Goal Zero’s official shop as the Yeti 500. See the official page for capacity, output, and the current price.',
+    blurb: 'A portable energy reserve from Goal Zero, the Yeti 500.',
     sourceName: 'Goal Zero',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -948,7 +948,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'goal-zero-yeti-700',
     title: 'Goal Zero Yeti 700',
-    blurb: 'A portable energy reserve listed on Goal Zero’s official shop as the Yeti 700. See the official page for capacity, output, and the current price.',
+    blurb: 'A portable energy reserve from Goal Zero, the Yeti 700.',
     sourceName: 'Goal Zero',
     category: 'power',
     alsoIn: ["outdoor"],
@@ -964,7 +964,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'instant-pot-duo-6qt',
     title: 'Instant Pot Duo 6QT Multi-Use Pressure Cooker',
-    blurb: 'A 6-quart multi-use pressure cooker listed on Instant Pot’s official shop as the Duo 6QT. See the official page for modes, included parts, and the current price.',
+    blurb: 'A 6-quart multi-use pressure cooker from Instant Pot, the Duo 6QT.',
     sourceName: 'Instant Pot',
     category: 'home',
     groups: ["home-water"],
@@ -979,7 +979,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'instant-pot-vortex-plus-6qt',
     title: 'Instant Pot Vortex Plus 6QT ClearCook Air Fryer',
-    blurb: 'A 6-quart air fryer listed on Instant Pot’s official shop as the Vortex Plus 6QT ClearCook. See the official page for features and the current price.',
+    blurb: 'A 6-quart air fryer from Instant Pot, the Vortex Plus 6QT ClearCook.',
     sourceName: 'Instant Pot',
     category: 'home',
     groups: ["home-water"],
@@ -994,7 +994,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'instant-pot-duo-plus-6qt',
     title: 'Instant Pot Duo Plus 6QT Multi-Use Pressure Cooker',
-    blurb: 'A 6-quart multi-use pressure cooker listed on Instant Pot’s official shop as the Duo Plus 6QT. See the official page for modes and the current price.',
+    blurb: 'A 6-quart multi-use pressure cooker from Instant Pot, the Duo Plus 6QT.',
     sourceName: 'Instant Pot',
     category: 'home',
     groups: ["home-water"],
@@ -1009,7 +1009,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'owala-freesip-24',
     title: 'Owala FreeSip 24 oz water bottle',
-    blurb: 'A 24-ounce stainless steel bottle listed on Owala’s official shop as the FreeSip. See the official page for colors, lid style, and the current price.',
+    blurb: 'A 24-ounce stainless steel bottle from Owala, the FreeSip.',
     sourceName: 'Owala',
     category: 'outdoor',
     groups: ["outdoor-auto"],
@@ -1024,7 +1024,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'hydro-flask-32-wide',
     title: 'Hydro Flask 32 oz Wide Mouth water bottle',
-    blurb: 'A 32-ounce wide-mouth insulated bottle listed on Hydro Flask’s official site. See the official page for colors, caps, and the current price.',
+    blurb: 'A 32-ounce wide-mouth insulated bottle from Hydro Flask.',
     sourceName: 'Hydro Flask',
     category: 'outdoor',
     groups: ["outdoor-auto"],
@@ -1039,7 +1039,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'hydro-flask-40-wide',
     title: 'Hydro Flask 40 oz Wide Mouth water bottle',
-    blurb: 'A 40-ounce wide-mouth insulated bottle listed on Hydro Flask’s official site. See the official page for colors, caps, and the current price.',
+    blurb: 'A 40-ounce wide-mouth insulated bottle from Hydro Flask.',
     sourceName: 'Hydro Flask',
     category: 'outdoor',
     groups: ["outdoor-auto"],
@@ -1054,7 +1054,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'yeti-rambler-16-travel',
     title: 'YETI Rambler 16 oz Travel Bottle',
-    blurb: 'A 16-ounce insulated travel bottle listed on YETI’s official site as the Rambler Travel Bottle with a Commuter Cap. See the official page for colors and the current price.',
+    blurb: 'A 16-ounce insulated travel bottle from YETI, the Rambler Travel Bottle with a Commuter Cap.',
     sourceName: 'YETI',
     category: 'outdoor',
     groups: ["outdoor-auto"],
@@ -1069,7 +1069,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'peak-refuel-homestyle-chicken-rice',
     title: 'Peak Refuel Homestyle Chicken & Rice',
-    blurb: 'A freeze-dried meal pouch listed on Peak Refuel’s official shop as Homestyle Chicken & Rice. See the official page for ingredients, servings, and the current price.',
+    blurb: 'A freeze-dried meal pouch from Peak Refuel, the Homestyle Chicken & Rice.',
     sourceName: 'Peak Refuel',
     category: 'food',
     groups: ["safety-prep"],
@@ -1084,7 +1084,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'peak-refuel-biscuits-sausage-gravy',
     title: 'Peak Refuel Biscuits & Sausage Gravy',
-    blurb: 'A freeze-dried meal pouch listed on Peak Refuel’s official shop as Biscuits & Sausage Gravy. See the official page for ingredients, servings, and the current price.',
+    blurb: 'A freeze-dried meal pouch from Peak Refuel, the Biscuits & Sausage Gravy.',
     sourceName: 'Peak Refuel',
     category: 'food',
     groups: ["safety-prep"],
@@ -1099,7 +1099,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'peak-refuel-entree-essentials-bucket-2',
     title: 'Peak Refuel Entree Essentials Bucket 2.0',
-    blurb: 'A bucket of freeze-dried entrées listed on Peak Refuel’s official shop as the Entree Essentials Bucket 2.0. See the official page for what’s included and the current price.',
+    blurb: 'A bucket of freeze-dried entrées from Peak Refuel, the Entree Essentials Bucket 2.0.',
     sourceName: 'Peak Refuel',
     category: 'food',
     groups: ["safety-prep"],
@@ -1114,7 +1114,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'mountain-house-best-sellers-kit',
     title: 'Mountain House Best Sellers Kit',
-    blurb: 'A kit of freeze-dried meals listed on Mountain House’s official shop as the Best Sellers Kit. See the official page for what’s included, servings, and the current price.',
+    blurb: 'A kit of freeze-dried meals from Mountain House, the Best Sellers Kit.',
     sourceName: 'Mountain House',
     category: 'food',
     groups: ["safety-prep"],
@@ -1129,7 +1129,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'sony-wh-1000xm6',
     title: 'Sony WH-1000XM6 wireless headphones',
-    blurb: 'Sony’s WH-1000XM6 wireless noise-cancelling headphones, listed on Sony’s official US electronics site. See the official page for features, colors, and the current price.',
+    blurb: 'Sony’s WH-1000XM6 wireless noise-cancelling headphones, listed on Sony’s official US electronics site.',
     sourceName: 'Sony',
     category: 'audio',
     alsoIn: ["tech"],
@@ -1145,7 +1145,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'apple-airpods-pro-3',
     title: 'Apple AirPods Pro 3',
-    blurb: 'Apple’s AirPods Pro 3, listed on Apple’s official site. See the official page for features, compatibility, and the current price.',
+    blurb: 'Apple’s AirPods Pro 3, from Apple.',
     sourceName: 'Apple',
     category: 'audio',
     alsoIn: ["tech"],
@@ -1161,7 +1161,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'apple-airpods-5',
     title: 'Apple AirPods 5',
-    blurb: 'Apple’s AirPods 5, listed on Apple’s official site. See the official page for features, compatibility, and the current price.',
+    blurb: 'Apple’s AirPods 5, from Apple.',
     sourceName: 'Apple',
     category: 'audio',
     alsoIn: ["tech"],
@@ -1177,7 +1177,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'apple-airpods-max-2',
     title: 'Apple AirPods Max 2',
-    blurb: 'Apple’s AirPods Max 2 over-ear headphones, listed on Apple’s official site. See the official page for features, colors, and the current price.',
+    blurb: 'Apple’s AirPods Max 2 over-ear headphones, from Apple.',
     sourceName: 'Apple',
     category: 'audio',
     alsoIn: ["tech"],
@@ -1193,7 +1193,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: '1password-password-manager',
     title: '1Password password manager',
-    blurb: 'A paid password-manager subscription listed on 1Password’s official site. See the official page for plans, features, and the current price.',
+    blurb: 'A paid password-manager subscription listed on 1Password’s official site.',
     sourceName: '1Password',
     category: 'tech',
     groups: ["power-tech"],
@@ -1208,7 +1208,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'apple-airtag',
     title: 'Apple AirTag',
-    blurb: 'Apple’s AirTag item tracker, listed on Apple’s official site and sold individually or in a 4-pack. See the official page for features and the current price.',
+    blurb: 'Apple’s AirTag item tracker, from Apple and sold individually or in a 4-pack.',
     sourceName: 'Apple',
     category: 'tech',
     groups: ["power-tech"],
@@ -1223,7 +1223,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'milwaukee-2904-20',
     title: 'Milwaukee M18 FUEL 1/2-inch Hammer Drill/Driver (2904-20)',
-    blurb: 'An M18 FUEL 1/2-inch hammer drill/driver listed on Milwaukee Tool’s official site as the 2904-20. See the official page for specs, kit options, and the current price.',
+    blurb: 'An M18 FUEL 1/2-inch hammer drill/driver from Milwaukee Tool, the 2904-20.',
     sourceName: 'Milwaukee Tool',
     category: 'tools',
     groups: ["outdoor-auto"],
@@ -1238,7 +1238,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'milwaukee-2853-20',
     title: 'Milwaukee M18 FUEL 1/4-inch Hex Impact Driver (2853-20)',
-    blurb: 'An M18 FUEL 1/4-inch hex impact driver listed on Milwaukee Tool’s official site as the 2853-20 (tool only). See the official page for specs, kit options, and the current price.',
+    blurb: 'An M18 FUEL 1/4-inch hex impact driver from Milwaukee Tool, the 2853-20 (tool only).',
     sourceName: 'Milwaukee Tool',
     category: 'tools',
     groups: ["outdoor-auto"],
@@ -1253,7 +1253,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'milwaukee-2960-20',
     title: 'Milwaukee M18 FUEL 3/8-inch Mid-Torque Impact Wrench (2960-20)',
-    blurb: 'An M18 FUEL mid-torque impact wrench listed on Milwaukee Tool’s official site as the 2960-20. See the official page for specs, kit options, and the current price.',
+    blurb: 'An M18 FUEL mid-torque impact wrench from Milwaukee Tool, the 2960-20.',
     sourceName: 'Milwaukee Tool',
     category: 'tools',
     groups: ["outdoor-auto"],
@@ -1268,7 +1268,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'noco-gb70',
     title: 'NOCO Boost HD GB70 2000A jump starter',
-    blurb: 'A portable lithium jump starter listed on NOCO’s official site as the Boost HD GB70, a 2000A 12V unit. See the official page for vehicle coverage and the current price.',
+    blurb: 'A portable lithium jump starter from NOCO, the Boost HD GB70, a 2000A 12V unit.',
     sourceName: 'NOCO',
     category: 'auto',
     groups: ["outdoor-auto"],
@@ -1283,7 +1283,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'noco-boost-air',
     title: 'NOCO Boost Air jump starter and air compressor',
-    blurb: 'A portable jump starter with a built-in air compressor listed on NOCO’s official site as Boost Air. See the official page for features and the current price.',
+    blurb: 'A portable jump starter with a built-in air compressor from NOCO, the Boost Air.',
     sourceName: 'NOCO',
     category: 'auto',
     groups: ["outdoor-auto"],
@@ -1298,7 +1298,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'garmin-dash-cam-mini-3',
     title: 'Garmin Dash Cam Mini 3',
-    blurb: 'An ultra-compact dash camera listed on Garmin’s official site as the Dash Cam Mini 3. See the official page for features and the current price.',
+    blurb: 'An ultra-compact dash camera from Garmin, the Dash Cam Mini 3.',
     sourceName: 'Garmin',
     category: 'auto',
     groups: ["outdoor-auto"],
@@ -1313,7 +1313,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'noco-air20',
     title: 'NOCO AIR20 portable air compressor',
-    blurb: 'A portable 12V air compressor listed on NOCO’s official site as the AIR20, a 20A, 100 PSI inflator. See the official page for features and the current price.',
+    blurb: 'A portable 12V air compressor from NOCO, the AIR20, a 20A, 100 PSI inflator.',
     sourceName: 'NOCO',
     category: 'auto',
     groups: ["outdoor-auto"],
@@ -1328,7 +1328,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'catan-base-game',
     title: 'CATAN base game',
-    blurb: 'The CATAN base board game, listed on CATAN’s official site. See the official page for editions, player count, and the current price.',
+    blurb: 'The CATAN base board game, from CATAN.',
     sourceName: 'CATAN',
     category: 'fun',
     groups: ["safety-prep"],
@@ -1343,7 +1343,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'wingspan-board-game',
     title: 'Wingspan board game',
-    blurb: 'The Wingspan board game, listed on Stonemaier Games’ official site. See the official page for editions and the current price.',
+    blurb: 'The Wingspan board game, from Stonemaier Games.',
     sourceName: 'Stonemaier Games',
     category: 'fun',
     groups: ["safety-prep"],
@@ -1358,7 +1358,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'nintendo-switch-2',
     title: 'Nintendo Switch 2',
-    blurb: 'The Nintendo Switch 2 system, listed on Nintendo’s official US store hardware page. See the official page for bundles, accessories, and the current price.',
+    blurb: 'The Nintendo Switch 2 system, from Nintendo hardware page.',
     sourceName: 'Nintendo',
     category: 'fun',
     alsoIn: ["tech"],
@@ -1374,7 +1374,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'mario-kart-world',
     title: 'Mario Kart World',
-    blurb: 'Mario Kart World, a Nintendo Switch 2 game listed on Nintendo’s official US store. See the official page for editions and the current price.',
+    blurb: 'Mario Kart World, a Nintendo Switch 2 game from Nintendo.',
     sourceName: 'Nintendo',
     category: 'fun',
     groups: ["safety-prep"],
@@ -1389,7 +1389,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'skydio-x10',
     title: 'Skydio X10',
-    blurb: 'Skydio’s X10 autonomous drone, listed on Skydio’s official site. See the official page for specs, programs, and how to inquire.',
+    blurb: 'Skydio’s X10 autonomous drone, from Skydio.',
     sourceName: 'Skydio',
     category: 'drones-robotics',
     alsoIn: ["tech"],
@@ -1405,7 +1405,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'rivian-r1s',
     title: 'Rivian R1S',
-    blurb: 'Rivian’s R1S electric SUV, listed on Rivian’s official site. Configuration and pricing are on the official site.',
+    blurb: 'Rivian’s R1S electric SUV, from Rivian.',
     sourceName: 'Rivian',
     category: 'vehicles',
     alsoIn: ["auto"],
@@ -1421,7 +1421,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'rivian-r1t',
     title: 'Rivian R1T',
-    blurb: 'Rivian’s R1T electric truck, listed on Rivian’s official site. Configuration and pricing are on the official site.',
+    blurb: 'Rivian’s R1T electric truck, from Rivian.',
     sourceName: 'Rivian',
     category: 'vehicles',
     alsoIn: ["auto"],
@@ -1437,7 +1437,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'ring-battery-doorbell-4k-pro',
     title: 'Ring Battery Doorbell 4K Pro',
-    blurb: 'A battery video doorbell listed on Ring’s official site as the Battery Doorbell 4K Pro (2nd generation). See the official page for features, subscription notes, and the current price.',
+    blurb: 'A battery video doorbell from Ring, the Battery Doorbell 4K Pro (2nd generation).',
     sourceName: 'Ring',
     category: 'security',
     alsoIn: ["home"],
@@ -1453,7 +1453,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'eufy-solocam-s340',
     title: 'eufy SoloCam S340',
-    blurb: 'A wireless outdoor security camera listed on eufy’s official US shop as the SoloCam S340. See the official page for features, power options, and the current price.',
+    blurb: 'A wireless outdoor security camera listed on eufy’s official US shop as the SoloCam S340.',
     sourceName: 'eufy',
     category: 'security',
     alsoIn: ["home"],
@@ -1469,7 +1469,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'google-nest-cam-indoor-wired-3rd-gen',
     title: 'Google Nest Cam Indoor (wired, 3rd gen)',
-    blurb: 'A wired indoor security camera listed on the Google Store as the Nest Cam Indoor (wired, 3rd gen). See the official page for features, subscription notes, and the current price.',
+    blurb: 'A wired indoor security camera listed on the Google Store as the Nest Cam Indoor (wired, 3rd gen).',
     sourceName: 'Google',
     category: 'security',
     alsoIn: ["home"],
@@ -1485,7 +1485,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'reolink-trackmix-wifi',
     title: 'Reolink TrackMix WiFi',
-    blurb: 'A 4K PTZ security camera with auto-tracking, listed on Reolink’s official site as the TrackMix WiFi. See the official page for features and the current price.',
+    blurb: 'A 4K PTZ security camera with auto-tracking, from Reolink, the TrackMix WiFi.',
     sourceName: 'Reolink',
     category: 'security',
     alsoIn: ["home"],
@@ -1501,7 +1501,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'harvest-right-countertop-360',
     title: 'Harvest Right Countertop 360 freeze dryer',
-    blurb: 'A home freeze dryer listed on Harvest Right’s official shop as the Countertop 360. See the official page for capacity, requirements, and the current price.',
+    blurb: 'A home freeze dryer from Harvest Right, the Countertop 360.',
     sourceName: 'Harvest Right',
     category: 'home',
     alsoIn: ["food"],
@@ -1517,7 +1517,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'milwaukee-2719-20',
     title: 'Milwaukee M18 FUEL Hackzall (2719-20)',
-    blurb: 'An M18 FUEL compact reciprocating saw listed on Milwaukee Tool’s official site as the Hackzall 2719-20 (tool only). See the official page for specs, kit options, and the current price.',
+    blurb: 'An M18 FUEL compact reciprocating saw from Milwaukee Tool, the Hackzall 2719-20 (tool only).',
     sourceName: 'Milwaukee Tool',
     category: 'tools',
     groups: ["outdoor-auto"],
@@ -1532,7 +1532,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'toyota-rav4-2027',
     title: '2027 Toyota RAV4',
-    blurb: 'The current Toyota RAV4, listed on Toyota’s official US site as the 2027 RAV4. Configuration, trims, and pricing are on the official site.',
+    blurb: 'The current Toyota RAV4, from Toyota, the 2027 RAV4.',
     sourceName: 'Toyota',
     category: 'vehicles',
     alsoIn: ["auto"],
@@ -1548,7 +1548,7 @@ export const highTicketItems: HighTicketItem[] = [
   {
     id: 'toyota-tundra-2027',
     title: '2027 Toyota Tundra',
-    blurb: 'The current Toyota Tundra, listed on Toyota’s official US site as the 2027 Tundra. Configuration, trims, and pricing are on the official site.',
+    blurb: 'The current Toyota Tundra, from Toyota, the 2027 Tundra.',
     sourceName: 'Toyota',
     category: 'vehicles',
     alsoIn: ["auto"],
@@ -1567,7 +1567,7 @@ export const highTicketItems: HighTicketItem[] = [
 highTicketItems.push({
   id: 'my-patriot-supply-generators',
   title: 'My Patriot Supply generators collection',
-  blurb: 'A collection of solar generators and backup power sold by this Idaho emergency-supply company. Compare capacity and what’s included on the official collection page.',
+  blurb: 'A collection of solar generators and backup power sold by this Idaho emergency-supply company.',
   sourceName: 'My Patriot Supply (Idaho)',
   category: 'power',
   groups: ['power-tech'],
@@ -1581,7 +1581,7 @@ highTicketItems.push({
 }, {
   id: 'camping-survival',
   title: 'Camping Survival',
-  blurb: 'Utah shop for camping and survival gear, from camp kitchen items to trail and emergency kit pieces. See current gear on their official page.',
+  blurb: 'Utah shop for camping and survival gear, from camp kitchen items to trail and emergency kit pieces.',
   sourceName: 'Camping Survival (Utah)',
   category: 'outdoor',
   groups: ['outdoor-auto'],
@@ -1595,7 +1595,7 @@ highTicketItems.push({
 }, {
   id: 'instafire',
   title: 'InstaFire fire starters',
-  blurb: 'Utah maker of fire starters for campfires and emergency use. See how to use them and what’s in each pack on the official page.',
+  blurb: 'Utah maker of fire starters for campfires and emergency use.',
   sourceName: 'InstaFire (Utah)',
   category: 'outdoor',
   alsoIn: ['tools'],

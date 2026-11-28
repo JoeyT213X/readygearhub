@@ -4,7 +4,7 @@ brand: "Bogs"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["winter boots", "women's boots", "cold weather"]
-description: "A women’s winter boot listed on Bogs’ official shop as the Arcata II Plaid."
+description: "A women’s winter boot from Bogs, the Arcata II Plaid."
 uses:
   - "A women’s winter boot for snow, slush, or wet cold"
   - "A winter boot for everyday cold-weather wear"

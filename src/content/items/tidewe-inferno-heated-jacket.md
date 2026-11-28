@@ -4,7 +4,7 @@ brand: "TideWe"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["heated jacket", "hunting apparel", "cold weather"]
-description: "A waterproof heated hunting jacket listed on TideWe’s official shop as the Inferno, with a battery pack and a camo hooded shell."
+description: "A waterproof heated hunting jacket from TideWe, the Inferno, with a battery pack and a camo hooded shell."
 uses:
   - "A heated outer layer for cold-weather work or a hunt"
   - "A waterproof shell when you need both warmth and weather protection"

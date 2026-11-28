@@ -4,7 +4,7 @@ brand: "Epic Water Filters"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep"]
 tags: ["water filter", "under-sink", "home filtration"]
-description: "An under-sink water filter listed on Epic’s official shop as the Smart Shield, an inline system that connects to a cold-water line and uses the existing faucet."
+description: "An under-sink water filter from Epic, the Smart Shield, an inline system that connects to a cold-water line and uses the existing faucet."
 uses:
   - "Filtered water from your existing kitchen faucet after a DIY under-sink install"
   - "A point-of-use option when you do not want a pitcher or a reverse-osmosis system"

@@ -4,7 +4,7 @@ brand: "TideWe"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["insulated waders", "rubber boots", "hunting"]
-description: "Insulated breathable chest waders listed on TideWe’s official shop as AquaWade Pro, with a waterproof bootfoot TideWe describes as 1,600-gram insulated."
+description: "Insulated breathable chest waders from TideWe, the AquaWade Pro, with a waterproof bootfoot TideWe describes as 1,600-gram insulated."
 uses:
   - "Cold-water hunting or wading when you want insulated built-in boots without a heated system"
   - "Wet, muddy ground where a waterproof bootfoot matters"

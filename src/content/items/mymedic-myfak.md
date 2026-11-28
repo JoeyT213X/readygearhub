@@ -4,7 +4,7 @@ brand: "My Medic"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "storm-hurricane-prep"]
 tags: ["first aid", "medical kit", "trauma kit"]
-description: "A durable first aid and trauma kit from My Medic. The official page describes it as a Cordura nylon kit with more than 100 first aid and trauma supplies; see the manufacturer for current configurations and contents."
+description: "A durable first aid and trauma kit from My Medic."
 uses:
   - "A comprehensive home, vehicle, or storm first aid kit"
   - "A trauma-capable kit to complement a smaller family bandage kit"

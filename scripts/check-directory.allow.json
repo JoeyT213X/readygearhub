@@ -1,114 +1,15 @@
 {
   "_readme": "Known findings owned by someone else, so the build stays green while they fix them. Each entry needs an owner and reason. Delete an entry when its data is fixed (check-directory.mjs prints a note for entries no longer needed). New findings are NOT covered and fail the build.",
-  "a-title": [
-    {
-      "key": "leatherman multi signal tool",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Same product listed twice (tracked Amazon twin or duplicate card). Product Studio brief item 2: one card per product, keep the tracked one, cross-list with alsoIn."
-    },
-    {
-      "key": "400 black diamond headlamp spot",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Same product listed twice (tracked Amazon twin or duplicate card). Product Studio brief item 2: one card per product, keep the tracked one, cross-list with alsoIn."
-    },
-    {
-      "key": "ring",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Same product listed twice (tracked Amazon twin or duplicate card). Product Studio brief item 2: one card per product, keep the tracked one, cross-list with alsoIn."
-    },
-    {
-      "key": "buddy heater heater mr portable",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Same product listed twice (tracked Amazon twin or duplicate card). Product Studio brief item 2: one card per product, keep the tracked one, cross-list with alsoIn."
-    }
-  ],
   "a-url": [
-    {
-      "key": "ring.com",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Cards share one link. Product Studio brief item 2: give each its own deep link or merge."
-    },
-    {
-      "key": "click.linksynergy.com/fs-bin/click",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Cards share one link. Product Studio brief item 2: give each its own deep link or merge."
-    },
     {
       "key": "rzmaf8trk.com/36r3j12/2ctpl",
       "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Cards share one link. Product Studio brief item 2: give each its own deep link or merge."
+      "reason": "My Patriot Supply cards share one tracked link (Everflow code, no per-product deep link yet). Give each card its own deep link or merge."
     },
     {
-      "key": "1password.com",
+      "key": "robotsinternational.com/partners/ref/fd9fabe4",
       "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Cards share one link. Product Studio brief item 2: give each its own deep link or merge."
-    }
-  ],
-  "b-plain-link": [
-    {
-      "key": "heat-one-room-safely-in-an-outage:mr-heater-portable-buddy",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "how-to-keep-pipes-from-freezing:black-diamond-spot-400",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "how-to-stay-warm-without-power:mr-heater-portable-buddy",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "hurricane-prep-guide-gulf-south:black-diamond-spot-400",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "power-outage-ice-storm-mississippi:mr-heater-portable-buddy",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "power-outage-ice-storm-mississippi:black-diamond-spot-400",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "storm-first-aid-kit:amk-mountain-series-explorer",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "winter-car-emergency-kit:black-diamond-spot-400",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "winter-power-outage-checklist:mr-heater-portable-buddy",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "winter-power-outage-checklist:black-diamond-spot-400",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "winter-storm-power-outage-prep-guide-south:black-diamond-spot-400",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "winter-storm-power-outage-prep-guide-south:mr-heater-portable-buddy",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
-    },
-    {
-      "key": "winter-storm-watch-vs-warning:black-diamond-spot-400",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "Guide points at the plain card while a tracked twin exists. Product Studio brief item 1: point guides at the tracked twin."
+      "reason": "11 Robots International cards use the one referral-code link (no deep link per product yet; program pending). Cards stay distinct products; revisit when per-product links exist."
     }
   ]
 }

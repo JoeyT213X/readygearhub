@@ -4,7 +4,7 @@ brand: "Bogs"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["winter boots", "kids' boots", "cold weather"]
-description: "A kid’s winter boot listed on Bogs’ official shop as the Snow Shell Boot in Cosmic Forest."
+description: "A kid’s winter boot from Bogs, the Snow Shell Boot in Cosmic Forest."
 uses:
   - "A kid’s winter boot for snow, slush, or wet cold"
   - "A lighter winter boot for everyday cold-weather wear"

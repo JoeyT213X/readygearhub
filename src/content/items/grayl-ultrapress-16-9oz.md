@@ -4,7 +4,7 @@ brand: "GRAYL"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep", "winter-storm-prep"]
 tags: ["water purifier", "emergency water", "travel"]
-description: "A compact press-and-drink purifier bottle from GRAYL. The official page says it treats 16.9 ounces of freshwater in about 10 seconds and is designed to remove viruses, bacteria, and protozoa, not only larger pathogens."
+description: "A compact press-and-drink purifier bottle from GRAYL."
 uses:
   - "Purify freshwater when a straw-style filter is not enough, including travel and emergency use"
   - "Keep a cup-holder-sized purifier at home or in a go-bag"

@@ -4,7 +4,7 @@ brand: "TideWe"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["heated vest", "hunting apparel", "cold weather"]
-description: "A double-sided fleece heated vest listed on TideWe’s official shop as ThermCore, sold as a mid layer with adjustable heat and a battery."
+description: "A double-sided fleece heated vest from TideWe, the ThermCore, sold as a mid layer with adjustable heat and a battery."
 uses:
   - "A heated mid layer under a shell when you want core warmth without a full jacket"
   - "Cold-weather hunting or outdoor work, according to TideWe"

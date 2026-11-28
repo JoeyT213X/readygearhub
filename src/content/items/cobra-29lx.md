@@ -4,7 +4,7 @@ brand: "Cobra Electronics"
 lane: vehicle-emergency-kits
 alsoIn: ["storm-hurricane-prep"]
 tags: ["CB radio", "comms", "overland"]
-description: "The Cobra 29 LX professional CB radio. See the official page for current features and installation notes."
+description: "The Cobra 29 LX professional CB radio."
 uses:
   - "A dashboard CB for long drives and overland trips"
   - "Vehicle-to-vehicle communication where cell coverage is thin"

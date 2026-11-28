@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "keychain", "tools"]
-description: "The Leatherman Micra is a compact keychain multi-tool. See the official page for the current tool list and warranty."
+description: "The Leatherman Micra is a compact keychain multi-tool."
 uses:
   - "A tiny keychain tool for everyday carry"
   - "A backup beside a full-size multi-tool"

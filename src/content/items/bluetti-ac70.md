@@ -4,7 +4,7 @@ brand: "BLUETTI"
 lane: home-backup-power-solar
 alsoIn: ["off-grid-power", "power-outage-kits", "storm-hurricane-prep"]
 tags: ["energy reserve", "battery backup", "solar ready"]
-description: "A compact LiFePO4 portable energy reserve from BLUETTI. The official page lists 768Wh of capacity, 1,000W rated output, solar input, and a 20ms UPS mode for keeping small essentials running indoors during an outage."
+description: "A compact LiFePO4 portable energy reserve from BLUETTI."
 uses:
   - "Indoor backup for phones, lights, a router, and other low-to-mid wattage devices"
   - "Pair with a compatible BLUETTI solar panel when the grid is down"

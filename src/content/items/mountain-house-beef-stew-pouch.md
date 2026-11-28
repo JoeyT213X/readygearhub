@@ -4,7 +4,7 @@ brand: "Mountain House"
 lane: winter-storm-prep
 alsoIn: ["storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["emergency food", "freeze-dried", "pouch"]
-description: "A freeze-dried beef stew pouch from Mountain House. See the official page for current ingredients, servings, prep directions, allergens, and stated shelf life."
+description: "A freeze-dried beef stew pouch from Mountain House."
 uses:
   - "A single meal for a short home outage or a go-bag"
   - "A way to try a Mountain House entrée before buying a larger kit"

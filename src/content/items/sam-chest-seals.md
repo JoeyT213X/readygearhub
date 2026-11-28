@@ -4,7 +4,7 @@ brand: "SAM Medical"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "storm-hurricane-prep"]
 tags: ["first aid", "chest seal", "trauma"]
-description: "SAM Chest Seals from SAM Medical, for trained use on open chest wounds. See the official page for the current product, instructions, and training notes."
+description: "SAM Chest Seals from SAM Medical, for trained use on open chest wounds."
 uses:
   - "A trauma-kit item for a vehicle or home after you get training"
   - "An add-on to a bleeding-control pouch"

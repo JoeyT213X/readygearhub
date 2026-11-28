@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "homestead-multi-purpose"]
 tags: ["shears", "rescue tool", "first aid"]
-description: "Leatherman Raptor Rescue shears and rescue tools, intended for emergency medical and rescue use. See the official page for the current tool list and intended users."
+description: "Leatherman Raptor Rescue shears and rescue tools, intended for emergency medical and rescue use."
 uses:
   - "Shears in a trauma or vehicle kit after you get training"
   - "An add-on for a professional or well-equipped household kit"

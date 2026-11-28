@@ -4,7 +4,7 @@ brand: "Adventure Medical Kits"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "storm-hurricane-prep"]
 tags: ["first aid", "tourniquet", "bleeding control"]
-description: "A trauma tourniquet sold by Adventure Medical Kits. See the official page for the current model, instructions, and training notes."
+description: "A trauma tourniquet sold by Adventure Medical Kits."
 uses:
   - "A bleeding-control item in a vehicle or home trauma kit"
   - "An add-on to a larger first aid kit after you get training"

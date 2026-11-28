@@ -4,7 +4,7 @@ brand: "Adventure Medical Kits"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "homestead-multi-purpose"]
 tags: ["first aid", "blister care"]
-description: "A dedicated blister-care kit from Adventure Medical Kits. See the official page for the current contents list."
+description: "A dedicated blister-care kit from Adventure Medical Kits."
 uses:
   - "Blister care on a hike, in a vehicle kit, or around the house"
   - "A compact add-on to a larger first aid kit"

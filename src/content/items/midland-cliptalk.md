@@ -4,7 +4,7 @@ brand: "Midland Radio"
 lane: homestead-multi-purpose
 alsoIn: ["storm-hurricane-prep"]
 tags: ["walkie talkie", "FRS", "comms"]
-description: "The Midland ClipTalk portable FRS radio. See the official page for current features. FRS radios do not need an FCC license in the United States."
+description: "The Midland ClipTalk portable FRS radio. FRS radios do not need an FCC license in the United States."
 uses:
   - "Short-range family communication when cell service is down"
   - "A compact radio you can clip on for around the house or a trail"

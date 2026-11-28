@@ -4,7 +4,7 @@ brand: "Midland Radio"
 lane: storm-hurricane-prep
 alsoIn: ["homestead-multi-purpose", "vehicle-emergency-kits"]
 tags: ["walkie talkie", "GMRS", "comms"]
-description: "The Midland GXT67 PRO GMRS 5-watt walkie-talkie. See the official page for current features and licensing notes. GMRS use in the United States requires an FCC license."
+description: "The Midland GXT67 PRO GMRS 5-watt walkie-talkie. GMRS use in the United States requires an FCC license."
 uses:
   - "Higher-power handheld GMRS communication when cell service is down"
   - "Outdoor, farm, or neighborhood check-ins"

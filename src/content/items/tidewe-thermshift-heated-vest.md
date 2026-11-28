@@ -4,7 +4,7 @@ brand: "TideWe"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["heated vest", "hunting apparel", "cold weather"]
-description: "A heated vest listed on TideWe’s official shop as ThermShift, sold for men and women as a low-profile mid layer with a battery pack."
+description: "A heated vest from TideWe, the ThermShift, sold for men and women as a low-profile mid layer with a battery pack."
 uses:
   - "A heated mid layer under a jacket when you want core warmth you can turn up or down"
   - "Cold-weather hunting or outdoor work, according to TideWe"

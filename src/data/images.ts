@@ -105,6 +105,12 @@ export const guidePhoto: Record<string, string> = {
   'winter-storm-watch-vs-warning': 'storm-barn',
   'tornado-watch-vs-warning-mississippi': 'lightning-road',
   'carbon-monoxide-safety-during-an-outage': 'portable-generator',
+  'generator-to-house-on-propane': 'portable-generator',
+  'home-water-filters-buyer-guide': 'hero-water-pour',
+  'lifepo4-batteries-diy-solar-backup': 'stock-solar-camp',
+  'outage-flashlights-and-headlamps': 'lantern-dusk',
+  'winter-boots-heated-wear-south': 'wool-socks-snow',
+  'long-term-food-buckets': 'prep-food-storage',
 };
 export const photoForGuide = (id: string, lane?: string) => guidePhoto[id] ?? (lane && lanePhoto[lane]) ?? 'gear-flatlay';
 export const photoForLane = (slug: string) => lanePhoto[slug] ?? 'gear-flatlay';

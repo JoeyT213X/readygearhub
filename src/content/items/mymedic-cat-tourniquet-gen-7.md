@@ -4,7 +4,7 @@ brand: "My Medic"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "storm-hurricane-prep"]
 tags: ["first aid", "tourniquet", "bleeding control"]
-description: "A Generation 7 Combat Application Tourniquet sold by My Medic. See the official page for the current model and instructions, and get training before you use one."
+description: "A Generation 7 Combat Application Tourniquet sold by My Medic."
 uses:
   - "A bleeding-control item in a vehicle or home trauma kit"
   - "An add-on to a first aid kit after hands-on training"

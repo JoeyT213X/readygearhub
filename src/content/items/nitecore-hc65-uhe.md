@@ -4,7 +4,7 @@ brand: "NITECORE"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits", "power-outage-kits"]
 tags: ["headlamp", "lighting", "tools"]
-description: "The NITECORE HC65 UHE USB-C rechargeable headlamp. See the official store page for current output claims, run-time, and charging notes."
+description: "The NITECORE HC65 UHE USB-C rechargeable headlamp."
 uses:
   - "Hands-free lighting during an outage or a repair"
   - "A kit or vehicle headlamp"

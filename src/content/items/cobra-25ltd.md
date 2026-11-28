@@ -4,7 +4,7 @@ brand: "Cobra Electronics"
 lane: vehicle-emergency-kits
 alsoIn: ["storm-hurricane-prep"]
 tags: ["CB radio", "comms"]
-description: "The Cobra 25 LTD classic CB radio. See the official page for current features and installation notes."
+description: "The Cobra 25 LTD classic CB radio."
 uses:
   - "A compact classic CB for a vehicle"
   - "Highway or rural communication when cell coverage is thin"

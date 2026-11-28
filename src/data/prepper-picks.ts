@@ -59,15 +59,15 @@ export type PrepperLane = {
 
 export const prepperLanes: PrepperLane[] = [
   { id: 'water', name: 'Water storage & filtration', blurb: 'Containers for stored water, plus filters and purifiers for drinking water at home or on the go.' },
-  { id: 'food', name: 'Long-term food', blurb: 'Shelf-stable meals for a 72-hour bag and a longer pantry. Check the official page for servings and storage life.' },
-  { id: 'power', name: 'Prepper power & solar', blurb: 'Portable batteries, a small generator, and a starter solar kit. Confirm output and fuel or recharge notes on the official page.' },
+  { id: 'food', name: 'Long-term food', blurb: 'Shelf-stable meals for a 72-hour bag and a longer pantry.' },
+  { id: 'power', name: 'Prepper power & solar', blurb: 'Portable batteries, a small generator, and a starter solar kit.' },
   { id: 'lighting', name: 'Lighting', blurb: 'Lanterns and headlamps you can use when the lights are out, without improvising with candles as your only option.' },
   { id: 'comms', name: 'Radios & comms', blurb: 'Weather radios, a hand-crank option, and a satellite messenger for places with no cell coverage.' },
   { id: 'first-aid', name: 'First aid & IFAK', blurb: 'A trauma-oriented individual kit, a family first-aid kit, and a well-known splint. Training matters as much as the contents.' },
   { id: 'fire-cooking', name: 'Fire & cooking', blurb: 'A camp stove, stormproof matches, and a skillet that works on a backyard burner or a camp stove.' },
   { id: 'shelter-warmth', name: 'Shelter & warmth', blurb: 'An emergency bivvy, a cold-weather sleeping bag, and a simple window insulator kit for a short outage.' },
   { id: 'tools', name: 'Tools', blurb: 'A multi-tool you will actually carry, plus a second well-known option if you want a spare in the kit.' },
-  { id: 'sanitation', name: 'Sanitation', blurb: 'A portable toilet and a pack-out toilet, for when household plumbing is out of service. Read the official pages for use and disposal notes.' },
+  { id: 'sanitation', name: 'Sanitation', blurb: 'A portable toilet and a pack-out toilet, for when household plumbing is out of service.' },
   { id: 'documents', name: 'Documents & cash', blurb: 'A printed household binder, a fire-resistant safe for paper copies, and official guidance on keeping some cash and records on hand.' },
 ];
 
@@ -98,7 +98,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-reliance-aqua-tainer',
     title: 'Reliance Aqua-Tainer water container',
-    blurb: 'A stackable jerrycan many households use to store drinking water. See the official page for capacity and current price.',
+    blurb: 'A stackable jerrycan many households use to store drinking water.',
     lane: 'water',
     sourceName: 'Reliance Outdoors',
     affiliateUrl: null,
@@ -112,7 +112,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-waterbob',
     title: 'waterBOB bathtub water storage',
-    blurb: 'A liner made to hold drinking water in a bathtub when a short-term outage or boil-water notice is expected. See the official page for capacity and use notes.',
+    blurb: 'A liner made to hold drinking water in a bathtub when a short-term outage or boil-water notice is expected.',
     lane: 'water',
     sourceName: 'waterBOB',
     affiliateUrl: null,
@@ -125,7 +125,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-sawyer-squeeze',
     title: 'Sawyer Squeeze water filter',
-    blurb: 'A well-known squeeze filter for drinking water from a bottle or pouch. Read the official page for what it is designed to remove, and for care notes.',
+    blurb: 'A well-known squeeze filter for drinking water from a bottle or pouch.',
     lane: 'water',
     sourceName: 'Sawyer',
     affiliateUrl: null,
@@ -138,7 +138,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-lifestraw-family',
     title: 'LifeStraw Family gravity purifier',
-    blurb: 'A gravity purifier sized for a household, useful when the tap is not safe to drink. Read the official page for what it is designed to treat.',
+    blurb: 'A gravity purifier sized for a household, useful when the tap is not safe to drink.',
     lane: 'water',
     sourceName: 'LifeStraw',
     affiliateUrl: null,
@@ -152,7 +152,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-datrex-water',
     title: 'Datrex emergency drinking water pouches',
-    blurb: 'Sealed water pouches often kept in a 72-hour bag or a vehicle kit. See the official page for pouch count and storage notes.',
+    blurb: 'Sealed water pouches often kept in a 72-hour bag or a vehicle kit.',
     lane: 'water',
     sourceName: 'Datrex',
     affiliateUrl: null,
@@ -167,7 +167,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-readywise-72',
     title: 'ReadyWise 72-hour food kit',
-    blurb: 'A short, shelf-stable kit sized for the first three days. Check the official page for servings, calories, and storage life.',
+    blurb: 'A short, shelf-stable kit sized for the first three days.',
     lane: 'food',
     sourceName: 'ReadyWise',
     affiliateUrl: null,
@@ -181,7 +181,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-augason-30',
     title: 'Augason Farms 30-day one-person food supply',
-    blurb: 'A one-month pantry kit for one person, a step toward a longer household supply. See the official page for servings and storage life.',
+    blurb: 'A one-month pantry kit for one person, a step toward a longer household supply.',
     lane: 'food',
     sourceName: 'Augason Farms',
     affiliateUrl: null,
@@ -195,7 +195,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-mountain-house-bucket',
     title: 'Mountain House classic meal assortment bucket',
-    blurb: 'Freeze-dried meals many people already know from camping, useful in a longer pantry. Check the official page for meal count and storage life.',
+    blurb: 'Freeze-dried meals many people already know from camping, useful in a longer pantry.',
     lane: 'food',
     sourceName: 'Mountain House',
     affiliateUrl: null,
@@ -208,7 +208,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-readywise-4-week',
     title: 'ReadyWise 4-week emergency food supply',
-    blurb: 'A longer shelf-stable supply listed as a four-week kit. See the official page for calories, servings, and storage life.',
+    blurb: 'A longer shelf-stable supply listed as a four-week kit.',
     lane: 'food',
     sourceName: 'ReadyWise',
     affiliateUrl: null,
@@ -223,7 +223,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-bluetti-elite-200-v2',
     title: 'BLUETTI Elite 200 V2',
-    blurb: 'A mid-size portable battery for lights, chargers, and a fridge during a short outage. See the official page for current output, capacity, and price.',
+    blurb: 'A mid-size portable battery for lights, chargers, and a fridge during a short outage.',
     lane: 'power',
     sourceName: 'BLUETTI',
     affiliateUrl: null,
@@ -238,7 +238,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-honda-eu2200i',
     title: 'Honda EU2200i inverter generator',
-    blurb: 'A well-known quiet inverter generator. Read Honda’s official page for output, fuel, and safe placement away from windows and doors.',
+    blurb: 'A well-known quiet inverter generator.',
     lane: 'power',
     sourceName: 'Honda',
     affiliateUrl: null,
@@ -252,7 +252,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-renogy-100w',
     title: 'Renogy 100W 12V solar panel kit',
-    blurb: 'A starter 100W solar kit for charging a compatible battery or energy reserve. Confirm compatibility and current price on the official page.',
+    blurb: 'A starter 100W solar kit for charging a compatible battery or energy reserve.',
     lane: 'power',
     sourceName: 'Renogy',
     affiliateUrl: null,
@@ -267,7 +267,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-goal-zero-lighthouse',
     title: 'Goal Zero Lighthouse 600 lantern',
-    blurb: 'A rechargeable lantern with a USB power hub, useful as a room light during an outage. See the official page for runtime and current price.',
+    blurb: 'A rechargeable lantern with a USB power hub, useful as a room light during an outage.',
     lane: 'lighting',
     sourceName: 'Goal Zero',
     affiliateUrl: null,
@@ -281,7 +281,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-black-diamond-spot-400',
     title: 'Black Diamond Spot 400 headlamp',
-    blurb: 'A well-known headlamp so you can keep both hands free. See the official page for output modes and current price.',
+    blurb: 'A well-known headlamp so you can keep both hands free.',
     lane: 'lighting',
     sourceName: 'Black Diamond',
     affiliateUrl: null,
@@ -296,7 +296,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-midland-er310',
     title: 'Midland ER310 emergency crank weather radio',
-    blurb: 'A hand-crank NOAA weather radio with a flashlight, useful when the power and maybe the phone network are down. See the official page for features and price.',
+    blurb: 'A hand-crank NOAA weather radio with a flashlight, useful when the power and maybe the phone network are down.',
     lane: 'comms',
     sourceName: 'Midland',
     affiliateUrl: null,
@@ -310,7 +310,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-garmin-inreach-mini-2',
     title: 'Garmin inReach Mini 2 satellite communicator',
-    blurb: 'A compact satellite messenger for two-way texts and SOS where there is no cell coverage. Read Garmin’s page for subscription plans and current price.',
+    blurb: 'A compact satellite messenger for two-way texts and SOS where there is no cell coverage.',
     lane: 'comms',
     sourceName: 'Garmin',
     affiliateUrl: null,
@@ -324,7 +324,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-midland-wr400',
     title: 'Midland WR400 NOAA weather alert radio',
-    blurb: 'A plug-in NOAA weather-alert radio for the house, so watches and warnings can come in even if you are not watching the news. See the official page for coverage notes and price.',
+    blurb: 'A plug-in NOAA weather-alert radio for the house, so watches and warnings can come in even if you are not watching the news.',
     lane: 'comms',
     sourceName: 'Midland',
     affiliateUrl: null,
@@ -339,7 +339,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-mymedic-myfak',
     title: 'My Medic MyFAK first aid and trauma kit',
-    blurb: 'An individual first-aid kit with trauma supplies. Training matters as much as the contents; see the official page for what is in the bag and current price.',
+    blurb: 'An individual first-aid kit with trauma supplies.',
     lane: 'first-aid',
     sourceName: 'My Medic',
     affiliateUrl: null,
@@ -353,7 +353,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-amk-family',
     title: 'Adventure Medical Kits family first aid kit',
-    blurb: 'A family-sized first-aid kit from a well-known maker. See the official page for the current contents list and price.',
+    blurb: 'A family-sized first-aid kit from a well-known maker.',
     lane: 'first-aid',
     sourceName: 'Adventure Medical Kits',
     affiliateUrl: null,
@@ -366,7 +366,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-sam-splint',
     title: 'SAM Splint',
-    blurb: 'A widely used reusable padded splint. See the official page for sizes and current price. This is not a substitute for first-aid training.',
+    blurb: 'A widely used reusable padded splint. This is not a substitute for first-aid training.',
     lane: 'first-aid',
     sourceName: 'SAM Medical',
     affiliateUrl: null,
@@ -395,7 +395,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-uco-matches',
     title: 'UCO stormproof match kit',
-    blurb: 'Stormproof matches in a case, a small, reliable way to start a stove or a fire. See the official page for count and current price.',
+    blurb: 'Stormproof matches in a case, a small, reliable way to start a stove or a fire.',
     lane: 'fire-cooking',
     sourceName: 'UCO',
     affiliateUrl: null,
@@ -408,7 +408,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-lodge-skillet',
     title: 'Lodge classic cast iron skillet',
-    blurb: 'A skillet that works on a camp stove or an outdoor burner. See the official page for sizes and current price.',
+    blurb: 'A skillet that works on a camp stove or an outdoor burner.',
     lane: 'fire-cooking',
     sourceName: 'Lodge',
     affiliateUrl: null,
@@ -423,7 +423,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-sol-bivvy',
     title: 'SOL emergency bivvy',
-    blurb: 'A compact emergency bivvy with a whistle, for an unexpected night out or a cold car wait. See the official page for specs and current price.',
+    blurb: 'A compact emergency bivvy with a whistle, for an unexpected night out or a cold car wait.',
     lane: 'shelter-warmth',
     sourceName: 'SOL (Survive Outdoors Longer)',
     affiliateUrl: null,
@@ -437,7 +437,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-teton-celsius',
     title: 'TETON Sports Celsius Regular 0°F sleeping bag',
-    blurb: 'A 0°F-rated sleeping bag many people keep for camping and for a cold house. See the official page for temperature rating, size, and price.',
+    blurb: 'A 0°F-rated sleeping bag many people keep for camping and for a cold house.',
     lane: 'shelter-warmth',
     sourceName: 'TETON Sports',
     affiliateUrl: null,
@@ -450,7 +450,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-3m-window-kit',
     title: '3M indoor window insulator kit',
-    blurb: 'A clear plastic insulator kit for drafty windows during a cold snap. See the official 3M page for kit size and installation notes.',
+    blurb: 'A clear plastic insulator kit for drafty windows during a cold snap.',
     lane: 'shelter-warmth',
     sourceName: '3M',
     affiliateUrl: null,
@@ -465,7 +465,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-leatherman-wave-plus',
     title: 'Leatherman Wave Plus multi-tool',
-    blurb: 'A well-known multi-tool that earns a place in a bag or a drawer. See the official page for tools included and current price.',
+    blurb: 'A well-known multi-tool that earns a place in a bag or a drawer.',
     lane: 'tools',
     sourceName: 'Leatherman',
     affiliateUrl: null,
@@ -479,7 +479,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-gerber-600',
     title: 'Gerber Multi-Plier 600',
-    blurb: 'A second well-known multi-tool, useful as a spare in a vehicle kit. See the official page for the current model and price.',
+    blurb: 'A second well-known multi-tool, useful as a spare in a vehicle kit.',
     lane: 'tools',
     sourceName: 'Gerber',
     affiliateUrl: null,
@@ -494,7 +494,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-luggable-loo',
     title: 'Reliance Luggable Loo portable toilet',
-    blurb: 'A 5-gallon portable toilet with a snap-on seat, for when household plumbing is out of service. See the official page for use and waste-bag compatibility.',
+    blurb: 'A 5-gallon portable toilet with a snap-on seat, for when household plumbing is out of service.',
     lane: 'sanitation',
     sourceName: 'Reliance Outdoors',
     affiliateUrl: null,
@@ -507,7 +507,7 @@ export const prepperPicks: PrepperPick[] = [
   {
     id: 'pick-cleanwaste-go-anywhere',
     title: 'Cleanwaste GO Anywhere portable toilet',
-    blurb: 'A folding portable toilet designed to be used with disposable toilet kits. Read the official page for use, disposal, and current price.',
+    blurb: 'A folding portable toilet designed to be used with disposable toilet kits.',
     lane: 'sanitation',
     sourceName: 'Cleanwaste',
     affiliateUrl: null,

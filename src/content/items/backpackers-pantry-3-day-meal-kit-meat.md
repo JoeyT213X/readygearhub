@@ -4,7 +4,7 @@ brand: "Backpacker's Pantry"
 lane: storm-hurricane-prep
 alsoIn: ["winter-storm-prep", "off-grid-power", "homestead-multi-purpose"]
 tags: ["emergency food", "meal kit", "camping food"]
-description: "A 3-day meal kit from Backpacker's Pantry that includes meat entrées. See the official page for the current menu, servings, and prep directions."
+description: "A 3-day meal kit from Backpacker's Pantry that includes meat entrées."
 uses:
   - "A compact three-day food kit for a bag or short outage"
   - "Camping or off-grid meals that do not need a fridge"

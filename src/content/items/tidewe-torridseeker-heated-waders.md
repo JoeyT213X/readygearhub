@@ -4,7 +4,7 @@ brand: "TideWe"
 lane: cold-weather-gear
 alsoIn: ["winter-storm-prep"]
 tags: ["heated waders", "insulated boots", "hunting"]
-description: "Heated chest waders listed on TideWe’s official shop as TorridSeeker, with a neoprene upper and an insulated rubber bootfoot."
+description: "Heated chest waders from TideWe, the TorridSeeker, with a neoprene upper and an insulated rubber bootfoot."
 uses:
   - "Cold-water hunting or wading when you want a heated chest wader with built-in boots"
   - "Wet, muddy ground where a waterproof bootfoot matters"

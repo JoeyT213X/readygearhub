@@ -4,7 +4,7 @@ brand: "Epic Water Filters"
 lane: emergency-water
 alsoIn: ["storm-hurricane-prep"]
 tags: ["water filter", "bottle", "travel"]
-description: "A filtered travel bottle listed on Epic’s official shop as the OG Ultimate Travel Bottle, a Nalgene bottle sold with a replaceable Epic filter."
+description: "A filtered travel bottle from Epic, the OG Ultimate Travel Bottle, a Nalgene bottle sold with a replaceable Epic filter."
 uses:
   - "Filtered drinking water on the go, including travel or a go-bag"
   - "A portable bottle when a pitcher or under-sink filter is not practical"

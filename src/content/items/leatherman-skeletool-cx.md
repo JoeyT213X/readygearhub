@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "lightweight", "tools"]
-description: "A lightweight Leatherman Skeletool CX multi-tool. See the official page for the current tool list, materials, and warranty."
+description: "A lightweight Leatherman Skeletool CX multi-tool."
 uses:
   - "A lighter multi-tool for a pocket or go-bag"
   - "Everyday cuts and repairs without a full-size tool"

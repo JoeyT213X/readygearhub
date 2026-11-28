@@ -5,7 +5,7 @@ lane: power-outage-kits
 season: ["winter"]
 published: 2026-11-16
 updated: 2026-11-27
-relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "black-diamond-spot-400", "goal-zero-lighthouse-600", "ecoflow-delta-3-plus", "mr-heater-portable-buddy", "sol-emergency-bivvy", "yaktrax-pro"]
+relatedItems: ["midland-er310-crank-radio", "eton-blackout-buddy-co", "black-diamond-spot-400", "goal-zero-lighthouse-600", "anker-solix-c1000x", "mr-heater-portable-buddy", "sol-emergency-bivvy", "yaktrax-pro"]
 draft: false
 ---
 
@@ -99,7 +99,7 @@ You don't need everything, but these cover the basics. Check each manufacturer's
 | Alerts without cell service | [Midland ER310 crank weather radio](/gear/midland-er310-crank-radio/) |
 | Hands-free light | [Black Diamond Spot 400 headlamp](/gear/black-diamond-spot-400/) |
 | Room light and USB charging | [Goal Zero Lighthouse 600 lantern](/gear/goal-zero-lighthouse-600/) |
-| Phones, router, lights, medical devices | [EcoFlow DELTA 3 Plus energy reserve](/gear/ecoflow-delta-3-plus/) or see our [energy reserve guide](/guides/how-to-pick-an-energy-reserve/) |
+| Phones, router, lights, medical devices | [Anker SOLIX C1000 energy reserve](/gear/anker-solix-c1000x/) or see our [energy reserve guide](/guides/how-to-pick-an-energy-reserve/) |
 | CO protection | [Eton Blackout Buddy CO detector](/gear/eton-blackout-buddy-co/) |
 | Extra warmth | [SOL Emergency Bivvy](/gear/sol-emergency-bivvy/) |
 

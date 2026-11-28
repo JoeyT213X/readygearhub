@@ -4,7 +4,7 @@ brand: "Adventure Medical Kits"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "storm-hurricane-prep"]
 tags: ["first aid", "medical kit", "family kit"]
-description: "A family first aid kit from Adventure Medical Kits, organized by injury, with a children's care booklet and a removable mini kit. The official page says it is sized for 1 to 4 people on a day outing."
+description: "A family first aid kit from Adventure Medical Kits, organized by injury, with a children's care booklet and a removable mini kit."
 uses:
   - "A household or day-trip first aid kit to keep with storm supplies"
   - "The removable mini kit can go in a glove box, stroller, or pocket, per AMK"

@@ -31,7 +31,8 @@ export type SourceCategoryId =
   | 'vehicles'
   | 'security'
   | 'doomsday-prepper'
-  | 'food';
+  | 'food'
+  | 'backup-power';
 
 export type SourceLinkLevel = 'product' | 'merchant' | 'own';
 
@@ -43,24 +44,35 @@ export type SourceCategory = {
   blurb: string;
   photo?: string;
   image?: string;
+  /** Planned subsections shown while a new category has no listings yet. */
+  subsections?: { name: string; blurb: string }[];
 };
 
 export const sourceCategories: SourceCategory[] = [
   { id: 'tech', slug: 'tech', name: 'Tech & Gadgets', short: 'Tech', blurb: 'Paid software and everyday tech from partner stores. Plans and prices are on the seller’s site.', photo: 'power-banks' },
-  { id: 'power', slug: 'power', name: 'Energy Reserves & Prepper Power', short: 'Energy Reserves', blurb: 'Energy reserves and solar from partner brands we already link. Check the official page for current capacity, output, and price.', photo: 'solar-rooftops' },
-  { id: 'home', slug: 'home', name: 'Home & Kitchen', short: 'Home', blurb: 'Filters and other home setups from approved partners. Read the official page for what a system does and does not treat, and for install notes.', photo: 'fireplace-living-room' },
+  { id: 'power', slug: 'power', name: 'Energy Reserves & Prepper Power', short: 'Energy Reserves', blurb: 'Energy reserves and solar from partner brands we already link.', photo: 'solar-rooftops' },
+  { id: 'home', slug: 'home', name: 'Home & Kitchen', short: 'Home', blurb: 'Filters and other home setups from approved partners.', photo: 'fireplace-living-room' },
   { id: 'water', slug: 'water', name: 'Water & Air', short: 'Water', blurb: 'Drinking-water filters and related gear from official partner shops.', photo: 'water-bottles' },
   { id: 'outdoor', slug: 'outdoor', name: 'Outdoor & Camping', short: 'Outdoor', blurb: 'Portable power that travels, plus outdoor retailers we are still waiting to add.', photo: 'lantern-dusk' },
-  { id: 'audio', slug: 'audio', name: 'Audio & Entertainment', short: 'Audio', blurb: 'Headphones, speakers, and home audio once pending audio partners are approved.', image: '/directory/covers/cat-audio.svg' },
+  { id: 'audio', slug: 'audio', name: 'Audio & Entertainment', short: 'Audio', blurb: 'Outage-ready audio: battery speakers and headphones for news, music and calm during a long night without power. Charge them before a storm, and keep a crank or battery radio for official alerts.', image: '/directory/covers/cat-audio.svg' },
   { id: 'tools', slug: 'tools', name: 'Tools & DIY', short: 'Tools', blurb: 'Tools, parts, and workshop supplies once pending tool partners are approved.', photo: 'multitools' },
   { id: 'auto', slug: 'auto', name: 'Car emergency', short: 'Car emergency', blurb: 'Vehicle and travel electronics once pending auto partners are approved.', photo: 'car-in-snow' },
-  { id: 'fun', slug: 'fun', name: 'Fun & Gifts', short: 'Fun', blurb: 'A place for gifts and just-for-fun finds as more partner stores come online.', image: '/directory/covers/cat-fun.svg' },
+  { id: 'fun', slug: 'fun', name: 'Fun & Gifts', short: 'Fun', blurb: 'Off-grid fun for when the power is out: card games, board games and gifts that need no outlet. A good way to keep kids and grown-ups calm through a long outage.', image: '/directory/covers/cat-fun.svg' },
   { id: 'safety', slug: 'safety', name: 'Safety & Prep', short: 'Safety', blurb: 'Ready kits and paid home plans from approved partners, described plainly.', photo: 'first-aid-kit-open' },
-  { id: 'drones-robotics', slug: 'drones-robotics', name: 'Drones & Robotics', short: 'Drones & Robotics', blurb: 'Faraday Future robot dogs, HOVERAir self-flying cameras and official Skydio drone pages. Specs and prices are on each maker’s or store’s page.', photo: 'hero-drone' },
-  { id: 'vehicles', slug: 'vehicles', name: 'Off-road & overland', short: 'Off-road & overland', blurb: 'Official pages for overland, off-road, and armored-style vehicles. Configuration and pricing are on the official site.', photo: 'hero-overland-truck' },
-  { id: 'security', slug: 'security', name: 'Security & shelters', short: 'Security', blurb: 'Official shelter and security-robotics pages. Specifications and how to inquire are on the official site.', photo: 'hero-bunker-hatch' },
+  { id: 'drones-robotics', slug: 'drones-robotics', name: 'Drones & Robotics', short: 'Drones & Robotics', blurb: 'Drones and robotics for the curious prepper: self-flying cameras for checking a roof or field after a storm, official Skydio drone pages, plus robot dogs from specialty stores. Follow FAA and local rules.', photo: 'hero-drone' },
+  { id: 'vehicles', slug: 'vehicles', name: 'Off-road & overland', short: 'Off-road & overland', blurb: 'Official pages for overland, off-road, and armored-style vehicles.', photo: 'hero-overland-truck' },
+  { id: 'security', slug: 'security', name: 'Security & shelters', short: 'Security', blurb: 'Official shelter and security-robotics pages.', photo: 'hero-bunker-hatch' },
   { id: 'doomsday-prepper', slug: 'doomsday-prepper', name: 'Doomsday Prepper', short: 'Doomsday Prepper', blurb: 'Serious preparedness, calmly laid out: shelters, extreme vehicles, perimeter security, air and water, long-term food, energy reserves, comms, medical and tools. U.S. makers first, allied makers next, official links only.', photo: 'hero-bunker-hatch' },
-  { id: 'food', slug: 'food', name: 'Food & pantry', short: 'Food', blurb: 'Shelf-stable kits and pantry supplies from brands we already list, plus official shops. Check the official page for servings, storage life, and price.', photo: 'hero-pantry-cans' },
+  { id: 'backup-power', slug: 'backup-power-propane', name: 'Backup Power & Propane', short: 'Backup Power', blurb: 'Generators, transfer switches and inlets, propane tanks, hoses and regulators, outdoor safety gear, and Energy Reserve home-backup kits. Anything wired into a home should be installed by a licensed electrician. Fuel-burning equipment always runs outdoors, at least 20 feet from the house.', photo: 'portable-generator',
+    subsections: [
+      { name: 'Generators', blurb: 'Portable, inverter, dual-fuel and tri-fuel generators. Always run outdoors, at least 20 feet from windows, doors and attached garages (Ready.gov and CPSC).' },
+      { name: 'Transfer switches & inlets', blurb: 'The safe way to connect a generator to home circuits, installed by a licensed electrician. Never backfeed through an outlet.' },
+      { name: 'Propane tanks', blurb: 'Refillable cylinders and larger tanks for heaters, stoves and dual-fuel generators. Store outdoors, upright. In Mississippi, permanent or larger installations need an L.C. Gas installer.' },
+      { name: 'Hoses & regulators', blurb: 'Extension hoses, adapters and regulators matched to your appliance’s fuel and pressure requirements.' },
+      { name: 'Outdoor safety', blurb: 'Carbon monoxide alarms, purpose-built running canopies, and a pad to keep a generator off wet ground.' },
+      { name: 'Energy Reserve home-backup', blurb: 'Home-backup Energy Reserves and the transfer kits made for them. These stay indoors; fuel generators still stay outside.' },
+    ] },
+  { id: 'food', slug: 'food', name: 'Food & pantry', short: 'Food', blurb: 'Shelf-stable kits and pantry supplies from brands we already list, plus official shops.', photo: 'hero-pantry-cans' },
 ];
 
 /** Broader home/directory groupings. Per-category pages stay at /directory/{slug}/. */
@@ -77,7 +89,7 @@ export type SourceGroup = {
 };
 
 export const sourceGroups: SourceGroup[] = [
-  { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar and everyday tech.', categories: ['power', 'tech', 'audio'], photo: 'solar-rooftops' },
+  { id: 'power-tech', name: 'Power & Tech', short: 'Power & Tech', blurb: 'Portable power, solar, everyday tech, and backup power for the house.', categories: ['power', 'tech', 'audio', 'backup-power'], photo: 'solar-rooftops' },
   { id: 'home-water', name: 'Home & Water', short: 'Home & Water', blurb: 'Drinking-water filters and home setups from approved partners.', categories: ['home', 'water'], photo: 'water-bottles' },
   { id: 'outdoor-auto', name: 'Outdoor & Auto', short: 'Outdoor & Auto', blurb: 'Gear for the trail, the shop, and the road, plus official vehicle shops.', categories: ['outdoor', 'auto', 'tools', 'vehicles'], photo: 'lantern-dusk' },
   { id: 'safety-prep', name: 'Safety & Prep', short: 'Safety & Prep', blurb: 'Ready kits, food stores, shelters, and official security pages, described plainly.', categories: ['safety', 'fun', 'security', 'food', 'drones-robotics', 'doomsday-prepper'], photo: 'first-aid-kit-open' },
@@ -135,7 +147,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-elite-200-v2',
     title: 'BLUETTI Elite 200 V2',
-    blurb: 'A mid-size portable battery listed as a popular pick on BLUETTI’s official US shop. See the official page for current specs and price.',
+    blurb: 'A mid-size portable battery listed as a popular pick on BLUETTI’s official US shop.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -151,7 +163,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-ac180',
     title: 'BLUETTI AC180',
-    blurb: 'A compact station we already list in the gear directory. Check BLUETTI for current output, capacity, and price.',
+    blurb: 'A compact station we already list in the gear directory.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -181,7 +193,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-ac2a',
     title: 'BLUETTI AC2A',
-    blurb: 'A small, travel-friendly battery for phones, lights, and light charging on the go. See BLUETTI for current details.',
+    blurb: 'A small, travel-friendly battery for phones, lights, and light charging on the go.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -197,7 +209,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-elite-100-v2',
     title: 'BLUETTI Elite 100 V2',
-    blurb: 'A smaller unit in BLUETTI’s current Elite line. Confirm capacity and price on the official page.',
+    blurb: 'A smaller unit in BLUETTI’s current Elite line.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -212,7 +224,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-ac70',
     title: 'BLUETTI AC70',
-    blurb: 'A mid-compact station already in our gear listings. The official page has current specs and price.',
+    blurb: 'A mid-compact station already in our gear listings.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -271,7 +283,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-elite-30-mini',
     title: 'BLUETTI Elite 30 mini',
-    blurb: 'A compact portable battery listed on BLUETTI’s official US shop. See the official page for current output, capacity, and price.',
+    blurb: 'A compact portable battery from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -285,7 +297,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-elite-100-mini',
     title: 'BLUETTI Elite 100 mini',
-    blurb: 'A mid-size portable battery listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    blurb: 'A mid-size portable battery from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -299,7 +311,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-elite-30-v2',
     title: 'BLUETTI Elite 30 V2',
-    blurb: 'A compact station listed on BLUETTI’s official US shop. Check the official page for current output, capacity, and price.',
+    blurb: 'A compact station from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -313,7 +325,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-elite-10-mini',
     title: 'BLUETTI Elite 10 Mini energy reserve',
-    blurb: 'A small grab-and-go battery listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    blurb: 'A small grab-and-go battery from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -327,7 +339,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-elite-400',
     title: 'BLUETTI Elite 400',
-    blurb: 'A larger portable battery listed on BLUETTI’s official US shop. See the official page for current capacity, output, and price.',
+    blurb: 'A larger portable battery from BLUETTI.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -340,7 +352,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-apex-300',
     title: 'BLUETTI Apex 300 versatile energy reserve',
-    blurb: 'A home battery backup listed on BLUETTI’s official US shop. Follow BLUETTI’s installation guidance, and check the official page for current specs and price.',
+    blurb: 'A home battery backup from BLUETTI.',
     category: 'power',
     alsoIn: ['home'],
     programId: 'bluetti',
@@ -354,7 +366,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-apex-200',
     title: 'BLUETTI Apex 200 versatile energy reserve',
-    blurb: 'An expandable energy reserve listed on BLUETTI’s official US shop. See the official page for current specs, expansion options, and price.',
+    blurb: 'An expandable energy reserve from BLUETTI.',
     category: 'power',
     alsoIn: ['home'],
     programId: 'bluetti',
@@ -368,7 +380,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-premium-100-v2',
     title: 'BLUETTI Premium 100 V2',
-    blurb: 'A portable battery listed on BLUETTI’s official US shop. See the official page for current output, capacity, and price.',
+    blurb: 'A portable battery from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -382,7 +394,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-premium-200-v2',
     title: 'BLUETTI Premium 200 V2',
-    blurb: 'A larger portable battery listed on BLUETTI’s official US shop. Check the official page for current specs and price.',
+    blurb: 'A larger portable battery from BLUETTI.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -395,7 +407,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-ac180p',
     title: 'BLUETTI AC180P',
-    blurb: 'A mid-size station listed on BLUETTI’s official US shop, in the same family as the AC180 we already list. See the official page for current specs and price.',
+    blurb: 'A mid-size station from BLUETTI, in the same family as the AC180 we already list.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -409,7 +421,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-ac200p-l',
     title: 'BLUETTI AC200P L',
-    blurb: 'A larger portable battery listed on BLUETTI’s official US shop. See the official page for current capacity, output, and price.',
+    blurb: 'A larger portable battery from BLUETTI.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -422,7 +434,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-ac50b',
     title: 'BLUETTI AC50B',
-    blurb: 'A compact portable battery listed on BLUETTI’s official US shop. Check the official page for current specs and price.',
+    blurb: 'A compact portable battery from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -436,7 +448,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-pioneer-na',
     title: 'BLUETTI Pioneer Na',
-    blurb: 'A sodium-ion portable battery listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    blurb: 'A sodium-ion portable battery from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -450,7 +462,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-bc200',
     title: 'BLUETTI BC200 battery',
-    blurb: 'A BLUETTI battery listed on the official US shop. See the official page for compatibility, capacity, and price.',
+    blurb: 'A BLUETTI battery listed on the official US shop.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -463,7 +475,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-fridgepower',
     title: 'BLUETTI FridgePower',
-    blurb: 'A fridge-focused battery backup listed on BLUETTI’s official US shop. See the official page for compatibility, runtime notes, and price.',
+    blurb: 'A fridge-focused battery backup from BLUETTI.',
     category: 'power',
     alsoIn: ['home'],
     programId: 'bluetti',
@@ -477,7 +489,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-b300k',
     title: 'BLUETTI B300K expansion battery',
-    blurb: 'An expansion battery listed for BLUETTI Apex systems. Confirm compatibility and current price on the official page.',
+    blurb: 'An expansion battery listed for BLUETTI Apex systems.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -490,7 +502,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-b210',
     title: 'BLUETTI B210 expansion battery',
-    blurb: 'An expansion battery listed on BLUETTI’s official US shop. Confirm compatibility and current price on the official page.',
+    blurb: 'An expansion battery from BLUETTI.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -503,7 +515,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-b1210',
     title: 'BLUETTI B1210 LiFePO4 battery',
-    blurb: 'A LiFePO4 battery listed on BLUETTI’s official US shop. See the official page for specs, compatibility, and price.',
+    blurb: 'A LiFePO4 battery from BLUETTI.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -516,7 +528,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-b4810',
     title: 'BLUETTI B4810 LiFePO4 battery',
-    blurb: 'A LiFePO4 battery listed on BLUETTI’s official US shop. See the official page for specs, compatibility, and price.',
+    blurb: 'A LiFePO4 battery from BLUETTI.',
     category: 'power',
     programId: 'bluetti',
     sourceName: 'BLUETTI',
@@ -529,7 +541,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-charger-1',
     title: 'BLUETTI Charger 1',
-    blurb: 'A BLUETTI charger listed on the official US shop. See the official page for compatibility and current price.',
+    blurb: 'A BLUETTI charger listed on the official US shop.',
     category: 'power',
     alsoIn: ['auto'],
     programId: 'bluetti',
@@ -543,7 +555,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-350w-solar',
     title: 'BLUETTI 350W solar panel',
-    blurb: 'A 350W solar panel listed on BLUETTI’s official US shop. Confirm compatibility with your station and current price on the official page.',
+    blurb: 'A 350W solar panel from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -557,7 +569,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-sora-60',
     title: 'BLUETTI SORA 60 solar panel',
-    blurb: 'A 60W solar panel listed on BLUETTI’s official US shop. See the official page for compatibility and current price.',
+    blurb: 'A 60W solar panel from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -571,7 +583,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-sp100l',
     title: 'BLUETTI SP100L solar panel',
-    blurb: 'A foldable 100W solar panel listed on BLUETTI’s official US shop. Confirm compatibility and current price on the official page.',
+    blurb: 'A foldable 100W solar panel from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -585,7 +597,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-x20',
     title: 'BLUETTI X20 power bank',
-    blurb: 'A portable power bank listed on BLUETTI’s official US shop. See the official page for current specs and price.',
+    blurb: 'A portable power bank from BLUETTI.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'bluetti',
@@ -599,7 +611,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bluetti-charger-2',
     title: 'BLUETTI Charger 2',
-    blurb: 'An alternator and solar charger listed on BLUETTI’s official US shop. See the official page for compatibility and current price.',
+    blurb: 'An alternator and solar charger from BLUETTI.',
     category: 'power',
     alsoIn: ['auto'],
     programId: 'bluetti',
@@ -615,7 +627,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'allpowers-s2000-pro',
     title: 'ALLPOWERS S2000 Pro',
-    blurb: 'A 2400W-class station listed among ALLPOWERS’ official US bestsellers. See the official page for current specs and price.',
+    blurb: 'A 2400W-class station listed among ALLPOWERS’ official US bestsellers.',
     category: 'power',
     programId: 'allpowers',
     sourceName: 'ALLPOWERS',
@@ -629,7 +641,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'allpowers-r2500-v2',
     title: 'ALLPOWERS R2500 V2',
-    blurb: 'A larger home-and-outdoor battery in ALLPOWERS’ current US catalog. Confirm details on the official product page.',
+    blurb: 'A larger home-and-outdoor battery in ALLPOWERS’ current US catalog.',
     category: 'power',
     programId: 'allpowers',
     sourceName: 'ALLPOWERS',
@@ -641,7 +653,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'allpowers-r600',
     title: 'ALLPOWERS R600',
-    blurb: 'A compact 600W-class station listed on ALLPOWERS’ official bestsellers page. See the official page for current price.',
+    blurb: 'A compact 600W-class station listed on ALLPOWERS’ official bestsellers page.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'allpowers',
@@ -654,7 +666,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'allpowers-volix-p300',
     title: 'ALLPOWERS VOLIX P300',
-    blurb: 'A small grab-and-go battery for light charging. Check ALLPOWERS for current capacity and price.',
+    blurb: 'A small grab-and-go battery for light charging.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'allpowers',
@@ -713,7 +725,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'anker-solix-c1000x-gen2',
     title: 'Anker SOLIX C1000 Gen 2',
-    blurb: 'A mid-size portable energy reserve listed by Anker SOLIX as the C1000 Gen 2, at 1,024Wh and 2,000W. See the official page for current output, ports, and price.',
+    blurb: 'A mid-size portable energy reserve listed by Anker SOLIX as the C1000 Gen 2, at 1,024Wh and 2,000W.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'anker-solix',
@@ -728,7 +740,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'anker-solix-c2000-gen2',
     title: 'Anker SOLIX C2000 Gen 2',
-    blurb: 'A portable energy reserve listed by Anker SOLIX as the C2000 Gen 2, at 2,048Wh and 2,400W. The station is also sold in a kit with a 400W panel. See the official page for current specs and price.',
+    blurb: 'A portable energy reserve listed by Anker SOLIX as the C2000 Gen 2, at 2,048Wh and 2,400W. The station is also sold in a kit with a 400W panel.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'anker-solix',
@@ -744,7 +756,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'anker-solix-bp2000-gen2',
     title: 'Anker SOLIX BP2000 expansion battery (Gen 2)',
-    blurb: 'An expansion battery listed by Anker SOLIX as the BP2000 (Gen 2), for the C2000 Gen 2 energy reserve. Confirm compatibility on the official page.',
+    blurb: 'An expansion battery listed by Anker SOLIX as the BP2000 (Gen 2), for the C2000 Gen 2 energy reserve.',
     category: 'power',
     programId: 'anker-solix',
     sourceName: 'Anker SOLIX',
@@ -759,7 +771,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'anker-solix-c300-dc-60w-kit',
     title: 'Anker SOLIX C300 DC solar generator + 60W solar panel',
-    blurb: 'A compact solar-generator kit listed on Anker SOLIX’s official shop: the C300 DC with a 60W solar panel. See the official page for what is in the kit, output, and ports.',
+    blurb: 'A compact solar-generator kit from Anker SOLIX: the C300 DC with a 60W solar panel.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'anker-solix',
@@ -792,7 +804,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-12v-100ah-group24',
     title: 'LiTime LiHeat 12V 100Ah Group 24 self-heating lithium battery',
-    blurb: 'A 12V 100Ah Group 24 lithium battery listed by LiTime as the LiHeat dual-mode self-heating model, for RV and similar 12V systems. See the official page for current specs.',
+    blurb: 'A 12V 100Ah Group 24 lithium battery listed by LiTime as the LiHeat dual-mode self-heating model, for RV and similar 12V systems.',
     category: 'power',
     alsoIn: ['outdoor', 'auto'],
     programId: 'litime',
@@ -808,7 +820,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-24v-230ah',
     title: 'LiTime LiHeat 24V 230Ah self-heating lithium battery',
-    blurb: 'A 24V 230Ah lithium battery listed by LiTime as the LiHeat dual-mode self-heating model, for RV and off-grid systems. See the official page for current specs.',
+    blurb: 'A 24V 230Ah lithium battery listed by LiTime as the LiHeat dual-mode self-heating model, for RV and off-grid systems.',
     category: 'power',
     alsoIn: ['outdoor', 'auto'],
     programId: 'litime',
@@ -824,7 +836,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-12v-100ah-trolling',
     title: 'LiTime 12V 100Ah TM lithium marine trolling-motor battery',
-    blurb: 'A 12V 100Ah lithium marine trolling-motor battery listed by LiTime with Bluetooth (LiFePO4). Confirm marine ratings and charging on the official page.',
+    blurb: 'A 12V 100Ah lithium marine trolling-motor battery listed by LiTime with Bluetooth (LiFePO4).',
     category: 'power',
     alsoIn: ['auto', 'outdoor'],
     programId: 'litime',
@@ -840,7 +852,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-diy-solar-generator-kit',
     title: 'LiTime DIY solar generator complete power kit',
-    blurb: 'A DIY solar generator kit listed by LiTime as a complete power kit for camping, RV, and off-grid living. Confirm what is in the kit on the official page.',
+    blurb: 'A DIY solar generator kit listed by LiTime as a complete power kit for camping, RV, and off-grid living.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'litime',
@@ -858,7 +870,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-12v-50ah',
     title: 'LiTime 12V 50Ah lithium battery',
-    blurb: 'A compact 12V 50Ah LiFePO4 battery listed by LiTime for RV, marine, and fish-finder use. A smaller option than the 100Ah models already listed. See the official page for current specs and pack sizes.',
+    blurb: 'A compact 12V 50Ah LiFePO4 battery listed by LiTime for RV, marine, and fish-finder use. A smaller option than the 100Ah models already listed.',
     category: 'power',
     alsoIn: ['outdoor', 'auto'],
     programId: 'litime',
@@ -873,7 +885,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-12v-200ah-bluetooth',
     title: 'LiTime 12V 200Ah Bluetooth lithium battery',
-    blurb: 'A 12V 200Ah LiFePO4 battery listed by LiTime with Bluetooth, for RV and marine house power. Confirm size, weight, and charging on the official page.',
+    blurb: 'A 12V 200Ah LiFePO4 battery listed by LiTime with Bluetooth, for RV and marine house power.',
     category: 'power',
     alsoIn: ['outdoor', 'auto'],
     programId: 'litime',
@@ -889,7 +901,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-1000w-12v-inverter',
     title: 'LiTime 1000W 12V pure sine wave inverter',
-    blurb: 'A 1000W 12V pure sine wave inverter listed by LiTime, for running household-style AC loads from a 12V battery bank. Confirm surge rating and installation on the official page.',
+    blurb: 'A 1000W 12V pure sine wave inverter listed by LiTime, for running household-style AC loads from a 12V battery bank.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'litime',
@@ -921,7 +933,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-30a-mppt',
     title: 'LiTime 30A MPPT solar charge controller',
-    blurb: 'A 30A MPPT solar charge controller listed by LiTime for 12V/24V systems, with Bluetooth. Confirm panel and battery compatibility on the official page.',
+    blurb: 'A 30A MPPT solar charge controller listed by LiTime for 12V/24V systems, with Bluetooth.',
     category: 'power',
     alsoIn: ['outdoor'],
     programId: 'litime',
@@ -937,7 +949,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-12v-10a-charger',
     title: 'LiTime 12V 10A LiFePO4 battery charger',
-    blurb: 'A 12V (14.6V) 10A LiFePO4 battery charger listed by LiTime for charging 12V lithium batteries from AC power. Confirm compatibility with your battery on the official page.',
+    blurb: 'A 12V (14.6V) 10A LiFePO4 battery charger listed by LiTime for charging 12V lithium batteries from AC power.',
     category: 'power',
     alsoIn: ['auto'],
     programId: 'litime',
@@ -953,7 +965,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'litime-12v-40a-dc-dc',
     title: 'LiTime 12V 40A DC-to-DC battery charger',
-    blurb: 'A 12V 40A DC-to-DC battery charger listed by LiTime, for charging a house battery from a vehicle alternator. Confirm wiring and alternator limits on the official page.',
+    blurb: 'A 12V 40A DC-to-DC battery charger listed by LiTime, for charging a house battery from a vehicle alternator.',
     category: 'power',
     alsoIn: ['auto', 'outdoor'],
     programId: 'litime',
@@ -967,11 +979,103 @@ export const sourceItems: SourceItem[] = [
     price: '$155.99 as of Nov 23, 2026',
   },
 
+  // ---- Power / outdoor: BougeRV (Awin 52765, approved Nov 26, 2026). Pages and Awin deep links checked Nov 27, 2026. ----
+  {
+    id: 'bougerv-12v-100ah-group24',
+    title: 'BougeRV 12V 100Ah Group 24 Solar LiFePO4 Battery',
+    blurb: 'A 12V 100Ah Group 24 LiFePO4 battery from BougeRV, sold for RV, camper, marine, camping and off-grid use. BougeRV says charging stops below 32°F.',
+    category: 'power',
+    alsoIn: ['outdoor', 'auto'],
+    programId: 'bougerv',
+    sourceName: 'BougeRV',
+    linkLevel: 'product',
+    destination: 'https://www.bougerv.com/products/100ah-lifepo4-battery',
+    useItemLink: true,
+    image: '/images/photos/stock-battery-bank-960.webp',
+    imageKind: 'photo',
+    offerLabel: 'Battery',
+  },
+  {
+    id: 'bougerv-100w-portable-solar-panel',
+    title: 'BougeRV New 100W Portable Solar Panel',
+    blurb: 'A foldable 100W portable solar panel from BougeRV. BougeRV lists an IP65 rating and adjustable kickstands, and describes it for outdoor use and charging devices.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bougerv',
+    sourceName: 'BougeRV',
+    linkLevel: 'product',
+    destination: 'https://www.bougerv.com/products/100w-portable-solar-panel',
+    useItemLink: true,
+    image: '/images/photos/stock-solar-camp-960.webp',
+    imageKind: 'photo',
+    offerLabel: 'Solar panel',
+  },
+  {
+    id: 'bougerv-200w-portable-solar-panel',
+    title: 'BougeRV New 200W Portable Solar Panel',
+    blurb: 'A foldable 200W portable solar panel from BougeRV. BougeRV lists an IP65 rating and a fiberglass surface, and describes it for outdoor use, including charging a car fridge and other devices.',
+    category: 'power',
+    alsoIn: ['outdoor'],
+    programId: 'bougerv',
+    sourceName: 'BougeRV',
+    linkLevel: 'product',
+    destination: 'https://www.bougerv.com/products/200w-portable-solar-panel',
+    useItemLink: true,
+    image: '/images/photos/stock-solar-panel-960.webp',
+    imageKind: 'photo',
+    offerLabel: 'Solar panel',
+  },
+  {
+    id: 'bougerv-sunflow-40a-mppt',
+    title: 'BougeRV Sunflow 40A MPPT Solar Charge Controller',
+    blurb: 'A 40A MPPT solar charge controller from BougeRV for 12V or 24V systems. BougeRV says it supports LiFePO4 and several lead-acid types, and can be monitored over Bluetooth.',
+    category: 'power',
+    alsoIn: ['outdoor', 'auto'],
+    programId: 'bougerv',
+    sourceName: 'BougeRV',
+    linkLevel: 'product',
+    destination: 'https://www.bougerv.com/products/sunflow-40a-mppt-solar-charge-controller',
+    useItemLink: true,
+    image: '/images/photos/stock-battery-bank-960.webp',
+    imageKind: 'photo',
+    offerLabel: 'Charge controller',
+  },
+  {
+    id: 'bougerv-2000w-12v-inverter',
+    title: 'BougeRV 2000W 12V Pure Sine Wave Inverter',
+    blurb: 'A 2000W 12V pure sine wave inverter from BougeRV, with Bluetooth monitoring, listed for RV, camping and off-grid systems. BougeRV also lists GFCI and other built-in protections.',
+    category: 'power',
+    alsoIn: ['outdoor', 'auto'],
+    programId: 'bougerv',
+    sourceName: 'BougeRV',
+    linkLevel: 'product',
+    destination: 'https://www.bougerv.com/products/2000w-12v-pure-sine-wave-inverter-with-bluetooth',
+    useItemLink: true,
+    image: '/images/photos/stock-battery-bank-960.webp',
+    imageKind: 'photo',
+    offerLabel: 'Inverter',
+  },
+  {
+    id: 'bougerv-crd2-43qt-dual-zone',
+    title: 'BougeRV New CRD2 V2.0 43QT Dual Zone 12V Portable Fridge',
+    blurb: 'A 43-quart dual-zone 12V portable fridge from BougeRV that can cool and freeze in separate compartments at the same time, with app temperature control. An optional 240Wh battery is sold separately.',
+    category: 'outdoor',
+    alsoIn: ['auto', 'home'],
+    programId: 'bougerv',
+    sourceName: 'BougeRV',
+    linkLevel: 'product',
+    destination: 'https://www.bougerv.com/products/dual-zone-portable-fridge-freezer',
+    useItemLink: true,
+    image: '/images/photos/hero-campsite-960.webp',
+    imageKind: 'photo',
+    offerLabel: 'Portable fridge',
+  },
+
   // ---- Outdoor lighting: Wuben (Awin 92053, approved Nov 23, 2026) ----
   {
     id: 'wuben-a1',
     title: 'Wuben A1 20,000-lumen portable spotlight',
-    blurb: 'A rechargeable portable spotlight listed by Wuben as 20,000 lumens, for long-throw outdoor lighting. See the official page for current output, run-time, and price.',
+    blurb: 'A rechargeable portable spotlight listed by Wuben as 20,000 lumens, for long-throw outdoor lighting.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -986,7 +1090,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-lightok-x1',
     title: 'Wuben Lightok X1 12,000-lumen EDC flashlight',
-    blurb: 'A rechargeable everyday-carry flashlight listed by Wuben as the Lightok X1, at 12,000 lumens. See the official page for current colors, availability, and price.',
+    blurb: 'A rechargeable everyday-carry flashlight listed by Wuben as the Lightok X1, at 12,000 lumens.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1001,7 +1105,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-a22',
     title: 'Wuben A22 4,500-lumen rechargeable flashlight',
-    blurb: 'A rechargeable flashlight listed by Wuben as 4,500 lumens. See the official page for current output, run-time, and price.',
+    blurb: 'A rechargeable flashlight listed by Wuben as 4,500 lumens.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1016,7 +1120,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-h1',
     title: 'Wuben H1 1,200-lumen rechargeable headlamp',
-    blurb: 'A rechargeable outdoor headlamp listed by Wuben as 1,200 lumens. Hands-free lighting for outages, a go-bag, or walking after dark. See the official page for current output, run-time, and price.',
+    blurb: 'A rechargeable outdoor headlamp listed by Wuben as 1,200 lumens. Hands-free lighting for outages, a go-bag, or walking after dark.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1031,7 +1135,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-e7',
     title: 'Wuben E7 1,800-lumen rechargeable headlamp',
-    blurb: 'A rechargeable headlamp listed by Wuben as 1,800 lumens. See the official page for current colors, output, and price.',
+    blurb: 'A rechargeable headlamp listed by Wuben as 1,800 lumens.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1046,7 +1150,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-lightok-x2',
     title: 'Wuben Lightok X2 2,500-lumen EDC flashlight',
-    blurb: 'A rechargeable everyday-carry flashlight listed by Wuben as the Lightok X2, at 2,500 lumens. See the official page for current colors, availability, and price.',
+    blurb: 'A rechargeable everyday-carry flashlight listed by Wuben as the Lightok X2, at 2,500 lumens.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1061,7 +1165,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-c2',
     title: 'Wuben C2 2,000-lumen EDC flashlight',
-    blurb: 'A rechargeable everyday-carry flashlight listed by Wuben as 2,000 lumens, with a power-bank function as described on Wuben’s page. A compact option for a go-bag or outage kit. See the official page for current details and price.',
+    blurb: 'A rechargeable everyday-carry flashlight listed by Wuben as 2,000 lumens, with a power-bank function as described on Wuben’s page. A compact option for a go-bag or outage kit.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1077,7 +1181,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-c3',
     title: 'Wuben C3 1,200-lumen compact EDC flashlight',
-    blurb: 'A compact rechargeable everyday-carry flashlight listed by Wuben as 1,200 lumens. A pocket-size option for a go-bag or outage kit. See the official page for current colors, output, and price.',
+    blurb: 'A compact rechargeable everyday-carry flashlight listed by Wuben as 1,200 lumens. A pocket-size option for a go-bag or outage kit.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1092,7 +1196,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-e12r',
     title: 'Wuben E12R 1,200-lumen power-bank flashlight',
-    blurb: 'A rechargeable flashlight listed by Wuben as 1,200 lumens, with a power-bank function as described on Wuben’s page. Useful when you want one tool for light and a phone top-up. See the official page for current details and price.',
+    blurb: 'A rechargeable flashlight listed by Wuben as 1,200 lumens, with a power-bank function as described on Wuben’s page. Useful when you want one tool for light and a phone top-up.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1107,7 +1211,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-f5',
     title: 'Wuben F5 rechargeable camping and tent light',
-    blurb: 'A rechargeable camping and tent light listed by Wuben, with a power-bank function as described on Wuben’s page. Soft area lighting for a tent, a room during an outage, or a campsite. See the official page for current details and price.',
+    blurb: 'A rechargeable camping and tent light listed by Wuben, with a power-bank function as described on Wuben’s page. Soft area lighting for a tent, a room during an outage, or a campsite.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1122,7 +1226,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-g5',
     title: 'Wuben G5 400-lumen keychain flashlight',
-    blurb: 'A compact rechargeable keychain flashlight listed by Wuben as 400 lumens. A small go-bag or everyday-carry light. See the official page for current colors, availability, and price.',
+    blurb: 'A compact rechargeable keychain flashlight listed by Wuben as 400 lumens. A small go-bag or everyday-carry light.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1137,7 +1241,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-x1-pro',
     title: 'Wuben X1 Pro 12,300-lumen flashlight',
-    blurb: 'A rechargeable flashlight listed by Wuben as the X1 Pro, at 12,300 lumens, with flood and spot beams. See the official page for current colors, output, and price.',
+    blurb: 'A rechargeable flashlight listed by Wuben as the X1 Pro, at 12,300 lumens, with flood and spot beams.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1152,7 +1256,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-x2-pro',
     title: 'Wuben X2 Pro+ 1,500-lumen magnetic EDC flashlight',
-    blurb: 'A rechargeable magnetic everyday-carry flashlight listed by Wuben as the X2 Pro+, at 1,500 lumens. See the official page for current colors, availability, and price.',
+    blurb: 'A rechargeable magnetic everyday-carry flashlight listed by Wuben as the X2 Pro+, at 1,500 lumens.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1167,7 +1271,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-h4',
     title: 'Wuben H4 rechargeable headlamp',
-    blurb: 'A rechargeable headlamp listed by Wuben. Hands-free lighting for outages, a go-bag, or walking after dark. See the official page for current output, run-time, and price.',
+    blurb: 'A rechargeable headlamp listed by Wuben. Hands-free lighting for outages, a go-bag, or walking after dark.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1182,7 +1286,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'wuben-lightok-x0',
     title: 'Wuben Lightok X0 1,100-lumen pocket flashlight',
-    blurb: 'A rechargeable pocket flashlight listed by Wuben as the Lightok X0, at 1,100 lumens. See the official page for current colors, availability, and price.',
+    blurb: 'A rechargeable pocket flashlight listed by Wuben as the Lightok X0, at 1,100 lumens.',
     category: 'outdoor',
     alsoIn: ['safety', 'tech'],
     programId: 'wuben',
@@ -1214,7 +1318,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-under-sink',
     title: 'Aquasana under-sink filters',
-    blurb: 'Under-sink systems for treating water at a single faucet. Read the official page for what a system does and does not remove, and for installation guidance.',
+    blurb: 'Under-sink systems for treating water at a single faucet.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1231,7 +1335,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-whole-house',
     title: 'Aquasana whole-house filters',
-    blurb: 'Whole-house systems installed at the home’s main water line. Read the official page for coverage, limits, and installation guidance.',
+    blurb: 'Whole-house systems installed at the home’s main water line.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1246,7 +1350,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-shop',
     title: 'Waterdrop Filter',
-    blurb: 'The official Waterdrop shop for drinking-water filters and related home systems. See their site for current models and prices.',
+    blurb: 'The official Waterdrop shop for drinking-water filters and related home systems.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'waterdrop',
@@ -1268,7 +1372,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-shower-chrome',
     title: 'Aquasana shower filter with chrome handheld wand',
-    blurb: 'A shower filter listed on Aquasana’s official shop. The link opens their site; see the official page for this model’s current specs, limits, and price.',
+    blurb: 'A shower filter from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1284,7 +1388,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-healthshield-ro-matte-black',
     title: 'Aquasana HealthShield reverse osmosis system, matte black',
-    blurb: 'A reverse osmosis system listed on Aquasana’s official shop. The link opens their site; read the official page for what it does and does not treat, install notes, and price.',
+    blurb: 'A reverse osmosis system from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1300,7 +1404,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-clean-water-machine-black',
     title: 'Aquasana Clean Water Machine countertop filter, black',
-    blurb: 'A countertop filter listed on Aquasana’s official shop. The link opens their site; see the official page for this model’s current specs, limits, and price.',
+    blurb: 'A countertop filter from Aquasana.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'aquasana',
@@ -1316,7 +1420,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-claryum-2stage-chrome',
     title: 'Aquasana Claryum 2-Stage under-sink filter, chrome',
-    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    blurb: 'An under-sink filter from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1332,7 +1436,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-claryum-3stage-maxflow-chrome',
     title: 'Aquasana Claryum 3-Stage Max Flow under-sink filter, chrome',
-    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; read the official page for flow, limits, and installation guidance.',
+    blurb: 'An under-sink filter from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1348,7 +1452,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-claryum-direct-connect',
     title: 'Aquasana Claryum Direct Connect under-sink filter',
-    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; see the official page for install notes, limits, and current price.',
+    blurb: 'An under-sink filter from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1364,7 +1468,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-salt-free-conditioner',
     title: 'Aquasana salt-free water conditioner',
-    blurb: 'A whole-house water conditioner listed on Aquasana’s official shop. The link opens their site; read the official page for coverage, limits, and installation guidance.',
+    blurb: 'A whole-house water conditioner from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1380,7 +1484,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-sediment-prefilter',
     title: 'Aquasana high sediment pre-filter for countertop diverter',
-    blurb: 'A sediment pre-filter listed on Aquasana’s official shop. The link opens their site; see the official page for compatibility and current price.',
+    blurb: 'A sediment pre-filter from Aquasana.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'aquasana',
@@ -1396,7 +1500,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-healthshield-whole-house',
     title: 'Aquasana HealthShield whole-house water filter',
-    blurb: 'A whole-house filter listed on Aquasana’s official shop. The link opens their site; read the official page for coverage, limits, and installation guidance.',
+    blurb: 'A whole-house filter from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1412,7 +1516,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'aquasana-claryum-2stage-matte-black',
     title: 'Aquasana Claryum 2-Stage under-sink filter, matte black',
-    blurb: 'An under-sink filter listed on Aquasana’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    blurb: 'An under-sink filter from Aquasana.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'aquasana',
@@ -1428,7 +1532,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-g3p800-black',
     title: 'Waterdrop G3P800 undersink tankless reverse osmosis system, black faucet',
-    blurb: 'An under-sink reverse osmosis system listed on Waterdrop’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    blurb: 'An under-sink reverse osmosis system from Waterdrop.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'waterdrop',
@@ -1444,7 +1548,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-elfin-pitcher',
     title: 'Waterdrop Elfin pitcher water filter PT-05',
-    blurb: 'A pitcher filter listed on Waterdrop’s official shop. The link opens their site; see the official page for this model’s current specs and price.',
+    blurb: 'A pitcher filter from Waterdrop.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'waterdrop',
@@ -1460,7 +1564,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-undersink-direct-connect',
     title: 'Waterdrop under-sink direct connect filtration system',
-    blurb: 'An under-sink filter listed on Waterdrop’s official shop. The link opens their site; see the official page for install notes, limits, and current price.',
+    blurb: 'An under-sink filter from Waterdrop.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'waterdrop',
@@ -1476,7 +1580,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-tsb-alk',
     title: 'Waterdrop TSB-ALK 3-stage under-sink water filter',
-    blurb: 'An under-sink filter listed on Waterdrop’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    blurb: 'An under-sink filter from Waterdrop.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'waterdrop',
@@ -1492,7 +1596,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-g3p800-replacement-filters',
     title: 'Waterdrop G3P800 RO system replacement filters',
-    blurb: 'Replacement filters listed for the G3P800 system on Waterdrop’s official shop. The link opens their site; confirm compatibility and current price on the official page.',
+    blurb: 'Replacement filters listed for the G3P800 system on Waterdrop’s official shop.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'waterdrop',
@@ -1508,7 +1612,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-g3p600-replacement-filters',
     title: 'Waterdrop G3P600 RO system replacement filters',
-    blurb: 'Replacement filters listed for the G3P600 system on Waterdrop’s official shop. The link opens their site; confirm compatibility and current price on the official page.',
+    blurb: 'Replacement filters listed for the G3P600 system on Waterdrop’s official shop.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'waterdrop',
@@ -1524,7 +1628,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-whf21-pg',
     title: 'Waterdrop WHF21-PG 5 micron 2-stage whole-house water filter',
-    blurb: 'A whole-house filter listed on Waterdrop’s official shop. The link opens their site; read the official page for coverage, limits, and installation guidance.',
+    blurb: 'A whole-house filter from Waterdrop.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'waterdrop',
@@ -1540,7 +1644,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-n1-replacement-filters',
     title: 'Waterdrop N1 countertop RO replacement filters',
-    blurb: 'Replacement filters listed for the N1 countertop RO system on Waterdrop’s official shop. The link opens their site; confirm compatibility and current price on the official page.',
+    blurb: 'Replacement filters listed for the N1 countertop RO system on Waterdrop’s official shop.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'waterdrop',
@@ -1556,7 +1660,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-as13',
     title: 'Waterdrop AS13 stainless steel direct connect under-sink filter',
-    blurb: 'An under-sink filter listed on Waterdrop’s official shop. The link opens their site; see the official page for install notes, limits, and current price.',
+    blurb: 'An under-sink filter from Waterdrop.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'waterdrop',
@@ -1572,7 +1676,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'waterdrop-g5p800a',
     title: 'Waterdrop G5P800A alkaline reverse osmosis system',
-    blurb: 'A reverse osmosis system listed on Waterdrop’s official shop. The link opens their site; read the official page for what it does and does not treat, and for installation guidance.',
+    blurb: 'A reverse osmosis system from Waterdrop.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'waterdrop',
@@ -1607,7 +1711,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-rcc7',
     title: 'iSpring RCC7 5-stage under-sink reverse osmosis system',
-    blurb: 'An under-sink reverse osmosis system listed on iSpring’s official shop as the RCC7, a 5-stage, 75 GPD unit with a brushed nickel faucet. iSpring also lists it as NSF certified. Read the official page for what it does and does not treat, install notes, and current price.',
+    blurb: 'An under-sink reverse osmosis system listed on iSpring’s official shop as the RCC7, a 5-stage, 75 GPD unit with a brushed nickel faucet. iSpring also lists it as NSF certified.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'ispring',
@@ -1624,7 +1728,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-rcc7ak',
     title: 'iSpring RCC7AK alkaline 6-stage under-sink reverse osmosis system',
-    blurb: 'An under-sink reverse osmosis system listed on iSpring’s official shop as the RCC7AK, a 6-stage, 75 GPD unit with an alkaline remineralization stage. iSpring also lists it as NSF certified. Read the official page for what it does and does not treat, install notes, and current price.',
+    blurb: 'An under-sink reverse osmosis system listed on iSpring’s official shop as the RCC7AK, a 6-stage, 75 GPD unit with an alkaline remineralization stage. iSpring also lists it as NSF certified.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'ispring',
@@ -1641,7 +1745,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-ro500',
     title: 'iSpring RO500-BN tankless reverse osmosis system',
-    blurb: 'A tankless under-sink reverse osmosis system listed on iSpring’s official shop as the RO500-BN, at 500 GPD, with a brushed nickel faucet. iSpring also lists it as NSF certified. Read the official page for flow, what it does and does not treat, install notes, and current price.',
+    blurb: 'A tankless under-sink reverse osmosis system listed on iSpring’s official shop as the RO500-BN, at 500 GPD, with a brushed nickel faucet. iSpring also lists it as NSF certified.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'ispring',
@@ -1658,7 +1762,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-rcd100',
     title: 'iSpring RCD100 countertop reverse osmosis dispenser',
-    blurb: 'A countertop reverse osmosis dispenser listed on iSpring’s official shop as the RCD100, a 5-stage, 100 GPD plug-in unit with an instant-hot option and UV stage. Read the official page for what it does and does not treat, how it is set up, and current price.',
+    blurb: 'A countertop reverse osmosis dispenser listed on iSpring’s official shop as the RCD100, a 5-stage, 100 GPD plug-in unit with an instant-hot option and UV stage.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'ispring',
@@ -1675,7 +1779,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-wgb21b',
     title: 'iSpring WGB21B 2-stage whole-house water filter',
-    blurb: 'A whole-house water filter listed on iSpring’s official shop as the WGB21B, a 2-stage system with 10" × 4.5" sediment and CTO carbon filters and 1" inlet/outlet ports. Read the official page for coverage, what it does and does not treat, installation guidance, and current price.',
+    blurb: 'A whole-house water filter from iSpring, the WGB21B: a 2-stage system with 10" × 4.5" sediment and CTO carbon filters and 1" inlet/outlet ports.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'ispring',
@@ -1692,7 +1796,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-wgb32b',
     title: 'iSpring WGB32B 3-stage whole-house water filter',
-    blurb: 'A whole-house water filter listed on iSpring’s official shop as the WGB32B, a 3-stage system with 20-inch sediment and carbon block filters. Read the official page for coverage, what it does and does not treat, installation guidance, and current price.',
+    blurb: 'A whole-house water filter listed on iSpring’s official shop as the WGB32B, a 3-stage system with 20-inch sediment and carbon block filters.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'ispring',
@@ -1709,7 +1813,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-sf2s',
     title: 'iSpring SF2S 33-stage shower filter',
-    blurb: 'A shower filter listed on iSpring’s official shop as the SF2S, a 33-stage universal shower-head filter with a replaceable cartridge. Read the official page for what it does and does not treat, fit, and current price.',
+    blurb: 'A shower filter listed on iSpring’s official shop as the SF2S, a 33-stage universal shower-head filter with a replaceable cartridge.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'ispring',
@@ -1726,7 +1830,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'ispring-df1',
     title: 'iSpring DF1 faucet-mount water filter',
-    blurb: 'A faucet-mount drinking-water filter listed on iSpring’s official shop as the DF1 Series, a carbon-block tap filter in chrome. Read the official page for compatibility, what it does and does not treat, and current price.',
+    blurb: 'A faucet-mount drinking-water filter listed on iSpring’s official shop as the DF1 Series, a carbon-block tap filter in chrome.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'ispring',
@@ -1744,7 +1848,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'epic-pure-xp-pitcher',
     title: 'Epic Pure XP water filter pitcher',
-    blurb: 'A countertop water filter pitcher listed on Epic’s official shop as the Pure XP. Epic’s page describes it as reducing fluoride, PFAS, and parasites. Prices varied by color. Read the official page for what it does and does not treat, filter life, and current price.',
+    blurb: 'A countertop water filter pitcher from Epic, the Pure XP. Epic’s page describes it as reducing fluoride, PFAS, and parasites.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'epic-water-filters',
@@ -1761,7 +1865,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'epic-nano-xp-pitcher',
     title: 'Epic Nano XP water filter pitcher',
-    blurb: 'A countertop water filter pitcher listed on Epic’s official shop as the Nano XP. Epic’s page describes it as reducing bacteria and PFAS. Read the official page for what it does and does not treat, filter life, and current price.',
+    blurb: 'A countertop water filter pitcher from Epic, the Nano XP. Epic’s page describes it as reducing bacteria and PFAS.',
     category: 'water',
     alsoIn: ['home'],
     programId: 'epic-water-filters',
@@ -1778,7 +1882,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'epic-smart-shield',
     title: 'Epic Smart Shield under-sink water filter',
-    blurb: 'An under-sink water filter listed on Epic’s official shop as the Smart Shield, an inline system that connects to a cold-water line and uses the existing faucet. Epic also lists IAPMO certification to NSF/ANSI 42, 53, and 401. Read the official page for what it does and does not treat, install notes, and current price.',
+    blurb: 'An under-sink water filter from Epic, the Smart Shield, an inline system that connects to a cold-water line and uses the existing faucet. Epic also lists IAPMO certification to NSF/ANSI 42, 53, and 401.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'epic-water-filters',
@@ -1795,7 +1899,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'epic-smart-shield-max',
     title: 'Epic Smart Shield Max under-sink water filter',
-    blurb: 'An under-sink water filter listed on Epic’s official shop as the Smart Shield Max, a three-stage system Epic describes as reducing PFAS, lead, and fluoride. Read the official page for what it does and does not treat, how it differs from the standard Smart Shield, install notes, and current price.',
+    blurb: 'An under-sink water filter from Epic, the Smart Shield Max, a three-stage system Epic describes as reducing PFAS, lead, and fluoride.',
     category: 'home',
     alsoIn: ['water'],
     programId: 'epic-water-filters',
@@ -1812,7 +1916,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'epic-og-ultimate-travel-bottle',
     title: 'Epic OG Ultimate Travel Bottle',
-    blurb: 'A filtered travel bottle listed on Epic’s official shop as the OG Ultimate Travel Bottle, a Nalgene bottle sold with a replaceable Epic filter. The 48 oz size was in stock when we checked; the 32 oz size was not. Read the official page for filter type, what it does and does not treat, and current price.',
+    blurb: 'A filtered travel bottle from Epic, the OG Ultimate Travel Bottle, a Nalgene bottle sold with a replaceable Epic filter.',
     category: 'water',
     alsoIn: ['outdoor'],
     programId: 'epic-water-filters',
@@ -1830,7 +1934,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'tidewe-inferno-heated-jacket',
     title: 'TideWe Inferno heated camo jacket',
-    blurb: 'A waterproof heated hunting jacket listed on TideWe’s official shop as the Inferno, sold with a battery pack. Official prices varied by size. Read the official page for heat settings, what’s in the box, sizing, and current price.',
+    blurb: 'A waterproof heated hunting jacket from TideWe, the Inferno, sold with a battery pack.',
     category: 'outdoor',
     programId: 'tidewe',
     sourceName: 'TideWe',
@@ -1846,7 +1950,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'tidewe-silentrace-heated-jacket',
     title: 'TideWe SilenTrace heated hunting jacket (2-piece set)',
-    blurb: 'A two-piece heated hunting jacket set listed on TideWe’s official shop as SilenTrace, with a camo outer layer and a heated base-layer piece. Read the official page for what is in the set, heat settings, sizing, and current price.',
+    blurb: 'A two-piece heated hunting jacket set from TideWe, the SilenTrace, with a camo outer layer and a heated base-layer piece.',
     category: 'outdoor',
     programId: 'tidewe',
     sourceName: 'TideWe',
@@ -1862,7 +1966,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'tidewe-thermcore-heated-vest',
     title: 'TideWe ThermCore heated hunting vest',
-    blurb: 'A double-sided fleece heated vest listed on TideWe’s official shop as ThermCore. Official prices varied by color. Men’s sizes were in stock when we checked; women’s Realtree Edge sizes were not. Read the official page for heat settings, sizing, and current price.',
+    blurb: 'A double-sided fleece heated vest from TideWe, the ThermCore.',
     category: 'outdoor',
     programId: 'tidewe',
     sourceName: 'TideWe',
@@ -1878,7 +1982,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'tidewe-thermshift-heated-vest',
     title: 'TideWe ThermShift heated vest',
-    blurb: 'A heated vest listed on TideWe’s official shop as ThermShift, sold for men and women with a battery pack. Official prices varied by gender, color, and size. Read the official page for heat settings, what is included, sizing, and current price.',
+    blurb: 'A heated vest from TideWe, the ThermShift, sold for men and women with a battery pack.',
     category: 'outdoor',
     programId: 'tidewe',
     sourceName: 'TideWe',
@@ -1894,7 +1998,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'tidewe-torridseeker-heated-waders',
     title: 'TideWe TorridSeeker heated waders',
-    blurb: 'Heated chest waders listed on TideWe’s official shop as TorridSeeker, with a neoprene upper and an insulated rubber bootfoot. Official prices varied by size and by whether a battery is included. All listed sizes were in stock when we checked. Read the official page for heat settings, boot insulation, sizing, and current price.',
+    blurb: 'Heated chest waders from TideWe, the TorridSeeker, with a neoprene upper and an insulated rubber bootfoot.',
     category: 'outdoor',
     programId: 'tidewe',
     sourceName: 'TideWe',
@@ -1910,7 +2014,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'tidewe-aquawade-pro-waders',
     title: 'TideWe AquaWade Pro insulated waders',
-    blurb: 'Insulated breathable chest waders listed on TideWe’s official shop as AquaWade Pro, with a waterproof bootfoot TideWe describes as 1,600-gram insulated. Official prices varied by camo pattern. Some sizes and one camo pattern were not in stock when we checked. Read the official page for insulation, sizing, and current price.',
+    blurb: 'Insulated breathable chest waders from TideWe, the AquaWade Pro, with a waterproof bootfoot TideWe describes as 1,600-gram insulated.',
     category: 'outdoor',
     programId: 'tidewe',
     sourceName: 'TideWe',
@@ -1928,7 +2032,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bogs-bozeman-ii-tall',
     title: 'Bogs Bozeman II Tall men\'s winter boots',
-    blurb: 'A tall men’s winter boot listed on Bogs’ official shop as the Bozeman II Tall. Read the official page for materials, sizing, and current price.',
+    blurb: 'A tall men’s winter boot from Bogs, the Bozeman II Tall.',
     category: 'outdoor',
     programId: 'bogs',
     sourceName: 'Bogs',
@@ -1943,7 +2047,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bogs-bozeman-ii-vibram-arctic-grip',
     title: 'Bogs Bozeman II Vibram Arctic Grip men\'s snow boot',
-    blurb: 'A men’s snow boot listed on Bogs’ official shop as the Bozeman II Vibram Arctic Grip. Read the official page for materials, sizing, and current price.',
+    blurb: 'A men’s snow boot from Bogs, the Bozeman II Vibram Arctic Grip.',
     category: 'outdoor',
     programId: 'bogs',
     sourceName: 'Bogs',
@@ -1958,7 +2062,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bogs-arcata-ii-lace',
     title: 'Bogs Arcata II Lace men\'s winter boots',
-    blurb: 'A lace-up men’s winter boot listed on Bogs’ official shop as the Arcata II Lace. Read the official page for materials, sizing, and current price.',
+    blurb: 'A lace-up men’s winter boot from Bogs, the Arcata II Lace.',
     category: 'outdoor',
     programId: 'bogs',
     sourceName: 'Bogs',
@@ -1973,7 +2077,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bogs-arcata-ii-plaid',
     title: 'Bogs Arcata II Plaid women\'s winter boots',
-    blurb: 'A women’s winter boot listed on Bogs’ official shop as the Arcata II Plaid. Read the official page for materials, sizing, and current price.',
+    blurb: 'A women’s winter boot from Bogs, the Arcata II Plaid.',
     category: 'outdoor',
     programId: 'bogs',
     sourceName: 'Bogs',
@@ -1988,7 +2092,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bogs-arcata-urban-ii-leather',
     title: 'Bogs Arcata Urban II Leather women\'s winter boots',
-    blurb: 'A women’s winter boot listed on Bogs’ official shop as the Arcata Urban II Leather. Read the official page for materials, sizing, and current price.',
+    blurb: 'A women’s winter boot from Bogs, the Arcata Urban II Leather.',
     category: 'outdoor',
     programId: 'bogs',
     sourceName: 'Bogs',
@@ -2003,7 +2107,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bogs-arcata-ii-dash-kids',
     title: 'Bogs Arcata II Dash kid\'s winter boots',
-    blurb: 'A kid’s winter boot listed on Bogs’ official shop as the Arcata II Dash. Read the official page for materials, sizing, and current price.',
+    blurb: 'A kid’s winter boot from Bogs, the Arcata II Dash.',
     category: 'outdoor',
     programId: 'bogs',
     sourceName: 'Bogs',
@@ -2018,7 +2122,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'bogs-snow-shell-cosmic-forest',
     title: 'Bogs Snow Shell Boot (Cosmic Forest) kids\' winter boots',
-    blurb: 'A kid’s winter boot listed on Bogs’ official shop as the Snow Shell Boot in Cosmic Forest. Read the official page for materials, sizing, and current price.',
+    blurb: 'A kid’s winter boot from Bogs, the Snow Shell Boot in Cosmic Forest.',
     category: 'outdoor',
     programId: 'bogs',
     sourceName: 'Bogs',
@@ -2034,7 +2138,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'berkey-shop',
     title: 'TheBerkey.com gravity filters',
-    blurb: 'Official retailer for Berkey gravity-fed drinking-water filters. See the shop for current models, replacement elements, and price.',
+    blurb: 'Official retailer for Berkey gravity-fed drinking-water filters.',
     category: 'water',
     programId: 'berkey',
     sourceName: 'TheBerkey.com',
@@ -2050,7 +2154,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'nordvpn',
     title: 'NordVPN',
-    blurb: 'A paid VPN subscription. Read the current plan length, price, and terms on NordVPN’s site before you sign up.',
+    blurb: 'A paid VPN subscription.',
     category: 'tech',
     programId: 'nordvpn',
     sourceName: 'NordVPN',
@@ -2066,7 +2170,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'nordpass',
     title: 'NordPass',
-    blurb: 'A paid password manager from Nord Security. Check the official page for current plans and prices.',
+    blurb: 'A paid password manager from Nord Security.',
     category: 'tech',
     programId: 'nordpass',
     sourceName: 'NordPass',
@@ -2080,7 +2184,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'surfshark',
     title: 'Surfshark',
-    blurb: 'A paid VPN subscription. See Surfshark’s official page for current plans, prices, and terms.',
+    blurb: 'A paid VPN subscription.',
     category: 'tech',
     programId: 'surfshark',
     sourceName: 'Surfshark',
@@ -2096,7 +2200,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'redi-shop',
     title: 'REDI emergency kits',
-    blurb: 'Ready-made emergency and readiness kits from REDI. See the official shop for what is in each kit and the current price.',
+    blurb: 'Ready-made emergency and readiness kits from REDI.',
     category: 'safety',
     programId: 'redi',
     sourceName: 'REDI',
@@ -2110,7 +2214,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'choice-home-warranty',
     title: 'Choice Home Warranty',
-    blurb: 'A paid monthly or yearly home warranty plan that can cover repair or replacement of major systems and appliances. Check the price and read the coverage terms before you sign up.',
+    blurb: 'A paid monthly or yearly home warranty plan that can cover repair or replacement of major systems and appliances.',
     category: 'safety',
     alsoIn: ['home'],
     programId: 'choice-home-warranty',
@@ -2127,7 +2231,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'redi-the-roadie',
     title: 'REDI The Roadie car emergency kit',
-    blurb: 'A car emergency kit listed on REDI’s official shop as The Roadie. See the official page for what’s included and the current price.',
+    blurb: 'A car emergency kit from REDI, The Roadie.',
     category: 'safety',
     alsoIn: ["auto"],
     programId: 'redi',
@@ -2144,7 +2248,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'redi-roadie-plus',
     title: 'REDI The Roadie PLUS car emergency kit',
-    blurb: 'A larger car emergency kit listed on REDI’s official shop as The Roadie PLUS, which includes a trauma pack. See the official page for what’s included and the current price.',
+    blurb: 'A larger car emergency kit from REDI, The Roadie PLUS, which includes a trauma pack.',
     category: 'safety',
     alsoIn: ["auto"],
     programId: 'redi',
@@ -2161,7 +2265,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'redi-roadie-pro',
     title: 'REDI The Roadie PRO roadside emergency kit',
-    blurb: 'A hard-case roadside emergency kit listed on REDI’s official shop as The Roadie PRO. See the official page for what’s included and the current price.',
+    blurb: 'A hard-case roadside emergency kit from REDI, The Roadie PRO.',
     category: 'safety',
     alsoIn: ["auto"],
     programId: 'redi',
@@ -2178,7 +2282,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'redi-trauma-pack',
     title: 'REDI The Trauma Pack',
-    blurb: 'A trauma-focused first-aid kit listed on REDI’s official shop as The Trauma Pack. See the official page for what’s included and the current price.',
+    blurb: 'A trauma-focused first-aid kit from REDI, The Trauma Pack.',
     category: 'safety',
     programId: 'redi',
     sourceName: 'REDI',
@@ -2194,7 +2298,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'berkey-big-berkey',
     title: 'Big Berkey gravity-fed water filter',
-    blurb: 'A gravity-fed drinking-water filter listed on TheBerkey.com as the Big Berkey, a 2.25-gallon system. Read the official page for what it does and does not treat, and for the current price.',
+    blurb: 'A gravity-fed drinking-water filter listed on TheBerkey.com as the Big Berkey, a 2.25-gallon system.',
     category: 'water',
     alsoIn: ["home"],
     programId: 'berkey',
@@ -2211,7 +2315,7 @@ export const sourceItems: SourceItem[] = [
   {
     id: 'berkey-travel-berkey',
     title: 'Travel Berkey gravity-fed water filter',
-    blurb: 'A smaller gravity-fed drinking-water filter listed on TheBerkey.com as the Travel Berkey, a 1.5-gallon system. Read the official page for what it does and does not treat, and for the current price.',
+    blurb: 'A smaller gravity-fed drinking-water filter listed on TheBerkey.com as the Travel Berkey, a 1.5-gallon system.',
     category: 'water',
     alsoIn: ["home", "outdoor"],
     programId: 'berkey',

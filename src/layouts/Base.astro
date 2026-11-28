@@ -10,7 +10,7 @@ import Analytics from '../components/Analytics.astro';
 import FunnelGuards from '../components/FunnelGuards.astro';
 import VisitorTicker from '../components/VisitorTicker.astro';
 import { getCollection } from 'astro:content';
-interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean; pageClass?: string; footerSignup?: boolean }
+interface Props { title: string; description: string; image?: string; type?: string; schema?: object | object[]; noindex?: boolean; pageClass?: string; /** false on pages that already show their own sign-up box, so a page never has two. */ footerSignup?: boolean }
 const { title, description, image = '/og-default.png', type = 'website', schema, noindex = false, pageClass, footerSignup = true } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(image, Astro.site).href;

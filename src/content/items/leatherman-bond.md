@@ -4,7 +4,7 @@ brand: "Leatherman"
 lane: homestead-multi-purpose
 alsoIn: ["vehicle-emergency-kits"]
 tags: ["multi-tool", "tools"]
-description: "The Leatherman Bond multi-tool, a simpler full-size model. See the official page for the current tool list and warranty."
+description: "The Leatherman Bond multi-tool, a simpler full-size model."
 uses:
   - "A straightforward multi-tool for a kit"
   - "Home and field repairs"

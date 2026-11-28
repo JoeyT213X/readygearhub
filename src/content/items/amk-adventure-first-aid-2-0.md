@@ -4,7 +4,7 @@ brand: "Adventure Medical Kits"
 lane: first-aid-medical-prep
 alsoIn: ["vehicle-emergency-kits", "storm-hurricane-prep", "homestead-multi-purpose"]
 tags: ["first aid", "medical kit"]
-description: "A compact Adventure First Aid 2.0 kit from Adventure Medical Kits. See the official page for the current contents list and intended group size."
+description: "A compact Adventure First Aid 2.0 kit from Adventure Medical Kits."
 uses:
   - "A small first aid kit for a day hike or a vehicle"
   - "A starting home or storm kit you can add to"
