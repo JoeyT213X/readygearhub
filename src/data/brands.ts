@@ -135,7 +135,7 @@ export const brandPages: BrandPage[] = [
       { id: 'litime-12v-200ah-bluetooth', why: 'A larger 12V 200Ah Bluetooth battery for RV or marine house power, when you want more capacity than the 100Ah models.', check: 'The battery’s size and weight against your space, and charging details on LiTime’s page.' },
       { id: 'litime-2000w-12v-inverter-ats', why: 'A 2000W 12V pure sine inverter with a 20ms automatic transfer switch, listed for switching a load to battery power during an outage.', check: 'Installation guidance, your battery bank’s continuous output, and whether you need this much inverter capacity.' },
     ],
-    priceNote: 'Prices are the sale prices LiTime showed on each product page on Nov 23, 2026. LiTime runs frequent promotions and prices change, so confirm the current price on its page.',
+    priceNote: 'Each price is what LiTime listed on the date shown with it. LiTime runs frequent promotions and prices change, so confirm the current price on its page.',
     choose: [
       { title: 'Know your system voltage', text: 'Most RVs and boats use 12V. Some larger systems use 24V. Everything in the bank, from batteries to charger to inverter, has to match.' },
       { title: 'Estimate the energy you need', text: 'Volts times amp-hours gives a rough watt-hour figure. By that math, 12V × 100Ah is about 1,200Wh and 24V × 230Ah is about 5,520Wh, before real-world losses.' },

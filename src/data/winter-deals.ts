@@ -29,37 +29,37 @@ export const winterDealSections: { id: WinterDealSection; title: string; intro: 
     id: 'lights',
     title: 'Lights for outages and dark winter work',
     intro:
-      'Flashlights and a headlamp from Wuben, an approved partner. These official-store prices were marked down when we checked them on November 23, 2026. The compare-at figures come from Wuben’s own product pages.',
+      'Flashlights and a headlamp from Wuben, an approved partner. Each card shows Wuben’s official-store price and the date we checked it. We only call a price marked down when the store’s own page shows both a list price and a sale price.',
   },
   {
     id: 'power',
     title: 'Backup power for a winter outage',
     intro:
-      'Energy reserves from Anker SOLIX and BLUETTI, both approved partners. These are not the week’s Amazon best-seller list; they are the winter-outage gear we can actually send you to with a working partner link. Prices below are the official-store prices we read on November 23, 2026. We only mention a discount when the official page showed one.',
+      'Energy reserves from Anker SOLIX and BLUETTI, both approved partners. These are not the week’s Amazon best-seller list; they are the winter-outage gear we can actually send you to with a working partner link. Each card shows the official-store price and the date we checked it. We only mention a discount when the official page showed one.',
   },
   {
     id: 'cold',
     title: 'A self-heating battery for cold weather',
     intro:
-      'LiTime’s LiHeat battery is built to warm itself in the cold, according to LiTime. We could not confirm a live price on November 23, 2026, so this card says “Price on the store page.”',
+      'LiTime’s LiHeat battery is built to warm itself in the cold, according to LiTime. We could not confirm a live price when we checked, so this card says “Price on the store page.”',
   },
   {
     id: 'water',
     title: 'Drinking water if pipes or supply are a problem',
     intro:
-      'A countertop iSpring dispenser does not require under-sink plumbing, which can matter if a freeze has you thinking about water at home. We could not confirm a live price on November 23, 2026, so this card says “Price on the store page.”',
+      'A countertop iSpring dispenser does not require under-sink plumbing, which can matter if a freeze has you thinking about water at home. We could not confirm a live price when we checked, so this card says “Price on the store page.”',
   },
   {
     id: 'apparel',
     title: 'Heated apparel and insulated waders',
     intro:
-      'Heated jackets, heated vests, and insulated bootfoot waders from TideWe, an approved partner. Official-store prices were read on November 24, 2026. When a product has more than one price by size, color, or whether a battery is included, we show the starting price. TideWe’s 16-inch rubber hunting boots were not in stock, so we listed insulated bootfoot waders instead.',
+      'Heated jackets, heated vests, and insulated bootfoot waders from TideWe, an approved partner. Each card shows the official-store price and the date we checked it. When a product has more than one price by size, color, or whether a battery is included, the price shown can differ from the one for your option. TideWe’s 16-inch rubber hunting boots were not in stock, so we listed insulated bootfoot waders instead.',
   },
   {
     id: 'boots',
     title: 'Winter boots for snow, ice, and wet cold',
     intro:
-      'Winter boots from Bogs, an approved partner. The prices below are the regular list prices on Bogs’ official store as of November 25, 2026. We are not listing sale prices or promo codes.',
+      'Winter boots from Bogs, an approved partner. The prices below are the regular list prices on Bogs’ official store, each with the date we checked it. We are not listing sale prices or promo codes.',
   },
   {
     id: 'warmth',
@@ -277,81 +277,81 @@ export const winterDealSources: { title: string; href: string; note: string }[] 
   {
     title: 'Anker SOLIX official C2000 Gen 2 product page',
     href: 'https://www.ankersolix.com/products/c2000-gen2',
-    note: 'Official store price $849.99, listed as a preorder, checked November 23, 2026.',
+    note: 'Official product page, listed as a preorder when checked. The price and the date it was checked are on its card above.',
   },
   {
     title: 'BLUETTI official AC180 product page',
     href: 'https://www.bluettipower.com/products/ac180',
-    note: 'Official store price $549.00, in stock, checked November 23, 2026.',
+    note: 'Official product page, in stock when checked. The price and the date it was checked are on its card above.',
   },
   {
     title: 'Wubenlight official product pages',
     href: 'https://www.wubenlight.com/',
-    note: 'C3, H4, F5, C2, and E12R sale prices above were read from each product’s official page on November 23, 2026.',
+    note: 'Prices for the C3, H4, F5, C2 and E12R come from each product’s official page. Each card above shows its price and the date it was checked, or “Price on the store page” where none was confirmed.',
   },
   {
     title: 'TideWe official Inferno product page',
     href: 'https://www.tidewe.com/products/inferno-mens-camo-heated-hunting-jacket-with-battery-pack',
-    note: 'Official store starting price $144.99, all listed sizes in stock, checked November 24, 2026.',
+    note: 'Official product page, all listed sizes in stock when checked. The price and the date it was checked are on its card above.',
   },
   {
     title: 'TideWe official SilenTrace product page',
     href: 'https://www.tidewe.com/products/silentrace-heated-hunting-jacket',
-    note: 'Official store price $159.99, in stock, checked November 24, 2026.',
+    note: 'Official product page, in stock when checked. The price and the date it was checked are on its card above.',
   },
   {
     title: 'TideWe official ThermCore product page',
     href: 'https://www.tidewe.com/products/heated-vest-double-sided-polar-fleece-hunting-vest-all-gender',
-    note: 'Official store starting price $99.99, men’s sizes in stock, checked November 24, 2026.',
+    note: 'Official product page, men’s sizes in stock when checked. The price and the date it was checked are on its card above.',
   },
   {
     title: 'TideWe official ThermShift product page',
     href: 'https://www.tidewe.com/products/tidewe-heated-vest-with-battery-pack-lightweight-and-washable-vest',
-    note: 'Official store starting price $108.00, most sizes in stock, checked November 24, 2026.',
+    note: 'Official product page, most sizes in stock when checked. The price and the date it was checked are on its card above.',
   },
   {
     title: 'TideWe official TorridSeeker product page',
     href: 'https://www.tidewe.com/products/tidewe-hunting-chest-waders-heated-with-800g-insulation-neoprene-duck-wader-for-men-realtree-max5-camo-waterproof-fishing-waders-size-7-14',
-    note: 'Official store starting price $149.99, all listed sizes in stock, checked November 24, 2026.',
+    note: 'Official product page, all listed sizes in stock when checked. The price and the date it was checked are on its card above.',
   },
   {
     title: 'TideWe official AquaWade Pro product page',
     href: 'https://www.tidewe.com/products/tidewe-breathable-insulated-chest-waders-1600g-waterproof-bootfoot-duck-hunting-waders-with-steel-shank-boots',
-    note: 'Official store starting price $239.99, some sizes in stock, checked November 24, 2026.',
+    note: 'Official product page, some sizes in stock when checked. The price and the date it was checked are on its card above.',
   },  {
     title: 'Bogs official Bozeman II Tall product page',
     href: 'https://www.bogsfootwear.com/shop/style/73452-001.html',
-    note: 'Regular list price $185, checked November 25, 2026 on the official page.',
+    note: 'Regular list price on the official page. The price and the date it was checked are on its card above.',
   },
   {
     title: 'Bogs official Bozeman II Vibram Arctic Grip product page',
     href: 'https://www.bogsfootwear.com/shop/style/73421-001.html',
-    note: 'Regular list price $220, checked November 25, 2026 on the official page.',
+    note: 'Regular list price on the official page. The price and the date it was checked are on its card above.',
   },
   {
     title: 'Bogs official Arcata II Lace product page',
     href: 'https://www.bogsfootwear.com/shop/style/73589-001.html',
-    note: 'Regular list price $180, checked November 25, 2026 on the official page.',
+    note: 'Regular list price on the official page. The price and the date it was checked are on its card above.',
   },
   {
     title: 'Bogs official Arcata II Plaid product page',
     href: 'https://www.bogsfootwear.com/shop/style/73597-302.html',
-    note: 'Regular list price $185, checked November 25, 2026 on the official page.',
+    note: 'Regular list price on the official page. The price and the date it was checked are on its card above.',
   },
   {
     title: 'Bogs official Arcata Urban II Leather product page',
     href: 'https://www.bogsfootwear.com/shop/style/73592-009.html',
-    note: 'Regular list price $165, checked November 25, 2026 on the official page.',
+    note: 'Regular list price on the official page. The price and the date it was checked are on its card above.',
   },
   {
     title: 'Bogs official Arcata II Dash product page',
     href: 'https://www.bogsfootwear.com/shop/style/73118-001.html',
-    note: 'Regular list price $125, checked November 25, 2026 on the official page.',
+    note: 'Regular list price on the official page. The price and the date it was checked are on its card above.',
   },
   {
     title: 'Bogs official Snow Shell Boot (Cosmic Forest) product page',
     href: 'https://www.bogsfootwear.com/shop/style/73377-409.html',
-    note: 'Regular list price $75, checked November 25, 2026 on the official page.',
+    note: 'Regular list price on the official page. The price and the date it was checked are on its card above.',
   },
 ];
 
