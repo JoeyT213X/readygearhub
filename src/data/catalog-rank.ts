@@ -36,6 +36,7 @@ export type RankableItem = {
   image?: string;
   imageKind?: string;
   filler?: boolean;
+  showpiece?: boolean;
 };
 
 /** Documented base commission %, or 0 if we do not have a confirmed rate. */
@@ -129,8 +130,9 @@ export function qualityScore(item: RankableItem): number {
 
 /** Fillers last, then higher quality, then higher documented payout, then title. */
 export function compareByQualityAndPayout(a: RankableItem, b: RankableItem): number {
-  const af = a.filler ? 1 : 0;
-  const bf = b.filler ? 1 : 0;
+  const demote = (x: RankableItem) => (x.filler ? 2 : x.showpiece ? 1 : 0);
+  const af = demote(a);
+  const bf = demote(b);
   if (af !== bf) return af - bf;
   const q = qualityScore(b) - qualityScore(a);
   if (q) return q;

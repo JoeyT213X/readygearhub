@@ -41,7 +41,7 @@ const doomsdayGroups = isDoomsday
       sec,
       items: primaryItems
         .filter((i) => doomsdaySectionOf.get(i.id) === sec.id)
-        .sort((a, b) => (Number(!!b.usBadge) - Number(!!a.usBadge)) || (doomsdayRank(a.id) - doomsdayRank(b.id))),
+        .sort((a, b) => (Number(!!a.showpiece) - Number(!!b.showpiece)) || (Number(!!b.usBadge) - Number(!!a.usBadge)) || (doomsdayRank(a.id) - doomsdayRank(b.id))),
     })).filter((g) => g.items.length > 0)
   : [];
 const storesInCat = sourceStores().filter((s) => items.some((i) => i.programId === s.id));

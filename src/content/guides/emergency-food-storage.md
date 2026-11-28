@@ -4,7 +4,7 @@ description: "How to build a practical emergency food supply for a hurricane, ic
 lane: emergency-water
 season: ["hurricane", "winter", "all-season"]
 published: 2026-11-21
-relatedItems: ["readywise-72-hour-food-kit", "readywise-5-day-survival-backpack", "readywise-4-week-food-supply", "augason-farms-30-day-1-person", "mountain-house-classic-bucket", "coleman-classic-propane-stove-2-burner", "lodge-classic-cast-iron-skillet", "mr-heater-buddy-flex-cooker"]
+relatedItems: ["readywise-72-hour-food-kit", "readywise-5-day-survival-backpack", "readywise-4-week-food-supply", "augason-farms-30-day-1-person", "mountain-house-classic-bucket", "coleman-classic-propane-stove-2-burner", "lodge-classic-cast-iron-skillet", "mr-heater-buddy-flex-cooker", "bougerv-crd2-43qt-dual-zone"]
 draft: false
 ---
 
@@ -60,7 +60,7 @@ Shelf-stable food is what you eat when the power is out for a long time. The foo
 
 Ready.gov and FoodSafety.gov also note that bacteria grow rapidly between 40°F and 140°F, and that perishable food such as meat, poultry, fish, eggs, or leftovers that has been above 40°F for two hours or more should be discarded. In hot weather, use the FDA’s shorter 1-hour limit when it is above 90°F.
 
-Before a storm, those same pages recommend grouping food in the freezer, freezing leftovers or fresh meat you will not need right away, freezing water or gel packs, and having coolers ready if the power may be out more than four hours. USDA FSIS says 50 pounds of dry ice should hold an 18-cubic-foot freezer for two days; do not touch dry ice with bare hands or place it in direct contact with food. When the power returns, check the thermometer or ice crystals, not appearance or odor alone. For a line-by-line list of what to keep or discard, use the [FoodSafety.gov power-outage charts](https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage), our one-page [Fridge and Freezer Outage Food-Safety Chart](/downloads/fridge-freezer-food-safety-chart.pdf), the [outage timer](/tools/outage-timer/), or the free [Cold Hold](/apps/cold-hold/) log. Cold Hold helps you record the outage; it does not measure temperature or decide safety.
+Before a storm, those same pages recommend grouping food in the freezer, freezing leftovers or fresh meat you will not need right away, freezing water or gel packs, and having coolers ready if the power may be out more than four hours. A 12-volt portable fridge, such as the [BougeRV CRD2 43-quart dual-zone](/gear/bougerv-crd2-43qt-dual-zone/), can keep food cold if you have a battery, Energy Reserve or vehicle to run it. It is not a substitute for the official time limits on a household refrigerator that has already lost power; check the maker's page for how it is powered. USDA FSIS says 50 pounds of dry ice should hold an 18-cubic-foot freezer for two days; do not touch dry ice with bare hands or place it in direct contact with food. When the power returns, check the thermometer or ice crystals, not appearance or odor alone. For a line-by-line list of what to keep or discard, use the [FoodSafety.gov power-outage charts](https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage), our one-page [Fridge and Freezer Outage Food-Safety Chart](/downloads/fridge-freezer-food-safety-chart.pdf), the [outage timer](/tools/outage-timer/), or the free [Cold Hold](/apps/cold-hold/) log. Cold Hold helps you record the outage; it does not measure temperature or decide safety.
 
 ## If floodwater reaches the kitchen
 

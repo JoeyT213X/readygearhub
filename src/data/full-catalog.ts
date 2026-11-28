@@ -58,6 +58,8 @@ export type CatalogItem = {
   origin: 'source-directory' | 'gear' | 'directory' | 'tools' | 'apps' | 'payhip' | 'prepper';
   /** Low-key filler cards: always last (not featured, not on the home page). */
   filler?: boolean;
+  /** Official showpiece with no paying program: keep visible, sort just above fillers. */
+  showpiece?: boolean;
   /** The link opens a store or brand front page (or a whole collection), not one product page. The button says so. */
   storeLevel?: boolean;
   /** Small U.S. chip on the card (U.S.-based maker). */
@@ -360,12 +362,22 @@ export const REMOVED_CARDS: Record<string, 'rejected' | 'duplicate' | 'no-profit
   'ri-fx-aegis-ultra-w-wheel-legged-robot-dog': 'duplicate', // kept: ri-fx-aegis-ultra-w-plus
   'can-am-official': 'duplicate', // kept: can-am-off-road
   // No realistic path to paying (mass-market car makers and enterprise-only robots or drones; no consumer affiliate program)
-  'jeep-gladiator': 'no-profit-path', 'jeep-wrangler': 'no-profit-path', 'land-rover-defender': 'no-profit-path',
-  'toyota-4runner': 'no-profit-path', 'toyota-land-cruiser': 'no-profit-path', 'toyota-tacoma': 'no-profit-path',
-  'toyota-rav4-2027': 'no-profit-path', 'toyota-tundra-2027': 'no-profit-path', 'rivian-r1s': 'no-profit-path', 'rivian-r1t': 'no-profit-path',
-  'boston-dynamics-official': 'no-profit-path', 'ghost-robotics-official': 'no-profit-path', 'knightscope-official': 'no-profit-path',
+  'jeep-gladiator': 'no-profit-path', 'jeep-wrangler': 'no-profit-path',
+  'toyota-4runner': 'no-profit-path', 'toyota-tacoma': 'no-profit-path',
+  'toyota-rav4-2027': 'no-profit-path', 'toyota-tundra-2027': 'no-profit-path',
+  'ghost-robotics-official': 'no-profit-path',
   'skydio-x10': 'no-profit-path',
 };
+
+/** Official showpiece cards kept after the Nov 27 cleanup, sorted to the bottom of their sections (not the robot-dog filler block). */
+export const SHOWPIECE_IDS = new Set([
+  'land-rover-defender',
+  'toyota-land-cruiser',
+  'rivian-r1s',
+  'rivian-r1t',
+  'boston-dynamics-official',
+  'knightscope-official',
+]);
 
 /** Extra cross-listing for the card kept after a duplicate was removed. */
 const KEPT_ALSO_IN: Record<string, string[]> = {
@@ -422,6 +434,7 @@ const MORE_REHOME: Record<string, { category: string; alsoIn?: string[] }> = {
 function rehome(item: CatalogItem): CatalogItem {
   const extra = KEPT_ALSO_IN[item.id];
   if (extra) item = { ...item, alsoIn: [...new Set([...(item.alsoIn ?? []), ...extra])] };
+  if (SHOWPIECE_IDS.has(item.id)) item = { ...item, showpiece: true };
   if (item.category !== 'more') return item;
   const r = MORE_REHOME[item.id] ?? { category: /^leatherman-/.test(item.id) ? 'tools' : 'outdoor' };
   const alsoIn = [...new Set([...(item.alsoIn ?? []), ...(r.alsoIn ?? [])])].filter((c) => c !== r.category && c !== 'more');
@@ -681,7 +694,7 @@ const HOME_SHOP_EXCLUDED_IDS = new Set([
 
 export function homeShopPicks(items: CatalogItem[], limit = 16): CatalogItem[] {
   const eligible = items.filter((i) => {
-    if (isPortablePowerStation(i) || HOME_SHOP_EXCLUDED_IDS.has(i.id) || i.category === 'drones-robotics') return false;
+    if (isPortablePowerStation(i) || HOME_SHOP_EXCLUDED_IDS.has(i.id) || i.category === 'drones-robotics' || i.showpiece) return false;
     // Keep energy-reserve style stock photos off the home page.
     const k = stockCoverFor(i)?.key;
     return k !== 'stock-power-station' && k !== 'stock-battery-bank';

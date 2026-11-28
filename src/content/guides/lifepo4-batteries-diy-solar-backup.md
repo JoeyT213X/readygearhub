@@ -4,7 +4,7 @@ description: "What a LiFePO4 battery is, how to size one in plain math, and how 
 lane: off-grid-power
 season: ["all-season", "hurricane", "winter"]
 published: 2026-11-27
-relatedItems: ["litime-12v-100ah-group24", "litime-12v-200ah-bluetooth", "litime-12v-50ah", "litime-30a-mppt", "litime-1000w-12v-inverter", "litime-2000w-12v-inverter-ats", "litime-12v-10a-charger", "litime-diy-solar-generator-kit", "bluetti-200w-solar-panel", "bluetti-ac180"]
+relatedItems: ["litime-12v-100ah-group24", "litime-12v-200ah-bluetooth", "litime-12v-50ah", "litime-30a-mppt", "litime-1000w-12v-inverter", "litime-2000w-12v-inverter-ats", "litime-12v-10a-charger", "litime-diy-solar-generator-kit", "bluetti-200w-solar-panel", "bluetti-ac180", "bougerv-12v-100ah-group24", "bougerv-100w-portable-solar-panel", "bougerv-200w-portable-solar-panel", "bougerv-sunflow-40a-mppt", "bougerv-2000w-12v-inverter"]
 directory: power
 siblings: ["how-to-pick-an-energy-reserve", "generator-vs-energy-reserve"]
 draft: false
@@ -20,7 +20,7 @@ LiFePO4 (lithium iron phosphate, often shortened to LFP) is a type of lithium ba
 
 Compared with the lead-acid batteries many people know from cars and boats, LiFePO4 batteries are lighter for the same capacity, and many makers rate them for more charge cycles. Each maker lists its own cycle rating, warranty and temperature limits on the product page, so check those for the exact model you are considering.
 
-One thing that matters in the South: lithium batteries have limits on charging in the cold. Some makers sell self-heating versions for that reason. LiTime's [LiHeat 12V 100Ah Group 24](/gear/litime-12v-100ah-group24/) is one of those. If your battery will live in an unheated shed, garage or RV, read the charging temperature range on the spec sheet before you buy.
+One thing that matters in the South: lithium batteries have limits on charging in the cold. Some makers sell self-heating versions for that reason. LiTime's [LiHeat 12V 100Ah Group 24](/gear/litime-12v-100ah-group24/) is one of those. BougeRV's [12V 100Ah Group 24 LiFePO4 battery](/gear/bougerv-12v-100ah-group24/) is another Group 24 option; BougeRV says charging on that model stops below 32°F. If your battery will live in an unheated shed, garage or RV, read the charging temperature range on the spec sheet before you buy.
 
 ## The four parts of a DIY battery backup
 
@@ -34,12 +34,12 @@ A basic DIY setup has four parts. Think of it like plumbing: the battery is the 
 ### Charging options
 
 - **Wall charger.** The simplest. A charger made for LiFePO4, like the [LiTime 12V 10A charger](/gear/litime-12v-10a-charger/), tops up the battery from an outlet before a storm.
-- **Solar.** Panels connect to a **charge controller**, which manages how the battery charges. MPPT controllers, like the [LiTime 30A MPPT](/gear/litime-30a-mppt/), are the common choice for small systems. Portable folding panels such as the [BLUETTI 200W panel](/gear/bluetti-200w-solar-panel/) can be set out in the yard during an outage and stored the rest of the year.
+- **Solar.** Panels connect to a **charge controller**, which manages how the battery charges. MPPT controllers, like the [LiTime 30A MPPT](/gear/litime-30a-mppt/) or the [BougeRV Sunflow 40A MPPT](/gear/bougerv-sunflow-40a-mppt/), are the common choice for small systems. Portable folding panels such as the [BLUETTI 200W panel](/gear/bluetti-200w-solar-panel/), or BougeRV's [100W](/gear/bougerv-100w-portable-solar-panel/) and [200W](/gear/bougerv-200w-portable-solar-panel/) portable panels, can be set out in the yard during an outage and stored the rest of the year.
 - **Your vehicle.** A DC-to-DC charger charges a house battery from a running vehicle's alternator, which is handy in RVs and work trucks.
 
 ### Inverter options
 
-Pick a **pure sine wave** inverter for electronics and anything with a motor. Size it for the biggest load you'll run at once, plus some room. The [LiTime 1000W inverter](/gear/litime-1000w-12v-inverter/) suits lights, phones, a router, a fan and a small TV. The [LiTime 2000W inverter with ATS](/gear/litime-2000w-12v-inverter-ats/) is built for bigger loads and includes an automatic transfer switch, which LiTime lists at 20 milliseconds, to swap a plugged-in load over to battery power when the grid drops.
+Pick a **pure sine wave** inverter for electronics and anything with a motor. Size it for the biggest load you'll run at once, plus some room. The [LiTime 1000W inverter](/gear/litime-1000w-12v-inverter/) suits lights, phones, a router, a fan and a small TV. The [LiTime 2000W inverter with ATS](/gear/litime-2000w-12v-inverter-ats/) is built for bigger loads and includes an automatic transfer switch, which LiTime lists at 20 milliseconds, to swap a plugged-in load over to battery power when the grid drops. BougeRV's [2000W 12V pure sine wave inverter](/gear/bougerv-2000w-12v-inverter/) is another 2000W option, with Bluetooth monitoring; it does not include a transfer switch. Confirm continuous and surge ratings on each maker's page.
 
 ## Sizing it with plain math
 
