@@ -66,7 +66,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Article', headline:
                   <td>{c.size}</td>
                   <td>{c.what}{c.note ? <span class="fine pj-note-in"><br />{c.note}</span> : null}</td>
                   <td>{c.range ?? 'No published figure found'}</td>
-                  <td>{c.sourceUrl ? <a href={cite(c.sourceUrl).href} rel={cite(c.sourceUrl).affiliate ? 'sponsored nofollow noopener' : 'noopener'} data-program={cite(c.sourceUrl).programId || undefined} target="_blank">{c.sourceLabel}</a> : 'None cited'}</td>
+                  <td>{c.sourceUrl ? (() => { const l = cite(c.sourceUrl); return <a href={l.href} rel={l.affiliate ? 'sponsored nofollow noopener' : 'noopener'} data-program={l.affiliate ? l.programId : undefined} target="_blank">{c.sourceLabel}</a>; })() : 'None cited'}</td>
                 </tr>
               ))}
             </tbody>
