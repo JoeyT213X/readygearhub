@@ -557,7 +557,7 @@ export const prepperPicks: PrepperPick[] = [
     image: '/directory/covers/documents.svg',
     imageKind: 'icon',
     offerLabel: 'Free official resource',
-    cta: 'Read ready.gov guidance',
+    cta: 'Read the official guidance',
   },
 ];
 

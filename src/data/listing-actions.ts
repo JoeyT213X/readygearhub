@@ -1,17 +1,16 @@
 /**
  * Directional CTA labels for directory cards.
- * Buttons tell the visitor what to do next; they do not name the seller
- * ("See price at …", "Visit official site", and similar stay out of the label).
+ * Buttons tell the visitor what to do next; they never name the seller or brand, and never promise a sale.
  *
- *   - Buy with discount code — a program coupon applies; the code is shown next to the button
- *   - Inquire here — quote or contact-only (no public checkout)
- *   - Buy now / Shop now / See price / View deal / Get it here — a normal retail / affiliate product page.
- *     "See price" only appears when the card actually shows a price.
- *   - Official brand page with no listed price (vehicles, shelters) — Visit site (or Inquire here for quote-only).
- *     The wording rotates deterministically per product id (same product, same label on every page and build).
- *     "Buy now" and "View deal" only appear when a price is shown on the card; no urgency wording.
- *   - Inquire here / Request a quote — quote or contact-only items (no public checkout)
- *   - See details — a tool, resource, or official brand-site card
+ *   - Buy with discount code: only when the card's data carries a discount code (shown next to the button).
+ *   - Inquire here: only quote/contact-only cards, by a clear data signal (ctaKind "inquire", an "Inquire"/"Request a
+ *     quote" ctaLabel, a "how to inquire" blurb, a quote/contact offer line, or a Robots International unit of $10,000+).
+ *     It is never part of the general rotation.
+ *   - Everything else rotates by a hash of the card id (same card, same label on every page and every build):
+ *       priced card:   Check listing / See details / Buy now / Visit site
+ *       unpriced card: Check listing / See details / Visit site   ("Buy now" only with a price on the card)
+ *   - View deal: only where the data records a verified sale (a list/sale pair seen on the brand's own page).
+ *   - See details: a tool, resource or official-page card.
  */
 import { PROGRAM_COUPON_CODES } from './partner-codes';
 
@@ -30,7 +29,8 @@ export type CtaKind = 'listing' | 'inquire' | 'discount' | 'details';
 
 export type ListingAction = { label: string; code?: string; kind: CtaKind };
 
-const RETAIL_LABELS = ['Buy now', 'Shop now', 'See price', 'View deal', 'Get it here'];
+const PRICED_LABELS = ['Check listing', 'See details', 'Buy now', 'Visit site'];
+const UNPRICED_LABELS = ['Check listing', 'See details', 'Visit site'];
 
 function hashSeed(seed: string): number {
   let h = 5381;
@@ -38,21 +38,16 @@ function hashSeed(seed: string): number {
   return h;
 }
 
-/** Deterministic retail button wording. `priced` = the card shows a real price. */
-export function retailLabel(seed: string, priced: boolean): string {
-  // No price on the card: never promise one. "See price" is only used when a real price is shown.
-  const pool = priced ? RETAIL_LABELS : ['Shop now', 'Get it here'];
+/** Deterministic retail button wording. `priced` = the card shows a real price; `onSale` = the data records a verified sale. */
+export function retailLabel(seed: string, priced: boolean, onSale = false): string {
+  if (onSale) return 'View deal';
+  const pool = priced ? PRICED_LABELS : UNPRICED_LABELS;
   return pool[hashSeed(seed || 'x') % pool.length];
 }
 
 /** Store-front or whole-collection links: the button says it opens a store, not one product. */
 export function storeLabel(seed: string): string {
   return ['Visit store', 'Browse the store', 'Visit site'][hashSeed(seed || 'x') % 3];
-}
-
-/** Quote-only wording, rotated the same way. */
-export function inquireLabel(seed: string): string {
-  return hashSeed(seed || 'x') % 3 === 0 ? 'Request a quote' : 'Inquire here';
 }
 
 export function couponCodeFor(item: { programId?: string; couponCode?: string }): string | undefined {
@@ -92,13 +87,14 @@ export function listingAction(item: {
     quoteScale ||
     item.ctaKind === 'inquire' ||
     /^(inquire|request a quote)/i.test(item.ctaLabel || '') ||
-    /how to inquire/i.test(item.blurb || '')
+    /how to inquire/i.test(item.blurb || '') ||
+    /\b(quote|inquir|contact us)/i.test(item.offerLabel || '')
   ) {
-    return { label: inquireLabel(seed), kind: 'inquire' };
+    return { label: 'Inquire here', kind: 'inquire' };
   }
   const code = couponCodeFor(item);
-  if (item.ctaKind === 'discount' || code) {
-    return { label: hashSeed(seed || 'x') % 2 === 0 ? 'Buy with discount code' : 'Shop with code', code, kind: 'discount' };
+  if (code) {
+    return { label: 'Buy with discount code', code, kind: 'discount' };
   }
   // Official brand pages with no listed price (vehicles, shelters, build-to-order): plain "Visit site".
   if (item.kind === 'brand' && !priced) {

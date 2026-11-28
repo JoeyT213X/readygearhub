@@ -85,6 +85,7 @@ const badge = item.trending
       href={ctaHref}
       target={ctaInternal ? undefined : '_blank'}
       rel={ctaRel}
+      aria-label={`${action.label}: ${item.title}`}
       data-program={item.affiliate && item.programId ? item.programId : undefined}
     >{action.label}{ctaInternal ? '' : ' ↗'}</a>
     {action.code && <p class="listing-code">Code: <strong>{action.code}</strong></p>}

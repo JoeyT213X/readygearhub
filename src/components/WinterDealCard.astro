@@ -23,6 +23,8 @@ const href = outUrl(item);
 const sale = deal.priceLabel === 'See price' ? undefined : honestPrice(deal.priceLabel, deal.checked);
 const pair = deal.compareAt && deal.compareSource ? honestSalePair(deal.compareAt, deal.priceLabel, deal.compareSource, deal.checked) : undefined;
 const priceText = pair ?? sale ?? 'Price on the store page';
+// "View deal" only where the data records a verified list/sale pair (the Wuben items); otherwise the shared rotation.
+const ctaLabel = retailLabel(item.id, !!sale, !!pair);
 ---
 <article class="card item-card winter-deal-card" data-no-ppc={isNoPpcProgram(program) ? '' : undefined} data-program={isNoPpcProgram(program) ? program : undefined}>
   {photo && (
@@ -47,8 +49,9 @@ const priceText = pair ?? sale ?? 'Price on the store page';
       href={href}
       target="_blank"
       rel="sponsored nofollow noopener"
+      aria-label={`${ctaLabel}: ${item.data.name}`}
       data-program={program || undefined}
-    >{retailLabel(item.id, !!sale)} ↗</a>
+    >{ctaLabel} ↗</a>
   </div>
 </article>
 

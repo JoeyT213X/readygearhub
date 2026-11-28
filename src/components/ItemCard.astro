@@ -31,6 +31,6 @@ const photo = cardImageFor(item);
   {guide && <p class="card-guide-link">📘 How it fits: <a href={`/guides/${guide.id}/`}>{guide.data.title}</a></p>}
   <div class="card-actions">
     <a class="btn small ghost" href={`/gear/${item.id}/`}>Details</a>
-    <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} data-program={isAffiliate(item) && program ? program : undefined}>{retailLabel(item.id, false)} ↗</a>
+    <a class="btn small" href={outUrl(item)} target="_blank" rel={isAffiliate(item) ? 'sponsored nofollow noopener' : 'noopener'} aria-label={`${retailLabel(item.id, false)}: ${item.data.name}`} data-program={isAffiliate(item) && program ? program : undefined}>{retailLabel(item.id, false)} ↗</a>
   </div>
 </article>

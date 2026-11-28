@@ -3,6 +3,8 @@
 //   (a) two directory cards share a normalized title or a normalized destination URL;
 //   (b) a guide links a product on a plain link while a tracked (affiliate) twin card exists;
 //   (c) a dropped program still has visible cards;
+//   (e) button wording: "View deal" only on a verified marked-down pair, "Buy with discount code" only with a code shown, and
+//       no single button phrase on more than 50% of priced cards;
 //   (d) a visible dollar amount has no parseable "checked"/"as of" date (prices older than 30 days only warn).
 // Known, owner-assigned exceptions live in scripts/check-directory.allow.json (each needs a reason).
 // Also refuses a production build that has the PUBLIC_PREVIEW_LEADS preview flag switched on.
@@ -55,7 +57,9 @@ for (const file of pages(join(dist, 'directory'))) {
     const title = h3 ? strip(h3[1]) : id;
     const program = (attrs.match(/data-program="([^"]*)"/) ?? [])[1] ?? '';
     const tracked = /rel="[^"]*sponsored/.test(btn?.[0] ?? '');
-    cards.set(id, { id, title, href, tracked, program, dest: href.startsWith('/') ? '' : destination(href), norm: normTitle(title), cat: (attrs.match(/data-category="([^"]*)"/) ?? [])[1] ?? '' });
+    const price = (body.match(/<p class="product-price"[^>]*>([^<]*)<\/p>/) ?? [])[1] ?? '';
+    const cta = strip((body.match(/<a class="btn small[^"]*"[^>]*>([\s\S]*?)<\/a>/) ?? [])[1] ?? '').replace(/\s*↗$/, '');
+    cards.set(id, { id, title, href, tracked, program, price, cta, hasCode: /class="listing-code"/.test(body), dest: href.startsWith('/') ? '' : destination(href), norm: normTitle(title), cat: (attrs.match(/data-category="([^"]*)"/) ?? [])[1] ?? '' });
   }
 }
 const list = [...cards.values()];
@@ -154,6 +158,25 @@ if (stalePrices.length) {
   for (const x of stalePrices.slice(0, 25)) console.warn(`  stale ${x.text} on ${x.page}: "${x.snippet}"`);
   if (stalePrices.length > 25) console.warn(`  ... and ${stalePrices.length - 25} more`);
 }
+
+// ---- (e) button wording ----
+// "View deal" promises a sale: allowed only inside a card that shows the verified list/sale pair ("Marked down on ...").
+// "Buy with discount code" needs a code on the card. One phrase may not cover more than 50% of priced cards.
+for (const file of pages(dist)) {
+  const page = '/' + file.slice(dist.length).replace(/index\.html$/, '');
+  const html = readFileSync(file, 'utf8');
+  if (/<meta name="robots" content="[^"]*noindex/.test(html)) continue;
+  const inArticles = [...html.matchAll(/<article\b[\s\S]*?<\/article>/g)].map((m) => m[0]);
+  const total = (html.match(/>\s*View deal\b/g) ?? []).length;
+  const ok = inArticles.filter((a) => /Marked down on/.test(a)).reduce((n, a) => n + (a.match(/>\s*View deal\b/g) ?? []).length, 0);
+  if (total > ok) add('e-view-deal', page, `"View deal" without a verified sale on ${page} (${total - ok} button(s)); it needs the "Marked down on" list/sale pair`);
+}
+for (const c of list) if (c.cta === 'Buy with discount code' && !c.hasCode) add('e-code', c.id, `card ${c.id} says "Buy with discount code" but shows no code`);
+const priced = list.filter((c) => c.price.includes('$'));
+const byCta = new Map();
+for (const c of priced) byCta.set(c.cta, (byCta.get(c.cta) ?? 0) + 1);
+console.log(`check-directory: priced-card buttons (${priced.length}): ${[...byCta].sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}`).join(', ')}`);
+if (priced.length >= 20) for (const [k, v] of byCta) if (v / priced.length > 0.5) add('e-cta-share', k, `button phrase "${k}" is on ${v} of ${priced.length} priced cards (${Math.round((100 * v) / priced.length)}%, limit 50%)`);
 
 // ---- preview flag must never reach production ----
 if (process.env.PUBLIC_PREVIEW_LEADS === '1' && process.env.CONTEXT === 'production') add('preview-flag', 'PUBLIC_PREVIEW_LEADS', 'PUBLIC_PREVIEW_LEADS=1 is set on a production build. It shows pending lead boxes and must stay off in production.');
