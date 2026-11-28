@@ -107,7 +107,7 @@ for (const p of programs.filter((x) => x.status === 'dropped')) {
 if (process.env.PUBLIC_PREVIEW_LEADS === '1' && process.env.CONTEXT === 'production') add('preview-flag', 'PUBLIC_PREVIEW_LEADS', 'PUBLIC_PREVIEW_LEADS=1 is set on a production build. It shows pending lead boxes and must stay off in production.');
 
 // ---- report ----
-const stale = Object.entries(allow).flatMap(([kind, rows]) => rows.filter((a) => !usedAllow.has(`${kind}|${a.key}`)).map((a) => `${kind}: ${a.key}`));
+const stale = Object.entries(allow).filter(([k]) => !k.startsWith('_')).flatMap(([kind, rows]) => rows.filter((a) => !usedAllow.has(`${kind}|${a.key}`)).map((a) => `${kind}: ${a.key}`));
 console.log(`check-directory: ${list.length} directory cards, ${programs.filter((x) => x.status === 'dropped').length} dropped programs, ${problems.length} problem(s)`);
 for (const p of problems) console.log(`  FAIL [${p.check}] ${p.msg}`);
 for (const k of stale) console.log(`  note: allowlist entry no longer needed, remove it: ${k}`);
