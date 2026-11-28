@@ -1,7 +1,4 @@
 ---
-// One quiet line near prices. The date comes from src/data/prices.json, which scripts/price-feed.mjs writes on every refresh.
-import prices from '../data/prices.json';
-import { fmtDate } from '../lib/price';
-const updated = fmtDate((prices as { updated?: string }).updated);
+// One quiet line near prices. No cadence and no "last updated" date here: each price carries its own "checked <date>".
 ---
-<p class="fine price-note">Prices come from retailer data feeds and product pages and are refreshed monthly{updated ? `. Last updated ${updated}` : ''}. <a href="/how-we-price/">How we price</a>.</p>
+<p class="fine price-note">Prices come from retailer data feeds and product pages and are updated frequently. <a href="/how-we-price/">How we price</a>.</p>
