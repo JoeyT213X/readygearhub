@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import { getGuides } from '../../../lib/data';
 import { localStates, type LocalState, type LocalCounty } from '../../../lib/local';
 
 export function getStaticPaths() {
@@ -13,6 +14,21 @@ export function getStaticPaths() {
 
 const { state, county } = Astro.props as { state: LocalState; county: LocalCounty };
 const em = county.emergencyManagement;
+// Mississippi Gulf Coast counties get the hurricane guide first; inland counties get the winter and tornado guides.
+const coastal = state.slug === 'mississippi' && ['hancock', 'harrison', 'jackson'].includes(county.slug);
+const guideIds = [
+  ...(coastal ? ['hurricane-prep-guide-gulf-south'] : []),
+  'winter-storm-power-outage-prep-guide-south',
+  'tornado-watch-vs-warning-mississippi',
+  ...(coastal ? [] : ['hurricane-prep-guide-gulf-south']),
+  'power-outage-ice-storm-mississippi',
+  'emergency-food-storage',
+  'emergency-water-storage',
+  'carbon-monoxide-safety-during-an-outage',
+];
+const allGuides = await getGuides();
+const prepGuides = guideIds.map((id) => allGuides.find((g) => g.id === id)).filter(Boolean) as typeof allGuides;
+const otherCounties = state.counties.filter((c) => c.slug !== county.slug);
 const schema = [
   { '@context': 'https://schema.org', '@type': 'GovernmentService', name: em.name, url: em.url, areaServed: county.name, ...(em.phone ? { telephone: em.phone } : {}) },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -70,6 +86,18 @@ const schema = [
         </div>
       ))}
     </div>
+  </section>
+
+  <section class="wrap section">
+    <h2>Get ready before the next storm</h2>
+    <p>Plain-English guides for the weather and outages that affect {county.name}. The official sources above come first; these help you prepare.</p>
+    <ul class="link-list">
+      {prepGuides.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}
+      <li><a href="/tools/outage-timer/">Fridge &amp; freezer outage timer</a></li>
+      <li><a href="/directory/power/">Energy reserves &amp; prepper power</a> · <a href="/directory/water/">Water</a> · <a href="/directory/food/">Food</a></li>
+    </ul>
+    <h3>Other {state.name} counties</h3>
+    <ul class="dir-nav">{otherCounties.map((c) => <li><a class="pill" href={`/local/${state.slug}/${c.slug}/`}>{c.name}</a></li>)}</ul>
   </section>
 
   <section class="wrap section">

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import '../../styles/interactive.css';
 import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
 ---
-<Base title="Fridge & Freezer Outage Timer | ReadyGearHub" description="A live countdown based on FoodSafety.gov guidance: about 4 hours for an unopened refrigerator, about 48 hours for a full freezer, and about 24 hours if the freezer is half full.">
+<Base footerSignup={false} title="Fridge & Freezer Outage Timer | ReadyGearHub" description="A live countdown based on FoodSafety.gov guidance: about 4 hours for an unopened refrigerator, about 48 hours for a full freezer, and about 24 hours if the freezer is half full.">
   <section class="page-hero">
     <div class="wrap">
       <p class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Outage timer</p>
@@ -45,6 +45,13 @@ import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
         <p class="timer-state fine"></p>
       </article>
     </div>
+    <div class="no-print" style="margin-top:22px">
+      <MailerLiteSignup
+        variant="card"
+        heading="Get the free winter storm checklist"
+        intro="A printable checklist, plus the fridge and freezer times on one page for the cabinet door. A few calm seasonal reminders, never daily. Unsubscribe anytime."
+      />
+    </div>
     <aside class="card" style="margin-top:22px">
       <h2>Log actual temperatures with Cold Hold</h2>
       <p>This timer follows FoodSafety.gov countdown windows. To log the fridge and freezer temperatures you read on a thermometer, and keep that log offline on this device, use <a href="/apps/cold-hold/">Cold Hold</a>.</p>
@@ -73,13 +80,6 @@ import MailerLiteSignup from '../../components/MailerLiteSignup.astro';
         <details><summary>What helps before the next outage?</summary><p>Keep appliance thermometers in the fridge (40°F or below) and freezer (0°F or below), keep a few frozen water jugs or ice packs in the freezer, and keep the doors closed once the power goes out.</p></details>
       </div>
       <p class="fine">Sources: <a href="https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage">FoodSafety.gov</a> and <a href="https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods">FDA</a>. General guidance, not a guarantee for your own appliances or food.</p>
-    </div>
-    <div class="no-print">
-      <MailerLiteSignup
-        variant="card"
-        heading="Want a printable fridge & freezer safety card plus quiet storm-readiness reminders?"
-        intro="Leave your email and we'll hand you our free printable storm checklist, with the fridge and freezer times on one page you can tape inside a cabinet. A few times a season we'll send a calm reminder to check your thermometers and kit."
-      />
     </div>
   </section>
 </Base>
