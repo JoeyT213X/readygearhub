@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-24"
 ---
 
-TideWe lists this as ThermCore, a double-sided fleece heated hunting vest with adjustable heat and a battery. Prices on the official page varied by color. Men’s sizes were in stock when we checked; women’s Realtree Edge sizes were not. Confirm heat settings, sizing, and current price on the official page. TideWe listed this from $99.99 as of Nov 24, 2026.
+TideWe lists this as ThermCore, a double-sided fleece heated hunting vest with adjustable heat and a battery. Prices on the official page varied by color. Men’s sizes were in stock when we checked; women’s Realtree Edge sizes were not. Confirm heat settings, sizing, and current price on the official page.

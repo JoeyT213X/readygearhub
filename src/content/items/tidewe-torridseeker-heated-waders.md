@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-24"
 ---
 
-TideWe lists this as TorridSeeker, a heated neoprene chest wader with an insulated rubber bootfoot. TideWe describes the boots as 800-gram insulated. Prices on the official page varied by size and by whether a battery is included. All listed sizes were in stock when we checked. Confirm heat settings, boot insulation, sizing, what is in the box, and current price on the official page. TideWe listed this from $149.99 as of Nov 24, 2026.
+TideWe lists this as TorridSeeker, a heated neoprene chest wader with an insulated rubber bootfoot. TideWe describes the boots as 800-gram insulated. Prices on the official page varied by size and by whether a battery is included. All listed sizes were in stock when we checked. Confirm heat settings, boot insulation, sizing, what is in the box, and current price on the official page.

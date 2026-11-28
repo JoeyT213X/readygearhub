@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-Anker lists this as the BP2000 expansion battery (Gen 2), made for the C2000 Gen 2. Confirm compatibility, installation, and current price on the official page. Anker listed $899.99 as of Nov 23, 2026. This is an expansion battery, not a standalone energy reserve.
+Anker lists this as the BP2000 expansion battery (Gen 2), made for the C2000 Gen 2. Confirm compatibility, installation, and current price on the official page. This is an expansion battery, not a standalone energy reserve.

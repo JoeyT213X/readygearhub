@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 1000 watt 12V pure sine wave inverter. Confirm continuous and surge ratings, installation, and cable requirements on the official page. LiTime listed $149.99 as of Nov 23, 2026, in its official Awin product feed. Follow the maker’s wiring guidance.
+LiTime lists this as a 1000 watt 12V pure sine wave inverter. Confirm continuous and surge ratings, installation, and cable requirements on the official page. Follow the maker’s wiring guidance.

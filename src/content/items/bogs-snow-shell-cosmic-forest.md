@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-25"
 ---
 
-A kid’s winter boot listed on Bogs’ official shop as the Snow Shell Boot in Cosmic Forest. Confirm materials, sizing, and current price on the official page. Bogs listed this at $75 as of Nov 25, 2026. That is the regular list price, not a sale price.
+A kid’s winter boot listed on Bogs’ official shop as the Snow Shell Boot in Cosmic Forest. Confirm materials, sizing, and current price on the official page.

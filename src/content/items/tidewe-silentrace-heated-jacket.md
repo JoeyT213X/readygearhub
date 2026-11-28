@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-24"
 ---
 
-TideWe lists this as SilenTrace, a two-piece heated hunting jacket set with a camo outer layer and a heated base-layer piece. Confirm what is in the set, heat settings, sizing, and current price on the official page. TideWe listed $159.99 as of Nov 24, 2026.
+TideWe lists this as SilenTrace, a two-piece heated hunting jacket set with a camo outer layer and a heated base-layer piece. Confirm what is in the set, heat settings, sizing, and current price on the official page.

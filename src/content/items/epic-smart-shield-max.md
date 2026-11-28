@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-24"
 ---
 
-Epic lists this as the Smart Shield Max, a three-stage under-sink water filter. Epic’s page describes it as reducing PFAS, lead, and fluoride. Confirm what it does and does not treat, how it differs from the standard Smart Shield, installation requirements, and current price on the official page. Epic listed $111.75 as of Nov 24, 2026.
+Epic lists this as the Smart Shield Max, a three-stage under-sink water filter. Epic’s page describes it as reducing PFAS, lead, and fluoride. Confirm what it does and does not treat, how it differs from the standard Smart Shield, installation requirements, and current price on the official page.

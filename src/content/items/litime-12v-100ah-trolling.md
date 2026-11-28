@@ -16,4 +16,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 12V 100Ah TM lithium marine trolling-motor battery with Bluetooth (LiFePO4). Confirm marine ratings, charging, and installation on the official page. LiTime listed $355.99 as of Nov 23, 2026.
+LiTime lists this as a 12V 100Ah TM lithium marine trolling-motor battery with Bluetooth (LiFePO4). Confirm marine ratings, charging, and installation on the official page.

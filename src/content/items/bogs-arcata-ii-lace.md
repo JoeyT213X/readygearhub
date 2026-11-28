@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-25"
 ---
 
-A lace-up men’s winter boot listed on Bogs’ official shop as the Arcata II Lace. Confirm materials, sizing, and current price on the official page. Bogs listed this at $180 as of Nov 25, 2026. That is the regular list price, not a sale price.
+A lace-up men’s winter boot listed on Bogs’ official shop as the Arcata II Lace. Confirm materials, sizing, and current price on the official page.

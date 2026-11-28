@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-iSpring lists this as the WGB32B, a 3-stage whole-house water filter with 20-inch sediment and carbon block filters. Confirm coverage, what it does and does not treat, installation requirements, and current price on the official page. Whole-house plumbing work may need a licensed plumber. iSpring listed $516.99 as of Nov 23, 2026.
+iSpring lists this as the WGB32B, a 3-stage whole-house water filter with 20-inch sediment and carbon block filters. Confirm coverage, what it does and does not treat, installation requirements, and current price on the official page. Whole-house plumbing work may need a licensed plumber.

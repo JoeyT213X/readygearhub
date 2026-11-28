@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-24"
 ---
 
-Epic lists this as the Smart Shield, an under-sink filter that connects to the cold-water line and sends water through the existing faucet. Epic also lists IAPMO certification to NSF/ANSI 42, 53, and 401. Confirm what it does and does not treat, installation requirements, and current price on the official page. Epic listed $96.75 as of Nov 24, 2026.
+Epic lists this as the Smart Shield, an under-sink filter that connects to the cold-water line and sends water through the existing faucet. Epic also lists IAPMO certification to NSF/ANSI 42, 53, and 401. Confirm what it does and does not treat, installation requirements, and current price on the official page.

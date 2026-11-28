@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 12V 200Ah Bluetooth lithium battery for RVs and marine use. Confirm size, weight, chemistry, and charging on the official page. LiTime listed $519.99 as of Nov 23, 2026, in its official Awin product feed.
+LiTime lists this as a 12V 200Ah Bluetooth lithium battery for RVs and marine use. Confirm size, weight, chemistry, and charging on the official page.

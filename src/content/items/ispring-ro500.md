@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-iSpring lists this as the RO500-BN, a tankless under-sink reverse osmosis system at 500 GPD, with a brushed nickel faucet. iSpring also lists it as NSF certified. Confirm flow, what it does and does not treat, installation requirements, and current price on the official page. iSpring listed $659.99 as of Nov 23, 2026.
+iSpring lists this as the RO500-BN, a tankless under-sink reverse osmosis system at 500 GPD, with a brushed nickel faucet. iSpring also lists it as NSF certified. Confirm flow, what it does and does not treat, installation requirements, and current price on the official page.

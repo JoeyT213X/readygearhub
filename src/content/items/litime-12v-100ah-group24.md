@@ -17,4 +17,4 @@ season: ["all-season", "winter"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 12V 100Ah Group 24 dual-mode self-heating lithium battery. Confirm chemistry, charging, and installation on the official page. LiTime listed $409.99 as of Nov 23, 2026.
+LiTime lists this as a 12V 100Ah Group 24 dual-mode self-heating lithium battery. Confirm chemistry, charging, and installation on the official page.

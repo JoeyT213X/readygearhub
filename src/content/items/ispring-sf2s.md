@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-iSpring lists this as the SF2S, a 33-stage universal shower-head filter with a replaceable cartridge. Confirm fit, what it does and does not treat, and current price on the official page. iSpring listed $22.99 as of Nov 23, 2026.
+iSpring lists this as the SF2S, a 33-stage universal shower-head filter with a replaceable cartridge. Confirm fit, what it does and does not treat, and current price on the official page.

@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-iSpring lists this as the DF1 Series, a chrome faucet-mount carbon-block drinking-water filter. Confirm faucet compatibility, what it does and does not treat, and current price on the official page. iSpring listed $34.99 as of Nov 23, 2026.
+iSpring lists this as the DF1 Series, a chrome faucet-mount carbon-block drinking-water filter. Confirm faucet compatibility, what it does and does not treat, and current price on the official page.

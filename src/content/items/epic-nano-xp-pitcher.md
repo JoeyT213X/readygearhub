@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-24"
 ---
 
-Epic lists this as the Nano XP water filter pitcher. Epic’s page describes it as reducing bacteria and PFAS. Confirm what it does and does not treat, filter life, and current price on the official page. Epic listed $59.25 as of Nov 24, 2026.
+Epic lists this as the Nano XP water filter pitcher. Epic’s page describes it as reducing bacteria and PFAS. Confirm what it does and does not treat, filter life, and current price on the official page.

@@ -109,6 +109,28 @@ for (const p of programs.filter((x) => x.status === 'dropped')) {
   if (pagesLinking.length) add('c-dropped-link', p.id, `dropped program "${p.id}" (${host}) is still linked from: ${pagesLinking.join(', ')}`);
 }
 
+// ---- (d) visible prices ----
+// PRICE RULES (BOTS.md: no prices on the site; buttons say "Check current price").
+//  * /gear/, /directory/ and /brands/: any dollar amount in the visible text fails, except the structured card price
+//    label (<p class="product-price">, built from each card's `price` field). That label is a known exception pending
+//    Joseph's decision; it is the only price text those pages may carry.
+//  * Every other indexable page fails on price prose: "listed $N", "listed at/from $N" or "$N as of <date>".
+//  * Excluded on purpose (intentional prices): /shop/ and /thank-you/ (RGH's own Payhip product prices), /apps/ and
+//    /storm-tracker/ (the $5 supporter unlock), /doomsday-prepper/projects/ (cost ranges, each with its cited source),
+//    /winter-deals/ (dated deal copy). noindex pages (previews) are skipped.
+const PRICE_EXCLUDED = ['/shop/', '/thank-you/', '/apps/', '/storm-tracker/', '/doomsday-prepper/projects/', '/winter-deals/'];
+const STRICT_PRICE_AREAS = ['/gear/', '/directory/', '/brands/'];
+for (const file of pages(dist)) {
+  const page = '/' + file.slice(dist.length).replace(/index\.html$/, '');
+  if (PRICE_EXCLUDED.some((x) => page.startsWith(x))) continue;
+  const html = readFileSync(file, 'utf8');
+  if (/<meta name="robots" content="[^"]*noindex/.test(html)) continue;
+  const text = strip(html.replace(/<(script|style)[\s\S]*?<\/\1>/g, '').replace(/<p class="product-price"[^>]*>[^<]*<\/p>/g, ' '));
+  const strict = STRICT_PRICE_AREAS.some((x) => page.startsWith(x));
+  const re = strict ? /.{0,40}\$\s?\d[\d,.]*.{0,30}/g : /.{0,40}(?:listed (?:this |at |from )*\$\s?\d|\$\s?\d[\d,.]* as of).{0,30}/g;
+  for (const m of text.matchAll(re)) add('d-price', `${page}|${m[0].trim()}`, `visible price on ${page}: "${m[0].trim()}"`);
+}
+
 // ---- preview flag must never reach production ----
 if (process.env.PUBLIC_PREVIEW_LEADS === '1' && process.env.CONTEXT === 'production') add('preview-flag', 'PUBLIC_PREVIEW_LEADS', 'PUBLIC_PREVIEW_LEADS=1 is set on a production build. It shows pending lead boxes and must stay off in production.');
 

@@ -17,4 +17,4 @@ season: ["all-season", "winter"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 24V 230Ah dual-mode self-heating lithium battery for RV and off-grid use. Confirm chemistry, charging, and installation on the official page. LiTime listed $1,119.99 as of Nov 23, 2026.
+LiTime lists this as a 24V 230Ah dual-mode self-heating lithium battery for RV and off-grid use. Confirm chemistry, charging, and installation on the official page.

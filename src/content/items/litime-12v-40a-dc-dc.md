@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 12V 40A DC-to-DC battery charger. Confirm alternator limits, wiring, and battery compatibility on the official page. LiTime listed $155.99 as of Nov 23, 2026, in its official Awin product feed. Follow the maker’s installation guidance.
+LiTime lists this as a 12V 40A DC-to-DC battery charger. Confirm alternator limits, wiring, and battery compatibility on the official page. Follow the maker’s installation guidance.

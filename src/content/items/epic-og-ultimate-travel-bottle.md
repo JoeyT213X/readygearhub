@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-24"
 ---
 
-Epic lists this as the OG Ultimate Travel Bottle, a Nalgene bottle sold with a replaceable Epic filter. The 48 oz size was in stock when we checked; the 32 oz size was not. Confirm filter type, what it does and does not treat, capacity, and current price on the official page. Epic listed the in-stock 48 oz size at $41.25 as of Nov 24, 2026.
+Epic lists this as the OG Ultimate Travel Bottle, a Nalgene bottle sold with a replaceable Epic filter. The 48 oz size was in stock when we checked; the 32 oz size was not. Confirm filter type, what it does and does not treat, capacity, and current price on the official page.

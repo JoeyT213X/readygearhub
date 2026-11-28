@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 30A MPPT solar charge controller for 12V/24V systems, with Bluetooth integrated. Confirm panel voltage, battery compatibility, and current ratings on the official page. LiTime listed $144.99 as of Nov 23, 2026, in its official Awin product feed.
+LiTime lists this as a 30A MPPT solar charge controller for 12V/24V systems, with Bluetooth integrated. Confirm panel voltage, battery compatibility, and current ratings on the official page.

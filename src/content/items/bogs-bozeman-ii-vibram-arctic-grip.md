@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-25"
 ---
 
-A men’s snow boot listed on Bogs’ official shop as the Bozeman II Vibram Arctic Grip. Confirm materials, sizing, and current price on the official page. Bogs listed this at $220 as of Nov 25, 2026. That is the regular list price, not a sale price.
+A men’s snow boot listed on Bogs’ official shop as the Bozeman II Vibram Arctic Grip. Confirm materials, sizing, and current price on the official page.

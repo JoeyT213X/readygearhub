@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-24"
 ---
 
-TideWe lists this as ThermShift, a heated vest for men and women, sold with a battery pack. TideWe also describes insulation in the vest and three heat settings. Prices on the official page varied by gender, color, and size. Confirm heat settings, what is included, sizing, and current price on the official page. TideWe listed this from $108.00 as of Nov 24, 2026.
+TideWe lists this as ThermShift, a heated vest for men and women, sold with a battery pack. TideWe also describes insulation in the vest and three heat settings. Prices on the official page varied by gender, color, and size. Confirm heat settings, what is included, sizing, and current price on the official page.

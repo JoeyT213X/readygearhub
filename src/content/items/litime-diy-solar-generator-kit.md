@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a DIY solar generator complete power kit for camping, RV, and off-grid living. Confirm what is in the kit, assembly steps, and compatibility on the official page. LiTime listed $533.87 as of Nov 23, 2026.
+LiTime lists this as a DIY solar generator complete power kit for camping, RV, and off-grid living. Confirm what is in the kit, assembly steps, and compatibility on the official page.

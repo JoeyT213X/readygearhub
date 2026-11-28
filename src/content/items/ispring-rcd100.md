@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-iSpring lists this as the RCD100, a 5-stage countertop reverse osmosis dispenser at 100 GPD, with an instant-hot option and a UV stage. Confirm what it does and does not treat, setup, and current price on the official page. iSpring listed $419.99 as of Nov 23, 2026.
+iSpring lists this as the RCD100, a 5-stage countertop reverse osmosis dispenser at 100 GPD, with an instant-hot option and a UV stage. Confirm what it does and does not treat, setup, and current price on the official page.

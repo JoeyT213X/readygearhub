@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-Anker lists this as the C300 DC solar generator bundled with a 60W solar panel. Confirm what is in the kit, output type (this is a DC generator), ports, and current price on the official page. Anker listed $279.99 as of Nov 23, 2026. Do not treat marketing runtime examples as a guarantee for your own devices.
+Anker lists this as the C300 DC solar generator bundled with a 60W solar panel. Confirm what is in the kit, output type (this is a DC generator), ports, and current price on the official page. Do not treat marketing runtime examples as a guarantee for your own devices.

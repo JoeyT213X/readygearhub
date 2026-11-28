@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-iSpring lists this as the WGB21B, a 2-stage whole-house water filter with 10" × 4.5" sediment and CTO carbon filters and 1" inlet/outlet ports. Confirm coverage, what it does and does not treat, installation requirements, and current price on the official page. Whole-house plumbing work may need a licensed plumber. iSpring listed $173.99 as of Nov 23, 2026.
+iSpring lists this as the WGB21B, a 2-stage whole-house water filter with 10" × 4.5" sediment and CTO carbon filters and 1" inlet/outlet ports. Confirm coverage, what it does and does not treat, installation requirements, and current price on the official page. Whole-house plumbing work may need a licensed plumber.

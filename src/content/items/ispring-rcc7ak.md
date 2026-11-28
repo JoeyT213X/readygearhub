@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-iSpring lists this as the RCC7AK, a 6-stage under-sink reverse osmosis system at 75 GPD, with an alkaline remineralization stage. iSpring also lists it as NSF certified. Confirm what it does and does not treat, installation requirements, and current price on the official page. iSpring listed $241.99 as of Nov 23, 2026.
+iSpring lists this as the RCC7AK, a 6-stage under-sink reverse osmosis system at 75 GPD, with an alkaline remineralization stage. iSpring also lists it as NSF certified. Confirm what it does and does not treat, installation requirements, and current price on the official page.

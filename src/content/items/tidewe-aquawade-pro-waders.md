@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-24"
 ---
 
-TideWe lists this as AquaWade Pro, a breathable insulated chest wader with a waterproof bootfoot TideWe describes as 1,600-gram insulated, with a steel shank in the boots. Prices on the official page varied by camo pattern. Some sizes and one camo pattern were not in stock when we checked. Confirm insulation, sizing, and current price on the official page. TideWe listed this from $239.99 as of Nov 24, 2026.
+TideWe lists this as AquaWade Pro, a breathable insulated chest wader with a waterproof bootfoot TideWe describes as 1,600-gram insulated, with a steel shank in the boots. Prices on the official page varied by camo pattern. Some sizes and one camo pattern were not in stock when we checked. Confirm insulation, sizing, and current price on the official page.

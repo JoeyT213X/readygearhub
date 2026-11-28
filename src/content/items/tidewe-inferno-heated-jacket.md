@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-24"
 ---
 
-TideWe lists this as the Inferno, a waterproof heated camo hunting jacket sold with a battery pack. Prices on the official page varied by size when we checked. Confirm heat settings, waterproofing, what’s in the box, sizing, and current price on the official page. TideWe listed this from $144.99 as of Nov 24, 2026.
+TideWe lists this as the Inferno, a waterproof heated camo hunting jacket sold with a battery pack. Prices on the official page varied by size when we checked. Confirm heat settings, waterproofing, what’s in the box, sizing, and current price on the official page.

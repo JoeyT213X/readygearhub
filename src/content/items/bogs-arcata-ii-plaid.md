@@ -17,4 +17,4 @@ season: ["winter"]
 verified: "2026-11-25"
 ---
 
-A women’s winter boot listed on Bogs’ official shop as the Arcata II Plaid. Confirm materials, sizing, and current price on the official page. Bogs listed this at $185 as of Nov 25, 2026. That is the regular list price, not a sale price.
+A women’s winter boot listed on Bogs’ official shop as the Arcata II Plaid. Confirm materials, sizing, and current price on the official page.

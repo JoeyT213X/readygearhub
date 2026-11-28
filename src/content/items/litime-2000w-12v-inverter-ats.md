@@ -17,4 +17,4 @@ season: ["all-season"]
 verified: "2026-11-23"
 ---
 
-LiTime lists this as a 2000 watt 12V pure sine wave inverter with a 20ms automatic transfer switch. Confirm what is in the box, continuous and surge ratings, and installation on the official page. LiTime listed $245.99 as of Nov 23, 2026, in its official Awin product feed. Follow the maker’s wiring guidance, and do not treat this as a whole-house transfer setup unless LiTime’s page says otherwise.
+LiTime lists this as a 2000 watt 12V pure sine wave inverter with a 20ms automatic transfer switch. Confirm what is in the box, continuous and surge ratings, and installation on the official page. Follow the maker’s wiring guidance, and do not treat this as a whole-house transfer setup unless LiTime’s page says otherwise.
