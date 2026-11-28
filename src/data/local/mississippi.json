@@ -9,7 +9,7 @@
       "name": "Mississippi Emergency Management Agency (MEMA)",
       "url": "https://www.msema.org/",
       "verified": "2026-11-15",
-      "notes": "State emergency management agency. 24-hour emergency line: 1-800-222-6362, as listed on MEMA's site.",
+      "notes": "State emergency management agency. Its official site lists the 24-hour emergency line.",
       "type": "ema"
     },
     {
@@ -83,7 +83,7 @@
         "name": "Hinds County Department of Emergency Management",
         "url": "https://www.hindscountyms.com/departments/emergency-management",
         "phone": "601-960-1476",
-        "notes": "Director Joey Perkins is named on the county's official Emergency Management page, which also lists 601-960-1476. MEMA's county contacts list matches that name and number."
+        "notes": "Director Joey Perkins is named on the county's official Emergency Management page. MEMA's county contacts list matches that name."
       },
       "warmingCoolingSources": [
         {
@@ -145,7 +145,7 @@
         "name": "Madison County Emergency Management",
         "url": "https://www.madison-co.com/county-departments/emergency-management",
         "phone": "601-859-4188",
-        "notes": "As of 2026-11-15, madison-co.com was displaying a temporary website outage notice, so the department page itself could not be read. The official URL above is the county's Emergency Management path. The office name and phone are from MEMA's official county emergency management contacts list (Albert Jones III, 601-859-4188)."
+        "notes": "As of 2026-11-15, madison-co.com was displaying a temporary website outage notice, so the department page itself could not be read. The official URL above is the county's Emergency Management path. The office name is from MEMA's official county emergency management contacts list (Albert Jones III)."
       },
       "warmingCoolingSources": [
         {
@@ -207,7 +207,7 @@
         "name": "Rankin County Emergency Management Operations",
         "url": "https://www.rankincounty.org/department/index.php?structureid=26",
         "phone": "601-825-1499",
-        "notes": "The official county Emergency Management Operations page lists the Emergency Operations Office at 601 Marquette Rd, Brandon, and the phone number 601-825-1499. MEMA's contacts list names Brian Grantham at the same number."
+        "notes": "The official county Emergency Management Operations page lists the Emergency Operations Office at 601 Marquette Rd, Brandon. MEMA's contacts list names Brian Grantham."
       },
       "warmingCoolingSources": [
         {
@@ -285,7 +285,7 @@
         "name": "Leake County Emergency Management Agency",
         "url": "https://leakecountyms.org/emergency-management-agency/",
         "phone": "601-267-5757",
-        "notes": "The official county Emergency Management Agency page lists Tommy Malone and office phone (601) 267-5757, matching MEMA's contacts list."
+        "notes": "The official county Emergency Management Agency page lists Tommy Malone, matching MEMA's contacts list."
       },
       "warmingCoolingSources": [
         {
@@ -363,7 +363,7 @@
         "name": "Scott County Emergency Management",
         "url": "https://scottcountyms.gov/government/emergency-management/",
         "phone": "601-469-4100",
-        "notes": "The official county Emergency Management page lists Director Mike Marlow and phone 601-469-4100, matching MEMA's contacts list. The EMA office address on that page is 210 E. 2nd Street."
+        "notes": "The official county Emergency Management page lists Director Mike Marlow, matching MEMA's contacts list. The EMA office address on that page is 210 E. 2nd Street."
       },
       "warmingCoolingSources": [
         {
@@ -452,7 +452,7 @@
         "name": "Neshoba County Emergency Management Agency",
         "url": "https://neshobacounty.net/departments/emergency-management/",
         "phone": "601-656-3121",
-        "notes": "The official county Emergency Management and Communications page lists Josh Burt, Emergency Management Director, and phone 601-656-3121, matching MEMA's contacts list. The Emergency Operations Center address on that page is 911 Chestnut Street, Philadelphia, MS 39350."
+        "notes": "The official county Emergency Management and Communications page lists Josh Burt, Emergency Management Director, matching MEMA's contacts list. The Emergency Operations Center address on that page is 911 Chestnut Street, Philadelphia, MS 39350."
       },
       "warmingCoolingSources": [
         {
@@ -519,7 +519,7 @@
         "name": "Attala County Emergency Management",
         "url": "https://www.attalacounty.net/emergency-management",
         "phone": "662-289-5322",
-        "notes": "The official county Emergency Management page lists Director Danny Townsend and contact 662-289-5322, matching MEMA's contacts list."
+        "notes": "The official county Emergency Management page lists Director Danny Townsend, matching MEMA's contacts list."
       },
       "warmingCoolingSources": [
         {
@@ -586,7 +586,7 @@
         "name": "Yazoo County Emergency Management Office",
         "url": "https://www.yazoocounty.net/emergency-management/",
         "phone": "662-746-1569",
-        "notes": "The official county Emergency Management page lists Director Jack Willingham and phone 662-746-1569, matching MEMA's contacts list. The office address on that page is 2201 Gordon Ave, Yazoo City, MS 39194."
+        "notes": "The official county Emergency Management page lists Director Jack Willingham, matching MEMA's contacts list. The office address on that page is 2201 Gordon Ave, Yazoo City, MS 39194."
       },
       "warmingCoolingSources": [
         {
@@ -653,7 +653,7 @@
         "name": "Lauderdale Emergency Management Agency (LEMA)",
         "url": "https://www.lauderdalecounty.org/county-departments/920-2/",
         "phone": "601-482-9852",
-        "notes": "The official Lauderdale County LEMA page lists Odie Barrett, Director, the address 2525 14th Street, Meridian, MS 39301, and phone 601-482-9852, matching MEMA's contacts list. That page also points to www.lemaonline.com as the LEMA website."
+        "notes": "The official Lauderdale County LEMA page lists Odie Barrett, Director, the address 2525 14th Street, Meridian, MS 39301, matching MEMA's contacts list. That page also points to www.lemaonline.com as the LEMA website."
       },
       "warmingCoolingSources": [
         {
@@ -726,7 +726,7 @@
         "name": "Warren County Emergency Management Agency",
         "url": "https://warrencountyms.gov/departments/emergency-management-agency/",
         "phone": "601-636-1544",
-        "notes": "The official county Emergency Management Agency page lists John Elfer and office phone (601) 636-1544, matching MEMA's contacts list. The address on that page is 1009 Cherry Street, Vicksburg."
+        "notes": "The official county Emergency Management Agency page lists John Elfer, matching MEMA's contacts list. The address on that page is 1009 Cherry Street, Vicksburg."
       },
       "warmingCoolingSources": [
         {
@@ -793,7 +793,7 @@
         "name": "Hancock County Emergency Management / Fire Department",
         "url": "https://www.hancockcounty.ms.gov/163/Emergency-Management-Fire-Department",
         "phone": "228-255-0942",
-        "notes": "MEMA's official county contacts list names Holly Bilbo as the Hancock County emergency management director and lists 228-255-0942. The county Emergency Management / Fire Department page is the local official source. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
+        "notes": "MEMA's official county contacts list names Holly Bilbo as the Hancock County emergency management director. The county Emergency Management / Fire Department page is the local official source. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
       },
       "warmingCoolingSources": [
         {
@@ -866,7 +866,7 @@
         "name": "Harrison County Emergency Management Agency / Homeland Security",
         "url": "https://harrisoncountyms.gov/departments/ema_homeland_security/index.php",
         "phone": "228-865-4002",
-        "notes": "Director Matt Stratton is named on the county's official EMA/Homeland Security page, which also lists 228-865-4002. MEMA's county contacts list matches that name and number. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
+        "notes": "Director Matt Stratton is named on the county's official EMA/Homeland Security page. MEMA's county contacts list matches that name. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
       },
       "warmingCoolingSources": [
         {
@@ -950,7 +950,7 @@
         "name": "Jackson County Office of Emergency Services",
         "url": "https://co.jackson.ms.us/224/Office-of-Emergency-Services",
         "phone": "228-769-3111",
-        "notes": "The official Office of Emergency Services page lists Director Earl Etheridge, the address 600 Convent Avenue, Pascagoula, MS 39567, phone 228-769-3111, and an emergency phone of 228-769-3063. MEMA's county contacts list matches the director and main number. The office states it can activate Jackson County landlines and cellphones to pass on critical information. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
+        "notes": "The official Office of Emergency Services page lists Director Earl Etheridge, the address 600 Convent Avenue, Pascagoula, MS 39567. MEMA's county contacts list matches the director. The office states it can activate Jackson County landlines and cellphones to pass on critical information. National Weather Service forecasts and warnings for this county come from the New Orleans/Baton Rouge office (weather.gov/lix), per official NWS county zone data."
       },
       "warmingCoolingSources": [
         {
