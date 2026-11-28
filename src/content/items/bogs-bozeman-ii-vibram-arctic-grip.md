@@ -14,6 +14,9 @@ affiliateUrl: ""
 rank: 0
 featured: false
 season: ["winter"]
+price: "$220"
+priceDate: "2026-11-25"
+priceNote: "Regular list price, not a sale price."
 verified: "2026-11-25"
 ---
 

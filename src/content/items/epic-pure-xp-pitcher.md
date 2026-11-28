@@ -14,6 +14,8 @@ affiliateUrl: ""
 rank: 0
 featured: false
 season: ["all-season"]
+price: "From $59.25"
+priceDate: "2026-11-24"
 verified: "2026-11-24"
 ---
 

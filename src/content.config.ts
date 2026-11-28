@@ -18,6 +18,9 @@ const items = defineCollection({
     rank: z.number().int().min(0).default(0), // 1 = top trending; 0 = not trending
     featured: z.boolean().default(false),     // paid/featured placement (future)
     season: z.array(z.enum(['winter', 'spring', 'summer', 'fall', 'hurricane', 'all-season'])).default(['all-season']),
+    price: z.string().optional(),             // shown price as the maker lists it, e.g. "$220" or "From $108.00"; needs priceDate
+    priceDate: z.string().optional(),         // date that price was checked (YYYY-MM-DD); no date = the price is not shown
+    priceNote: z.string().optional(),         // optional plain note (source, size, "regular list price")
     verified: z.string().optional(),          // date the official URL was last checked (YYYY-MM-DD)
     draft: z.boolean().default(false),
   }),

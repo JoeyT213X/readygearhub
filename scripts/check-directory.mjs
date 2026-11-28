@@ -2,7 +2,8 @@
 // Fails the build with a printed report when:
 //   (a) two directory cards share a normalized title or a normalized destination URL;
 //   (b) a guide links a product on a plain link while a tracked (affiliate) twin card exists;
-//   (c) a dropped program still has visible cards.
+//   (c) a dropped program still has visible cards;
+//   (d) a visible dollar amount has no parseable "checked"/"as of" date (prices older than 30 days only warn).
 // Known, owner-assigned exceptions live in scripts/check-directory.allow.json (each needs a reason).
 // Also refuses a production build that has the PUBLIC_PREVIEW_LEADS preview flag switched on.
 import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs';
@@ -110,24 +111,48 @@ for (const p of programs.filter((x) => x.status === 'dropped')) {
 }
 
 // ---- (d) visible prices ----
-// PRICE RULES (BOTS.md: no prices on the site; buttons say "Check current price").
-//  * /gear/, /directory/ and /brands/: any dollar amount in the visible text fails, including the card
-//    price label (<p class="product-price">); SourceCard swaps any label containing "$" for "Price on the store page".
-//  * Every other indexable page fails on price prose: "listed $N", "listed at/from $N" or "$N as of <date>".
-//  * Excluded on purpose (intentional prices): /shop/ and /thank-you/ (RGH's own Payhip product prices), /apps/ and
-//    /storm-tracker/ (the $5 supporter unlock), /doomsday-prepper/projects/ (cost ranges, each with its cited source),
-//    /winter-deals/ (dated deal copy). noindex pages (previews) are skipped.
+// PRICE RULES (honest prices only; wording comes from src/lib/price.ts: "About $X · checked Mon D, YYYY · may change").
+//  * Every dollar amount in the visible text of a checked page must sit in the same text block as a parseable date
+//    label: "checked <Mon D, YYYY>" or "as of <Mon D, YYYY>". An undated $ fails the build, and so does a date in the future.
+//  * Excluded on purpose (their own, intentional prices): /shop/ and /thank-you/ (RGH's Payhip product prices),
+//    /apps/ and /storm-tracker/ (the $5 supporter unlock), /doomsday-prepper/projects/ (cost ranges, each with its cited
+//    source), /winter-deals/ (dated deal copy). noindex pages (previews) are skipped.
+//  * Staleness is a WARNING only: any price date more than STALE_DAYS before the build date is listed in a summary.
 const PRICE_EXCLUDED = ['/shop/', '/thank-you/', '/apps/', '/storm-tracker/', '/doomsday-prepper/projects/', '/winter-deals/'];
-const STRICT_PRICE_AREAS = ['/gear/', '/directory/', '/brands/'];
+const STALE_DAYS = 30;
+const MON = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+const DATE_LABEL = /\b(?:checked|as of)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),\s+(\d{4})/gi;
+const today = new Date(); today.setHours(0, 0, 0, 0);
+const priceDates = new Map(); // "Mon D, YYYY|snippet" -> { time, page }
+let priceLines = 0;
 for (const file of pages(dist)) {
   const page = '/' + file.slice(dist.length).replace(/index\.html$/, '');
   if (PRICE_EXCLUDED.some((x) => page.startsWith(x))) continue;
   const html = readFileSync(file, 'utf8');
   if (/<meta name="robots" content="[^"]*noindex/.test(html)) continue;
-  const text = strip(html.replace(/<(script|style)[\s\S]*?<\/\1>/g, ''));
-  const strict = STRICT_PRICE_AREAS.some((x) => page.startsWith(x));
-  const re = strict ? /.{0,40}\$\s?\d[\d,.]*.{0,30}/g : /.{0,40}(?:listed (?:this |at |from )*\$\s?\d|\$\s?\d[\d,.]* as of).{0,30}/g;
-  for (const m of text.matchAll(re)) add('d-price', `${page}|${m[0].trim()}`, `visible price on ${page}: "${m[0].trim()}"`);
+  // One block of text per line, so a date can only vouch for a price in the same paragraph/list item/card line.
+  const body = html.replace(/<(script|style)[\s\S]*?<\/\1>/g, '').replace(/<\/?(?:p|li|div|h[1-6]|section|article|tr|td|th|ul|ol|br|figcaption|summary|details|dt|dd|header|footer|nav|main|aside|table|label|button|option)\b[^>]*>/gi, '\n');
+  for (const raw of body.split('\n')) {
+    const line = strip(raw);
+    if (!/\$\s?\d/.test(line)) continue;
+    priceLines++;
+    const snippet = (line.match(/.{0,40}\$\s?\d[\d,.]*.{0,60}/) ?? [line])[0].trim();
+    const dates = [...line.matchAll(DATE_LABEL)].map((m) => ({ t: Date.UTC(+m[3], MON.indexOf(m[1].toLowerCase()), +m[2]), text: `${m[1]} ${m[2]}, ${m[3]}`, y: +m[3], mo: MON.indexOf(m[1].toLowerCase()), d: +m[2] }))
+      .filter((x) => { const c = new Date(x.t); return c.getUTCFullYear() === x.y && c.getUTCMonth() === x.mo && c.getUTCDate() === x.d; });
+    if (!dates.length) { add('d-price', `${page}|${snippet}`, `undated price on ${page}: "${snippet}" (needs "checked <Mon D, YYYY>" or "as of <Mon D, YYYY>" in the same line)`); continue; }
+    for (const x of dates) {
+      if (x.t > today.getTime() + 86400000) add('d-price-future', `${page}|${snippet}`, `price date ${x.text} is in the future on ${page}: "${snippet}"`);
+      else priceDates.set(`${x.text}|${snippet}`, { t: x.t, text: x.text, page, snippet });
+    }
+  }
+}
+const stalePrices = [...priceDates.values()].filter((x) => (today.getTime() - x.t) / 86400000 > STALE_DAYS).sort((a, b) => a.t - b.t);
+const oldest = [...priceDates.values()].sort((a, b) => a.t - b.t).slice(0, 3);
+console.log(`check-directory: ${priceLines} price line(s) on checked pages, ${priceDates.size} unique dated; oldest: ${oldest.map((x) => x.text).join(' / ') || 'none'}`);
+if (stalePrices.length) {
+  console.warn(`check-directory: WARNING ${stalePrices.length} price(s) older than ${STALE_DAYS} days (warning only, build continues):`);
+  for (const x of stalePrices.slice(0, 25)) console.warn(`  stale ${x.text} on ${x.page}: "${x.snippet}"`);
+  if (stalePrices.length > 25) console.warn(`  ... and ${stalePrices.length - 25} more`);
 }
 
 // ---- preview flag must never reach production ----

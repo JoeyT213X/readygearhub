@@ -3,6 +3,7 @@ import type { CatalogItem } from '../data/full-catalog';
 import { stockCoverFor } from '../data/stock-covers';
 import { productPhotoFor, photoBackdropClass } from '../data/product-photos';
 import { listingAction } from '../data/listing-actions';
+import { honestPriceFromLabel } from '../lib/price';
 interface Props { item: CatalogItem; heading?: 'h2' | 'h3' }
 const { item, heading = 'h3' } = Astro.props;
 const action = listingAction(item);
@@ -12,9 +13,9 @@ const stock = product ? undefined : stockCoverFor(item);
 // same-type stock photo (stock-covers.ts) or a clean name card instead.
 const realImage = item.image && !item.image.endsWith('.svg') && !item.image.startsWith('/images/photos/') ? item.image : undefined;
 const Tag = heading;
-// No prices on the site (BOTS.md): a placeholder "See price" or any label that contains a dollar figure is replaced
-// by a pointer to where the current price lives. The data fields are untouched.
-const priceText = item.priceLabel === 'See price' || item.priceLabel.includes('$') ? (item.kind === 'brand' ? 'Price on official site' : 'Price on the store page') : item.priceLabel;
+// A dollar figure shows only with its checked date ("About $X · checked Mon D, YYYY · may change"); an undated one,
+// or a placeholder "See price", says where the price lives instead.
+const priceText = honestPriceFromLabel(item.priceLabel) ?? (item.priceLabel === 'See price' || item.priceLabel.includes('$') ? (item.kind === 'brand' ? 'Price on official site' : 'Price on the store page') : item.priceLabel);
 const titleHref = item.detailHref || item.href;
 const ctaHref = item.href;
 const titleInternal = titleHref.startsWith('/');

@@ -102,7 +102,7 @@ The cartridge you buy later costs more over time than the unit you buy now. Befo
 2. **Replacement cost and availability.** Look up the replacement filter price on the maker's page.
 3. **What happens when it's overdue.** A worn-out filter stops doing its job. Set a phone reminder when you change a cartridge.
 
-We don't list prices on this site because they change. The "check current price" link on each product card takes you to the store page.
+Any price on this site carries the date we checked it and can change. The "check current price" link on each product card takes you to the store page.
 
 ## A quick way to choose
 

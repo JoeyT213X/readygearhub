@@ -14,6 +14,8 @@ affiliateUrl: ""
 rank: 0
 featured: false
 season: ["winter"]
+price: "From $239.99"
+priceDate: "2026-11-24"
 verified: "2026-11-24"
 ---
 

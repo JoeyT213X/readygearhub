@@ -7,6 +7,7 @@ import SectionHead from '../../components/SectionHead.astro';
 import { render } from 'astro:content';
 import { getItems, laneBySlug, outUrl, isAffiliate, programIdForItem, getGuides } from '../../lib/data';
 import { cardImageFor } from '../../data/card-image';
+import { honestPrice } from '../../lib/price';
 import Photo from '../../components/Photo.astro';
 import { photoForLane } from '../../data/images';
 export async function getStaticPaths() {
@@ -34,6 +35,8 @@ const schema = [
 ];
 const program = programIdForItem(item.id);
 const photo = cardImageFor(item);
+// A price shows only with its checked date; otherwise the page just points to the official page.
+const priceLine = d.price ? honestPrice(d.price, d.priceDate) : undefined;
 const desc = `${d.description} See uses, lanes, and where to check the current price.`.slice(0, 300);
 ---
 <Base title={`${d.name}: Uses & Where to Buy | ReadyGearHub`} description={desc} schema={schema} type="article">
@@ -65,7 +68,8 @@ const desc = `${d.description} See uses, lanes, and where to check the current p
       {d.uses.length > 0 && (<><h2>Multi-purpose uses</h2><ul class="uses-list">{d.uses.map((u) => <li>{u}</li>)}</ul></>)}
       <h2>Why it's on the list</h2>
       <div class="prose"><Content /></div>
-      <p class="fine">We don't list prices, specs that change, or star ratings. Always check the manufacturer's page for current details and safety instructions.{d.verified && ` Official link last checked ${d.verified}.`}</p>
+      {priceLine && <p class="price-line"><strong>Price:</strong> {priceLine}.{d.priceNote && ` ${d.priceNote}`}</p>}
+      <p class="fine">{priceLine ? 'The price above is what the maker listed on the date shown and can change.' : 'We only show a price when we have a dated one.'} We don't publish star ratings. Always check the manufacturer's page for current price, specs and safety instructions.{d.verified && ` Official link last checked ${d.verified}.`}</p>
     </div>
     <aside class="detail-side card">
       <p><strong>Lane:</strong> <a href={`/${lane.slug}/`}>{lane.icon} {lane.name}</a></p>
