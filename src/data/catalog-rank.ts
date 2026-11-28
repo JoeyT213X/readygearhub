@@ -86,6 +86,7 @@ export const PROGRAM_PAYOUT_PERCENT: Record<string, number> = {
   alexapure: 10,
   instafire: 10,
   'grid-doctor': 10,
+  'harvest-right': 5, // iDev Affiliates, 5% level, affiliate 4218
 };
 
 const programById = new Map(programs.map((p) => [p.id, p]));

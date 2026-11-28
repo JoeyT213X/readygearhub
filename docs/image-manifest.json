@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-27T21:53:10.924Z",
+  "generated": "2026-11-28T04:37:57.938Z",
   "note": "Self-hosted images only; nothing is hotlinked. Representative stock photos are labeled \"Representative photo\" on cards. Human-readable credits: IMAGE_CREDITS.md.",
   "counts": {
-    "keys": 758,
-    "officialProductOrBrand": 684,
+    "keys": 811,
+    "officialProductOrBrand": 737,
     "representativeStock": 31,
     "editorialStock": 43,
     "missingCredit": 189
@@ -5240,10 +5240,11 @@
       "key": "grid-doctor-3300-emp",
       "kind": "official-product-or-brand",
       "files": [
+        "/directory/photos/grid-doctor-3300-emp-1024.webp",
         "/directory/photos/grid-doctor-3300-emp-480.webp",
         "/directory/photos/grid-doctor-3300-emp-960.webp"
       ],
-      "source": "`grid-doctor-3300-emp` | Home breaker panel with a compact protection module beside it",
+      "source": "`grid-doctor-3300-emp` | Portable solar generator and a folded solar panel on a white backdrop (replaced the earlier breaker-panel concept on Nov 27, 2026; the product is a solar generator, not panel hardware)",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
     },
@@ -5430,6 +5431,523 @@
       "source": "a pile of junk mail beside a laptop checklist",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Concept images (illustration of product type)"
+    },
+    {
+      "key": "indestructible-ares-boot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-ares-boot-480.webp",
+        "/directory/photos/indestructible-ares-boot-960.webp"
+      ],
+      "source": "Ares work boot, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-armara",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-armara-480.webp",
+        "/directory/photos/indestructible-armara-960.webp"
+      ],
+      "source": "Armara work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-aura",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-aura-480.webp",
+        "/directory/photos/indestructible-aura-960.webp"
+      ],
+      "source": "Aura work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-bolt",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-bolt-480.webp",
+        "/directory/photos/indestructible-bolt-960.webp"
+      ],
+      "source": "Bolt work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-camox",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-camox-480.webp",
+        "/directory/photos/indestructible-camox-960.webp"
+      ],
+      "source": "CamoX work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-capped",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-capped-480.webp",
+        "/directory/photos/indestructible-capped-960.webp"
+      ],
+      "source": "Capped work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-compression-crew-socks",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-compression-crew-socks-480.webp",
+        "/directory/photos/indestructible-compression-crew-socks-960.webp"
+      ],
+      "source": "Compression crew socks, 2 pairs, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-conquer-boot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-conquer-boot-480.webp",
+        "/directory/photos/indestructible-conquer-boot-960.webp"
+      ],
+      "source": "Conquer work boot, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-dashguard",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-dashguard-480.webp",
+        "/directory/photos/indestructible-dashguard-960.webp"
+      ],
+      "source": "DashGuard work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-defendr-boot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-defendr-boot-480.webp",
+        "/directory/photos/indestructible-defendr-boot-960.webp"
+      ],
+      "source": "Defendr work boot, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-ems-foot-pad",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-ems-foot-pad-480.webp",
+        "/directory/photos/indestructible-ems-foot-pad-960.webp"
+      ],
+      "source": "EMS foot massager pad, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-fable-boot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-fable-boot-480.webp",
+        "/directory/photos/indestructible-fable-boot-960.webp"
+      ],
+      "source": "Fable work boot, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-fator",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-fator-480.webp",
+        "/directory/photos/indestructible-fator-960.webp"
+      ],
+      "source": "Fator work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-flashwalk",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-flashwalk-480.webp",
+        "/directory/photos/indestructible-flashwalk-960.webp"
+      ],
+      "source": "FlashWalk work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-flux",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-flux-480.webp",
+        "/directory/photos/indestructible-flux-960.webp"
+      ],
+      "source": "Flux work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-flyer",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-flyer-480.webp",
+        "/directory/photos/indestructible-flyer-960.webp"
+      ],
+      "source": "Flyer work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-hummer",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-hummer-480.webp",
+        "/directory/photos/indestructible-hummer-960.webp"
+      ],
+      "source": "Hummer work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-hype-2-boot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-hype-2-boot-480.webp",
+        "/directory/photos/indestructible-hype-2-boot-960.webp"
+      ],
+      "source": "Hype 2.0 work boot, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-insoles",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-insoles-480.webp",
+        "/directory/photos/indestructible-insoles-960.webp"
+      ],
+      "source": "Comfort and energy work insoles, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-j3-boot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-j3-boot-480.webp",
+        "/directory/photos/indestructible-j3-boot-960.webp"
+      ],
+      "source": "J3 work boot, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-jet",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-jet-480.webp",
+        "/directory/photos/indestructible-jet-960.webp"
+      ],
+      "source": "Jet work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-kivini",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-kivini-480.webp",
+        "/directory/photos/indestructible-kivini-960.webp"
+      ],
+      "source": "Kivini work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-kneetec",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-kneetec-480.webp",
+        "/directory/photos/indestructible-kneetec-960.webp"
+      ],
+      "source": "KneeTec knee support pads, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-no-tie-laces",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-no-tie-laces-480.webp",
+        "/directory/photos/indestructible-no-tie-laces-960.webp"
+      ],
+      "source": "No-tie elastic shoelaces, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-onyx",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-onyx-480.webp",
+        "/directory/photos/indestructible-onyx-960.webp"
+      ],
+      "source": "Onyx work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-origin",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-origin-480.webp",
+        "/directory/photos/indestructible-origin-960.webp"
+      ],
+      "source": "Origin work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-protex",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-protex-480.webp",
+        "/directory/photos/indestructible-protex-960.webp"
+      ],
+      "source": "Protex work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-retro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-retro-480.webp",
+        "/directory/photos/indestructible-retro-960.webp"
+      ],
+      "source": "Retro work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-ryder",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-ryder-480.webp",
+        "/directory/photos/indestructible-ryder-960.webp"
+      ],
+      "source": "Ryder work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-ryder-1-5",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-ryder-1-5-480.webp",
+        "/directory/photos/indestructible-ryder-1-5-960.webp"
+      ],
+      "source": "Ryder 1.5 work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-s-series",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-s-series-480.webp",
+        "/directory/photos/indestructible-s-series-960.webp"
+      ],
+      "source": "S Series work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-safetix",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-safetix-480.webp",
+        "/directory/photos/indestructible-safetix-960.webp"
+      ],
+      "source": "Safetix safety shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-space",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-space-480.webp",
+        "/directory/photos/indestructible-space-960.webp"
+      ],
+      "source": "Space work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-star-101-boot",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-star-101-boot-480.webp",
+        "/directory/photos/indestructible-star-101-boot-960.webp"
+      ],
+      "source": "Star 101 work boot, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-steelure-pluse",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-steelure-pluse-480.webp",
+        "/directory/photos/indestructible-steelure-pluse-960.webp"
+      ],
+      "source": "Steelure Pluse work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-stripe",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-stripe-480.webp",
+        "/directory/photos/indestructible-stripe-960.webp"
+      ],
+      "source": "Stripe work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-surge",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-surge-480.webp",
+        "/directory/photos/indestructible-surge-960.webp"
+      ],
+      "source": "Surge work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-titan",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-titan-480.webp",
+        "/directory/photos/indestructible-titan-960.webp"
+      ],
+      "source": "Titan work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-trekfit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-trekfit-480.webp",
+        "/directory/photos/indestructible-trekfit-960.webp"
+      ],
+      "source": "TrekFit work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-urban-edge-sunglasses",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-urban-edge-sunglasses-480.webp",
+        "/directory/photos/indestructible-urban-edge-sunglasses-960.webp"
+      ],
+      "source": "Urban Edge sunglasses, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-vigogun",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-vigogun-480.webp",
+        "/directory/photos/indestructible-vigogun-960.webp"
+      ],
+      "source": "VigoGUN V2 percussion massager, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-vigoleg",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-vigoleg-480.webp",
+        "/directory/photos/indestructible-vigoleg-960.webp"
+      ],
+      "source": "VigoLEG air massager, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-xciter",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-xciter-480.webp",
+        "/directory/photos/indestructible-xciter-960.webp"
+      ],
+      "source": "Xciter work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-xciter-mesh",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-xciter-mesh-480.webp",
+        "/directory/photos/indestructible-xciter-mesh-960.webp"
+      ],
+      "source": "Xciter Mesh work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-xeno",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-xeno-480.webp",
+        "/directory/photos/indestructible-xeno-960.webp"
+      ],
+      "source": "Xeno work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-ziczac",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-ziczac-480.webp",
+        "/directory/photos/indestructible-ziczac-960.webp"
+      ],
+      "source": "Ziczac work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
+    },
+    {
+      "key": "indestructible-zip",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/indestructible-zip-480.webp",
+        "/directory/photos/indestructible-zip-960.webp"
+      ],
+      "source": "Zip work shoe, product page photo from indestructibleshoes.com (official product photo, downloaded)",
+      "license": "Brand or affiliate-program creative (used under the program’s publisher terms)",
+      "creditSection": "Indestructible Shoes product photos (Nov 27, 2026)"
     },
     {
       "key": "ineos-grenadier",
@@ -6523,6 +7041,66 @@
       "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
     },
     {
+      "key": "my-patriot-supply-2-week-food",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-2-week-food-1024.webp",
+        "/directory/photos/my-patriot-supply-2-week-food-480.webp",
+        "/directory/photos/my-patriot-supply-2-week-food-960.webp"
+      ],
+      "source": "`my-patriot-supply-2-week-food` | One plain white emergency food bucket",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "my-patriot-supply-3-month-food",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-3-month-food-1024.webp",
+        "/directory/photos/my-patriot-supply-3-month-food-480.webp",
+        "/directory/photos/my-patriot-supply-3-month-food-960.webp"
+      ],
+      "source": "`my-patriot-supply-3-month-food` | A stack of plain white emergency food buckets",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "my-patriot-supply-4-week-food",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-4-week-food-1024.webp",
+        "/directory/photos/my-patriot-supply-4-week-food-480.webp",
+        "/directory/photos/my-patriot-supply-4-week-food-960.webp"
+      ],
+      "source": "`my-patriot-supply-4-week-food` | Two plain white emergency food buckets",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "my-patriot-supply-72-hour-go-bag",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-72-hour-go-bag-1024.webp",
+        "/directory/photos/my-patriot-supply-72-hour-go-bag-480.webp",
+        "/directory/photos/my-patriot-supply-72-hour-go-bag-960.webp"
+      ],
+      "source": "`my-patriot-supply-72-hour-go-bag` | A plain black backpack with a metal cup and a folded emergency blanket",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "my-patriot-supply-alexapure-pro",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-alexapure-pro-1024.webp",
+        "/directory/photos/my-patriot-supply-alexapure-pro-480.webp",
+        "/directory/photos/my-patriot-supply-alexapure-pro-960.webp"
+      ],
+      "source": "`my-patriot-supply-alexapure-pro` | A stainless two-chamber gravity water filter on a kitchen counter",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
       "key": "my-patriot-supply-emergency-food",
       "kind": "official-product-or-brand",
       "files": [
@@ -6541,6 +7119,18 @@
         "/directory/photos/my-patriot-supply-generators-960.webp"
       ],
       "source": "`my-patriot-supply-generators` | Portable power station and folding solar panel on a porch",
+      "license": "See IMAGE_CREDITS.md",
+      "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
+    },
+    {
+      "key": "my-patriot-supply-gluten-free-kit",
+      "kind": "official-product-or-brand",
+      "files": [
+        "/directory/photos/my-patriot-supply-gluten-free-kit-1024.webp",
+        "/directory/photos/my-patriot-supply-gluten-free-kit-480.webp",
+        "/directory/photos/my-patriot-supply-gluten-free-kit-960.webp"
+      ],
+      "source": "`my-patriot-supply-gluten-free-kit` | A plain food bucket with unlabeled meal pouches",
       "license": "See IMAGE_CREDITS.md",
       "creditSection": "Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)"
     },

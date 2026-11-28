@@ -403,7 +403,7 @@ Rebuilt 26 November 2026 as a 5-second muted loop from our own self-hosted, alre
 
 ## Ready Alliance / My Patriot Supply concept photos (`public/directory/photos/`)
 
-Official product photos could not be downloaded: the pre-approved Google Drive folder required a Google sign-in, and each brand site (mypatriotsupply.com, beprepared.com, campingsurvival.com, readyhour.com, alexapure.com, instafire.com) returned a Cloudflare challenge from this environment. The cards below use photorealistic concept images generated for ReadyGearHub on 27 November 2026 (America/Chicago). They show the kind of product or service on each card (food buckets and pantry kits, a solar generator, camping gear, a gravity water filter, a fire-starter pouch, a home electrical-panel protection device). They are not photographs of a specific official SKU, and they contain no logos or readable brand text. Self-hosted as `{id}-{480,960}.webp`. No hotlinking. Swap in official banners later when they can be downloaded.
+Official product photos could not be downloaded: the pre-approved Google Drive folder required a Google sign-in, and each brand site (mypatriotsupply.com, beprepared.com, campingsurvival.com, readyhour.com, alexapure.com, instafire.com) returned a Cloudflare challenge from this environment, including Shopify CDN product images on Nov 27, 2026. The cards below use photorealistic concept images generated for ReadyGearHub on 27 November 2026 (America/Chicago). They show the kind of product or service on each card (food buckets and pantry kits, a solar generator with a folding panel, camping gear, a gravity water filter, a fire-starter pouch, a 72-hour backpack kit). They are not photographs of a specific official SKU, and they contain no logos or readable brand text. Self-hosted as `{id}-{480,960,1024}.webp` where a 1024 px source exists, otherwise `{id}-{480,960}.webp`. No hotlinking. Swap in official product photos later when they can be downloaded.
 
 | File key | Card id | What the concept shows |
 | --- | --- | --- |
@@ -415,7 +415,13 @@ Official product photos could not be downloaded: the pre-approved Google Drive f
 | `camping-survival` | `camping-survival` | Backpack, lantern, cook pot, compass and cord on a forest picnic table |
 | `alexapure` | `alexapure` | Stainless two-chamber gravity water filter on a kitchen counter |
 | `instafire` | `instafire` | Plain fire-starter pouch beside a small campfire |
-| `grid-doctor-3300-emp` | `grid-doctor-3300-emp` | Home breaker panel with a compact protection module beside it |
+| `grid-doctor-3300-emp` | `grid-doctor-3300-emp` | Portable solar generator and a folded solar panel on a white backdrop (replaced the earlier breaker-panel concept on Nov 27, 2026; the product is a solar generator, not panel hardware) |
+| `my-patriot-supply-3-month-food` | `my-patriot-supply-3-month-food` | A stack of plain white emergency food buckets |
+| `my-patriot-supply-4-week-food` | `my-patriot-supply-4-week-food` | Two plain white emergency food buckets |
+| `my-patriot-supply-2-week-food` | `my-patriot-supply-2-week-food` | One plain white emergency food bucket |
+| `my-patriot-supply-gluten-free-kit` | `my-patriot-supply-gluten-free-kit` | A plain food bucket with unlabeled meal pouches |
+| `my-patriot-supply-alexapure-pro` | `my-patriot-supply-alexapure-pro` | A stainless two-chamber gravity water filter on a kitchen counter |
+| `my-patriot-supply-72-hour-go-bag` | `my-patriot-supply-72-hour-go-bag` | A plain black backpack with a metal cup and a folded emergency blanket |
 
 ## Directory card photo pass, 27 November 2026 (`public/directory/photos/`, `src/data/card-photos.ts`)
 

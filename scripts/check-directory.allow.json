@@ -3,8 +3,13 @@
   "a-url": [
     {
       "key": "rzmaf8trk.com/36r3j12/2ctpl",
-      "owner": "Product Studio (feat/ps-weak-points)",
-      "reason": "My Patriot Supply cards share one tracked link (Everflow code, no per-product deep link yet). Give each card its own deep link or merge."
+      "owner": "Destructicon (feat/mps-tracked-links)",
+      "reason": "Everflow compact tracking URL does not support per-product deep links (url/deeplink/destination params ignored, Nov 27, 2026). Food cards share uid=22, generator cards share uid=23, and water/go-bag/brand cards share the main link. Query strings are stripped by destination(), so they look like one URL. Keep until Ready Alliance provides direct links."
+    },
+    {
+      "key": "affiliates.harvestright.com/4218.html",
+      "owner": "Destructicon (feat/mps-tracked-links)",
+      "reason": "Harvest Right iDev deep links are not enabled (idevaffiliate.php?id=4218&url= always redirects to the homepage). The brand card and Countertop 360 card both use the official 4218.html tracking link, which sets the 45-day idev cookie. Keep until Harvest Right enables deep links."
     },
     {
       "key": "robotsinternational.com/partners/ref/fd9fabe4",
