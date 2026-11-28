@@ -49,7 +49,7 @@ export const highTicketItems: HighTicketItem[] = [
     title: 'Skydio official site',
     blurb: 'Official Skydio site for current autonomous drone platforms and programs. Check the official page for models and how to inquire.',
     sourceName: 'Skydio',
-    category: 'drones',
+    category: 'drones-robotics',
     alsoIn: ['tech'],
     groups: ['power-tech'],
     affiliateUrl: null,
@@ -225,22 +225,6 @@ export const highTicketItems: HighTicketItem[] = [
     image: '/directory/covers/robot.svg',
     offerLabel: 'Official site',
     cta: 'Visit official site',
-  },
-
-  // ---- Additional official drone model pages ----
-  {
-    id: 'skydio-x10',
-    title: 'Skydio X10',
-    blurb: 'Official Skydio page for the X10 autonomous drone platform. See the official page for current specs and how to inquire.',
-    sourceName: 'Skydio',
-    category: 'drones',
-    alsoIn: ['tech'],
-    groups: ['power-tech'],
-    affiliateUrl: null,
-    fallbackUrl: 'https://www.skydio.com/x10',
-    image: '/directory/covers/drone.svg',
-    offerLabel: 'Official product page',
-    cta: 'Visit official page',
   },
 
   // ---- Additional official vehicle and overland pages ----
@@ -1407,7 +1391,7 @@ export const highTicketItems: HighTicketItem[] = [
     title: 'Skydio X10',
     blurb: 'Skydio’s X10 autonomous drone, listed on Skydio’s official site. See the official page for specs, programs, and how to inquire.',
     sourceName: 'Skydio',
-    category: 'drones',
+    category: 'drones-robotics',
     alsoIn: ["tech"],
     groups: ["power-tech"],
     affiliateUrl: null,

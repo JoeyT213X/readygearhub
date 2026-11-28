@@ -160,7 +160,7 @@ export const brandPages: BrandPage[] = [
     directories: [
       { href: '/directory/power/', label: 'Energy Reserves & Prepper Power directory' },
       { href: '/directory/outdoor/', label: 'Outdoor & Camping directory' },
-      { href: '/directory/auto/', label: 'Auto & Travel directory' },
+      { href: '/directory/auto/', label: 'Car emergency directory' },
       { href: '/off-grid-power/', label: 'Off-grid power' },
     ],
     thanks: 'Thank you for reading, and for supporting ReadyGearHub. If you use our links, it costs you nothing extra, and it helps us keep the guides and free tools going. Battery systems are worth doing carefully, so take your time with the checklist above.',

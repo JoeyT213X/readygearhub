@@ -43,7 +43,7 @@ export const categoryShorts: CategoryShort[] = [
   s('cold', 'Heated apparel & cold-weather gear', 'Dress for the cold snap', '/cold-weather-gear/', ['/cold-weather-gear/'], 29),
   s('security', 'Security', 'Simple home security basics', '/directory/security/', ['/directory/security/'], 29),
   s('overland', 'Overland & off-road', 'Overland & off-road ready', '/directory/vehicles/', ['/directory/vehicles/'], 29),
-  s('drones', 'Drones', 'Drones: a view from above', '/directory/drones/', ['/directory/drones/'], 29),
+  s('drones', 'Drones', 'Drones: a view from above', '/directory/drones-robotics/', ['/directory/drones-robotics/'], 29),
 ];
 
 export const shortById = (id: string) => categoryShorts.find((x) => x.id === id);

@@ -240,3 +240,27 @@
   from = "/gear/anker-solix-c300x/"
   to = "/brands/anker-solix/"
   status = 301
+
+# Site structure cleanup (Nov 27, 2026).
+# /coloring/ (retired) still gets visits and was a 404: send it home.
+[[redirects]]
+  from = "/coloring"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/coloring/*"
+  to = "/"
+  status = 301
+
+# /directory/drones/ was folded into /directory/drones-robotics/.
+[[redirects]]
+  from = "/directory/drones"
+  to = "/directory/drones-robotics/"
+  status = 301
+[[redirects]]
+  from = "/directory/drones/"
+  to = "/directory/drones-robotics/"
+  status = 301
+
+# TRAFFIC 301 LIST: add Traffic's keyword-to-URL merge redirects below this line, one [[redirects]]
+# block per old URL (from = "/old/", to = "/new/", status = 301). Not landed as of Nov 27, 2026.

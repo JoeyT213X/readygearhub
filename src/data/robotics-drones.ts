@@ -253,7 +253,6 @@ export const roboticsDronesItems: HighTicketItem[] = [
     blurb: "A small self-flying camera drone, with the PROMAX adding 8K video per HOVERAir. A way to get a quick look over a property or trail. It is a camera drone, not a search-and-rescue tool.",
     sourceName: "HOVERAir",
     category: 'drones-robotics',
-    alsoIn: ['drones'],
     groups: ['power-tech', 'safety-prep'],
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/x1-pro-and-promax",
@@ -267,7 +266,6 @@ export const roboticsDronesItems: HighTicketItem[] = [
     blurb: "HOVERAir describes the AQUA as a waterproof self-flying camera for water sports. Check the official page for the waterproof rating and limits before relying on it near water.",
     sourceName: "HOVERAir",
     category: 'drones-robotics',
-    alsoIn: ['drones'],
     groups: ['power-tech', 'safety-prep'],
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/aqua",
@@ -281,7 +279,6 @@ export const roboticsDronesItems: HighTicketItem[] = [
     blurb: "A 99 g self-flying camera, per HOVERAir. A very light pocket option for casual aerial shots.",
     sourceName: "HOVERAir",
     category: 'drones-robotics',
-    alsoIn: ['drones'],
     groups: ['power-tech', 'safety-prep'],
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/x1-smart",
@@ -295,7 +292,6 @@ export const roboticsDronesItems: HighTicketItem[] = [
     blurb: "The original pocket-size self-flying camera for hands-free shots. Check the official page for current availability.",
     sourceName: "HOVERAir",
     category: 'drones-robotics',
-    alsoIn: ['drones'],
     groups: ['power-tech', 'safety-prep'],
     affiliateUrl: '', // TODO(affiliate): tracked URL once approved
     fallbackUrl: "https://hoverair.com/pages/x1",

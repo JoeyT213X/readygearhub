@@ -800,7 +800,7 @@ export function shopBoardTiles(items: CatalogItem[]): ShopBoardTile[] {
   const scenes: ShopBoardTile[] = [
     sceneTile('scene-lead', 'Winter storm prep', '/winter-storm-prep/', 'hero-snowy-home'),
     sceneTile('scene-power', 'Energy Reserves', '/directory/power/', 'solar-rooftops'),
-    sceneTile('scene-drone', 'Drones', '/directory/drones/', 'hero-drone'),
+    sceneTile('scene-drone', 'Drones', '/directory/drones-robotics/', 'hero-drone'),
     sceneTile('scene-utv', 'Off-road vehicles', '/directory/vehicles/', 'hero-utv-dunes'),
     sceneTile('scene-bunker', 'Shelters', '/directory/security/', 'hero-bunker-hatch'),
     sceneTile(
@@ -870,7 +870,7 @@ export function heroBentoTiles(): HeroBentoTile[] {
     { id: 'camping', href: '/directory/outdoor/', label: 'Off-grid & camping', photoKey: 'hero-tent-stars' },
     { id: 'first-aid', href: '/first-aid-medical-prep/', label: 'First aid & safety', photoKey: 'hero-first-aid-crisp' },
     { id: 'radios', href: '/directory/tech/', label: 'Radios, lights & comms', photoKey: 'hero-radios' },
-    { id: 'drones', href: '/directory/drones/', label: 'Drones', photoKey: 'hero-drones-air' },
+    { id: 'drones', href: '/directory/drones-robotics/', label: 'Drones', photoKey: 'hero-drones-air' },
     { id: 'overland', href: '/directory/vehicles/', label: 'Overland & off-road', photoKey: 'hero-offroad-close' },
     { id: 'security', href: '/directory/security/', label: 'Security', photoKey: 'hero-security-mix' },
     { id: 'prepper', href: '/prepper-picks/', label: "Prepper's Picks", photoKey: 'hero-prepper-collage' },

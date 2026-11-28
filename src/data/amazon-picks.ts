@@ -22,7 +22,7 @@ export type AmazonPick = {
   us?: boolean;
 };
 
-const GROUP: Record<string, SourceGroupId> = {"tech": "power-tech", "power": "power-tech", "audio": "power-tech", "drones": "power-tech", "home": "home-water", "water": "home-water", "outdoor": "outdoor-auto", "auto": "outdoor-auto", "tools": "outdoor-auto", "vehicles": "outdoor-auto", "safety": "safety-prep", "fun": "safety-prep", "security": "safety-prep", "food": "safety-prep", "drones-robotics": "safety-prep", "doomsday-prepper": "safety-prep"};
+const GROUP: Record<string, SourceGroupId> = {"tech": "power-tech", "power": "power-tech", "audio": "power-tech", "home": "home-water", "water": "home-water", "outdoor": "outdoor-auto", "auto": "outdoor-auto", "tools": "outdoor-auto", "vehicles": "outdoor-auto", "safety": "safety-prep", "fun": "safety-prep", "security": "safety-prep", "food": "safety-prep", "drones-robotics": "safety-prep", "doomsday-prepper": "safety-prep"};
 
 export const amazonPicks: AmazonPick[] = [
   { id: "amz-b0cpt83mtv", asin: "B0CPT83MTV", category: "power", brand: "Champion", title: "Champion 4500-Watt Dual Fuel Inverter Generator", blurb: "Runs on gasoline or propane and starts with a push button. Enough to keep a fridge, lights and a few devices going through a multi-day outage.", us: true },
