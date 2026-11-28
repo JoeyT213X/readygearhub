@@ -118,7 +118,7 @@ for (const p of programs.filter((x) => x.status === 'dropped')) {
 //    /apps/ and /storm-tracker/ (the $5 supporter unlock), /doomsday-prepper/projects/ (cost ranges, each with its cited
 //    source), /winter-deals/ (dated deal copy). noindex pages (previews) are skipped.
 //  * Staleness is a WARNING only: any price date more than STALE_DAYS before the build date is listed in a summary.
-const PRICE_EXCLUDED = ['/shop/', '/thank-you/', '/apps/', '/storm-tracker/', '/doomsday-prepper/projects/', '/winter-deals/'];
+const PRICE_EXCLUDED = ['/shop/', '/thank-you/', '/apps/', '/storm-tracker/', '/doomsday-prepper/projects/'];
 const STALE_DAYS = 30;
 const MON = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 const DATE_LABEL = /\b(?:checked|as of)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),\s+(\d{4})/gi;

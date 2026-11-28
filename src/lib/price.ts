@@ -26,3 +26,13 @@ export function honestPriceFromLabel(label: string): string | undefined {
   if (!m || !mo) return undefined;
   return honestPrice(label.replace(m[0], '').trim(), `${m[3]}-${String(mo).padStart(2, '0')}-${m[2].padStart(2, '0')}`);
 }
+
+/**
+ * A marked-down pair, only for items whose data records that the brand's own page showed BOTH a list and a sale price:
+ * "Marked down on Wuben’s own product page: list $49.99, now $24.22 · checked Nov 23, 2026 · may change".
+ */
+export function honestSalePair(list: string, sale: string, source: string, iso: string | undefined): string | undefined {
+  const date = fmtDate(iso);
+  if (!date || !/\$\s?\d/.test(list) || !/\$\s?\d/.test(sale) || !source) return undefined;
+  return `Marked down on ${source}: list ${list}, now ${sale} · checked ${date} · may change`;
+}

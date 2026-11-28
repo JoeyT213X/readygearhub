@@ -5,7 +5,7 @@ import { cardImageFor } from '../data/card-image';
 import NameCover from './NameCover.astro';
 import { retailLabel } from '../data/listing-actions';
 import type { WinterDeal } from '../data/winter-deals';
-import { PRICE_CHECKED_LABEL } from '../data/winter-deals';
+import { honestPrice, honestSalePair } from '../lib/price';
 
 interface Props {
   item: Item;
@@ -18,6 +18,11 @@ if (!isAffiliate(item)) {
 const program = programIdForItem(item.id);
 const photo = cardImageFor(item);
 const href = outUrl(item);
+// Wording comes from src/lib/price.ts and always carries this item's own checked date. The list/sale pair shows only
+// where the data records that the brand's own page showed both; otherwise just the dated price, or where the price lives.
+const sale = deal.priceLabel === 'See price' ? undefined : honestPrice(deal.priceLabel, deal.checked);
+const pair = deal.compareAt && deal.compareSource ? honestSalePair(deal.compareAt, deal.priceLabel, deal.compareSource, deal.checked) : undefined;
+const priceText = pair ?? sale ?? 'Price on the store page';
 ---
 <article class="card item-card winter-deal-card" data-no-ppc={isNoPpcProgram(program) ? '' : undefined} data-program={isNoPpcProgram(program) ? program : undefined}>
   {photo && (
@@ -30,12 +35,8 @@ const href = outUrl(item);
   <p class="brand">{item.data.brand}</p>
   <h3><a href={`/gear/${item.id}/`}>{item.data.name}</a></h3>
   <p class="winter-deal-price">
-    {deal.compareAt && deal.priceLabel !== 'See price' ? (
-      <><span class="wd-was">Listed at {deal.compareAt}</span> <span class="wd-now">{deal.priceLabel}</span></>
-    ) : (
-      <span class="wd-now">{deal.priceLabel === 'See price' ? 'Price on the store page' : deal.priceLabel}</span>
-    )}
-    <span class="wd-checked">Checked {PRICE_CHECKED_LABEL} on the official store.</span>
+    <span class="wd-now">{priceText}</span>
+    {sale && <span class="wd-checked">Read on the official store.</span>}
   </p>
   {deal.stockNote && <p class="fine wd-stock">{deal.stockNote}</p>}
   <p>{deal.why}</p>
@@ -47,7 +48,7 @@ const href = outUrl(item);
       target="_blank"
       rel="sponsored nofollow noopener"
       data-program={program || undefined}
-    >{retailLabel(item.id, /\$\s?\d/.test(deal.priceLabel))} ↗</a>
+    >{retailLabel(item.id, !!sale)} ↗</a>
   </div>
 </article>
 
