@@ -17,7 +17,8 @@ function isInternal(href: string) {
 ---
 <div class:list={["bento-tile", "is-shop-board", "is-wide", { "is-hero": hero }]}>
   <div class="shop-board">
-    <div class="shop-board-copy">
+    <div class:list={["shop-board-copy", { "has-mx-hero": Astro.slots.has("copy-bg") }]}>
+      <slot name="copy-bg" />
       <div class="shop-board-topline">
         <span class="bento-kicker">Explore</span>
         {hero && <UsFirstBadge />}

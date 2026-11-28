@@ -758,3 +758,7 @@ Where no usable official photo existed (logo-only pages, banners with sale text,
 | `bluecosmo` | a satellite phone and terminal at a remote mountain camp |
 
 The nine Ready Alliance / My Patriot Supply concept images listed in the section above now carry the same "Concept image" tag on their cards.
+
+## Generated media (mobile home hero)
+
+`public/videos/mobile-extreme-hero.mp4` and `mobile-extreme-poster.jpg` (added 2026-11-27) are AI-generated imagery made for ReadyGearHub: an off-road rig under a storm sky, a bunker safe-room door, a generator with propane tanks and gear laid out. No people, logos, readable text or real products. The photographs above are unchanged and none of them are AI-generated.
