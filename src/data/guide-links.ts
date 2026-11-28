@@ -30,7 +30,7 @@ export const guideNav: Record<string, GuideNav> = {
     extras: [{ href: '/gear/#offline-entertainment', label: 'Offline entertainment for long outages: card games, downloaded music and audiobooks' }],
   },
   'ice-storm-survival-checklist-for-the-south': {
-    directory: ['power', 'outdoor'],
+    // Merge candidate (301 to ice-storm-prep-checklist-south): no directory links, so it is not promoted.
     readNext: ['ice-storm-prep-checklist-south', 'winter-storm-power-outage-prep-guide-south'],
   },
   'power-outage-ice-storm-mississippi': {

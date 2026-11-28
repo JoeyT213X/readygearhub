@@ -165,7 +165,7 @@ const schema = {
     {guidesHere.length > 0 && (
       <nav class="dir-guides" aria-label={`Guides related to ${category.name}`} style="margin-top:2rem">
         <h2 class="section-title">Guides for this category</h2>
-        <p class="fine">Plain-English how-tos that explain what to look for before you buy.</p>
+        <p class="fine">Plain-English guides that connect to this category.</p>
         <ul class="link-list">{guidesHere.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}</ul>
       </nav>
     )}
